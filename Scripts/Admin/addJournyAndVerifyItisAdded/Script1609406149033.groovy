@@ -17,11 +17,6 @@ import internal.GlobalVariable as GlobalVariable
 
 
 
-CustomKeywords.'com.Modist.Login.LoginForAdminDevEnvironment.enterEmail'(GlobalVariable.Email)
-
-CustomKeywords.'com.Modist.Login.LoginForAdminDevEnvironment.enterPassword'(GlobalVariable.Password)
-
-CustomKeywords.'com.Modist.Login.LoginForAdminDevEnvironment.clickEnterButton'()
 
 CustomKeywords.'pages.Journey.clickOnJourneyTab'()
 
@@ -29,7 +24,6 @@ def journeyName = CustomKeywords.'pages.Journey.addJorney'()
 
 CustomKeywords.'pages.Journey.verifyJourneyAdded'(journeyName)
 
-//WebUI.acceptAlert()
 
 
 

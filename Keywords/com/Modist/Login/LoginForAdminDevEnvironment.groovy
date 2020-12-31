@@ -29,6 +29,14 @@ public class LoginForAdminDevEnvironment {
 		WebUI.click(findTestObject('Object Repository/Login Credentials/EnterButton'))
 	}
 
+	@Keyword
+	def login() {
+
+		enterEmail()
+		enterPassword()
+		clickEnterButton()
+	}
+
 
 	@Keyword
 	def wait(int seconds) {
