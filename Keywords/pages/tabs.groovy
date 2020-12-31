@@ -1,4 +1,4 @@
-package verification
+package pages
 
 import static com.kms.katalon.core.checkpoint.CheckpointFactory.findCheckpoint
 import static com.kms.katalon.core.testcase.TestCaseFactory.findTestCase
@@ -15,27 +15,16 @@ import com.kms.katalon.core.testcase.TestCase
 import com.kms.katalon.core.testdata.TestData
 import com.kms.katalon.core.testobject.TestObject
 import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
-import com.kms.katalon.core.webui.common.WebUiCommonHelper
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 
 import internal.GlobalVariable
 
-public class Product {
+public class tabs {
 
 	@Keyword
-	def openAnyExistingProduct(String productName){
-
-		WebUI.sendKeys(findTestObject('Object Repository/Product/Filter by name'),productName)
-		//WebUI.scrollToElement(findTestObject('Object Repository/Product/Open Any existing product',["productName":productName]),30)
-		WebUI.click(findTestObject('Object Repository/Product/Open Any existing product',["productName":productName]))
-	}
-	
-	@Keyword
-	def productEditPage(){
-		
-		WebUI.scrollToElement(findTestObject('Object Repository/Product/ProductEditPage/ProductAssets/ProductAssets'), 30)
-		int count=WebUiCommonHelper.findWebElements(findTestObject('Object Repository/Product/ProductEditPage/ProductAssets/From'), 30).size()
-		println count
+	def clickOnTab(String tabName) {
+		if(tabName.equals('Product'))
+			WebUI.click(findTestObject('Product/Click on tab',["tabName":tabName]))
 	}
 }

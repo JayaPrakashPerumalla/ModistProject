@@ -17,4 +17,4 @@ import internal.GlobalVariable as GlobalVariable
 
 CustomKeywords.'com.Modist.Login.LoginForAdminDevEnvironment.wait'(5)
 
-CustomKeywords.'verification.verifying.getUrlAndVerify'("dashboard", "you are not in a dashboard page")
+CustomKeywords.'verification.verifications.getUrlAndVerify'("dashboard", "you are not in a dashboard page")

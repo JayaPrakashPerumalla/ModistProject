@@ -15,8 +15,8 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 
-CustomKeywords.'verification.tabs.clickOnTab'('Product')
+CustomKeywords.'pages.tabs.clickOnTab'('Product')
 
-CustomKeywords.'verification.Product.openAnyExistingProduct'('product 123')
+CustomKeywords.'pages.Product.openAnyExistingProduct'('product 123')
 
-CustomKeywords.'verification.Product.productEditPage'()
+CustomKeywords.'pages.Product.productEditPage'()

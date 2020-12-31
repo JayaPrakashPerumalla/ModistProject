@@ -21,9 +21,9 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 
 import internal.GlobalVariable
 
-public class verifying {
+public class verifications {
 
-	
+
 	@Keyword
 	def verifyElementPresent(TestObject element, String failureDescription, int maxWaitTime = GlobalVariable.defaultWaitTime) {
 		if(!WebUI.verifyElementPresent(element, maxWaitTime, FailureHandling.OPTIONAL)) {
@@ -116,5 +116,4 @@ public class verifying {
 			KeywordUtil.markFailed(failuredescription)
 		}
 	}
-	
 }
