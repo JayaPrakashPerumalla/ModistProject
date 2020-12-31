@@ -19,17 +19,47 @@ import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import webAction.WebAction
-
+import verification.verifications
 import internal.GlobalVariable
 
 public class Journey {
 
 	WebAction actions = new WebAction()
 
+	Random random = new Random()
+
 
 	@Keyword
 	def clickOnJourneyTab() {
 
 		actions.click(findTestObject('Object Repository/Journey/Journeytab'))
+	}
+
+	@Keyword
+	def clickAddJourneyButton() {
+
+		actions.click(findTestObject('Object Repository/Journey/Add Journey/AddJourneyButton'))
+	}
+
+	@Keyword
+	def addJorney() {
+
+		String journeyName = "journeyName"+random.nextInt(1000)
+		clickAddJourneyButton()
+		actions.sendKeys(findTestObject('Object Repository/Journey/Add Journey/journeyName'), journeyName)
+		actions.click(findTestObject('Object Repository/Journey/Add Journey/addJourneyInAddJourneyPopUp'))
+		return journeyName
+	}
+
+	@Keyword
+	def searchJourney(def journeyName) {
+
+		actions.sendKeys(findTestObject('Object Repository/Journey/journrySearchInput'), journeyName)
+	}
+
+	@Keyword
+	def verifyJourneyAdded(def journeyName) {
+
+		searchJourney(journeyName)
 	}
 }

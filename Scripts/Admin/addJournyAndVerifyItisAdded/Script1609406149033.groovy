@@ -25,7 +25,8 @@ CustomKeywords.'com.Modist.Login.LoginForAdminDevEnvironment.clickEnterButton'()
 
 CustomKeywords.'pages.Journey.clickOnJourneyTab'()
 
-println CustomKeywords.'pages.Journey.addJourney'()
+def journeyName = CustomKeywords.'pages.Journey.addJorney'()
+
 
 
 
