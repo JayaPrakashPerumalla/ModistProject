@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>Open Any existing product</name>
+   <name>addJourneyInAddJourneyPopUp</name>
    <tag></tag>
-   <elementGuidId>fb932adb-082a-4360-b571-6f800f8f7b0d</elementGuidId>
+   <elementGuidId>39bd3735-4738-49de-9113-307087aea674</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//div[@id='row-30406']//div[text()='${productName}']</value>
+         <value>//div[@class=&quot;modal-footer&quot;]//button[text()='Add ']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,6 +17,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//div[@id='row-30406']//div[text()='${productName}']</value>
+      <value>//div[@class=&quot;modal-footer&quot;]//button[text()='Add ']</value>
    </webElementProperties>
 </WebElementEntity>

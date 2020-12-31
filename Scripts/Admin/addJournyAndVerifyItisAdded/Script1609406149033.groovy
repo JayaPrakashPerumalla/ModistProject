@@ -15,7 +15,7 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 
-CustomKeywords.'com.Modist.Login.LoginForAdminDevEnvironment.OpenWebSite'()
+
 
 CustomKeywords.'com.Modist.Login.LoginForAdminDevEnvironment.enterEmail'(GlobalVariable.Email)
 
@@ -23,4 +23,17 @@ CustomKeywords.'com.Modist.Login.LoginForAdminDevEnvironment.enterPassword'(Glob
 
 CustomKeywords.'com.Modist.Login.LoginForAdminDevEnvironment.clickEnterButton'()
 
-CustomKeywords.'com.Modist.Login.LoginForAdminDevEnvironment.wait'(5)
+CustomKeywords.'pages.Journey.clickOnJourneyTab'()
+
+println CustomKeywords.'pages.Journey.addJourney'()
+
+
+
+
+
+
+//WebUI.click(findTestObject('Journey/Journeytab'))
+//
+//WebUI.click(findTestObject('Journey/Add Journey/AddJourneyButton'))
+//
+//WebUI.sendKeys(findTestObject('Journey/Add Journey/journeyName'),'hadava')

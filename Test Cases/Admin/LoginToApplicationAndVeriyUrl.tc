@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>Journey</name>
+   <name>LoginToApplicationAndVeriyUrl</name>
    <tag></tag>
    <comment></comment>
-   <testCaseGuid>be377128-303b-4d5d-977f-7a3307474c0b</testCaseGuid>
+   <testCaseGuid>b6037413-722b-4f9d-a1da-5dfc8c708be0</testCaseGuid>
 </TestCaseEntity>

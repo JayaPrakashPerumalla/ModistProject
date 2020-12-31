@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>Click on tab</name>
+   <name>productTab</name>
    <tag></tag>
-   <elementGuidId>a6173557-309c-400a-9a7f-05a28066c165</elementGuidId>
+   <elementGuidId>209acdc2-3bc4-41c5-ab37-f67352e61b93</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//a[text()='${tabName}']</value>
+         <value>//a[text()='Product']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,6 +17,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//a[text()='${tabName}']</value>
+      <value>//a[text()='Product']</value>
    </webElementProperties>
 </WebElementEntity>

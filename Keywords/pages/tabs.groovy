@@ -25,6 +25,6 @@ public class tabs {
 	@Keyword
 	def clickOnTab(String tabName) {
 		if(tabName.equals('Product'))
-			WebUI.click(findTestObject('Product/Click on tab',["tabName":tabName]))
+			WebUI.click(findTestObject('Product/ClickOnTab(tabName)',["tabName":tabName]))
 	}
 }

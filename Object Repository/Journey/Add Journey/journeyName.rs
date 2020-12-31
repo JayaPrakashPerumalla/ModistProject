@@ -1,17 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>Add Journey Button</name>
+   <name>journeyName</name>
    <tag></tag>
-   <elementGuidId>f830ff6f-088c-4c72-94f4-bc8b04016757</elementGuidId>
+   <elementGuidId>fbbad0bc-371d-4bb3-8191-83de6a12f9b2</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//div[@class='table-toolbar-wrapper']//span[@class='input-group-text']/..</value>
+         <key>BASIC</key>
       </entry>
       <entry>
-         <key>BASIC</key>
-         <value></value>
+         <key>XPATH</key>
+         <value>//label[text()='Name']/..//input</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
