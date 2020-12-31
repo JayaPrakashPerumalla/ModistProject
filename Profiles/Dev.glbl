@@ -19,4 +19,9 @@
       <initValue>'Qualitlabs1?'</initValue>
       <name>Password</name>
    </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>30</initValue>
+      <name>defaultWaitTime</name>
+   </GlobalVariableEntity>
 </GlobalVariableEntities>

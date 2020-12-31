@@ -23,6 +23,31 @@ import internal.GlobalVariable
 
 public class WebAction {
 
+
+	int waitTime = GlobalVariable.defaultWaitTime
+
+	@Keyword
+	def click(TestObject element) {
+		wait(element)
+		WebUI.waitForElementClickable(element, waitTime)
+		WebUI.click(element)
+	}
+	
+	@Keyword
+	def sendKeys(TestObject element, String text) {
+		wait(element)
+		WebUI.waitForElementClickable(element, waitTime)
+		WebUI.clearText(element)
+		WebUI.sendKeys(element, text)
+	}
+	
+	
+	@Keyword
+	def wait(TestObject element, int maxWaitTime = waitTime) {
+		WebUI.waitForElementPresent(element, maxWaitTime)
+		WebUI.waitForElementVisible(element, maxWaitTime)
+	}
+
 	@Keyword
 	def getElementCount(TestObject element, int waitTimeLocal = 5) {
 
@@ -34,5 +59,12 @@ public class WebAction {
 			count = WebUiCommonHelper.findWebElements(element, waitTime).size()
 		}
 		return count
+	}
+	
+	@Keyword
+	def getColumnIndex(List headers, String columName){
+
+		WebElement table = HTMLTableHelper.identifyTableByColumnHeaders(headers, 10,  FailureHandling.CONTINUE_ON_FAILURE)
+		return HTMLTableHelper.getColumnIndexByHeader(table, columName, FailureHandling.STOP_ON_FAILURE)
 	}
 }
