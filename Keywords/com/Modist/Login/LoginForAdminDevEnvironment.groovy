@@ -16,12 +16,12 @@ public class LoginForAdminDevEnvironment {
 	@Keyword
 	def enterEmail(String Email) {
 
-		WebUI.setText(findTestObject('Object Repository/Login Credentials/Email'), Email, FailureHandling.STOP_ON_FAILURE)
+		WebUI.sendKeys(findTestObject('Object Repository/Login Credentials/Email'), Email, FailureHandling.STOP_ON_FAILURE)
 	}
 
 	@Keyword
 	def enterPassword(String Password) {
-		WebUI.setText(findTestObject('Object Repository/Login Credentials/Password'), Password, FailureHandling.CONTINUE_ON_FAILURE)
+		WebUI.sendKeys(findTestObject('Object Repository/Login Credentials/Password'), Password, FailureHandling.CONTINUE_ON_FAILURE)
 	}
 
 	@Keyword
@@ -32,8 +32,8 @@ public class LoginForAdminDevEnvironment {
 	@Keyword
 	def login() {
 
-		enterEmail()
-		enterPassword()
+		enterEmail(GlobalVariable.Email)
+		enterPassword(GlobalVariable.Password)
 		clickEnterButton()
 	}
 

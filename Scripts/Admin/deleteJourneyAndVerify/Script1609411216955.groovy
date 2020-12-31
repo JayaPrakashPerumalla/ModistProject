@@ -15,11 +15,7 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 
-CustomKeywords.'com.Modist.Login.LoginForAdminDevEnvironment.enterEmail'(GlobalVariable.Email)
 
-CustomKeywords.'com.Modist.Login.LoginForAdminDevEnvironment.enterPassword'(GlobalVariable.Password)
-
-CustomKeywords.'com.Modist.Login.LoginForAdminDevEnvironment.clickEnterButton'()
 
 CustomKeywords.'pages.Journey.clickOnJourneyTab'()
 
