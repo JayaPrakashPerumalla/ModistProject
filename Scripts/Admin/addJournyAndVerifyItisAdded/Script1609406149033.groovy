@@ -27,6 +27,10 @@ CustomKeywords.'pages.Journey.clickOnJourneyTab'()
 
 def journeyName = CustomKeywords.'pages.Journey.addJorney'()
 
+CustomKeywords.'pages.Journey.verifyJourneyAdded'(journeyName)
+
+//WebUI.acceptAlert()
+
 
 
 

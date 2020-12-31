@@ -15,6 +15,16 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 
-CustomKeywords.'com.Modist.Login.LoginForAdminDevEnvironment.wait'(5)
+CustomKeywords.'com.Modist.Login.LoginForAdminDevEnvironment.enterEmail'(GlobalVariable.Email)
 
-CustomKeywords.'verification.Verification.getUrlAndVerify'("dashboard", "you are not in a dashboard page")
+CustomKeywords.'com.Modist.Login.LoginForAdminDevEnvironment.enterPassword'(GlobalVariable.Password)
+
+CustomKeywords.'com.Modist.Login.LoginForAdminDevEnvironment.clickEnterButton'()
+
+CustomKeywords.'pages.Journey.clickOnJourneyTab'()
+
+def journeyName = CustomKeywords.'pages.Journey.addJorney'()
+
+CustomKeywords.'pages.Journey.deleteJourney'(journeyName)
+
+CustomKeywords.'pages.Journey.verifyJourneyDeleted'(journeyName)

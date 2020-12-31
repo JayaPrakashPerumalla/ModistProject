@@ -23,7 +23,7 @@ CustomKeywords.'com.Modist.Login.LoginForAdminDevEnvironment.enterPassword'(Glob
 
 CustomKeywords.'com.Modist.Login.LoginForAdminDevEnvironment.clickEnterButton'()
 
-CustomKeywords.'verification.verifications.getUrlAndVerify'("dashboard", "Url not matched with dashboard")
+CustomKeywords.'verification.Verification.getUrlAndVerify'("dashboard", "Url not matched with dashboard")
 
 
 
