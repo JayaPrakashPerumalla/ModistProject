@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalVariableEntities>
+   <description></description>
+   <name>Dev</name>
+   <tag></tag>
+   <defaultProfile>false</defaultProfile>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'https://dev-admin.modist.co/'</initValue>
+      <name>Url</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'naresh.k@qualitlabs.com'</initValue>
+      <name>Email</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'Qualitlabs1?'</initValue>
+      <name>Password</name>
+   </GlobalVariableEntity>
+</GlobalVariableEntities>

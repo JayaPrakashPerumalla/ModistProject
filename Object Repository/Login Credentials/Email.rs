@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>Email</name>
+   <tag></tag>
+   <elementGuidId>a4189263-a8d7-45ce-9b46-ae52ddad7f3b</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//input[@name='email']</value>
+      </entry>
+      <entry>
+         <key>BASIC</key>
+         <value>//input[@name='email']</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//input[@name='email']</value>
+   </webElementProperties>
+</WebElementEntity>
