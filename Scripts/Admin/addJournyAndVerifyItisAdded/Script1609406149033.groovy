@@ -25,14 +25,3 @@ def journeyName = CustomKeywords.'pages.Journey.addJorney'()
 CustomKeywords.'pages.Journey.verifyJourneyAdded'(journeyName)
 
 
-
-
-
-
-
-
-//WebUI.click(findTestObject('Journey/Journeytab'))
-//
-//WebUI.click(findTestObject('Journey/Add Journey/AddJourneyButton'))
-//
-//WebUI.sendKeys(findTestObject('Journey/Add Journey/journeyName'),'hadava')

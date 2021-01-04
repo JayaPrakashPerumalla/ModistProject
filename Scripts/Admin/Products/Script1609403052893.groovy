@@ -19,4 +19,4 @@ CustomKeywords.'pages.tabs.clickOnTab'('Product')
 
 CustomKeywords.'pages.Product.openAnyExistingProduct'('product 123')
 
-CustomKeywords.'pages.Product.productEditPage'()
+CustomKeywords.'pages.Product.dragAndDrop'(1, 3)

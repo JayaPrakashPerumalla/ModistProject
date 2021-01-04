@@ -5,6 +5,7 @@ import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
 import static com.kms.katalon.core.testobject.ObjectRepository.findWindowsObject
 import com.kms.katalon.core.checkpoint.Checkpoint as Checkpoint
 import com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords as CucumberKW
+import com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass
 import com.kms.katalon.core.mobile.keyword.MobileBuiltInKeywords as Mobile
 import com.kms.katalon.core.model.FailureHandling as FailureHandling
 import com.kms.katalon.core.testcase.TestCase as TestCase
@@ -15,15 +16,8 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 
-CustomKeywords.'login.LoginForAdminDevEnvironment.OpenWebSite'()
+CustomKeywords.'pages.Product.clickOnProductTab'()
 
-CustomKeywords.'login.LoginForAdminDevEnvironment.enterEmail'(GlobalVariable.Email)
+CustomKeywords.'pages.Product.openAnyExistingProduct'('product 123')
 
-CustomKeywords.'login.LoginForAdminDevEnvironment.enterPassword'(GlobalVariable.Password)
-
-CustomKeywords.'login.LoginForAdminDevEnvironment.clickEnterButton'()
-
-CustomKeywords.'verification.Verification.getUrlAndVerify'("dashboard", "Url not matched with dashboard")
-
-
-
+CustomKeywords.'pages.Product.dragAndDrop'(1,2)

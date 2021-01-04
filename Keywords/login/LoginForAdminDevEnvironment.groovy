@@ -1,4 +1,4 @@
-package com.Modist.Login
+package login
 
 import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
 
@@ -7,34 +7,21 @@ import com.kms.katalon.core.model.FailureHandling
 import com.kms.katalon.core.util.KeywordUtil
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
+import webAction.WebAction
 
 
 public class LoginForAdminDevEnvironment {
 
+	WebAction action = new WebAction()
 
 
-	@Keyword
-	def enterEmail(String Email) {
-
-		WebUI.setText(findTestObject('Object Repository/Login Credentials/Email'), Email, FailureHandling.STOP_ON_FAILURE)
-	}
 
 	@Keyword
-	def enterPassword(String Password) {
-		WebUI.setText(findTestObject('Object Repository/Login Credentials/Password'), Password, FailureHandling.CONTINUE_ON_FAILURE)
-	}
+	def login(String Email,String Password) {
 
-	@Keyword
-	def clickEnterButton() {
-		WebUI.click(findTestObject('Object Repository/Login Credentials/EnterButton'))
-	}
-
-	@Keyword
-	def login() {
-
-		enterEmail()
-		enterPassword()
-		clickEnterButton()
+		action.sendKeys(findTestObject('Object Repository/Login Credentials/Email'),Email)
+		action.sendKeys(findTestObject('Object Repository/Login Credentials/Password'),Password)
+		action.click(findTestObject('Object Repository/Login Credentials/EnterButton'))
 	}
 
 

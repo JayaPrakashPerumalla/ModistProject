@@ -49,7 +49,7 @@ public class Journey {
 		searchJourney(journeyName)
 		verifications.verifyElementPresent(findTestObject('Object Repository/Journey/JourneyName(journeyName)',["journeyName":journeyName]), " The expected "+journeyName+ " is not created ")
 	}
-	
+
 	@Keyword
 	def deleteJourney(def journeyName) {
 		searchJourney(journeyName)
@@ -57,12 +57,11 @@ public class Journey {
 		actions.click(findTestObject('Object Repository/Journey/journeyNameDeleteButton'))
 		WebUI.acceptAlert()
 	}
-	
+
 	@Keyword
 	def verifyJourneyDeleted(def journeyName) {
 
 		searchJourney(journeyName)
 		verifications.verifyElementNotPresent(findTestObject('Object Repository/Journey/JourneyName(journeyName)',["journeyName":journeyName]), " The expected "+journeyName+ " is not deleted ")
-		
 	}
 }

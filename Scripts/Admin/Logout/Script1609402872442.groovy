@@ -15,8 +15,8 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 
-CustomKeywords.'com.Modist.Logout.LogoutForAdminDevEnvironment.clickingOnProfileIcon'()
+CustomKeywords.'logout.LogoutForAdminDevEnvironment.clickingOnProfileIcon'()
 
-CustomKeywords.'com.Modist.Logout.LogoutForAdminDevEnvironment.logout'()
+CustomKeywords.'logout.LogoutForAdminDevEnvironment.logout'()
 
-CustomKeywords.'com.Modist.Logout.LogoutForAdminDevEnvironment.closeBrowser'()
+CustomKeywords.'logout.LogoutForAdminDevEnvironment.closeBrowser'()

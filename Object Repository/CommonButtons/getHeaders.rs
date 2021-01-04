@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>From</name>
+   <name>getHeaders</name>
    <tag></tag>
-   <elementGuidId>f2359db5-4545-41c7-a9d0-7d4efc9eec8b</elementGuidId>
+   <elementGuidId>08633829-5503-42b0-b09f-2bd52df6ba06</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//label[text()='Product Assets']/..//div[@class='droppable-container']</value>
+         <key>BASIC</key>
+         <value></value>
       </entry>
       <entry>
-         <key>BASIC</key>
+         <key>XPATH</key>
+         <value>//li[@value='${value}']//a</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
