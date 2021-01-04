@@ -15,7 +15,7 @@ public class Product {
 	WebAction actions = new WebAction()
 	Random random = new Random()
 	Verification verifications = new Verification()
-	
+
 
 	@Keyword
 	def clickOnProductTab() {
@@ -50,11 +50,22 @@ public class Product {
 
 	@Keyword
 	def verifyProductAdded(String productName) {
-		
+
 		searchForAProduct(productName)
 		verifications.verifyElementPresent(findTestObject('Object Repository/Product/productName(Name)',["productName":productName]), "The product "+productName+" is not added in the list" )
-		
 	}
+
+	@Keyword
+	def verifyProductPopUp() {
+
+		String path = 'Object Repository/Product/'
+		def elements = ["productNameInput", "descriptionFieldInput", "cancelButtonInAddProductPopUp", "addproductButtonInAddProductPopUp", "publishedDropDown"]
+		for(element in elements) {
+			verifications.verifyElementPresent(findTestObject(path+element), "The element "+element+" is not present")
+		}
+	}
+
+
 
 	@Keyword
 	def openAnyExistingProduct(String productName){
@@ -63,21 +74,17 @@ public class Product {
 		WebUI.scrollToElement(findTestObject('Object Repository/Product/productName(Name)',["productName":productName]),30)
 		actions.click(findTestObject('Object Repository/Product/productName(Name)',["productName":productName]))
 	}
-	
+
 	@Keyword
 	def verifyFooterSectionButtons(){
 		String path = 'Object Repository/Product/ProductEditPage/'
-		List elements = ["closeButton","deleteButton","saveChangesButton"]
-		for(element in elements)
-		{
+		List elements = ["closeButton", "deleteButton", "saveChangesButton"]
+		for(element in elements) {
 			verifications.verifyElementPresent(findTestObject(path+element), "In footer "+element+" is not present" )
-			
 		}
-
 	}
-	
-	
 
+	@Keyword
 	def navigateToProductAssets(){
 
 		WebUI.scrollToElement(findTestObject('Object Repository/Product/ProductEditPage/ProductAssets/ProductAssets'), 30)
