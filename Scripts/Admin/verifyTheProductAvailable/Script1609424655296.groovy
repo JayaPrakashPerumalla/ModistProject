@@ -15,15 +15,6 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 
-CustomKeywords.'login.LoginForAdminDevEnvironment.OpenWebSite'()
+CustomKeywords.'pages.Product.clickOnProductTab'()
 
-CustomKeywords.'login.LoginForAdminDevEnvironment.enterEmail'(GlobalVariable.Email)
-
-CustomKeywords.'login.LoginForAdminDevEnvironment.enterPassword'(GlobalVariable.Password)
-
-CustomKeywords.'login.LoginForAdminDevEnvironment.clickEnterButton'()
-
-CustomKeywords.'verification.Verification.getUrlAndVerify'("dashboard", "Url not matched with dashboard")
-
-
-
+CustomKeywords.'pages.Product.openAnyExistingProduct'('cars1')
