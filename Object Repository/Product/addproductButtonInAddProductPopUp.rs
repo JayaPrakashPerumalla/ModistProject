@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>addproductButtonInAddProductPopUp</name>
+   <tag></tag>
+   <elementGuidId>27ad072e-e961-48cc-9b6e-551d0c73a6f7</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>//div[@class=&quot;modal-footer&quot;]//button[text()='Product']</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//div[@class=&quot;modal-footer&quot;]//button[text()='Product']</value>
+   </webElementProperties>
+</WebElementEntity>

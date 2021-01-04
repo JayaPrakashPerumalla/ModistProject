@@ -2,18 +2,20 @@ package pages
 
 import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
 
-import org.junit.After
-
 import com.kms.katalon.core.annotation.Keyword
 import com.kms.katalon.core.webui.common.WebUiCommonHelper
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 
+import verification.Verification
 import webAction.WebAction
 
 public class Product {
 
 
 	WebAction actions = new WebAction()
+	Random random = new Random()
+	Verification verifications = new Verification()
+	
 
 	@Keyword
 	def clickOnProductTab() {
@@ -22,17 +24,59 @@ public class Product {
 	}
 
 	@Keyword
+	def clickOnAddProductButton() {
+
+		actions.click(findTestObject('Object Repository/Product/addProductButton'))
+	}
+
+	@Keyword
+	def addProduct() {
+
+		clickOnProductTab()
+		def productName = "RandomProduct"+random.nextInt(1000)
+		clickOnAddProductButton()
+		actions.sendKeys(findTestObject('Object Repository/Product/productNameInput'), productName)
+		actions.sendKeys(findTestObject('Object Repository/Product/descriptionFieldInput'), "Sample text")
+		actions.click(findTestObject('Object Repository/Product/addproductButtonInAddProductPopUp'))
+		return 	productName
+	}
+
+
+
+	@Keyword
 	def searchForAProduct(String productName) {
 		actions.sendKeys(findTestObject('Object Repository/Product/Filter by name'), productName)
+	}
+
+	@Keyword
+	def verifyProductAdded(String productName) {
+		
+		searchForAProduct(productName)
+		verifications.verifyElementPresent(findTestObject('Object Repository/Product/productName(Name)',["productName":productName]), "The product "+productName+" is not added in the list" )
+		
 	}
 
 	@Keyword
 	def openAnyExistingProduct(String productName){
 
 		searchForAProduct(productName)
-		WebUI.scrollToElement(findTestObject('Product/OpenAnyExistingProduct(productName)',["productName":productName]),30)
-		actions.click(findTestObject('Object Repository/Product/OpenAnyExistingProduct(productName)',["productName":productName]))
+		WebUI.scrollToElement(findTestObject('Object Repository/Product/productName(Name)',["productName":productName]),30)
+		actions.click(findTestObject('Object Repository/Product/productName(Name)',["productName":productName]))
 	}
+	
+	@Keyword
+	def verifyFooterSectionButtons(){
+		String path = 'Object Repository/Product/ProductEditPage/'
+		List elements = ["closeButton","deleteButton","saveChangesButton"]
+		for(element in elements)
+		{
+			verifications.verifyElementPresent(findTestObject(path+element), "In footer "+element+" is not present" )
+			
+		}
+
+	}
+	
+	
 
 	def navigateToProductAssets(){
 
