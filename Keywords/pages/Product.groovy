@@ -20,7 +20,7 @@ public class Product {
 	Random random = new Random()
 	Verification verifications = new Verification()
 	WebDriver driver = DriverFactory.getWebDriver()
-	
+
 
 
 	@Keyword
@@ -46,7 +46,7 @@ public class Product {
 		actions.click(findTestObject('Object Repository/Product/addproductButtonInAddProductPopUp'))
 		return 	productName
 	}
-	
+
 	@Keyword
 	def getRandomProductNmae() {
 
@@ -57,11 +57,15 @@ public class Product {
 			//create or add product
 			return addProduct()
 		}
-		else 
+		else
 		{
 			def index = random.nextInt(productCount)
-		  def productName =  WebUI.getText(findTestObject('Object Repository/Product/randomProduct(index)',["index":index]))
-		  return productName
+			if(index == 0)
+			{
+				index = index +1
+			}
+			def productName =  WebUI.getText(findTestObject('Object Repository/Product/randomProduct(index)',["index":index]))
+			return productName
 		}
 	}
 
@@ -70,6 +74,7 @@ public class Product {
 	@Keyword
 	def searchForAProduct(String productName) {
 		actions.sendKeys(findTestObject('Object Repository/Product/Filter by name'), productName)
+		WebUI.waitForPageLoad(10)
 	}
 
 	@Keyword
@@ -78,7 +83,7 @@ public class Product {
 		searchForAProduct(productName)
 		verifications.verifyElementPresent(findTestObject('Object Repository/Product/productName(Name)',["productName":productName]), "The product "+productName+" is not added in the list" )
 	}
-	
+
 	@Keyword
 	def verifyProductNotPresent(String productName) {
 
@@ -105,10 +110,10 @@ public class Product {
 		WebUI.scrollToElement(findTestObject('Object Repository/Product/productName(Name)',["productName":productName]),30)
 		actions.click(findTestObject('Object Repository/Product/productName(Name)',["productName":productName]))
 	}
-	
+
 	@Keyword
 	def editProductName(){
-		
+
 		def editedNameName = "RandomProduct"+random.nextInt(1000)
 		WebUI.delay(5)
 		WebUI.clearText(findTestObject('Object Repository/Product/ProductEditPage/productNameInput'))
@@ -118,15 +123,15 @@ public class Product {
 		return editedNameName
 
 	}
-	
+
 	@Keyword
 	def deleteProduct(def productName){
-		
+
 		searchForAProduct(productName)
 		actions.click(findTestObject('Object Repository/Product/productCheckBox(productName)',["productName":productName]))
 		actions.click(findTestObject('Object Repository/Product/productDeleteButton'))
 		WebUI.acceptAlert()
-		
+
 	}
 
 	@Keyword
@@ -143,6 +148,27 @@ public class Product {
 
 		WebUI.scrollToElement(findTestObject('Object Repository/Product/ProductEditPage/ProductAssets/ProductAssets'), 30)
 	}
+
+	@Keyword
+	def clickDeleteButtonInProductEditPage(){
+
+		actions.click(findTestObject('Object Repository/Product/ProductEditPage/deleteButton'))
+	}
+	
+	@Keyword
+	def clickCloseButtonInProductEditPage(){
+
+		actions.click(findTestObject('Object Repository/Product/ProductEditPage/closeButton'))
+	}
+	
+	@Keyword
+	def verifyAddProductButton(){
+
+		verifications.verifyElementPresent(findTestObject('Object Repository/Product/addProductButton'), "Add product button is not present")
+	}
+
+
+
 
 	@Keyword
 	def dragAndDrop(int startPosition, int endPosition) {
@@ -162,25 +188,25 @@ public class Product {
 
 		sleep(5000)
 		println "entered into drag and drop"
-		
-		
-		
+
+
+
 		//WebUI.mouse
 		//WebUI.dragAndDropByOffset(findTestObject('Object Repository/Product/ProductEditPage/ProductAssets/source(position)'),800,0)
-		
+
 		def source = WebUiCommonHelper.findWebElement(findTestObject('Object Repository/Product/ProductEditPage/ProductAssets/source(position)',["id":sourceId]), 30)
 		def target = WebUiCommonHelper.findWebElement(findTestObject('Object Repository/Product/ProductEditPage/ProductAssets/destination(position)',["id":targetId]), 30)
-		
-		
+
+
 		//WebUI.dragAndDropToObject(findTestObject('Object Repository/Product/ProductEditPage/ProductAssets/source(position)',["id":sourceId]),
 		//findTestObject('Object Repository/Product/ProductEditPage/ProductAssets/destination(position)',["id":targetId]))
 
 		Actions build = new Actions(driver)
-		.moveToElement(source)
-		.clickAndHold(source)
-		.moveToElement(target)
-		.release()
-		.perform()
+				.moveToElement(source)
+				.clickAndHold(source)
+				.moveToElement(target)
+				.release()
+				.perform()
 		println "performed"
 	}
 }
