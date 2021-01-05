@@ -19,3 +19,5 @@ CustomKeywords.'pages.Brand.clickBrand'()
 
 def brandName = CustomKeywords.'pages.Brand.addBrand'()
 
+CustomKeywords.'pages.Brand.verifyTheBrandCreated'(brandName)
+

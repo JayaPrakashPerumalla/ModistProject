@@ -10,7 +10,7 @@ import webAction.WebAction
 public class Brand {
 
 	WebAction actions = new WebAction()
-	Verification verify = new Verification() 
+	Verification verify = new Verification()
 	Random random = new Random()
 
 	@Keyword
@@ -27,16 +27,17 @@ public class Brand {
 		actions.sendKeys(findTestObject('Object Repository/Brand/AddBrandPopup/name'),brandName)
 
 		actions.click(findTestObject('Object Repository/Brand/AddBrandPopup/AddBrandButtonInAddBrandPopup'))
-		
+
 		return brandName
 	}
-	
-	def search(String brandName) { 
+
+	def search(String brandName) {
 		actions.sendKeys(findTestObject('Object Repository/Brand/search'),brandName)
 	}
-	
+
 	@Keyword
 	def verifyTheBrandCreated(String brandName) {
-		verify.verifyElementPresent(findTestObject(''),'the brand')
+		search(brandName)
+		verify.verifyElementPresent(findTestObject('Object Repository/Brand/createdBrand(brandName)',["brandName":brandName]),'the brand '+brandName+'not created')
 	}
 }
