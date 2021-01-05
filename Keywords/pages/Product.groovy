@@ -46,6 +46,24 @@ public class Product {
 		actions.click(findTestObject('Object Repository/Product/addproductButtonInAddProductPopUp'))
 		return 	productName
 	}
+	
+	@Keyword
+	def getRandomProductNmae() {
+
+		clickOnProductTab()
+		def productCount = actions.getElementCount(findTestObject('Object Repository/Product/productsCount'))
+		if(productCount == 0)
+		{
+			//create or add product
+			return addProduct()
+		}
+		else 
+		{
+			def index = random.nextInt(productCount)
+		  def productName =  WebUI.getText(findTestObject('Object Repository/Product/randomProduct(index)',["index":index]))
+		  return productName
+		}
+	}
 
 
 
@@ -59,6 +77,13 @@ public class Product {
 
 		searchForAProduct(productName)
 		verifications.verifyElementPresent(findTestObject('Object Repository/Product/productName(Name)',["productName":productName]), "The product "+productName+" is not added in the list" )
+	}
+	
+	@Keyword
+	def verifyProductNotPresent(String productName) {
+
+		searchForAProduct(productName)
+		verifications.verifyElementNotPresent(findTestObject('Object Repository/Product/productName(Name)',["productName":productName]), "The product "+productName+" is still shown in list" )
 	}
 
 	@Keyword
@@ -79,6 +104,29 @@ public class Product {
 		searchForAProduct(productName)
 		WebUI.scrollToElement(findTestObject('Object Repository/Product/productName(Name)',["productName":productName]),30)
 		actions.click(findTestObject('Object Repository/Product/productName(Name)',["productName":productName]))
+	}
+	
+	@Keyword
+	def editProductName(){
+		
+		def editedNameName = "RandomProduct"+random.nextInt(1000)
+		WebUI.delay(5)
+		WebUI.clearText(findTestObject('Object Repository/Product/ProductEditPage/productNameInput'))
+		actions.sendKeys(findTestObject('Object Repository/Product/ProductEditPage/productNameInput'), editedNameName)
+		actions.click(findTestObject('Object Repository/Product/ProductEditPage/saveChangesButton'))
+		actions.click(findTestObject('Object Repository/Product/ProductEditPage/closeButton'))
+		return editedNameName
+
+	}
+	
+	@Keyword
+	def deleteProduct(def productName){
+		
+		searchForAProduct(productName)
+		actions.click(findTestObject('Object Repository/Product/productCheckBox(productName)',["productName":productName]))
+		actions.click(findTestObject('Object Repository/Product/productDeleteButton'))
+		WebUI.acceptAlert()
+		
 	}
 
 	@Keyword
