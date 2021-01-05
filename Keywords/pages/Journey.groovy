@@ -64,7 +64,7 @@ public class Journey {
 		searchJourney(journeyName)
 		verifications.verifyElementNotPresent(findTestObject('Object Repository/Journey/JourneyName(journeyName)',["journeyName":journeyName]), " The expected "+journeyName+ " is not deleted ")
 	}
-	
+
 	@Keyword
 	def verifyJourneyCloned(def journeyName) {
 
@@ -75,7 +75,7 @@ public class Journey {
 
 		verifications.verifyElementPresent(findTestObject('Object Repository/Journey/journey cloning/cloned Journey (journeyName))',["journeyName":duplicatejourneyName]), " The expected "+duplicatejourneyName+ " is not Cloned ")
 	}
-	
+
 	@Keyword
 	def cloneJourney(String journeyName) {
 
@@ -87,5 +87,4 @@ public class Journey {
 
 		actions.click(findTestObject('Object Repository/Journey/journey cloning/cloneButton'))
 	}
-	
 }

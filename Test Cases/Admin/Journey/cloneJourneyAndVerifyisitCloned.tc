@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>cloning of journey</name>
+   <name>cloneJourneyAndVerifyisitCloned</name>
    <tag></tag>
    <comment></comment>
    <testCaseGuid>5ce9c1ab-f336-44f5-8487-2beb9b2d20e9</testCaseGuid>
