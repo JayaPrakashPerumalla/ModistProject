@@ -111,6 +111,8 @@ public class Verification {
 
 	@Keyword
 	def getUrlAndVerify(String name, String failuredescription ) {
+
+		WebUI.delay(10)
 		if(!(WebUI.getUrl().endsWith(name))) {
 			WebUI.takeScreenshot()
 			KeywordUtil.markFailed(failuredescription)

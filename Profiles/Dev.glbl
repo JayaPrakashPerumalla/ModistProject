@@ -24,4 +24,14 @@
       <initValue>30</initValue>
       <name>defaultWaitTime</name>
    </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'naresh1.k@qualitlabs.com'</initValue>
+      <name>wrongEmail</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'Qualitlabs1?@'</initValue>
+      <name>wrongPassword</name>
+   </GlobalVariableEntity>
 </GlobalVariableEntities>

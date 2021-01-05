@@ -30,10 +30,5 @@ public class LoginForAdminDevEnvironment {
 		WebUI.delay(seconds)
 	}
 
-	@Keyword
-	def OpenWebSite() {
-		WebUI.openBrowser('')
-		WebUI.maximizeWindow()
-		WebUI.navigateToUrl(GlobalVariable.Url)
-	}
+	
 }
