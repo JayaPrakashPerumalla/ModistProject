@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>destination(position)</name>
+   <name>AddBrandbutton</name>
    <tag></tag>
-   <elementGuidId>0e05f1b8-379a-4ee9-b2d3-81cfaca6742b</elementGuidId>
+   <elementGuidId>2a4d50bf-4b1d-40ff-8397-2bdeeb00049c</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//div[@data-rbd-droppable-id='${id}']//img</value>
+         <value>//header[@class='sc-iemXMA fsZSkE']//div//button//span</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,6 +17,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//div[@data-rbd-droppable-id='${id}']//img</value>
+      <value>//header[@class='sc-iemXMA fsZSkE']//div//button//span</value>
    </webElementProperties>
 </WebElementEntity>

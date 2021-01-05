@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>destination(position)</name>
+   <name>name</name>
    <tag></tag>
-   <elementGuidId>0e05f1b8-379a-4ee9-b2d3-81cfaca6742b</elementGuidId>
+   <elementGuidId>bb3c28e0-8f9b-4c0a-a583-3e6f15bc82c8</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//div[@data-rbd-droppable-id='${id}']//img</value>
+         <value>//label[text()='Name']/..//input</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,6 +17,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//div[@data-rbd-droppable-id='${id}']//img</value>
+      <value>//label[text()='Name']/..//input</value>
    </webElementProperties>
 </WebElementEntity>

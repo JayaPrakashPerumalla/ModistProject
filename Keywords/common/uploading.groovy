@@ -22,8 +22,6 @@ public class uploading {
 	
 	@Keyword
 	def uploadProfilePicture() {
-		
-		actions.click(findTestObject('Object Repository/OptionsUnderProfileIcon/Profile Options/ChooseFile for profile picture'))
 
 		WebUI.delay(5)
 
