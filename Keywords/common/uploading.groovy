@@ -5,15 +5,25 @@ import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
 import com.kms.katalon.core.annotation.Keyword
 import com.kms.katalon.core.webui.common.WebUiCommonHelper
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
-
+import webAction.WebAction
 public class uploading {
-
+	
+	WebAction actions= new WebAction()
+	
+	@Keyword
+	def clickProfileIcon() {
+		actions.click(findTestObject('Object Repository/OptionsUnderProfileIcon/ProfileIcon'))
+	}
+	
+	@Keyword
+	def clickOnProfile() {
+		actions.click(findTestObject('Object Repository/OptionsUnderProfileIcon/Profile Options/Profile'))
+	}
+	
 	@Keyword
 	def uploadProfilePicture() {
-
-		WebUI.click(findTestObject('Object Repository/OptionsUnderProfileIcon/Profile Options/Profile'))
-
-		WebUI.click(findTestObject('Object Repository/OptionsUnderProfileIcon/Profile Options/ChooseFile for profile picture'))
+		
+		actions.click(findTestObject('Object Repository/OptionsUnderProfileIcon/Profile Options/ChooseFile for profile picture'))
 
 		WebUI.delay(5)
 
@@ -23,7 +33,7 @@ public class uploading {
 	}
 
 	@Keyword
-	def getHeaders() {
+	def getHeaders(String elementName) {
 		int value = WebUiCommonHelper.findWebElements(findTestObject('Object Repository/CommonButtons/headers'), 30).size()
 
 		for(int i=0;i<value;i++) {

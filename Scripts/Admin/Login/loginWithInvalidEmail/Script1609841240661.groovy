@@ -15,8 +15,6 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 
-CustomKeywords.'pages.tabs.clickOnTab'('Product')
+// login() should be disabled in loginTestListener
 
-CustomKeywords.'pages.Product.openAnyExistingProduct'('product 123')
-
-CustomKeywords.'pages.Product.dragAndDrop'(1, 3)
+CustomKeywords.'login.LoginForAdminDevEnvironment.login'(GlobalVariable.wrongEmail,GlobalVariable.Password)

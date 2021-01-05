@@ -15,8 +15,5 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 
-CustomKeywords.'logout.LogoutForAdminDevEnvironment.clickingOnProfileIcon'()
-
-CustomKeywords.'logout.LogoutForAdminDevEnvironment.logout'()
-
-CustomKeywords.'logout.LogoutForAdminDevEnvironment.closeBrowser'()
+// login() should be disabled in loginTestListener
+CustomKeywords.'login.LoginForAdminDevEnvironment.login'(GlobalVariable.Email,GlobalVariable.Password)
