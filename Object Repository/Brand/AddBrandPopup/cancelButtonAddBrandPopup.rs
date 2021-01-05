@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>destination(position)</name>
+   <name>cancelButtonAddBrandPopup</name>
    <tag></tag>
-   <elementGuidId>0e05f1b8-379a-4ee9-b2d3-81cfaca6742b</elementGuidId>
+   <elementGuidId>1c16bebf-0720-4f6e-a12e-957563720b16</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//div[@data-rbd-droppable-id='${id}']//img</value>
+         <value>//div[@class='modal-footer']//button[text()='Cancel']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,6 +17,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//div[@data-rbd-droppable-id='${id}']//img</value>
+      <value>//div[@class='modal-footer']//button[text()='Cancel']</value>
    </webElementProperties>
 </WebElementEntity>

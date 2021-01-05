@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>destination(position)</name>
+   <name>AddBrandButtonInAddBrandPopup</name>
    <tag></tag>
-   <elementGuidId>0e05f1b8-379a-4ee9-b2d3-81cfaca6742b</elementGuidId>
+   <elementGuidId>ef1da8eb-51e3-42d7-9b3c-7af2366e9fcd</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//div[@data-rbd-droppable-id='${id}']//img</value>
+         <value>(//div[@class='modal-footer']//button)[2]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,6 +17,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//div[@data-rbd-droppable-id='${id}']//img</value>
+      <value>(//div[@class='modal-footer']//button)[2]</value>
    </webElementProperties>
 </WebElementEntity>

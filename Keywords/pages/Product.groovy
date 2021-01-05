@@ -2,8 +2,12 @@ package pages
 
 import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
 
+import org.openqa.selenium.WebDriver
+import org.openqa.selenium.interactions.Actions
+import org.openqa.selenium.interactions.Action
 import com.kms.katalon.core.annotation.Keyword
 import com.kms.katalon.core.webui.common.WebUiCommonHelper
+import com.kms.katalon.core.webui.driver.DriverFactory
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 
 import verification.Verification
@@ -15,6 +19,8 @@ public class Product {
 	WebAction actions = new WebAction()
 	Random random = new Random()
 	Verification verifications = new Verification()
+	WebDriver driver = DriverFactory.getWebDriver()
+	
 
 
 	@Keyword
@@ -132,23 +138,49 @@ public class Product {
 		}
 	}
 
-	@Keyword
+
 	def navigateToProductAssets(){
 
 		WebUI.scrollToElement(findTestObject('Object Repository/Product/ProductEditPage/ProductAssets/ProductAssets'), 30)
 	}
 
 	@Keyword
-	def dragAndDrop(int startPosition,int endPosition) {
+	def dragAndDrop(int startPosition, int endPosition) {
 
 		navigateToProductAssets()
-		int count=WebUiCommonHelper.findWebElements(findTestObject('Object Repository/Product/ProductEditPage/ProductAssets/From'), 30).size()
-		println count
-		if(count > 1) {
-			if((startPosition<=count)&&(endPosition<=count)) {
-				//WebUI.dragAndDropByOffset(findTestObject('Object Repository/Product/ProductEditPage/ProductAssets/source(position)'),800,0)
-				WebUI.dragAndDropToObject(findTestObject('Object Repository/Product/ProductEditPage/ProductAssets/source(position)'),findTestObject('Object Repository/Product/ProductEditPage/ProductAssets/destination(position)'))
-			}
-		}
+
+		//int count=WebUiCommonHelper.findWebElements(findTestObject('Object Repository/Product/ProductEditPage/ProductAssets/From'), 30).size()
+		//println count
+
+		int sourceId = Integer.parseInt(WebUI.getAttribute(findTestObject('Object Repository/Product/ProductEditPage/ProductAssets/From'),'data-rbd-droppable-id'))
+		int targetId = Integer.parseInt(WebUI.getAttribute(findTestObject('Object Repository/Product/ProductEditPage/ProductAssets/dest'),'data-rbd-droppable-id'))
+
+		println sourceId
+		println targetId
+
+
+
+		sleep(5000)
+		println "entered into drag and drop"
+		
+		
+		
+		//WebUI.mouse
+		//WebUI.dragAndDropByOffset(findTestObject('Object Repository/Product/ProductEditPage/ProductAssets/source(position)'),800,0)
+		
+		def source = WebUiCommonHelper.findWebElement(findTestObject('Object Repository/Product/ProductEditPage/ProductAssets/source(position)',["id":sourceId]), 30)
+		def target = WebUiCommonHelper.findWebElement(findTestObject('Object Repository/Product/ProductEditPage/ProductAssets/destination(position)',["id":targetId]), 30)
+		
+		
+		//WebUI.dragAndDropToObject(findTestObject('Object Repository/Product/ProductEditPage/ProductAssets/source(position)',["id":sourceId]),
+		//findTestObject('Object Repository/Product/ProductEditPage/ProductAssets/destination(position)',["id":targetId]))
+
+		Actions build = new Actions(driver)
+		.moveToElement(source)
+		.clickAndHold(source)
+		.moveToElement(target)
+		.release()
+		.perform()
+		println "performed"
 	}
 }

@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>From</name>
+   <name>dest</name>
    <tag></tag>
-   <elementGuidId>f2359db5-4545-41c7-a9d0-7d4efc9eec8b</elementGuidId>
+   <elementGuidId>39befff6-54d5-4719-ad2f-f6925699f1a2</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>(//label[text()='Product Assets']/..//div[@class='droppable-container'])[1]</value>
+         <value>(//label[text()='Product Assets']/..//div[@class='droppable-container'])[3]</value>
       </entry>
       <entry>
          <key>BASIC</key>
+         <value></value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
