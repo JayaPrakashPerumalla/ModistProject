@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>productCheckBox(productName)</name>
+   <tag></tag>
+   <elementGuidId>f1927cf2-b735-46d9-bdff-2b31f5c2784b</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>//div[text()='${productName}']/../..//input[@type=&quot;checkbox&quot;]</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//div[text()='${productName}']/../..//input[@type=&quot;checkbox&quot;]</value>
+   </webElementProperties>
+</WebElementEntity>

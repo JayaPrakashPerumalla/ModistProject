@@ -18,16 +18,7 @@ import internal.GlobalVariable as GlobalVariable
 
 def productname = CustomKeywords.'pages.Product.addProduct'()
 
-CustomKeywords.'pages.Product.openAnyExistingProduct'(productname)
+CustomKeywords.'pages.Product.deleteProduct'(productname)
 
-def editedName = CustomKeywords.'pages.Product.editProductName'()
-
-CustomKeywords.'pages.Product.verifyProductAdded'(editedName)
 
 CustomKeywords.'pages.Product.verifyProductNotPresent'(productname)
-
-
-
-
-
-
