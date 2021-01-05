@@ -1,8 +1,10 @@
 package pages
 
 import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
-import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
+
 import com.kms.katalon.core.annotation.Keyword
+import com.kms.katalon.core.model.FailureHandling
+import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 
 import verification.Verification
 import webAction.WebAction
@@ -71,17 +73,17 @@ public class Journey {
 		String duplicatejourneyName = journeyName+' '+'(duplicate)'
 		searchJourney(duplicatejourneyName)
 
-		WebUI.waitForElementPresent(findTestObject('Object Repository/Journey/journey cloning/cloned Journey (journeyName))',["journeyName":duplicatejourneyName]), 30, FailureHandling.OPTIONAL)
+		WebUI.waitForElementPresent(findTestObject('Object Repository/Journey/journey cloning/clonedJourney(journeyName)',["journeyName":duplicatejourneyName]), 30, FailureHandling.OPTIONAL)
 
-		verifications.verifyElementPresent(findTestObject('Object Repository/Journey/journey cloning/cloned Journey (journeyName))',["journeyName":duplicatejourneyName]), " The expected "+duplicatejourneyName+ " is not Cloned ")
+		verifications.verifyElementPresent(findTestObject('Object Repository/Journey/journey cloning/clonedJourney(journeyName)',["journeyName":duplicatejourneyName]), " The expected "+duplicatejourneyName+ " is not Cloned ")
 	}
 
 	@Keyword
 	def cloneJourney(String journeyName) {
 
 		searchJourney(journeyName)
-
-		verifications.verifyElementPresent(findTestObject('Journey/journey cloning/threedots(journeyName)',["journeyName":journeyName]),'The expected journey '+journeyName+' is not available')
+		
+		WebUI.delay(30)
 
 		actions.click(findTestObject('Journey/journey cloning/threedots(journeyName)',["journeyName":journeyName]))
 
