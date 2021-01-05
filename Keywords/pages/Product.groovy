@@ -40,6 +40,24 @@ public class Product {
 		actions.click(findTestObject('Object Repository/Product/addproductButtonInAddProductPopUp'))
 		return 	productName
 	}
+	
+	@Keyword
+	def getRandomProductNmae() {
+
+		clickOnProductTab()
+		def productCount = actions.getElementCount(findTestObject('Object Repository/Product/productsCount'))
+		if(productCount == 0)
+		{
+			//create or add product
+			return addProduct()
+		}
+		else 
+		{
+			def index = random.nextInt(productCount)
+		  def productName =  WebUI.getText(findTestObject('Object Repository/Product/randomProduct(index)',["index":index]))
+		  return productName
+		}
+	}
 
 
 
