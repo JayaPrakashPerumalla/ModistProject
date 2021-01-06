@@ -166,42 +166,13 @@ public class Product {
 
 
 	@Keyword
-	def dragAndDrop(int startPosition, int endPosition) {
+	def dragAndDrop() {
 
 		navigateToProductAssets()
 
-		//int count=WebUiCommonHelper.findWebElements(findTestObject('Object Repository/Product/ProductEditPage/ProductAssets/From'), 30).size()
-		//println count
-
 		int sourceId = Integer.parseInt(WebUI.getAttribute(findTestObject('Object Repository/Product/ProductEditPage/ProductAssets/From'),'data-rbd-droppable-id'))
 		int targetId = Integer.parseInt(WebUI.getAttribute(findTestObject('Object Repository/Product/ProductEditPage/ProductAssets/dest'),'data-rbd-droppable-id'))
-
 		println sourceId
-		println targetId
-
-
-
-		sleep(5000)
-		println "entered into drag and drop"
-
-
-
-		//WebUI.mouse
-		//WebUI.dragAndDropByOffset(findTestObject('Object Repository/Product/ProductEditPage/ProductAssets/source(position)'),800,0)
-
-		//def source = WebUiCommonHelper.findWebElement(findTestObject('Object Repository/Product/ProductEditPage/ProductAssets/source(position)',["id":sourceId]), 30)
-		//def target = WebUiCommonHelper.findWebElement(findTestObject('Object Repository/Product/ProductEditPage/ProductAssets/destination(position)',["id":targetId]), 30)
-
-	WebUI.dragAndDropByOffset(findTestObject('Object Repository/Product/ProductEditPage/ProductAssets/source(position)',["id":sourceId]), 50, 50)
-		//WebUI.dragAndDropToObject(findTestObject('Object Repository/Product/ProductEditPage/ProductAssets/source(position)',["id":sourceId]),
-		//findTestObject('Object Repository/Product/ProductEditPage/ProductAssets/destination(position)',["id":targetId]))
-
-		/*Actions build = new Actions(driver)
-				.moveToElement(source)
-				.clickAndHold(source)
-				.moveToElement(target)
-				.release()
-				.perform()
-		println "performed"*/
+		WebUI.dragAndDropByOffset(findTestObject('Object Repository/Product/ProductEditPage/ProductAssets/source(position)',["id":sourceId]), 50, 50)
 	}
 }

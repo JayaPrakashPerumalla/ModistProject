@@ -166,14 +166,43 @@ public class Journey {
 	def clickEnterButton() {
 		actions.click(findTestObject('Object Repository/Journey/JourneyPortal/EnterButton'))
 	}
-	
+
 	@Keyword
 	def sectionPageVerification() {
 		verifications.verifyElementPresent(findTestObject('Object Repository/Journey/JourneyPortal/Section/sectionPage'),"The display is not a SectionPage")
 	}
-	
+
 	@Keyword
 	def errorLoginCheck() {
 		verifications.verifyElementPresent(findTestObject('Object Repository/Journey/JourneyPortal/warningMessageForInvalidAccessCode'), "your have entered a valid access code")
+	}
+
+	@Keyword
+	def typeOfBackGroundToScrollingBackground() {
+
+		actions.scrollToElement(findTestObject('Object Repository/Journey/typeField/clickOnType'))
+
+		actions.click(findTestObject('Object Repository/Journey/typeField/clickOnType'))
+
+		actions.click(findTestObject('Object Repository/Journey/typeField/ScrollingBackGround'))
+
+		clickSaveButton()
+	}
+
+	@Keyword
+	def typeOfBackGroundToFixed() {
+
+		actions.scrollToElement(findTestObject('Object Repository/Journey/typeField/clickOnType'))
+
+		actions.click(findTestObject('Object Repository/Journey/typeField/clickOnType'))
+
+		actions.click(findTestObject('Object Repository/Journey/typeField/FixedBackGround'))
+
+		clickSaveButton()
+	}
+
+	def clickSaveButton() {
+
+		actions.click(findTestObject('Object Repository/CommonButtons/saveButton'))
 	}
 }
