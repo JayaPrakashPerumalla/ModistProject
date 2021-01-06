@@ -123,28 +123,47 @@ public class Journey {
 		WebUI.delay(15)
 		actions.click(findTestObject('Object Repository/CommonButtons/Close'))
 	}
-	
+
 	@Keyword
 	def getRandomJourneyName() {
-		
+
 		int count = actions.getElementCount(findTestObject('Object Repository/Journey/toGetJourneysCount'))
 		int index = random.nextInt(count)
 		def journeyName = WebUI.getText(findTestObject('Object Repository/Journey/toPickrandomJourney(index)',["index":index+1]))
 		return journeyName
 	}
-	
+
 	@Keyword
 	def getRandomAccessCode() {
 		String accessCode = 'access'+random.nextInt(20)
 		return accessCode
 	}
-	
+
 	@Keyword
 	def getRandomCount() {
 		int count = random.nextInt(10)
 		return count
 	}
+
 	@Keyword
-	def getExistinAccesscode() {
+	def getExistingJourneyAccesscode(String journeyName) {
+
+		searchJourney(journeyName)
+		openExistingJourney(journeyName)
+		actions.scrollToElement(findTestObject('Object Repository/Journey/Current Access Codes/currentAccessCodeField'))
+		int count = actions.getElementCount(findTestObject('Object Repository/Journey/Current Access Codes/getAccessCodesCount'))
+		int index = random.nextInt(count)
+		String accessCode = WebUI.getText(findTestObject('Object Repository/Journey/Current Access Codes/getAccessCodeText(index)',["index":index+1]))
+		return accessCode
+	}
+
+	@Keyword
+	def enterAccessCodeInJourney(String accessCode) {
+		actions.sendKeys(findTestObject('Object Repository/Journey/JourneyPortal/enterAccessCode'), accessCode)
+	}
+
+	@Keyword
+	def clickEnterButton() {
+		actions.click(findTestObject('Object Repository/Journey/JourneyPortal/EnterButton'))
 	}
 }

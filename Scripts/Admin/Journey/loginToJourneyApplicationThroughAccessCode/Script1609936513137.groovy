@@ -16,10 +16,17 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 
 
-CustomKeywords.'pages.Journey.openExistingJourney'('journey 1')
+CustomKeywords.'pages.Journey.clickOnJourneyTab'()
 
-CustomKeywords.create
+String journeyName = CustomKeywords.'pages.Journey.getRandomJourneyName'()
+
+String accessCode = CustomKeywords.'pages.Journey.getExistingJourneyAccesscode'(journeyName)
+
 CustomKeywords.'login.LoginForJourneyApplication.loginToJourneyApplication'()
+
+CustomKeywords.'pages.Journey.enterAccessCodeInJourney'(accessCode)
+
+CustomKeywords.'pages.Journey.clickEnterButton'()
 
 
 
