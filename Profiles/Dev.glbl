@@ -34,4 +34,9 @@
       <initValue>'Qualitlabs1?@'</initValue>
       <name>wrongPassword</name>
    </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'https://qualitlabs.dev.modist.co/'</initValue>
+      <name>journeyUrl</name>
+   </GlobalVariableEntity>
 </GlobalVariableEntities>

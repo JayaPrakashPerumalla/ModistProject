@@ -2,6 +2,8 @@ package pages
 
 import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
 
+import org.codehaus.groovy.tools.shell.completion.KeywordSyntaxCompletor
+
 import com.kms.katalon.core.annotation.Keyword
 import com.kms.katalon.core.model.FailureHandling
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
@@ -23,7 +25,7 @@ public class Journey {
 		actions.click(findTestObject('Object Repository/Journey/Journeytab'))
 	}
 
-	@Keyword
+
 	def clickAddJourneyButton() {
 
 		actions.click(findTestObject('Object Repository/Journey/Add Journey/AddJourneyButton'))
@@ -40,6 +42,12 @@ public class Journey {
 	}
 
 	@Keyword
+	def openExistingJourney(String journeyName) {
+
+		searchJourney(journeyName)
+		actions.click(findTestObject('Object Repository/Journey/clickVerifyingJourney(journeyName)',["journeyName":journeyName]))
+	}
+
 	def searchJourney(def journeyName) {
 
 		actions.sendKeys(findTestObject('Object Repository/Journey/journrySearchInput'), journeyName)
@@ -82,11 +90,61 @@ public class Journey {
 	def cloneJourney(String journeyName) {
 
 		searchJourney(journeyName)
-		
+
 		WebUI.delay(30)
 
 		actions.click(findTestObject('Journey/journey cloning/threedots(journeyName)',["journeyName":journeyName]))
 
 		actions.click(findTestObject('Object Repository/Journey/journey cloning/cloneButton'))
+	}
+
+	@Keyword
+	def createAccessCodeInJourney(String journeyName, String accesscode, String useLimit) {
+
+		searchJourney(journeyName)
+		WebUI.delay(30)
+		actions.click(findTestObject('Object Repository/Journey/clickVerifyingJourney(journeyName)',["journeyName":journeyName]))
+		actions.scrollToElement(findTestObject('Object Repository/Journey/Current Access Codes/currentAccessCodeField'))
+		actions.click(findTestObject('Object Repository/Journey/Current Access Codes/plusButton'))
+		actions.sendKeys(findTestObject('Object Repository/Journey/Current Access Codes/accessCode'), accesscode)
+		WebUI.sendKeys(findTestObject('Object Repository/Journey/Current Access Codes/codeUsageCount'), useLimit)
+		actions.click(findTestObject('Object Repository/Journey/Current Access Codes/getCodeButton'))
+		actions.click(findTestObject('Object Repository/CommonButtons/Close'))
+		return accesscode
+	}
+
+	@Keyword
+	def verifyTheCreatedAccessCode(String journeyName, String accesscode) {
+
+		searchJourney(journeyName)
+		openExistingJourney(journeyName)
+		actions.scrollToElement(findTestObject('Object Repository/Journey/Current Access Codes/currentAccessCodeField'))
+		verifications.verifyElementPresent(findTestObject('Object Repository/Journey/Current Access Codes/verify(code)',["code":accesscode]), 'The Code' +accesscode +' is not created')
+		WebUI.delay(15)
+		actions.click(findTestObject('Object Repository/CommonButtons/Close'))
+	}
+	
+	@Keyword
+	def getRandomJourneyName() {
+		
+		int count = actions.getElementCount(findTestObject('Object Repository/Journey/toGetJourneysCount'))
+		int index = random.nextInt(count)
+		def journeyName = WebUI.getText(findTestObject('Object Repository/Journey/toPickrandomJourney(index)',["index":index+1]))
+		return journeyName
+	}
+	
+	@Keyword
+	def getRandomAccessCode() {
+		String accessCode = 'access'+random.nextInt(20)
+		return accessCode
+	}
+	
+	@Keyword
+	def getRandomCount() {
+		int count = random.nextInt(10)
+		return count
+	}
+	@Keyword
+	def getExistinAccesscode() {
 	}
 }

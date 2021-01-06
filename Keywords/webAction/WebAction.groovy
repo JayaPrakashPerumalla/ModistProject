@@ -57,4 +57,9 @@ public class WebAction {
 		WebElement table = HTMLTableHelper.identifyTableByColumnHeaders(headers, 10,  FailureHandling.CONTINUE_ON_FAILURE)
 		return HTMLTableHelper.getColumnIndexByHeader(table, columName, FailureHandling.STOP_ON_FAILURE)
 	}
+
+	@Keyword
+	def scrollToElement(TestObject element) {
+		WebUI.scrollToElement(element, GlobalVariable.defaultWaitTime)
+	}
 }

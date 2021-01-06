@@ -52,16 +52,13 @@ public class Product {
 
 		clickOnProductTab()
 		def productCount = actions.getElementCount(findTestObject('Object Repository/Product/productsCount'))
-		if(productCount == 0)
-		{
+		if(productCount == 0) {
 			//create or add product
 			return addProduct()
 		}
-		else
-		{
+		else {
 			def index = random.nextInt(productCount)
-			if(index == 0)
-			{
+			if(index == 0) {
 				index = index +1
 			}
 			def productName =  WebUI.getText(findTestObject('Object Repository/Product/randomProduct(index)',["index":index]))
@@ -121,7 +118,6 @@ public class Product {
 		actions.click(findTestObject('Object Repository/Product/ProductEditPage/saveChangesButton'))
 		actions.click(findTestObject('Object Repository/Product/ProductEditPage/closeButton'))
 		return editedNameName
-
 	}
 
 	@Keyword
@@ -131,7 +127,6 @@ public class Product {
 		actions.click(findTestObject('Object Repository/Product/productCheckBox(productName)',["productName":productName]))
 		actions.click(findTestObject('Object Repository/Product/productDeleteButton'))
 		WebUI.acceptAlert()
-
 	}
 
 	@Keyword
@@ -154,13 +149,13 @@ public class Product {
 
 		actions.click(findTestObject('Object Repository/Product/ProductEditPage/deleteButton'))
 	}
-	
+
 	@Keyword
 	def clickCloseButtonInProductEditPage(){
 
 		actions.click(findTestObject('Object Repository/Product/ProductEditPage/closeButton'))
 	}
-	
+
 	@Keyword
 	def verifyAddProductButton(){
 
@@ -194,19 +189,19 @@ public class Product {
 		//WebUI.mouse
 		//WebUI.dragAndDropByOffset(findTestObject('Object Repository/Product/ProductEditPage/ProductAssets/source(position)'),800,0)
 
-		def source = WebUiCommonHelper.findWebElement(findTestObject('Object Repository/Product/ProductEditPage/ProductAssets/source(position)',["id":sourceId]), 30)
-		def target = WebUiCommonHelper.findWebElement(findTestObject('Object Repository/Product/ProductEditPage/ProductAssets/destination(position)',["id":targetId]), 30)
+		//def source = WebUiCommonHelper.findWebElement(findTestObject('Object Repository/Product/ProductEditPage/ProductAssets/source(position)',["id":sourceId]), 30)
+		//def target = WebUiCommonHelper.findWebElement(findTestObject('Object Repository/Product/ProductEditPage/ProductAssets/destination(position)',["id":targetId]), 30)
 
-
+	WebUI.dragAndDropByOffset(findTestObject('Object Repository/Product/ProductEditPage/ProductAssets/source(position)',["id":sourceId]), 50, 50)
 		//WebUI.dragAndDropToObject(findTestObject('Object Repository/Product/ProductEditPage/ProductAssets/source(position)',["id":sourceId]),
 		//findTestObject('Object Repository/Product/ProductEditPage/ProductAssets/destination(position)',["id":targetId]))
 
-		Actions build = new Actions(driver)
+		/*Actions build = new Actions(driver)
 				.moveToElement(source)
 				.clickAndHold(source)
 				.moveToElement(target)
 				.release()
 				.perform()
-		println "performed"
+		println "performed"*/
 	}
 }

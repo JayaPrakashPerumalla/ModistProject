@@ -21,9 +21,15 @@ import com.kms.katalon.core.webui.common.WebUiCommonHelper
 
 
 import internal.GlobalVariable
+import verification.Verification
+import webAction.WebAction
 
 public class Asset {
 
+	WebAction actions = new WebAction()
+	Random random = new Random()
+	Verification verifications = new Verification()
+	
 	@Keyword
 	def elementsInTheAssetTable() {
 		int count = WebUiCommonHelper.findWebElements(findTestObject('Object Repository/Asset/Verify elemetns in Asset/elements in Asset Table'), 30).size()
@@ -31,5 +37,30 @@ public class Asset {
 			String elementName = WebUI.getText(findTestObject('Object Repository/Asset/Verify elemetns in Asset/Printing element name in the table',["index":i]))
 			println elementName
 		}
+	}
+	@Keyword
+	def clickAsset() {
+		actions.click(findTestObject('Object Repository/Asset/assetTab'))
+	}
+	
+	@Keyword
+	def openExistingAsset() {
+		int count = WebUiCommonHelper.findWebElements(findTestObject('Object Repository/Asset/getIndexToPickRandomAsset'), 30).size()
+		int index = random.nextInt(count)
+		actions.click(findTestObject('Object Repository/Asset/openExistingAsset(index)',["index":index+1]))
+	}
+	@Keyword
+	def verfiyFieldsInAssetEditPage() {
+		
+		verifications.verifyElementPresent(findTestObject('Object Repository/Asset/AssetEdit/verifyContentField'),'The field Content is not present')
+		verifications.verifyElementPresent(findTestObject('Object Repository/Asset/AssetEdit/verifyPhotoField'),'The field Photo is not present')
+		verifications.verifyElementPresent(findTestObject('Object Repository/Asset/AssetEdit/verifyTagsField'),'The field Tags is not present')
+		verifications.verifyElementPresent(findTestObject('Object Repository/Asset/AssetEdit/verifySourceField'),'The field Source is not present')
+		verifications.verifyElementPresent(findTestObject('Object Repository/Asset/AssetEdit/verifyTenantField'),'The field Tenant is not present')
+		verifications.verifyElementPresent(findTestObject('Object Repository/Asset/AssetEdit/verifyPublicField'),'The field Public is not present')
+		verifications.verifyElementPresent(findTestObject('Object Repository/Asset/AssetEdit/verifyAuthorField'),'The field Author is not present')
+		verifications.verifyElementPresent(findTestObject('Object Repository/Asset/AssetEdit/verifyCreatedField'),'The field Created is not present')
+		verifications.verifyElementPresent(findTestObject('Object Repository/Asset/AssetEdit/verifyUpdatedField'),'The field Updated is not present')
+				
 	}
 }

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>clearButton</name>
+   <tag></tag>
+   <elementGuidId>87fc6b67-24f0-43d9-97c4-27be10cd192d</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>//div[@class='table-toolbar-wrapper']//button[@type='clearButton']</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//div[@class='table-toolbar-wrapper']//button[@type='clearButton']</value>
+   </webElementProperties>
+</WebElementEntity>

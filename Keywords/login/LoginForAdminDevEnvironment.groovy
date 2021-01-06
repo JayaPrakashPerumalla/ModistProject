@@ -29,6 +29,4 @@ public class LoginForAdminDevEnvironment {
 	def wait(int seconds) {
 		WebUI.delay(seconds)
 	}
-
-	
 }
