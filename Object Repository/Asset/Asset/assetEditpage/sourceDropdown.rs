@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>sourceDropdown</name>
+   <tag></tag>
+   <elementGuidId>1d285768-9ae8-4bbc-bd29-5ac21b241d83</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>//span[@class=&quot;dropdown-heading-dropdown-arrow&quot;]</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//span[@class=&quot;dropdown-heading-dropdown-arrow&quot;]</value>
+   </webElementProperties>
+</WebElementEntity>

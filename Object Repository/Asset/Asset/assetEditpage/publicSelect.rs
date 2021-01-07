@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>publicSelect</name>
+   <tag></tag>
+   <elementGuidId>488de56d-ea6f-4d22-9be2-d13edd13a643</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>//label[text()=&quot;Public&quot;]/..//option[@value=&quot;${true/false}&quot;]</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//label[text()=&quot;Public&quot;]/..//option[@value=&quot;${true/false}&quot;]</value>
+   </webElementProperties>
+</WebElementEntity>
