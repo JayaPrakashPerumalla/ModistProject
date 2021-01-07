@@ -1,0 +1,46 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+Asset,Chrome 87.0.4280.141,,,2021-01-07 09:52:56,2021-01-07 09:55:46,2m - 49.778s,FAILED
+,,,,,,,
+Test Cases/Admin/Asset/addAssetAndVerify,Chrome 87.0.4280.141,,,2021-01-07 09:52:57,2021-01-07 09:53:13,16.316s,FAILED
+Start listener action : OpenWebSite,Chrome 87.0.4280.141,,,2021-01-07 09:52:57,2021-01-07 09:53:12,15.251s,PASSED
+assetName = pages.Asset.addAsset(),Chrome 87.0.4280.141,,,2021-01-07 09:53:12,2021-01-07 09:53:13,0.857s,FAILED
+,,,,,,,
+Test Cases/Admin/Asset/clickAnyAssetAndVerifyUrl,Chrome 87.0.4280.141,,,2021-01-07 09:53:13,2021-01-07 09:53:29,16.354s,FAILED
+Start listener action : OpenWebSite,Chrome 87.0.4280.141,,,2021-01-07 09:53:13,2021-01-07 09:53:28,15.451s,PASSED
+pages.Asset.clickAnyAsset(),Chrome 87.0.4280.141,,,2021-01-07 09:53:29,2021-01-07 09:53:29,0.709s,FAILED
+,,,,,,,
+Test Cases/Admin/Asset/deleteAssetAndVerify,Chrome 87.0.4280.141,,,2021-01-07 09:53:29,2021-01-07 09:53:44,15.095s,FAILED
+Start listener action : OpenWebSite,Chrome 87.0.4280.141,,,2021-01-07 09:53:29,2021-01-07 09:53:44,14.218s,PASSED
+assetName = pages.Asset.getRandomAssetName(),Chrome 87.0.4280.141,,,2021-01-07 09:53:44,2021-01-07 09:53:44,0.730s,FAILED
+,,,,,,,
+Test Cases/Admin/Asset/editSourceInAssetEditPageAndVerify,Chrome 87.0.4280.141,,,2021-01-07 09:53:44,2021-01-07 09:53:59,14.786s,FAILED
+Start listener action : OpenWebSite,Chrome 87.0.4280.141,,,2021-01-07 09:53:44,2021-01-07 09:53:58,13.841s,PASSED
+assetDetails = pages.Asset.editSourceInAssetPage(),Chrome 87.0.4280.141,,,2021-01-07 09:53:58,2021-01-07 09:53:59,0.764s,FAILED
+,,,,,,,
+Test Cases/Admin/Asset/functionalityOfCancleButtonInAddAssetPage,Chrome 87.0.4280.141,,,2021-01-07 09:53:59,2021-01-07 09:54:15,15.866s,FAILED
+Start listener action : OpenWebSite,Chrome 87.0.4280.141,,,2021-01-07 09:53:59,2021-01-07 09:54:14,14.997s,PASSED
+assetName = pages.Asset.cancleButtonInAddAsset(),Chrome 87.0.4280.141,,,2021-01-07 09:54:14,2021-01-07 09:54:15,0.729s,FAILED
+,,,,,,,
+Test Cases/Admin/Asset/functionalityOfCloseButtonandVerify,Chrome 87.0.4280.141,,,2021-01-07 09:54:15,2021-01-07 09:54:34,18.633s,FAILED
+Start listener action : OpenWebSite,Chrome 87.0.4280.141,,,2021-01-07 09:54:15,2021-01-07 09:54:33,17.766s,PASSED
+pages.Asset.closeButtonInAssetEditPage(),Chrome 87.0.4280.141,,,2021-01-07 09:54:33,2021-01-07 09:54:34,0.734s,FAILED
+,,,,,,,
+Test Cases/Admin/Asset/functionalityOfSearcBoxWithInvalidDetails,Chrome 87.0.4280.141,,,2021-01-07 09:54:34,2021-01-07 09:54:49,15.119s,FAILED
+Start listener action : OpenWebSite,Chrome 87.0.4280.141,,,2021-01-07 09:54:34,2021-01-07 09:54:48,14.173s,PASSED
+"pages.Asset.searchBoxInvalidName(""asdf"")",Chrome 87.0.4280.141,,,2021-01-07 09:54:48,2021-01-07 09:54:49,0.793s,FAILED
+,,,,,,,
+Test Cases/Admin/Asset/functionalityOfSearchBoxwithValidDetails,Chrome 87.0.4280.141,,,2021-01-07 09:54:49,2021-01-07 09:55:03,14.018s,FAILED
+Start listener action : OpenWebSite,Chrome 87.0.4280.141,,,2021-01-07 09:54:49,2021-01-07 09:55:02,13.140s,PASSED
+pages.Asset.searchBox(),Chrome 87.0.4280.141,,,2021-01-07 09:55:02,2021-01-07 09:55:03,0.735s,FAILED
+,,,,,,,
+Test Cases/Admin/Asset/VerifyAssetPage,Chrome 87.0.4280.141,,,2021-01-07 09:55:03,2021-01-07 09:55:17,13.970s,FAILED
+Start listener action : OpenWebSite,Chrome 87.0.4280.141,,,2021-01-07 09:55:03,2021-01-07 09:55:16,13.025s,PASSED
+pages.Asset.verifyAssetPage(),Chrome 87.0.4280.141,,,2021-01-07 09:55:16,2021-01-07 09:55:17,0.758s,FAILED
+,,,,,,,
+Test Cases/Admin/Asset/verifyElementsInAddAssetPopUp,Chrome 87.0.4280.141,,,2021-01-07 09:55:17,2021-01-07 09:55:31,14.329s,FAILED
+Start listener action : OpenWebSite,Chrome 87.0.4280.141,,,2021-01-07 09:55:17,2021-01-07 09:55:30,13.404s,PASSED
+pages.Asset.verifyAddAssetPopUp(),Chrome 87.0.4280.141,,,2021-01-07 09:55:30,2021-01-07 09:55:31,0.769s,FAILED
+,,,,,,,
+Test Cases/Admin/Asset/VerifyElementsInAssetEditPage,Chrome 87.0.4280.141,,,2021-01-07 09:55:31,2021-01-07 09:55:46,14.480s,FAILED
+Start listener action : OpenWebSite,Chrome 87.0.4280.141,,,2021-01-07 09:55:31,2021-01-07 09:55:45,13.550s,PASSED
+pages.Asset.verifyAssetEditPage(),Chrome 87.0.4280.141,,,2021-01-07 09:55:45,2021-01-07 09:55:46,0.769s,FAILED

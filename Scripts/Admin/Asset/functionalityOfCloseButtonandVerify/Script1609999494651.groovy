@@ -15,6 +15,6 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 
-CustomKeywords.'pack.Asset.closeButtonInAssetEditPage'()
+CustomKeywords.'pages.Asset.closeButtonInAssetEditPage'()
 
 CustomKeywords.'verification.Verification.getUrlAndVerify'("dashboard", "cancle button is not working")

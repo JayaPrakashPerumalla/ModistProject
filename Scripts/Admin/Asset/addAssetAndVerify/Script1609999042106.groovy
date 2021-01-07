@@ -15,7 +15,6 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 
-String assetName=CustomKeywords.'pack.Asset.addAsset'()
+String assetName=CustomKeywords.'pages.Asset.addAsset'()
 
-
-CustomKeywords.'pack.Asset.VerifyAssetCreated'(assetName)
+CustomKeywords.'pages.Asset.VerifyAssetCreated'(assetName)

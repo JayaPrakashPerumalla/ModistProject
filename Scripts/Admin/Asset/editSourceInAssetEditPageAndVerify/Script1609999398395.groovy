@@ -15,9 +15,9 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 
-Map assetDetails=CustomKeywords.'pack.Asset.editSourceInAssetPage'()
+Map assetDetails=CustomKeywords.'pages.Asset.editSourceInAssetPage'()
 def assetName = assetDetails.assetName
 
 def sourceName = assetDetails.sourceName
 
-CustomKeywords.'pack.Asset.verifyEditAsset'(assetName,sourceName)
+CustomKeywords.'pages.Asset.verifyEditAsset'(assetName, sourceName)
