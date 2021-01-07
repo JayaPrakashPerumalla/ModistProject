@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Verify Cancel button functionality in the Add Asset Source popup</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>856bc763-ff88-45fc-b651-544e62494429</testCaseGuid>
+</TestCaseEntity>
