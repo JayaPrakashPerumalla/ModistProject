@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>AddProductToCartMulitpleTimesAndVerifyTheProductsCount</name>
+   <name>AddProductToCartMulitpleTimesAndVerifyTheProductsCountAfterRefresh</name>
    <tag></tag>
    <comment></comment>
    <testCaseGuid>cd244cd5-a9ec-4518-b293-3664e89f087d</testCaseGuid>

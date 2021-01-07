@@ -89,7 +89,7 @@ public class JourneyPortal {
 
 	@Keyword
 	def getProductsCount() {
-		
+
 		String ProductsCount = WebUI.getAttribute(findTestObject('Object Repository/Journey/JourneyPortal/Product/toGetProductsCountInTheCart'), 'data-count')
 		int productsCount = Integer.parseInt(ProductsCount)
 		return productsCount
@@ -103,5 +103,19 @@ public class JourneyPortal {
 		else {
 			KeywordUtil.markFailed('you have selected '+orderCount+' products '+', but you have only '+productsCount)
 		}
+	}
+	
+	@Keyword
+	def clickBackButton() {
+		actions.click(findTestObject('Object Repository/Journey/JourneyPortal/Product/bakcButton'))
+	}
+	
+	@Keyword
+	def verifyingSectionProperties() {
+		
+		verifications.verifyElementPresent(findTestObject('Object Repository/Journey/JourneyPortal/Section/sectionTitle'), "section title is not available")
+		verifications.verifyElementPresent(findTestObject('Object Repository/Journey/JourneyPortal/Section/sectionImage'), "section image is not available")
+		verifications.verifyElementPresent(findTestObject('Object Repository/Journey/JourneyPortal/Section/sectionSubTitle'), "section sub-title is not available")
+		
 	}
 }
