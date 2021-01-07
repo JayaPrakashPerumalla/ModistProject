@@ -22,4 +22,10 @@ public class LoginForJourneyApplication {
 		WebUI.switchToWindowIndex(WebUI.getWindowIndex()+1)
 		WebUI.navigateToUrl(GlobalVariable.journeyUrl)
 	}
+
+	@Keyword
+	def reloadThePage() {
+		robot.keyPress(KeyEvent.VK_F5)
+		robot.keyRelease(KeyEvent.VK_F5)
+	}
 }

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>verifyCartIfNoItemsAvailable</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>e87a3335-cb2c-4b24-882d-a594c21f1ce0</testCaseGuid>
+</TestCaseEntity>

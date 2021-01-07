@@ -20,7 +20,7 @@ public class Journey {
 
 	Random random = new Random()
 
-
+	
 	@Keyword
 	def clickOnJourneyTab() {
 
