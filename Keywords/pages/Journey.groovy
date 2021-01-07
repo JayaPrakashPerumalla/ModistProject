@@ -119,7 +119,7 @@ public class Journey {
 
 	@Keyword
 	def verifyTheCreatedAccessCode(String journeyName, String accesscode) {
-		
+
 		openExistingJourney(journeyName)
 
 		actions.scrollToElement(findTestObject('Object Repository/Journey/Current Access Codes/currentAccessCodeField'))
@@ -130,7 +130,7 @@ public class Journey {
 
 	@Keyword
 	def getRandomJourneyName() {
-		
+
 		WebUI.delay(5)
 		int count = actions.getElementCount(findTestObject('Object Repository/Journey/toGetJourneysCount'))
 		int index = random.nextInt(count)
