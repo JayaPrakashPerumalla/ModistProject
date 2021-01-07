@@ -1,0 +1,38 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+Journey,Chrome 87.0.4280.141,,,2021-01-07 03:14:43,2021-01-07 03:18:40,3m - 56.889s,PASSED
+,,,,,,,
+Test Cases/Admin/Journey/addJournyAndVerifyItisAdded,Chrome 87.0.4280.141,,,2021-01-07 03:14:44,2021-01-07 03:15:14,30.238s,PASSED
+Start listener action : OpenWebSite,Chrome 87.0.4280.141,,,2021-01-07 03:14:44,2021-01-07 03:15:00,16.603s,PASSED
+pages.Journey.clickOnJourneyTab(),Chrome 87.0.4280.141,,,2021-01-07 03:15:01,2021-01-07 03:15:06,4.997s,PASSED
+journeyName = pages.Journey.addJorney(),Chrome 87.0.4280.141,,,2021-01-07 03:15:06,2021-01-07 03:15:10,4.334s,PASSED
+pages.Journey.verifyJourneyAdded(journeyName),Chrome 87.0.4280.141,,,2021-01-07 03:15:10,2021-01-07 03:15:14,3.792s,PASSED
+,,,,,,,
+Test Cases/Admin/Journey/cloneJourneyAndVerifyisitCloned,Chrome 87.0.4280.141,,,2021-01-07 03:15:14,2021-01-07 03:16:48,1m - 33.826s,PASSED
+Start listener action : OpenWebSite,Chrome 87.0.4280.141,,,2021-01-07 03:15:14,2021-01-07 03:15:27,13.157s,PASSED
+pages.Journey.clickOnJourneyTab(),Chrome 87.0.4280.141,,,2021-01-07 03:15:27,2021-01-07 03:15:31,3.541s,PASSED
+journeyName = pages.Journey.addJorney(),Chrome 87.0.4280.141,,,2021-01-07 03:15:31,2021-01-07 03:15:35,4.076s,PASSED
+pages.Journey.cloneJourney(journeyName),Chrome 87.0.4280.141,,,2021-01-07 03:15:35,2021-01-07 03:16:23,47.903s,PASSED
+pages.Journey.verifyJourneyCloned(journeyName),Chrome 87.0.4280.141,,,2021-01-07 03:16:23,2021-01-07 03:16:48,24.933s,PASSED
+,,,,,,,
+Test Cases/Admin/Journey/createAccessCodeForJourneyAndVerifyIsTheCodeSuccessfullyCreated,Chrome 87.0.4280.141,,,2021-01-07 03:16:48,2021-01-07 03:17:43,55.423s,PASSED
+Start listener action : OpenWebSite,Chrome 87.0.4280.141,,,2021-01-07 03:16:48,2021-01-07 03:17:02,13.830s,PASSED
+pages.Journey.clickOnJourneyTab(),Chrome 87.0.4280.141,,,2021-01-07 03:17:02,2021-01-07 03:17:05,3.705s,PASSED
+journeyName = pages.Journey.getRandomJourneyName(),Chrome 87.0.4280.141,,,2021-01-07 03:17:05,2021-01-07 03:17:12,6.158s,PASSED
+accessCode = pages.Journey.getRandomAccessCode(),Chrome 87.0.4280.141,,,2021-01-07 03:17:12,2021-01-07 03:17:12,0.001s,PASSED
+useLimit = pages.Journey.getRandomCount(),Chrome 87.0.4280.141,,,2021-01-07 03:17:12,2021-01-07 03:17:12,0.003s,PASSED
+"accessCode = pages.Journey.createAccessCodeInJourney(journeyName, accessCode, useLimit)",Chrome 87.0.4280.141,,,2021-01-07 03:17:12,2021-01-07 03:17:22,10.920s,PASSED
+"pages.Journey.verifyTheCreatedAccessCode(journeyName, accessCode)",Chrome 87.0.4280.141,,,2021-01-07 03:17:22,2021-01-07 03:17:43,20.599s,PASSED
+,,,,,,,
+Test Cases/Admin/Journey/deleteJourneyAndVerify,Chrome 87.0.4280.141,,,2021-01-07 03:17:43,2021-01-07 03:18:15,31.841s,PASSED
+Start listener action : OpenWebSite,Chrome 87.0.4280.141,,,2021-01-07 03:17:43,2021-01-07 03:17:57,13.658s,PASSED
+pages.Journey.clickOnJourneyTab(),Chrome 87.0.4280.141,,,2021-01-07 03:17:57,2021-01-07 03:18:01,3.635s,PASSED
+journeyName = pages.Journey.addJorney(),Chrome 87.0.4280.141,,,2021-01-07 03:18:01,2021-01-07 03:18:05,4.412s,PASSED
+pages.Journey.deleteJourney(journeyName),Chrome 87.0.4280.141,,,2021-01-07 03:18:05,2021-01-07 03:18:12,6.876s,PASSED
+pages.Journey.verifyJourneyDeleted(journeyName),Chrome 87.0.4280.141,,,2021-01-07 03:18:12,2021-01-07 03:18:15,3.048s,PASSED
+,,,,,,,
+Test Cases/Admin/Journey/Uploading profile Picture,Chrome 87.0.4280.141,,,2021-01-07 03:18:15,2021-01-07 03:18:40,24.913s,PASSED
+Start listener action : OpenWebSite,Chrome 87.0.4280.141,,,2021-01-07 03:18:15,2021-01-07 03:18:28,13.528s,PASSED
+common.uploading.clickProfileIcon(),Chrome 87.0.4280.141,,,2021-01-07 03:18:29,2021-01-07 03:18:32,3.329s,PASSED
+common.uploading.clickOnProfile(),Chrome 87.0.4280.141,,,2021-01-07 03:18:32,2021-01-07 03:18:34,2.027s,PASSED
+common.uploading.uploadProfilePicture(),Chrome 87.0.4280.141,,,2021-01-07 03:18:34,2021-01-07 03:18:39,5.336s,PASSED
+pages.Journey.verifyWhetherImageSuccessfullyUploaded(),Chrome 87.0.4280.141,,,2021-01-07 03:18:39,2021-01-07 03:18:40,0.498s,PASSED
