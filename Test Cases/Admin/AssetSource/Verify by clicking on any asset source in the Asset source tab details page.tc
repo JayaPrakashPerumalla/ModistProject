@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Verify by clicking on any asset source in the Asset source tab details page</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>aad0f252-17e4-4dcc-bb39-ffbb96cb8750</testCaseGuid>
+</TestCaseEntity>
