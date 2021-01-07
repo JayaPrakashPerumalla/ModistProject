@@ -1,4 +1,6 @@
 
+import org.testng.annotations.AfterTest
+
 import com.kms.katalon.core.annotation.BeforeTestCase
 import com.kms.katalon.core.annotation.Keyword
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
@@ -20,4 +22,6 @@ class Login {
 		loginPage.login(GlobalVariable.Email,GlobalVariable.Password)
 		
 	}
+	
+	
 }
