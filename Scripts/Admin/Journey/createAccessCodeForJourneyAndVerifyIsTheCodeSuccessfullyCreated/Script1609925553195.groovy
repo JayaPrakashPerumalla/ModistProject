@@ -21,8 +21,8 @@ String journeyName = CustomKeywords.'pages.Journey.getRandomJourneyName'()
 
 String accessCode = CustomKeywords.'pages.Journey.getRandomAccessCode'()
 
-String count = CustomKeywords.'pages.Journey.getRandomCount'()
+String useLimit = CustomKeywords.'pages.Journey.getRandomCount'()
 
-CustomKeywords.'pages.Journey.createAccessCodeInJourney'(journeyName, accessCode, count)
+accessCode = CustomKeywords.'pages.Journey.createAccessCodeInJourney'(journeyName, accessCode, useLimit)
 
 CustomKeywords.'pages.Journey.verifyTheCreatedAccessCode'(journeyName, accessCode)

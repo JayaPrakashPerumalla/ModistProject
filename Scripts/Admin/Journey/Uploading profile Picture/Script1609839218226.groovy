@@ -23,3 +23,5 @@ CustomKeywords.'common.uploading.clickProfileIcon'()
 CustomKeywords.'common.uploading.clickOnProfile'()
 
 CustomKeywords.'common.uploading.uploadProfilePicture'()
+
+CustomKeywords.'pages.Journey.verifyWhetherImageSuccessfullyUploaded'()

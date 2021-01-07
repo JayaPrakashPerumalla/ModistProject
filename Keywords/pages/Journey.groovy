@@ -13,6 +13,8 @@ import webAction.WebAction
 
 public class Journey {
 
+
+
 	WebAction actions = new WebAction()
 	Verification verifications = new Verification()
 
@@ -99,25 +101,27 @@ public class Journey {
 	}
 
 	@Keyword
-	def createAccessCodeInJourney(String journeyName, String accesscode, String useLimit) {
+	def createAccessCodeInJourney(String journeyName, String accessCode, String useLimit) {
 
-		searchJourney(journeyName)
-		WebUI.delay(30)
-		actions.click(findTestObject('Object Repository/Journey/clickVerifyingJourney(journeyName)',["journeyName":journeyName]))
+		openExistingJourney(journeyName)
+
+		//actions.click(findTestObject('Object Repository/Journey/clickVerifyingJourney(journeyName)',["journeyName":journeyName]))
 		actions.scrollToElement(findTestObject('Object Repository/Journey/Current Access Codes/currentAccessCodeField'))
 		actions.click(findTestObject('Object Repository/Journey/Current Access Codes/plusButton'))
-		actions.sendKeys(findTestObject('Object Repository/Journey/Current Access Codes/accessCode'), accesscode)
+		actions.sendKeys(findTestObject('Object Repository/Journey/Current Access Codes/accessCode'), accessCode)
 		WebUI.sendKeys(findTestObject('Object Repository/Journey/Current Access Codes/codeUsageCount'), useLimit)
 		actions.click(findTestObject('Object Repository/Journey/Current Access Codes/getCodeButton'))
 		actions.click(findTestObject('Object Repository/CommonButtons/Close'))
-		return accesscode
+		return accessCode
 	}
+
+
 
 	@Keyword
 	def verifyTheCreatedAccessCode(String journeyName, String accesscode) {
-
-		searchJourney(journeyName)
+		
 		openExistingJourney(journeyName)
+
 		actions.scrollToElement(findTestObject('Object Repository/Journey/Current Access Codes/currentAccessCodeField'))
 		verifications.verifyElementPresent(findTestObject('Object Repository/Journey/Current Access Codes/verify(code)',["code":accesscode]), 'The Code' +accesscode +' is not created')
 		WebUI.delay(15)
@@ -126,7 +130,8 @@ public class Journey {
 
 	@Keyword
 	def getRandomJourneyName() {
-
+		
+		WebUI.delay(5)
 		int count = actions.getElementCount(findTestObject('Object Repository/Journey/toGetJourneysCount'))
 		int index = random.nextInt(count)
 		def journeyName = WebUI.getText(findTestObject('Object Repository/Journey/toPickrandomJourney(index)',["index":index+1]))
@@ -152,6 +157,7 @@ public class Journey {
 		openExistingJourney(journeyName)
 		actions.scrollToElement(findTestObject('Object Repository/Journey/Current Access Codes/currentAccessCodeField'))
 		int count = actions.getElementCount(findTestObject('Object Repository/Journey/Current Access Codes/getAccessCodesCount'))
+
 		int index = random.nextInt(count)
 		String accessCode = WebUI.getText(findTestObject('Object Repository/Journey/Current Access Codes/getAccessCodeText(index)',["index":index+1]))
 		return accessCode
@@ -204,5 +210,11 @@ public class Journey {
 	def clickSaveButton() {
 
 		actions.click(findTestObject('Object Repository/CommonButtons/saveButton'))
+	}
+
+	@Keyword
+	def verifyWhetherImageSuccessfullyUploaded() {
+
+		verifications.verifyElementPresent(findTestObject('Object Repository/OptionsUnderProfileIcon/Profile Options/successMessageAfterUploading'), "image not uploaded")
 	}
 }
