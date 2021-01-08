@@ -35,10 +35,4 @@
       <isRun>true</isRun>
       <testCaseId>Test Cases/Admin/Journey/deleteJourneyAndVerify</testCaseId>
    </testCaseLink>
-   <testCaseLink>
-      <guid>c3ead2f7-7c5d-43d1-adb5-f46fb84f44ec</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/Admin/Journey/Uploading profile Picture</testCaseId>
-   </testCaseLink>
 </TestSuiteEntity>
