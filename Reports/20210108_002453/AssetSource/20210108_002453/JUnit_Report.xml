@@ -1,0 +1,1128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="AssetSource" time="255.898" tests="8" failures="1" errors="0">
+   <testsuite name="AssetSource" tests="8" failures="1" errors="0" time="255.898" timestamp="2021-01-08 00:24:56" hostname="Lenovo - DESKTOP-H3LAPEO" id="Test Suites/AssetSource">
+      <properties>
+         <property name="deviceName" value=""/>
+         <property name="devicePlatform" value=""/>
+         <property name="logFolder" value="E:\\Modist Project\\ModistProject\\Reports\\20210108_002453\\AssetSource\\20210108_002453"/>
+         <property name="logFiles" value="E:\\Modist Project\\ModistProject\\Reports\\20210108_002453\\AssetSource\\20210108_002453\\execution0.log"/>
+         <property name="attachments" value="E:\\Modist Project\\ModistProject\\Reports\\20210108_002453\\AssetSource\\20210108_002453\\1610083749008.png, E:\Modist Project\ModistProject\Reports\20210108_002453\AssetSource\20210108_002453\1610083749809.png"/>
+         <property name="hostName" value="Lenovo - DESKTOP-H3LAPEO"/>
+         <property name="os" value="Windows 10 64bit"/>
+         <property name="katalonVersion" value="7.7.0.205"/>
+         <property name="browser" value="Chrome 87.0.4280.141"/>
+         <property name="hostAddress" value="192.168.43.128"/>
+         <property name="sessionId" value="5c9f0393a02a2626d2234e3338dfa300"/>
+         <property name="seleniumVersion" value="3.141.59"/>
+         <property name="proxyInformation" value="ProxyInformation { proxyOption=NO_PROXY, proxyServerType=HTTP, username=, password=********, proxyServerAddress=, proxyServerPort=0, executionList=&quot;&quot;, isApplyToDesiredCapabilities=true }"/>
+         <property name="platform" value="Windows 10"/>
+      </properties>
+      <testcase name="Test Cases/Admin/AssetSource/Add An AssetSource" time="33.025" classname="Test Cases/Admin/AssetSource/Add An AssetSource" status="PASSED">
+         <system-out><![CDATA[2021-01-08 00:24:56 - [TEST_CASE][PASSED] - Test Cases/Admin/AssetSource/Add An AssetSource: Test Cases/Admin/AssetSource/Add An AssetSource
+
+2021-01-08 00:24:56 - [TEST_STEP][PASSED] - Start listener action : OpenWebSite: Object: 'Object Repository/Login Credentials/EnterButton' is clicked on
+
+2021-01-08 00:24:56 - [TEST_STEP][PASSED] - openBrowser(""): Browser is opened with url: ''
+
+2021-01-08 00:24:56 - [MESSAGE][INFO] - Starting 'Chrome' driver
+
+2021-01-08 00:24:57 - [MESSAGE][INFO] - Action delay is set to 0 milliseconds
+
+2021-01-08 00:25:01 - [MESSAGE][PASSED] - Browser is opened with url: ''
+
+2021-01-08 00:25:01 - [TEST_STEP][PASSED] - maximizeWindow(): Current window maximized
+
+2021-01-08 00:25:04 - [MESSAGE][PASSED] - Current window maximized
+
+2021-01-08 00:25:04 - [TEST_STEP][PASSED] - navigateToUrl(Url): Navigate to 'https://dev-admin.modist.co/' successfully
+
+2021-01-08 00:25:12 - [MESSAGE][PASSED] - Navigate to 'https://dev-admin.modist.co/' successfully
+
+2021-01-08 00:25:12 - [TEST_STEP][PASSED] - loginPage.login(Email, Password): Object: 'Object Repository/Login Credentials/EnterButton' is clicked on
+
+2021-01-08 00:25:13 - [MESSAGE][PASSED] - Object 'Object Repository/Login Credentials/Email' is present
+
+2021-01-08 00:25:13 - [MESSAGE][PASSED] - Object 'Object Repository/Login Credentials/Email' is visible
+
+2021-01-08 00:25:14 - [MESSAGE][PASSED] - Object 'Object Repository/Login Credentials/Email' is clickable
+
+2021-01-08 00:25:14 - [MESSAGE][PASSED] - Text of object 'Object Repository/Login Credentials/Email' is cleared
+
+2021-01-08 00:25:14 - [MESSAGE][PASSED] - Keys 'naresh.k@qualitlabs.com' sent to object: 'Object Repository/Login Credentials/Email'
+
+2021-01-08 00:25:15 - [MESSAGE][PASSED] - Object 'Object Repository/Login Credentials/Password' is present
+
+2021-01-08 00:25:15 - [MESSAGE][PASSED] - Object 'Object Repository/Login Credentials/Password' is visible
+
+2021-01-08 00:25:15 - [MESSAGE][PASSED] - Object 'Object Repository/Login Credentials/Password' is clickable
+
+2021-01-08 00:25:15 - [MESSAGE][PASSED] - Text of object 'Object Repository/Login Credentials/Password' is cleared
+
+2021-01-08 00:25:16 - [MESSAGE][PASSED] - Keys 'Qualitlabs1?' sent to object: 'Object Repository/Login Credentials/Password'
+
+2021-01-08 00:25:16 - [MESSAGE][PASSED] - Object 'Object Repository/Login Credentials/EnterButton' is present
+
+2021-01-08 00:25:16 - [MESSAGE][PASSED] - Object 'Object Repository/Login Credentials/EnterButton' is visible
+
+2021-01-08 00:25:17 - [MESSAGE][PASSED] - Object 'Object Repository/Login Credentials/EnterButton' is clickable
+
+2021-01-08 00:25:17 - [MESSAGE][PASSED] - Object: 'Object Repository/Login Credentials/EnterButton' is clicked on
+
+2021-01-08 00:25:17 - [TEST_STEP][PASSED] - sourcename = pages.Assetsource.addAssetSource(): pages.Assetsource.addAssetSource is PASSED
+
+2021-01-08 00:25:19 - [MESSAGE][PASSED] - Object 'Object Repository/AssetSoure/Asset Source Tab' is present
+
+2021-01-08 00:25:20 - [MESSAGE][PASSED] - Object 'Object Repository/AssetSoure/Asset Source Tab' is visible
+
+2021-01-08 00:25:20 - [MESSAGE][PASSED] - Object 'Object Repository/AssetSoure/Asset Source Tab' is clickable
+
+2021-01-08 00:25:20 - [MESSAGE][PASSED] - Object: 'Object Repository/AssetSoure/Asset Source Tab' is clicked on
+
+2021-01-08 00:25:21 - [MESSAGE][PASSED] - Object 'Object Repository/AssetSoure/Add Asset Source Button' is present
+
+2021-01-08 00:25:21 - [MESSAGE][PASSED] - Object 'Object Repository/AssetSoure/Add Asset Source Button' is present
+
+2021-01-08 00:25:21 - [MESSAGE][PASSED] - Object 'Object Repository/AssetSoure/Add Asset Source Button' is visible
+
+2021-01-08 00:25:22 - [MESSAGE][PASSED] - Object 'Object Repository/AssetSoure/Add Asset Source Button' is clickable
+
+2021-01-08 00:25:22 - [MESSAGE][PASSED] - Object: 'Object Repository/AssetSoure/Add Asset Source Button' is clicked on
+
+2021-01-08 00:25:22 - [MESSAGE][PASSED] - Wait for page load successfully
+
+2021-01-08 00:25:23 - [MESSAGE][PASSED] - Object 'Object Repository/AssetSoure/Source' is present
+
+2021-01-08 00:25:23 - [MESSAGE][PASSED] - Object 'Object Repository/AssetSoure/Source' is visible
+
+2021-01-08 00:25:23 - [MESSAGE][PASSED] - Object 'Object Repository/AssetSoure/Source' is clickable
+
+2021-01-08 00:25:24 - [MESSAGE][PASSED] - Text of object 'Object Repository/AssetSoure/Source' is cleared
+
+2021-01-08 00:25:24 - [MESSAGE][PASSED] - Keys 'RandomAsset657' sent to object: 'Object Repository/AssetSoure/Source'
+
+2021-01-08 00:25:25 - [MESSAGE][PASSED] - Object 'Object Repository/AssetSoure/Asset Source button on popup' is present
+
+2021-01-08 00:25:25 - [MESSAGE][PASSED] - Object 'Object Repository/AssetSoure/Asset Source button on popup' is visible
+
+2021-01-08 00:25:25 - [MESSAGE][PASSED] - Object 'Object Repository/AssetSoure/Asset Source button on popup' is clickable
+
+2021-01-08 00:25:26 - [MESSAGE][PASSED] - Object: 'Object Repository/AssetSoure/Asset Source button on popup' is clicked on
+
+2021-01-08 00:25:26 - [MESSAGE][PASSED] - pages.Assetsource.addAssetSource is PASSED
+
+2021-01-08 00:25:26 - [TEST_STEP][PASSED] - pages.Assetsource.verifyAssetSourceAdded(sourcename): pages.Assetsource.verifyAssetSourceAdded is PASSED
+
+2021-01-08 00:25:26 - [MESSAGE][PASSED] - Object 'Object Repository/AssetSoure/Search' is present
+
+2021-01-08 00:25:27 - [MESSAGE][PASSED] - Object 'Object Repository/AssetSoure/Search' is visible
+
+2021-01-08 00:25:27 - [MESSAGE][PASSED] - Object 'Object Repository/AssetSoure/Search' is clickable
+
+2021-01-08 00:25:27 - [MESSAGE][PASSED] - Text of object 'Object Repository/AssetSoure/Search' is cleared
+
+2021-01-08 00:25:28 - [MESSAGE][PASSED] - Keys 'RandomAsset657' sent to object: 'Object Repository/AssetSoure/Search'
+
+2021-01-08 00:25:29 - [MESSAGE][PASSED] - Object 'Object Repository/AssetSoure/AssetSourceName' is present
+
+2021-01-08 00:25:29 - [MESSAGE][PASSED] - pages.Assetsource.verifyAssetSourceAdded is PASSED
+
+2021-01-08 00:25:29 - [TEST_STEP][PASSED] - println(sourcename): null]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Admin/AssetSource/Delete An AssetSource" time="39.231" classname="Test Cases/Admin/AssetSource/Delete An AssetSource" status="PASSED">
+         <system-out><![CDATA[2021-01-08 00:25:29 - [TEST_CASE][PASSED] - Test Cases/Admin/AssetSource/Delete An AssetSource: Test Cases/Admin/AssetSource/Delete An AssetSource
+
+2021-01-08 00:25:29 - [TEST_STEP][PASSED] - Start listener action : OpenWebSite: Object: 'Object Repository/Login Credentials/EnterButton' is clicked on
+
+2021-01-08 00:25:29 - [TEST_STEP][PASSED] - openBrowser(""): Browser is opened with url: ''
+
+2021-01-08 00:25:29 - [MESSAGE][WARNING] - A browser is already opened. Closing browser and opening a new one
+
+2021-01-08 00:25:30 - [MESSAGE][INFO] - Starting 'Chrome' driver
+
+2021-01-08 00:25:30 - [MESSAGE][INFO] - Action delay is set to 0 milliseconds
+
+2021-01-08 00:25:33 - [MESSAGE][PASSED] - Browser is opened with url: ''
+
+2021-01-08 00:25:33 - [TEST_STEP][PASSED] - maximizeWindow(): Current window maximized
+
+2021-01-08 00:25:35 - [MESSAGE][PASSED] - Current window maximized
+
+2021-01-08 00:25:35 - [TEST_STEP][PASSED] - navigateToUrl(Url): Navigate to 'https://dev-admin.modist.co/' successfully
+
+2021-01-08 00:25:44 - [MESSAGE][PASSED] - Navigate to 'https://dev-admin.modist.co/' successfully
+
+2021-01-08 00:25:44 - [TEST_STEP][PASSED] - loginPage.login(Email, Password): Object: 'Object Repository/Login Credentials/EnterButton' is clicked on
+
+2021-01-08 00:25:44 - [MESSAGE][PASSED] - Object 'Object Repository/Login Credentials/Email' is present
+
+2021-01-08 00:25:44 - [MESSAGE][PASSED] - Object 'Object Repository/Login Credentials/Email' is visible
+
+2021-01-08 00:25:45 - [MESSAGE][PASSED] - Object 'Object Repository/Login Credentials/Email' is clickable
+
+2021-01-08 00:25:45 - [MESSAGE][PASSED] - Text of object 'Object Repository/Login Credentials/Email' is cleared
+
+2021-01-08 00:25:45 - [MESSAGE][PASSED] - Keys 'naresh.k@qualitlabs.com' sent to object: 'Object Repository/Login Credentials/Email'
+
+2021-01-08 00:25:46 - [MESSAGE][PASSED] - Object 'Object Repository/Login Credentials/Password' is present
+
+2021-01-08 00:25:46 - [MESSAGE][PASSED] - Object 'Object Repository/Login Credentials/Password' is visible
+
+2021-01-08 00:25:46 - [MESSAGE][PASSED] - Object 'Object Repository/Login Credentials/Password' is clickable
+
+2021-01-08 00:25:47 - [MESSAGE][PASSED] - Text of object 'Object Repository/Login Credentials/Password' is cleared
+
+2021-01-08 00:25:47 - [MESSAGE][PASSED] - Keys 'Qualitlabs1?' sent to object: 'Object Repository/Login Credentials/Password'
+
+2021-01-08 00:25:47 - [MESSAGE][PASSED] - Object 'Object Repository/Login Credentials/EnterButton' is present
+
+2021-01-08 00:25:48 - [MESSAGE][PASSED] - Object 'Object Repository/Login Credentials/EnterButton' is visible
+
+2021-01-08 00:25:48 - [MESSAGE][PASSED] - Object 'Object Repository/Login Credentials/EnterButton' is clickable
+
+2021-01-08 00:25:48 - [MESSAGE][PASSED] - Object: 'Object Repository/Login Credentials/EnterButton' is clicked on
+
+2021-01-08 00:25:48 - [TEST_STEP][PASSED] - sourcename = pages.Assetsource.addAssetSource(): pages.Assetsource.addAssetSource is PASSED
+
+2021-01-08 00:25:50 - [MESSAGE][PASSED] - Object 'Object Repository/AssetSoure/Asset Source Tab' is present
+
+2021-01-08 00:25:51 - [MESSAGE][PASSED] - Object 'Object Repository/AssetSoure/Asset Source Tab' is visible
+
+2021-01-08 00:25:51 - [MESSAGE][PASSED] - Object 'Object Repository/AssetSoure/Asset Source Tab' is clickable
+
+2021-01-08 00:25:52 - [MESSAGE][PASSED] - Object: 'Object Repository/AssetSoure/Asset Source Tab' is clicked on
+
+2021-01-08 00:25:52 - [MESSAGE][PASSED] - Object 'Object Repository/AssetSoure/Add Asset Source Button' is present
+
+2021-01-08 00:25:53 - [MESSAGE][PASSED] - Object 'Object Repository/AssetSoure/Add Asset Source Button' is present
+
+2021-01-08 00:25:53 - [MESSAGE][PASSED] - Object 'Object Repository/AssetSoure/Add Asset Source Button' is visible
+
+2021-01-08 00:25:53 - [MESSAGE][PASSED] - Object 'Object Repository/AssetSoure/Add Asset Source Button' is clickable
+
+2021-01-08 00:25:54 - [MESSAGE][PASSED] - Object: 'Object Repository/AssetSoure/Add Asset Source Button' is clicked on
+
+2021-01-08 00:25:54 - [MESSAGE][PASSED] - Wait for page load successfully
+
+2021-01-08 00:25:54 - [MESSAGE][PASSED] - Object 'Object Repository/AssetSoure/Source' is present
+
+2021-01-08 00:25:54 - [MESSAGE][PASSED] - Object 'Object Repository/AssetSoure/Source' is visible
+
+2021-01-08 00:25:55 - [MESSAGE][PASSED] - Object 'Object Repository/AssetSoure/Source' is clickable
+
+2021-01-08 00:25:55 - [MESSAGE][PASSED] - Text of object 'Object Repository/AssetSoure/Source' is cleared
+
+2021-01-08 00:25:56 - [MESSAGE][PASSED] - Keys 'RandomAsset585' sent to object: 'Object Repository/AssetSoure/Source'
+
+2021-01-08 00:25:56 - [MESSAGE][PASSED] - Object 'Object Repository/AssetSoure/Asset Source button on popup' is present
+
+2021-01-08 00:25:56 - [MESSAGE][PASSED] - Object 'Object Repository/AssetSoure/Asset Source button on popup' is visible
+
+2021-01-08 00:25:56 - [MESSAGE][PASSED] - Object 'Object Repository/AssetSoure/Asset Source button on popup' is clickable
+
+2021-01-08 00:25:57 - [MESSAGE][PASSED] - Object: 'Object Repository/AssetSoure/Asset Source button on popup' is clicked on
+
+2021-01-08 00:25:57 - [MESSAGE][PASSED] - pages.Assetsource.addAssetSource is PASSED
+
+2021-01-08 00:25:57 - [TEST_STEP][PASSED] - println(sourcename): null
+
+2021-01-08 00:25:57 - [TEST_STEP][PASSED] - pages.Assetsource.deleteAnAssetSource(sourcename): pages.Assetsource.deleteAnAssetSource is PASSED
+
+2021-01-08 00:25:57 - [MESSAGE][PASSED] - Object 'Object Repository/AssetSoure/Search' is present
+
+2021-01-08 00:25:58 - [MESSAGE][PASSED] - Object 'Object Repository/AssetSoure/Search' is visible
+
+2021-01-08 00:25:58 - [MESSAGE][PASSED] - Object 'Object Repository/AssetSoure/Search' is clickable
+
+2021-01-08 00:25:58 - [MESSAGE][PASSED] - Text of object 'Object Repository/AssetSoure/Search' is cleared
+
+2021-01-08 00:25:59 - [MESSAGE][PASSED] - Keys 'RandomAsset585' sent to object: 'Object Repository/AssetSoure/Search'
+
+2021-01-08 00:26:02 - [MESSAGE][PASSED] - Scroll to object 'Object Repository/AssetSoure/AssetSourceName' successfully
+
+2021-01-08 00:26:02 - [MESSAGE][PASSED] - Object 'Object Repository/AssetSoure/AssetSourceName' is present
+
+2021-01-08 00:26:03 - [MESSAGE][PASSED] - Object 'Object Repository/AssetSoure/AssetSourceName' is visible
+
+2021-01-08 00:26:03 - [MESSAGE][PASSED] - Object 'Object Repository/AssetSoure/AssetSourceName' is clickable
+
+2021-01-08 00:26:03 - [MESSAGE][PASSED] - Object: 'Object Repository/AssetSoure/AssetSourceName' is clicked on
+
+2021-01-08 00:26:04 - [MESSAGE][PASSED] - Object 'Object Repository/AssetSoure/AssetSourceEdit(save button)' is present
+
+2021-01-08 00:26:04 - [MESSAGE][PASSED] - Object 'Object Repository/AssetSoure/Delete Button' is present
+
+2021-01-08 00:26:05 - [MESSAGE][PASSED] - Object 'Object Repository/AssetSoure/Delete Button' is visible
+
+2021-01-08 00:26:05 - [MESSAGE][PASSED] - Object 'Object Repository/AssetSoure/Delete Button' is clickable
+
+2021-01-08 00:26:05 - [MESSAGE][PASSED] - Object: 'Object Repository/AssetSoure/Delete Button' is clicked on
+
+2021-01-08 00:26:05 - [MESSAGE][PASSED] - pages.Assetsource.deleteAnAssetSource is PASSED
+
+2021-01-08 00:26:05 - [TEST_STEP][PASSED] - pages.Assetsource.verifyAssetSourceDeleted(sourcename): pages.Assetsource.verifyAssetSourceDeleted is PASSED
+
+2021-01-08 00:26:06 - [MESSAGE][PASSED] - Object 'Object Repository/AssetSoure/Search' is present
+
+2021-01-08 00:26:07 - [MESSAGE][PASSED] - Object 'Object Repository/AssetSoure/Search' is visible
+
+2021-01-08 00:26:07 - [MESSAGE][PASSED] - Object 'Object Repository/AssetSoure/Search' is clickable
+
+2021-01-08 00:26:07 - [MESSAGE][PASSED] - Text of object 'Object Repository/AssetSoure/Search' is cleared
+
+2021-01-08 00:26:08 - [MESSAGE][PASSED] - Keys 'RandomAsset585' sent to object: 'Object Repository/AssetSoure/Search'
+
+2021-01-08 00:26:08 - [MESSAGE][PASSED] - Web element with id: 'Object Repository/AssetSoure/AssetSourceName' located by 'By.xpath: //div[text()='RandomAsset585']' is not present after '30' second(s)
+
+2021-01-08 00:26:08 - [MESSAGE][PASSED] - pages.Assetsource.verifyAssetSourceDeleted is PASSED]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Admin/AssetSource/Edit An AssetSource" time="39.471" classname="Test Cases/Admin/AssetSource/Edit An AssetSource" status="PASSED">
+         <system-out><![CDATA[2021-01-08 00:26:08 - [TEST_CASE][PASSED] - Test Cases/Admin/AssetSource/Edit An AssetSource: Test Cases/Admin/AssetSource/Edit An AssetSource
+
+2021-01-08 00:26:08 - [TEST_STEP][PASSED] - Start listener action : OpenWebSite: Object: 'Object Repository/Login Credentials/EnterButton' is clicked on
+
+2021-01-08 00:26:08 - [TEST_STEP][PASSED] - openBrowser(""): Browser is opened with url: ''
+
+2021-01-08 00:26:08 - [MESSAGE][WARNING] - A browser is already opened. Closing browser and opening a new one
+
+2021-01-08 00:26:09 - [MESSAGE][INFO] - Starting 'Chrome' driver
+
+2021-01-08 00:26:09 - [MESSAGE][INFO] - Action delay is set to 0 milliseconds
+
+2021-01-08 00:26:12 - [MESSAGE][PASSED] - Browser is opened with url: ''
+
+2021-01-08 00:26:12 - [TEST_STEP][PASSED] - maximizeWindow(): Current window maximized
+
+2021-01-08 00:26:15 - [MESSAGE][PASSED] - Current window maximized
+
+2021-01-08 00:26:15 - [TEST_STEP][PASSED] - navigateToUrl(Url): Navigate to 'https://dev-admin.modist.co/' successfully
+
+2021-01-08 00:26:21 - [MESSAGE][PASSED] - Navigate to 'https://dev-admin.modist.co/' successfully
+
+2021-01-08 00:26:21 - [TEST_STEP][PASSED] - loginPage.login(Email, Password): Object: 'Object Repository/Login Credentials/EnterButton' is clicked on
+
+2021-01-08 00:26:21 - [MESSAGE][PASSED] - Object 'Object Repository/Login Credentials/Email' is present
+
+2021-01-08 00:26:21 - [MESSAGE][PASSED] - Object 'Object Repository/Login Credentials/Email' is visible
+
+2021-01-08 00:26:21 - [MESSAGE][PASSED] - Object 'Object Repository/Login Credentials/Email' is clickable
+
+2021-01-08 00:26:22 - [MESSAGE][PASSED] - Text of object 'Object Repository/Login Credentials/Email' is cleared
+
+2021-01-08 00:26:22 - [MESSAGE][PASSED] - Keys 'naresh.k@qualitlabs.com' sent to object: 'Object Repository/Login Credentials/Email'
+
+2021-01-08 00:26:23 - [MESSAGE][PASSED] - Object 'Object Repository/Login Credentials/Password' is present
+
+2021-01-08 00:26:23 - [MESSAGE][PASSED] - Object 'Object Repository/Login Credentials/Password' is visible
+
+2021-01-08 00:26:23 - [MESSAGE][PASSED] - Object 'Object Repository/Login Credentials/Password' is clickable
+
+2021-01-08 00:26:24 - [MESSAGE][PASSED] - Text of object 'Object Repository/Login Credentials/Password' is cleared
+
+2021-01-08 00:26:24 - [MESSAGE][PASSED] - Keys 'Qualitlabs1?' sent to object: 'Object Repository/Login Credentials/Password'
+
+2021-01-08 00:26:24 - [MESSAGE][PASSED] - Object 'Object Repository/Login Credentials/EnterButton' is present
+
+2021-01-08 00:26:25 - [MESSAGE][PASSED] - Object 'Object Repository/Login Credentials/EnterButton' is visible
+
+2021-01-08 00:26:25 - [MESSAGE][PASSED] - Object 'Object Repository/Login Credentials/EnterButton' is clickable
+
+2021-01-08 00:26:25 - [MESSAGE][PASSED] - Object: 'Object Repository/Login Credentials/EnterButton' is clicked on
+
+2021-01-08 00:26:25 - [TEST_STEP][PASSED] - sourcename = pages.Assetsource.addAssetSource(): pages.Assetsource.addAssetSource is PASSED
+
+2021-01-08 00:26:28 - [MESSAGE][PASSED] - Object 'Object Repository/AssetSoure/Asset Source Tab' is present
+
+2021-01-08 00:26:28 - [MESSAGE][PASSED] - Object 'Object Repository/AssetSoure/Asset Source Tab' is visible
+
+2021-01-08 00:26:28 - [MESSAGE][PASSED] - Object 'Object Repository/AssetSoure/Asset Source Tab' is clickable
+
+2021-01-08 00:26:29 - [MESSAGE][PASSED] - Object: 'Object Repository/AssetSoure/Asset Source Tab' is clicked on
+
+2021-01-08 00:26:29 - [MESSAGE][PASSED] - Object 'Object Repository/AssetSoure/Add Asset Source Button' is present
+
+2021-01-08 00:26:30 - [MESSAGE][PASSED] - Object 'Object Repository/AssetSoure/Add Asset Source Button' is present
+
+2021-01-08 00:26:30 - [MESSAGE][PASSED] - Object 'Object Repository/AssetSoure/Add Asset Source Button' is visible
+
+2021-01-08 00:26:31 - [MESSAGE][PASSED] - Object 'Object Repository/AssetSoure/Add Asset Source Button' is clickable
+
+2021-01-08 00:26:31 - [MESSAGE][PASSED] - Object: 'Object Repository/AssetSoure/Add Asset Source Button' is clicked on
+
+2021-01-08 00:26:31 - [MESSAGE][PASSED] - Wait for page load successfully
+
+2021-01-08 00:26:31 - [MESSAGE][PASSED] - Object 'Object Repository/AssetSoure/Source' is present
+
+2021-01-08 00:26:32 - [MESSAGE][PASSED] - Object 'Object Repository/AssetSoure/Source' is visible
+
+2021-01-08 00:26:32 - [MESSAGE][PASSED] - Object 'Object Repository/AssetSoure/Source' is clickable
+
+2021-01-08 00:26:32 - [MESSAGE][PASSED] - Text of object 'Object Repository/AssetSoure/Source' is cleared
+
+2021-01-08 00:26:33 - [MESSAGE][PASSED] - Keys 'RandomAsset967' sent to object: 'Object Repository/AssetSoure/Source'
+
+2021-01-08 00:26:33 - [MESSAGE][PASSED] - Object 'Object Repository/AssetSoure/Asset Source button on popup' is present
+
+2021-01-08 00:26:33 - [MESSAGE][PASSED] - Object 'Object Repository/AssetSoure/Asset Source button on popup' is visible
+
+2021-01-08 00:26:34 - [MESSAGE][PASSED] - Object 'Object Repository/AssetSoure/Asset Source button on popup' is clickable
+
+2021-01-08 00:26:34 - [MESSAGE][PASSED] - Object: 'Object Repository/AssetSoure/Asset Source button on popup' is clicked on
+
+2021-01-08 00:26:34 - [MESSAGE][PASSED] - pages.Assetsource.addAssetSource is PASSED
+
+2021-01-08 00:26:34 - [TEST_STEP][PASSED] - println(sourcename): null
+
+2021-01-08 00:26:34 - [TEST_STEP][PASSED] - pages.Assetsource.editAnAssetSource(sourcename): pages.Assetsource.editAnAssetSource is PASSED
+
+2021-01-08 00:26:35 - [MESSAGE][PASSED] - Object 'Object Repository/AssetSoure/Search' is present
+
+2021-01-08 00:26:35 - [MESSAGE][PASSED] - Object 'Object Repository/AssetSoure/Search' is visible
+
+2021-01-08 00:26:35 - [MESSAGE][PASSED] - Object 'Object Repository/AssetSoure/Search' is clickable
+
+2021-01-08 00:26:35 - [MESSAGE][PASSED] - Text of object 'Object Repository/AssetSoure/Search' is cleared
+
+2021-01-08 00:26:36 - [MESSAGE][PASSED] - Keys 'RandomAsset967' sent to object: 'Object Repository/AssetSoure/Search'
+
+2021-01-08 00:26:40 - [MESSAGE][PASSED] - Scroll to object 'Object Repository/AssetSoure/AssetSourceName' successfully
+
+2021-01-08 00:26:41 - [MESSAGE][PASSED] - Object 'Object Repository/AssetSoure/AssetSourceName' is present
+
+2021-01-08 00:26:41 - [MESSAGE][PASSED] - Object 'Object Repository/AssetSoure/AssetSourceName' is visible
+
+2021-01-08 00:26:41 - [MESSAGE][PASSED] - Object 'Object Repository/AssetSoure/AssetSourceName' is clickable
+
+2021-01-08 00:26:42 - [MESSAGE][PASSED] - Object: 'Object Repository/AssetSoure/AssetSourceName' is clicked on
+
+2021-01-08 00:26:43 - [MESSAGE][PASSED] - Object 'Object Repository/AssetSoure/AssetSourceEdit(save button)' is present
+
+2021-01-08 00:26:43 - [MESSAGE][PASSED] - Text of object 'Object Repository/AssetSoure/AssetSourceEdit(Source)' is cleared
+
+2021-01-08 00:26:43 - [MESSAGE][PASSED] - Object 'Object Repository/AssetSoure/AssetSourceEdit(Source)' is present
+
+2021-01-08 00:26:44 - [MESSAGE][PASSED] - Object 'Object Repository/AssetSoure/AssetSourceEdit(Source)' is visible
+
+2021-01-08 00:26:44 - [MESSAGE][PASSED] - Object 'Object Repository/AssetSoure/AssetSourceEdit(Source)' is clickable
+
+2021-01-08 00:26:44 - [MESSAGE][PASSED] - Text of object 'Object Repository/AssetSoure/AssetSourceEdit(Source)' is cleared
+
+2021-01-08 00:26:45 - [MESSAGE][PASSED] - Keys 'editedsourcesname0' sent to object: 'Object Repository/AssetSoure/AssetSourceEdit(Source)'
+
+2021-01-08 00:26:45 - [MESSAGE][PASSED] - Object 'Object Repository/AssetSoure/AssetSourceEdit(save button)' is present
+
+2021-01-08 00:26:45 - [MESSAGE][PASSED] - Object 'Object Repository/AssetSoure/AssetSourceEdit(save button)' is visible
+
+2021-01-08 00:26:46 - [MESSAGE][PASSED] - Object 'Object Repository/AssetSoure/AssetSourceEdit(save button)' is clickable
+
+2021-01-08 00:26:46 - [MESSAGE][PASSED] - Object: 'Object Repository/AssetSoure/AssetSourceEdit(save button)' is clicked on
+
+2021-01-08 00:26:46 - [MESSAGE][PASSED] - Object 'Object Repository/AssetSoure/Close Button' is present
+
+2021-01-08 00:26:47 - [MESSAGE][PASSED] - Object 'Object Repository/AssetSoure/Close Button' is visible
+
+2021-01-08 00:26:47 - [MESSAGE][PASSED] - Object 'Object Repository/AssetSoure/Close Button' is clickable
+
+2021-01-08 00:26:48 - [MESSAGE][PASSED] - Object: 'Object Repository/AssetSoure/Close Button' is clicked on
+
+2021-01-08 00:26:48 - [MESSAGE][PASSED] - pages.Assetsource.editAnAssetSource is PASSED]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Admin/AssetSource/Verify Asset Source tab by clicking it" time="19.566" classname="Test Cases/Admin/AssetSource/Verify Asset Source tab by clicking it" status="PASSED">
+         <system-out><![CDATA[2021-01-08 00:26:48 - [TEST_CASE][PASSED] - Test Cases/Admin/AssetSource/Verify Asset Source tab by clicking it: Test Cases/Admin/AssetSource/Verify Asset Source tab by clicking it
+
+2021-01-08 00:26:48 - [TEST_STEP][PASSED] - Start listener action : OpenWebSite: Object: 'Object Repository/Login Credentials/EnterButton' is clicked on
+
+2021-01-08 00:26:48 - [TEST_STEP][PASSED] - openBrowser(""): Browser is opened with url: ''
+
+2021-01-08 00:26:48 - [MESSAGE][WARNING] - A browser is already opened. Closing browser and opening a new one
+
+2021-01-08 00:26:48 - [MESSAGE][INFO] - Starting 'Chrome' driver
+
+2021-01-08 00:26:48 - [MESSAGE][INFO] - Action delay is set to 0 milliseconds
+
+2021-01-08 00:26:52 - [MESSAGE][PASSED] - Browser is opened with url: ''
+
+2021-01-08 00:26:52 - [TEST_STEP][PASSED] - maximizeWindow(): Current window maximized
+
+2021-01-08 00:26:54 - [MESSAGE][PASSED] - Current window maximized
+
+2021-01-08 00:26:54 - [TEST_STEP][PASSED] - navigateToUrl(Url): Navigate to 'https://dev-admin.modist.co/' successfully
+
+2021-01-08 00:26:59 - [MESSAGE][PASSED] - Navigate to 'https://dev-admin.modist.co/' successfully
+
+2021-01-08 00:26:59 - [TEST_STEP][PASSED] - loginPage.login(Email, Password): Object: 'Object Repository/Login Credentials/EnterButton' is clicked on
+
+2021-01-08 00:27:00 - [MESSAGE][PASSED] - Object 'Object Repository/Login Credentials/Email' is present
+
+2021-01-08 00:27:00 - [MESSAGE][PASSED] - Object 'Object Repository/Login Credentials/Email' is visible
+
+2021-01-08 00:27:00 - [MESSAGE][PASSED] - Object 'Object Repository/Login Credentials/Email' is clickable
+
+2021-01-08 00:27:01 - [MESSAGE][PASSED] - Text of object 'Object Repository/Login Credentials/Email' is cleared
+
+2021-01-08 00:27:01 - [MESSAGE][PASSED] - Keys 'naresh.k@qualitlabs.com' sent to object: 'Object Repository/Login Credentials/Email'
+
+2021-01-08 00:27:01 - [MESSAGE][PASSED] - Object 'Object Repository/Login Credentials/Password' is present
+
+2021-01-08 00:27:01 - [MESSAGE][PASSED] - Object 'Object Repository/Login Credentials/Password' is visible
+
+2021-01-08 00:27:02 - [MESSAGE][PASSED] - Object 'Object Repository/Login Credentials/Password' is clickable
+
+2021-01-08 00:27:02 - [MESSAGE][PASSED] - Text of object 'Object Repository/Login Credentials/Password' is cleared
+
+2021-01-08 00:27:02 - [MESSAGE][PASSED] - Keys 'Qualitlabs1?' sent to object: 'Object Repository/Login Credentials/Password'
+
+2021-01-08 00:27:03 - [MESSAGE][PASSED] - Object 'Object Repository/Login Credentials/EnterButton' is present
+
+2021-01-08 00:27:03 - [MESSAGE][PASSED] - Object 'Object Repository/Login Credentials/EnterButton' is visible
+
+2021-01-08 00:27:03 - [MESSAGE][PASSED] - Object 'Object Repository/Login Credentials/EnterButton' is clickable
+
+2021-01-08 00:27:03 - [MESSAGE][PASSED] - Object: 'Object Repository/Login Credentials/EnterButton' is clicked on
+
+2021-01-08 00:27:03 - [TEST_STEP][PASSED] - pages.Assetsource.navigateToAssetSourceDetailsTab(): pages.Assetsource.navigateToAssetSourceDetailsTab is PASSED
+
+2021-01-08 00:27:06 - [MESSAGE][PASSED] - Object 'Object Repository/AssetSoure/Asset Source Tab' is present
+
+2021-01-08 00:27:06 - [MESSAGE][PASSED] - Object 'Object Repository/AssetSoure/Asset Source Tab' is visible
+
+2021-01-08 00:27:06 - [MESSAGE][PASSED] - Object 'Object Repository/AssetSoure/Asset Source Tab' is clickable
+
+2021-01-08 00:27:07 - [MESSAGE][PASSED] - Object: 'Object Repository/AssetSoure/Asset Source Tab' is clicked on
+
+2021-01-08 00:27:07 - [MESSAGE][PASSED] - Object 'Object Repository/AssetSoure/Add Asset Source Button' is present
+
+2021-01-08 00:27:07 - [MESSAGE][PASSED] - pages.Assetsource.navigateToAssetSourceDetailsTab is PASSED]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Admin/AssetSource/Verify by clicking on any asset source in the Asset source tab details page" time="34.01" classname="Test Cases/Admin/AssetSource/Verify by clicking on any asset source in the Asset source tab details page" status="PASSED">
+         <system-out><![CDATA[2021-01-08 00:27:07 - [TEST_CASE][PASSED] - Test Cases/Admin/AssetSource/Verify by clicking on any asset source in the Asset source tab details page: Test Cases/Admin/AssetSource/Verify by clicking on any asset source in the Asset source tab details page
+
+2021-01-08 00:27:07 - [TEST_STEP][PASSED] - Start listener action : OpenWebSite: Object: 'Object Repository/Login Credentials/EnterButton' is clicked on
+
+2021-01-08 00:27:07 - [TEST_STEP][PASSED] - openBrowser(""): Browser is opened with url: ''
+
+2021-01-08 00:27:07 - [MESSAGE][WARNING] - A browser is already opened. Closing browser and opening a new one
+
+2021-01-08 00:27:08 - [MESSAGE][INFO] - Starting 'Chrome' driver
+
+2021-01-08 00:27:08 - [MESSAGE][INFO] - Action delay is set to 0 milliseconds
+
+2021-01-08 00:27:12 - [MESSAGE][PASSED] - Browser is opened with url: ''
+
+2021-01-08 00:27:12 - [TEST_STEP][PASSED] - maximizeWindow(): Current window maximized
+
+2021-01-08 00:27:14 - [MESSAGE][PASSED] - Current window maximized
+
+2021-01-08 00:27:14 - [TEST_STEP][PASSED] - navigateToUrl(Url): Navigate to 'https://dev-admin.modist.co/' successfully
+
+2021-01-08 00:27:21 - [MESSAGE][PASSED] - Navigate to 'https://dev-admin.modist.co/' successfully
+
+2021-01-08 00:27:21 - [TEST_STEP][PASSED] - loginPage.login(Email, Password): Object: 'Object Repository/Login Credentials/EnterButton' is clicked on
+
+2021-01-08 00:27:21 - [MESSAGE][PASSED] - Object 'Object Repository/Login Credentials/Email' is present
+
+2021-01-08 00:27:22 - [MESSAGE][PASSED] - Object 'Object Repository/Login Credentials/Email' is visible
+
+2021-01-08 00:27:22 - [MESSAGE][PASSED] - Object 'Object Repository/Login Credentials/Email' is clickable
+
+2021-01-08 00:27:23 - [MESSAGE][PASSED] - Text of object 'Object Repository/Login Credentials/Email' is cleared
+
+2021-01-08 00:27:23 - [MESSAGE][PASSED] - Keys 'naresh.k@qualitlabs.com' sent to object: 'Object Repository/Login Credentials/Email'
+
+2021-01-08 00:27:23 - [MESSAGE][PASSED] - Object 'Object Repository/Login Credentials/Password' is present
+
+2021-01-08 00:27:24 - [MESSAGE][PASSED] - Object 'Object Repository/Login Credentials/Password' is visible
+
+2021-01-08 00:27:24 - [MESSAGE][PASSED] - Object 'Object Repository/Login Credentials/Password' is clickable
+
+2021-01-08 00:27:24 - [MESSAGE][PASSED] - Text of object 'Object Repository/Login Credentials/Password' is cleared
+
+2021-01-08 00:27:25 - [MESSAGE][PASSED] - Keys 'Qualitlabs1?' sent to object: 'Object Repository/Login Credentials/Password'
+
+2021-01-08 00:27:25 - [MESSAGE][PASSED] - Object 'Object Repository/Login Credentials/EnterButton' is present
+
+2021-01-08 00:27:25 - [MESSAGE][PASSED] - Object 'Object Repository/Login Credentials/EnterButton' is visible
+
+2021-01-08 00:27:26 - [MESSAGE][PASSED] - Object 'Object Repository/Login Credentials/EnterButton' is clickable
+
+2021-01-08 00:27:26 - [MESSAGE][PASSED] - Object: 'Object Repository/Login Credentials/EnterButton' is clicked on
+
+2021-01-08 00:27:26 - [TEST_STEP][PASSED] - sourcename = pages.Assetsource.addAssetSource(): pages.Assetsource.addAssetSource is PASSED
+
+2021-01-08 00:27:28 - [MESSAGE][PASSED] - Object 'Object Repository/AssetSoure/Asset Source Tab' is present
+
+2021-01-08 00:27:29 - [MESSAGE][PASSED] - Object 'Object Repository/AssetSoure/Asset Source Tab' is visible
+
+2021-01-08 00:27:29 - [MESSAGE][PASSED] - Object 'Object Repository/AssetSoure/Asset Source Tab' is clickable
+
+2021-01-08 00:27:30 - [MESSAGE][PASSED] - Object: 'Object Repository/AssetSoure/Asset Source Tab' is clicked on
+
+2021-01-08 00:27:30 - [MESSAGE][PASSED] - Object 'Object Repository/AssetSoure/Add Asset Source Button' is present
+
+2021-01-08 00:27:30 - [MESSAGE][PASSED] - Object 'Object Repository/AssetSoure/Add Asset Source Button' is present
+
+2021-01-08 00:27:31 - [MESSAGE][PASSED] - Object 'Object Repository/AssetSoure/Add Asset Source Button' is visible
+
+2021-01-08 00:27:31 - [MESSAGE][PASSED] - Object 'Object Repository/AssetSoure/Add Asset Source Button' is clickable
+
+2021-01-08 00:27:31 - [MESSAGE][PASSED] - Object: 'Object Repository/AssetSoure/Add Asset Source Button' is clicked on
+
+2021-01-08 00:27:31 - [MESSAGE][PASSED] - Wait for page load successfully
+
+2021-01-08 00:27:32 - [MESSAGE][PASSED] - Object 'Object Repository/AssetSoure/Source' is present
+
+2021-01-08 00:27:32 - [MESSAGE][PASSED] - Object 'Object Repository/AssetSoure/Source' is visible
+
+2021-01-08 00:27:32 - [MESSAGE][PASSED] - Object 'Object Repository/AssetSoure/Source' is clickable
+
+2021-01-08 00:27:33 - [MESSAGE][PASSED] - Text of object 'Object Repository/AssetSoure/Source' is cleared
+
+2021-01-08 00:27:34 - [MESSAGE][PASSED] - Keys 'RandomAsset250' sent to object: 'Object Repository/AssetSoure/Source'
+
+2021-01-08 00:27:35 - [MESSAGE][PASSED] - Object 'Object Repository/AssetSoure/Asset Source button on popup' is present
+
+2021-01-08 00:27:35 - [MESSAGE][PASSED] - Object 'Object Repository/AssetSoure/Asset Source button on popup' is visible
+
+2021-01-08 00:27:35 - [MESSAGE][PASSED] - Object 'Object Repository/AssetSoure/Asset Source button on popup' is clickable
+
+2021-01-08 00:27:35 - [MESSAGE][PASSED] - Object: 'Object Repository/AssetSoure/Asset Source button on popup' is clicked on
+
+2021-01-08 00:27:35 - [MESSAGE][PASSED] - pages.Assetsource.addAssetSource is PASSED
+
+2021-01-08 00:27:35 - [TEST_STEP][PASSED] - println(sourcename): null
+
+2021-01-08 00:27:35 - [TEST_STEP][PASSED] - pages.Assetsource.openAnyExistingAssetSource(sourcename): pages.Assetsource.openAnyExistingAssetSource is PASSED
+
+2021-01-08 00:27:36 - [MESSAGE][PASSED] - Object 'Object Repository/AssetSoure/Search' is present
+
+2021-01-08 00:27:36 - [MESSAGE][PASSED] - Object 'Object Repository/AssetSoure/Search' is visible
+
+2021-01-08 00:27:37 - [MESSAGE][PASSED] - Object 'Object Repository/AssetSoure/Search' is clickable
+
+2021-01-08 00:27:37 - [MESSAGE][PASSED] - Text of object 'Object Repository/AssetSoure/Search' is cleared
+
+2021-01-08 00:27:38 - [MESSAGE][PASSED] - Keys 'RandomAsset250' sent to object: 'Object Repository/AssetSoure/Search'
+
+2021-01-08 00:27:39 - [MESSAGE][PASSED] - Scroll to object 'Object Repository/AssetSoure/AssetSourceName' successfully
+
+2021-01-08 00:27:39 - [MESSAGE][PASSED] - Object 'Object Repository/AssetSoure/AssetSourceName' is present
+
+2021-01-08 00:27:40 - [MESSAGE][PASSED] - Object 'Object Repository/AssetSoure/AssetSourceName' is visible
+
+2021-01-08 00:27:40 - [MESSAGE][PASSED] - Object 'Object Repository/AssetSoure/AssetSourceName' is clickable
+
+2021-01-08 00:27:40 - [MESSAGE][PASSED] - Object: 'Object Repository/AssetSoure/AssetSourceName' is clicked on
+
+2021-01-08 00:27:41 - [MESSAGE][PASSED] - Object 'Object Repository/AssetSoure/AssetSourceEdit(save button)' is present
+
+2021-01-08 00:27:41 - [MESSAGE][PASSED] - pages.Assetsource.openAnyExistingAssetSource is PASSED]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Admin/AssetSource/Verify Cancel button functionality in the Add Asset Source popup" time="26.129" classname="Test Cases/Admin/AssetSource/Verify Cancel button functionality in the Add Asset Source popup" status="PASSED">
+         <system-out><![CDATA[2021-01-08 00:27:41 - [TEST_CASE][PASSED] - Test Cases/Admin/AssetSource/Verify Cancel button functionality in the Add Asset Source popup: Test Cases/Admin/AssetSource/Verify Cancel button functionality in the Add Asset Source popup
+
+2021-01-08 00:27:41 - [TEST_STEP][PASSED] - Start listener action : OpenWebSite: Object: 'Object Repository/Login Credentials/EnterButton' is clicked on
+
+2021-01-08 00:27:41 - [TEST_STEP][PASSED] - openBrowser(""): Browser is opened with url: ''
+
+2021-01-08 00:27:41 - [MESSAGE][WARNING] - A browser is already opened. Closing browser and opening a new one
+
+2021-01-08 00:27:42 - [MESSAGE][INFO] - Starting 'Chrome' driver
+
+2021-01-08 00:27:42 - [MESSAGE][INFO] - Action delay is set to 0 milliseconds
+
+2021-01-08 00:27:46 - [MESSAGE][PASSED] - Browser is opened with url: ''
+
+2021-01-08 00:27:46 - [TEST_STEP][PASSED] - maximizeWindow(): Current window maximized
+
+2021-01-08 00:27:48 - [MESSAGE][PASSED] - Current window maximized
+
+2021-01-08 00:27:48 - [TEST_STEP][PASSED] - navigateToUrl(Url): Navigate to 'https://dev-admin.modist.co/' successfully
+
+2021-01-08 00:27:55 - [MESSAGE][PASSED] - Navigate to 'https://dev-admin.modist.co/' successfully
+
+2021-01-08 00:27:55 - [TEST_STEP][PASSED] - loginPage.login(Email, Password): Object: 'Object Repository/Login Credentials/EnterButton' is clicked on
+
+2021-01-08 00:27:56 - [MESSAGE][PASSED] - Object 'Object Repository/Login Credentials/Email' is present
+
+2021-01-08 00:27:56 - [MESSAGE][PASSED] - Object 'Object Repository/Login Credentials/Email' is visible
+
+2021-01-08 00:27:56 - [MESSAGE][PASSED] - Object 'Object Repository/Login Credentials/Email' is clickable
+
+2021-01-08 00:27:57 - [MESSAGE][PASSED] - Text of object 'Object Repository/Login Credentials/Email' is cleared
+
+2021-01-08 00:27:57 - [MESSAGE][PASSED] - Keys 'naresh.k@qualitlabs.com' sent to object: 'Object Repository/Login Credentials/Email'
+
+2021-01-08 00:27:57 - [MESSAGE][PASSED] - Object 'Object Repository/Login Credentials/Password' is present
+
+2021-01-08 00:27:58 - [MESSAGE][PASSED] - Object 'Object Repository/Login Credentials/Password' is visible
+
+2021-01-08 00:27:58 - [MESSAGE][PASSED] - Object 'Object Repository/Login Credentials/Password' is clickable
+
+2021-01-08 00:27:58 - [MESSAGE][PASSED] - Text of object 'Object Repository/Login Credentials/Password' is cleared
+
+2021-01-08 00:27:59 - [MESSAGE][PASSED] - Keys 'Qualitlabs1?' sent to object: 'Object Repository/Login Credentials/Password'
+
+2021-01-08 00:27:59 - [MESSAGE][PASSED] - Object 'Object Repository/Login Credentials/EnterButton' is present
+
+2021-01-08 00:27:59 - [MESSAGE][PASSED] - Object 'Object Repository/Login Credentials/EnterButton' is visible
+
+2021-01-08 00:28:00 - [MESSAGE][PASSED] - Object 'Object Repository/Login Credentials/EnterButton' is clickable
+
+2021-01-08 00:28:00 - [MESSAGE][PASSED] - Object: 'Object Repository/Login Credentials/EnterButton' is clicked on
+
+2021-01-08 00:28:00 - [TEST_STEP][PASSED] - pages.Assetsource.navigateToAssetSourceDetailsTab(): pages.Assetsource.navigateToAssetSourceDetailsTab is PASSED
+
+2021-01-08 00:28:03 - [MESSAGE][PASSED] - Object 'Object Repository/AssetSoure/Asset Source Tab' is present
+
+2021-01-08 00:28:03 - [MESSAGE][PASSED] - Object 'Object Repository/AssetSoure/Asset Source Tab' is visible
+
+2021-01-08 00:28:03 - [MESSAGE][PASSED] - Object 'Object Repository/AssetSoure/Asset Source Tab' is clickable
+
+2021-01-08 00:28:04 - [MESSAGE][PASSED] - Object: 'Object Repository/AssetSoure/Asset Source Tab' is clicked on
+
+2021-01-08 00:28:04 - [MESSAGE][PASSED] - Object 'Object Repository/AssetSoure/Add Asset Source Button' is present
+
+2021-01-08 00:28:04 - [MESSAGE][PASSED] - pages.Assetsource.navigateToAssetSourceDetailsTab is PASSED
+
+2021-01-08 00:28:04 - [TEST_STEP][PASSED] - pages.Assetsource.clickAddAssetSource(): pages.Assetsource.clickAddAssetSource is PASSED
+
+2021-01-08 00:28:05 - [MESSAGE][PASSED] - Object 'Object Repository/AssetSoure/Add Asset Source Button' is present
+
+2021-01-08 00:28:05 - [MESSAGE][PASSED] - Object 'Object Repository/AssetSoure/Add Asset Source Button' is visible
+
+2021-01-08 00:28:05 - [MESSAGE][PASSED] - Object 'Object Repository/AssetSoure/Add Asset Source Button' is clickable
+
+2021-01-08 00:28:05 - [MESSAGE][PASSED] - Object: 'Object Repository/AssetSoure/Add Asset Source Button' is clicked on
+
+2021-01-08 00:28:06 - [MESSAGE][PASSED] - Wait for page load successfully
+
+2021-01-08 00:28:06 - [MESSAGE][PASSED] - pages.Assetsource.clickAddAssetSource is PASSED
+
+2021-01-08 00:28:06 - [TEST_STEP][PASSED] - pages.Assetsource.cancelAssetSourcePopup(): pages.Assetsource.cancelAssetSourcePopup is PASSED
+
+2021-01-08 00:28:06 - [MESSAGE][PASSED] - Object 'Object Repository/AssetSoure/Cancel Button' is present
+
+2021-01-08 00:28:06 - [MESSAGE][PASSED] - Object 'Object Repository/AssetSoure/Cancel Button' is visible
+
+2021-01-08 00:28:07 - [MESSAGE][PASSED] - Object 'Object Repository/AssetSoure/Cancel Button' is clickable
+
+2021-01-08 00:28:07 - [MESSAGE][PASSED] - Object: 'Object Repository/AssetSoure/Cancel Button' is clicked on
+
+2021-01-08 00:28:07 - [MESSAGE][PASSED] - Object 'Object Repository/AssetSoure/Search' is present
+
+2021-01-08 00:28:07 - [MESSAGE][PASSED] - pages.Assetsource.cancelAssetSourcePopup is PASSED]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Admin/AssetSource/Verify Close button functionality in the Asset Source edit page" time="36.155" classname="Test Cases/Admin/AssetSource/Verify Close button functionality in the Asset Source edit page" status="PASSED">
+         <system-out><![CDATA[2021-01-08 00:28:07 - [TEST_CASE][PASSED] - Test Cases/Admin/AssetSource/Verify Close button functionality in the Asset Source edit page: Test Cases/Admin/AssetSource/Verify Close button functionality in the Asset Source edit page
+
+2021-01-08 00:28:08 - [TEST_STEP][PASSED] - Start listener action : OpenWebSite: Object: 'Object Repository/Login Credentials/EnterButton' is clicked on
+
+2021-01-08 00:28:08 - [TEST_STEP][PASSED] - openBrowser(""): Browser is opened with url: ''
+
+2021-01-08 00:28:08 - [MESSAGE][WARNING] - A browser is already opened. Closing browser and opening a new one
+
+2021-01-08 00:28:08 - [MESSAGE][INFO] - Starting 'Chrome' driver
+
+2021-01-08 00:28:08 - [MESSAGE][INFO] - Action delay is set to 0 milliseconds
+
+2021-01-08 00:28:12 - [MESSAGE][PASSED] - Browser is opened with url: ''
+
+2021-01-08 00:28:12 - [TEST_STEP][PASSED] - maximizeWindow(): Current window maximized
+
+2021-01-08 00:28:14 - [MESSAGE][PASSED] - Current window maximized
+
+2021-01-08 00:28:14 - [TEST_STEP][PASSED] - navigateToUrl(Url): Navigate to 'https://dev-admin.modist.co/' successfully
+
+2021-01-08 00:28:21 - [MESSAGE][PASSED] - Navigate to 'https://dev-admin.modist.co/' successfully
+
+2021-01-08 00:28:21 - [TEST_STEP][PASSED] - loginPage.login(Email, Password): Object: 'Object Repository/Login Credentials/EnterButton' is clicked on
+
+2021-01-08 00:28:21 - [MESSAGE][PASSED] - Object 'Object Repository/Login Credentials/Email' is present
+
+2021-01-08 00:28:21 - [MESSAGE][PASSED] - Object 'Object Repository/Login Credentials/Email' is visible
+
+2021-01-08 00:28:22 - [MESSAGE][PASSED] - Object 'Object Repository/Login Credentials/Email' is clickable
+
+2021-01-08 00:28:22 - [MESSAGE][PASSED] - Text of object 'Object Repository/Login Credentials/Email' is cleared
+
+2021-01-08 00:28:23 - [MESSAGE][PASSED] - Keys 'naresh.k@qualitlabs.com' sent to object: 'Object Repository/Login Credentials/Email'
+
+2021-01-08 00:28:23 - [MESSAGE][PASSED] - Object 'Object Repository/Login Credentials/Password' is present
+
+2021-01-08 00:28:23 - [MESSAGE][PASSED] - Object 'Object Repository/Login Credentials/Password' is visible
+
+2021-01-08 00:28:24 - [MESSAGE][PASSED] - Object 'Object Repository/Login Credentials/Password' is clickable
+
+2021-01-08 00:28:24 - [MESSAGE][PASSED] - Text of object 'Object Repository/Login Credentials/Password' is cleared
+
+2021-01-08 00:28:24 - [MESSAGE][PASSED] - Keys 'Qualitlabs1?' sent to object: 'Object Repository/Login Credentials/Password'
+
+2021-01-08 00:28:25 - [MESSAGE][PASSED] - Object 'Object Repository/Login Credentials/EnterButton' is present
+
+2021-01-08 00:28:25 - [MESSAGE][PASSED] - Object 'Object Repository/Login Credentials/EnterButton' is visible
+
+2021-01-08 00:28:25 - [MESSAGE][PASSED] - Object 'Object Repository/Login Credentials/EnterButton' is clickable
+
+2021-01-08 00:28:26 - [MESSAGE][PASSED] - Object: 'Object Repository/Login Credentials/EnterButton' is clicked on
+
+2021-01-08 00:28:26 - [TEST_STEP][PASSED] - sourcename = pages.Assetsource.addAssetSource(): pages.Assetsource.addAssetSource is PASSED
+
+2021-01-08 00:28:28 - [MESSAGE][PASSED] - Object 'Object Repository/AssetSoure/Asset Source Tab' is present
+
+2021-01-08 00:28:29 - [MESSAGE][PASSED] - Object 'Object Repository/AssetSoure/Asset Source Tab' is visible
+
+2021-01-08 00:28:29 - [MESSAGE][PASSED] - Object 'Object Repository/AssetSoure/Asset Source Tab' is clickable
+
+2021-01-08 00:28:30 - [MESSAGE][PASSED] - Object: 'Object Repository/AssetSoure/Asset Source Tab' is clicked on
+
+2021-01-08 00:28:30 - [MESSAGE][PASSED] - Object 'Object Repository/AssetSoure/Add Asset Source Button' is present
+
+2021-01-08 00:28:31 - [MESSAGE][PASSED] - Object 'Object Repository/AssetSoure/Add Asset Source Button' is present
+
+2021-01-08 00:28:31 - [MESSAGE][PASSED] - Object 'Object Repository/AssetSoure/Add Asset Source Button' is visible
+
+2021-01-08 00:28:31 - [MESSAGE][PASSED] - Object 'Object Repository/AssetSoure/Add Asset Source Button' is clickable
+
+2021-01-08 00:28:32 - [MESSAGE][PASSED] - Object: 'Object Repository/AssetSoure/Add Asset Source Button' is clicked on
+
+2021-01-08 00:28:32 - [MESSAGE][PASSED] - Wait for page load successfully
+
+2021-01-08 00:28:32 - [MESSAGE][PASSED] - Object 'Object Repository/AssetSoure/Source' is present
+
+2021-01-08 00:28:32 - [MESSAGE][PASSED] - Object 'Object Repository/AssetSoure/Source' is visible
+
+2021-01-08 00:28:33 - [MESSAGE][PASSED] - Object 'Object Repository/AssetSoure/Source' is clickable
+
+2021-01-08 00:28:33 - [MESSAGE][PASSED] - Text of object 'Object Repository/AssetSoure/Source' is cleared
+
+2021-01-08 00:28:33 - [MESSAGE][PASSED] - Keys 'RandomAsset299' sent to object: 'Object Repository/AssetSoure/Source'
+
+2021-01-08 00:28:34 - [MESSAGE][PASSED] - Object 'Object Repository/AssetSoure/Asset Source button on popup' is present
+
+2021-01-08 00:28:34 - [MESSAGE][PASSED] - Object 'Object Repository/AssetSoure/Asset Source button on popup' is visible
+
+2021-01-08 00:28:34 - [MESSAGE][PASSED] - Object 'Object Repository/AssetSoure/Asset Source button on popup' is clickable
+
+2021-01-08 00:28:35 - [MESSAGE][PASSED] - Object: 'Object Repository/AssetSoure/Asset Source button on popup' is clicked on
+
+2021-01-08 00:28:35 - [MESSAGE][PASSED] - pages.Assetsource.addAssetSource is PASSED
+
+2021-01-08 00:28:35 - [TEST_STEP][PASSED] - println(sourcename): null
+
+2021-01-08 00:28:35 - [TEST_STEP][PASSED] - pages.Assetsource.openAnyExistingAssetSource(sourcename): pages.Assetsource.openAnyExistingAssetSource is PASSED
+
+2021-01-08 00:28:35 - [MESSAGE][PASSED] - Object 'Object Repository/AssetSoure/Search' is present
+
+2021-01-08 00:28:35 - [MESSAGE][PASSED] - Object 'Object Repository/AssetSoure/Search' is visible
+
+2021-01-08 00:28:36 - [MESSAGE][PASSED] - Object 'Object Repository/AssetSoure/Search' is clickable
+
+2021-01-08 00:28:36 - [MESSAGE][PASSED] - Text of object 'Object Repository/AssetSoure/Search' is cleared
+
+2021-01-08 00:28:36 - [MESSAGE][PASSED] - Keys 'RandomAsset299' sent to object: 'Object Repository/AssetSoure/Search'
+
+2021-01-08 00:28:39 - [MESSAGE][PASSED] - Scroll to object 'Object Repository/AssetSoure/AssetSourceName' successfully
+
+2021-01-08 00:28:39 - [MESSAGE][PASSED] - Object 'Object Repository/AssetSoure/AssetSourceName' is present
+
+2021-01-08 00:28:40 - [MESSAGE][PASSED] - Object 'Object Repository/AssetSoure/AssetSourceName' is visible
+
+2021-01-08 00:28:41 - [MESSAGE][PASSED] - Object 'Object Repository/AssetSoure/AssetSourceName' is clickable
+
+2021-01-08 00:28:41 - [MESSAGE][PASSED] - Object: 'Object Repository/AssetSoure/AssetSourceName' is clicked on
+
+2021-01-08 00:28:41 - [MESSAGE][PASSED] - Object 'Object Repository/AssetSoure/AssetSourceEdit(save button)' is present
+
+2021-01-08 00:28:41 - [MESSAGE][PASSED] - pages.Assetsource.openAnyExistingAssetSource is PASSED
+
+2021-01-08 00:28:41 - [TEST_STEP][PASSED] - pages.Assetsource.closeAssetSourceEditpage(): pages.Assetsource.closeAssetSourceEditpage is PASSED
+
+2021-01-08 00:28:42 - [MESSAGE][PASSED] - Object 'Object Repository/AssetSoure/Close Button' is present
+
+2021-01-08 00:28:42 - [MESSAGE][PASSED] - Object 'Object Repository/AssetSoure/Close Button' is visible
+
+2021-01-08 00:28:43 - [MESSAGE][PASSED] - Object 'Object Repository/AssetSoure/Close Button' is clickable
+
+2021-01-08 00:28:43 - [MESSAGE][PASSED] - Object: 'Object Repository/AssetSoure/Close Button' is clicked on
+
+2021-01-08 00:28:44 - [MESSAGE][PASSED] - Object 'Object Repository/AssetSoure/Search' is present
+
+2021-01-08 00:28:44 - [MESSAGE][PASSED] - pages.Assetsource.closeAssetSourceEditpage is PASSED]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Admin/AssetSource/Verify elements on Add Asset Source popup" time="26.032" classname="Test Cases/Admin/AssetSource/Verify elements on Add Asset Source popup" status="FAILED">
+         <failure type="FAILED" message="Test Cases/Admin/AssetSource/Verify elements on Add Asset Source popup FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: The element Source is not present
+	at com.kms.katalon.core.util.KeywordUtil.markFailedAndStop(KeywordUtil.java:28)
+	at com.kms.katalon.core.util.KeywordUtil$markFailedAndStop.call(Unknown Source)
+	at verification.Verification.verifyElementPresent(Verification.groovy:31)
+	at verification.Verification.verifyElementPresent(Verification.groovy)
+	at verification.Verification$verifyElementPresent.call(Unknown Source)
+	at pages.Assetsource.verifyAssetSourcePopUp(Assetsource.groovy:76)
+	at pages.Assetsource.invokeMethod(Assetsource.groovy)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:50)
+	at Verify elements on Add Asset Source popup.run(Verify elements on Add Asset Source popup:22)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:339)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:330)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:309)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:301)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:235)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:191)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:141)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:90)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1610083493020.run(TempTestSuite1610083493020.groovy:39)
+"/>
+         <system-out><![CDATA[2021-01-08 00:28:44 - [TEST_CASE][FAILED] - Test Cases/Admin/AssetSource/Verify elements on Add Asset Source popup: Test Cases/Admin/AssetSource/Verify elements on Add Asset Source popup FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: The element Source is not present
+	at com.kms.katalon.core.util.KeywordUtil.markFailedAndStop(KeywordUtil.java:28)
+	at com.kms.katalon.core.util.KeywordUtil$markFailedAndStop.call(Unknown Source)
+	at verification.Verification.verifyElementPresent(Verification.groovy:31)
+	at verification.Verification.verifyElementPresent(Verification.groovy)
+	at verification.Verification$verifyElementPresent.call(Unknown Source)
+	at pages.Assetsource.verifyAssetSourcePopUp(Assetsource.groovy:76)
+	at pages.Assetsource.invokeMethod(Assetsource.groovy)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:50)
+	at Verify elements on Add Asset Source popup.run(Verify elements on Add Asset Source popup:22)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:339)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:330)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:309)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:301)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:235)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:191)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:141)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:90)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1610083493020.run(TempTestSuite1610083493020.groovy:39)
+
+
+2021-01-08 00:28:44 - [TEST_STEP][PASSED] - Start listener action : OpenWebSite: Object: 'Object Repository/Login Credentials/EnterButton' is clicked on
+
+2021-01-08 00:28:44 - [TEST_STEP][PASSED] - openBrowser(""): Browser is opened with url: ''
+
+2021-01-08 00:28:44 - [MESSAGE][WARNING] - A browser is already opened. Closing browser and opening a new one
+
+2021-01-08 00:28:45 - [MESSAGE][INFO] - Starting 'Chrome' driver
+
+2021-01-08 00:28:45 - [MESSAGE][INFO] - Action delay is set to 0 milliseconds
+
+2021-01-08 00:28:48 - [MESSAGE][PASSED] - Browser is opened with url: ''
+
+2021-01-08 00:28:48 - [TEST_STEP][PASSED] - maximizeWindow(): Current window maximized
+
+2021-01-08 00:28:50 - [MESSAGE][PASSED] - Current window maximized
+
+2021-01-08 00:28:50 - [TEST_STEP][PASSED] - navigateToUrl(Url): Navigate to 'https://dev-admin.modist.co/' successfully
+
+2021-01-08 00:28:58 - [MESSAGE][PASSED] - Navigate to 'https://dev-admin.modist.co/' successfully
+
+2021-01-08 00:28:58 - [TEST_STEP][PASSED] - loginPage.login(Email, Password): Object: 'Object Repository/Login Credentials/EnterButton' is clicked on
+
+2021-01-08 00:28:58 - [MESSAGE][PASSED] - Object 'Object Repository/Login Credentials/Email' is present
+
+2021-01-08 00:28:59 - [MESSAGE][PASSED] - Object 'Object Repository/Login Credentials/Email' is visible
+
+2021-01-08 00:28:59 - [MESSAGE][PASSED] - Object 'Object Repository/Login Credentials/Email' is clickable
+
+2021-01-08 00:28:59 - [MESSAGE][PASSED] - Text of object 'Object Repository/Login Credentials/Email' is cleared
+
+2021-01-08 00:29:00 - [MESSAGE][PASSED] - Keys 'naresh.k@qualitlabs.com' sent to object: 'Object Repository/Login Credentials/Email'
+
+2021-01-08 00:29:00 - [MESSAGE][PASSED] - Object 'Object Repository/Login Credentials/Password' is present
+
+2021-01-08 00:29:00 - [MESSAGE][PASSED] - Object 'Object Repository/Login Credentials/Password' is visible
+
+2021-01-08 00:29:01 - [MESSAGE][PASSED] - Object 'Object Repository/Login Credentials/Password' is clickable
+
+2021-01-08 00:29:01 - [MESSAGE][PASSED] - Text of object 'Object Repository/Login Credentials/Password' is cleared
+
+2021-01-08 00:29:01 - [MESSAGE][PASSED] - Keys 'Qualitlabs1?' sent to object: 'Object Repository/Login Credentials/Password'
+
+2021-01-08 00:29:02 - [MESSAGE][PASSED] - Object 'Object Repository/Login Credentials/EnterButton' is present
+
+2021-01-08 00:29:02 - [MESSAGE][PASSED] - Object 'Object Repository/Login Credentials/EnterButton' is visible
+
+2021-01-08 00:29:02 - [MESSAGE][PASSED] - Object 'Object Repository/Login Credentials/EnterButton' is clickable
+
+2021-01-08 00:29:03 - [MESSAGE][PASSED] - Object: 'Object Repository/Login Credentials/EnterButton' is clicked on
+
+2021-01-08 00:29:03 - [TEST_STEP][PASSED] - pages.Assetsource.navigateToAssetSourceDetailsTab(): pages.Assetsource.navigateToAssetSourceDetailsTab is PASSED
+
+2021-01-08 00:29:05 - [MESSAGE][PASSED] - Object 'Object Repository/AssetSoure/Asset Source Tab' is present
+
+2021-01-08 00:29:05 - [MESSAGE][PASSED] - Object 'Object Repository/AssetSoure/Asset Source Tab' is visible
+
+2021-01-08 00:29:06 - [MESSAGE][PASSED] - Object 'Object Repository/AssetSoure/Asset Source Tab' is clickable
+
+2021-01-08 00:29:07 - [MESSAGE][PASSED] - Object: 'Object Repository/AssetSoure/Asset Source Tab' is clicked on
+
+2021-01-08 00:29:07 - [MESSAGE][PASSED] - Object 'Object Repository/AssetSoure/Add Asset Source Button' is present
+
+2021-01-08 00:29:07 - [MESSAGE][PASSED] - pages.Assetsource.navigateToAssetSourceDetailsTab is PASSED
+
+2021-01-08 00:29:07 - [TEST_STEP][PASSED] - pages.Assetsource.clickAddAssetSource(): pages.Assetsource.clickAddAssetSource is PASSED
+
+2021-01-08 00:29:08 - [MESSAGE][PASSED] - Object 'Object Repository/AssetSoure/Add Asset Source Button' is present
+
+2021-01-08 00:29:08 - [MESSAGE][PASSED] - Object 'Object Repository/AssetSoure/Add Asset Source Button' is visible
+
+2021-01-08 00:29:08 - [MESSAGE][PASSED] - Object 'Object Repository/AssetSoure/Add Asset Source Button' is clickable
+
+2021-01-08 00:29:08 - [MESSAGE][PASSED] - Object: 'Object Repository/AssetSoure/Add Asset Source Button' is clicked on
+
+2021-01-08 00:29:08 - [MESSAGE][PASSED] - Wait for page load successfully
+
+2021-01-08 00:29:08 - [MESSAGE][PASSED] - pages.Assetsource.clickAddAssetSource is PASSED
+
+2021-01-08 00:29:08 - [TEST_STEP][FAILED] - pages.Assetsource.verifyAssetSourcePopUp(): The element Source is not present
+
+2021-01-08 00:29:08 - [MESSAGE][WARNING] - Test object with id 'Object Repository/AssetSource/Source' does not exist
+
+2021-01-08 00:29:09 - [MESSAGE][WARNING] - Test object with id 'Object Repository/' does not exist
+
+2021-01-08 00:29:09 - [MESSAGE][WARNING] - Unable to verify object is present (Root cause: com.kms.katalon.core.exception.StepFailedException: Unable to verify object is present
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:26)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementPresentKeyword.verifyElementPresent(VerifyElementPresentKeyword.groovy:92)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementPresentKeyword.execute(VerifyElementPresentKeyword.groovy:68)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:73)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.verifyElementPresent(WebUiBuiltInKeywords.groovy:1445)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$verifyElementPresent$8.call(Unknown Source)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$verifyElementPresent$8.call(Unknown Source)
+	at verification.Verification.verifyElementPresent(Verification.groovy:29)
+	at verification.Verification.verifyElementPresent(Verification.groovy)
+	at verification.Verification$verifyElementPresent.call(Unknown Source)
+	at pages.Assetsource.verifyAssetSourcePopUp(Assetsource.groovy:76)
+	at pages.Assetsource.invokeMethod(Assetsource.groovy)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:50)
+	at Verify elements on Add Asset Source popup.run(Verify elements on Add Asset Source popup:22)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:339)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:330)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:309)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:301)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:235)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:191)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:141)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:90)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1610083493020.run(TempTestSuite1610083493020.groovy:39)
+Caused by: java.lang.IllegalArgumentException: Object is null
+	at com.kms.katalon.core.helper.KeywordHelper.checkTestObjectParameter(KeywordHelper.java:33)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementPresentKeyword$_verifyElementPresent_closure1.doCall(VerifyElementPresentKeyword.groovy:76)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementPresentKeyword$_verifyElementPresent_closure1.call(VerifyElementPresentKeyword.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:20)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementPresentKeyword.verifyElementPresent(VerifyElementPresentKeyword.groovy:92)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementPresentKeyword.execute(VerifyElementPresentKeyword.groovy:68)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:73)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.verifyElementPresent(WebUiBuiltInKeywords.groovy:1445)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$verifyElementPresent$8.call(Unknown Source)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$verifyElementPresent$8.call(Unknown Source)
+	at verification.Verification.verifyElementPresent(Verification.groovy:29)
+	at verification.Verification.verifyElementPresent(Verification.groovy)
+	at verification.Verification$verifyElementPresent.call(Unknown Source)
+	at pages.Assetsource.verifyAssetSourcePopUp(Assetsource.groovy:76)
+	at pages.Assetsource.invokeMethod(Assetsource.groovy)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:50)
+	at Script1610009661631.run(Script1610009661631.groovy:22)
+	... 13 more
+)
+[[ATTACHMENT|E:\\Modist Project\\ModistProject\\Reports\\20210108_002453\\AssetSource\\20210108_002453\\1610083749008.png]]
+
+2021-01-08 00:29:10 - [MESSAGE][PASSED] - Taking screenshot successfully
+[[ATTACHMENT|E:\Modist Project\ModistProject\Reports\20210108_002453\AssetSource\20210108_002453\1610083749809.png]]
+
+2021-01-08 00:29:10 - [MESSAGE][FAILED] - The element Source is not present]]></system-out>
+         <system-err><![CDATA[2021-01-08 00:28:44 - [TEST_CASE][FAILED] - Test Cases/Admin/AssetSource/Verify elements on Add Asset Source popup: Test Cases/Admin/AssetSource/Verify elements on Add Asset Source popup FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: The element Source is not present
+	at com.kms.katalon.core.util.KeywordUtil.markFailedAndStop(KeywordUtil.java:28)
+	at com.kms.katalon.core.util.KeywordUtil$markFailedAndStop.call(Unknown Source)
+	at verification.Verification.verifyElementPresent(Verification.groovy:31)
+	at verification.Verification.verifyElementPresent(Verification.groovy)
+	at verification.Verification$verifyElementPresent.call(Unknown Source)
+	at pages.Assetsource.verifyAssetSourcePopUp(Assetsource.groovy:76)
+	at pages.Assetsource.invokeMethod(Assetsource.groovy)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:50)
+	at Verify elements on Add Asset Source popup.run(Verify elements on Add Asset Source popup:22)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:339)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:330)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:309)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:301)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:235)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:191)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:141)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:90)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1610083493020.run(TempTestSuite1610083493020.groovy:39)]]></system-err>
+      </testcase>
+      <system-out><![CDATA[2021-01-08 00:24:56 - [TEST_SUITE][FAILED] - AssetSource: Test Cases/Admin/AssetSource/Verify elements on Add Asset Source popup FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: The element Source is not present
+	at com.kms.katalon.core.util.KeywordUtil.markFailedAndStop(KeywordUtil.java:28)
+	at com.kms.katalon.core.util.KeywordUtil$markFailedAndStop.call(Unknown Source)
+	at verification.Verification.verifyElementPresent(Verification.groovy:31)
+	at verification.Verification.verifyElementPresent(Verification.groovy)
+	at verification.Verification$verifyElementPresent.call(Unknown Source)
+	at pages.Assetsource.verifyAssetSourcePopUp(Assetsource.groovy:76)
+	at pages.Assetsource.invokeMethod(Assetsource.groovy)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:50)
+	at Verify elements on Add Asset Source popup.run(Verify elements on Add Asset Source popup:22)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:339)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:330)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:309)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:301)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:235)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:191)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:141)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:90)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1610083493020.run(TempTestSuite1610083493020.groovy:39)]]></system-out>
+      <system-err><![CDATA[2021-01-08 00:24:56 - [TEST_SUITE][FAILED] - AssetSource: Test Cases/Admin/AssetSource/Verify elements on Add Asset Source popup FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: The element Source is not present
+	at com.kms.katalon.core.util.KeywordUtil.markFailedAndStop(KeywordUtil.java:28)
+	at com.kms.katalon.core.util.KeywordUtil$markFailedAndStop.call(Unknown Source)
+	at verification.Verification.verifyElementPresent(Verification.groovy:31)
+	at verification.Verification.verifyElementPresent(Verification.groovy)
+	at verification.Verification$verifyElementPresent.call(Unknown Source)
+	at pages.Assetsource.verifyAssetSourcePopUp(Assetsource.groovy:76)
+	at pages.Assetsource.invokeMethod(Assetsource.groovy)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:50)
+	at Verify elements on Add Asset Source popup.run(Verify elements on Add Asset Source popup:22)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:339)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:330)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:309)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:301)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:235)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:191)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:141)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:90)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1610083493020.run(TempTestSuite1610083493020.groovy:39)]]></system-err>
+   </testsuite>
+</testsuites>

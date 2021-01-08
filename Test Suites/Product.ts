@@ -54,12 +54,6 @@
       <testCaseId>Test Cases/Admin/Product/verifyCloseButtonFunctionalityInProductEditPage</testCaseId>
    </testCaseLink>
    <testCaseLink>
-      <guid>adf174d1-32c0-4882-8264-75ebe7b24364</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/Admin/Product/verifyDragAndDropFunctionalityInProductAssets</testCaseId>
-   </testCaseLink>
-   <testCaseLink>
       <guid>81348244-d721-440d-81f9-c53ace795a73</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>

@@ -1,0 +1,139 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+journeyPortal,Chrome 87.0.4280.141,,,2021-01-08 01:20:06,2021-01-08 01:31:26,11m - 20.219s,FAILED
+,,,,,,,
+Test Cases/JourneyPortal/addProductTOCartAndVerifyWhetherIsItShownInUi,Chrome 87.0.4280.141,,,2021-01-08 01:20:06,2021-01-08 01:21:16,1m - 9.511s,PASSED
+Start listener action : OpenWebSite,Chrome 87.0.4280.141,,,2021-01-08 01:20:06,2021-01-08 01:20:28,21.508s,PASSED
+pages.Journey.clickOnJourneyTab(),Chrome 87.0.4280.141,,,2021-01-08 01:20:28,2021-01-08 01:20:31,2.947s,PASSED
+journeyName = pages.Journey.getRandomJourneyName(),Chrome 87.0.4280.141,,,2021-01-08 01:20:31,2021-01-08 01:20:37,6.003s,PASSED
+accessCode = pages.Journey.getExistingJourneyAccesscode(journeyName),Chrome 87.0.4280.141,,,2021-01-08 01:20:37,2021-01-08 01:20:47,10.136s,PASSED
+login.LoginForJourneyApplication.loginToJourneyApplication(),Chrome 87.0.4280.141,,,2021-01-08 01:20:47,2021-01-08 01:20:53,6.266s,PASSED
+pages.Journey.enterAccessCodeInJourney(accessCode),Chrome 87.0.4280.141,,,2021-01-08 01:20:53,2021-01-08 01:20:55,1.966s,PASSED
+pages.Journey.clickEnterButton(),Chrome 87.0.4280.141,,,2021-01-08 01:20:55,2021-01-08 01:20:56,1.209s,PASSED
+pages.JourneyPortal.openExistingSection(),Chrome 87.0.4280.141,,,2021-01-08 01:20:56,2021-01-08 01:21:00,3.763s,PASSED
+pages.JourneyPortal.openAnyProductInTheJourneyPortal(),Chrome 87.0.4280.141,,,2021-01-08 01:21:00,2021-01-08 01:21:03,3.117s,PASSED
+orderCount = pages.JourneyPortal.clickAddToCartButton(),Chrome 87.0.4280.141,,,2021-01-08 01:21:03,2021-01-08 01:21:15,11.817s,PASSED
+productCount = pages.JourneyPortal.getProductsCount(),Chrome 87.0.4280.141,,,2021-01-08 01:21:15,2021-01-08 01:21:16,0.528s,PASSED
+"pages.JourneyPortal.verifyWhetherOrderedAndAvailableProductsCountAreSame(orderCount, productCount)",Chrome 87.0.4280.141,,,2021-01-08 01:21:16,2021-01-08 01:21:16,0.004s,PASSED
+,,,,,,,
+Test Cases/JourneyPortal/AddProductToCartMulitpleTimesAndVerifyTheProductsCountAfterRefresh,Chrome 87.0.4280.141,,,2021-01-08 01:21:16,2021-01-08 01:22:20,1m - 4.716s,FAILED
+Start listener action : OpenWebSite,Chrome 87.0.4280.141,,,2021-01-08 01:21:16,2021-01-08 01:21:38,22.126s,PASSED
+pages.Journey.clickOnJourneyTab(),Chrome 87.0.4280.141,,,2021-01-08 01:21:38,2021-01-08 01:21:42,3.555s,PASSED
+journeyName = pages.Journey.getRandomJourneyName(),Chrome 87.0.4280.141,,,2021-01-08 01:21:42,2021-01-08 01:21:48,6.441s,PASSED
+accessCode = pages.Journey.getExistingJourneyAccesscode(journeyName),Chrome 87.0.4280.141,,,2021-01-08 01:21:48,2021-01-08 01:21:57,8.595s,PASSED
+login.LoginForJourneyApplication.loginToJourneyApplication(),Chrome 87.0.4280.141,,,2021-01-08 01:21:57,2021-01-08 01:22:02,5.692s,PASSED
+pages.Journey.enterAccessCodeInJourney(accessCode),Chrome 87.0.4280.141,,,2021-01-08 01:22:02,2021-01-08 01:22:04,1.906s,PASSED
+pages.Journey.clickEnterButton(),Chrome 87.0.4280.141,,,2021-01-08 01:22:04,2021-01-08 01:22:05,1.179s,PASSED
+pages.JourneyPortal.openExistingSection(),Chrome 87.0.4280.141,,,2021-01-08 01:22:05,2021-01-08 01:22:09,3.368s,PASSED
+pages.JourneyPortal.openAnyProductInTheJourneyPortal(),Chrome 87.0.4280.141,,,2021-01-08 01:22:09,2021-01-08 01:22:12,2.965s,PASSED
+orderCount = pages.JourneyPortal.clickAddToCartButton(),Chrome 87.0.4280.141,,,2021-01-08 01:22:12,2021-01-08 01:22:19,7.294s,PASSED
+login.LoginForJourneyApplication.reloadThePage(),Chrome 87.0.4280.141,,,2021-01-08 01:22:19,2021-01-08 01:22:19,0.021s,PASSED
+productCount = pages.JourneyPortal.getProductsCount(),Chrome 87.0.4280.141,,,2021-01-08 01:22:19,2021-01-08 01:22:20,1.394s,PASSED
+"pages.JourneyPortal.verifyWhetherOrderedAndAvailableProductsCountAreSame(orderCount, productCount)",Chrome 87.0.4280.141,,,2021-01-08 01:22:20,2021-01-08 01:22:20,0.013s,FAILED
+,,,,,,,
+Test Cases/JourneyPortal/loginToJourneyApplicationThroughAccessCodeAndVerifyTheDisplayPage,Chrome 87.0.4280.141,,,2021-01-08 01:22:20,2021-01-08 01:23:08,48.067s,PASSED
+Start listener action : OpenWebSite,Chrome 87.0.4280.141,,,2021-01-08 01:22:20,2021-01-08 01:22:39,19.076s,PASSED
+pages.Journey.clickOnJourneyTab(),Chrome 87.0.4280.141,,,2021-01-08 01:22:40,2021-01-08 01:22:43,3.034s,PASSED
+journeyName = pages.Journey.getRandomJourneyName(),Chrome 87.0.4280.141,,,2021-01-08 01:22:43,2021-01-08 01:22:49,5.882s,PASSED
+accessCode = pages.Journey.getExistingJourneyAccesscode(journeyName),Chrome 87.0.4280.141,,,2021-01-08 01:22:49,2021-01-08 01:22:59,10.350s,PASSED
+login.LoginForJourneyApplication.loginToJourneyApplication(),Chrome 87.0.4280.141,,,2021-01-08 01:22:59,2021-01-08 01:23:04,5.605s,PASSED
+pages.Journey.enterAccessCodeInJourney(accessCode),Chrome 87.0.4280.141,,,2021-01-08 01:23:04,2021-01-08 01:23:06,1.884s,PASSED
+pages.Journey.clickEnterButton(),Chrome 87.0.4280.141,,,2021-01-08 01:23:06,2021-01-08 01:23:08,1.188s,PASSED
+pages.Journey.sectionPageVerification(),Chrome 87.0.4280.141,,,2021-01-08 01:23:08,2021-01-08 01:23:08,0.892s,PASSED
+,,,,,,,
+Test Cases/JourneyPortal/loginToJourneyApplicationThroughInvalidAccessCodeAndVerifyTheErrorMessage,Chrome 87.0.4280.141,,,2021-01-08 01:23:08,2021-01-08 01:23:52,43.271s,PASSED
+Start listener action : OpenWebSite,Chrome 87.0.4280.141,,,2021-01-08 01:23:08,2021-01-08 01:23:25,16.818s,PASSED
+pages.Journey.clickOnJourneyTab(),Chrome 87.0.4280.141,,,2021-01-08 01:23:25,2021-01-08 01:23:28,2.810s,PASSED
+journeyName = pages.Journey.getRandomJourneyName(),Chrome 87.0.4280.141,,,2021-01-08 01:23:28,2021-01-08 01:23:34,5.868s,PASSED
+accessCode = pages.Journey.getExistingJourneyAccesscode(journeyName),Chrome 87.0.4280.141,,,2021-01-08 01:23:34,2021-01-08 01:23:43,9.106s,PASSED
+accessCode = accessCode + pages.Journey.getRandomCount(),Chrome 87.0.4280.141,,,2021-01-08 01:23:43,2021-01-08 01:23:43,0.000s,PASSED
+login.LoginForJourneyApplication.loginToJourneyApplication(),Chrome 87.0.4280.141,,,2021-01-08 01:23:43,2021-01-08 01:23:48,4.567s,PASSED
+pages.Journey.enterAccessCodeInJourney(accessCode),Chrome 87.0.4280.141,,,2021-01-08 01:23:48,2021-01-08 01:23:50,1.917s,PASSED
+pages.Journey.clickEnterButton(),Chrome 87.0.4280.141,,,2021-01-08 01:23:50,2021-01-08 01:23:51,1.152s,PASSED
+pages.Journey.errorLoginCheck(),Chrome 87.0.4280.141,,,2021-01-08 01:23:51,2021-01-08 01:23:52,0.861s,PASSED
+,,,,,,,
+Test Cases/JourneyPortal/loginToJourneyApplicationWithEmptyAccessCode,Chrome 87.0.4280.141,,,2021-01-08 01:23:52,2021-01-08 01:24:35,42.779s,PASSED
+Start listener action : OpenWebSite,Chrome 87.0.4280.141,,,2021-01-08 01:23:52,2021-01-08 01:24:10,18.498s,PASSED
+pages.Journey.clickOnJourneyTab(),Chrome 87.0.4280.141,,,2021-01-08 01:24:10,2021-01-08 01:24:13,2.775s,PASSED
+journeyName = pages.Journey.getRandomJourneyName(),Chrome 87.0.4280.141,,,2021-01-08 01:24:13,2021-01-08 01:24:19,5.890s,PASSED
+accessCode = pages.Journey.getExistingJourneyAccesscode(journeyName),Chrome 87.0.4280.141,,,2021-01-08 01:24:19,2021-01-08 01:24:28,8.652s,PASSED
+login.LoginForJourneyApplication.loginToJourneyApplication(),Chrome 87.0.4280.141,,,2021-01-08 01:24:28,2021-01-08 01:24:32,4.398s,PASSED
+pages.Journey.clickEnterButton(),Chrome 87.0.4280.141,,,2021-01-08 01:24:32,2021-01-08 01:24:34,1.580s,PASSED
+pages.Journey.errorLoginCheck(),Chrome 87.0.4280.141,,,2021-01-08 01:24:34,2021-01-08 01:24:35,0.832s,PASSED
+,,,,,,,
+Test Cases/JourneyPortal/verifyCartIfNoItemsAvailable,Chrome 87.0.4280.141,,,2021-01-08 01:24:35,2021-01-08 01:25:20,45.455s,PASSED
+Start listener action : OpenWebSite,Chrome 87.0.4280.141,,,2021-01-08 01:24:35,2021-01-08 01:24:52,17.728s,PASSED
+pages.Journey.clickOnJourneyTab(),Chrome 87.0.4280.141,,,2021-01-08 01:24:52,2021-01-08 01:24:55,3.041s,PASSED
+journeyName = pages.Journey.getRandomJourneyName(),Chrome 87.0.4280.141,,,2021-01-08 01:24:55,2021-01-08 01:25:01,5.878s,PASSED
+accessCode = pages.Journey.getExistingJourneyAccesscode(journeyName),Chrome 87.0.4280.141,,,2021-01-08 01:25:01,2021-01-08 01:25:10,8.545s,PASSED
+login.LoginForJourneyApplication.loginToJourneyApplication(),Chrome 87.0.4280.141,,,2021-01-08 01:25:10,2021-01-08 01:25:14,4.395s,PASSED
+pages.Journey.enterAccessCodeInJourney(accessCode),Chrome 87.0.4280.141,,,2021-01-08 01:25:14,2021-01-08 01:25:16,1.975s,PASSED
+pages.Journey.clickEnterButton(),Chrome 87.0.4280.141,,,2021-01-08 01:25:16,2021-01-08 01:25:17,1.229s,PASSED
+pages.JourneyPortal.clickOnCart(),Chrome 87.0.4280.141,,,2021-01-08 01:25:17,2021-01-08 01:25:20,2.079s,PASSED
+pages.JourneyPortal.verifyElementOnCartIfNoItems(),Chrome 87.0.4280.141,,,2021-01-08 01:25:20,2021-01-08 01:25:20,0.437s,PASSED
+,,,,,,,
+Test Cases/JourneyPortal/verifyClickingOnBackButtonNavigatesBackToSectionPage,Chrome 87.0.4280.141,,,2021-01-08 01:25:20,2021-01-08 01:26:11,50.979s,PASSED
+Start listener action : OpenWebSite,Chrome 87.0.4280.141,,,2021-01-08 01:25:20,2021-01-08 01:25:39,19.076s,PASSED
+pages.Journey.clickOnJourneyTab(),Chrome 87.0.4280.141,,,2021-01-08 01:25:39,2021-01-08 01:25:42,2.746s,PASSED
+journeyName = pages.Journey.getRandomJourneyName(),Chrome 87.0.4280.141,,,2021-01-08 01:25:42,2021-01-08 01:25:48,5.869s,PASSED
+accessCode = pages.Journey.getExistingJourneyAccesscode(journeyName),Chrome 87.0.4280.141,,,2021-01-08 01:25:48,2021-01-08 01:25:57,8.824s,PASSED
+login.LoginForJourneyApplication.loginToJourneyApplication(),Chrome 87.0.4280.141,,,2021-01-08 01:25:57,2021-01-08 01:26:01,4.785s,PASSED
+pages.Journey.enterAccessCodeInJourney(accessCode),Chrome 87.0.4280.141,,,2021-01-08 01:26:01,2021-01-08 01:26:03,1.829s,PASSED
+pages.Journey.clickEnterButton(),Chrome 87.0.4280.141,,,2021-01-08 01:26:03,2021-01-08 01:26:04,1.131s,PASSED
+pages.JourneyPortal.openExistingSection(),Chrome 87.0.4280.141,,,2021-01-08 01:26:04,2021-01-08 01:26:08,3.622s,PASSED
+pages.JourneyPortal.clickBackButton(),Chrome 87.0.4280.141,,,2021-01-08 01:26:08,2021-01-08 01:26:10,2.061s,PASSED
+pages.Journey.sectionPageVerification(),Chrome 87.0.4280.141,,,2021-01-08 01:26:10,2021-01-08 01:26:11,0.877s,PASSED
+,,,,,,,
+Test Cases/JourneyPortal/verifyFixedBackGroundInJourneyPortal,Chrome 87.0.4280.141,,,2021-01-08 01:26:11,2021-01-08 01:27:04,52.876s,PASSED
+Start listener action : OpenWebSite,Chrome 87.0.4280.141,,,2021-01-08 01:26:11,2021-01-08 01:26:29,17.777s,PASSED
+pages.Journey.clickOnJourneyTab(),Chrome 87.0.4280.141,,,2021-01-08 01:26:29,2021-01-08 01:26:32,3.023s,PASSED
+journeyName = pages.Journey.getRandomJourneyName(),Chrome 87.0.4280.141,,,2021-01-08 01:26:32,2021-01-08 01:26:38,5.888s,PASSED
+accessCode = pages.Journey.getExistingJourneyAccesscode(journeyName),Chrome 87.0.4280.141,,,2021-01-08 01:26:38,2021-01-08 01:26:47,9.326s,PASSED
+pages.Journey.typeOfBackGroundToFixed(),Chrome 87.0.4280.141,,,2021-01-08 01:26:47,2021-01-08 01:26:51,3.794s,PASSED
+login.LoginForJourneyApplication.loginToJourneyApplication(),Chrome 87.0.4280.141,,,2021-01-08 01:26:51,2021-01-08 01:26:56,5.013s,PASSED
+pages.Journey.enterAccessCodeInJourney(accessCode),Chrome 87.0.4280.141,,,2021-01-08 01:26:56,2021-01-08 01:26:58,2.085s,PASSED
+pages.Journey.clickEnterButton(),Chrome 87.0.4280.141,,,2021-01-08 01:26:58,2021-01-08 01:26:59,1.138s,PASSED
+pages.JourneyPortal.openExistingSection(),Chrome 87.0.4280.141,,,2021-01-08 01:26:59,2021-01-08 01:27:03,3.571s,PASSED
+pages.JourneyPortal.verifyFixedBackGroundCheck(),Chrome 87.0.4280.141,,,2021-01-08 01:27:03,2021-01-08 01:27:04,1.129s,PASSED
+,,,,,,,
+Test Cases/JourneyPortal/verifyScrollingBackGroundInJourneyPortal,Chrome 87.0.4280.141,,,2021-01-08 01:27:04,2021-01-08 01:28:15,1m - 10.708s,FAILED
+Start listener action : OpenWebSite,Chrome 87.0.4280.141,,,2021-01-08 01:27:04,2021-01-08 01:27:21,16.993s,PASSED
+pages.Journey.clickOnJourneyTab(),Chrome 87.0.4280.141,,,2021-01-08 01:27:21,2021-01-08 01:27:24,2.862s,PASSED
+journeyName = pages.Journey.getRandomJourneyName(),Chrome 87.0.4280.141,,,2021-01-08 01:27:24,2021-01-08 01:27:30,5.877s,PASSED
+accessCode = pages.Journey.getExistingJourneyAccesscode(journeyName),Chrome 87.0.4280.141,,,2021-01-08 01:27:30,2021-01-08 01:27:39,8.848s,PASSED
+pages.Journey.typeOfBackGroundToScrollingBackground(),Chrome 87.0.4280.141,,,2021-01-08 01:27:39,2021-01-08 01:27:43,3.999s,PASSED
+login.LoginForJourneyApplication.loginToJourneyApplication(),Chrome 87.0.4280.141,,,2021-01-08 01:27:43,2021-01-08 01:28:15,31.955s,FAILED
+,,,,,,,
+Test Cases/JourneyPortal/verifySectionInformation,Chrome 87.0.4280.141,,,2021-01-08 01:28:15,2021-01-08 01:29:02,47.303s,PASSED
+Start listener action : OpenWebSite,Chrome 87.0.4280.141,,,2021-01-08 01:28:15,2021-01-08 01:28:33,18.432s,PASSED
+pages.Journey.clickOnJourneyTab(),Chrome 87.0.4280.141,,,2021-01-08 01:28:33,2021-01-08 01:28:36,2.827s,PASSED
+journeyName = pages.Journey.getRandomJourneyName(),Chrome 87.0.4280.141,,,2021-01-08 01:28:36,2021-01-08 01:28:42,5.902s,PASSED
+accessCode = pages.Journey.getExistingJourneyAccesscode(journeyName),Chrome 87.0.4280.141,,,2021-01-08 01:28:42,2021-01-08 01:28:52,9.663s,PASSED
+login.LoginForJourneyApplication.loginToJourneyApplication(),Chrome 87.0.4280.141,,,2021-01-08 01:28:52,2021-01-08 01:28:56,4.572s,PASSED
+pages.Journey.enterAccessCodeInJourney(accessCode),Chrome 87.0.4280.141,,,2021-01-08 01:28:56,2021-01-08 01:28:58,1.854s,PASSED
+pages.Journey.clickEnterButton(),Chrome 87.0.4280.141,,,2021-01-08 01:28:58,2021-01-08 01:28:59,1.165s,PASSED
+pages.JourneyPortal.verifyingSectionProperties(),Chrome 87.0.4280.141,,,2021-01-08 01:28:59,2021-01-08 01:29:02,2.716s,PASSED
+,,,,,,,
+Test Cases/JourneyPortal/verifyTheFullScreenViewInProductPage,Chrome 87.0.4280.141,,,2021-01-08 01:29:02,2021-01-08 01:30:27,1m - 25.373s,FAILED
+Start listener action : OpenWebSite,Chrome 87.0.4280.141,,,2021-01-08 01:29:02,2021-01-08 01:29:21,19.385s,PASSED
+pages.Journey.clickOnJourneyTab(),Chrome 87.0.4280.141,,,2021-01-08 01:29:21,2021-01-08 01:29:24,2.857s,PASSED
+journeyName = pages.Journey.getRandomJourneyName(),Chrome 87.0.4280.141,,,2021-01-08 01:29:24,2021-01-08 01:29:30,5.876s,PASSED
+accessCode = pages.Journey.getExistingJourneyAccesscode(journeyName),Chrome 87.0.4280.141,,,2021-01-08 01:29:30,2021-01-08 01:29:41,10.720s,PASSED
+login.LoginForJourneyApplication.loginToJourneyApplication(),Chrome 87.0.4280.141,,,2021-01-08 01:29:41,2021-01-08 01:29:45,4.456s,PASSED
+pages.Journey.enterAccessCodeInJourney(accessCode),Chrome 87.0.4280.141,,,2021-01-08 01:29:45,2021-01-08 01:29:47,1.927s,PASSED
+pages.Journey.clickEnterButton(),Chrome 87.0.4280.141,,,2021-01-08 01:29:47,2021-01-08 01:29:48,1.215s,PASSED
+pages.JourneyPortal.openExistingSection(),Chrome 87.0.4280.141,,,2021-01-08 01:29:48,2021-01-08 01:29:52,3.685s,PASSED
+pages.JourneyPortal.productPageCheck(),Chrome 87.0.4280.141,,,2021-01-08 01:29:52,2021-01-08 01:29:53,0.697s,PASSED
+pages.JourneyPortal.clickFullScreenIcon(),Chrome 87.0.4280.141,,,2021-01-08 01:29:53,2021-01-08 01:29:54,1.474s,PASSED
+pages.JourneyPortal.verifyTheFullScreenView(),Chrome 87.0.4280.141,,,2021-01-08 01:29:54,2021-01-08 01:30:27,32.932s,FAILED
+,,,,,,,
+Test Cases/JourneyPortal/verifyTheFullScreenViewInSectionPage,Chrome 87.0.4280.141,,,2021-01-08 01:30:27,2021-01-08 01:31:26,58.716s,PASSED
+Start listener action : OpenWebSite,Chrome 87.0.4280.141,,,2021-01-08 01:30:27,2021-01-08 01:30:56,28.744s,PASSED
+pages.Journey.clickOnJourneyTab(),Chrome 87.0.4280.141,,,2021-01-08 01:30:56,2021-01-08 01:30:59,2.846s,PASSED
+journeyName = pages.Journey.getRandomJourneyName(),Chrome 87.0.4280.141,,,2021-01-08 01:30:59,2021-01-08 01:31:05,5.838s,PASSED
+accessCode = pages.Journey.getExistingJourneyAccesscode(journeyName),Chrome 87.0.4280.141,,,2021-01-08 01:31:05,2021-01-08 01:31:15,10.495s,PASSED
+login.LoginForJourneyApplication.loginToJourneyApplication(),Chrome 87.0.4280.141,,,2021-01-08 01:31:15,2021-01-08 01:31:20,4.538s,PASSED
+pages.Journey.enterAccessCodeInJourney(accessCode),Chrome 87.0.4280.141,,,2021-01-08 01:31:20,2021-01-08 01:31:22,2.184s,PASSED
+pages.Journey.clickEnterButton(),Chrome 87.0.4280.141,,,2021-01-08 01:31:22,2021-01-08 01:31:23,1.176s,PASSED
+pages.Journey.sectionPageVerification(),Chrome 87.0.4280.141,,,2021-01-08 01:31:23,2021-01-08 01:31:24,0.840s,PASSED
+pages.JourneyPortal.clickFullScreenIcon(),Chrome 87.0.4280.141,,,2021-01-08 01:31:24,2021-01-08 01:31:26,1.562s,PASSED
+pages.JourneyPortal.verifyTheFullScreenView(),Chrome 87.0.4280.141,,,2021-01-08 01:31:26,2021-01-08 01:31:26,0.304s,PASSED

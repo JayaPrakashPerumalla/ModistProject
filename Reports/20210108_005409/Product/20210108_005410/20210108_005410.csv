@@ -1,0 +1,7 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+Product,Chrome 87.0.4280.141,,,2021-01-08 00:54:13,2021-01-08 00:55:15,1m - 2.263s,FAILED
+,,,,,,,
+Test Cases/Admin/Product/verifySaveChangesDeleteAndCloseButtonInProductDetailspage,Chrome 87.0.4280.141,,,2021-01-08 00:54:13,2021-01-08 00:55:15,1m - 1.840s,FAILED
+Start listener action : OpenWebSite,Chrome 87.0.4280.141,,,2021-01-08 00:54:13,2021-01-08 00:54:33,19.211s,PASSED
+productname = pages.Product.addProduct(),Chrome 87.0.4280.141,,,2021-01-08 00:54:33,2021-01-08 00:54:42,8.876s,PASSED
+pages.Product.openAnyExistingProduct(productname),Chrome 87.0.4280.141,,,2021-01-08 00:54:42,2021-01-08 00:55:15,33.423s,FAILED

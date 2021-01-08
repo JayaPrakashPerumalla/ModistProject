@@ -1,0 +1,50 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+AssetSource,Chrome 87.0.4280.141,,,2021-01-08 00:24:56,2021-01-08 00:29:10,4m - 14.109s,FAILED
+,,,,,,,
+Test Cases/Admin/AssetSource/Add An AssetSource,Chrome 87.0.4280.141,,,2021-01-08 00:24:56,2021-01-08 00:25:29,33.025s,PASSED
+Start listener action : OpenWebSite,Chrome 87.0.4280.141,,,2021-01-08 00:24:56,2021-01-08 00:25:17,20.896s,PASSED
+sourcename = pages.Assetsource.addAssetSource(),Chrome 87.0.4280.141,,,2021-01-08 00:25:17,2021-01-08 00:25:26,8.282s,PASSED
+pages.Assetsource.verifyAssetSourceAdded(sourcename),Chrome 87.0.4280.141,,,2021-01-08 00:25:26,2021-01-08 00:25:29,3.430s,PASSED
+println(sourcename),Chrome 87.0.4280.141,,,2021-01-08 00:25:29,2021-01-08 00:25:29,0.003s,PASSED
+,,,,,,,
+Test Cases/Admin/AssetSource/Delete An AssetSource,Chrome 87.0.4280.141,,,2021-01-08 00:25:29,2021-01-08 00:26:08,39.231s,PASSED
+Start listener action : OpenWebSite,Chrome 87.0.4280.141,,,2021-01-08 00:25:29,2021-01-08 00:25:48,19.074s,PASSED
+sourcename = pages.Assetsource.addAssetSource(),Chrome 87.0.4280.141,,,2021-01-08 00:25:48,2021-01-08 00:25:57,8.506s,PASSED
+println(sourcename),Chrome 87.0.4280.141,,,2021-01-08 00:25:57,2021-01-08 00:25:57,0.002s,PASSED
+pages.Assetsource.deleteAnAssetSource(sourcename),Chrome 87.0.4280.141,,,2021-01-08 00:25:57,2021-01-08 00:26:05,8.408s,PASSED
+pages.Assetsource.verifyAssetSourceDeleted(sourcename),Chrome 87.0.4280.141,,,2021-01-08 00:26:05,2021-01-08 00:26:08,3.073s,PASSED
+,,,,,,,
+Test Cases/Admin/AssetSource/Edit An AssetSource,Chrome 87.0.4280.141,,,2021-01-08 00:26:08,2021-01-08 00:26:48,39.471s,PASSED
+Start listener action : OpenWebSite,Chrome 87.0.4280.141,,,2021-01-08 00:26:08,2021-01-08 00:26:25,16.938s,PASSED
+sourcename = pages.Assetsource.addAssetSource(),Chrome 87.0.4280.141,,,2021-01-08 00:26:25,2021-01-08 00:26:34,8.659s,PASSED
+println(sourcename),Chrome 87.0.4280.141,,,2021-01-08 00:26:34,2021-01-08 00:26:34,0.001s,PASSED
+pages.Assetsource.editAnAssetSource(sourcename),Chrome 87.0.4280.141,,,2021-01-08 00:26:34,2021-01-08 00:26:48,13.697s,PASSED
+,,,,,,,
+Test Cases/Admin/AssetSource/Verify Asset Source tab by clicking it,Chrome 87.0.4280.141,,,2021-01-08 00:26:48,2021-01-08 00:27:07,19.566s,PASSED
+Start listener action : OpenWebSite,Chrome 87.0.4280.141,,,2021-01-08 00:26:48,2021-01-08 00:27:03,15.524s,PASSED
+pages.Assetsource.navigateToAssetSourceDetailsTab(),Chrome 87.0.4280.141,,,2021-01-08 00:27:03,2021-01-08 00:27:07,3.857s,PASSED
+,,,,,,,
+Test Cases/Admin/AssetSource/Verify by clicking on any asset source in the Asset source tab details page,Chrome 87.0.4280.141,,,2021-01-08 00:27:07,2021-01-08 00:27:41,34.010s,PASSED
+Start listener action : OpenWebSite,Chrome 87.0.4280.141,,,2021-01-08 00:27:07,2021-01-08 00:27:26,18.642s,PASSED
+sourcename = pages.Assetsource.addAssetSource(),Chrome 87.0.4280.141,,,2021-01-08 00:27:26,2021-01-08 00:27:35,9.227s,PASSED
+println(sourcename),Chrome 87.0.4280.141,,,2021-01-08 00:27:35,2021-01-08 00:27:35,0.004s,PASSED
+pages.Assetsource.openAnyExistingAssetSource(sourcename),Chrome 87.0.4280.141,,,2021-01-08 00:27:35,2021-01-08 00:27:41,5.891s,PASSED
+,,,,,,,
+Test Cases/Admin/AssetSource/Verify Cancel button functionality in the Add Asset Source popup,Chrome 87.0.4280.141,,,2021-01-08 00:27:41,2021-01-08 00:28:07,26.129s,PASSED
+Start listener action : OpenWebSite,Chrome 87.0.4280.141,,,2021-01-08 00:27:41,2021-01-08 00:28:00,18.527s,PASSED
+pages.Assetsource.navigateToAssetSourceDetailsTab(),Chrome 87.0.4280.141,,,2021-01-08 00:28:00,2021-01-08 00:28:04,4.146s,PASSED
+pages.Assetsource.clickAddAssetSource(),Chrome 87.0.4280.141,,,2021-01-08 00:28:04,2021-01-08 00:28:06,1.304s,PASSED
+pages.Assetsource.cancelAssetSourcePopup(),Chrome 87.0.4280.141,,,2021-01-08 00:28:06,2021-01-08 00:28:07,1.968s,PASSED
+,,,,,,,
+Test Cases/Admin/AssetSource/Verify Close button functionality in the Asset Source edit page,Chrome 87.0.4280.141,,,2021-01-08 00:28:07,2021-01-08 00:28:44,36.155s,PASSED
+Start listener action : OpenWebSite,Chrome 87.0.4280.141,,,2021-01-08 00:28:08,2021-01-08 00:28:26,18.025s,PASSED
+sourcename = pages.Assetsource.addAssetSource(),Chrome 87.0.4280.141,,,2021-01-08 00:28:26,2021-01-08 00:28:35,8.872s,PASSED
+println(sourcename),Chrome 87.0.4280.141,,,2021-01-08 00:28:35,2021-01-08 00:28:35,0.001s,PASSED
+pages.Assetsource.openAnyExistingAssetSource(sourcename),Chrome 87.0.4280.141,,,2021-01-08 00:28:35,2021-01-08 00:28:41,6.791s,PASSED
+pages.Assetsource.closeAssetSourceEditpage(),Chrome 87.0.4280.141,,,2021-01-08 00:28:41,2021-01-08 00:28:44,2.219s,PASSED
+,,,,,,,
+Test Cases/Admin/AssetSource/Verify elements on Add Asset Source popup,Chrome 87.0.4280.141,,,2021-01-08 00:28:44,2021-01-08 00:29:10,26.032s,FAILED
+Start listener action : OpenWebSite,Chrome 87.0.4280.141,,,2021-01-08 00:28:44,2021-01-08 00:29:03,18.994s,PASSED
+pages.Assetsource.navigateToAssetSourceDetailsTab(),Chrome 87.0.4280.141,,,2021-01-08 00:29:03,2021-01-08 00:29:07,4.340s,PASSED
+pages.Assetsource.clickAddAssetSource(),Chrome 87.0.4280.141,,,2021-01-08 00:29:07,2021-01-08 00:29:08,1.231s,PASSED
+pages.Assetsource.verifyAssetSourcePopUp(),Chrome 87.0.4280.141,,,2021-01-08 00:29:08,2021-01-08 00:29:10,1.199s,FAILED

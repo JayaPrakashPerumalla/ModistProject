@@ -71,6 +71,7 @@ public class Assetsource {
 	def verifyAssetSourcePopUp() {
 
 		String path = 'Object Repository/AssetSource/'
+		
 		def elements = ["Source", "Tenant", "Cancel Button", "Asset Source button on popup",]
 		for(element in elements) {
 			verifications.verifyElementPresent(findTestObject(path+element), "The element "+element+" is not present")
