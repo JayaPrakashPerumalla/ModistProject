@@ -2,12 +2,10 @@ package pages
 
 import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
 
-import org.codehaus.groovy.tools.shell.completion.KeywordSyntaxCompletor
-
 import com.kms.katalon.core.annotation.Keyword
 import com.kms.katalon.core.model.FailureHandling
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
-
+import internal.GlobalVariable
 import verification.Verification
 import webAction.WebAction
 
@@ -53,6 +51,18 @@ public class Journey {
 	def searchJourney(def journeyName) {
 
 		actions.sendKeys(findTestObject('Object Repository/Journey/journrySearchInput'), journeyName)
+		
+		println 'edr'+ WebUI.verifyElementPresent(findTestObject('Object Repository/Journey/JourneyName(journeyName)',["journeyName":journeyName]), GlobalVariable.defaultWaitTime, FailureHandling.OPTIONAL)
+		
+		
+
+		if(!(WebUI.verifyElementPresent(findTestObject('Object Repository/Journey/JourneyName(journeyName)',["journeyName":journeyName]), GlobalVariable.defaultWaitTime, FailureHandling.OPTIONAL))) {
+			int count=1
+			while (count<3) {
+				searchJourney(journeyName)
+				count++
+			}
+		}
 	}
 
 	@Keyword
@@ -74,13 +84,15 @@ public class Journey {
 	def verifyJourneyDeleted(def journeyName) {
 
 		searchJourney(journeyName)
+
 		verifications.verifyElementNotPresent(findTestObject('Object Repository/Journey/JourneyName(journeyName)',["journeyName":journeyName]), " The expected "+journeyName+ " is not deleted ")
 	}
 
 	@Keyword
-	def verifyJourneyCloned(def journeyName) {
+	def verifyJourneyCloned(String journeyName) {
 
 		String duplicatejourneyName = journeyName+' '+'(duplicate)'
+
 		searchJourney(duplicatejourneyName)
 
 		WebUI.waitForElementPresent(findTestObject('Object Repository/Journey/journey cloning/clonedJourney(journeyName)',["journeyName":duplicatejourneyName]), 30, FailureHandling.OPTIONAL)
@@ -88,18 +100,13 @@ public class Journey {
 		verifications.verifyElementPresent(findTestObject('Object Repository/Journey/journey cloning/clonedJourney(journeyName)',["journeyName":duplicatejourneyName]), " The expected "+duplicatejourneyName+ " is not Cloned ")
 	}
 
-	@Keyword
-	def waitForElementPresent() {
-		
-		WebUI.waitForElementPresent(findTestObject(''), 0)
-	}
 
 	@Keyword
 	def cloneJourney(String journeyName) {
 
 		searchJourney(journeyName)
 
-		actions.waitForElementPresent(findTestObject('Journey/journey cloning/threedots(journeyName)',["journeyName":journeyName]))
+		actions.wait(findTestObject('Journey/journey cloning/threedots(journeyName)',["journeyName":journeyName]))
 
 		actions.click(findTestObject('Journey/journey cloning/threedots(journeyName)',["journeyName":journeyName]))
 
@@ -111,7 +118,7 @@ public class Journey {
 
 		openExistingJourney(journeyName)
 
-		
+
 		actions.scrollToElement(findTestObject('Object Repository/Journey/Current Access Codes/currentAccessCodeField'))
 		actions.click(findTestObject('Object Repository/Journey/Current Access Codes/plusButton'))
 		actions.sendKeys(findTestObject('Object Repository/Journey/Current Access Codes/accessCode'), accessCode)

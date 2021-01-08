@@ -67,13 +67,15 @@ public class Asset {
 	def searchForAsset(String assetName) {
 
 		actions.sendKeys(findTestObject('Object Repository/Asset/Asset/AssetPageElements/search'),assetName)
-
-		WebUI.delay(30)
+		
+		actions.waitForElementPresent(findTestObject('Object Repository/Asset/Asset/assetname(assetName)',["assetName":assetName]))
 	}
 
 
 	@Keyword
 	def getRandomAssetName() {
+
+		actions.waitForElementPresent('Object Repository/Asset/Asset/AssetCount')
 
 		def assetCount = actions.getElementCount(findTestObject('Object Repository/Asset/Asset/AssetCount'))
 
@@ -150,6 +152,8 @@ public class Asset {
 	def VerifyAssetCreated(String assetName) {
 
 		searchForAsset(assetName)
+
+		actions.waitForElementPresent(findTestObject('Object Repository/Asset/Asset/assetname(assetName)',["assetName":assetName]))
 		verifications.verifyElementPresent(findTestObject('Object Repository/Asset/Asset/assetname(assetName)',["assetName":assetName]),assetName+"not present")
 	}
 
@@ -236,6 +240,7 @@ public class Asset {
 
 		return ["sourceName":sourceName , "assetName":assetName]
 	}
+	
 	@Keyword
 	def verifyEditAsset(def assetName, def sourceName) {
 

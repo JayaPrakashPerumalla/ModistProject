@@ -14,8 +14,8 @@ class Login {
 	LoginForAdminDevEnvironment loginPage = new LoginForAdminDevEnvironment()
 	
 	
-	//@BeforeTestCase
-	@BeforeTestSuite
+	@BeforeTestCase
+	//@BeforeTestSuite
 	@Keyword
 	def OpenWebSite() {
 		WebUI.openBrowser('')

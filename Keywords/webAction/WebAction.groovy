@@ -9,6 +9,7 @@ import com.kms.katalon.core.webui.common.WebUiCommonHelper
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 
 import internal.GlobalVariable
+import kms.turing.katalon.plugins.helper.table.HTMLTableHelper
 
 
 
@@ -63,9 +64,11 @@ public class WebAction {
 	def scrollToElement(TestObject element) {
 		WebUI.scrollToElement(element, GlobalVariable.defaultWaitTime)
 	}
-	
+
 	@Keyword
 	def waitForElementPresent(TestObject element) {
 		WebUI.waitForElementPresent(element,GlobalVariable.defaultWaitTime)
 	}
+
+	
 }
