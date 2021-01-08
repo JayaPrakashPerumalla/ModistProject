@@ -123,6 +123,28 @@ public class Asset {
 		return assetName
 	}
 
+	@Keyword
+	def addAssetwithFileSize() {
+
+		clickAddAssetButton()
+
+		String assetName = "Author"+random.nextInt(1000)
+
+		actions.sendKeys(findTestObject('Object Repository/Asset/Asset/addAsset/Author'), assetName)
+
+		String userDir = System.getProperty('user.dir')
+
+		WebUI.uploadFile(findTestObject('Object Repository/Asset/Asset/addAsset/chooseFile'),userDir + '\\1.png')
+
+		selectTenant()
+
+		actions.click(findTestObject('Asset/Asset/addAsset/addAssetButtonInAddAssetPopup'))
+
+		WebUI.delay(90)
+
+		return assetName
+	}
+
 
 	@Keyword
 	def VerifyAssetCreated(String assetName) {
@@ -280,6 +302,11 @@ public class Asset {
 
 			verifications.verifyElementPresent(findTestObject(path+element), "The element "+element+" is not present")
 		}
+	}
+
+	@Keyword
+	def verifyWarningMessageOfAddAsset() {
+		verifications.verifyElementNotPresent(findTestObject('Object Repository/Asset/improperErrorMessage'), "no proper message")
 	}
 }
 

@@ -82,9 +82,19 @@ public class JourneyPortal {
 		for(int i=0;i<orderCount;i++) {
 			actions.click(findTestObject('Object Repository/Journey/JourneyPortal/Product/AddToCart'))
 		}
-		actions.click(findTestObject('Object Repository/Journey/JourneyPortal/Product/closeButton'))
+		clickCloseButtonOnJourneyPortalProductPopup()
 		return orderCount
 		WebUI.refresh()
+	}
+
+	@Keyword
+	def clickCloseButtonOnJourneyPortalProductPopup() {
+		actions.click(findTestObject('Object Repository/Journey/JourneyPortal/Product/closeButton'))
+	}
+
+	@Keyword
+	def verifyCloseButton() {
+		verifications.verifyElementPresent(findTestObject('Object Repository/Journey/JourneyPortal/Product/closeButton'), "close button is not available")
 	}
 
 	@Keyword
@@ -104,18 +114,32 @@ public class JourneyPortal {
 			KeywordUtil.markFailed('you have selected '+orderCount+' products '+', but you have only '+productsCount)
 		}
 	}
-	
+
+
+	@Keyword
+	def verifyingSectionProperties() {
+
+		verifications.verifyElementPresent(findTestObject('Object Repository/Journey/JourneyPortal/Section/sectionTitle'), "section title is not available")
+		verifications.verifyElementPresent(findTestObject('Object Repository/Journey/JourneyPortal/Section/sectionImage'), "section image is not available")
+		verifications.verifyElementPresent(findTestObject('Object Repository/Journey/JourneyPortal/Section/sectionSubTitle'), "section sub-title is not available")
+	}
+
+	@Keyword
+	def verifyElementsInProductPopupInJourneyPortal() {
+		verifications.verifyElementPresent(findTestObject('Object Repository/Journey/JourneyPortal/Product/productPrice'), "product price is not present")
+		verifications.verifyElementPresent(findTestObject('Object Repository/Journey/JourneyPortal/Product/productTitle'), "product title is not present")
+		verifications.verifyElementPresent(findTestObject('Object Repository/Journey/JourneyPortal/Product/imageInTheProduct'), "image is not present")
+		verifications.verifyElementPresent(findTestObject('Object Repository/Journey/JourneyPortal/Product/AddToCart'), "Add to cart button is not available")
+		verifications.verifyElementPresent(findTestObject('Object Repository/Journey/JourneyPortal/Product/favouriteIcon'), "favourite icon is not available")
+	}
+
 	@Keyword
 	def clickBackButton() {
 		actions.click(findTestObject('Object Repository/Journey/JourneyPortal/Product/bakcButton'))
 	}
-	
 	@Keyword
-	def verifyingSectionProperties() {
-		
-		verifications.verifyElementPresent(findTestObject('Object Repository/Journey/JourneyPortal/Section/sectionTitle'), "section title is not available")
-		verifications.verifyElementPresent(findTestObject('Object Repository/Journey/JourneyPortal/Section/sectionImage'), "section image is not available")
-		verifications.verifyElementPresent(findTestObject('Object Repository/Journey/JourneyPortal/Section/sectionSubTitle'), "section sub-title is not available")
-		
+	def verifyBackButtonAfterEnteringInToSection() {
+		verifications.verifyElementPresent(findTestObject('Object Repository/Journey/JourneyPortal/Product/bakcButton'), "back button not available")
 	}
 }
+
