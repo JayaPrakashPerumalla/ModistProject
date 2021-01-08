@@ -15,7 +15,7 @@ class Login {
 	
 	
 	//@BeforeTestCase
-	@BeforeTestSuite
+	//@BeforeTestSuite
 	@Keyword
 	def OpenWebSite() {
 		WebUI.openBrowser('')

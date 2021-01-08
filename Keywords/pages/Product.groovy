@@ -193,9 +193,16 @@ public class Product {
 
 		navigateToProductAssets()
 
-		int sourceId = Integer.parseInt(WebUI.getAttribute(findTestObject('Object Repository/Product/ProductEditPage/ProductAssets/From'),'data-rbd-droppable-id'))
-		int targetId = Integer.parseInt(WebUI.getAttribute(findTestObject('Object Repository/Product/ProductEditPage/ProductAssets/dest'),'data-rbd-droppable-id'))
-		println sourceId
-		WebUI.dragAndDropByOffset(findTestObject('Object Repository/Product/ProductEditPage/ProductAssets/source(position)',["id":sourceId]), 50, 50)
+	//	int sourceId = Integer.parseInt(WebUI.getAttribute(findTestObject('Object Repository/Product/ProductEditPage/ProductAssets/From'),'data-rbd-droppable-id'))
+		////int targetId = Integer.parseInt(WebUI.getAttribute(findTestObject('Object Repository/Product/ProductEditPage/ProductAssets/dest'),'data-rbd-droppable-id'))
+		//println sourceId
+	//	println targetId
+		//Get left position of destination
+		def leftPosition = WebUI.getElementLeftPosition(findTestObject('Object Repository/Product/ProductEditPage/ProductAssets/destination(position)'))
+		//def rightPosition = WebUI.getElementRightPosition(findTestObject('Object Repository/Product/ProductEditPage/ProductAssets/destination(position)'))
+		 
+		println "leftPosition: " + leftPosition 
+		
+		WebUI.dragAndDropByOffset(findTestObject('Object Repository/Product/ProductEditPage/ProductAssets/source(position)'), leftPosition+10, leftPosition+10)
 	}
 }
