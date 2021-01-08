@@ -3,13 +3,11 @@ package pages
 import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
 
 import org.openqa.selenium.WebDriver
-import org.openqa.selenium.interactions.Actions
-import org.openqa.selenium.interactions.Action
+
 import com.kms.katalon.core.annotation.Keyword
-import com.kms.katalon.core.webui.common.WebUiCommonHelper
 import com.kms.katalon.core.webui.driver.DriverFactory
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
-
+import com.kms.katalon.core.util.KeywordUtil
 import verification.Verification
 import webAction.WebAction
 
@@ -45,6 +43,11 @@ public class Product {
 		actions.sendKeys(findTestObject('Object Repository/Product/descriptionFieldInput'), "Sample text")
 		actions.click(findTestObject('Object Repository/Product/addproductButtonInAddProductPopUp'))
 		return 	productName
+	}
+	
+	@Keyword
+	def addProductButtonInAddProductPopup() {
+		actions.click(findTestObject('Object Repository/Product/addproductButtonInAddProductPopUp'))
 	}
 
 	@Keyword
@@ -96,6 +99,13 @@ public class Product {
 		for(element in elements) {
 			verifications.verifyElementPresent(findTestObject(path+element), "The element "+element+" is not present")
 		}
+	}
+	
+	@Keyword
+	def verifyProductPresent(String productName) {
+
+		searchForAProduct(productName)
+		verifications.verifyElementPresent(findTestObject('Object Repository/Product/productName(Name)',["productName":productName]), "The product "+productName+" is not shown in list" )
 	}
 
 
@@ -161,9 +171,22 @@ public class Product {
 
 		verifications.verifyElementPresent(findTestObject('Object Repository/Product/addProductButton'), "Add product button is not present")
 	}
+	
+	@Keyword
+	def verifyProductEditPage() {
+		verifications.verifyElementPresent(findTestObject('Object Repository/Product/ProductEditPage/productEditPageVerification'), "you are not in product edit page")
+	}
 
-
-
+	@Keyword
+	def verifyUrlAfterClosingProduct() {
+		String url = WebUI.getUrl()
+		if((url.contains('dashboard'))) {
+			KeywordUtil.markPassed('you are navigated back to dashboard page')
+		}
+		else {
+			KeywordUtil.markFailed("you are not navigated to dashboard page")
+		}
+	}
 
 	@Keyword
 	def dragAndDrop() {

@@ -67,7 +67,7 @@ public class Asset {
 	def searchForAsset(String assetName) {
 
 		actions.sendKeys(findTestObject('Object Repository/Asset/Asset/AssetPageElements/search'),assetName)
-		
+
 		actions.waitForElementPresent(findTestObject('Object Repository/Asset/Asset/assetname(assetName)',["assetName":assetName]))
 	}
 
@@ -136,13 +136,11 @@ public class Asset {
 
 		String userDir = System.getProperty('user.dir')
 
-		WebUI.uploadFile(findTestObject('Object Repository/Asset/Asset/addAsset/chooseFile'),userDir + '\\1.png')
+		WebUI.uploadFile(findTestObject('Object Repository/Asset/Asset/addAsset/chooseFile'),userDir + '\\2.6mb.jpg')
 
 		selectTenant()
 
 		actions.click(findTestObject('Asset/Asset/addAsset/addAssetButtonInAddAssetPopup'))
-
-		WebUI.delay(90)
 
 		return assetName
 	}
@@ -240,7 +238,7 @@ public class Asset {
 
 		return ["sourceName":sourceName , "assetName":assetName]
 	}
-	
+
 	@Keyword
 	def verifyEditAsset(def assetName, def sourceName) {
 
@@ -311,7 +309,9 @@ public class Asset {
 
 	@Keyword
 	def verifyWarningMessageOfAddAsset() {
-		verifications.verifyElementNotPresent(findTestObject('Object Repository/Asset/improperErrorMessage'), "no proper message")
+		
+		actions.waitForElementPresent(findTestObject('Object Repository/Asset/improperErrorMessage'))
+		verifications.verifyElementNotPresent(findTestObject('Object Repository/Asset/improperErrorMessage'), "no proper message shown")
 	}
 }
 
