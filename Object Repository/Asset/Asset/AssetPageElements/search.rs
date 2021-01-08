@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>AddAsset</name>
+   <name>search</name>
    <tag></tag>
-   <elementGuidId>6b91eeaa-e589-41ed-9d3b-958f9660762c</elementGuidId>
+   <elementGuidId>4a4ddad2-fcdb-4c3c-87e8-f5627cc37ce5</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//button[text()=&quot;Add &quot;]</value>
+         <value>//input[@id='search']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,6 +17,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//button[text()=&quot;Add &quot;]</value>
+      <value>//input[@id='search']</value>
    </webElementProperties>
 </WebElementEntity>

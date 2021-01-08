@@ -15,6 +15,8 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 
+CustomKeywords.'pages.Asset.clickAssetTab'()
+
 def assetName = CustomKeywords.'pages.Asset.getRandomAssetName'()
 
 CustomKeywords.'pages.Asset.deleteAsset'(assetName)

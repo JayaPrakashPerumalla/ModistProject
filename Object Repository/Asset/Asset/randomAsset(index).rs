@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//div[contains(@class,'rdt_TableBody')]//div[@role=&quot;row&quot;][${index}]//div[@role=&quot;cell&quot;][4]</value>
+         <value>(//div[@class='sc-jrsJCI ivRwdr rdt_TableRow'])[${index}]//div[5]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,6 +17,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//div[contains(@class,'rdt_TableBody')]//div[@role=&quot;row&quot;][${index}]//div[@role=&quot;cell&quot;][4]</value>
+      <value>(//div[@class='sc-jrsJCI ivRwdr rdt_TableRow'])[${index}]//div[5]</value>
    </webElementProperties>
 </WebElementEntity>

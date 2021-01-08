@@ -7,19 +7,19 @@ import com.kms.katalon.core.webui.common.WebUiCommonHelper
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import webAction.WebAction
 public class uploading {
-	
+
 	WebAction actions= new WebAction()
-	
+
 	@Keyword
 	def clickProfileIcon() {
 		actions.click(findTestObject('Object Repository/OptionsUnderProfileIcon/ProfileIcon'))
 	}
-	
+
 	@Keyword
 	def clickOnProfile() {
 		actions.click(findTestObject('Object Repository/OptionsUnderProfileIcon/Profile Options/Profile'))
 	}
-	
+
 	@Keyword
 	def uploadProfilePicture() {
 

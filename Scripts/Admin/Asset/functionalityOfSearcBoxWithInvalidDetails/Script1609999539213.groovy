@@ -15,4 +15,10 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 
-CustomKeywords.'pages.Asset.searchBoxInvalidName'('asdf')
+CustomKeywords.'pages.Asset.clickAssetTab'()
+
+String assetName = CustomKeywords.'pages.Asset.getRandomAssetName'()
+
+assetName = assetName+'1'
+
+CustomKeywords.'pages.Asset.searchBoxInvalidName'(assetName)

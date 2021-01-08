@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//div[text()=&quot;${assetName}&quot;]</value>
+         <value>//div[text()='${assetName}']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,6 +17,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//div[text()=&quot;${assetName}&quot;]</value>
+      <value>//div[text()='${assetName}']</value>
    </webElementProperties>
 </WebElementEntity>

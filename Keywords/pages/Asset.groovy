@@ -31,10 +31,12 @@ public class Asset {
 
 	@Keyword
 	def openExistingAsset() {
+
 		int count = WebUiCommonHelper.findWebElements(findTestObject('Object Repository/Asset/getIndexToPickRandomAsset'), 30).size()
 		int index = random.nextInt(count)
 		actions.click(findTestObject('Object Repository/Asset/openExistingAsset(index)',["index":index+1]))
 	}
+
 	@Keyword
 	def verfiyFieldsInAssetEditPage() {
 
@@ -63,102 +65,112 @@ public class Asset {
 
 	@Keyword
 	def searchForAsset(String assetName) {
-		actions.sendKeys(findTestObject('Object Repository/Asset/Asset/AssetPageElements/filterByName'),assetName)
-		WebUI.waitForPageLoad(10)
-		WebUI.delay(5)
+
+		actions.sendKeys(findTestObject('Object Repository/Asset/Asset/AssetPageElements/search'),assetName)
+
+		WebUI.delay(30)
 	}
 
 
 	@Keyword
 	def getRandomAssetName() {
 
-		clickAssetTab()
 		def assetCount = actions.getElementCount(findTestObject('Object Repository/Asset/Asset/AssetCount'))
+
 		if(assetCount == 0) {
 			//create or add product
 			return addAsset()
 		}
 		else {
 			def index = random.nextInt(assetCount)
-			if(index == 0) {
-				index = index +1
-			}
-			def assetName =  WebUI.getText(findTestObject('Object Repository/Asset/Asset/randomAsset(index)',["index":index]))
+
+			def assetName =  WebUI.getText(findTestObject('Object Repository/Asset/Asset/randomAsset(index)',["index":index+1]))
 
 			return assetName
 		}
 	}
 
+	@Keyword
+	def searchBox(String assetName) {
 
+		actions.sendKeys(findTestObject('Object Repository/Asset/search'), assetName)
+	}
+	@Keyword
+	def selectTenant() {
 
+		actions.click(findTestObject('Object Repository/Asset/Asset/addAsset/clickTenant'))
+
+		actions.click(findTestObject('Object Repository/Asset/Asset/addAsset/selectTenent'))
+	}
 
 	@Keyword
 	def addAsset() {
 
-		clickAssetTab()
 		clickAddAssetButton()
 
 		String assetName = "Author"+random.nextInt(1000)
 
 		actions.sendKeys(findTestObject('Object Repository/Asset/Asset/addAsset/Author'), assetName)
-		//action.click(findTestObject('Object Repository/Asset/addAsset/chooseFile'))
-		WebUI.delay(10)
-		String userDir = System.getProperty('user.dir')
-		WebUI.uploadFile(findTestObject('Object Repository/Asset/Asset/addAsset/chooseFile'),userDir + '\\prakashtest.jpg')
-		actions.click(findTestObject('Object Repository/Asset/Asset/addAsset/clickTenant'))
-		actions.click(findTestObject('Object Repository/Asset/Asset/addAsset/selectTenent'))
 
-		actions.click(findTestObject('Object Repository/Asset/Asset/addAsset/AddAsset'))
+		String userDir = System.getProperty('user.dir')
+
+		WebUI.uploadFile(findTestObject('Object Repository/Asset/Asset/addAsset/chooseFile'),userDir + '\\bike4.jpg')
+
+		selectTenant()
+
+		actions.click(findTestObject('Asset/Asset/addAsset/addAssetButtonInAddAssetPopup'))
+
 		return assetName
 	}
 
 
 	@Keyword
 	def VerifyAssetCreated(String assetName) {
+
 		searchForAsset(assetName)
-		WebUI.delay(10)
 		verifications.verifyElementPresent(findTestObject('Object Repository/Asset/Asset/assetname(assetName)',["assetName":assetName]),assetName+"not present")
 	}
 
 	@Keyword
 	def deleteAsset(String assetName) {
+
 		searchForAsset(assetName)
+
 		actions.click(findTestObject('Object Repository/Asset/Asset/delAssetCheckbox(assetName)',["assetName":assetName]))
+
 		actions.click(findTestObject('Object Repository/Asset/Asset/delIcon'))
+
 		WebUI.acceptAlert()
 	}
 
 	@Keyword
 	def VerifyAssetNotPresent(String assetName) {
+
 		searchForAsset(assetName)
-		verifications.verifyElementNotPresent(findTestObject('Object Repository/Asset/Asset/assetname(assetName)',["assetName":assetName]),assetName+"not present")
+
+		verifications.verifyElementNotPresent(findTestObject('Object Repository/Asset/Asset/assetname(assetName)',["assetName":assetName]), 'Asset '+assetName+" is not present", 30)
 	}
 
 
 	@Keyword
 	def searchBox() {
-		String assetName=getRandomAssetName()
+
+		String assetName = getRandomAssetName()
 		searchForAsset(assetName)
 		verifications.verifyElementPresent(findTestObject('Object Repository/Asset/Asset/assetname(assetName)',["assetName":assetName]),assetName+"not present")
 	}
 
 	@Keyword
 	def searchBoxInvalidName(String assetName) {
-		clickAssetTab()
+
 		searchForAsset(assetName)
+
 		verifications.verifyElementNotPresent(findTestObject('Object Repository/Asset/Asset/assetname(assetName)',["assetName":"asdf"]),"asdf is not present")
 	}
 
 	@Keyword
-	def clickAnyAsset() {
-		String assetName= getRandomAssetName()
-		searchForAsset(assetName)
-		actions.click(findTestObject('Object Repository/Asset/Asset/anyAsset(assetName)',["assetName":assetName]))
-		return assetName
-	}
+	def verifyUrlOfassetEditPage() {
 
-	@Keyword
-	def verifyUrlOfEditPage() {
 		String newUrl = WebUI.getUrl()
 
 		if(!newUrl.contains("asset")) {
@@ -168,15 +180,17 @@ public class Asset {
 
 	@Keyword
 	def closeButtonInAssetEditPage() {
-		clickAnyAsset()
+
+		openExistingAsset()
+
 		actions.click(findTestObject('Object Repository/Asset/Asset/assetEditpage/close'))
 	}
 
 	@Keyword
-	def cancleButtonInAddAsset() {
+	def cancelButtonInAddAssetPopup() {
 
-		clickAssetTab()
 		clickAddAssetButton()
+
 		String assetName = "Author"+random.nextInt(1000)
 
 		actions.sendKeys(findTestObject('Object Repository/Asset/Asset/addAsset/Author'), assetName)
@@ -186,27 +200,28 @@ public class Asset {
 	}
 
 	@Keyword
-	def editSourceInAssetPage() {
+	def editSourceInAssetEditPage() {
 
-		clickAssetTab()
-		def assetName = clickAnyAsset()
+		String assetName = openExistingAsset()
+
 		actions.click(findTestObject('Object Repository/Asset/Asset/assetEditpage/sourceDropdown'))
+
 		def sourceName = selectRandomSourceName()
-		//action.click(findTestObject('Object Repository/Asset/assetEditpage/sourceSelect(sourceName)',["sourceName":"toyotae2"]))
+
 		actions.click(findTestObject('Object Repository/Asset/Asset/assetEditpage/Save'))
-		//action.click(findTestObject('Object Repository/Asset/assetEditpage/Public'))
-		//action.click(findTestObject('Object Repository/Asset/assetEditpage/publicSelect'))
-		//action.click(findTestObject('Object Repository/Asset/assetEditpage/Save'))
+
 		actions.click(findTestObject('Object Repository/Asset/Asset/assetEditpage/close'))
+
 		return ["sourceName":sourceName , "assetName":assetName]
 	}
-
 	@Keyword
 	def verifyEditAsset(def assetName, def sourceName) {
 
 		searchForAsset(assetName)
+
 		actions.click(findTestObject('Object Repository/Asset/Asset/anyAsset(assetName)',["assetName":assetName]))
-		verifications.verifyElementPresent(findTestObject('Object Repository/Asset/Asset/assetEditpage/sourceName(sourceName)',["sourceName":sourceName]),sourceName+'is not getting reflecting',5)
+
+		verifications.verifyElementPresent(findTestObject('Object Repository/Asset/Asset/assetEditpage/sourceName(sourceName)',["sourceName":sourceName]),'source '+sourceName+'is not updated',5)
 	}
 
 	@Keyword
@@ -247,23 +262,24 @@ public class Asset {
 	@Keyword
 	def verifyAssetEditPage() {
 
-		clickAssetTab()
-		clickAnyAsset()
+		openExistingAsset()
 		String path = 'Object Repository/Asset/Asset/assetEditPageElements/'
 		def  elements = ["AssetEdit", "Content", "Photo", "Tags", "Source", "Tenant", "Public", "Author", "Created", "Updated"]
 		for(element in elements) {
 			verifications.verifyElementPresent(findTestObject(path+element), "The element "+element+" is not present")
 		}
 	}
-
 	@Keyword
 	def verifyAssetPage() {
 
-		clickAssetTab()
 		String path = 'Object Repository/Asset/Asset/AssetPageElements/'
+
 		def  elements = ["AddAssetButton", "filterByName", "sourceTab", "created", "updated", "Autor", "content"]
+
 		for(element in elements) {
+
 			verifications.verifyElementPresent(findTestObject(path+element), "The element "+element+" is not present")
 		}
 	}
 }
+

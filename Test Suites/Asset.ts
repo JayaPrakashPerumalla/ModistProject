@@ -21,7 +21,7 @@
       <guid>2d989b6e-d930-4110-b4f8-1218e12a39e6</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Admin/Asset/clickAnyAssetAndVerifyUrl</testCaseId>
+      <testCaseId>Test Cases/Admin/Asset/openAnyAssetAndVerifyUrl</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>0e0812fd-4fa4-4e80-b89d-86e8a1e0e3df</guid>
@@ -39,7 +39,7 @@
       <guid>72acaf3a-b0ab-440d-8ec0-cc18abfe86b6</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Admin/Asset/functionalityOfCancleButtonInAddAssetPage</testCaseId>
+      <testCaseId>Test Cases/Admin/Asset/functionalityOfCancelButtonInAddAssetPopup</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>898335d9-46fa-4d94-86c5-66b6267be7bf</guid>
