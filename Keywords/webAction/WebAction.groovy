@@ -63,4 +63,9 @@ public class WebAction {
 	def scrollToElement(TestObject element) {
 		WebUI.scrollToElement(element, GlobalVariable.defaultWaitTime)
 	}
+	
+	@Keyword
+	def waitForElementPresent(TestObject element) {
+		WebUI.waitForElementPresent(element,GlobalVariable.defaultWaitTime)
+	}
 }

@@ -1,0 +1,27 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+Journey,Chrome 87.0.4280.141,,,2021-01-08 04:57:26,2021-01-08 04:59:08,1m - 42.529s,PASSED
+,,,,,,,
+Test Cases/Admin/Journey/addJournyAndVerifyItisAdded,Chrome 87.0.4280.141,,,2021-01-08 04:57:49,2021-01-08 04:58:03,14.047s,PASSED
+pages.Journey.clickOnJourneyTab(),Chrome 87.0.4280.141,,,2021-01-08 04:57:50,2021-01-08 04:57:52,2.508s,PASSED
+journeyName = pages.Journey.addJorney(),Chrome 87.0.4280.141,,,2021-01-08 04:57:52,2021-01-08 04:57:57,4.754s,PASSED
+pages.Journey.verifyJourneyAdded(journeyName),Chrome 87.0.4280.141,,,2021-01-08 04:57:57,2021-01-08 04:58:03,6.546s,PASSED
+,,,,,,,
+Test Cases/Admin/Journey/cloneJourneyAndVerifyisitCloned,Chrome 87.0.4280.141,,,2021-01-08 04:58:03,2021-01-08 04:58:25,21.360s,PASSED
+pages.Journey.clickOnJourneyTab(),Chrome 87.0.4280.141,,,2021-01-08 04:58:04,2021-01-08 04:58:05,1.250s,PASSED
+journeyName = pages.Journey.addJorney(),Chrome 87.0.4280.141,,,2021-01-08 04:58:05,2021-01-08 04:58:10,4.573s,PASSED
+pages.Journey.cloneJourney(journeyName),Chrome 87.0.4280.141,,,2021-01-08 04:58:10,2021-01-08 04:58:18,8.565s,PASSED
+pages.Journey.verifyJourneyCloned(journeyName),Chrome 87.0.4280.141,,,2021-01-08 04:58:18,2021-01-08 04:58:25,6.763s,PASSED
+,,,,,,,
+Test Cases/Admin/Journey/createAccessCodeForJourneyAndVerifyIsTheCodeSuccessfullyCreated,Chrome 87.0.4280.141,,,2021-01-08 04:58:25,2021-01-08 04:58:50,25.230s,PASSED
+pages.Journey.clickOnJourneyTab(),Chrome 87.0.4280.141,,,2021-01-08 04:58:25,2021-01-08 04:58:26,1.312s,PASSED
+journeyName = pages.Journey.getRandomJourneyName(),Chrome 87.0.4280.141,,,2021-01-08 04:58:26,2021-01-08 04:58:28,1.445s,PASSED
+accessCode = pages.Journey.getRandomAccessCode(),Chrome 87.0.4280.141,,,2021-01-08 04:58:28,2021-01-08 04:58:28,0.001s,PASSED
+useLimit = pages.Journey.getRandomCount(),Chrome 87.0.4280.141,,,2021-01-08 04:58:28,2021-01-08 04:58:28,0.001s,PASSED
+"accessCode = pages.Journey.createAccessCodeInJourney(journeyName, accessCode, useLimit)",Chrome 87.0.4280.141,,,2021-01-08 04:58:28,2021-01-08 04:58:39,11.520s,PASSED
+"pages.Journey.verifyTheCreatedAccessCode(journeyName, accessCode)",Chrome 87.0.4280.141,,,2021-01-08 04:58:39,2021-01-08 04:58:50,10.761s,PASSED
+,,,,,,,
+Test Cases/Admin/Journey/deleteJourneyAndVerify,Chrome 87.0.4280.141,,,2021-01-08 04:58:50,2021-01-08 04:59:08,18.051s,PASSED
+pages.Journey.clickOnJourneyTab(),Chrome 87.0.4280.141,,,2021-01-08 04:58:50,2021-01-08 04:58:52,1.866s,PASSED
+journeyName = pages.Journey.addJorney(),Chrome 87.0.4280.141,,,2021-01-08 04:58:52,2021-01-08 04:58:57,4.481s,PASSED
+pages.Journey.deleteJourney(journeyName),Chrome 87.0.4280.141,,,2021-01-08 04:58:57,2021-01-08 04:59:05,8.615s,PASSED
+pages.Journey.verifyJourneyDeleted(journeyName),Chrome 87.0.4280.141,,,2021-01-08 04:59:05,2021-01-08 04:59:08,2.930s,PASSED
