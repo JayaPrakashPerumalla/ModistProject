@@ -36,4 +36,4 @@ CustomKeywords.'pages.Brand.clickBrand'()
 
 CustomKeywords.'pages.Brand.clickAddBrand'()
 
-CustomKeywords.'pages.Brand.verifyBrandPopUp'()
+CustomKeywords.'pages.Brand.verifyBrandPopUp'() 
