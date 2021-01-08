@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Add a Brand without filling mandatory details</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>4e4f4112-6a0a-47d7-b89c-b86cfc1c1d23</testCaseGuid>
+</TestCaseEntity>
