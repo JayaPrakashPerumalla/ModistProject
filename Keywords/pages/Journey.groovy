@@ -51,10 +51,10 @@ public class Journey {
 	def searchJourney(def journeyName) {
 
 		actions.sendKeys(findTestObject('Object Repository/Journey/journrySearchInput'), journeyName)
-		
+
 		println 'edr'+ WebUI.verifyElementPresent(findTestObject('Object Repository/Journey/JourneyName(journeyName)',["journeyName":journeyName]), GlobalVariable.defaultWaitTime, FailureHandling.OPTIONAL)
-		
-		
+
+
 
 		if(!(WebUI.verifyElementPresent(findTestObject('Object Repository/Journey/JourneyName(journeyName)',["journeyName":journeyName]), GlobalVariable.defaultWaitTime, FailureHandling.OPTIONAL))) {
 			int count=1

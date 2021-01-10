@@ -15,7 +15,6 @@ class Login {
 	
 	
 	@BeforeTestCase
-	//@BeforeTestSuite
 	@Keyword
 	def OpenWebSite() {
 		WebUI.openBrowser('')
@@ -23,7 +22,16 @@ class Login {
 		WebUI.navigateToUrl(GlobalVariable.Url)
 		loginPage.login(GlobalVariable.Email,GlobalVariable.Password)
 		
-	}
+	} 
 	
+	/*@BeforeTestSuite
+	@Keyword
+	def beforeTestSuite() {
+		WebUI.openBrowser('')
+		WebUI.maximizeWindow()
+		WebUI.navigateToUrl(GlobalVariable.Url)
+		loginPage.login(GlobalVariable.Email,GlobalVariable.Password)
+		
+	}*/
 	
 }

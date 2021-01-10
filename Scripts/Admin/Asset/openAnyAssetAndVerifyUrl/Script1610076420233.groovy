@@ -17,6 +17,7 @@ import internal.GlobalVariable as GlobalVariable
 
 CustomKeywords.'pages.Asset.clickAssetTab'()
 
-CustomKeywords.'pages.Asset.openExistingAsset'()
+def assetName = CustomKeywords.'pages.Asset.getRandomAssetName'()  
 
-CustomKeywords.'pages.Asset.verifyUrlOfEditPage'()
+
+CustomKeywords.'pages.Asset.verifyUrlOfassetEditPage'(assetName) 

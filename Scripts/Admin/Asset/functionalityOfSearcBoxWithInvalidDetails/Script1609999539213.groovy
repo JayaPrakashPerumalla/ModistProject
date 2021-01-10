@@ -19,6 +19,7 @@ CustomKeywords.'pages.Asset.clickAssetTab'()
 
 String assetName = CustomKeywords.'pages.Asset.getRandomAssetName'()
 
-assetName = assetName+'1'
+assetName = assetName+'1' 
 
-CustomKeywords.'pages.Asset.searchBoxInvalidName'(assetName)
+CustomKeywords.'pages.Asset.VerifyAssetNotPresent'(assetName)
+

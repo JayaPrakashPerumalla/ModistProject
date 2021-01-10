@@ -23,4 +23,4 @@ def assetName = assetDetails.assetName
 
 def sourceName = assetDetails.sourceName
 
-CustomKeywords.'pages.Asset.verifyEditAsset'(assetName, sourceName)
+CustomKeywords.'pages.Asset.verifySourceInEditAssetPage'(assetName, sourceName) 

@@ -17,4 +17,4 @@ import internal.GlobalVariable as GlobalVariable
 
 CustomKeywords.'pages.Asset.clickAssetTab'()
 
-CustomKeywords.'pages.Asset.verifyAssetEditPage'()
+CustomKeywords.'pages.Asset.verifyAssetEditPage'() 
