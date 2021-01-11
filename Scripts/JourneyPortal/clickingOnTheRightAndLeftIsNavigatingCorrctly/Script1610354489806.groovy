@@ -3,6 +3,9 @@ import static com.kms.katalon.core.testcase.TestCaseFactory.findTestCase
 import static com.kms.katalon.core.testdata.TestDataFactory.findTestData
 import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
 import static com.kms.katalon.core.testobject.ObjectRepository.findWindowsObject
+
+import java.beans.Customizer
+
 import com.kms.katalon.core.checkpoint.Checkpoint as Checkpoint
 import com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords as CucumberKW
 import com.kms.katalon.core.mobile.keyword.MobileBuiltInKeywords as Mobile
@@ -15,9 +18,22 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 
-CustomKeywords.'pages.Asset.clickAssetTab'()
+/*CustomKeywords.'pages.Journey.clickOnJourneyTab'()
 
-String assetName = CustomKeywords.'pages.Asset.getRandomAssetName'()
+String journeyName = CustomKeywords.'pages.Journey.getRandomJourneyName'()
 
-CustomKeywords.'pages.Asset.VerifyAssetIsPresent'(assetName)
+String accessCode = CustomKeywords.'pages.Journey.getExistingJourneyAccesscode'(journeyName)
 
+CustomKeywords.'login.LoginForJourneyApplication.loginToJourneyApplication'()
+
+CustomKeywords.'pages.Journey.enterAccessCodeInJourney'(accessCode)
+
+CustomKeywords.'pages.Journey.clickEnterButton'()
+
+CustomKeywords.'pages.JourneyPortal.openExistingSection'()
+
+CustomKeywords.'pages.JourneyPortal.openAnyProductInTheJourneyPortal'()*/
+
+CustomKeywords.'pages.JourneyPortal.clickingLeft'()
+
+CustomKeywords.'pages.JourneyPortal.clickingRight'()
