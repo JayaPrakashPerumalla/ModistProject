@@ -8,8 +8,10 @@ import org.openqa.selenium.WebElement
 import org.openqa.selenium.interactions.Actions
 
 import com.kms.katalon.core.annotation.Keyword
+import com.kms.katalon.core.model.FailureHandling
 import com.kms.katalon.core.testobject.TestObject
 import com.kms.katalon.core.util.KeywordUtil
+import com.kms.katalon.core.webui.common.WebUiCommonHelper
 import com.kms.katalon.core.webui.driver.DriverFactory
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords
@@ -161,6 +163,12 @@ public class Product {
 		WebUI.scrollToElement(findTestObject('Object Repository/Product/ProductEditPage/ProductAssets/ProductAssets'), 30)
 	}
 
+
+	def navigateToRelatedAssets(){
+
+		WebUI.scrollToElement(findTestObject('Object Repository/Product/ProductEditPage/RelatedAssets/relatedAssetsField'), 30)
+	}
+
 	@Keyword
 	def clickDeleteButtonInProductEditPage(){
 
@@ -196,56 +204,98 @@ public class Product {
 	}
 
 	@Keyword
-	def dragAndDrop(TestObject sourceObject, int noOfPositions, boolean isRightDirection) {
+	def changePositionOfItemInProductAssets(TestObject sourceObject, int noOfPositions, boolean isRightDirection) {
 
-		navigateToProductAssets()
+		// Navigate to the product edit page
+		navigateToProductAssets();
 
+		// Get draggable id and position of item
 		WebElement sourceElement = WebUiBuiltInKeywords.findWebElement(sourceObject);
+		def draggableid = sourceElement.getAttribute("data-rbd-draggable-id")
+		def prePosition = getPositionOfItem(draggableid)
 
-		def id = sourceElement.getAttribute("data-rbd-draggable-id")
-
-		println "id : " + id
-
-		sourceElement.findElements(By.tagName("img"))
-
-		Thread.sleep(2000);
-
-
-		//builder.clickAndHold(elementS).moveToElement(elementD).build().perform();
-
+		// Change position of item
 		builder.clickAndHold(sourceElement).moveByOffset(5, -5).build().perform();
-
-
 		int x = (noOfPositions * 200 < 800) ? (noOfPositions * 200) : 800
-
 		int y = -50
-
 		if( ! isRightDirection){
-
 			x = -x;
-
 		}
 
-		println "x : " + x
+		builder.moveByOffset(x, y).build().perform();
+		Thread.sleep(2000);
+		builder.release().build().perform();
+
+		// Get position of item after changing position
+		Thread.sleep(1000)
+		def postPosition = getPositionOfItem(draggableid)
+
+		// Assert position of item
+		if(isRightDirection){
+			WebUI.verifyEqual(prePosition + noOfPositions, postPosition, FailureHandling.STOP_ON_FAILURE)
+		}
+		else {
+			WebUI.verifyEqual(prePosition - noOfPositions, postPosition, FailureHandling.STOP_ON_FAILURE)
+		}
+	}
+
+	@Keyword
+	def changePositionOfItemInRelatedAssets(TestObject sourceObject, int noOfPositions, boolean isRightDirection) {
+		
+		// Navigate to product edit page
+		navigateToRelatedAssets()
+		
+		// Get draggable id and position of item
+		WebElement sourceElement = WebUiBuiltInKeywords.findWebElement(sourceObject);
+		def draggableid = sourceElement.getAttribute("data-rbd-draggable-id")
+		def prePosition = getPositionOfItem(draggableid)
+
+		// Change position of item
+		builder.clickAndHold(sourceElement).moveByOffset(5, -5).build().perform();
+		int x = (noOfPositions * 200 < 800) ? (noOfPositions * 200) : 800
+		int y = -50
+		if( ! isRightDirection){
+			x = -x;
+		}
 
 		builder.moveByOffset(x, y).build().perform();
-
-		//for(int i = 0; i< 40; i++ ){
-
-		//	builder.moveByOffset(5, -2).build().perform();
-
-		//	//Thread.sleep(1000);
-
-		//	WebElement elementM = driver.findElement(By.xpath("(//div[@class='draggable-item'])[1]"));
-
-		//	println 'i : ' + i
-
-		//	println 'id : ' + elementM.getAttribute("data-rbd-draggable-id")
-
-		//}
-
 		Thread.sleep(2000);
-
 		builder.release().build().perform();
+
+		// Get position of item after changing position
+		Thread.sleep(1000)
+		def postPosition = getPositionOfItem(draggableid)
+
+		// Assert position of item
+		if(isRightDirection){
+			WebUI.verifyEqual(prePosition + noOfPositions, postPosition, FailureHandling.STOP_ON_FAILURE)
+		}
+		else {
+			WebUI.verifyEqual(prePosition - noOfPositions, postPosition, FailureHandling.STOP_ON_FAILURE)
+		}
+	}
+
+	@Keyword
+	def clickingLeft() {
+
+		if (! (WebUI.verifyElementPresent(findTestObject('Object Repository/journeyPortal/rightDirectionDisabled'), 30, FailureHandling.OPTIONAL)))
+			actions.click(findTestObject('Object Repository/journeyPortal/leftDirectionButton'))
+	}
+
+	@Keyword
+	def clickingRight() {
+
+		if(! (WebUI.verifyElementPresent(findTestObject('Object Repository/journeyPortal/rightDirectionDisabled'), 30, FailureHandling.OPTIONAL)))
+			actions.click(findTestObject('Object Repository/journeyPortal/rightDirectionButton'))
+	}
+
+	@Keyword
+	def getPositionOfItem(String draggableId) {
+		List<WebElement> productAssetsList = WebUiCommonHelper.findWebElements(findTestObject('Object Repository/Product/ProductEditPage/ProductAssets/productAssetsItems'), 30)
+		for(int i=1;i<=productAssetsList.size();i++) {
+			def itemId = productAssetsList[i-1].getAttribute("data-rbd-draggable-id")
+			if(itemId.equals(draggableId))
+				return i
+		}
 	}
 }
