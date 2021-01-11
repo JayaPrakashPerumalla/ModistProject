@@ -19,6 +19,5 @@ CustomKeywords.'pages.Asset.clickAssetTab'()
 
 String assetName = CustomKeywords.'pages.Asset.getRandomAssetName'()
 
-println assetName 
 CustomKeywords.'pages.Asset.VerifyAssetIsPresent'(assetName)
 

@@ -24,10 +24,6 @@ public class Asset {
 			println elementName
 		}
 	}
-	@Keyword
-	def clickAsset() {
-		actions.click(findTestObject('Object Repository/Asset/assetTab'))
-	}
 
 	@Keyword
 	def openExistingAsset() {
@@ -82,7 +78,7 @@ public class Asset {
 	def getRandomAssetName() {
 
 		//actions.waitForElementPresent('Object Repository/Asset/Asset/AssetCount')
-		WebUI.waitForPageLoad(10)
+		WebUI.waitForPageLoad(40)
 
 		def assetCount = actions.getElementCount(findTestObject('Object Repository/Asset/Asset/AssetCount'))
 
@@ -91,27 +87,26 @@ public class Asset {
 			return addAsset()
 		}
 		else {
-			def index = random.nextInt(assetCount)
+			def index = random.nextInt(assetCount) 
+			
+			if(index==0)
+			{
+				index=index+1
+			}
 
-			def assetName =  WebUI.getText(findTestObject('Object Repository/Asset/Asset/randomAsset(index)',["index":index+1]))
-
-			/*String asset=""
+			def assetName =  WebUI.getText(findTestObject('Object Repository/Asset/Asset/randomAsset(index)',["index":index]))
+			String asset=""
 			 while(assetName.equals(asset))
-			 {
-			 assetName =  WebUI.getText(findTestObject('Object Repository/Asset/Asset/randomAsset(index)',["index":index+1]))
-			 println assetName
-			 } */ 
+			 {		
+                    index=index+1
+			 assetName =  WebUI.getText(findTestObject('Object Repository/Asset/Asset/randomAsset(index)',["index":index])) 
+			 }  
 
 			return assetName
 		}
 
 	}
 
-	@Keyword
-	def searchBox(String assetName) {
-
-		actions.sendKeys(findTestObject('Object Repository/Asset/search'), assetName)
-	}
 	@Keyword
 	def selectTenant() {
 
