@@ -47,7 +47,8 @@ public class Section {
 	def searchForSection(def sectionName) {
 		
 		actions.sendKeys(findTestObject('Object Repository/Section/filterByName'), sectionName) 
-		WebUI.waitForPageLoad(20)
+		WebUI.waitForPageLoad(30)
+		actions.sendKeys(findTestObject('Object Repository/Section/filterByName'), sectionName)
 	}
 	
 	@Keyword
@@ -65,10 +66,28 @@ public class Section {
 		return sectionName	
    }
 	
+	
+	
 	@Keyword
    def verifySectionAdded(def sectionName)
    {
 	   searchForSection(sectionName)
 	   verifications.verifyElementPresent(findTestObject('Object Repository/Section/anySection(sectionName)',["sectionName":sectionName]), sectionName+"is not present",30)
-   }
+   } 
+   
+   @Keyword
+    def  verifyElementsInAddSectionPopUp() 
+	 {
+		 clickOnSectionTab()
+		 clickOnAddSectionButton()
+		 String path = 'Object Repository/Section/addSectionPopupFields/'
+		 def elements = ["Title", "subTitle", "Tenant", "cancel", "addSection"]
+		 for(element in elements) {
+			 verifications.verifyElementPresent(findTestObject(path+element), "The element "+element+" is not present")
+		 }
+		 
+	 }
+   
+   
+   
 }

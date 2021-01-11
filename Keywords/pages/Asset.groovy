@@ -87,8 +87,8 @@ public class Asset {
 			return addAsset()
 		}
 		else {
-			def index = random.nextInt(assetCount) 
-			
+			def index = random.nextInt(assetCount)
+
 			if(index==0)
 			{
 				index=index+1
@@ -96,11 +96,11 @@ public class Asset {
 
 			def assetName =  WebUI.getText(findTestObject('Object Repository/Asset/Asset/randomAsset(index)',["index":index]))
 			String asset=""
-			 while(assetName.equals(asset))
-			 {		
-                    index=index+1
-			 assetName =  WebUI.getText(findTestObject('Object Repository/Asset/Asset/randomAsset(index)',["index":index])) 
-			 }  
+			while(assetName.equals(asset))
+			{
+				index=index+1
+				assetName =  WebUI.getText(findTestObject('Object Repository/Asset/Asset/randomAsset(index)',["index":index]))
+			}
 
 			return assetName
 		}
@@ -153,7 +153,7 @@ public class Asset {
 		actions.click(findTestObject('Asset/Asset/addAsset/addAssetButtonInAddAssetPopup'))
 
 		WebUI.delay(90)
- 
+
 
 		return assetName
 	}
@@ -191,16 +191,16 @@ public class Asset {
 
 
 	@Keyword
-	def verifyUrlOfassetEditPage(String assetName) { 
-		
-        searchForAsset(assetName) 
-		
-		actions.click(findTestObject('Object Repository/Asset/Asset/assetname(assetName)',["assetName":assetName]))
-		
-	    String newUrl = WebUI.getUrl() 
+	def verifyUrlOfassetEditPage(String assetName) {
 
-		if(!newUrl.contains('asset')) { 
-			
+		searchForAsset(assetName)
+
+		actions.click(findTestObject('Object Repository/Asset/Asset/assetname(assetName)',["assetName":assetName]))
+
+		String newUrl = WebUI.getUrl()
+
+		if(!newUrl.contains('asset')) {
+
 			KeywordUtil.markFailed('not navigating to asst edit page Url')
 		}
 	}
@@ -208,9 +208,9 @@ public class Asset {
 	@Keyword
 	def closeButtonInAssetEditPage() {
 
-		def assetName = getRandomAssetName()  
+		def assetName = getRandomAssetName()
 		searchForAsset(assetName)
-		
+
 		actions.click(findTestObject('Object Repository/Asset/Asset/assetname(assetName)',["assetName":assetName]))
 
 		actions.click(findTestObject('Object Repository/Asset/Asset/assetEditpage/close'))
@@ -233,14 +233,14 @@ public class Asset {
 	def editSourceInAssetEditPage() {
 
 		//String assetName = openExistingAsset()
-		String assetName = getRandomAssetName()   
-		
+		String assetName = getRandomAssetName()
+
 		searchForAsset(assetName)
-		 
+
 		actions.click(findTestObject('Object Repository/Asset/Asset/assetname(assetName)',["assetName":assetName]))
-		
-	     WebUI.scrollToElement(findTestObject('Object Repository/Asset/Asset/assetEditpage/sourceDropdown'), 30)
-         
+
+		WebUI.scrollToElement(findTestObject('Object Repository/Asset/Asset/assetEditpage/sourceDropdown'), 30)
+
 		actions.click(findTestObject('Object Repository/Asset/Asset/assetEditpage/sourceDropdown'))
 
 		def sourceName = selectRandomSourceName()
@@ -301,9 +301,9 @@ public class Asset {
 	def verifyAssetEditPage() {
 
 		def assetName = getRandomAssetName()
-       
+
 		actions.click(findTestObject('Object Repository/Asset/Asset/anyAsset(assetName)',["assetName":assetName]))
-		
+
 		String path = 'Object Repository/Asset/Asset/assetEditPageElements/'
 		def  elements = ["AssetEdit", "Content", "Photo", "Tags", "Source", "Tenant", "Public", "Author", "Created", "Updated"]
 		for(element in elements) {
@@ -325,7 +325,7 @@ public class Asset {
 
 	@Keyword
 	def verifyWarningMessageOfAddAsset() {
-		
+
 		actions.waitForElementPresent(findTestObject('Object Repository/Asset/improperErrorMessage'))
 		verifications.verifyElementNotPresent(findTestObject('Object Repository/Asset/improperErrorMessage'), "no proper message shown")
 	}
