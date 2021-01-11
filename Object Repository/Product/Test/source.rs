@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>source</name>
+   <tag></tag>
+   <elementGuidId>34b90ed1-eefe-4a06-bd54-145bd59c9180</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value></value>
+      </entry>
+      <entry>
+         <key>BASIC</key>
+         <value>//div[@data-rbd-droppable-id=&quot;29836&quot;]//img</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//div[@data-rbd-droppable-id=&quot;29836&quot;]//img</value>
+   </webElementProperties>
+</WebElementEntity>
