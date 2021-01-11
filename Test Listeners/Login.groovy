@@ -10,28 +10,20 @@ import internal.GlobalVariable as GlobalVariable
 import login.LoginForAdminDevEnvironment
 
 class Login {
-	
+
 	LoginForAdminDevEnvironment loginPage = new LoginForAdminDevEnvironment()
-	
-	
-	@BeforeTestCase
+
+
+	//@BeforeTestCase
+	//@BeforeTestSuite
 	@Keyword
 	def OpenWebSite() {
 		WebUI.openBrowser('')
 		WebUI.maximizeWindow()
 		WebUI.navigateToUrl(GlobalVariable.Url)
 		loginPage.login(GlobalVariable.Email,GlobalVariable.Password)
-		
-	} 
-	
-	/*@BeforeTestSuite
-	@Keyword
-	def beforeTestSuite() {
-		WebUI.openBrowser('')
-		WebUI.maximizeWindow()
-		WebUI.navigateToUrl(GlobalVariable.Url)
-		loginPage.login(GlobalVariable.Email,GlobalVariable.Password)
-		
-	}*/
-	
+
+	}
+
+
 }

@@ -2,9 +2,13 @@ package pages
 
 import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
 
+import java.awt.Robot
+import java.awt.event.KeyEvent
+
 import com.kms.katalon.core.annotation.Keyword
 import com.kms.katalon.core.util.KeywordUtil
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
+
 import verification.Verification
 import webAction.WebAction
 
@@ -13,6 +17,7 @@ public class JourneyPortal {
 	WebAction actions = new WebAction()
 	Verification verifications = new Verification()
 	Random random = new Random()
+	Robot robot = new Robot() 
 
 	@Keyword
 	def openExistingSection() {
@@ -140,6 +145,20 @@ public class JourneyPortal {
 	@Keyword
 	def verifyBackButtonAfterEnteringInToSection() {
 		verifications.verifyElementPresent(findTestObject('Object Repository/Journey/JourneyPortal/Product/bakcButton'), "back button not available")
+	}
+	
+	@Keyword
+	def clickingRight() {
+		robot.keyPress(KeyEvent.VK_SHIFT)
+		robot.keyPress(KeyEvent.VK_RIGHT)
+		robot.keyRelease(KeyEvent.VK_SHIFT)
+		robot.keyRelease(KeyEvent.VK_RIGHT)
+	}
+	
+	@Keyword
+	def clickingLeft() {
+		robot.keyPress(KeyEvent.VK_LEFT)
+		robot.keyRelease(KeyEvent.VK_RIGHT)
 	}
 }
 
