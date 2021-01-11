@@ -16,8 +16,13 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 
-//CustomKeywords.'pages.Product.clickOnProductTab'()
+CustomKeywords.'pages.Product.clickOnProductTab'()
 
-//CustomKeywords.'pages.Product.openAnyExistingProduct'('product 123')
+CustomKeywords.'pages.Product.openAnyExistingProduct'('product 123')
 
-CustomKeywords.'pages.Product.dragAndDrop'()
+//CustomKeywords.'pages.Product.dragAndDrop'()
+
+CustomKeywords.'pages.Product.changePositionOfItem'(findTestObject('Object Repository/Product/Test/imageSource(index)', ["index":1]), 1, true)
+
+
+
