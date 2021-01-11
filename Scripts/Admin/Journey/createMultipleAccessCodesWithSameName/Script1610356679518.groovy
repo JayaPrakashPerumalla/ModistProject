@@ -3,9 +3,6 @@ import static com.kms.katalon.core.testcase.TestCaseFactory.findTestCase
 import static com.kms.katalon.core.testdata.TestDataFactory.findTestData
 import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
 import static com.kms.katalon.core.testobject.ObjectRepository.findWindowsObject
-
-import java.beans.Customizer
-
 import com.kms.katalon.core.checkpoint.Checkpoint as Checkpoint
 import com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords as CucumberKW
 import com.kms.katalon.core.mobile.keyword.MobileBuiltInKeywords as Mobile
@@ -22,18 +19,16 @@ CustomKeywords.'pages.Journey.clickOnJourneyTab'()
 
 String journeyName = CustomKeywords.'pages.Journey.getRandomJourneyName'()
 
-String accessCode = CustomKeywords.'pages.Journey.getExistingJourneyAccesscode'(journeyName)
+String accessCode = CustomKeywords.'pages.Journey.getRandomAccessCode'()
 
-CustomKeywords.'login.LoginForJourneyApplication.loginToJourneyApplication'()
+String useLimit = CustomKeywords.'pages.Journey.getRandomCount'()
 
-CustomKeywords.'pages.Journey.enterAccessCodeInJourney'(accessCode)
+accessCode = CustomKeywords.'pages.Journey.createAccessCodeInJourney'(journeyName, accessCode, useLimit)
 
-CustomKeywords.'pages.Journey.clickEnterButton'()
+CustomKeywords.'pages.Journey.verifyTheCreatedAccessCode'(journeyName, accessCode)
 
-CustomKeywords.'pages.JourneyPortal.openExistingSection'()
+String journeyName1 = CustomKeywords.'pages.Journey.getRandomJourneyName'()
 
-CustomKeywords.'pages.JourneyPortal.openAnyProductInTheJourneyPortal'()
+accessCode = CustomKeywords.'pages.Journey.createAccessCodeInJourney'(journeyName1, accessCode, useLimit)
 
-CustomKeywords.'pages.JourneyPortal.clickingLeft'()
-
-CustomKeywords.'pages.JourneyPortal.clickingRight'()
+CustomKeywords.'pages.Journey.verifyTheCreatedAccessCode'(journeyName1, accessCode)

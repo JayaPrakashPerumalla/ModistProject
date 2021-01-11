@@ -136,6 +136,8 @@ public class Journey {
 		openExistingJourney(journeyName)
 
 		actions.scrollToElement(findTestObject('Object Repository/Journey/Current Access Codes/currentAccessCodeField'))
+		
+		actions.waitForElementPresent(findTestObject('Object Repository/Journey/Current Access Codes/currentAccessCodeField'))
 		verifications.verifyElementPresent(findTestObject('Object Repository/Journey/Current Access Codes/verify(code)',["code":accesscode]), 'The Code' +accesscode +' is not created')
 
 		actions.click(findTestObject('Object Repository/CommonButtons/Close'))

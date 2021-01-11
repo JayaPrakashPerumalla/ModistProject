@@ -11,6 +11,7 @@ import com.kms.katalon.core.annotation.Keyword
 import com.kms.katalon.core.testobject.TestObject
 import com.kms.katalon.core.util.KeywordUtil
 import com.kms.katalon.core.webui.driver.DriverFactory
+import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords
 
 import verification.Verification
