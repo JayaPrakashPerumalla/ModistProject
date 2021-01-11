@@ -21,7 +21,7 @@ public class Asset {
 		int count = WebUiCommonHelper.findWebElements(findTestObject('Object Repository/Asset/Verify elemetns in Asset/elements in Asset Table'), 30).size()
 		for (int i=0;i<count;i++) {
 			String elementName = WebUI.getText(findTestObject('Object Repository/Asset/Verify elemetns in Asset/Printing element name in the table',["index":i]))
-			println elementName 
+			println elementName
 		}
 	}
 	@Keyword
@@ -86,19 +86,19 @@ public class Asset {
 		}
 		else {
 			def index = random.nextInt(assetCount)
-			
-            if(index==0) 
-			 {
-				 index=index+1
-			 }
+
+			if(index==0)
+			{
+				index=index+1
+			}
 			def assetName =  WebUI.getText(findTestObject('Object Repository/Asset/Asset/randomAsset(index)',["index":index]))
 
 			String asset=""
-			 while(assetName.equals(asset))
-			 {
-				 index=index+1
-			 assetName =  WebUI.getText(findTestObject('Object Repository/Asset/Asset/randomAsset(index)',["index":index]))
-			 }  
+			while(assetName.equals(asset))
+			{
+				index=index+1
+				assetName =  WebUI.getText(findTestObject('Object Repository/Asset/Asset/randomAsset(index)',["index":index]))
+			}
 
 			return assetName
 		}
