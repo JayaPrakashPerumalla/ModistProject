@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>randomAsset(index)</name>
+   <name>filterByName</name>
    <tag></tag>
-   <elementGuidId>0d8ce0c5-1358-42d2-9ae9-c78c58ebbd3a</elementGuidId>
+   <elementGuidId>d2b73de6-9467-4fd1-b043-0a6e389cd68f</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//div[@class='sc-jrsJCI ivRwdr rdt_TableRow'][${index}]//div[5]</value>
+         <value>//input[@id=&quot;search&quot;]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,6 +17,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//div[@class='sc-jrsJCI ivRwdr rdt_TableRow'][${index}]//div[5]</value>
+      <value>//input[@id=&quot;search&quot;]</value>
    </webElementProperties>
 </WebElementEntity>

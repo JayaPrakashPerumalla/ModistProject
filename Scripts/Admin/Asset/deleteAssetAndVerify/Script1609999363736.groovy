@@ -17,8 +17,10 @@ import internal.GlobalVariable as GlobalVariable
 
 CustomKeywords.'pages.Asset.clickAssetTab'()
 
-def assetName = CustomKeywords.'pages.Asset.getRandomAssetName'()
-
+def assetName = CustomKeywords.'pages.Asset.getRandomAssetName'() 
+ 
 CustomKeywords.'pages.Asset.deleteAsset'(assetName)
 
-CustomKeywords.'pages.Asset.VerifyAssetNotPresent'(assetName)
+CustomKeywords.'pages.Asset.VerifyAssetNotPresent'(assetName)   
+
+

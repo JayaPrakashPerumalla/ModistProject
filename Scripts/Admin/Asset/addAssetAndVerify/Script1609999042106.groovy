@@ -19,4 +19,4 @@ CustomKeywords.'pages.Asset.clickAssetTab'()
 
 String assetName = CustomKeywords.'pages.Asset.addAsset'()
 
-CustomKeywords.'pages.Asset.VerifyAssetCreated'(assetName)
+CustomKeywords.'pages.Asset.VerifyAssetIsPresent'(assetName)
