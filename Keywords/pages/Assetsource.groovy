@@ -122,7 +122,9 @@ public class Assetsource {
 	def cancelAssetSourcePopup(){
 		actions.click(findTestObject('Object Repository/AssetSoure/Cancel Button'))
 		verifications.verifyElementPresent(findTestObject('Object Repository/AssetSoure/Search'), "AssetSource popup is not getting closed")
-	}
+	} 
+	
+	
 }
 
 

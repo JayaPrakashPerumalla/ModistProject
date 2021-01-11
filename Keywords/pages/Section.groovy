@@ -83,5 +83,13 @@ public class Section {
 		for(element in elements) {
 			verifications.verifyElementPresent(findTestObject(path+element), "The element "+element+" is not present")
 		}
+	} 
+	
+	@Keyword 
+	def cancelButtonInAddSectionPopup() { 
+		
+			 actions.click(findTestObject('Object Repository/Section/addSection/cancelButton'))
+			 verifications.verifyElementPresent(findTestObject('Object Repository/Section/filterByName'), "Section popup is not getting closed")
+		     	
 	}
 }
