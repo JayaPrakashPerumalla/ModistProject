@@ -16,8 +16,10 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 
-//CustomKeywords.'pages.Product.clickOnProductTab'()
+CustomKeywords.'pages.Product.clickOnProductTab'()
 
-//CustomKeywords.'pages.Product.openAnyExistingProduct'('product 123')
+String productName = CustomKeywords.'pages.Product.getRandomProductNmae'()
+
+CustomKeywords.'pages.Product.openAnyExistingProduct'(productName)
 
 CustomKeywords.'pages.Product.dragAndDrop'()

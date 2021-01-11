@@ -2,12 +2,17 @@ package pages
 
 import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
 
+import org.openqa.selenium.By
 import org.openqa.selenium.WebDriver
+import org.openqa.selenium.WebElement
+import org.openqa.selenium.interactions.Actions
 
 import com.kms.katalon.core.annotation.Keyword
-import com.kms.katalon.core.webui.driver.DriverFactory
-import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
+import com.kms.katalon.core.testobject.TestObject
 import com.kms.katalon.core.util.KeywordUtil
+import com.kms.katalon.core.webui.driver.DriverFactory
+import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords
+
 import verification.Verification
 import webAction.WebAction
 
@@ -18,6 +23,7 @@ public class Product {
 	Random random = new Random()
 	Verification verifications = new Verification()
 	WebDriver driver = DriverFactory.getWebDriver()
+	Actions builder = new Actions(driver)
 
 
 
@@ -44,7 +50,7 @@ public class Product {
 		actions.click(findTestObject('Object Repository/Product/addproductButtonInAddProductPopUp'))
 		return 	productName
 	}
-	
+
 	@Keyword
 	def addProductButtonInAddProductPopup() {
 		actions.click(findTestObject('Object Repository/Product/addproductButtonInAddProductPopUp'))
@@ -100,7 +106,7 @@ public class Product {
 			verifications.verifyElementPresent(findTestObject(path+element), "The element "+element+" is not present")
 		}
 	}
-	
+
 	@Keyword
 	def verifyProductPresent(String productName) {
 
@@ -171,7 +177,7 @@ public class Product {
 
 		verifications.verifyElementPresent(findTestObject('Object Repository/Product/addProductButton'), "Add product button is not present")
 	}
-	
+
 	@Keyword
 	def verifyProductEditPage() {
 		verifications.verifyElementPresent(findTestObject('Object Repository/Product/ProductEditPage/productEditPageVerification'), "you are not in product edit page")
@@ -189,20 +195,56 @@ public class Product {
 	}
 
 	@Keyword
-	def dragAndDrop() {
+	def dragAndDrop(TestObject sourceObject, int noOfPositions, boolean isRightDirection) {
 
 		navigateToProductAssets()
 
-	//	int sourceId = Integer.parseInt(WebUI.getAttribute(findTestObject('Object Repository/Product/ProductEditPage/ProductAssets/From'),'data-rbd-droppable-id'))
-		////int targetId = Integer.parseInt(WebUI.getAttribute(findTestObject('Object Repository/Product/ProductEditPage/ProductAssets/dest'),'data-rbd-droppable-id'))
-		//println sourceId
-	//	println targetId
-		//Get left position of destination
-		def leftPosition = WebUI.getElementLeftPosition(findTestObject('Object Repository/Product/ProductEditPage/ProductAssets/destination(position)'))
-		//def rightPosition = WebUI.getElementRightPosition(findTestObject('Object Repository/Product/ProductEditPage/ProductAssets/destination(position)'))
-		 
-		println "leftPosition: " + leftPosition 
-		
-		WebUI.dragAndDropByOffset(findTestObject('Object Repository/Product/ProductEditPage/ProductAssets/source(position)'), leftPosition+10, leftPosition+10)
+		WebElement sourceElement = WebUiBuiltInKeywords.findWebElement(sourceObject);
+
+		def id = sourceElement.getAttribute("data-rbd-draggable-id")
+
+		println "id : " + id
+
+		sourceElement.findElements(By.tagName("img"))
+
+		Thread.sleep(2000);
+
+
+		//builder.clickAndHold(elementS).moveToElement(elementD).build().perform();
+
+		builder.clickAndHold(sourceElement).moveByOffset(5, -5).build().perform();
+
+
+		int x = (noOfPositions * 200 < 800) ? (noOfPositions * 200) : 800
+
+		int y = -50
+
+		if( ! isRightDirection){
+
+			x = -x;
+
+		}
+
+		println "x : " + x
+
+		builder.moveByOffset(x, y).build().perform();
+
+		//for(int i = 0; i< 40; i++ ){
+
+		//	builder.moveByOffset(5, -2).build().perform();
+
+		//	//Thread.sleep(1000);
+
+		//	WebElement elementM = driver.findElement(By.xpath("(//div[@class='draggable-item'])[1]"));
+
+		//	println 'i : ' + i
+
+		//	println 'id : ' + elementM.getAttribute("data-rbd-draggable-id")
+
+		//}
+
+		Thread.sleep(2000);
+
+		builder.release().build().perform();
 	}
 }
