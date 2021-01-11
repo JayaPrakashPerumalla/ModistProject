@@ -44,7 +44,7 @@ public class Product {
 		actions.click(findTestObject('Object Repository/Product/addproductButtonInAddProductPopUp'))
 		return 	productName
 	}
-	
+
 	@Keyword
 	def addProductButtonInAddProductPopup() {
 		actions.click(findTestObject('Object Repository/Product/addproductButtonInAddProductPopUp'))
@@ -100,7 +100,7 @@ public class Product {
 			verifications.verifyElementPresent(findTestObject(path+element), "The element "+element+" is not present")
 		}
 	}
-	
+
 	@Keyword
 	def verifyProductPresent(String productName) {
 
@@ -171,7 +171,7 @@ public class Product {
 
 		verifications.verifyElementPresent(findTestObject('Object Repository/Product/addProductButton'), "Add product button is not present")
 	}
-	
+
 	@Keyword
 	def verifyProductEditPage() {
 		verifications.verifyElementPresent(findTestObject('Object Repository/Product/ProductEditPage/productEditPageVerification'), "you are not in product edit page")
@@ -193,16 +193,16 @@ public class Product {
 
 		navigateToProductAssets()
 
-	//	int sourceId = Integer.parseInt(WebUI.getAttribute(findTestObject('Object Repository/Product/ProductEditPage/ProductAssets/From'),'data-rbd-droppable-id'))
+		//	int sourceId = Integer.parseInt(WebUI.getAttribute(findTestObject('Object Repository/Product/ProductEditPage/ProductAssets/From'),'data-rbd-droppable-id'))
 		////int targetId = Integer.parseInt(WebUI.getAttribute(findTestObject('Object Repository/Product/ProductEditPage/ProductAssets/dest'),'data-rbd-droppable-id'))
 		//println sourceId
-	//	println targetId
+		//	println targetId
 		//Get left position of destination
 		def leftPosition = WebUI.getElementLeftPosition(findTestObject('Object Repository/Product/ProductEditPage/ProductAssets/destination(position)'))
 		//def rightPosition = WebUI.getElementRightPosition(findTestObject('Object Repository/Product/ProductEditPage/ProductAssets/destination(position)'))
-		 
-		println "leftPosition: " + leftPosition 
-		
+
+		println "leftPosition: " + leftPosition
+
 		WebUI.dragAndDropByOffset(findTestObject('Object Repository/Product/ProductEditPage/ProductAssets/source(position)'), leftPosition+10, leftPosition+10)
 	}
 }
