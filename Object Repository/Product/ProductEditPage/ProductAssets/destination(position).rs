@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//div[@data-rbd-droppable-id='${id}']//img</value>
+         <value>(//div[@class='droppable-container'])[1]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,6 +17,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//div[@data-rbd-droppable-id='${id}']//img</value>
+      <value>(//div[@class='droppable-container'])[1]</value>
    </webElementProperties>
 </WebElementEntity>

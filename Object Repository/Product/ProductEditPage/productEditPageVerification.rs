@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>source(position)</name>
+   <name>productEditPageVerification</name>
    <tag></tag>
-   <elementGuidId>701d3810-c39d-4a6a-b333-9d480364ab24</elementGuidId>
+   <elementGuidId>92cf82a2-239e-4bdf-a892-8a8a7ff4db4d</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>(//*[@class='draggable-item'])[3]</value>
+         <value>//div[text()='Product Edit']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,6 +17,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>(//*[@class='draggable-item'])[3]</value>
+      <value>//div[text()='Product Edit']</value>
    </webElementProperties>
 </WebElementEntity>
