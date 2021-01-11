@@ -5,7 +5,6 @@ import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
 import static com.kms.katalon.core.testobject.ObjectRepository.findWindowsObject
 import com.kms.katalon.core.checkpoint.Checkpoint as Checkpoint
 import com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords as CucumberKW
-import com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass as CustomKeywordDelegatingMetaClass
 import com.kms.katalon.core.mobile.keyword.MobileBuiltInKeywords as Mobile
 import com.kms.katalon.core.model.FailureHandling as FailureHandling
 import com.kms.katalon.core.testcase.TestCase as TestCase
@@ -16,11 +15,20 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 
-CustomKeywords.'pages.Product.clickOnProductTab'()
+CustomKeywords.'pages.Journey.clickOnJourneyTab'()
 
-String productName = CustomKeywords.'pages.Product.getRandomProductNmae'()
+String journeyName = CustomKeywords.'pages.Journey.getRandomJourneyName'()
 
-CustomKeywords.'pages.Product.openAnyExistingProduct'(productName)
+String accessCode = CustomKeywords.'pages.Journey.getRandomAccessCode'()
 
-CustomKeywords.'pages.Product.changePositionOfItemInProductAssets'(findTestObject('Object Repository/Product/Test/imageSource(index)', 
-        [('index') : 1]), 2, true)
+String useLimit = CustomKeywords.'pages.Journey.getRandomCount'()
+
+accessCode = CustomKeywords.'pages.Journey.createAccessCodeInJourney'(journeyName, accessCode, useLimit)
+
+CustomKeywords.'pages.Journey.verifyTheCreatedAccessCode'(journeyName, accessCode)
+
+String journeyName1 = CustomKeywords.'pages.Journey.getRandomJourneyName'()
+
+accessCode = CustomKeywords.'pages.Journey.createAccessCodeInJourney'(journeyName1, accessCode, useLimit)
+
+CustomKeywords.'pages.Journey.verifyTheCreatedAccessCode'(journeyName1, accessCode)

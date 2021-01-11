@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>createMultipleAccessCodesWithSameName</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>548c7298-010d-4e05-bff4-c2510fb7069b</testCaseGuid>
+</TestCaseEntity>
