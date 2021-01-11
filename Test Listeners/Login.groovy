@@ -14,7 +14,7 @@ class Login {
 	LoginForAdminDevEnvironment loginPage = new LoginForAdminDevEnvironment()
 
 
-	@BeforeTestCase
+	//@BeforeTestCase
 	//@BeforeTestSuite
 	@Keyword
 	def OpenWebSite() {
