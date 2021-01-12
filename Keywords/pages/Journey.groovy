@@ -44,6 +44,7 @@ public class Journey {
 
 	def searchJourney(def journeyName) {
 		actions.sendKeys(findTestObject('Object Repository/Journey/journrySearchInput'), journeyName)
+		Thread.sleep(2000)
 		actions.waitForElementPresent(findTestObject('Object Repository/Journey/JourneyName(journeyName)',["journeyName":journeyName]))
 	}
 
@@ -89,7 +90,7 @@ public class Journey {
 		actions.scrollToElement(findTestObject('Object Repository/Journey/Current Access Codes/currentAccessCodeField'))
 		actions.click(findTestObject('Object Repository/Journey/Current Access Codes/plusButton'))
 		actions.sendKeys(findTestObject('Object Repository/Journey/Current Access Codes/accessCode'), accessCode)
-		WebUI.sendKeys(findTestObject('Object Repository/Journey/Current Access Codes/codeUsageCount'), useLimit)
+		actions.sendKeys(findTestObject('Object Repository/Journey/Current Access Codes/codeUsageCount'), useLimit)
 		actions.click(findTestObject('Object Repository/Journey/Current Access Codes/getCodeButton'))
 		actions.click(findTestObject('Object Repository/CommonButtons/Close'))
 		return accessCode
@@ -108,6 +109,7 @@ public class Journey {
 	def getRandomJourneyName() {
 		actions.waitForElementPresent(findTestObject('Object Repository/Journey/toGetJourneysCount'))
 		int count = actions.getElementCount(findTestObject('Object Repository/Journey/toGetJourneysCount'))
+		
 		int index = random.nextInt(count)
 		def journeyName = WebUI.getText(findTestObject('Object Repository/Journey/toPickrandomJourney(index)',["index":index+1]))
 		return journeyName

@@ -1,0 +1,679 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Journey" time="176.4" tests="5" failures="0" errors="0">
+   <testsuite name="Journey" tests="5" failures="0" errors="0" time="176.4" timestamp="2021-01-12 03:38:14" hostname="Lenovo - DESKTOP-H3LAPEO" id="Test Suites/Journey">
+      <properties>
+         <property name="deviceName" value=""/>
+         <property name="devicePlatform" value=""/>
+         <property name="logFolder" value="E:\\Modist Project\\ModistProject\\Reports\\20210112_032820\\Journey\\20210112_032829"/>
+         <property name="logFiles" value="E:\\Modist Project\\ModistProject\\Reports\\20210112_032820\\Journey\\20210112_032829\\execution0.log"/>
+         <property name="attachments" value=""/>
+         <property name="hostName" value="Lenovo - DESKTOP-H3LAPEO"/>
+         <property name="os" value="Windows 10 64bit"/>
+         <property name="katalonVersion" value="7.7.0.205"/>
+         <property name="browser" value="Chrome 87.0.4280.141"/>
+         <property name="hostAddress" value="192.168.43.128"/>
+         <property name="sessionId" value="34f5f116e3d229e265704716b90b9f8b"/>
+         <property name="seleniumVersion" value="3.141.59"/>
+         <property name="proxyInformation" value="ProxyInformation { proxyOption=NO_PROXY, proxyServerType=HTTP, username=, password=********, proxyServerAddress=, proxyServerPort=0, executionList=&quot;&quot;, isApplyToDesiredCapabilities=true }"/>
+         <property name="platform" value="Windows 10"/>
+      </properties>
+      <testcase name="Test Cases/Admin/Journey/addJournyAndVerifyItisAdded" time="12.963" classname="Test Cases/Admin/Journey/addJournyAndVerifyItisAdded" status="PASSED">
+         <system-out><![CDATA[2021-01-12 03:38:32 - [TEST_CASE][PASSED] - Test Cases/Admin/Journey/addJournyAndVerifyItisAdded: Test Cases/Admin/Journey/addJournyAndVerifyItisAdded
+
+2021-01-12 03:38:33 - [TEST_STEP][PASSED] - pages.Journey.clickOnJourneyTab(): pages.Journey.clickOnJourneyTab is PASSED
+
+2021-01-12 03:38:34 - [MESSAGE][PASSED] - Object 'Object Repository/Journey/Journeytab' is present
+
+2021-01-12 03:38:35 - [MESSAGE][PASSED] - Object 'Object Repository/Journey/Journeytab' is visible
+
+2021-01-12 03:38:35 - [MESSAGE][PASSED] - Object 'Object Repository/Journey/Journeytab' is clickable
+
+2021-01-12 03:38:36 - [MESSAGE][PASSED] - Object: 'Object Repository/Journey/Journeytab' is clicked on
+
+2021-01-12 03:38:36 - [MESSAGE][PASSED] - pages.Journey.clickOnJourneyTab is PASSED
+
+2021-01-12 03:38:36 - [TEST_STEP][PASSED] - journeyName = pages.Journey.addJourney(): pages.Journey.addJourney is PASSED
+
+2021-01-12 03:38:36 - [MESSAGE][PASSED] - Object 'Object Repository/Journey/Add Journey/AddJourneyButton' is present
+
+2021-01-12 03:38:36 - [MESSAGE][PASSED] - Object 'Object Repository/Journey/Add Journey/AddJourneyButton' is visible
+
+2021-01-12 03:38:37 - [MESSAGE][PASSED] - Object 'Object Repository/Journey/Add Journey/AddJourneyButton' is clickable
+
+2021-01-12 03:38:37 - [MESSAGE][PASSED] - Object: 'Object Repository/Journey/Add Journey/AddJourneyButton' is clicked on
+
+2021-01-12 03:38:37 - [MESSAGE][PASSED] - Object 'Object Repository/Journey/Add Journey/journeyName' is present
+
+2021-01-12 03:38:38 - [MESSAGE][PASSED] - Object 'Object Repository/Journey/Add Journey/journeyName' is visible
+
+2021-01-12 03:38:38 - [MESSAGE][PASSED] - Object 'Object Repository/Journey/Add Journey/journeyName' is clickable
+
+2021-01-12 03:38:38 - [MESSAGE][PASSED] - Text of object 'Object Repository/Journey/Add Journey/journeyName' is cleared
+
+2021-01-12 03:38:39 - [MESSAGE][PASSED] - Keys 'journeyName63' sent to object: 'Object Repository/Journey/Add Journey/journeyName'
+
+2021-01-12 03:38:39 - [MESSAGE][PASSED] - Object 'Object Repository/Journey/Add Journey/addJourneyInAddJourneyPopUp' is present
+
+2021-01-12 03:38:39 - [MESSAGE][PASSED] - Object 'Object Repository/Journey/Add Journey/addJourneyInAddJourneyPopUp' is visible
+
+2021-01-12 03:38:39 - [MESSAGE][PASSED] - Object 'Object Repository/Journey/Add Journey/addJourneyInAddJourneyPopUp' is clickable
+
+2021-01-12 03:38:40 - [MESSAGE][PASSED] - Object: 'Object Repository/Journey/Add Journey/addJourneyInAddJourneyPopUp' is clicked on
+
+2021-01-12 03:38:40 - [MESSAGE][PASSED] - pages.Journey.addJourney is PASSED
+
+2021-01-12 03:38:40 - [TEST_STEP][PASSED] - pages.Journey.verifyJourneyAdded(journeyName): pages.Journey.verifyJourneyAdded is PASSED
+
+2021-01-12 03:38:40 - [MESSAGE][PASSED] - Object 'Object Repository/Journey/journrySearchInput' is present
+
+2021-01-12 03:38:40 - [MESSAGE][PASSED] - Object 'Object Repository/Journey/journrySearchInput' is visible
+
+2021-01-12 03:38:41 - [MESSAGE][PASSED] - Object 'Object Repository/Journey/journrySearchInput' is clickable
+
+2021-01-12 03:38:41 - [MESSAGE][PASSED] - Text of object 'Object Repository/Journey/journrySearchInput' is cleared
+
+2021-01-12 03:38:41 - [MESSAGE][PASSED] - Keys 'journeyName63' sent to object: 'Object Repository/Journey/journrySearchInput'
+
+2021-01-12 03:38:45 - [MESSAGE][PASSED] - Object 'Object Repository/Journey/JourneyName(journeyName)' is present
+
+2021-01-12 03:38:45 - [MESSAGE][PASSED] - Object 'Object Repository/Journey/JourneyName(journeyName)' is present
+
+2021-01-12 03:38:45 - [MESSAGE][PASSED] - pages.Journey.verifyJourneyAdded is PASSED]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Admin/Journey/deleteJourneyAndVerify" time="49.309" classname="Test Cases/Admin/Journey/deleteJourneyAndVerify" status="PASSED">
+         <system-out><![CDATA[2021-01-12 03:38:45 - [TEST_CASE][PASSED] - Test Cases/Admin/Journey/deleteJourneyAndVerify: Test Cases/Admin/Journey/deleteJourneyAndVerify
+
+2021-01-12 03:38:46 - [TEST_STEP][PASSED] - pages.Journey.clickOnJourneyTab(): pages.Journey.clickOnJourneyTab is PASSED
+
+2021-01-12 03:38:46 - [MESSAGE][PASSED] - Object 'Object Repository/Journey/Journeytab' is present
+
+2021-01-12 03:38:46 - [MESSAGE][PASSED] - Object 'Object Repository/Journey/Journeytab' is visible
+
+2021-01-12 03:38:46 - [MESSAGE][PASSED] - Object 'Object Repository/Journey/Journeytab' is clickable
+
+2021-01-12 03:38:47 - [MESSAGE][PASSED] - Object: 'Object Repository/Journey/Journeytab' is clicked on
+
+2021-01-12 03:38:47 - [MESSAGE][PASSED] - pages.Journey.clickOnJourneyTab is PASSED
+
+2021-01-12 03:38:47 - [TEST_STEP][PASSED] - journeyName = pages.Journey.addJourney(): pages.Journey.addJourney is PASSED
+
+2021-01-12 03:38:47 - [MESSAGE][PASSED] - Object 'Object Repository/Journey/Add Journey/AddJourneyButton' is present
+
+2021-01-12 03:38:47 - [MESSAGE][PASSED] - Object 'Object Repository/Journey/Add Journey/AddJourneyButton' is visible
+
+2021-01-12 03:38:48 - [MESSAGE][PASSED] - Object 'Object Repository/Journey/Add Journey/AddJourneyButton' is clickable
+
+2021-01-12 03:38:48 - [MESSAGE][PASSED] - Object: 'Object Repository/Journey/Add Journey/AddJourneyButton' is clicked on
+
+2021-01-12 03:38:49 - [MESSAGE][PASSED] - Object 'Object Repository/Journey/Add Journey/journeyName' is present
+
+2021-01-12 03:38:49 - [MESSAGE][PASSED] - Object 'Object Repository/Journey/Add Journey/journeyName' is visible
+
+2021-01-12 03:38:49 - [MESSAGE][PASSED] - Object 'Object Repository/Journey/Add Journey/journeyName' is clickable
+
+2021-01-12 03:38:50 - [MESSAGE][PASSED] - Text of object 'Object Repository/Journey/Add Journey/journeyName' is cleared
+
+2021-01-12 03:38:50 - [MESSAGE][PASSED] - Keys 'journeyName789' sent to object: 'Object Repository/Journey/Add Journey/journeyName'
+
+2021-01-12 03:38:50 - [MESSAGE][PASSED] - Object 'Object Repository/Journey/Add Journey/addJourneyInAddJourneyPopUp' is present
+
+2021-01-12 03:38:51 - [MESSAGE][PASSED] - Object 'Object Repository/Journey/Add Journey/addJourneyInAddJourneyPopUp' is visible
+
+2021-01-12 03:38:51 - [MESSAGE][PASSED] - Object 'Object Repository/Journey/Add Journey/addJourneyInAddJourneyPopUp' is clickable
+
+2021-01-12 03:38:51 - [MESSAGE][PASSED] - Object: 'Object Repository/Journey/Add Journey/addJourneyInAddJourneyPopUp' is clicked on
+
+2021-01-12 03:38:51 - [MESSAGE][PASSED] - pages.Journey.addJourney is PASSED
+
+2021-01-12 03:38:51 - [TEST_STEP][PASSED] - pages.Journey.deleteJourney(journeyName): pages.Journey.deleteJourney is PASSED
+
+2021-01-12 03:38:52 - [MESSAGE][PASSED] - Object 'Object Repository/Journey/journrySearchInput' is present
+
+2021-01-12 03:38:53 - [MESSAGE][PASSED] - Object 'Object Repository/Journey/journrySearchInput' is visible
+
+2021-01-12 03:38:53 - [MESSAGE][PASSED] - Object 'Object Repository/Journey/journrySearchInput' is clickable
+
+2021-01-12 03:38:53 - [MESSAGE][PASSED] - Text of object 'Object Repository/Journey/journrySearchInput' is cleared
+
+2021-01-12 03:38:54 - [MESSAGE][PASSED] - Keys 'journeyName789' sent to object: 'Object Repository/Journey/journrySearchInput'
+
+2021-01-12 03:38:57 - [MESSAGE][PASSED] - Object 'Object Repository/Journey/JourneyName(journeyName)' is present
+
+2021-01-12 03:38:57 - [MESSAGE][PASSED] - Object 'Object Repository/Journey/journeyNameCheckBox(name)' is present
+
+2021-01-12 03:38:57 - [MESSAGE][PASSED] - Object 'Object Repository/Journey/journeyNameCheckBox(name)' is visible
+
+2021-01-12 03:38:57 - [MESSAGE][PASSED] - Object 'Object Repository/Journey/journeyNameCheckBox(name)' is clickable
+
+2021-01-12 03:38:58 - [MESSAGE][PASSED] - Object: 'Object Repository/Journey/journeyNameCheckBox(name)' is clicked on
+
+2021-01-12 03:38:58 - [MESSAGE][PASSED] - Object 'Object Repository/Journey/journeyNameDeleteButton' is present
+
+2021-01-12 03:38:58 - [MESSAGE][PASSED] - Object 'Object Repository/Journey/journeyNameDeleteButton' is visible
+
+2021-01-12 03:38:59 - [MESSAGE][PASSED] - Object 'Object Repository/Journey/journeyNameDeleteButton' is clickable
+
+2021-01-12 03:38:59 - [MESSAGE][PASSED] - Object: 'Object Repository/Journey/journeyNameDeleteButton' is clicked on
+
+2021-01-12 03:38:59 - [MESSAGE][PASSED] - Alert accepted
+
+2021-01-12 03:38:59 - [MESSAGE][PASSED] - pages.Journey.deleteJourney is PASSED
+
+2021-01-12 03:38:59 - [TEST_STEP][PASSED] - pages.Journey.verifyJourneyDeleted(journeyName): pages.Journey.verifyJourneyDeleted is PASSED
+
+2021-01-12 03:39:00 - [MESSAGE][PASSED] - Object 'Object Repository/Journey/journrySearchInput' is present
+
+2021-01-12 03:39:00 - [MESSAGE][PASSED] - Object 'Object Repository/Journey/journrySearchInput' is visible
+
+2021-01-12 03:39:01 - [MESSAGE][PASSED] - Object 'Object Repository/Journey/journrySearchInput' is clickable
+
+2021-01-12 03:39:01 - [MESSAGE][PASSED] - Text of object 'Object Repository/Journey/journrySearchInput' is cleared
+
+2021-01-12 03:39:01 - [MESSAGE][PASSED] - Keys 'journeyName789' sent to object: 'Object Repository/Journey/journrySearchInput'
+
+2021-01-12 03:39:34 - [MESSAGE][INFO] - Unable to find the element located by 'By.xpath: //div[text()='journeyName789']'. Please recheck the objects properties to make sure the desired element is located. 
+
+2021-01-12 03:39:34 - [MESSAGE][WARNING] - Object 'Object Repository/Journey/JourneyName(journeyName)' is not present after 30 second(s)
+
+2021-01-12 03:39:35 - [MESSAGE][PASSED] - Web element with id: 'Object Repository/Journey/JourneyName(journeyName)' located by 'By.xpath: //div[text()='journeyName789']' is not present after '30' second(s)
+
+2021-01-12 03:39:35 - [MESSAGE][PASSED] - pages.Journey.verifyJourneyDeleted is PASSED]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Admin/Journey/cloneJourneyAndVerifyisitCloned" time="20.193" classname="Test Cases/Admin/Journey/cloneJourneyAndVerifyisitCloned" status="PASSED">
+         <system-out><![CDATA[2021-01-12 03:39:35 - [TEST_CASE][PASSED] - Test Cases/Admin/Journey/cloneJourneyAndVerifyisitCloned: Test Cases/Admin/Journey/cloneJourneyAndVerifyisitCloned
+
+2021-01-12 03:39:35 - [TEST_STEP][PASSED] - pages.Journey.clickOnJourneyTab(): pages.Journey.clickOnJourneyTab is PASSED
+
+2021-01-12 03:39:35 - [MESSAGE][PASSED] - Object 'Object Repository/Journey/Journeytab' is present
+
+2021-01-12 03:39:35 - [MESSAGE][PASSED] - Object 'Object Repository/Journey/Journeytab' is visible
+
+2021-01-12 03:39:36 - [MESSAGE][PASSED] - Object 'Object Repository/Journey/Journeytab' is clickable
+
+2021-01-12 03:39:36 - [MESSAGE][PASSED] - Object: 'Object Repository/Journey/Journeytab' is clicked on
+
+2021-01-12 03:39:36 - [MESSAGE][PASSED] - pages.Journey.clickOnJourneyTab is PASSED
+
+2021-01-12 03:39:36 - [TEST_STEP][PASSED] - journeyName = pages.Journey.addJourney(): pages.Journey.addJourney is PASSED
+
+2021-01-12 03:39:36 - [MESSAGE][PASSED] - Object 'Object Repository/Journey/Add Journey/AddJourneyButton' is present
+
+2021-01-12 03:39:37 - [MESSAGE][PASSED] - Object 'Object Repository/Journey/Add Journey/AddJourneyButton' is visible
+
+2021-01-12 03:39:37 - [MESSAGE][PASSED] - Object 'Object Repository/Journey/Add Journey/AddJourneyButton' is clickable
+
+2021-01-12 03:39:37 - [MESSAGE][PASSED] - Object: 'Object Repository/Journey/Add Journey/AddJourneyButton' is clicked on
+
+2021-01-12 03:39:38 - [MESSAGE][PASSED] - Object 'Object Repository/Journey/Add Journey/journeyName' is present
+
+2021-01-12 03:39:38 - [MESSAGE][PASSED] - Object 'Object Repository/Journey/Add Journey/journeyName' is visible
+
+2021-01-12 03:39:38 - [MESSAGE][PASSED] - Object 'Object Repository/Journey/Add Journey/journeyName' is clickable
+
+2021-01-12 03:39:39 - [MESSAGE][PASSED] - Text of object 'Object Repository/Journey/Add Journey/journeyName' is cleared
+
+2021-01-12 03:39:39 - [MESSAGE][PASSED] - Keys 'journeyName11' sent to object: 'Object Repository/Journey/Add Journey/journeyName'
+
+2021-01-12 03:39:39 - [MESSAGE][PASSED] - Object 'Object Repository/Journey/Add Journey/addJourneyInAddJourneyPopUp' is present
+
+2021-01-12 03:39:40 - [MESSAGE][PASSED] - Object 'Object Repository/Journey/Add Journey/addJourneyInAddJourneyPopUp' is visible
+
+2021-01-12 03:39:40 - [MESSAGE][PASSED] - Object 'Object Repository/Journey/Add Journey/addJourneyInAddJourneyPopUp' is clickable
+
+2021-01-12 03:39:40 - [MESSAGE][PASSED] - Object: 'Object Repository/Journey/Add Journey/addJourneyInAddJourneyPopUp' is clicked on
+
+2021-01-12 03:39:40 - [MESSAGE][PASSED] - pages.Journey.addJourney is PASSED
+
+2021-01-12 03:39:40 - [TEST_STEP][PASSED] - pages.Journey.cloneJourney(journeyName): pages.Journey.cloneJourney is PASSED
+
+2021-01-12 03:39:42 - [MESSAGE][PASSED] - Object 'Object Repository/Journey/journrySearchInput' is present
+
+2021-01-12 03:39:42 - [MESSAGE][PASSED] - Object 'Object Repository/Journey/journrySearchInput' is visible
+
+2021-01-12 03:39:42 - [MESSAGE][PASSED] - Object 'Object Repository/Journey/journrySearchInput' is clickable
+
+2021-01-12 03:39:42 - [MESSAGE][PASSED] - Text of object 'Object Repository/Journey/journrySearchInput' is cleared
+
+2021-01-12 03:39:43 - [MESSAGE][PASSED] - Keys 'journeyName11' sent to object: 'Object Repository/Journey/journrySearchInput'
+
+2021-01-12 03:39:46 - [MESSAGE][PASSED] - Object 'Object Repository/Journey/JourneyName(journeyName)' is present
+
+2021-01-12 03:39:46 - [MESSAGE][PASSED] - Object 'Object Repository/Journey/journey cloning/threedots(journeyName)' is present
+
+2021-01-12 03:39:46 - [MESSAGE][PASSED] - Object 'Object Repository/Journey/journey cloning/threedots(journeyName)' is visible
+
+2021-01-12 03:39:46 - [MESSAGE][PASSED] - Object 'Object Repository/Journey/journey cloning/threedots(journeyName)' is present
+
+2021-01-12 03:39:47 - [MESSAGE][PASSED] - Object 'Object Repository/Journey/journey cloning/threedots(journeyName)' is visible
+
+2021-01-12 03:39:47 - [MESSAGE][PASSED] - Object 'Object Repository/Journey/journey cloning/threedots(journeyName)' is clickable
+
+2021-01-12 03:39:47 - [MESSAGE][PASSED] - Object: 'Object Repository/Journey/journey cloning/threedots(journeyName)' is clicked on
+
+2021-01-12 03:39:48 - [MESSAGE][PASSED] - Object 'Object Repository/Journey/journey cloning/cloneButton' is present
+
+2021-01-12 03:39:48 - [MESSAGE][PASSED] - Object 'Object Repository/Journey/journey cloning/cloneButton' is visible
+
+2021-01-12 03:39:48 - [MESSAGE][PASSED] - Object 'Object Repository/Journey/journey cloning/cloneButton' is clickable
+
+2021-01-12 03:39:49 - [MESSAGE][PASSED] - Object: 'Object Repository/Journey/journey cloning/cloneButton' is clicked on
+
+2021-01-12 03:39:49 - [MESSAGE][PASSED] - pages.Journey.cloneJourney is PASSED
+
+2021-01-12 03:39:49 - [TEST_STEP][PASSED] - pages.Journey.verifyJourneyCloned(journeyName): pages.Journey.verifyJourneyCloned is PASSED
+
+2021-01-12 03:39:49 - [MESSAGE][PASSED] - Object 'Object Repository/Journey/journrySearchInput' is present
+
+2021-01-12 03:39:49 - [MESSAGE][PASSED] - Object 'Object Repository/Journey/journrySearchInput' is visible
+
+2021-01-12 03:39:50 - [MESSAGE][PASSED] - Object 'Object Repository/Journey/journrySearchInput' is clickable
+
+2021-01-12 03:39:50 - [MESSAGE][PASSED] - Text of object 'Object Repository/Journey/journrySearchInput' is cleared
+
+2021-01-12 03:39:51 - [MESSAGE][PASSED] - Keys 'journeyName11 (duplicate)' sent to object: 'Object Repository/Journey/journrySearchInput'
+
+2021-01-12 03:39:54 - [MESSAGE][PASSED] - Object 'Object Repository/Journey/JourneyName(journeyName)' is present
+
+2021-01-12 03:39:55 - [MESSAGE][PASSED] - Object 'Object Repository/Journey/journey cloning/clonedJourney(journeyName)' is present
+
+2021-01-12 03:39:55 - [MESSAGE][PASSED] - Object 'Object Repository/Journey/journey cloning/clonedJourney(journeyName)' is present
+
+2021-01-12 03:39:55 - [MESSAGE][PASSED] - pages.Journey.verifyJourneyCloned is PASSED]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Admin/Journey/createAccessCodeForJourneyAndVerifyIsTheCodeSuccessfullyCreated" time="25.616" classname="Test Cases/Admin/Journey/createAccessCodeForJourneyAndVerifyIsTheCodeSuccessfullyCreated" status="PASSED">
+         <system-out><![CDATA[2021-01-12 03:39:55 - [TEST_CASE][PASSED] - Test Cases/Admin/Journey/createAccessCodeForJourneyAndVerifyIsTheCodeSuccessfullyCreated: Test Cases/Admin/Journey/createAccessCodeForJourneyAndVerifyIsTheCodeSuccessfullyCreated
+
+2021-01-12 03:39:55 - [TEST_STEP][PASSED] - journeyName = pages.Journey.getRandomJourneyName(): pages.Journey.getRandomJourneyName is PASSED
+
+2021-01-12 03:39:55 - [MESSAGE][PASSED] - Object 'Object Repository/Journey/toGetJourneysCount' is present
+
+2021-01-12 03:39:56 - [MESSAGE][PASSED] - Object 'Object Repository/Journey/toGetJourneysCount' is present
+
+2021-01-12 03:39:56 - [MESSAGE][PASSED] - Text of object 'Object Repository/Journey/toPickrandomJourney(index)' is: 'journeyName11 (duplicate)'
+
+2021-01-12 03:39:56 - [MESSAGE][PASSED] - pages.Journey.getRandomJourneyName is PASSED
+
+2021-01-12 03:39:56 - [TEST_STEP][PASSED] - accessCode = pages.Journey.getRandomAccessCode(): pages.Journey.getRandomAccessCode is PASSED
+
+2021-01-12 03:39:56 - [MESSAGE][PASSED] - pages.Journey.getRandomAccessCode is PASSED
+
+2021-01-12 03:39:56 - [TEST_STEP][PASSED] - useLimit = pages.Journey.getRandomCount(): pages.Journey.getRandomCount is PASSED
+
+2021-01-12 03:39:56 - [MESSAGE][PASSED] - pages.Journey.getRandomCount is PASSED
+
+2021-01-12 03:39:56 - [TEST_STEP][PASSED] - accessCode = pages.Journey.createAccessCodeInJourney(journeyName, accessCode, useLimit): pages.Journey.createAccessCodeInJourney is PASSED
+
+2021-01-12 03:39:56 - [MESSAGE][PASSED] - Object 'Object Repository/Journey/journrySearchInput' is present
+
+2021-01-12 03:39:57 - [MESSAGE][PASSED] - Object 'Object Repository/Journey/journrySearchInput' is visible
+
+2021-01-12 03:39:57 - [MESSAGE][PASSED] - Object 'Object Repository/Journey/journrySearchInput' is clickable
+
+2021-01-12 03:39:57 - [MESSAGE][PASSED] - Text of object 'Object Repository/Journey/journrySearchInput' is cleared
+
+2021-01-12 03:39:58 - [MESSAGE][PASSED] - Keys 'journeyName11 (duplicate)' sent to object: 'Object Repository/Journey/journrySearchInput'
+
+2021-01-12 03:40:01 - [MESSAGE][PASSED] - Object 'Object Repository/Journey/JourneyName(journeyName)' is present
+
+2021-01-12 03:40:02 - [MESSAGE][PASSED] - Object 'Object Repository/Journey/clickVerifyingJourney(journeyName)' is present
+
+2021-01-12 03:40:02 - [MESSAGE][PASSED] - Object 'Object Repository/Journey/clickVerifyingJourney(journeyName)' is visible
+
+2021-01-12 03:40:02 - [MESSAGE][PASSED] - Object 'Object Repository/Journey/clickVerifyingJourney(journeyName)' is clickable
+
+2021-01-12 03:40:03 - [MESSAGE][PASSED] - Object: 'Object Repository/Journey/clickVerifyingJourney(journeyName)' is clicked on
+
+2021-01-12 03:40:04 - [MESSAGE][PASSED] - Scroll to object 'Object Repository/Journey/Current Access Codes/currentAccessCodeField' successfully
+
+2021-01-12 03:40:04 - [MESSAGE][PASSED] - Object 'Object Repository/Journey/Current Access Codes/plusButton' is present
+
+2021-01-12 03:40:05 - [MESSAGE][PASSED] - Object 'Object Repository/Journey/Current Access Codes/plusButton' is visible
+
+2021-01-12 03:40:05 - [MESSAGE][PASSED] - Object 'Object Repository/Journey/Current Access Codes/plusButton' is clickable
+
+2021-01-12 03:40:05 - [MESSAGE][PASSED] - Object: 'Object Repository/Journey/Current Access Codes/plusButton' is clicked on
+
+2021-01-12 03:40:06 - [MESSAGE][PASSED] - Object 'Object Repository/Journey/Current Access Codes/accessCode' is present
+
+2021-01-12 03:40:06 - [MESSAGE][PASSED] - Object 'Object Repository/Journey/Current Access Codes/accessCode' is visible
+
+2021-01-12 03:40:06 - [MESSAGE][PASSED] - Object 'Object Repository/Journey/Current Access Codes/accessCode' is clickable
+
+2021-01-12 03:40:06 - [MESSAGE][PASSED] - Text of object 'Object Repository/Journey/Current Access Codes/accessCode' is cleared
+
+2021-01-12 03:40:07 - [MESSAGE][PASSED] - Keys 'access9' sent to object: 'Object Repository/Journey/Current Access Codes/accessCode'
+
+2021-01-12 03:40:07 - [MESSAGE][PASSED] - Object 'Object Repository/Journey/Current Access Codes/codeUsageCount' is present
+
+2021-01-12 03:40:07 - [MESSAGE][PASSED] - Object 'Object Repository/Journey/Current Access Codes/codeUsageCount' is visible
+
+2021-01-12 03:40:07 - [MESSAGE][PASSED] - Object 'Object Repository/Journey/Current Access Codes/codeUsageCount' is clickable
+
+2021-01-12 03:40:08 - [MESSAGE][PASSED] - Text of object 'Object Repository/Journey/Current Access Codes/codeUsageCount' is cleared
+
+2021-01-12 03:40:08 - [MESSAGE][PASSED] - Keys '8' sent to object: 'Object Repository/Journey/Current Access Codes/codeUsageCount'
+
+2021-01-12 03:40:08 - [MESSAGE][PASSED] - Object 'Object Repository/Journey/Current Access Codes/getCodeButton' is present
+
+2021-01-12 03:40:09 - [MESSAGE][PASSED] - Object 'Object Repository/Journey/Current Access Codes/getCodeButton' is visible
+
+2021-01-12 03:40:09 - [MESSAGE][PASSED] - Object 'Object Repository/Journey/Current Access Codes/getCodeButton' is clickable
+
+2021-01-12 03:40:09 - [MESSAGE][PASSED] - Object: 'Object Repository/Journey/Current Access Codes/getCodeButton' is clicked on
+
+2021-01-12 03:40:10 - [MESSAGE][PASSED] - Object 'Object Repository/CommonButtons/Close' is present
+
+2021-01-12 03:40:10 - [MESSAGE][PASSED] - Object 'Object Repository/CommonButtons/Close' is visible
+
+2021-01-12 03:40:10 - [MESSAGE][PASSED] - Object 'Object Repository/CommonButtons/Close' is clickable
+
+2021-01-12 03:40:11 - [MESSAGE][PASSED] - Object: 'Object Repository/CommonButtons/Close' is clicked on
+
+2021-01-12 03:40:11 - [MESSAGE][PASSED] - pages.Journey.createAccessCodeInJourney is PASSED
+
+2021-01-12 03:40:11 - [TEST_STEP][PASSED] - pages.Journey.verifyTheCreatedAccessCode(journeyName, accessCode): pages.Journey.verifyTheCreatedAccessCode is PASSED
+
+2021-01-12 03:40:12 - [MESSAGE][PASSED] - Object 'Object Repository/Journey/journrySearchInput' is present
+
+2021-01-12 03:40:12 - [MESSAGE][PASSED] - Object 'Object Repository/Journey/journrySearchInput' is visible
+
+2021-01-12 03:40:12 - [MESSAGE][PASSED] - Object 'Object Repository/Journey/journrySearchInput' is clickable
+
+2021-01-12 03:40:13 - [MESSAGE][PASSED] - Text of object 'Object Repository/Journey/journrySearchInput' is cleared
+
+2021-01-12 03:40:13 - [MESSAGE][PASSED] - Keys 'journeyName11 (duplicate)' sent to object: 'Object Repository/Journey/journrySearchInput'
+
+2021-01-12 03:40:17 - [MESSAGE][PASSED] - Object 'Object Repository/Journey/JourneyName(journeyName)' is present
+
+2021-01-12 03:40:17 - [MESSAGE][PASSED] - Object 'Object Repository/Journey/clickVerifyingJourney(journeyName)' is present
+
+2021-01-12 03:40:17 - [MESSAGE][PASSED] - Object 'Object Repository/Journey/clickVerifyingJourney(journeyName)' is visible
+
+2021-01-12 03:40:17 - [MESSAGE][PASSED] - Object 'Object Repository/Journey/clickVerifyingJourney(journeyName)' is clickable
+
+2021-01-12 03:40:18 - [MESSAGE][PASSED] - Object: 'Object Repository/Journey/clickVerifyingJourney(journeyName)' is clicked on
+
+2021-01-12 03:40:19 - [MESSAGE][PASSED] - Scroll to object 'Object Repository/Journey/Current Access Codes/currentAccessCodeField' successfully
+
+2021-01-12 03:40:19 - [MESSAGE][PASSED] - Object 'Object Repository/Journey/Current Access Codes/currentAccessCodeField' is present
+
+2021-01-12 03:40:19 - [MESSAGE][PASSED] - Object 'Object Repository/Journey/Current Access Codes/verify(code)' is present
+
+2021-01-12 03:40:20 - [MESSAGE][PASSED] - Object 'Object Repository/CommonButtons/Close' is present
+
+2021-01-12 03:40:20 - [MESSAGE][PASSED] - Object 'Object Repository/CommonButtons/Close' is visible
+
+2021-01-12 03:40:20 - [MESSAGE][PASSED] - Object 'Object Repository/CommonButtons/Close' is clickable
+
+2021-01-12 03:40:20 - [MESSAGE][PASSED] - Object: 'Object Repository/CommonButtons/Close' is clicked on
+
+2021-01-12 03:40:20 - [MESSAGE][PASSED] - pages.Journey.verifyTheCreatedAccessCode is PASSED]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Admin/Journey/createMultipleAccessCodesWithSameName" time="48.44" classname="Test Cases/Admin/Journey/createMultipleAccessCodesWithSameName" status="PASSED">
+         <system-out><![CDATA[2021-01-12 03:40:20 - [TEST_CASE][PASSED] - Test Cases/Admin/Journey/createMultipleAccessCodesWithSameName: Test Cases/Admin/Journey/createMultipleAccessCodesWithSameName
+
+2021-01-12 03:40:21 - [TEST_STEP][PASSED] - pages.Journey.clickOnJourneyTab(): pages.Journey.clickOnJourneyTab is PASSED
+
+2021-01-12 03:40:21 - [MESSAGE][PASSED] - Object 'Object Repository/Journey/Journeytab' is present
+
+2021-01-12 03:40:22 - [MESSAGE][PASSED] - Object 'Object Repository/Journey/Journeytab' is visible
+
+2021-01-12 03:40:22 - [MESSAGE][PASSED] - Object 'Object Repository/Journey/Journeytab' is clickable
+
+2021-01-12 03:40:22 - [MESSAGE][PASSED] - Object: 'Object Repository/Journey/Journeytab' is clicked on
+
+2021-01-12 03:40:22 - [MESSAGE][PASSED] - pages.Journey.clickOnJourneyTab is PASSED
+
+2021-01-12 03:40:22 - [TEST_STEP][PASSED] - journeyName = pages.Journey.getRandomJourneyName(): pages.Journey.getRandomJourneyName is PASSED
+
+2021-01-12 03:40:22 - [MESSAGE][PASSED] - Object 'Object Repository/Journey/toGetJourneysCount' is present
+
+2021-01-12 03:40:23 - [MESSAGE][PASSED] - Object 'Object Repository/Journey/toGetJourneysCount' is present
+
+2021-01-12 03:40:23 - [MESSAGE][PASSED] - Text of object 'Object Repository/Journey/toPickrandomJourney(index)' is: 'JO5'
+
+2021-01-12 03:40:23 - [MESSAGE][PASSED] - pages.Journey.getRandomJourneyName is PASSED
+
+2021-01-12 03:40:23 - [TEST_STEP][PASSED] - accessCode = pages.Journey.getRandomAccessCode(): pages.Journey.getRandomAccessCode is PASSED
+
+2021-01-12 03:40:23 - [MESSAGE][PASSED] - pages.Journey.getRandomAccessCode is PASSED
+
+2021-01-12 03:40:23 - [TEST_STEP][PASSED] - useLimit = pages.Journey.getRandomCount(): pages.Journey.getRandomCount is PASSED
+
+2021-01-12 03:40:23 - [MESSAGE][PASSED] - pages.Journey.getRandomCount is PASSED
+
+2021-01-12 03:40:23 - [TEST_STEP][PASSED] - accessCode = pages.Journey.createAccessCodeInJourney(journeyName, accessCode, useLimit): pages.Journey.createAccessCodeInJourney is PASSED
+
+2021-01-12 03:40:24 - [MESSAGE][PASSED] - Object 'Object Repository/Journey/journrySearchInput' is present
+
+2021-01-12 03:40:24 - [MESSAGE][PASSED] - Object 'Object Repository/Journey/journrySearchInput' is visible
+
+2021-01-12 03:40:24 - [MESSAGE][PASSED] - Object 'Object Repository/Journey/journrySearchInput' is clickable
+
+2021-01-12 03:40:24 - [MESSAGE][PASSED] - Text of object 'Object Repository/Journey/journrySearchInput' is cleared
+
+2021-01-12 03:40:25 - [MESSAGE][PASSED] - Keys 'JO5' sent to object: 'Object Repository/Journey/journrySearchInput'
+
+2021-01-12 03:40:27 - [MESSAGE][PASSED] - Object 'Object Repository/Journey/JourneyName(journeyName)' is present
+
+2021-01-12 03:40:27 - [MESSAGE][PASSED] - Object 'Object Repository/Journey/clickVerifyingJourney(journeyName)' is present
+
+2021-01-12 03:40:27 - [MESSAGE][PASSED] - Object 'Object Repository/Journey/clickVerifyingJourney(journeyName)' is visible
+
+2021-01-12 03:40:28 - [MESSAGE][PASSED] - Object 'Object Repository/Journey/clickVerifyingJourney(journeyName)' is clickable
+
+2021-01-12 03:40:28 - [MESSAGE][PASSED] - Object: 'Object Repository/Journey/clickVerifyingJourney(journeyName)' is clicked on
+
+2021-01-12 03:40:29 - [MESSAGE][PASSED] - Scroll to object 'Object Repository/Journey/Current Access Codes/currentAccessCodeField' successfully
+
+2021-01-12 03:40:30 - [MESSAGE][PASSED] - Object 'Object Repository/Journey/Current Access Codes/plusButton' is present
+
+2021-01-12 03:40:31 - [MESSAGE][PASSED] - Object 'Object Repository/Journey/Current Access Codes/plusButton' is visible
+
+2021-01-12 03:40:31 - [MESSAGE][PASSED] - Object 'Object Repository/Journey/Current Access Codes/plusButton' is clickable
+
+2021-01-12 03:40:31 - [MESSAGE][PASSED] - Object: 'Object Repository/Journey/Current Access Codes/plusButton' is clicked on
+
+2021-01-12 03:40:32 - [MESSAGE][PASSED] - Object 'Object Repository/Journey/Current Access Codes/accessCode' is present
+
+2021-01-12 03:40:32 - [MESSAGE][PASSED] - Object 'Object Repository/Journey/Current Access Codes/accessCode' is visible
+
+2021-01-12 03:40:32 - [MESSAGE][PASSED] - Object 'Object Repository/Journey/Current Access Codes/accessCode' is clickable
+
+2021-01-12 03:40:32 - [MESSAGE][PASSED] - Text of object 'Object Repository/Journey/Current Access Codes/accessCode' is cleared
+
+2021-01-12 03:40:33 - [MESSAGE][PASSED] - Keys 'access19' sent to object: 'Object Repository/Journey/Current Access Codes/accessCode'
+
+2021-01-12 03:40:33 - [MESSAGE][PASSED] - Object 'Object Repository/Journey/Current Access Codes/codeUsageCount' is present
+
+2021-01-12 03:40:33 - [MESSAGE][PASSED] - Object 'Object Repository/Journey/Current Access Codes/codeUsageCount' is visible
+
+2021-01-12 03:40:33 - [MESSAGE][PASSED] - Object 'Object Repository/Journey/Current Access Codes/codeUsageCount' is clickable
+
+2021-01-12 03:40:34 - [MESSAGE][PASSED] - Text of object 'Object Repository/Journey/Current Access Codes/codeUsageCount' is cleared
+
+2021-01-12 03:40:34 - [MESSAGE][PASSED] - Keys '0' sent to object: 'Object Repository/Journey/Current Access Codes/codeUsageCount'
+
+2021-01-12 03:40:34 - [MESSAGE][PASSED] - Object 'Object Repository/Journey/Current Access Codes/getCodeButton' is present
+
+2021-01-12 03:40:35 - [MESSAGE][PASSED] - Object 'Object Repository/Journey/Current Access Codes/getCodeButton' is visible
+
+2021-01-12 03:40:35 - [MESSAGE][PASSED] - Object 'Object Repository/Journey/Current Access Codes/getCodeButton' is clickable
+
+2021-01-12 03:40:35 - [MESSAGE][PASSED] - Object: 'Object Repository/Journey/Current Access Codes/getCodeButton' is clicked on
+
+2021-01-12 03:40:36 - [MESSAGE][PASSED] - Object 'Object Repository/CommonButtons/Close' is present
+
+2021-01-12 03:40:36 - [MESSAGE][PASSED] - Object 'Object Repository/CommonButtons/Close' is visible
+
+2021-01-12 03:40:36 - [MESSAGE][PASSED] - Object 'Object Repository/CommonButtons/Close' is clickable
+
+2021-01-12 03:40:37 - [MESSAGE][PASSED] - Object: 'Object Repository/CommonButtons/Close' is clicked on
+
+2021-01-12 03:40:37 - [MESSAGE][PASSED] - pages.Journey.createAccessCodeInJourney is PASSED
+
+2021-01-12 03:40:37 - [TEST_STEP][PASSED] - pages.Journey.verifyTheCreatedAccessCode(journeyName, accessCode): pages.Journey.verifyTheCreatedAccessCode is PASSED
+
+2021-01-12 03:40:37 - [MESSAGE][PASSED] - Object 'Object Repository/Journey/journrySearchInput' is present
+
+2021-01-12 03:40:38 - [MESSAGE][PASSED] - Object 'Object Repository/Journey/journrySearchInput' is visible
+
+2021-01-12 03:40:38 - [MESSAGE][PASSED] - Object 'Object Repository/Journey/journrySearchInput' is clickable
+
+2021-01-12 03:40:39 - [MESSAGE][PASSED] - Text of object 'Object Repository/Journey/journrySearchInput' is cleared
+
+2021-01-12 03:40:39 - [MESSAGE][PASSED] - Keys 'JO5' sent to object: 'Object Repository/Journey/journrySearchInput'
+
+2021-01-12 03:40:41 - [MESSAGE][PASSED] - Object 'Object Repository/Journey/JourneyName(journeyName)' is present
+
+2021-01-12 03:40:42 - [MESSAGE][PASSED] - Object 'Object Repository/Journey/clickVerifyingJourney(journeyName)' is present
+
+2021-01-12 03:40:42 - [MESSAGE][PASSED] - Object 'Object Repository/Journey/clickVerifyingJourney(journeyName)' is visible
+
+2021-01-12 03:40:42 - [MESSAGE][PASSED] - Object 'Object Repository/Journey/clickVerifyingJourney(journeyName)' is clickable
+
+2021-01-12 03:40:42 - [MESSAGE][PASSED] - Object: 'Object Repository/Journey/clickVerifyingJourney(journeyName)' is clicked on
+
+2021-01-12 03:40:43 - [MESSAGE][PASSED] - Scroll to object 'Object Repository/Journey/Current Access Codes/currentAccessCodeField' successfully
+
+2021-01-12 03:40:43 - [MESSAGE][PASSED] - Object 'Object Repository/Journey/Current Access Codes/currentAccessCodeField' is present
+
+2021-01-12 03:40:44 - [MESSAGE][PASSED] - Object 'Object Repository/Journey/Current Access Codes/verify(code)' is present
+
+2021-01-12 03:40:44 - [MESSAGE][PASSED] - Object 'Object Repository/CommonButtons/Close' is present
+
+2021-01-12 03:40:44 - [MESSAGE][PASSED] - Object 'Object Repository/CommonButtons/Close' is visible
+
+2021-01-12 03:40:45 - [MESSAGE][PASSED] - Object 'Object Repository/CommonButtons/Close' is clickable
+
+2021-01-12 03:40:45 - [MESSAGE][PASSED] - Object: 'Object Repository/CommonButtons/Close' is clicked on
+
+2021-01-12 03:40:45 - [MESSAGE][PASSED] - pages.Journey.verifyTheCreatedAccessCode is PASSED
+
+2021-01-12 03:40:45 - [TEST_STEP][PASSED] - journeyName1 = pages.Journey.getRandomJourneyName(): pages.Journey.getRandomJourneyName is PASSED
+
+2021-01-12 03:40:46 - [MESSAGE][PASSED] - Object 'Object Repository/Journey/toGetJourneysCount' is present
+
+2021-01-12 03:40:47 - [MESSAGE][PASSED] - Object 'Object Repository/Journey/toGetJourneysCount' is present
+
+2021-01-12 03:40:47 - [MESSAGE][PASSED] - Text of object 'Object Repository/Journey/toPickrandomJourney(index)' is: 'JO3'
+
+2021-01-12 03:40:47 - [MESSAGE][PASSED] - pages.Journey.getRandomJourneyName is PASSED
+
+2021-01-12 03:40:47 - [TEST_STEP][PASSED] - accessCode = pages.Journey.createAccessCodeInJourney(journeyName1, accessCode, useLimit): pages.Journey.createAccessCodeInJourney is PASSED
+
+2021-01-12 03:40:47 - [MESSAGE][PASSED] - Object 'Object Repository/Journey/journrySearchInput' is present
+
+2021-01-12 03:40:48 - [MESSAGE][PASSED] - Object 'Object Repository/Journey/journrySearchInput' is visible
+
+2021-01-12 03:40:48 - [MESSAGE][PASSED] - Object 'Object Repository/Journey/journrySearchInput' is clickable
+
+2021-01-12 03:40:48 - [MESSAGE][PASSED] - Text of object 'Object Repository/Journey/journrySearchInput' is cleared
+
+2021-01-12 03:40:48 - [MESSAGE][PASSED] - Keys 'JO3' sent to object: 'Object Repository/Journey/journrySearchInput'
+
+2021-01-12 03:40:51 - [MESSAGE][PASSED] - Object 'Object Repository/Journey/JourneyName(journeyName)' is present
+
+2021-01-12 03:40:51 - [MESSAGE][PASSED] - Object 'Object Repository/Journey/clickVerifyingJourney(journeyName)' is present
+
+2021-01-12 03:40:51 - [MESSAGE][PASSED] - Object 'Object Repository/Journey/clickVerifyingJourney(journeyName)' is visible
+
+2021-01-12 03:40:52 - [MESSAGE][PASSED] - Object 'Object Repository/Journey/clickVerifyingJourney(journeyName)' is clickable
+
+2021-01-12 03:40:52 - [MESSAGE][PASSED] - Object: 'Object Repository/Journey/clickVerifyingJourney(journeyName)' is clicked on
+
+2021-01-12 03:40:53 - [MESSAGE][PASSED] - Scroll to object 'Object Repository/Journey/Current Access Codes/currentAccessCodeField' successfully
+
+2021-01-12 03:40:54 - [MESSAGE][PASSED] - Object 'Object Repository/Journey/Current Access Codes/plusButton' is present
+
+2021-01-12 03:40:54 - [MESSAGE][PASSED] - Object 'Object Repository/Journey/Current Access Codes/plusButton' is visible
+
+2021-01-12 03:40:54 - [MESSAGE][PASSED] - Object 'Object Repository/Journey/Current Access Codes/plusButton' is clickable
+
+2021-01-12 03:40:55 - [MESSAGE][PASSED] - Object: 'Object Repository/Journey/Current Access Codes/plusButton' is clicked on
+
+2021-01-12 03:40:55 - [MESSAGE][PASSED] - Object 'Object Repository/Journey/Current Access Codes/accessCode' is present
+
+2021-01-12 03:40:55 - [MESSAGE][PASSED] - Object 'Object Repository/Journey/Current Access Codes/accessCode' is visible
+
+2021-01-12 03:40:56 - [MESSAGE][PASSED] - Object 'Object Repository/Journey/Current Access Codes/accessCode' is clickable
+
+2021-01-12 03:40:56 - [MESSAGE][PASSED] - Text of object 'Object Repository/Journey/Current Access Codes/accessCode' is cleared
+
+2021-01-12 03:40:56 - [MESSAGE][PASSED] - Keys 'access19' sent to object: 'Object Repository/Journey/Current Access Codes/accessCode'
+
+2021-01-12 03:40:56 - [MESSAGE][PASSED] - Object 'Object Repository/Journey/Current Access Codes/codeUsageCount' is present
+
+2021-01-12 03:40:57 - [MESSAGE][PASSED] - Object 'Object Repository/Journey/Current Access Codes/codeUsageCount' is visible
+
+2021-01-12 03:40:57 - [MESSAGE][PASSED] - Object 'Object Repository/Journey/Current Access Codes/codeUsageCount' is clickable
+
+2021-01-12 03:40:57 - [MESSAGE][PASSED] - Text of object 'Object Repository/Journey/Current Access Codes/codeUsageCount' is cleared
+
+2021-01-12 03:40:58 - [MESSAGE][PASSED] - Keys '0' sent to object: 'Object Repository/Journey/Current Access Codes/codeUsageCount'
+
+2021-01-12 03:40:58 - [MESSAGE][PASSED] - Object 'Object Repository/Journey/Current Access Codes/getCodeButton' is present
+
+2021-01-12 03:40:58 - [MESSAGE][PASSED] - Object 'Object Repository/Journey/Current Access Codes/getCodeButton' is visible
+
+2021-01-12 03:40:58 - [MESSAGE][PASSED] - Object 'Object Repository/Journey/Current Access Codes/getCodeButton' is clickable
+
+2021-01-12 03:40:59 - [MESSAGE][PASSED] - Object: 'Object Repository/Journey/Current Access Codes/getCodeButton' is clicked on
+
+2021-01-12 03:40:59 - [MESSAGE][PASSED] - Object 'Object Repository/CommonButtons/Close' is present
+
+2021-01-12 03:41:00 - [MESSAGE][PASSED] - Object 'Object Repository/CommonButtons/Close' is visible
+
+2021-01-12 03:41:00 - [MESSAGE][PASSED] - Object 'Object Repository/CommonButtons/Close' is clickable
+
+2021-01-12 03:41:00 - [MESSAGE][PASSED] - Object: 'Object Repository/CommonButtons/Close' is clicked on
+
+2021-01-12 03:41:00 - [MESSAGE][PASSED] - pages.Journey.createAccessCodeInJourney is PASSED
+
+2021-01-12 03:41:00 - [TEST_STEP][PASSED] - pages.Journey.verifyTheCreatedAccessCode(journeyName1, accessCode): pages.Journey.verifyTheCreatedAccessCode is PASSED
+
+2021-01-12 03:41:01 - [MESSAGE][PASSED] - Object 'Object Repository/Journey/journrySearchInput' is present
+
+2021-01-12 03:41:01 - [MESSAGE][PASSED] - Object 'Object Repository/Journey/journrySearchInput' is visible
+
+2021-01-12 03:41:02 - [MESSAGE][PASSED] - Object 'Object Repository/Journey/journrySearchInput' is clickable
+
+2021-01-12 03:41:02 - [MESSAGE][PASSED] - Text of object 'Object Repository/Journey/journrySearchInput' is cleared
+
+2021-01-12 03:41:02 - [MESSAGE][PASSED] - Keys 'JO3' sent to object: 'Object Repository/Journey/journrySearchInput'
+
+2021-01-12 03:41:05 - [MESSAGE][PASSED] - Object 'Object Repository/Journey/JourneyName(journeyName)' is present
+
+2021-01-12 03:41:05 - [MESSAGE][PASSED] - Object 'Object Repository/Journey/clickVerifyingJourney(journeyName)' is present
+
+2021-01-12 03:41:05 - [MESSAGE][PASSED] - Object 'Object Repository/Journey/clickVerifyingJourney(journeyName)' is visible
+
+2021-01-12 03:41:05 - [MESSAGE][PASSED] - Object 'Object Repository/Journey/clickVerifyingJourney(journeyName)' is clickable
+
+2021-01-12 03:41:06 - [MESSAGE][PASSED] - Object: 'Object Repository/Journey/clickVerifyingJourney(journeyName)' is clicked on
+
+2021-01-12 03:41:07 - [MESSAGE][PASSED] - Scroll to object 'Object Repository/Journey/Current Access Codes/currentAccessCodeField' successfully
+
+2021-01-12 03:41:07 - [MESSAGE][PASSED] - Object 'Object Repository/Journey/Current Access Codes/currentAccessCodeField' is present
+
+2021-01-12 03:41:08 - [MESSAGE][PASSED] - Object 'Object Repository/Journey/Current Access Codes/verify(code)' is present
+
+2021-01-12 03:41:08 - [MESSAGE][PASSED] - Object 'Object Repository/CommonButtons/Close' is present
+
+2021-01-12 03:41:08 - [MESSAGE][PASSED] - Object 'Object Repository/CommonButtons/Close' is visible
+
+2021-01-12 03:41:09 - [MESSAGE][PASSED] - Object 'Object Repository/CommonButtons/Close' is clickable
+
+2021-01-12 03:41:09 - [MESSAGE][PASSED] - Object: 'Object Repository/CommonButtons/Close' is clicked on
+
+2021-01-12 03:41:09 - [MESSAGE][PASSED] - pages.Journey.verifyTheCreatedAccessCode is PASSED]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <system-out><![CDATA[2021-01-12 03:38:14 - [TEST_SUITE][PASSED] - Journey: Test Cases/Admin/Journey/createMultipleAccessCodesWithSameName]]></system-out>
+      <system-err><![CDATA[]]></system-err>
+   </testsuite>
+</testsuites>

@@ -16,26 +16,25 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 
+// Navigate to journey page
 CustomKeywords.'pages.Journey.clickOnJourneyTab'()
 
+// Get access code of a random journey
 String journeyName = CustomKeywords.'pages.Journey.getRandomJourneyName'()
-
 String accessCode = CustomKeywords.'pages.Journey.getExistingJourneyAccesscode'(journeyName)
 
+// Enter access code and navigate to sections page
 CustomKeywords.'login.LoginForJourneyApplication.loginToJourneyApplication'()
-
 CustomKeywords.'pages.Journey.enterAccessCodeInJourney'(accessCode)
-
 CustomKeywords.'pages.Journey.clickEnterButton'()
 
+// Select a section
 CustomKeywords.'pages.JourneyPortal.openExistingSection'()
 
+// Select a product
 CustomKeywords.'pages.JourneyPortal.openAnyProductInTheJourneyPortal'()
 
-String dataId1 = CustomKeywords.'pages.Product.getIdOfProduct'(findTestObject('Object Repository/journeyPortal/toGetCurrentProductId'))
+//
+CustomKeywords.'pages.Product.clickNextSlide'()
+CustomKeywords.'pages.Product.clickPreviousSlide'()
 
-CustomKeywords.'pages.Product.clickingRight'()
-
-String dataId2 = CustomKeywords.'pages.Product.getIdOfProduct'(findTestObject('Object Repository/journeyPortal/toGetCurrentProductId'))
-
-CustomKeywords.'pages.verifyTheProductImageChange'(dataId1, dataId2)

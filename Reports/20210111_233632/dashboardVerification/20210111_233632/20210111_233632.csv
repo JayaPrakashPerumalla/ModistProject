@@ -1,8 +1,0 @@
-Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
-dashboardVerification,Chrome 87.0.4280.141,,,2021-01-11 23:36:34,2021-01-11 23:37:20,45.340s,PASSED
-,,,,,,,
-Test Cases/Admin/dashboard/Verify Headers,Chrome 87.0.4280.141,,,2021-01-11 23:37:02,2021-01-11 23:37:09,7.702s,PASSED
-common.uploading.getHeaders(),Chrome 87.0.4280.141,,,2021-01-11 23:37:02,2021-01-11 23:37:09,7.390s,PASSED
-,,,,,,,
-Test Cases/Admin/dashboard/verifyUrlAfterLogin,Chrome 87.0.4280.141,,,2021-01-11 23:37:09,2021-01-11 23:37:20,10.525s,PASSED
-"verification.Verification.getUrlAndVerify(""dashboard"", ""you are not in a dashboard page"")",Chrome 87.0.4280.141,,,2021-01-11 23:37:10,2021-01-11 23:37:20,10.146s,PASSED

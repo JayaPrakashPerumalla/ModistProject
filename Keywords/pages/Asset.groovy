@@ -261,15 +261,13 @@ public class Asset {
 		for(element in elements) {
 			verifications.verifyElementPresent(findTestObject(path+element), "The element "+element+" is not present")
 		}
+		
 	}
 
 	@Keyword
 	def verifyAssetEditPage() {
-
 		def assetName = getRandomAssetName()
-
 		actions.click(findTestObject('Object Repository/Asset/Asset/anyAsset(assetName)',["assetName":assetName]))
-
 		String path = 'Object Repository/Asset/Asset/assetEditPageElements/'
 		def  elements = ["AssetEdit", "Content", "Photo", "Tags", "Source", "Tenant", "Public", "Author", "Created", "Updated"]
 		for(element in elements) {

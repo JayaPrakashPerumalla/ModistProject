@@ -24,6 +24,4 @@ class Login {
 		loginPage.login(GlobalVariable.Email,GlobalVariable.Password)
 
 	} 
-
-
 }

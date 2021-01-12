@@ -70,5 +70,5 @@ public class WebAction {
 		WebUI.waitForElementPresent(element,GlobalVariable.defaultWaitTime)
 	}
 
-	
+
 }
