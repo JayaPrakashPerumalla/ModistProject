@@ -259,8 +259,10 @@ public class Asset {
 		String path = 'Object Repository/Asset/Asset/AddAssetPopEle/'
 		def elements = ["Author", "Quote", "AssetUrl", "UploadPhoto", "Tenant", "Cancel", "AddAsset"]
 		for(element in elements) {
-			verifications.verifyElementPresent(findTestObject(path+element), "The element "+element+" is not present")
+			verifications.verifyElementPresent(findTestObject(path+element), "The element "+element+" is not present") 
+		
 		}
+		actions.click(findTestObject('Object Repository/Asset/Asset/addAsset/cancelButton'))
 	}
 
 	@Keyword

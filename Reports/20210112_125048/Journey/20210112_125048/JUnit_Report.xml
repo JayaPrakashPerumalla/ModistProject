@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Journey" time="108.202" tests="2" failures="1" skips="0" errors="0">
+   <testsuite name="Journey" tests="2" failures="1" errors="0" time="108.202" skips="0" timestamp="2021-01-12 12:50:50" hostname="akhil - DESKTOP-3UFIQIO" id="Test Suites/Journey">
+      <properties>
+         <property name="deviceName" value=""/>
+         <property name="devicePlatform" value=""/>
+         <property name="logFolder" value="C:\\Modist\\ModistProject\\Reports\\20210112_125048\\Journey\\20210112_125048"/>
+         <property name="logFiles" value="C:\\Modist\\ModistProject\\Reports\\20210112_125048\\Journey\\20210112_125048\\execution0.log"/>
+         <property name="attachments" value="C:\\Modist\\ModistProject\\Reports\\20210112_125048\\Journey\\20210112_125048\\1610436146175.png, C:\\Modist\\ModistProject\\Reports\\20210112_125048\\Journey\\20210112_125048\\1610436146742.png"/>
+         <property name="hostName" value="akhil - DESKTOP-3UFIQIO"/>
+         <property name="os" value="Windows 10 64bit"/>
+         <property name="katalonVersion" value="7.8.1.208"/>
+         <property name="browser" value="Chrome 87.0.4280.88"/>
+         <property name="hostAddress" value="192.168.1.101"/>
+         <property name="sessionId" value="45ab8b63828c31e711cb212d3905383d"/>
+         <property name="seleniumVersion" value="3.141.59"/>
+         <property name="proxyInformation" value="ProxyInformation { proxyOption=NO_PROXY, proxyServerType=HTTP, username=, password=********, proxyServerAddress=, proxyServerPort=0, executionList=&quot;&quot;, isApplyToDesiredCapabilities=true }"/>
+         <property name="platform" value="Windows 10"/>
+      </properties>
+      <testcase name="Test Cases/Admin/Journey/addJournyAndVerifyItisAdded" time="76.669" classname="Test Cases/Admin/Journey/addJournyAndVerifyItisAdded" status="FAILED">
+         <failure type="FAILED" message="Test Cases/Admin/Journey/addJournyAndVerifyItisAdded FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException:  The expected journeyName64 is not created 
+	at com.kms.katalon.core.util.KeywordUtil.markFailedAndStop(KeywordUtil.java:28)
+	at com.kms.katalon.core.util.KeywordUtil$markFailedAndStop.call(Unknown Source)
+	at verification.Verification.verifyElementPresent(Verification.groovy:31)
+	at verification.Verification.verifyElementPresent(Verification.groovy)
+	at verification.Verification$verifyElementPresent.call(Unknown Source)
+	at pages.Journey.verifyJourneyAdded(Journey.groovy:53)
+	at pages.Journey.invokeMethod(Journey.groovy)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:50)
+	at addJournyAndVerifyItisAdded.run(addJournyAndVerifyItisAdded:24)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:393)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:384)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:363)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:355)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:251)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:203)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:152)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:95)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1610436048028.run(TempTestSuite1610436048028.groovy:39)
+"/>
+         <system-out><![CDATA[2021-01-12 12:51:15 - [TEST_CASE][FAILED] - Test Cases/Admin/Journey/addJournyAndVerifyItisAdded: Test Cases/Admin/Journey/addJournyAndVerifyItisAdded FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException:  The expected journeyName64 is not created 
+	at com.kms.katalon.core.util.KeywordUtil.markFailedAndStop(KeywordUtil.java:28)
+	at com.kms.katalon.core.util.KeywordUtil$markFailedAndStop.call(Unknown Source)
+	at verification.Verification.verifyElementPresent(Verification.groovy:31)
+	at verification.Verification.verifyElementPresent(Verification.groovy)
+	at verification.Verification$verifyElementPresent.call(Unknown Source)
+	at pages.Journey.verifyJourneyAdded(Journey.groovy:53)
+	at pages.Journey.invokeMethod(Journey.groovy)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:50)
+	at addJournyAndVerifyItisAdded.run(addJournyAndVerifyItisAdded:24)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:393)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:384)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:363)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:355)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:251)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:203)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:152)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:95)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1610436048028.run(TempTestSuite1610436048028.groovy:39)
+
+
+2021-01-12 12:51:15 - [TEST_STEP][PASSED] - pages.Journey.clickOnJourneyTab(): pages.Journey.clickOnJourneyTab is PASSED
+
+2021-01-12 12:51:17 - [MESSAGE][PASSED] - Object 'Object Repository/Journey/Journeytab' is present
+
+2021-01-12 12:51:17 - [MESSAGE][PASSED] - Object 'Object Repository/Journey/Journeytab' is visible
+
+2021-01-12 12:51:17 - [MESSAGE][PASSED] - Object 'Object Repository/Journey/Journeytab' is clickable
+
+2021-01-12 12:51:18 - [MESSAGE][PASSED] - Object: 'Object Repository/Journey/Journeytab' is clicked on
+
+2021-01-12 12:51:18 - [MESSAGE][PASSED] - pages.Journey.clickOnJourneyTab is PASSED
+
+2021-01-12 12:51:18 - [TEST_STEP][PASSED] - journeyName = pages.Journey.addJourney(): pages.Journey.addJourney is PASSED
+
+2021-01-12 12:51:19 - [MESSAGE][PASSED] - Object 'Object Repository/Journey/Add Journey/AddJourneyButton' is present
+
+2021-01-12 12:51:19 - [MESSAGE][PASSED] - Object 'Object Repository/Journey/Add Journey/AddJourneyButton' is visible
+
+2021-01-12 12:51:19 - [MESSAGE][PASSED] - Object 'Object Repository/Journey/Add Journey/AddJourneyButton' is clickable
+
+2021-01-12 12:51:19 - [MESSAGE][PASSED] - Object: 'Object Repository/Journey/Add Journey/AddJourneyButton' is clicked on
+
+2021-01-12 12:51:20 - [MESSAGE][PASSED] - Object 'Object Repository/Journey/Add Journey/journeyName' is present
+
+2021-01-12 12:51:20 - [MESSAGE][PASSED] - Object 'Object Repository/Journey/Add Journey/journeyName' is visible
+
+2021-01-12 12:51:20 - [MESSAGE][PASSED] - Object 'Object Repository/Journey/Add Journey/journeyName' is clickable
+
+2021-01-12 12:51:20 - [MESSAGE][PASSED] - Text of object 'Object Repository/Journey/Add Journey/journeyName' is cleared
+
+2021-01-12 12:51:21 - [MESSAGE][PASSED] - Keys 'journeyName64' sent to object: 'Object Repository/Journey/Add Journey/journeyName'
+
+2021-01-12 12:51:21 - [MESSAGE][PASSED] - Object 'Object Repository/Journey/Add Journey/addJourneyInAddJourneyPopUp' is present
+
+2021-01-12 12:51:21 - [MESSAGE][PASSED] - Object 'Object Repository/Journey/Add Journey/addJourneyInAddJourneyPopUp' is visible
+
+2021-01-12 12:51:22 - [MESSAGE][PASSED] - Object 'Object Repository/Journey/Add Journey/addJourneyInAddJourneyPopUp' is clickable
+
+2021-01-12 12:51:22 - [MESSAGE][PASSED] - Object: 'Object Repository/Journey/Add Journey/addJourneyInAddJourneyPopUp' is clicked on
+
+2021-01-12 12:51:22 - [MESSAGE][PASSED] - pages.Journey.addJourney is PASSED
+
+2021-01-12 12:51:22 - [TEST_STEP][PASSED] - println(journeyName): null
+
+2021-01-12 12:51:22 - [TEST_STEP][FAILED] - pages.Journey.verifyJourneyAdded(journeyName):  The expected journeyName64 is not created 
+
+2021-01-12 12:51:22 - [MESSAGE][PASSED] - Object 'Object Repository/Journey/journrySearchInput' is present
+
+2021-01-12 12:51:23 - [MESSAGE][PASSED] - Object 'Object Repository/Journey/journrySearchInput' is visible
+
+2021-01-12 12:51:23 - [MESSAGE][PASSED] - Object 'Object Repository/Journey/journrySearchInput' is clickable
+
+2021-01-12 12:51:23 - [MESSAGE][PASSED] - Text of object 'Object Repository/Journey/journrySearchInput' is cleared
+
+2021-01-12 12:51:23 - [MESSAGE][PASSED] - Keys 'journeyName64' sent to object: 'Object Repository/Journey/journrySearchInput'
+
+2021-01-12 12:51:55 - [MESSAGE][INFO] - Unable to find the element located by 'By.xpath: //div[text()='journeyName64']'. Please recheck the objects properties to make sure the desired element is located. 
+
+2021-01-12 12:51:55 - [MESSAGE][WARNING] - [SELF-HEALING] Failed to find element with id 'Object Repository/Journey/JourneyName(journeyName)'. Try using Self-healing.
+
+2021-01-12 12:51:55 - [MESSAGE][WARNING] - [SELF-HEALING] Cannot find elements when the XPath is null.
+
+2021-01-12 12:51:55 - [MESSAGE][WARNING] - [SELF-HEALING] Cannot find elements when the selector is null
+
+2021-01-12 12:51:55 - [MESSAGE][WARNING] - Object 'Object Repository/Journey/JourneyName(journeyName)' is not present after 30 second(s)
+
+2021-01-12 12:52:26 - [MESSAGE][INFO] - Unable to find the element located by 'By.xpath: //div[text()='journeyName64']'. Please recheck the objects properties to make sure the desired element is located. 
+
+2021-01-12 12:52:26 - [MESSAGE][WARNING] - com.kms.katalon.core.webui.exception.WebElementNotFoundException: Web element with id: 'Object Repository/Journey/JourneyName(journeyName)' located by '//div[text()='journeyName64']' not found (Root cause: com.kms.katalon.core.exception.StepFailedException: com.kms.katalon.core.webui.exception.WebElementNotFoundException: Web element with id: 'Object Repository/Journey/JourneyName(journeyName)' located by '//div[text()='journeyName64']' not found
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementPresentKeyword$_verifyElementPresent_closure1.doCall(VerifyElementPresentKeyword.groovy:85)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementPresentKeyword$_verifyElementPresent_closure1.call(VerifyElementPresentKeyword.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:20)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementPresentKeyword.verifyElementPresent(VerifyElementPresentKeyword.groovy:92)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementPresentKeyword.execute(VerifyElementPresentKeyword.groovy:68)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:73)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.verifyElementPresent(WebUiBuiltInKeywords.groovy:1445)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$verifyElementPresent$8.call(Unknown Source)
+	at verification.Verification.verifyElementPresent(Verification.groovy:29)
+	at verification.Verification.verifyElementPresent(Verification.groovy)
+	at verification.Verification$verifyElementPresent.call(Unknown Source)
+	at pages.Journey.verifyJourneyAdded(Journey.groovy:53)
+	at pages.Journey.invokeMethod(Journey.groovy)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:50)
+	at addJournyAndVerifyItisAdded.run(addJournyAndVerifyItisAdded:24)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:393)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:384)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:363)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:355)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:251)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:203)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:152)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:95)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1610436048028.run(TempTestSuite1610436048028.groovy:39)
+)
+[[ATTACHMENT|C:\\Modist\\ModistProject\\Reports\\20210112_125048\\Journey\\20210112_125048\\1610436146175.png]]
+
+2021-01-12 12:52:27 - [MESSAGE][PASSED] - Taking screenshot successfully
+[[ATTACHMENT|C:\\Modist\\ModistProject\\Reports\\20210112_125048\\Journey\\20210112_125048\\1610436146742.png]]
+
+2021-01-12 12:52:27 - [MESSAGE][FAILED] -  The expected journeyName64 is not created]]></system-out>
+         <system-err><![CDATA[2021-01-12 12:51:15 - [TEST_CASE][FAILED] - Test Cases/Admin/Journey/addJournyAndVerifyItisAdded: Test Cases/Admin/Journey/addJournyAndVerifyItisAdded FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException:  The expected journeyName64 is not created 
+	at com.kms.katalon.core.util.KeywordUtil.markFailedAndStop(KeywordUtil.java:28)
+	at com.kms.katalon.core.util.KeywordUtil$markFailedAndStop.call(Unknown Source)
+	at verification.Verification.verifyElementPresent(Verification.groovy:31)
+	at verification.Verification.verifyElementPresent(Verification.groovy)
+	at verification.Verification$verifyElementPresent.call(Unknown Source)
+	at pages.Journey.verifyJourneyAdded(Journey.groovy:53)
+	at pages.Journey.invokeMethod(Journey.groovy)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:50)
+	at addJournyAndVerifyItisAdded.run(addJournyAndVerifyItisAdded:24)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:393)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:384)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:363)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:355)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:251)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:203)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:152)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:95)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1610436048028.run(TempTestSuite1610436048028.groovy:39)]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Admin/Journey/deleteJourneyAndVerify" time="6.339" classname="Test Cases/Admin/Journey/deleteJourneyAndVerify" status="INCOMPLETE">
+         <system-out><![CDATA[2021-01-12 12:52:32 - [TEST_CASE][INCOMPLETE] - Test Cases/Admin/Journey/deleteJourneyAndVerify: null
+
+2021-01-12 12:52:32 - [TEST_STEP][PASSED] - pages.Journey.clickOnJourneyTab(): pages.Journey.clickOnJourneyTab is PASSED
+
+2021-01-12 12:52:32 - [MESSAGE][PASSED] - Object 'Object Repository/Journey/Journeytab' is present
+
+2021-01-12 12:52:32 - [MESSAGE][PASSED] - Object 'Object Repository/Journey/Journeytab' is visible
+
+2021-01-12 12:52:33 - [MESSAGE][PASSED] - Object 'Object Repository/Journey/Journeytab' is clickable
+
+2021-01-12 12:52:33 - [MESSAGE][PASSED] - Object: 'Object Repository/Journey/Journeytab' is clicked on
+
+2021-01-12 12:52:33 - [MESSAGE][PASSED] - pages.Journey.clickOnJourneyTab is PASSED
+
+2021-01-12 12:52:33 - [TEST_STEP][PASSED] - journeyName = pages.Journey.addJourney(): pages.Journey.addJourney is PASSED
+
+2021-01-12 12:52:33 - [MESSAGE][PASSED] - Object 'Object Repository/Journey/Add Journey/AddJourneyButton' is present
+
+2021-01-12 12:52:33 - [MESSAGE][PASSED] - Object 'Object Repository/Journey/Add Journey/AddJourneyButton' is visible
+
+2021-01-12 12:52:34 - [MESSAGE][PASSED] - Object 'Object Repository/Journey/Add Journey/AddJourneyButton' is clickable
+
+2021-01-12 12:52:34 - [MESSAGE][PASSED] - Object: 'Object Repository/Journey/Add Journey/AddJourneyButton' is clicked on
+
+2021-01-12 12:52:34 - [MESSAGE][PASSED] - Object 'Object Repository/Journey/Add Journey/journeyName' is present
+
+2021-01-12 12:52:35 - [MESSAGE][PASSED] - Object 'Object Repository/Journey/Add Journey/journeyName' is visible
+
+2021-01-12 12:52:35 - [MESSAGE][PASSED] - Object 'Object Repository/Journey/Add Journey/journeyName' is clickable
+
+2021-01-12 12:52:35 - [MESSAGE][PASSED] - Text of object 'Object Repository/Journey/Add Journey/journeyName' is cleared
+
+2021-01-12 12:52:35 - [MESSAGE][PASSED] - Keys 'journeyName308' sent to object: 'Object Repository/Journey/Add Journey/journeyName'
+
+2021-01-12 12:52:36 - [MESSAGE][PASSED] - Object 'Object Repository/Journey/Add Journey/addJourneyInAddJourneyPopUp' is present
+
+2021-01-12 12:52:36 - [MESSAGE][PASSED] - Object 'Object Repository/Journey/Add Journey/addJourneyInAddJourneyPopUp' is visible
+
+2021-01-12 12:52:36 - [MESSAGE][PASSED] - Object 'Object Repository/Journey/Add Journey/addJourneyInAddJourneyPopUp' is clickable
+
+2021-01-12 12:52:36 - [MESSAGE][PASSED] - Object: 'Object Repository/Journey/Add Journey/addJourneyInAddJourneyPopUp' is clicked on
+
+2021-01-12 12:52:36 - [MESSAGE][PASSED] - pages.Journey.addJourney is PASSED
+
+2021-01-12 12:52:36 - [TEST_STEP][PASSED] - println(journeyName): null
+
+2021-01-12 12:52:36 - [TEST_STEP][INCOMPLETE] - pages.Journey.deleteJourney(journeyName): Keys 'journeyName308' sent to object: 'Object Repository/Journey/journrySearchInput'
+
+2021-01-12 12:52:37 - [MESSAGE][PASSED] - Object 'Object Repository/Journey/journrySearchInput' is present
+
+2021-01-12 12:52:37 - [MESSAGE][PASSED] - Object 'Object Repository/Journey/journrySearchInput' is visible
+
+2021-01-12 12:52:37 - [MESSAGE][PASSED] - Object 'Object Repository/Journey/journrySearchInput' is clickable
+
+2021-01-12 12:52:38 - [MESSAGE][PASSED] - Text of object 'Object Repository/Journey/journrySearchInput' is cleared
+
+2021-01-12 12:52:38 - [MESSAGE][PASSED] - Keys 'journeyName308' sent to object: 'Object Repository/Journey/journrySearchInput']]></system-out>
+         <system-err><![CDATA[2021-01-12 12:52:32 - [TEST_CASE][INCOMPLETE] - Test Cases/Admin/Journey/deleteJourneyAndVerify: null]]></system-err>
+      </testcase>
+      <system-out><![CDATA[2021-01-12 12:50:50 - [TEST_SUITE][INCOMPLETE] - Journey: null]]></system-out>
+      <system-err><![CDATA[2021-01-12 12:50:50 - [TEST_SUITE][INCOMPLETE] - Journey: null]]></system-err>
+   </testsuite>
+</testsuites>

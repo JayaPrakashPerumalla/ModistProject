@@ -19,6 +19,8 @@ CustomKeywords.'pages.Journey.clickOnJourneyTab'()
 
 def journeyName = CustomKeywords.'pages.Journey.addJourney'()
 
+println journeyName
+
 CustomKeywords.'pages.Journey.cloneJourney'(journeyName)
 
 CustomKeywords.'pages.Journey.verifyJourneyCloned'(journeyName)

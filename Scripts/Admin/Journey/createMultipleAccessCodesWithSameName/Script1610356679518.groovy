@@ -17,7 +17,8 @@ import internal.GlobalVariable as GlobalVariable
 
 CustomKeywords.'pages.Journey.clickOnJourneyTab'()
 
-String journeyName = CustomKeywords.'pages.Journey.getRandomJourneyName'()
+String journeyName = CustomKeywords.'pages.Journey.getRandomJourneyName'() 
+println journeyName
 
 String accessCode = CustomKeywords.'pages.Journey.getRandomAccessCode'()
 
@@ -27,7 +28,8 @@ accessCode = CustomKeywords.'pages.Journey.createAccessCodeInJourney'(journeyNam
 
 CustomKeywords.'pages.Journey.verifyTheCreatedAccessCode'(journeyName, accessCode)
 
-String journeyName1 = CustomKeywords.'pages.Journey.getRandomJourneyName'()
+String journeyName1 = CustomKeywords.'pages.Journey.getRandomJourneyName'() 
+println journeyName1
 
 accessCode = CustomKeywords.'pages.Journey.createAccessCodeInJourney'(journeyName1, accessCode, useLimit)
 

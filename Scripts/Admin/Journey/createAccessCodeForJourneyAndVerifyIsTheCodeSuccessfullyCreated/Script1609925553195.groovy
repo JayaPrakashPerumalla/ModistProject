@@ -17,7 +17,9 @@ import internal.GlobalVariable as GlobalVariable
 
 CustomKeywords.'pages.Journey.clickOnJourneyTab'()
 
-String journeyName = CustomKeywords.'pages.Journey.getRandomJourneyName'()
+String journeyName = CustomKeywords.'pages.Journey.getRandomJourneyName'() 
+
+println journeyName
 
 String accessCode = CustomKeywords.'pages.Journey.getRandomAccessCode'()
 

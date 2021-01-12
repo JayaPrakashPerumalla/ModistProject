@@ -1,0 +1,1060 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Journey" time="399.19" tests="5" failures="2" skips="0" errors="0">
+   <testsuite name="Journey" tests="5" failures="2" errors="0" time="399.19" skips="0" timestamp="2021-01-12 10:56:09" hostname="akhil - DESKTOP-3UFIQIO" id="Test Suites/Journey">
+      <properties>
+         <property name="deviceName" value=""/>
+         <property name="devicePlatform" value=""/>
+         <property name="logFolder" value="C:\\Modist\\ModistProject\\Reports\\20210112_105607\\Journey\\20210112_105607"/>
+         <property name="logFiles" value="C:\\Modist\\ModistProject\\Reports\\20210112_105607\\Journey\\20210112_105607\\execution0.log"/>
+         <property name="attachments" value="C:\\Modist\\ModistProject\\Reports\\20210112_105607\\Journey\\20210112_105607\\1610429326761.png, C:\\Modist\\ModistProject\\Reports\\20210112_105607\\Journey\\20210112_105607\\1610429510749.png"/>
+         <property name="hostName" value="akhil - DESKTOP-3UFIQIO"/>
+         <property name="os" value="Windows 10 64bit"/>
+         <property name="katalonVersion" value="7.8.1.208"/>
+         <property name="browser" value="Chrome 87.0.4280.88"/>
+         <property name="hostAddress" value="192.168.43.196"/>
+         <property name="sessionId" value="c9d8aa78c76a3f9a81abbfe77a3af09c"/>
+         <property name="seleniumVersion" value="3.141.59"/>
+         <property name="proxyInformation" value="ProxyInformation { proxyOption=NO_PROXY, proxyServerType=HTTP, username=, password=********, proxyServerAddress=, proxyServerPort=0, executionList=&quot;&quot;, isApplyToDesiredCapabilities=true }"/>
+         <property name="platform" value="Windows 10"/>
+      </properties>
+      <testcase name="Test Cases/Admin/Journey/addJournyAndVerifyItisAdded" time="21.118" classname="Test Cases/Admin/Journey/addJournyAndVerifyItisAdded" status="PASSED">
+         <system-out><![CDATA[2021-01-12 10:56:40 - [TEST_CASE][PASSED] - Test Cases/Admin/Journey/addJournyAndVerifyItisAdded: Test Cases/Admin/Journey/addJournyAndVerifyItisAdded
+
+2021-01-12 10:56:41 - [TEST_STEP][PASSED] - pages.Journey.clickOnJourneyTab(): pages.Journey.clickOnJourneyTab is PASSED
+
+2021-01-12 10:56:43 - [MESSAGE][PASSED] - Object 'Object Repository/Journey/Journeytab' is present
+
+2021-01-12 10:56:43 - [MESSAGE][PASSED] - Object 'Object Repository/Journey/Journeytab' is visible
+
+2021-01-12 10:56:43 - [MESSAGE][PASSED] - Object 'Object Repository/Journey/Journeytab' is clickable
+
+2021-01-12 10:56:44 - [MESSAGE][PASSED] - Object: 'Object Repository/Journey/Journeytab' is clicked on
+
+2021-01-12 10:56:44 - [MESSAGE][PASSED] - pages.Journey.clickOnJourneyTab is PASSED
+
+2021-01-12 10:56:44 - [TEST_STEP][PASSED] - journeyName = pages.Journey.addJourney(): pages.Journey.addJourney is PASSED
+
+2021-01-12 10:56:44 - [MESSAGE][PASSED] - Object 'Object Repository/Journey/Add Journey/AddJourneyButton' is present
+
+2021-01-12 10:56:44 - [MESSAGE][PASSED] - Object 'Object Repository/Journey/Add Journey/AddJourneyButton' is visible
+
+2021-01-12 10:56:45 - [MESSAGE][PASSED] - Object 'Object Repository/Journey/Add Journey/AddJourneyButton' is clickable
+
+2021-01-12 10:56:45 - [MESSAGE][PASSED] - Object: 'Object Repository/Journey/Add Journey/AddJourneyButton' is clicked on
+
+2021-01-12 10:56:46 - [MESSAGE][PASSED] - Object 'Object Repository/Journey/Add Journey/journeyName' is present
+
+2021-01-12 10:56:46 - [MESSAGE][PASSED] - Object 'Object Repository/Journey/Add Journey/journeyName' is visible
+
+2021-01-12 10:56:46 - [MESSAGE][PASSED] - Object 'Object Repository/Journey/Add Journey/journeyName' is clickable
+
+2021-01-12 10:56:46 - [MESSAGE][PASSED] - Text of object 'Object Repository/Journey/Add Journey/journeyName' is cleared
+
+2021-01-12 10:56:47 - [MESSAGE][PASSED] - Keys 'journeyName360' sent to object: 'Object Repository/Journey/Add Journey/journeyName'
+
+2021-01-12 10:56:47 - [MESSAGE][PASSED] - Object 'Object Repository/Journey/Add Journey/addJourneyInAddJourneyPopUp' is present
+
+2021-01-12 10:56:47 - [MESSAGE][PASSED] - Object 'Object Repository/Journey/Add Journey/addJourneyInAddJourneyPopUp' is visible
+
+2021-01-12 10:56:48 - [MESSAGE][PASSED] - Object 'Object Repository/Journey/Add Journey/addJourneyInAddJourneyPopUp' is clickable
+
+2021-01-12 10:56:48 - [MESSAGE][PASSED] - Object: 'Object Repository/Journey/Add Journey/addJourneyInAddJourneyPopUp' is clicked on
+
+2021-01-12 10:56:48 - [MESSAGE][PASSED] - pages.Journey.addJourney is PASSED
+
+2021-01-12 10:56:48 - [TEST_STEP][PASSED] - pages.Journey.verifyJourneyAdded(journeyName): pages.Journey.verifyJourneyAdded is PASSED
+
+2021-01-12 10:56:48 - [MESSAGE][PASSED] - Object 'Object Repository/Journey/journrySearchInput' is present
+
+2021-01-12 10:56:49 - [MESSAGE][PASSED] - Object 'Object Repository/Journey/journrySearchInput' is visible
+
+2021-01-12 10:56:49 - [MESSAGE][PASSED] - Object 'Object Repository/Journey/journrySearchInput' is clickable
+
+2021-01-12 10:56:49 - [MESSAGE][PASSED] - Text of object 'Object Repository/Journey/journrySearchInput' is cleared
+
+2021-01-12 10:56:49 - [MESSAGE][PASSED] - Keys 'journeyName360' sent to object: 'Object Repository/Journey/journrySearchInput'
+
+2021-01-12 10:56:56 - [MESSAGE][PASSED] - Object 'Object Repository/Journey/JourneyName(journeyName)' is present
+
+2021-01-12 10:56:56 - [MESSAGE][PASSED] - Object 'Object Repository/Journey/JourneyName(journeyName)' is present
+
+2021-01-12 10:56:56 - [MESSAGE][PASSED] - pages.Journey.verifyJourneyAdded is PASSED]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Admin/Journey/deleteJourneyAndVerify" time="54.781" classname="Test Cases/Admin/Journey/deleteJourneyAndVerify" status="PASSED">
+         <system-out><![CDATA[2021-01-12 10:57:01 - [TEST_CASE][PASSED] - Test Cases/Admin/Journey/deleteJourneyAndVerify: Test Cases/Admin/Journey/deleteJourneyAndVerify
+
+2021-01-12 10:57:02 - [TEST_STEP][PASSED] - pages.Journey.clickOnJourneyTab(): pages.Journey.clickOnJourneyTab is PASSED
+
+2021-01-12 10:57:02 - [MESSAGE][PASSED] - Object 'Object Repository/Journey/Journeytab' is present
+
+2021-01-12 10:57:02 - [MESSAGE][PASSED] - Object 'Object Repository/Journey/Journeytab' is visible
+
+2021-01-12 10:57:03 - [MESSAGE][PASSED] - Object 'Object Repository/Journey/Journeytab' is clickable
+
+2021-01-12 10:57:03 - [MESSAGE][PASSED] - Object: 'Object Repository/Journey/Journeytab' is clicked on
+
+2021-01-12 10:57:03 - [MESSAGE][PASSED] - pages.Journey.clickOnJourneyTab is PASSED
+
+2021-01-12 10:57:03 - [TEST_STEP][PASSED] - journeyName = pages.Journey.addJourney(): pages.Journey.addJourney is PASSED
+
+2021-01-12 10:57:03 - [MESSAGE][PASSED] - Object 'Object Repository/Journey/Add Journey/AddJourneyButton' is present
+
+2021-01-12 10:57:04 - [MESSAGE][PASSED] - Object 'Object Repository/Journey/Add Journey/AddJourneyButton' is visible
+
+2021-01-12 10:57:04 - [MESSAGE][PASSED] - Object 'Object Repository/Journey/Add Journey/AddJourneyButton' is clickable
+
+2021-01-12 10:57:04 - [MESSAGE][PASSED] - Object: 'Object Repository/Journey/Add Journey/AddJourneyButton' is clicked on
+
+2021-01-12 10:57:05 - [MESSAGE][PASSED] - Object 'Object Repository/Journey/Add Journey/journeyName' is present
+
+2021-01-12 10:57:05 - [MESSAGE][PASSED] - Object 'Object Repository/Journey/Add Journey/journeyName' is visible
+
+2021-01-12 10:57:06 - [MESSAGE][PASSED] - Object 'Object Repository/Journey/Add Journey/journeyName' is clickable
+
+2021-01-12 10:57:06 - [MESSAGE][PASSED] - Text of object 'Object Repository/Journey/Add Journey/journeyName' is cleared
+
+2021-01-12 10:57:06 - [MESSAGE][PASSED] - Keys 'journeyName989' sent to object: 'Object Repository/Journey/Add Journey/journeyName'
+
+2021-01-12 10:57:06 - [MESSAGE][PASSED] - Object 'Object Repository/Journey/Add Journey/addJourneyInAddJourneyPopUp' is present
+
+2021-01-12 10:57:07 - [MESSAGE][PASSED] - Object 'Object Repository/Journey/Add Journey/addJourneyInAddJourneyPopUp' is visible
+
+2021-01-12 10:57:07 - [MESSAGE][PASSED] - Object 'Object Repository/Journey/Add Journey/addJourneyInAddJourneyPopUp' is clickable
+
+2021-01-12 10:57:07 - [MESSAGE][PASSED] - Object: 'Object Repository/Journey/Add Journey/addJourneyInAddJourneyPopUp' is clicked on
+
+2021-01-12 10:57:07 - [MESSAGE][PASSED] - pages.Journey.addJourney is PASSED
+
+2021-01-12 10:57:07 - [TEST_STEP][PASSED] - pages.Journey.deleteJourney(journeyName): pages.Journey.deleteJourney is PASSED
+
+2021-01-12 10:57:08 - [MESSAGE][PASSED] - Object 'Object Repository/Journey/journrySearchInput' is present
+
+2021-01-12 10:57:08 - [MESSAGE][PASSED] - Object 'Object Repository/Journey/journrySearchInput' is visible
+
+2021-01-12 10:57:08 - [MESSAGE][PASSED] - Object 'Object Repository/Journey/journrySearchInput' is clickable
+
+2021-01-12 10:57:09 - [MESSAGE][PASSED] - Text of object 'Object Repository/Journey/journrySearchInput' is cleared
+
+2021-01-12 10:57:10 - [MESSAGE][PASSED] - Keys 'journeyName989' sent to object: 'Object Repository/Journey/journrySearchInput'
+
+2021-01-12 10:57:10 - [MESSAGE][PASSED] - Object 'Object Repository/Journey/JourneyName(journeyName)' is present
+
+2021-01-12 10:57:15 - [MESSAGE][PASSED] - Object 'Object Repository/Journey/journeyNameCheckBox(name)' is present
+
+2021-01-12 10:57:15 - [MESSAGE][PASSED] - Object 'Object Repository/Journey/journeyNameCheckBox(name)' is visible
+
+2021-01-12 10:57:16 - [MESSAGE][PASSED] - Object 'Object Repository/Journey/journeyNameCheckBox(name)' is clickable
+
+2021-01-12 10:57:16 - [MESSAGE][PASSED] - Object: 'Object Repository/Journey/journeyNameCheckBox(name)' is clicked on
+
+2021-01-12 10:57:16 - [MESSAGE][PASSED] - Object 'Object Repository/Journey/journeyNameDeleteButton' is present
+
+2021-01-12 10:57:17 - [MESSAGE][PASSED] - Object 'Object Repository/Journey/journeyNameDeleteButton' is visible
+
+2021-01-12 10:57:17 - [MESSAGE][PASSED] - Object 'Object Repository/Journey/journeyNameDeleteButton' is clickable
+
+2021-01-12 10:57:17 - [MESSAGE][PASSED] - Object: 'Object Repository/Journey/journeyNameDeleteButton' is clicked on
+
+2021-01-12 10:57:17 - [MESSAGE][PASSED] - Alert accepted
+
+2021-01-12 10:57:17 - [MESSAGE][PASSED] - pages.Journey.deleteJourney is PASSED
+
+2021-01-12 10:57:17 - [TEST_STEP][PASSED] - pages.Journey.verifyJourneyDeleted(journeyName): pages.Journey.verifyJourneyDeleted is PASSED
+
+2021-01-12 10:57:18 - [MESSAGE][PASSED] - Object 'Object Repository/Journey/journrySearchInput' is present
+
+2021-01-12 10:57:18 - [MESSAGE][PASSED] - Object 'Object Repository/Journey/journrySearchInput' is visible
+
+2021-01-12 10:57:19 - [MESSAGE][PASSED] - Object 'Object Repository/Journey/journrySearchInput' is clickable
+
+2021-01-12 10:57:19 - [MESSAGE][PASSED] - Text of object 'Object Repository/Journey/journrySearchInput' is cleared
+
+2021-01-12 10:57:20 - [MESSAGE][PASSED] - Keys 'journeyName989' sent to object: 'Object Repository/Journey/journrySearchInput'
+
+2021-01-12 10:57:51 - [MESSAGE][INFO] - Unable to find the element located by 'By.xpath: //div[text()='journeyName989']'. Please recheck the objects properties to make sure the desired element is located. 
+
+2021-01-12 10:57:51 - [MESSAGE][WARNING] - [SELF-HEALING] Failed to find element with id 'Object Repository/Journey/JourneyName(journeyName)'. Try using Self-healing.
+
+2021-01-12 10:57:51 - [MESSAGE][WARNING] - [SELF-HEALING] Cannot find elements when the XPath is null.
+
+2021-01-12 10:57:51 - [MESSAGE][WARNING] - [SELF-HEALING] Cannot find elements when the selector is null
+
+2021-01-12 10:57:51 - [MESSAGE][WARNING] - Object 'Object Repository/Journey/JourneyName(journeyName)' is not present after 30 second(s)
+
+2021-01-12 10:57:51 - [MESSAGE][PASSED] - Web element with id: 'Object Repository/Journey/JourneyName(journeyName)' located by 'By.xpath: //div[text()='journeyName989']' is not present after '30' second(s)
+
+2021-01-12 10:57:51 - [MESSAGE][PASSED] - pages.Journey.verifyJourneyDeleted is PASSED]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Admin/Journey/cloneJourneyAndVerifyisitCloned" time="55.466" classname="Test Cases/Admin/Journey/cloneJourneyAndVerifyisitCloned" status="FAILED">
+         <failure type="FAILED" message="Test Cases/Admin/Journey/cloneJourneyAndVerifyisitCloned FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Unable to click on object 'Object Repository/Journey/journey cloning/cloneButton'
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:26)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.click(ClickKeyword.groovy:76)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.execute(ClickKeyword.groovy:43)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:73)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.click(WebUiBuiltInKeywords.groovy:617)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$click$7.call(Unknown Source)
+	at webAction.WebAction.click(WebAction.groovy:25)
+	at webAction.WebAction$click$1.call(Unknown Source)
+	at pages.Journey.cloneJourney(Journey.groovy:83)
+	at pages.Journey.invokeMethod(Journey.groovy)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:50)
+	at cloneJourneyAndVerifyisitCloned.run(cloneJourneyAndVerifyisitCloned:22)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:393)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:384)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:363)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:355)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:251)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:203)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:152)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:95)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1610429167264.run(TempTestSuite1610429167264.groovy:39)
+Caused by: org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=87.0.4280.88)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: 'DESKTOP-3UFIQIO', ip: '192.168.43.196', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_181'
+Driver info: com.kms.katalon.selenium.driver.CChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 87.0.4280.88, chrome: {chromedriverVersion: 86.0.4240.22 (398b0743353ff..., userDataDir: C:\Users\akhil\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:54696}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: c9d8aa78c76a3f9a81abbfe77a3af09c
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at com.kms.katalon.selenium.driver.CChromeDriver.execute(CChromeDriver.java:19)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement.lambda$new$0(EventFiringWebDriver.java:404)
+	at com.sun.proxy.$Proxy12.click(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement.click(EventFiringWebDriver.java:417)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword$_click_closure1.doCall(ClickKeyword.groovy:69)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword$_click_closure1.call(ClickKeyword.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:20)
+	... 24 more
+"/>
+         <system-out><![CDATA[2021-01-12 10:57:56 - [TEST_CASE][FAILED] - Test Cases/Admin/Journey/cloneJourneyAndVerifyisitCloned: Test Cases/Admin/Journey/cloneJourneyAndVerifyisitCloned FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Unable to click on object 'Object Repository/Journey/journey cloning/cloneButton'
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:26)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.click(ClickKeyword.groovy:76)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.execute(ClickKeyword.groovy:43)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:73)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.click(WebUiBuiltInKeywords.groovy:617)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$click$7.call(Unknown Source)
+	at webAction.WebAction.click(WebAction.groovy:25)
+	at webAction.WebAction$click$1.call(Unknown Source)
+	at pages.Journey.cloneJourney(Journey.groovy:83)
+	at pages.Journey.invokeMethod(Journey.groovy)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:50)
+	at cloneJourneyAndVerifyisitCloned.run(cloneJourneyAndVerifyisitCloned:22)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:393)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:384)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:363)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:355)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:251)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:203)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:152)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:95)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1610429167264.run(TempTestSuite1610429167264.groovy:39)
+Caused by: org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=87.0.4280.88)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: 'DESKTOP-3UFIQIO', ip: '192.168.43.196', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_181'
+Driver info: com.kms.katalon.selenium.driver.CChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 87.0.4280.88, chrome: {chromedriverVersion: 86.0.4240.22 (398b0743353ff..., userDataDir: C:\Users\akhil\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:54696}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: c9d8aa78c76a3f9a81abbfe77a3af09c
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at com.kms.katalon.selenium.driver.CChromeDriver.execute(CChromeDriver.java:19)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement.lambda$new$0(EventFiringWebDriver.java:404)
+	at com.sun.proxy.$Proxy12.click(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement.click(EventFiringWebDriver.java:417)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword$_click_closure1.doCall(ClickKeyword.groovy:69)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword$_click_closure1.call(ClickKeyword.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:20)
+	... 24 more
+
+
+2021-01-12 10:57:56 - [TEST_STEP][PASSED] - pages.Journey.clickOnJourneyTab(): pages.Journey.clickOnJourneyTab is PASSED
+
+2021-01-12 10:57:57 - [MESSAGE][PASSED] - Object 'Object Repository/Journey/Journeytab' is present
+
+2021-01-12 10:57:57 - [MESSAGE][PASSED] - Object 'Object Repository/Journey/Journeytab' is visible
+
+2021-01-12 10:57:57 - [MESSAGE][PASSED] - Object 'Object Repository/Journey/Journeytab' is clickable
+
+2021-01-12 10:57:58 - [MESSAGE][PASSED] - Object: 'Object Repository/Journey/Journeytab' is clicked on
+
+2021-01-12 10:57:58 - [MESSAGE][PASSED] - pages.Journey.clickOnJourneyTab is PASSED
+
+2021-01-12 10:57:58 - [TEST_STEP][PASSED] - journeyName = pages.Journey.addJourney(): pages.Journey.addJourney is PASSED
+
+2021-01-12 10:57:58 - [MESSAGE][PASSED] - Object 'Object Repository/Journey/Add Journey/AddJourneyButton' is present
+
+2021-01-12 10:57:58 - [MESSAGE][PASSED] - Object 'Object Repository/Journey/Add Journey/AddJourneyButton' is visible
+
+2021-01-12 10:57:58 - [MESSAGE][PASSED] - Object 'Object Repository/Journey/Add Journey/AddJourneyButton' is clickable
+
+2021-01-12 10:57:59 - [MESSAGE][PASSED] - Object: 'Object Repository/Journey/Add Journey/AddJourneyButton' is clicked on
+
+2021-01-12 10:58:00 - [MESSAGE][PASSED] - Object 'Object Repository/Journey/Add Journey/journeyName' is present
+
+2021-01-12 10:58:00 - [MESSAGE][PASSED] - Object 'Object Repository/Journey/Add Journey/journeyName' is visible
+
+2021-01-12 10:58:00 - [MESSAGE][PASSED] - Object 'Object Repository/Journey/Add Journey/journeyName' is clickable
+
+2021-01-12 10:58:00 - [MESSAGE][PASSED] - Text of object 'Object Repository/Journey/Add Journey/journeyName' is cleared
+
+2021-01-12 10:58:01 - [MESSAGE][PASSED] - Keys 'journeyName802' sent to object: 'Object Repository/Journey/Add Journey/journeyName'
+
+2021-01-12 10:58:01 - [MESSAGE][PASSED] - Object 'Object Repository/Journey/Add Journey/addJourneyInAddJourneyPopUp' is present
+
+2021-01-12 10:58:01 - [MESSAGE][PASSED] - Object 'Object Repository/Journey/Add Journey/addJourneyInAddJourneyPopUp' is visible
+
+2021-01-12 10:58:01 - [MESSAGE][PASSED] - Object 'Object Repository/Journey/Add Journey/addJourneyInAddJourneyPopUp' is clickable
+
+2021-01-12 10:58:02 - [MESSAGE][PASSED] - Object: 'Object Repository/Journey/Add Journey/addJourneyInAddJourneyPopUp' is clicked on
+
+2021-01-12 10:58:02 - [MESSAGE][PASSED] - pages.Journey.addJourney is PASSED
+
+2021-01-12 10:58:02 - [TEST_STEP][FAILED] - pages.Journey.cloneJourney(journeyName): Unable to click on object 'Object Repository/Journey/journey cloning/cloneButton'
+
+2021-01-12 10:58:02 - [MESSAGE][PASSED] - Object 'Object Repository/Journey/journrySearchInput' is present
+
+2021-01-12 10:58:03 - [MESSAGE][PASSED] - Object 'Object Repository/Journey/journrySearchInput' is visible
+
+2021-01-12 10:58:03 - [MESSAGE][PASSED] - Object 'Object Repository/Journey/journrySearchInput' is clickable
+
+2021-01-12 10:58:03 - [MESSAGE][PASSED] - Text of object 'Object Repository/Journey/journrySearchInput' is cleared
+
+2021-01-12 10:58:04 - [MESSAGE][PASSED] - Keys 'journeyName802' sent to object: 'Object Repository/Journey/journrySearchInput'
+
+2021-01-12 10:58:10 - [MESSAGE][PASSED] - Object 'Object Repository/Journey/JourneyName(journeyName)' is present
+
+2021-01-12 10:58:10 - [MESSAGE][PASSED] - Object 'Object Repository/Journey/journey cloning/threedots(journeyName)' is present
+
+2021-01-12 10:58:10 - [MESSAGE][PASSED] - Object 'Object Repository/Journey/journey cloning/threedots(journeyName)' is visible
+
+2021-01-12 10:58:11 - [MESSAGE][PASSED] - Object 'Object Repository/Journey/journey cloning/threedots(journeyName)' is present
+
+2021-01-12 10:58:11 - [MESSAGE][PASSED] - Object 'Object Repository/Journey/journey cloning/threedots(journeyName)' is visible
+
+2021-01-12 10:58:11 - [MESSAGE][PASSED] - Object 'Object Repository/Journey/journey cloning/threedots(journeyName)' is clickable
+
+2021-01-12 10:58:12 - [MESSAGE][PASSED] - Object: 'Object Repository/Journey/journey cloning/threedots(journeyName)' is clicked on
+
+2021-01-12 10:58:12 - [MESSAGE][PASSED] - Object 'Object Repository/Journey/journey cloning/cloneButton' is present
+
+2021-01-12 10:58:43 - [MESSAGE][WARNING] - Object 'Object Repository/Journey/journey cloning/cloneButton' is not visible after 30 second(s)
+
+2021-01-12 10:58:44 - [MESSAGE][PASSED] - Object 'Object Repository/Journey/journey cloning/cloneButton' is clickable
+
+2021-01-12 10:58:47 - [MESSAGE][FAILED] - Unable to click on object 'Object Repository/Journey/journey cloning/cloneButton' (Root cause: com.kms.katalon.core.exception.StepFailedException: Unable to click on object 'Object Repository/Journey/journey cloning/cloneButton'
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:26)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.click(ClickKeyword.groovy:76)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.execute(ClickKeyword.groovy:43)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:73)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.click(WebUiBuiltInKeywords.groovy:617)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$click$7.call(Unknown Source)
+	at webAction.WebAction.click(WebAction.groovy:25)
+	at webAction.WebAction$click$1.call(Unknown Source)
+	at pages.Journey.cloneJourney(Journey.groovy:83)
+	at pages.Journey.invokeMethod(Journey.groovy)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:50)
+	at cloneJourneyAndVerifyisitCloned.run(cloneJourneyAndVerifyisitCloned:22)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:393)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:384)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:363)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:355)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:251)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:203)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:152)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:95)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1610429167264.run(TempTestSuite1610429167264.groovy:39)
+Caused by: org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=87.0.4280.88)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: 'DESKTOP-3UFIQIO', ip: '192.168.43.196', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_181'
+Driver info: com.kms.katalon.selenium.driver.CChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 87.0.4280.88, chrome: {chromedriverVersion: 86.0.4240.22 (398b0743353ff..., userDataDir: C:\Users\akhil\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:54696}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: c9d8aa78c76a3f9a81abbfe77a3af09c
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at com.kms.katalon.selenium.driver.CChromeDriver.execute(CChromeDriver.java:19)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement.lambda$new$0(EventFiringWebDriver.java:404)
+	at com.sun.proxy.$Proxy12.click(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement.click(EventFiringWebDriver.java:417)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword$_click_closure1.doCall(ClickKeyword.groovy:69)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword$_click_closure1.call(ClickKeyword.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:20)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.click(ClickKeyword.groovy:76)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.execute(ClickKeyword.groovy:43)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:73)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.click(WebUiBuiltInKeywords.groovy:617)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$click$7.call(Unknown Source)
+	at webAction.WebAction.click(WebAction.groovy:25)
+	at webAction.WebAction$click$1.call(Unknown Source)
+	at pages.Journey.cloneJourney(Journey.groovy:83)
+	at pages.Journey.invokeMethod(Journey.groovy)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:50)
+	at Script1609831864714.run(Script1609831864714.groovy:22)
+	... 13 more
+)
+[[ATTACHMENT|C:\\Modist\\ModistProject\\Reports\\20210112_105607\\Journey\\20210112_105607\\1610429326761.png]]
+
+2021-01-12 10:58:47 - [MESSAGE][FAILED] - Unable to click on object 'Object Repository/Journey/journey cloning/cloneButton']]></system-out>
+         <system-err><![CDATA[2021-01-12 10:57:56 - [TEST_CASE][FAILED] - Test Cases/Admin/Journey/cloneJourneyAndVerifyisitCloned: Test Cases/Admin/Journey/cloneJourneyAndVerifyisitCloned FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Unable to click on object 'Object Repository/Journey/journey cloning/cloneButton'
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:26)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.click(ClickKeyword.groovy:76)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.execute(ClickKeyword.groovy:43)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:73)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.click(WebUiBuiltInKeywords.groovy:617)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$click$7.call(Unknown Source)
+	at webAction.WebAction.click(WebAction.groovy:25)
+	at webAction.WebAction$click$1.call(Unknown Source)
+	at pages.Journey.cloneJourney(Journey.groovy:83)
+	at pages.Journey.invokeMethod(Journey.groovy)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:50)
+	at cloneJourneyAndVerifyisitCloned.run(cloneJourneyAndVerifyisitCloned:22)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:393)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:384)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:363)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:355)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:251)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:203)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:152)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:95)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1610429167264.run(TempTestSuite1610429167264.groovy:39)
+Caused by: org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=87.0.4280.88)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: 'DESKTOP-3UFIQIO', ip: '192.168.43.196', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_181'
+Driver info: com.kms.katalon.selenium.driver.CChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 87.0.4280.88, chrome: {chromedriverVersion: 86.0.4240.22 (398b0743353ff..., userDataDir: C:\Users\akhil\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:54696}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: c9d8aa78c76a3f9a81abbfe77a3af09c
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at com.kms.katalon.selenium.driver.CChromeDriver.execute(CChromeDriver.java:19)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement.lambda$new$0(EventFiringWebDriver.java:404)
+	at com.sun.proxy.$Proxy12.click(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement.click(EventFiringWebDriver.java:417)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword$_click_closure1.doCall(ClickKeyword.groovy:69)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword$_click_closure1.call(ClickKeyword.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:20)
+	... 24 more]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Admin/Journey/createAccessCodeForJourneyAndVerifyIsTheCodeSuccessfullyCreated" time="183.993" classname="Test Cases/Admin/Journey/createAccessCodeForJourneyAndVerifyIsTheCodeSuccessfullyCreated" status="FAILED">
+         <failure type="FAILED" message="Test Cases/Admin/Journey/createAccessCodeForJourneyAndVerifyIsTheCodeSuccessfullyCreated FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Unable to click on object 'Object Repository/Journey/clickVerifyingJourney(journeyName)'
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:26)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.click(ClickKeyword.groovy:76)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.execute(ClickKeyword.groovy:43)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:73)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.click(WebUiBuiltInKeywords.groovy:617)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$click$7.call(Unknown Source)
+	at webAction.WebAction.click(WebAction.groovy:25)
+	at webAction.WebAction$click$1.call(Unknown Source)
+	at pages.Journey.openExistingJourney(Journey.groovy:42)
+	at pages.Journey.verifyTheCreatedAccessCode(Journey.groovy:100)
+	at pages.Journey.invokeMethod(Journey.groovy)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:50)
+	at createAccessCodeForJourneyAndVerifyIsTheCodeSuccessfullyCreated.run(createAccessCodeForJourneyAndVerifyIsTheCodeSuccessfullyCreated:28)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:393)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:384)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:363)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:355)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:251)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:203)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:152)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:95)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1610429167264.run(TempTestSuite1610429167264.groovy:39)
+Caused by: com.kms.katalon.core.webui.exception.WebElementNotFoundException: Web element with id: 'Object Repository/Journey/clickVerifyingJourney(journeyName)' located by '//div[text()='journeyName811']/../..' not found
+	at com.kms.katalon.core.webui.common.WebUiCommonHelper.findWebElement(WebUiCommonHelper.java:1369)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIAbstractKeyword.findWebElement(WebUIAbstractKeyword.groovy:27)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIAbstractKeyword.findWebElement(WebUIAbstractKeyword.groovy:26)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword$_click_closure1.doCall(ClickKeyword.groovy:67)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword$_click_closure1.call(ClickKeyword.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:20)
+	... 25 more
+"/>
+         <system-out><![CDATA[2021-01-12 10:58:52 - [TEST_CASE][FAILED] - Test Cases/Admin/Journey/createAccessCodeForJourneyAndVerifyIsTheCodeSuccessfullyCreated: Test Cases/Admin/Journey/createAccessCodeForJourneyAndVerifyIsTheCodeSuccessfullyCreated FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Unable to click on object 'Object Repository/Journey/clickVerifyingJourney(journeyName)'
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:26)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.click(ClickKeyword.groovy:76)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.execute(ClickKeyword.groovy:43)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:73)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.click(WebUiBuiltInKeywords.groovy:617)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$click$7.call(Unknown Source)
+	at webAction.WebAction.click(WebAction.groovy:25)
+	at webAction.WebAction$click$1.call(Unknown Source)
+	at pages.Journey.openExistingJourney(Journey.groovy:42)
+	at pages.Journey.verifyTheCreatedAccessCode(Journey.groovy:100)
+	at pages.Journey.invokeMethod(Journey.groovy)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:50)
+	at createAccessCodeForJourneyAndVerifyIsTheCodeSuccessfullyCreated.run(createAccessCodeForJourneyAndVerifyIsTheCodeSuccessfullyCreated:28)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:393)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:384)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:363)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:355)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:251)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:203)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:152)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:95)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1610429167264.run(TempTestSuite1610429167264.groovy:39)
+Caused by: com.kms.katalon.core.webui.exception.WebElementNotFoundException: Web element with id: 'Object Repository/Journey/clickVerifyingJourney(journeyName)' located by '//div[text()='journeyName811']/../..' not found
+	at com.kms.katalon.core.webui.common.WebUiCommonHelper.findWebElement(WebUiCommonHelper.java:1369)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIAbstractKeyword.findWebElement(WebUIAbstractKeyword.groovy:27)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIAbstractKeyword.findWebElement(WebUIAbstractKeyword.groovy:26)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword$_click_closure1.doCall(ClickKeyword.groovy:67)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword$_click_closure1.call(ClickKeyword.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:20)
+	... 25 more
+
+
+2021-01-12 10:58:52 - [TEST_STEP][PASSED] - pages.Journey.clickOnJourneyTab(): pages.Journey.clickOnJourneyTab is PASSED
+
+2021-01-12 10:58:52 - [MESSAGE][PASSED] - Object 'Object Repository/Journey/Journeytab' is present
+
+2021-01-12 10:58:52 - [MESSAGE][PASSED] - Object 'Object Repository/Journey/Journeytab' is visible
+
+2021-01-12 10:58:53 - [MESSAGE][PASSED] - Object 'Object Repository/Journey/Journeytab' is clickable
+
+2021-01-12 10:58:53 - [MESSAGE][PASSED] - Object: 'Object Repository/Journey/Journeytab' is clicked on
+
+2021-01-12 10:58:53 - [MESSAGE][PASSED] - pages.Journey.clickOnJourneyTab is PASSED
+
+2021-01-12 10:58:53 - [TEST_STEP][PASSED] - journeyName = pages.Journey.getRandomJourneyName(): pages.Journey.getRandomJourneyName is PASSED
+
+2021-01-12 10:58:53 - [MESSAGE][PASSED] - Object 'Object Repository/Journey/toGetJourneysCount' is present
+
+2021-01-12 10:58:54 - [MESSAGE][PASSED] - Object 'Object Repository/Journey/toGetJourneysCount' is present
+
+2021-01-12 10:58:54 - [MESSAGE][PASSED] - Text of object 'Object Repository/Journey/toPickrandomJourney(index)' is: 'journeyName811'
+
+2021-01-12 10:58:54 - [MESSAGE][PASSED] - pages.Journey.getRandomJourneyName is PASSED
+
+2021-01-12 10:58:54 - [TEST_STEP][PASSED] - accessCode = pages.Journey.getRandomAccessCode(): pages.Journey.getRandomAccessCode is PASSED
+
+2021-01-12 10:58:54 - [MESSAGE][PASSED] - pages.Journey.getRandomAccessCode is PASSED
+
+2021-01-12 10:58:54 - [TEST_STEP][PASSED] - useLimit = pages.Journey.getRandomCount(): pages.Journey.getRandomCount is PASSED
+
+2021-01-12 10:58:54 - [MESSAGE][PASSED] - pages.Journey.getRandomCount is PASSED
+
+2021-01-12 10:58:54 - [TEST_STEP][PASSED] - accessCode = pages.Journey.createAccessCodeInJourney(journeyName, accessCode, useLimit): pages.Journey.createAccessCodeInJourney is PASSED
+
+2021-01-12 10:58:54 - [MESSAGE][PASSED] - Object 'Object Repository/Journey/journrySearchInput' is present
+
+2021-01-12 10:58:55 - [MESSAGE][PASSED] - Object 'Object Repository/Journey/journrySearchInput' is visible
+
+2021-01-12 10:58:55 - [MESSAGE][PASSED] - Object 'Object Repository/Journey/journrySearchInput' is clickable
+
+2021-01-12 10:58:55 - [MESSAGE][PASSED] - Text of object 'Object Repository/Journey/journrySearchInput' is cleared
+
+2021-01-12 10:58:56 - [MESSAGE][PASSED] - Keys 'journeyName811' sent to object: 'Object Repository/Journey/journrySearchInput'
+
+2021-01-12 10:58:56 - [MESSAGE][PASSED] - Object 'Object Repository/Journey/JourneyName(journeyName)' is present
+
+2021-01-12 10:59:01 - [MESSAGE][PASSED] - Object 'Object Repository/Journey/clickVerifyingJourney(journeyName)' is present
+
+2021-01-12 10:59:01 - [MESSAGE][PASSED] - Object 'Object Repository/Journey/clickVerifyingJourney(journeyName)' is visible
+
+2021-01-12 10:59:01 - [MESSAGE][PASSED] - Object 'Object Repository/Journey/clickVerifyingJourney(journeyName)' is clickable
+
+2021-01-12 10:59:02 - [MESSAGE][PASSED] - Object: 'Object Repository/Journey/clickVerifyingJourney(journeyName)' is clicked on
+
+2021-01-12 10:59:02 - [MESSAGE][PASSED] - Scroll to object 'Object Repository/Journey/Current Access Codes/currentAccessCodeField' successfully
+
+2021-01-12 10:59:02 - [MESSAGE][PASSED] - Object 'Object Repository/Journey/Current Access Codes/plusButton' is present
+
+2021-01-12 10:59:03 - [MESSAGE][PASSED] - Object 'Object Repository/Journey/Current Access Codes/plusButton' is visible
+
+2021-01-12 10:59:04 - [MESSAGE][PASSED] - Object 'Object Repository/Journey/Current Access Codes/plusButton' is clickable
+
+2021-01-12 10:59:04 - [MESSAGE][PASSED] - Object: 'Object Repository/Journey/Current Access Codes/plusButton' is clicked on
+
+2021-01-12 10:59:04 - [MESSAGE][PASSED] - Object 'Object Repository/Journey/Current Access Codes/accessCode' is present
+
+2021-01-12 10:59:05 - [MESSAGE][PASSED] - Object 'Object Repository/Journey/Current Access Codes/accessCode' is visible
+
+2021-01-12 10:59:05 - [MESSAGE][PASSED] - Object 'Object Repository/Journey/Current Access Codes/accessCode' is clickable
+
+2021-01-12 10:59:05 - [MESSAGE][PASSED] - Text of object 'Object Repository/Journey/Current Access Codes/accessCode' is cleared
+
+2021-01-12 10:59:05 - [MESSAGE][PASSED] - Keys 'access8' sent to object: 'Object Repository/Journey/Current Access Codes/accessCode'
+
+2021-01-12 10:59:06 - [MESSAGE][PASSED] - Keys '6' sent to object: 'Object Repository/Journey/Current Access Codes/codeUsageCount'
+
+2021-01-12 10:59:06 - [MESSAGE][PASSED] - Object 'Object Repository/Journey/Current Access Codes/getCodeButton' is present
+
+2021-01-12 10:59:06 - [MESSAGE][PASSED] - Object 'Object Repository/Journey/Current Access Codes/getCodeButton' is visible
+
+2021-01-12 10:59:07 - [MESSAGE][PASSED] - Object 'Object Repository/Journey/Current Access Codes/getCodeButton' is clickable
+
+2021-01-12 10:59:07 - [MESSAGE][PASSED] - Object: 'Object Repository/Journey/Current Access Codes/getCodeButton' is clicked on
+
+2021-01-12 10:59:07 - [MESSAGE][PASSED] - Object 'Object Repository/CommonButtons/Close' is present
+
+2021-01-12 10:59:08 - [MESSAGE][PASSED] - Object 'Object Repository/CommonButtons/Close' is visible
+
+2021-01-12 10:59:08 - [MESSAGE][PASSED] - Object 'Object Repository/CommonButtons/Close' is clickable
+
+2021-01-12 10:59:09 - [MESSAGE][PASSED] - Object: 'Object Repository/CommonButtons/Close' is clicked on
+
+2021-01-12 10:59:09 - [MESSAGE][PASSED] - pages.Journey.createAccessCodeInJourney is PASSED
+
+2021-01-12 10:59:09 - [TEST_STEP][FAILED] - pages.Journey.verifyTheCreatedAccessCode(journeyName, accessCode): Unable to click on object 'Object Repository/Journey/clickVerifyingJourney(journeyName)'
+
+2021-01-12 10:59:10 - [MESSAGE][PASSED] - Object 'Object Repository/Journey/journrySearchInput' is present
+
+2021-01-12 10:59:10 - [MESSAGE][PASSED] - Object 'Object Repository/Journey/journrySearchInput' is visible
+
+2021-01-12 10:59:10 - [MESSAGE][PASSED] - Object 'Object Repository/Journey/journrySearchInput' is clickable
+
+2021-01-12 10:59:11 - [MESSAGE][PASSED] - Text of object 'Object Repository/Journey/journrySearchInput' is cleared
+
+2021-01-12 10:59:11 - [MESSAGE][PASSED] - Keys 'journeyName811' sent to object: 'Object Repository/Journey/journrySearchInput'
+
+2021-01-12 10:59:42 - [MESSAGE][INFO] - Unable to find the element located by 'By.xpath: //div[text()='journeyName811']'. Please recheck the objects properties to make sure the desired element is located. 
+
+2021-01-12 10:59:42 - [MESSAGE][WARNING] - [SELF-HEALING] Failed to find element with id 'Object Repository/Journey/JourneyName(journeyName)'. Try using Self-healing.
+
+2021-01-12 10:59:42 - [MESSAGE][WARNING] - [SELF-HEALING] Cannot find elements when the XPath is null.
+
+2021-01-12 10:59:42 - [MESSAGE][WARNING] - [SELF-HEALING] Cannot find elements when the selector is null
+
+2021-01-12 10:59:42 - [MESSAGE][WARNING] - Object 'Object Repository/Journey/JourneyName(journeyName)' is not present after 30 second(s)
+
+2021-01-12 11:00:15 - [MESSAGE][INFO] - Unable to find the element located by 'By.xpath: //div[text()='journeyName811']/../..'. Please recheck the objects properties to make sure the desired element is located. 
+
+2021-01-12 11:00:15 - [MESSAGE][WARNING] - [SELF-HEALING] Failed to find element with id 'Object Repository/Journey/clickVerifyingJourney(journeyName)'. Try using Self-healing.
+
+2021-01-12 11:00:15 - [MESSAGE][WARNING] - [SELF-HEALING] Cannot find elements when the XPath is null.
+
+2021-01-12 11:00:15 - [MESSAGE][WARNING] - [SELF-HEALING] Cannot find elements when the selector is null
+
+2021-01-12 11:00:15 - [MESSAGE][WARNING] - Object 'Object Repository/Journey/clickVerifyingJourney(journeyName)' is not present after 30 second(s)
+
+2021-01-12 11:00:47 - [MESSAGE][INFO] - Unable to find the element located by 'By.xpath: //div[text()='journeyName811']/../..'. Please recheck the objects properties to make sure the desired element is located. 
+
+2021-01-12 11:00:47 - [MESSAGE][WARNING] - [SELF-HEALING] Failed to find element with id 'Object Repository/Journey/clickVerifyingJourney(journeyName)'. Try using Self-healing.
+
+2021-01-12 11:00:47 - [MESSAGE][WARNING] - [SELF-HEALING] Cannot find elements when the XPath is null.
+
+2021-01-12 11:00:47 - [MESSAGE][WARNING] - [SELF-HEALING] Cannot find elements when the selector is null
+
+2021-01-12 11:00:47 - [MESSAGE][WARNING] - Web element with id: 'Object Repository/Journey/clickVerifyingJourney(journeyName)' located by '//div[text()='journeyName811']/../..' not found
+
+2021-01-12 11:01:19 - [MESSAGE][INFO] - Unable to find the element located by 'By.xpath: //div[text()='journeyName811']/../..'. Please recheck the objects properties to make sure the desired element is located. 
+
+2021-01-12 11:01:19 - [MESSAGE][WARNING] - [SELF-HEALING] Failed to find element with id 'Object Repository/Journey/clickVerifyingJourney(journeyName)'. Try using Self-healing.
+
+2021-01-12 11:01:19 - [MESSAGE][WARNING] - [SELF-HEALING] Cannot find elements when the XPath is null.
+
+2021-01-12 11:01:19 - [MESSAGE][WARNING] - [SELF-HEALING] Cannot find elements when the selector is null
+
+2021-01-12 11:01:19 - [MESSAGE][WARNING] - Web element with id: 'Object Repository/Journey/clickVerifyingJourney(journeyName)' located by '//div[text()='journeyName811']/../..' not found
+
+2021-01-12 11:01:50 - [MESSAGE][INFO] - Unable to find the element located by 'By.xpath: //div[text()='journeyName811']/../..'. Please recheck the objects properties to make sure the desired element is located. 
+
+2021-01-12 11:01:50 - [MESSAGE][WARNING] - [SELF-HEALING] Failed to find element with id 'Object Repository/Journey/clickVerifyingJourney(journeyName)'. Try using Self-healing.
+
+2021-01-12 11:01:50 - [MESSAGE][WARNING] - [SELF-HEALING] Cannot find elements when the XPath is null.
+
+2021-01-12 11:01:50 - [MESSAGE][WARNING] - [SELF-HEALING] Cannot find elements when the selector is null
+
+2021-01-12 11:01:51 - [MESSAGE][FAILED] - Unable to click on object 'Object Repository/Journey/clickVerifyingJourney(journeyName)' (Root cause: com.kms.katalon.core.exception.StepFailedException: Unable to click on object 'Object Repository/Journey/clickVerifyingJourney(journeyName)'
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:26)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.click(ClickKeyword.groovy:76)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.execute(ClickKeyword.groovy:43)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:73)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.click(WebUiBuiltInKeywords.groovy:617)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$click$7.call(Unknown Source)
+	at webAction.WebAction.click(WebAction.groovy:25)
+	at webAction.WebAction$click$1.call(Unknown Source)
+	at pages.Journey.openExistingJourney(Journey.groovy:42)
+	at pages.Journey.verifyTheCreatedAccessCode(Journey.groovy:100)
+	at pages.Journey.invokeMethod(Journey.groovy)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:50)
+	at createAccessCodeForJourneyAndVerifyIsTheCodeSuccessfullyCreated.run(createAccessCodeForJourneyAndVerifyIsTheCodeSuccessfullyCreated:28)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:393)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:384)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:363)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:355)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:251)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:203)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:152)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:95)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1610429167264.run(TempTestSuite1610429167264.groovy:39)
+Caused by: com.kms.katalon.core.webui.exception.WebElementNotFoundException: Web element with id: 'Object Repository/Journey/clickVerifyingJourney(journeyName)' located by '//div[text()='journeyName811']/../..' not found
+	at com.kms.katalon.core.webui.common.WebUiCommonHelper.findWebElement(WebUiCommonHelper.java:1369)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIAbstractKeyword.findWebElement(WebUIAbstractKeyword.groovy:27)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIAbstractKeyword.findWebElement(WebUIAbstractKeyword.groovy:26)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword$_click_closure1.doCall(ClickKeyword.groovy:67)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword$_click_closure1.call(ClickKeyword.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:20)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.click(ClickKeyword.groovy:76)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.execute(ClickKeyword.groovy:43)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:73)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.click(WebUiBuiltInKeywords.groovy:617)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$click$7.call(Unknown Source)
+	at webAction.WebAction.click(WebAction.groovy:25)
+	at webAction.WebAction$click$1.call(Unknown Source)
+	at pages.Journey.openExistingJourney(Journey.groovy:42)
+	at pages.Journey.verifyTheCreatedAccessCode(Journey.groovy:100)
+	at pages.Journey.invokeMethod(Journey.groovy)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:50)
+	at Script1609925553195.run(Script1609925553195.groovy:28)
+	... 13 more
+)
+[[ATTACHMENT|C:\\Modist\\ModistProject\\Reports\\20210112_105607\\Journey\\20210112_105607\\1610429510749.png]]
+
+2021-01-12 11:01:51 - [MESSAGE][FAILED] - Unable to click on object 'Object Repository/Journey/clickVerifyingJourney(journeyName)']]></system-out>
+         <system-err><![CDATA[2021-01-12 10:58:52 - [TEST_CASE][FAILED] - Test Cases/Admin/Journey/createAccessCodeForJourneyAndVerifyIsTheCodeSuccessfullyCreated: Test Cases/Admin/Journey/createAccessCodeForJourneyAndVerifyIsTheCodeSuccessfullyCreated FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Unable to click on object 'Object Repository/Journey/clickVerifyingJourney(journeyName)'
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:26)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.click(ClickKeyword.groovy:76)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.execute(ClickKeyword.groovy:43)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:73)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.click(WebUiBuiltInKeywords.groovy:617)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$click$7.call(Unknown Source)
+	at webAction.WebAction.click(WebAction.groovy:25)
+	at webAction.WebAction$click$1.call(Unknown Source)
+	at pages.Journey.openExistingJourney(Journey.groovy:42)
+	at pages.Journey.verifyTheCreatedAccessCode(Journey.groovy:100)
+	at pages.Journey.invokeMethod(Journey.groovy)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:50)
+	at createAccessCodeForJourneyAndVerifyIsTheCodeSuccessfullyCreated.run(createAccessCodeForJourneyAndVerifyIsTheCodeSuccessfullyCreated:28)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:393)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:384)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:363)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:355)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:251)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:203)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:152)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:95)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1610429167264.run(TempTestSuite1610429167264.groovy:39)
+Caused by: com.kms.katalon.core.webui.exception.WebElementNotFoundException: Web element with id: 'Object Repository/Journey/clickVerifyingJourney(journeyName)' located by '//div[text()='journeyName811']/../..' not found
+	at com.kms.katalon.core.webui.common.WebUiCommonHelper.findWebElement(WebUiCommonHelper.java:1369)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIAbstractKeyword.findWebElement(WebUIAbstractKeyword.groovy:27)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIAbstractKeyword.findWebElement(WebUIAbstractKeyword.groovy:26)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword$_click_closure1.doCall(ClickKeyword.groovy:67)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword$_click_closure1.call(ClickKeyword.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:20)
+	... 25 more]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Admin/Journey/createMultipleAccessCodesWithSameName" time="52.495" classname="Test Cases/Admin/Journey/createMultipleAccessCodesWithSameName" status="PASSED">
+         <system-out><![CDATA[2021-01-12 11:01:56 - [TEST_CASE][PASSED] - Test Cases/Admin/Journey/createMultipleAccessCodesWithSameName: Test Cases/Admin/Journey/createMultipleAccessCodesWithSameName
+
+2021-01-12 11:01:56 - [TEST_STEP][PASSED] - pages.Journey.clickOnJourneyTab(): pages.Journey.clickOnJourneyTab is PASSED
+
+2021-01-12 11:01:56 - [MESSAGE][PASSED] - Object 'Object Repository/Journey/Journeytab' is present
+
+2021-01-12 11:01:56 - [MESSAGE][PASSED] - Object 'Object Repository/Journey/Journeytab' is visible
+
+2021-01-12 11:01:57 - [MESSAGE][PASSED] - Object 'Object Repository/Journey/Journeytab' is clickable
+
+2021-01-12 11:01:57 - [MESSAGE][PASSED] - Object: 'Object Repository/Journey/Journeytab' is clicked on
+
+2021-01-12 11:01:57 - [MESSAGE][PASSED] - pages.Journey.clickOnJourneyTab is PASSED
+
+2021-01-12 11:01:57 - [TEST_STEP][PASSED] - journeyName = pages.Journey.getRandomJourneyName(): pages.Journey.getRandomJourneyName is PASSED
+
+2021-01-12 11:01:57 - [MESSAGE][PASSED] - Object 'Object Repository/Journey/toGetJourneysCount' is present
+
+2021-01-12 11:01:58 - [MESSAGE][PASSED] - Object 'Object Repository/Journey/toGetJourneysCount' is present
+
+2021-01-12 11:01:58 - [MESSAGE][PASSED] - Text of object 'Object Repository/Journey/toPickrandomJourney(index)' is: 'journeyName738 (duplicate)'
+
+2021-01-12 11:01:58 - [MESSAGE][PASSED] - pages.Journey.getRandomJourneyName is PASSED
+
+2021-01-12 11:01:58 - [TEST_STEP][PASSED] - accessCode = pages.Journey.getRandomAccessCode(): pages.Journey.getRandomAccessCode is PASSED
+
+2021-01-12 11:01:58 - [MESSAGE][PASSED] - pages.Journey.getRandomAccessCode is PASSED
+
+2021-01-12 11:01:58 - [TEST_STEP][PASSED] - useLimit = pages.Journey.getRandomCount(): pages.Journey.getRandomCount is PASSED
+
+2021-01-12 11:01:58 - [MESSAGE][PASSED] - pages.Journey.getRandomCount is PASSED
+
+2021-01-12 11:01:58 - [TEST_STEP][PASSED] - accessCode = pages.Journey.createAccessCodeInJourney(journeyName, accessCode, useLimit): pages.Journey.createAccessCodeInJourney is PASSED
+
+2021-01-12 11:01:58 - [MESSAGE][PASSED] - Object 'Object Repository/Journey/journrySearchInput' is present
+
+2021-01-12 11:01:59 - [MESSAGE][PASSED] - Object 'Object Repository/Journey/journrySearchInput' is visible
+
+2021-01-12 11:01:59 - [MESSAGE][PASSED] - Object 'Object Repository/Journey/journrySearchInput' is clickable
+
+2021-01-12 11:01:59 - [MESSAGE][PASSED] - Text of object 'Object Repository/Journey/journrySearchInput' is cleared
+
+2021-01-12 11:02:00 - [MESSAGE][PASSED] - Keys 'journeyName738 (duplicate)' sent to object: 'Object Repository/Journey/journrySearchInput'
+
+2021-01-12 11:02:00 - [MESSAGE][PASSED] - Object 'Object Repository/Journey/JourneyName(journeyName)' is present
+
+2021-01-12 11:02:00 - [MESSAGE][PASSED] - Object 'Object Repository/Journey/clickVerifyingJourney(journeyName)' is present
+
+2021-01-12 11:02:01 - [MESSAGE][PASSED] - Object 'Object Repository/Journey/clickVerifyingJourney(journeyName)' is visible
+
+2021-01-12 11:02:02 - [MESSAGE][PASSED] - Object 'Object Repository/Journey/clickVerifyingJourney(journeyName)' is clickable
+
+2021-01-12 11:02:03 - [MESSAGE][PASSED] - Object: 'Object Repository/Journey/clickVerifyingJourney(journeyName)' is clicked on
+
+2021-01-12 11:02:04 - [MESSAGE][PASSED] - Scroll to object 'Object Repository/Journey/Current Access Codes/currentAccessCodeField' successfully
+
+2021-01-12 11:02:04 - [MESSAGE][PASSED] - Object 'Object Repository/Journey/Current Access Codes/plusButton' is present
+
+2021-01-12 11:02:04 - [MESSAGE][PASSED] - Object 'Object Repository/Journey/Current Access Codes/plusButton' is visible
+
+2021-01-12 11:02:04 - [MESSAGE][PASSED] - Object 'Object Repository/Journey/Current Access Codes/plusButton' is clickable
+
+2021-01-12 11:02:05 - [MESSAGE][PASSED] - Object: 'Object Repository/Journey/Current Access Codes/plusButton' is clicked on
+
+2021-01-12 11:02:05 - [MESSAGE][PASSED] - Object 'Object Repository/Journey/Current Access Codes/accessCode' is present
+
+2021-01-12 11:02:05 - [MESSAGE][PASSED] - Object 'Object Repository/Journey/Current Access Codes/accessCode' is visible
+
+2021-01-12 11:02:06 - [MESSAGE][PASSED] - Object 'Object Repository/Journey/Current Access Codes/accessCode' is clickable
+
+2021-01-12 11:02:06 - [MESSAGE][PASSED] - Text of object 'Object Repository/Journey/Current Access Codes/accessCode' is cleared
+
+2021-01-12 11:02:06 - [MESSAGE][PASSED] - Keys 'access0' sent to object: 'Object Repository/Journey/Current Access Codes/accessCode'
+
+2021-01-12 11:02:07 - [MESSAGE][PASSED] - Keys '4' sent to object: 'Object Repository/Journey/Current Access Codes/codeUsageCount'
+
+2021-01-12 11:02:07 - [MESSAGE][PASSED] - Object 'Object Repository/Journey/Current Access Codes/getCodeButton' is present
+
+2021-01-12 11:02:07 - [MESSAGE][PASSED] - Object 'Object Repository/Journey/Current Access Codes/getCodeButton' is visible
+
+2021-01-12 11:02:07 - [MESSAGE][PASSED] - Object 'Object Repository/Journey/Current Access Codes/getCodeButton' is clickable
+
+2021-01-12 11:02:08 - [MESSAGE][PASSED] - Object: 'Object Repository/Journey/Current Access Codes/getCodeButton' is clicked on
+
+2021-01-12 11:02:08 - [MESSAGE][PASSED] - Object 'Object Repository/CommonButtons/Close' is present
+
+2021-01-12 11:02:09 - [MESSAGE][PASSED] - Object 'Object Repository/CommonButtons/Close' is visible
+
+2021-01-12 11:02:09 - [MESSAGE][PASSED] - Object 'Object Repository/CommonButtons/Close' is clickable
+
+2021-01-12 11:02:10 - [MESSAGE][PASSED] - Object: 'Object Repository/CommonButtons/Close' is clicked on
+
+2021-01-12 11:02:10 - [MESSAGE][PASSED] - pages.Journey.createAccessCodeInJourney is PASSED
+
+2021-01-12 11:02:10 - [TEST_STEP][PASSED] - pages.Journey.verifyTheCreatedAccessCode(journeyName, accessCode): pages.Journey.verifyTheCreatedAccessCode is PASSED
+
+2021-01-12 11:02:10 - [MESSAGE][PASSED] - Object 'Object Repository/Journey/journrySearchInput' is present
+
+2021-01-12 11:02:11 - [MESSAGE][PASSED] - Object 'Object Repository/Journey/journrySearchInput' is visible
+
+2021-01-12 11:02:11 - [MESSAGE][PASSED] - Object 'Object Repository/Journey/journrySearchInput' is clickable
+
+2021-01-12 11:02:11 - [MESSAGE][PASSED] - Text of object 'Object Repository/Journey/journrySearchInput' is cleared
+
+2021-01-12 11:02:12 - [MESSAGE][PASSED] - Keys 'journeyName738 (duplicate)' sent to object: 'Object Repository/Journey/journrySearchInput'
+
+2021-01-12 11:02:13 - [MESSAGE][PASSED] - Object 'Object Repository/Journey/JourneyName(journeyName)' is present
+
+2021-01-12 11:02:17 - [MESSAGE][PASSED] - Object 'Object Repository/Journey/clickVerifyingJourney(journeyName)' is present
+
+2021-01-12 11:02:17 - [MESSAGE][PASSED] - Object 'Object Repository/Journey/clickVerifyingJourney(journeyName)' is visible
+
+2021-01-12 11:02:18 - [MESSAGE][PASSED] - Object 'Object Repository/Journey/clickVerifyingJourney(journeyName)' is clickable
+
+2021-01-12 11:02:19 - [MESSAGE][PASSED] - Object: 'Object Repository/Journey/clickVerifyingJourney(journeyName)' is clicked on
+
+2021-01-12 11:02:20 - [MESSAGE][PASSED] - Scroll to object 'Object Repository/Journey/Current Access Codes/currentAccessCodeField' successfully
+
+2021-01-12 11:02:21 - [MESSAGE][PASSED] - Object 'Object Repository/Journey/Current Access Codes/currentAccessCodeField' is present
+
+2021-01-12 11:02:21 - [MESSAGE][PASSED] - Object 'Object Repository/Journey/Current Access Codes/verify(code)' is present
+
+2021-01-12 11:02:22 - [MESSAGE][PASSED] - Object 'Object Repository/CommonButtons/Close' is present
+
+2021-01-12 11:02:22 - [MESSAGE][PASSED] - Object 'Object Repository/CommonButtons/Close' is visible
+
+2021-01-12 11:02:22 - [MESSAGE][PASSED] - Object 'Object Repository/CommonButtons/Close' is clickable
+
+2021-01-12 11:02:22 - [MESSAGE][PASSED] - Object: 'Object Repository/CommonButtons/Close' is clicked on
+
+2021-01-12 11:02:22 - [MESSAGE][PASSED] - pages.Journey.verifyTheCreatedAccessCode is PASSED
+
+2021-01-12 11:02:22 - [TEST_STEP][PASSED] - journeyName1 = pages.Journey.getRandomJourneyName(): pages.Journey.getRandomJourneyName is PASSED
+
+2021-01-12 11:02:24 - [MESSAGE][PASSED] - Object 'Object Repository/Journey/toGetJourneysCount' is present
+
+2021-01-12 11:02:24 - [MESSAGE][PASSED] - Object 'Object Repository/Journey/toGetJourneysCount' is present
+
+2021-01-12 11:02:24 - [MESSAGE][PASSED] - Text of object 'Object Repository/Journey/toPickrandomJourney(index)' is: 'KJO'
+
+2021-01-12 11:02:24 - [MESSAGE][PASSED] - pages.Journey.getRandomJourneyName is PASSED
+
+2021-01-12 11:02:24 - [TEST_STEP][PASSED] - accessCode = pages.Journey.createAccessCodeInJourney(journeyName1, accessCode, useLimit): pages.Journey.createAccessCodeInJourney is PASSED
+
+2021-01-12 11:02:25 - [MESSAGE][PASSED] - Object 'Object Repository/Journey/journrySearchInput' is present
+
+2021-01-12 11:02:25 - [MESSAGE][PASSED] - Object 'Object Repository/Journey/journrySearchInput' is visible
+
+2021-01-12 11:02:25 - [MESSAGE][PASSED] - Object 'Object Repository/Journey/journrySearchInput' is clickable
+
+2021-01-12 11:02:25 - [MESSAGE][PASSED] - Text of object 'Object Repository/Journey/journrySearchInput' is cleared
+
+2021-01-12 11:02:26 - [MESSAGE][PASSED] - Keys 'KJO' sent to object: 'Object Repository/Journey/journrySearchInput'
+
+2021-01-12 11:02:26 - [MESSAGE][PASSED] - Object 'Object Repository/Journey/JourneyName(journeyName)' is present
+
+2021-01-12 11:02:26 - [MESSAGE][PASSED] - Object 'Object Repository/Journey/clickVerifyingJourney(journeyName)' is present
+
+2021-01-12 11:02:27 - [MESSAGE][PASSED] - Object 'Object Repository/Journey/clickVerifyingJourney(journeyName)' is visible
+
+2021-01-12 11:02:27 - [MESSAGE][PASSED] - Object 'Object Repository/Journey/clickVerifyingJourney(journeyName)' is clickable
+
+2021-01-12 11:02:28 - [MESSAGE][PASSED] - Object: 'Object Repository/Journey/clickVerifyingJourney(journeyName)' is clicked on
+
+2021-01-12 11:02:28 - [MESSAGE][PASSED] - Scroll to object 'Object Repository/Journey/Current Access Codes/currentAccessCodeField' successfully
+
+2021-01-12 11:02:29 - [MESSAGE][PASSED] - Object 'Object Repository/Journey/Current Access Codes/plusButton' is present
+
+2021-01-12 11:02:30 - [MESSAGE][PASSED] - Object 'Object Repository/Journey/Current Access Codes/plusButton' is visible
+
+2021-01-12 11:02:30 - [MESSAGE][PASSED] - Object 'Object Repository/Journey/Current Access Codes/plusButton' is clickable
+
+2021-01-12 11:02:31 - [MESSAGE][PASSED] - Object: 'Object Repository/Journey/Current Access Codes/plusButton' is clicked on
+
+2021-01-12 11:02:32 - [MESSAGE][PASSED] - Object 'Object Repository/Journey/Current Access Codes/accessCode' is present
+
+2021-01-12 11:02:32 - [MESSAGE][PASSED] - Object 'Object Repository/Journey/Current Access Codes/accessCode' is visible
+
+2021-01-12 11:02:32 - [MESSAGE][PASSED] - Object 'Object Repository/Journey/Current Access Codes/accessCode' is clickable
+
+2021-01-12 11:02:32 - [MESSAGE][PASSED] - Text of object 'Object Repository/Journey/Current Access Codes/accessCode' is cleared
+
+2021-01-12 11:02:33 - [MESSAGE][PASSED] - Keys 'access0' sent to object: 'Object Repository/Journey/Current Access Codes/accessCode'
+
+2021-01-12 11:02:33 - [MESSAGE][PASSED] - Keys '4' sent to object: 'Object Repository/Journey/Current Access Codes/codeUsageCount'
+
+2021-01-12 11:02:33 - [MESSAGE][PASSED] - Object 'Object Repository/Journey/Current Access Codes/getCodeButton' is present
+
+2021-01-12 11:02:33 - [MESSAGE][PASSED] - Object 'Object Repository/Journey/Current Access Codes/getCodeButton' is visible
+
+2021-01-12 11:02:34 - [MESSAGE][PASSED] - Object 'Object Repository/Journey/Current Access Codes/getCodeButton' is clickable
+
+2021-01-12 11:02:34 - [MESSAGE][PASSED] - Object: 'Object Repository/Journey/Current Access Codes/getCodeButton' is clicked on
+
+2021-01-12 11:02:34 - [MESSAGE][PASSED] - Object 'Object Repository/CommonButtons/Close' is present
+
+2021-01-12 11:02:35 - [MESSAGE][PASSED] - Object 'Object Repository/CommonButtons/Close' is visible
+
+2021-01-12 11:02:35 - [MESSAGE][PASSED] - Object 'Object Repository/CommonButtons/Close' is clickable
+
+2021-01-12 11:02:36 - [MESSAGE][PASSED] - Object: 'Object Repository/CommonButtons/Close' is clicked on
+
+2021-01-12 11:02:36 - [MESSAGE][PASSED] - pages.Journey.createAccessCodeInJourney is PASSED
+
+2021-01-12 11:02:36 - [TEST_STEP][PASSED] - pages.Journey.verifyTheCreatedAccessCode(journeyName1, accessCode): pages.Journey.verifyTheCreatedAccessCode is PASSED
+
+2021-01-12 11:02:36 - [MESSAGE][PASSED] - Object 'Object Repository/Journey/journrySearchInput' is present
+
+2021-01-12 11:02:36 - [MESSAGE][PASSED] - Object 'Object Repository/Journey/journrySearchInput' is visible
+
+2021-01-12 11:02:37 - [MESSAGE][PASSED] - Object 'Object Repository/Journey/journrySearchInput' is clickable
+
+2021-01-12 11:02:37 - [MESSAGE][PASSED] - Text of object 'Object Repository/Journey/journrySearchInput' is cleared
+
+2021-01-12 11:02:38 - [MESSAGE][PASSED] - Keys 'KJO' sent to object: 'Object Repository/Journey/journrySearchInput'
+
+2021-01-12 11:02:38 - [MESSAGE][PASSED] - Object 'Object Repository/Journey/JourneyName(journeyName)' is present
+
+2021-01-12 11:02:38 - [MESSAGE][PASSED] - Object 'Object Repository/Journey/clickVerifyingJourney(journeyName)' is present
+
+2021-01-12 11:02:39 - [MESSAGE][PASSED] - Object 'Object Repository/Journey/clickVerifyingJourney(journeyName)' is visible
+
+2021-01-12 11:02:40 - [MESSAGE][PASSED] - Object 'Object Repository/Journey/clickVerifyingJourney(journeyName)' is clickable
+
+2021-01-12 11:02:40 - [MESSAGE][PASSED] - Object: 'Object Repository/Journey/clickVerifyingJourney(journeyName)' is clicked on
+
+2021-01-12 11:02:41 - [MESSAGE][PASSED] - Scroll to object 'Object Repository/Journey/Current Access Codes/currentAccessCodeField' successfully
+
+2021-01-12 11:02:41 - [MESSAGE][PASSED] - Object 'Object Repository/Journey/Current Access Codes/currentAccessCodeField' is present
+
+2021-01-12 11:02:42 - [MESSAGE][PASSED] - Object 'Object Repository/Journey/Current Access Codes/verify(code)' is present
+
+2021-01-12 11:02:42 - [MESSAGE][PASSED] - Object 'Object Repository/CommonButtons/Close' is present
+
+2021-01-12 11:02:43 - [MESSAGE][PASSED] - Object 'Object Repository/CommonButtons/Close' is visible
+
+2021-01-12 11:02:43 - [MESSAGE][PASSED] - Object 'Object Repository/CommonButtons/Close' is clickable
+
+2021-01-12 11:02:43 - [MESSAGE][PASSED] - Object: 'Object Repository/CommonButtons/Close' is clicked on
+
+2021-01-12 11:02:43 - [MESSAGE][PASSED] - pages.Journey.verifyTheCreatedAccessCode is PASSED]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <system-out><![CDATA[2021-01-12 10:56:09 - [TEST_SUITE][INCOMPLETE] - Journey: null]]></system-out>
+      <system-err><![CDATA[2021-01-12 10:56:09 - [TEST_SUITE][INCOMPLETE] - Journey: null]]></system-err>
+   </testsuite>
+</testsuites>
