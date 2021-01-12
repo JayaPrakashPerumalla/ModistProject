@@ -1,0 +1,1011 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Asset" time="263.269" tests="11" failures="1" errors="0">
+   <testsuite name="Asset" tests="11" failures="1" errors="0" time="263.269" timestamp="2021-01-11 23:37:44" hostname="Lenovo - DESKTOP-H3LAPEO" id="Test Suites/Asset">
+      <properties>
+         <property name="deviceName" value=""/>
+         <property name="devicePlatform" value=""/>
+         <property name="logFolder" value="E:\\Modist Project\\ModistProject\\Reports\\20210111_233742\\Asset\\20210111_233742"/>
+         <property name="logFiles" value="E:\\Modist Project\\ModistProject\\Reports\\20210111_233742\\Asset\\20210111_233742\\execution0.log"/>
+         <property name="attachments" value="E:\\Modist Project\\ModistProject\\Reports\\20210111_233742\\Asset\\20210111_233742\\1610426526088.png"/>
+         <property name="hostName" value="Lenovo - DESKTOP-H3LAPEO"/>
+         <property name="os" value="Windows 10 64bit"/>
+         <property name="katalonVersion" value="7.7.0.205"/>
+         <property name="browser" value="Chrome 87.0.4280.141"/>
+         <property name="hostAddress" value="192.168.43.128"/>
+         <property name="sessionId" value="9e5c9e992060705c0423c915d281132a"/>
+         <property name="seleniumVersion" value="3.141.59"/>
+         <property name="proxyInformation" value="ProxyInformation { proxyOption=NO_PROXY, proxyServerType=HTTP, username=, password=********, proxyServerAddress=, proxyServerPort=0, executionList=&quot;&quot;, isApplyToDesiredCapabilities=true }"/>
+         <property name="platform" value="Windows 10"/>
+      </properties>
+      <testcase name="Test Cases/Admin/Asset/addAssetAndVerify" time="26.698" classname="Test Cases/Admin/Asset/addAssetAndVerify" status="PASSED">
+         <system-out><![CDATA[2021-01-11 23:38:09 - [TEST_CASE][PASSED] - Test Cases/Admin/Asset/addAssetAndVerify: Test Cases/Admin/Asset/addAssetAndVerify
+
+2021-01-11 23:38:10 - [TEST_STEP][PASSED] - pages.Asset.clickAssetTab(): pages.Asset.clickAssetTab is PASSED
+
+2021-01-11 23:38:11 - [MESSAGE][PASSED] - Object 'Object Repository/Asset/Asset/AssetPageElements/assetTab' is present
+
+2021-01-11 23:38:12 - [MESSAGE][PASSED] - Object 'Object Repository/Asset/Asset/AssetPageElements/assetTab' is visible
+
+2021-01-11 23:38:13 - [MESSAGE][PASSED] - Object 'Object Repository/Asset/Asset/AssetPageElements/assetTab' is clickable
+
+2021-01-11 23:38:13 - [MESSAGE][PASSED] - Object: 'Object Repository/Asset/Asset/AssetPageElements/assetTab' is clicked on
+
+2021-01-11 23:38:23 - [MESSAGE][PASSED] - Delayed 10 second(s)
+
+2021-01-11 23:38:23 - [MESSAGE][PASSED] - pages.Asset.clickAssetTab is PASSED
+
+2021-01-11 23:38:23 - [TEST_STEP][PASSED] - assetName = pages.Asset.addAsset(): pages.Asset.addAsset is PASSED
+
+2021-01-11 23:38:23 - [MESSAGE][PASSED] - Object 'Object Repository/Asset/Asset/AssetPageElements/AddAssetButton' is present
+
+2021-01-11 23:38:24 - [MESSAGE][PASSED] - Object 'Object Repository/Asset/Asset/AssetPageElements/AddAssetButton' is visible
+
+2021-01-11 23:38:24 - [MESSAGE][PASSED] - Object 'Object Repository/Asset/Asset/AssetPageElements/AddAssetButton' is clickable
+
+2021-01-11 23:38:24 - [MESSAGE][PASSED] - Object: 'Object Repository/Asset/Asset/AssetPageElements/AddAssetButton' is clicked on
+
+2021-01-11 23:38:25 - [MESSAGE][PASSED] - Object 'Object Repository/Asset/Asset/addAsset/Author' is present
+
+2021-01-11 23:38:25 - [MESSAGE][PASSED] - Object 'Object Repository/Asset/Asset/addAsset/Author' is visible
+
+2021-01-11 23:38:26 - [MESSAGE][PASSED] - Object 'Object Repository/Asset/Asset/addAsset/Author' is clickable
+
+2021-01-11 23:38:26 - [MESSAGE][PASSED] - Text of object 'Object Repository/Asset/Asset/addAsset/Author' is cleared
+
+2021-01-11 23:38:26 - [MESSAGE][PASSED] - Keys 'Author479' sent to object: 'Object Repository/Asset/Asset/addAsset/Author'
+
+2021-01-11 23:38:27 - [MESSAGE][PASSED] - File 'E:\Modist Project\ModistProject\bike4.jpg' sent to object: 'Object Repository/Asset/Asset/addAsset/chooseFile'
+
+2021-01-11 23:38:27 - [MESSAGE][PASSED] - Object 'Object Repository/Asset/Asset/addAsset/clickTenant' is present
+
+2021-01-11 23:38:28 - [MESSAGE][PASSED] - Object 'Object Repository/Asset/Asset/addAsset/clickTenant' is visible
+
+2021-01-11 23:38:28 - [MESSAGE][PASSED] - Object 'Object Repository/Asset/Asset/addAsset/clickTenant' is clickable
+
+2021-01-11 23:38:28 - [MESSAGE][PASSED] - Object: 'Object Repository/Asset/Asset/addAsset/clickTenant' is clicked on
+
+2021-01-11 23:38:29 - [MESSAGE][PASSED] - Object 'Object Repository/Asset/Asset/addAsset/selectTenent' is present
+
+2021-01-11 23:38:29 - [MESSAGE][PASSED] - Object 'Object Repository/Asset/Asset/addAsset/selectTenent' is visible
+
+2021-01-11 23:38:29 - [MESSAGE][PASSED] - Object 'Object Repository/Asset/Asset/addAsset/selectTenent' is clickable
+
+2021-01-11 23:38:30 - [MESSAGE][PASSED] - Object: 'Object Repository/Asset/Asset/addAsset/selectTenent' is clicked on
+
+2021-01-11 23:38:30 - [MESSAGE][PASSED] - Object 'Object Repository/Asset/Asset/addAsset/addAssetButtonInAddAssetPopup' is present
+
+2021-01-11 23:38:30 - [MESSAGE][PASSED] - Object 'Object Repository/Asset/Asset/addAsset/addAssetButtonInAddAssetPopup' is visible
+
+2021-01-11 23:38:31 - [MESSAGE][PASSED] - Object 'Object Repository/Asset/Asset/addAsset/addAssetButtonInAddAssetPopup' is clickable
+
+2021-01-11 23:38:31 - [MESSAGE][PASSED] - Object: 'Object Repository/Asset/Asset/addAsset/addAssetButtonInAddAssetPopup' is clicked on
+
+2021-01-11 23:38:31 - [MESSAGE][PASSED] - pages.Asset.addAsset is PASSED
+
+2021-01-11 23:38:31 - [TEST_STEP][PASSED] - pages.Asset.VerifyAssetIsPresent(assetName): pages.Asset.VerifyAssetIsPresent is PASSED
+
+2021-01-11 23:38:33 - [MESSAGE][PASSED] - Object 'Object Repository/Asset/Asset/AssetPageElements/search' is present
+
+2021-01-11 23:38:33 - [MESSAGE][PASSED] - Object 'Object Repository/Asset/Asset/AssetPageElements/search' is visible
+
+2021-01-11 23:38:34 - [MESSAGE][PASSED] - Object 'Object Repository/Asset/Asset/AssetPageElements/search' is clickable
+
+2021-01-11 23:38:35 - [MESSAGE][PASSED] - Text of object 'Object Repository/Asset/Asset/AssetPageElements/search' is cleared
+
+2021-01-11 23:38:36 - [MESSAGE][PASSED] - Keys 'Author479' sent to object: 'Object Repository/Asset/Asset/AssetPageElements/search'
+
+2021-01-11 23:38:36 - [MESSAGE][PASSED] - Wait for page load successfully
+
+2021-01-11 23:38:36 - [MESSAGE][PASSED] - Object 'Object Repository/Asset/Asset/assetname(assetName)' is present
+
+2021-01-11 23:38:36 - [MESSAGE][PASSED] - pages.Asset.VerifyAssetIsPresent is PASSED]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Admin/Asset/openAnyAssetAndVerifyUrl" time="19.844" classname="Test Cases/Admin/Asset/openAnyAssetAndVerifyUrl" status="PASSED">
+         <system-out><![CDATA[2021-01-11 23:38:36 - [TEST_CASE][PASSED] - Test Cases/Admin/Asset/openAnyAssetAndVerifyUrl: Test Cases/Admin/Asset/openAnyAssetAndVerifyUrl
+
+2021-01-11 23:38:36 - [TEST_STEP][PASSED] - pages.Asset.clickAssetTab(): pages.Asset.clickAssetTab is PASSED
+
+2021-01-11 23:38:37 - [MESSAGE][PASSED] - Object 'Object Repository/Asset/Asset/AssetPageElements/assetTab' is present
+
+2021-01-11 23:38:38 - [MESSAGE][PASSED] - Object 'Object Repository/Asset/Asset/AssetPageElements/assetTab' is visible
+
+2021-01-11 23:38:40 - [MESSAGE][PASSED] - Object 'Object Repository/Asset/Asset/AssetPageElements/assetTab' is clickable
+
+2021-01-11 23:38:40 - [MESSAGE][PASSED] - Object: 'Object Repository/Asset/Asset/AssetPageElements/assetTab' is clicked on
+
+2021-01-11 23:38:50 - [MESSAGE][PASSED] - Delayed 10 second(s)
+
+2021-01-11 23:38:50 - [MESSAGE][PASSED] - pages.Asset.clickAssetTab is PASSED
+
+2021-01-11 23:38:50 - [TEST_STEP][PASSED] - assetName = pages.Asset.getRandomAssetName(): pages.Asset.getRandomAssetName is PASSED
+
+2021-01-11 23:38:50 - [MESSAGE][PASSED] - Wait for page load successfully
+
+2021-01-11 23:38:51 - [MESSAGE][PASSED] - Object 'Object Repository/Asset/Asset/AssetCount' is present
+
+2021-01-11 23:38:52 - [MESSAGE][PASSED] - Text of object 'Object Repository/Asset/Asset/randomAsset(index)' is: 'Author56'
+
+2021-01-11 23:38:52 - [MESSAGE][PASSED] - pages.Asset.getRandomAssetName is PASSED
+
+2021-01-11 23:38:52 - [TEST_STEP][PASSED] - pages.Asset.verifyUrlOfassetEditPage(assetName): pages.Asset.verifyUrlOfassetEditPage is PASSED
+
+2021-01-11 23:38:52 - [MESSAGE][PASSED] - Object 'Object Repository/Asset/Asset/AssetPageElements/search' is present
+
+2021-01-11 23:38:52 - [MESSAGE][PASSED] - Object 'Object Repository/Asset/Asset/AssetPageElements/search' is visible
+
+2021-01-11 23:38:53 - [MESSAGE][PASSED] - Object 'Object Repository/Asset/Asset/AssetPageElements/search' is clickable
+
+2021-01-11 23:38:53 - [MESSAGE][PASSED] - Text of object 'Object Repository/Asset/Asset/AssetPageElements/search' is cleared
+
+2021-01-11 23:38:54 - [MESSAGE][PASSED] - Keys 'Author56' sent to object: 'Object Repository/Asset/Asset/AssetPageElements/search'
+
+2021-01-11 23:38:54 - [MESSAGE][PASSED] - Wait for page load successfully
+
+2021-01-11 23:38:54 - [MESSAGE][PASSED] - Object 'Object Repository/Asset/Asset/assetname(assetName)' is present
+
+2021-01-11 23:38:55 - [MESSAGE][PASSED] - Object 'Object Repository/Asset/Asset/assetname(assetName)' is visible
+
+2021-01-11 23:38:55 - [MESSAGE][PASSED] - Object 'Object Repository/Asset/Asset/assetname(assetName)' is clickable
+
+2021-01-11 23:38:56 - [MESSAGE][PASSED] - Object: 'Object Repository/Asset/Asset/assetname(assetName)' is clicked on
+
+2021-01-11 23:38:56 - [MESSAGE][PASSED] - Current window's url is: 'https://dev-admin.modist.co/asset/33913'
+
+2021-01-11 23:38:56 - [MESSAGE][PASSED] - pages.Asset.verifyUrlOfassetEditPage is PASSED]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Admin/Asset/deleteAssetAndVerify" time="24.052" classname="Test Cases/Admin/Asset/deleteAssetAndVerify" status="PASSED">
+         <system-out><![CDATA[2021-01-11 23:38:56 - [TEST_CASE][PASSED] - Test Cases/Admin/Asset/deleteAssetAndVerify: Test Cases/Admin/Asset/deleteAssetAndVerify
+
+2021-01-11 23:38:56 - [TEST_STEP][PASSED] - pages.Asset.clickAssetTab(): pages.Asset.clickAssetTab is PASSED
+
+2021-01-11 23:38:57 - [MESSAGE][PASSED] - Object 'Object Repository/Asset/Asset/AssetPageElements/assetTab' is present
+
+2021-01-11 23:38:57 - [MESSAGE][PASSED] - Object 'Object Repository/Asset/Asset/AssetPageElements/assetTab' is visible
+
+2021-01-11 23:38:58 - [MESSAGE][PASSED] - Object 'Object Repository/Asset/Asset/AssetPageElements/assetTab' is clickable
+
+2021-01-11 23:38:58 - [MESSAGE][PASSED] - Object: 'Object Repository/Asset/Asset/AssetPageElements/assetTab' is clicked on
+
+2021-01-11 23:39:08 - [MESSAGE][PASSED] - Delayed 10 second(s)
+
+2021-01-11 23:39:08 - [MESSAGE][PASSED] - pages.Asset.clickAssetTab is PASSED
+
+2021-01-11 23:39:08 - [TEST_STEP][PASSED] - assetName = pages.Asset.getRandomAssetName(): pages.Asset.getRandomAssetName is PASSED
+
+2021-01-11 23:39:09 - [MESSAGE][PASSED] - Wait for page load successfully
+
+2021-01-11 23:39:09 - [MESSAGE][PASSED] - Object 'Object Repository/Asset/Asset/AssetCount' is present
+
+2021-01-11 23:39:10 - [MESSAGE][PASSED] - Text of object 'Object Repository/Asset/Asset/randomAsset(index)' is: 'Author681'
+
+2021-01-11 23:39:10 - [MESSAGE][PASSED] - pages.Asset.getRandomAssetName is PASSED
+
+2021-01-11 23:39:10 - [TEST_STEP][PASSED] - pages.Asset.deleteAsset(assetName): pages.Asset.deleteAsset is PASSED
+
+2021-01-11 23:39:10 - [MESSAGE][PASSED] - Object 'Object Repository/Asset/Asset/AssetPageElements/search' is present
+
+2021-01-11 23:39:10 - [MESSAGE][PASSED] - Object 'Object Repository/Asset/Asset/AssetPageElements/search' is visible
+
+2021-01-11 23:39:11 - [MESSAGE][PASSED] - Object 'Object Repository/Asset/Asset/AssetPageElements/search' is clickable
+
+2021-01-11 23:39:11 - [MESSAGE][PASSED] - Text of object 'Object Repository/Asset/Asset/AssetPageElements/search' is cleared
+
+2021-01-11 23:39:11 - [MESSAGE][PASSED] - Keys 'Author681' sent to object: 'Object Repository/Asset/Asset/AssetPageElements/search'
+
+2021-01-11 23:39:11 - [MESSAGE][PASSED] - Wait for page load successfully
+
+2021-01-11 23:39:12 - [MESSAGE][PASSED] - Object 'Object Repository/Asset/Asset/delAssetCheckbox(assetName)' is present
+
+2021-01-11 23:39:12 - [MESSAGE][PASSED] - Object 'Object Repository/Asset/Asset/delAssetCheckbox(assetName)' is visible
+
+2021-01-11 23:39:12 - [MESSAGE][PASSED] - Object 'Object Repository/Asset/Asset/delAssetCheckbox(assetName)' is clickable
+
+2021-01-11 23:39:13 - [MESSAGE][PASSED] - Object: 'Object Repository/Asset/Asset/delAssetCheckbox(assetName)' is clicked on
+
+2021-01-11 23:39:13 - [MESSAGE][PASSED] - Object 'Object Repository/Asset/Asset/delIcon' is present
+
+2021-01-11 23:39:14 - [MESSAGE][PASSED] - Object 'Object Repository/Asset/Asset/delIcon' is visible
+
+2021-01-11 23:39:16 - [MESSAGE][PASSED] - Object 'Object Repository/Asset/Asset/delIcon' is clickable
+
+2021-01-11 23:39:16 - [MESSAGE][PASSED] - Object: 'Object Repository/Asset/Asset/delIcon' is clicked on
+
+2021-01-11 23:39:16 - [MESSAGE][PASSED] - Alert accepted
+
+2021-01-11 23:39:16 - [MESSAGE][PASSED] - pages.Asset.deleteAsset is PASSED
+
+2021-01-11 23:39:16 - [TEST_STEP][PASSED] - pages.Asset.VerifyAssetNotPresent(assetName): pages.Asset.VerifyAssetNotPresent is PASSED
+
+2021-01-11 23:39:18 - [MESSAGE][PASSED] - Object 'Object Repository/Asset/Asset/AssetPageElements/search' is present
+
+2021-01-11 23:39:19 - [MESSAGE][PASSED] - Object 'Object Repository/Asset/Asset/AssetPageElements/search' is visible
+
+2021-01-11 23:39:19 - [MESSAGE][PASSED] - Object 'Object Repository/Asset/Asset/AssetPageElements/search' is clickable
+
+2021-01-11 23:39:19 - [MESSAGE][PASSED] - Text of object 'Object Repository/Asset/Asset/AssetPageElements/search' is cleared
+
+2021-01-11 23:39:20 - [MESSAGE][PASSED] - Keys 'Author681' sent to object: 'Object Repository/Asset/Asset/AssetPageElements/search'
+
+2021-01-11 23:39:20 - [MESSAGE][PASSED] - Wait for page load successfully
+
+2021-01-11 23:39:20 - [MESSAGE][PASSED] - Web element with id: 'Object Repository/Asset/Asset/assetname(assetName)' located by 'By.xpath: //div[text()='Author681']' is not present after '30' second(s)
+
+2021-01-11 23:39:20 - [MESSAGE][PASSED] - pages.Asset.VerifyAssetNotPresent is PASSED]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Admin/Asset/editSourceInAssetEditPageAndVerify" time="38.299" classname="Test Cases/Admin/Asset/editSourceInAssetEditPageAndVerify" status="PASSED">
+         <system-out><![CDATA[2021-01-11 23:39:20 - [TEST_CASE][PASSED] - Test Cases/Admin/Asset/editSourceInAssetEditPageAndVerify: Test Cases/Admin/Asset/editSourceInAssetEditPageAndVerify
+
+2021-01-11 23:39:20 - [TEST_STEP][PASSED] - pages.Asset.clickAssetTab(): pages.Asset.clickAssetTab is PASSED
+
+2021-01-11 23:39:21 - [MESSAGE][PASSED] - Object 'Object Repository/Asset/Asset/AssetPageElements/assetTab' is present
+
+2021-01-11 23:39:23 - [MESSAGE][PASSED] - Object 'Object Repository/Asset/Asset/AssetPageElements/assetTab' is visible
+
+2021-01-11 23:39:23 - [MESSAGE][PASSED] - Object 'Object Repository/Asset/Asset/AssetPageElements/assetTab' is clickable
+
+2021-01-11 23:39:23 - [MESSAGE][PASSED] - Object: 'Object Repository/Asset/Asset/AssetPageElements/assetTab' is clicked on
+
+2021-01-11 23:39:33 - [MESSAGE][PASSED] - Delayed 10 second(s)
+
+2021-01-11 23:39:33 - [MESSAGE][PASSED] - pages.Asset.clickAssetTab is PASSED
+
+2021-01-11 23:39:33 - [TEST_STEP][PASSED] - assetDetails = pages.Asset.editSourceInAssetEditPage(): pages.Asset.editSourceInAssetEditPage is PASSED
+
+2021-01-11 23:39:33 - [MESSAGE][PASSED] - Wait for page load successfully
+
+2021-01-11 23:39:34 - [MESSAGE][PASSED] - Object 'Object Repository/Asset/Asset/AssetCount' is present
+
+2021-01-11 23:39:34 - [MESSAGE][PASSED] - Text of object 'Object Repository/Asset/Asset/randomAsset(index)' is: 'Author724'
+
+2021-01-11 23:39:35 - [MESSAGE][PASSED] - Object 'Object Repository/Asset/Asset/AssetPageElements/search' is present
+
+2021-01-11 23:39:35 - [MESSAGE][PASSED] - Object 'Object Repository/Asset/Asset/AssetPageElements/search' is visible
+
+2021-01-11 23:39:35 - [MESSAGE][PASSED] - Object 'Object Repository/Asset/Asset/AssetPageElements/search' is clickable
+
+2021-01-11 23:39:36 - [MESSAGE][PASSED] - Text of object 'Object Repository/Asset/Asset/AssetPageElements/search' is cleared
+
+2021-01-11 23:39:36 - [MESSAGE][PASSED] - Keys 'Author724' sent to object: 'Object Repository/Asset/Asset/AssetPageElements/search'
+
+2021-01-11 23:39:36 - [MESSAGE][PASSED] - Wait for page load successfully
+
+2021-01-11 23:39:40 - [MESSAGE][PASSED] - Object 'Object Repository/Asset/Asset/assetname(assetName)' is present
+
+2021-01-11 23:39:40 - [MESSAGE][PASSED] - Object 'Object Repository/Asset/Asset/assetname(assetName)' is visible
+
+2021-01-11 23:39:40 - [MESSAGE][PASSED] - Object 'Object Repository/Asset/Asset/assetname(assetName)' is clickable
+
+2021-01-11 23:39:41 - [MESSAGE][PASSED] - Object: 'Object Repository/Asset/Asset/assetname(assetName)' is clicked on
+
+2021-01-11 23:39:41 - [MESSAGE][PASSED] - Scroll to object 'Object Repository/Asset/Asset/assetEditpage/sourceDropdown' successfully
+
+2021-01-11 23:39:42 - [MESSAGE][PASSED] - Object 'Object Repository/Asset/Asset/assetEditpage/sourceDropdown' is present
+
+2021-01-11 23:39:42 - [MESSAGE][PASSED] - Object 'Object Repository/Asset/Asset/assetEditpage/sourceDropdown' is visible
+
+2021-01-11 23:39:42 - [MESSAGE][PASSED] - Object 'Object Repository/Asset/Asset/assetEditpage/sourceDropdown' is clickable
+
+2021-01-11 23:39:43 - [MESSAGE][PASSED] - Object: 'Object Repository/Asset/Asset/assetEditpage/sourceDropdown' is clicked on
+
+2021-01-11 23:39:44 - [MESSAGE][PASSED] - Object 'Object Repository/Asset/Asset/assetEditpage/sourceCount' is present
+
+2021-01-11 23:39:44 - [MESSAGE][PASSED] - Object 'Object Repository/Asset/Asset/assetEditpage/randomSource(index)' is present
+
+2021-01-11 23:39:45 - [MESSAGE][PASSED] - Object 'Object Repository/Asset/Asset/assetEditpage/randomSource(index)' is visible
+
+2021-01-11 23:39:45 - [MESSAGE][PASSED] - Object 'Object Repository/Asset/Asset/assetEditpage/randomSource(index)' is clickable
+
+2021-01-11 23:39:45 - [MESSAGE][PASSED] - Object: 'Object Repository/Asset/Asset/assetEditpage/randomSource(index)' is clicked on
+
+2021-01-11 23:39:46 - [MESSAGE][PASSED] - Text of object 'Object Repository/Asset/Asset/assetEditpage/randomSource(index)' is: 'zimmychu1'
+
+2021-01-11 23:39:46 - [MESSAGE][PASSED] - Object 'Object Repository/Asset/Asset/assetEditpage/Save' is present
+
+2021-01-11 23:39:47 - [MESSAGE][PASSED] - Object 'Object Repository/Asset/Asset/assetEditpage/Save' is visible
+
+2021-01-11 23:39:47 - [MESSAGE][PASSED] - Object 'Object Repository/Asset/Asset/assetEditpage/Save' is clickable
+
+2021-01-11 23:39:47 - [MESSAGE][PASSED] - Object: 'Object Repository/Asset/Asset/assetEditpage/Save' is clicked on
+
+2021-01-11 23:39:48 - [MESSAGE][PASSED] - Object 'Object Repository/Asset/Asset/assetEditpage/close' is present
+
+2021-01-11 23:39:48 - [MESSAGE][PASSED] - Object 'Object Repository/Asset/Asset/assetEditpage/close' is visible
+
+2021-01-11 23:39:49 - [MESSAGE][PASSED] - Object 'Object Repository/Asset/Asset/assetEditpage/close' is clickable
+
+2021-01-11 23:39:49 - [MESSAGE][PASSED] - Object: 'Object Repository/Asset/Asset/assetEditpage/close' is clicked on
+
+2021-01-11 23:39:49 - [MESSAGE][PASSED] - pages.Asset.editSourceInAssetEditPage is PASSED
+
+2021-01-11 23:39:49 - [TEST_STEP][PASSED] - assetName = assetName: null
+
+2021-01-11 23:39:49 - [TEST_STEP][PASSED] - sourceName = sourceName: null
+
+2021-01-11 23:39:49 - [TEST_STEP][PASSED] - pages.Asset.verifySourceInEditAssetPage(assetName, sourceName): pages.Asset.verifySourceInEditAssetPage is PASSED
+
+2021-01-11 23:39:50 - [MESSAGE][PASSED] - Object 'Object Repository/Asset/Asset/AssetPageElements/search' is present
+
+2021-01-11 23:39:50 - [MESSAGE][PASSED] - Object 'Object Repository/Asset/Asset/AssetPageElements/search' is visible
+
+2021-01-11 23:39:51 - [MESSAGE][PASSED] - Object 'Object Repository/Asset/Asset/AssetPageElements/search' is clickable
+
+2021-01-11 23:39:52 - [MESSAGE][PASSED] - Text of object 'Object Repository/Asset/Asset/AssetPageElements/search' is cleared
+
+2021-01-11 23:39:52 - [MESSAGE][PASSED] - Keys 'Author724' sent to object: 'Object Repository/Asset/Asset/AssetPageElements/search'
+
+2021-01-11 23:39:52 - [MESSAGE][PASSED] - Wait for page load successfully
+
+2021-01-11 23:39:56 - [MESSAGE][PASSED] - Object 'Object Repository/Asset/Asset/anyAsset(assetName)' is present
+
+2021-01-11 23:39:56 - [MESSAGE][PASSED] - Object 'Object Repository/Asset/Asset/anyAsset(assetName)' is visible
+
+2021-01-11 23:39:57 - [MESSAGE][PASSED] - Object 'Object Repository/Asset/Asset/anyAsset(assetName)' is clickable
+
+2021-01-11 23:39:57 - [MESSAGE][PASSED] - Object: 'Object Repository/Asset/Asset/anyAsset(assetName)' is clicked on
+
+2021-01-11 23:39:58 - [MESSAGE][PASSED] - Object 'Object Repository/Asset/Asset/assetEditpage/sourceName(sourceName)' is present
+
+2021-01-11 23:39:58 - [MESSAGE][PASSED] - pages.Asset.verifySourceInEditAssetPage is PASSED]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Admin/Asset/functionalityOfCancelButtonInAddAssetPopup" time="21.254" classname="Test Cases/Admin/Asset/functionalityOfCancelButtonInAddAssetPopup" status="PASSED">
+         <system-out><![CDATA[2021-01-11 23:39:58 - [TEST_CASE][PASSED] - Test Cases/Admin/Asset/functionalityOfCancelButtonInAddAssetPopup: Test Cases/Admin/Asset/functionalityOfCancelButtonInAddAssetPopup
+
+2021-01-11 23:39:59 - [TEST_STEP][PASSED] - pages.Asset.clickAssetTab(): pages.Asset.clickAssetTab is PASSED
+
+2021-01-11 23:39:59 - [MESSAGE][PASSED] - Object 'Object Repository/Asset/Asset/AssetPageElements/assetTab' is present
+
+2021-01-11 23:39:59 - [MESSAGE][PASSED] - Object 'Object Repository/Asset/Asset/AssetPageElements/assetTab' is visible
+
+2021-01-11 23:40:00 - [MESSAGE][PASSED] - Object 'Object Repository/Asset/Asset/AssetPageElements/assetTab' is clickable
+
+2021-01-11 23:40:00 - [MESSAGE][PASSED] - Object: 'Object Repository/Asset/Asset/AssetPageElements/assetTab' is clicked on
+
+2021-01-11 23:40:10 - [MESSAGE][PASSED] - Delayed 10 second(s)
+
+2021-01-11 23:40:10 - [MESSAGE][PASSED] - pages.Asset.clickAssetTab is PASSED
+
+2021-01-11 23:40:10 - [TEST_STEP][PASSED] - assetName = pages.Asset.cancelButtonInAddAssetPopup(): pages.Asset.cancelButtonInAddAssetPopup is PASSED
+
+2021-01-11 23:40:10 - [MESSAGE][PASSED] - Object 'Object Repository/Asset/Asset/AssetPageElements/AddAssetButton' is present
+
+2021-01-11 23:40:11 - [MESSAGE][PASSED] - Object 'Object Repository/Asset/Asset/AssetPageElements/AddAssetButton' is visible
+
+2021-01-11 23:40:11 - [MESSAGE][PASSED] - Object 'Object Repository/Asset/Asset/AssetPageElements/AddAssetButton' is clickable
+
+2021-01-11 23:40:11 - [MESSAGE][PASSED] - Object: 'Object Repository/Asset/Asset/AssetPageElements/AddAssetButton' is clicked on
+
+2021-01-11 23:40:12 - [MESSAGE][PASSED] - Object 'Object Repository/Asset/Asset/addAsset/Author' is present
+
+2021-01-11 23:40:13 - [MESSAGE][PASSED] - Object 'Object Repository/Asset/Asset/addAsset/Author' is visible
+
+2021-01-11 23:40:13 - [MESSAGE][PASSED] - Object 'Object Repository/Asset/Asset/addAsset/Author' is clickable
+
+2021-01-11 23:40:13 - [MESSAGE][PASSED] - Text of object 'Object Repository/Asset/Asset/addAsset/Author' is cleared
+
+2021-01-11 23:40:14 - [MESSAGE][PASSED] - Keys 'Author78' sent to object: 'Object Repository/Asset/Asset/addAsset/Author'
+
+2021-01-11 23:40:14 - [MESSAGE][PASSED] - Object 'Object Repository/Asset/Asset/addAsset/cancelButton' is present
+
+2021-01-11 23:40:14 - [MESSAGE][PASSED] - Object 'Object Repository/Asset/Asset/addAsset/cancelButton' is visible
+
+2021-01-11 23:40:15 - [MESSAGE][PASSED] - Object 'Object Repository/Asset/Asset/addAsset/cancelButton' is clickable
+
+2021-01-11 23:40:15 - [MESSAGE][PASSED] - Object: 'Object Repository/Asset/Asset/addAsset/cancelButton' is clicked on
+
+2021-01-11 23:40:15 - [MESSAGE][PASSED] - pages.Asset.cancelButtonInAddAssetPopup is PASSED
+
+2021-01-11 23:40:15 - [TEST_STEP][PASSED] - pages.Asset.VerifyAssetNotPresent(assetName): pages.Asset.VerifyAssetNotPresent is PASSED
+
+2021-01-11 23:40:15 - [MESSAGE][PASSED] - Object 'Object Repository/Asset/Asset/AssetPageElements/search' is present
+
+2021-01-11 23:40:16 - [MESSAGE][PASSED] - Object 'Object Repository/Asset/Asset/AssetPageElements/search' is visible
+
+2021-01-11 23:40:16 - [MESSAGE][PASSED] - Object 'Object Repository/Asset/Asset/AssetPageElements/search' is clickable
+
+2021-01-11 23:40:16 - [MESSAGE][PASSED] - Text of object 'Object Repository/Asset/Asset/AssetPageElements/search' is cleared
+
+2021-01-11 23:40:17 - [MESSAGE][PASSED] - Keys 'Author78' sent to object: 'Object Repository/Asset/Asset/AssetPageElements/search'
+
+2021-01-11 23:40:17 - [MESSAGE][PASSED] - Wait for page load successfully
+
+2021-01-11 23:40:20 - [MESSAGE][PASSED] - Web element with id: 'Object Repository/Asset/Asset/assetname(assetName)' located by 'By.xpath: //div[text()='Author78']' is not present after '30' second(s)
+
+2021-01-11 23:40:20 - [MESSAGE][PASSED] - pages.Asset.VerifyAssetNotPresent is PASSED]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Admin/Asset/functionalityOfCloseButtonandVerify" time="29.399" classname="Test Cases/Admin/Asset/functionalityOfCloseButtonandVerify" status="PASSED">
+         <system-out><![CDATA[2021-01-11 23:40:20 - [TEST_CASE][PASSED] - Test Cases/Admin/Asset/functionalityOfCloseButtonandVerify: Test Cases/Admin/Asset/functionalityOfCloseButtonandVerify
+
+2021-01-11 23:40:20 - [TEST_STEP][PASSED] - pages.Asset.clickAssetTab(): pages.Asset.clickAssetTab is PASSED
+
+2021-01-11 23:40:20 - [MESSAGE][PASSED] - Object 'Object Repository/Asset/Asset/AssetPageElements/assetTab' is present
+
+2021-01-11 23:40:20 - [MESSAGE][PASSED] - Object 'Object Repository/Asset/Asset/AssetPageElements/assetTab' is visible
+
+2021-01-11 23:40:21 - [MESSAGE][PASSED] - Object 'Object Repository/Asset/Asset/AssetPageElements/assetTab' is clickable
+
+2021-01-11 23:40:21 - [MESSAGE][PASSED] - Object: 'Object Repository/Asset/Asset/AssetPageElements/assetTab' is clicked on
+
+2021-01-11 23:40:31 - [MESSAGE][PASSED] - Delayed 10 second(s)
+
+2021-01-11 23:40:31 - [MESSAGE][PASSED] - pages.Asset.clickAssetTab is PASSED
+
+2021-01-11 23:40:31 - [TEST_STEP][PASSED] - pages.Asset.closeButtonInAssetEditPage(): pages.Asset.closeButtonInAssetEditPage is PASSED
+
+2021-01-11 23:40:31 - [MESSAGE][PASSED] - Wait for page load successfully
+
+2021-01-11 23:40:32 - [MESSAGE][PASSED] - Object 'Object Repository/Asset/Asset/AssetCount' is present
+
+2021-01-11 23:40:32 - [MESSAGE][PASSED] - Text of object 'Object Repository/Asset/Asset/randomAsset(index)' is: 'Author929'
+
+2021-01-11 23:40:32 - [MESSAGE][PASSED] - Object 'Object Repository/Asset/Asset/AssetPageElements/search' is present
+
+2021-01-11 23:40:33 - [MESSAGE][PASSED] - Object 'Object Repository/Asset/Asset/AssetPageElements/search' is visible
+
+2021-01-11 23:40:33 - [MESSAGE][PASSED] - Object 'Object Repository/Asset/Asset/AssetPageElements/search' is clickable
+
+2021-01-11 23:40:33 - [MESSAGE][PASSED] - Text of object 'Object Repository/Asset/Asset/AssetPageElements/search' is cleared
+
+2021-01-11 23:40:34 - [MESSAGE][PASSED] - Keys 'Author929' sent to object: 'Object Repository/Asset/Asset/AssetPageElements/search'
+
+2021-01-11 23:40:34 - [MESSAGE][PASSED] - Wait for page load successfully
+
+2021-01-11 23:40:35 - [MESSAGE][PASSED] - Object 'Object Repository/Asset/Asset/assetname(assetName)' is present
+
+2021-01-11 23:40:36 - [MESSAGE][PASSED] - Object 'Object Repository/Asset/Asset/assetname(assetName)' is visible
+
+2021-01-11 23:40:37 - [MESSAGE][PASSED] - Object 'Object Repository/Asset/Asset/assetname(assetName)' is clickable
+
+2021-01-11 23:40:37 - [MESSAGE][PASSED] - Object: 'Object Repository/Asset/Asset/assetname(assetName)' is clicked on
+
+2021-01-11 23:40:38 - [MESSAGE][PASSED] - Object 'Object Repository/Asset/Asset/assetEditpage/close' is present
+
+2021-01-11 23:40:38 - [MESSAGE][PASSED] - Object 'Object Repository/Asset/Asset/assetEditpage/close' is visible
+
+2021-01-11 23:40:39 - [MESSAGE][PASSED] - Object 'Object Repository/Asset/Asset/assetEditpage/close' is clickable
+
+2021-01-11 23:40:39 - [MESSAGE][PASSED] - Object: 'Object Repository/Asset/Asset/assetEditpage/close' is clicked on
+
+2021-01-11 23:40:39 - [MESSAGE][PASSED] - pages.Asset.closeButtonInAssetEditPage is PASSED
+
+2021-01-11 23:40:39 - [TEST_STEP][PASSED] - verification.Verification.getUrlAndVerify("dashboard", "cancel button is not working"): verification.Verification.getUrlAndVerify is PASSED
+
+2021-01-11 23:40:49 - [MESSAGE][PASSED] - Delayed 10 second(s)
+
+2021-01-11 23:40:49 - [MESSAGE][PASSED] - Current window's url is: 'https://dev-admin.modist.co/dashboard'
+
+2021-01-11 23:40:49 - [MESSAGE][PASSED] - verification.Verification.getUrlAndVerify is PASSED]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Admin/Asset/functionalityOfSearcBoxWithInvalidDetails" time="15.729" classname="Test Cases/Admin/Asset/functionalityOfSearcBoxWithInvalidDetails" status="PASSED">
+         <system-out><![CDATA[2021-01-11 23:40:49 - [TEST_CASE][PASSED] - Test Cases/Admin/Asset/functionalityOfSearcBoxWithInvalidDetails: Test Cases/Admin/Asset/functionalityOfSearcBoxWithInvalidDetails
+
+2021-01-11 23:40:49 - [TEST_STEP][PASSED] - pages.Asset.clickAssetTab(): pages.Asset.clickAssetTab is PASSED
+
+2021-01-11 23:40:50 - [MESSAGE][PASSED] - Object 'Object Repository/Asset/Asset/AssetPageElements/assetTab' is present
+
+2021-01-11 23:40:50 - [MESSAGE][PASSED] - Object 'Object Repository/Asset/Asset/AssetPageElements/assetTab' is visible
+
+2021-01-11 23:40:50 - [MESSAGE][PASSED] - Object 'Object Repository/Asset/Asset/AssetPageElements/assetTab' is clickable
+
+2021-01-11 23:40:51 - [MESSAGE][PASSED] - Object: 'Object Repository/Asset/Asset/AssetPageElements/assetTab' is clicked on
+
+2021-01-11 23:41:01 - [MESSAGE][PASSED] - Delayed 10 second(s)
+
+2021-01-11 23:41:01 - [MESSAGE][PASSED] - pages.Asset.clickAssetTab is PASSED
+
+2021-01-11 23:41:01 - [TEST_STEP][PASSED] - assetName = pages.Asset.getRandomAssetName(): pages.Asset.getRandomAssetName is PASSED
+
+2021-01-11 23:41:01 - [MESSAGE][PASSED] - Wait for page load successfully
+
+2021-01-11 23:41:01 - [MESSAGE][PASSED] - Object 'Object Repository/Asset/Asset/AssetCount' is present
+
+2021-01-11 23:41:02 - [MESSAGE][PASSED] - Text of object 'Object Repository/Asset/Asset/randomAsset(index)' is: ''
+
+2021-01-11 23:41:02 - [MESSAGE][PASSED] - Text of object 'Object Repository/Asset/Asset/randomAsset(index)' is: ''
+
+2021-01-11 23:41:03 - [MESSAGE][PASSED] - Text of object 'Object Repository/Asset/Asset/randomAsset(index)' is: 'Author142'
+
+2021-01-11 23:41:03 - [MESSAGE][PASSED] - pages.Asset.getRandomAssetName is PASSED
+
+2021-01-11 23:41:03 - [TEST_STEP][PASSED] - assetName = assetName + "1": null
+
+2021-01-11 23:41:03 - [TEST_STEP][PASSED] - pages.Asset.VerifyAssetNotPresent(assetName): pages.Asset.VerifyAssetNotPresent is PASSED
+
+2021-01-11 23:41:03 - [MESSAGE][PASSED] - Object 'Object Repository/Asset/Asset/AssetPageElements/search' is present
+
+2021-01-11 23:41:03 - [MESSAGE][PASSED] - Object 'Object Repository/Asset/Asset/AssetPageElements/search' is visible
+
+2021-01-11 23:41:04 - [MESSAGE][PASSED] - Object 'Object Repository/Asset/Asset/AssetPageElements/search' is clickable
+
+2021-01-11 23:41:04 - [MESSAGE][PASSED] - Text of object 'Object Repository/Asset/Asset/AssetPageElements/search' is cleared
+
+2021-01-11 23:41:04 - [MESSAGE][PASSED] - Keys 'Author1421' sent to object: 'Object Repository/Asset/Asset/AssetPageElements/search'
+
+2021-01-11 23:41:04 - [MESSAGE][PASSED] - Wait for page load successfully
+
+2021-01-11 23:41:05 - [MESSAGE][PASSED] - Web element with id: 'Object Repository/Asset/Asset/assetname(assetName)' located by 'By.xpath: //div[text()='Author1421']' is not present after '30' second(s)
+
+2021-01-11 23:41:05 - [MESSAGE][PASSED] - pages.Asset.VerifyAssetNotPresent is PASSED]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Admin/Asset/functionalityOfSearchBoxwithValidDetails" time="15.162" classname="Test Cases/Admin/Asset/functionalityOfSearchBoxwithValidDetails" status="PASSED">
+         <system-out><![CDATA[2021-01-11 23:41:05 - [TEST_CASE][PASSED] - Test Cases/Admin/Asset/functionalityOfSearchBoxwithValidDetails: Test Cases/Admin/Asset/functionalityOfSearchBoxwithValidDetails
+
+2021-01-11 23:41:05 - [TEST_STEP][PASSED] - pages.Asset.clickAssetTab(): pages.Asset.clickAssetTab is PASSED
+
+2021-01-11 23:41:05 - [MESSAGE][PASSED] - Object 'Object Repository/Asset/Asset/AssetPageElements/assetTab' is present
+
+2021-01-11 23:41:06 - [MESSAGE][PASSED] - Object 'Object Repository/Asset/Asset/AssetPageElements/assetTab' is visible
+
+2021-01-11 23:41:06 - [MESSAGE][PASSED] - Object 'Object Repository/Asset/Asset/AssetPageElements/assetTab' is clickable
+
+2021-01-11 23:41:07 - [MESSAGE][PASSED] - Object: 'Object Repository/Asset/Asset/AssetPageElements/assetTab' is clicked on
+
+2021-01-11 23:41:17 - [MESSAGE][PASSED] - Delayed 10 second(s)
+
+2021-01-11 23:41:17 - [MESSAGE][PASSED] - pages.Asset.clickAssetTab is PASSED
+
+2021-01-11 23:41:17 - [TEST_STEP][PASSED] - assetName = pages.Asset.getRandomAssetName(): pages.Asset.getRandomAssetName is PASSED
+
+2021-01-11 23:41:17 - [MESSAGE][PASSED] - Wait for page load successfully
+
+2021-01-11 23:41:17 - [MESSAGE][PASSED] - Object 'Object Repository/Asset/Asset/AssetCount' is present
+
+2021-01-11 23:41:18 - [MESSAGE][PASSED] - Text of object 'Object Repository/Asset/Asset/randomAsset(index)' is: 'Author142'
+
+2021-01-11 23:41:18 - [MESSAGE][PASSED] - pages.Asset.getRandomAssetName is PASSED
+
+2021-01-11 23:41:18 - [TEST_STEP][PASSED] - pages.Asset.VerifyAssetIsPresent(assetName): pages.Asset.VerifyAssetIsPresent is PASSED
+
+2021-01-11 23:41:18 - [MESSAGE][PASSED] - Object 'Object Repository/Asset/Asset/AssetPageElements/search' is present
+
+2021-01-11 23:41:19 - [MESSAGE][PASSED] - Object 'Object Repository/Asset/Asset/AssetPageElements/search' is visible
+
+2021-01-11 23:41:19 - [MESSAGE][PASSED] - Object 'Object Repository/Asset/Asset/AssetPageElements/search' is clickable
+
+2021-01-11 23:41:19 - [MESSAGE][PASSED] - Text of object 'Object Repository/Asset/Asset/AssetPageElements/search' is cleared
+
+2021-01-11 23:41:20 - [MESSAGE][PASSED] - Keys 'Author142' sent to object: 'Object Repository/Asset/Asset/AssetPageElements/search'
+
+2021-01-11 23:41:20 - [MESSAGE][PASSED] - Wait for page load successfully
+
+2021-01-11 23:41:20 - [MESSAGE][PASSED] - Object 'Object Repository/Asset/Asset/assetname(assetName)' is present
+
+2021-01-11 23:41:20 - [MESSAGE][PASSED] - pages.Asset.VerifyAssetIsPresent is PASSED]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Admin/Asset/VerifyAssetPage" time="16.331" classname="Test Cases/Admin/Asset/VerifyAssetPage" status="PASSED">
+         <system-out><![CDATA[2021-01-11 23:41:20 - [TEST_CASE][PASSED] - Test Cases/Admin/Asset/VerifyAssetPage: Test Cases/Admin/Asset/VerifyAssetPage
+
+2021-01-11 23:41:20 - [TEST_STEP][PASSED] - pages.Asset.clickAssetTab(): pages.Asset.clickAssetTab is PASSED
+
+2021-01-11 23:41:21 - [MESSAGE][PASSED] - Object 'Object Repository/Asset/Asset/AssetPageElements/assetTab' is present
+
+2021-01-11 23:41:23 - [MESSAGE][PASSED] - Object 'Object Repository/Asset/Asset/AssetPageElements/assetTab' is visible
+
+2021-01-11 23:41:23 - [MESSAGE][PASSED] - Object 'Object Repository/Asset/Asset/AssetPageElements/assetTab' is clickable
+
+2021-01-11 23:41:24 - [MESSAGE][PASSED] - Object: 'Object Repository/Asset/Asset/AssetPageElements/assetTab' is clicked on
+
+2021-01-11 23:41:34 - [MESSAGE][PASSED] - Delayed 10 second(s)
+
+2021-01-11 23:41:34 - [MESSAGE][PASSED] - pages.Asset.clickAssetTab is PASSED
+
+2021-01-11 23:41:34 - [TEST_STEP][PASSED] - pages.Asset.verifyAssetPage(): pages.Asset.verifyAssetPage is PASSED
+
+2021-01-11 23:41:34 - [MESSAGE][PASSED] - Object 'Object Repository/Asset/Asset/AssetPageElements/AddAssetButton' is present
+
+2021-01-11 23:41:35 - [MESSAGE][PASSED] - Object 'Object Repository/Asset/Asset/AssetPageElements/filterByName' is present
+
+2021-01-11 23:41:35 - [MESSAGE][PASSED] - Object 'Object Repository/Asset/Asset/AssetPageElements/sourceTab' is present
+
+2021-01-11 23:41:35 - [MESSAGE][PASSED] - Object 'Object Repository/Asset/Asset/AssetPageElements/created' is present
+
+2021-01-11 23:41:36 - [MESSAGE][PASSED] - Object 'Object Repository/Asset/Asset/AssetPageElements/updated' is present
+
+2021-01-11 23:41:36 - [MESSAGE][PASSED] - Object 'Object Repository/Asset/Asset/AssetPageElements/Autor' is present
+
+2021-01-11 23:41:36 - [MESSAGE][PASSED] - Object 'Object Repository/Asset/Asset/AssetPageElements/content' is present
+
+2021-01-11 23:41:36 - [MESSAGE][PASSED] - pages.Asset.verifyAssetPage is PASSED]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Admin/Asset/verifyElementsInAddAssetPopUp" time="26.89" classname="Test Cases/Admin/Asset/verifyElementsInAddAssetPopUp" status="PASSED">
+         <system-out><![CDATA[2021-01-11 23:41:36 - [TEST_CASE][PASSED] - Test Cases/Admin/Asset/verifyElementsInAddAssetPopUp: Test Cases/Admin/Asset/verifyElementsInAddAssetPopUp
+
+2021-01-11 23:41:36 - [TEST_STEP][PASSED] - pages.Asset.clickAssetTab(): pages.Asset.clickAssetTab is PASSED
+
+2021-01-11 23:41:37 - [MESSAGE][PASSED] - Object 'Object Repository/Asset/Asset/AssetPageElements/assetTab' is present
+
+2021-01-11 23:41:37 - [MESSAGE][PASSED] - Object 'Object Repository/Asset/Asset/AssetPageElements/assetTab' is visible
+
+2021-01-11 23:41:37 - [MESSAGE][PASSED] - Object 'Object Repository/Asset/Asset/AssetPageElements/assetTab' is clickable
+
+2021-01-11 23:41:38 - [MESSAGE][PASSED] - Object: 'Object Repository/Asset/Asset/AssetPageElements/assetTab' is clicked on
+
+2021-01-11 23:41:48 - [MESSAGE][PASSED] - Delayed 10 second(s)
+
+2021-01-11 23:41:48 - [MESSAGE][PASSED] - pages.Asset.clickAssetTab is PASSED
+
+2021-01-11 23:41:48 - [TEST_STEP][PASSED] - pages.Asset.verifyAddAssetPopUp(): pages.Asset.verifyAddAssetPopUp is PASSED
+
+2021-01-11 23:41:48 - [MESSAGE][PASSED] - Object 'Object Repository/Asset/Asset/AssetPageElements/assetTab' is present
+
+2021-01-11 23:41:48 - [MESSAGE][PASSED] - Object 'Object Repository/Asset/Asset/AssetPageElements/assetTab' is visible
+
+2021-01-11 23:41:49 - [MESSAGE][PASSED] - Object 'Object Repository/Asset/Asset/AssetPageElements/assetTab' is clickable
+
+2021-01-11 23:41:49 - [MESSAGE][PASSED] - Object: 'Object Repository/Asset/Asset/AssetPageElements/assetTab' is clicked on
+
+2021-01-11 23:41:59 - [MESSAGE][PASSED] - Delayed 10 second(s)
+
+2021-01-11 23:41:59 - [MESSAGE][PASSED] - Object 'Object Repository/Asset/Asset/AssetPageElements/AddAssetButton' is present
+
+2021-01-11 23:42:00 - [MESSAGE][PASSED] - Object 'Object Repository/Asset/Asset/AssetPageElements/AddAssetButton' is visible
+
+2021-01-11 23:42:00 - [MESSAGE][PASSED] - Object 'Object Repository/Asset/Asset/AssetPageElements/AddAssetButton' is clickable
+
+2021-01-11 23:42:00 - [MESSAGE][PASSED] - Object: 'Object Repository/Asset/Asset/AssetPageElements/AddAssetButton' is clicked on
+
+2021-01-11 23:42:01 - [MESSAGE][PASSED] - Object 'Object Repository/Asset/Asset/AddAssetPopEle/Author' is present
+
+2021-01-11 23:42:02 - [MESSAGE][PASSED] - Object 'Object Repository/Asset/Asset/AddAssetPopEle/Quote' is present
+
+2021-01-11 23:42:02 - [MESSAGE][PASSED] - Object 'Object Repository/Asset/Asset/AddAssetPopEle/AssetUrl' is present
+
+2021-01-11 23:42:02 - [MESSAGE][PASSED] - Object 'Object Repository/Asset/Asset/AddAssetPopEle/UploadPhoto' is present
+
+2021-01-11 23:42:02 - [MESSAGE][PASSED] - Object 'Object Repository/Asset/Asset/AddAssetPopEle/Tenant' is present
+
+2021-01-11 23:42:03 - [MESSAGE][PASSED] - Object 'Object Repository/Asset/Asset/AddAssetPopEle/Cancel' is present
+
+2021-01-11 23:42:03 - [MESSAGE][PASSED] - Object 'Object Repository/Asset/Asset/AddAssetPopEle/AddAsset' is present
+
+2021-01-11 23:42:03 - [MESSAGE][PASSED] - pages.Asset.verifyAddAssetPopUp is PASSED]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Admin/Asset/VerifyElementsInAssetEditPage" time="3.05" classname="Test Cases/Admin/Asset/VerifyElementsInAssetEditPage" status="FAILED">
+         <failure type="FAILED" message="Test Cases/Admin/Asset/VerifyElementsInAssetEditPage FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Unable to click on object 'Object Repository/Asset/Asset/AssetPageElements/assetTab'
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:26)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.click(ClickKeyword.groovy:76)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.execute(ClickKeyword.groovy:43)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:73)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.click(WebUiBuiltInKeywords.groovy:617)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$click$7.call(Unknown Source)
+	at webAction.WebAction.click(WebAction.groovy:25)
+	at webAction.WebAction$click$1.call(Unknown Source)
+	at pages.Asset.clickAssetTab(Asset.groovy:25)
+	at pages.Asset.invokeMethod(Asset.groovy)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:50)
+	at VerifyElementsInAssetEditPage.run(VerifyElementsInAssetEditPage:18)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:339)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:330)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:309)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:301)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:235)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:191)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:141)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:90)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1610426262377.run(TempTestSuite1610426262377.groovy:39)
+Caused by: org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;a>...&lt;/a> is not clickable at point (1046, 29). Other element would receive the click: &lt;div role=&quot;dialog&quot; aria-modal=&quot;true&quot; class=&quot;fade modal show&quot; tabindex=&quot;-1&quot; style=&quot;display: block;&quot;>...&lt;/div>
+  (Session info: chrome=87.0.4280.141)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: 'DESKTOP-H3LAPEO', ip: '192.168.43.128', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_181'
+Driver info: com.kms.katalon.selenium.driver.CChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 87.0.4280.141, chrome: {chromedriverVersion: 87.0.4280.88 (89e2380a3e36c..., userDataDir: C:\Users\Lenovo\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:58976}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 9e5c9e992060705c0423c915d281132a
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at com.kms.katalon.selenium.driver.CChromeDriver.execute(CChromeDriver.java:19)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement.lambda$new$0(EventFiringWebDriver.java:404)
+	at com.sun.proxy.$Proxy11.click(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement.click(EventFiringWebDriver.java:417)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword$_click_closure1.doCall(ClickKeyword.groovy:69)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword$_click_closure1.call(ClickKeyword.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:20)
+	... 24 more
+"/>
+         <system-out><![CDATA[2021-01-11 23:42:03 - [TEST_CASE][FAILED] - Test Cases/Admin/Asset/VerifyElementsInAssetEditPage: Test Cases/Admin/Asset/VerifyElementsInAssetEditPage FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Unable to click on object 'Object Repository/Asset/Asset/AssetPageElements/assetTab'
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:26)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.click(ClickKeyword.groovy:76)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.execute(ClickKeyword.groovy:43)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:73)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.click(WebUiBuiltInKeywords.groovy:617)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$click$7.call(Unknown Source)
+	at webAction.WebAction.click(WebAction.groovy:25)
+	at webAction.WebAction$click$1.call(Unknown Source)
+	at pages.Asset.clickAssetTab(Asset.groovy:25)
+	at pages.Asset.invokeMethod(Asset.groovy)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:50)
+	at VerifyElementsInAssetEditPage.run(VerifyElementsInAssetEditPage:18)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:339)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:330)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:309)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:301)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:235)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:191)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:141)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:90)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1610426262377.run(TempTestSuite1610426262377.groovy:39)
+Caused by: org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <a>...</a> is not clickable at point (1046, 29). Other element would receive the click: <div role="dialog" aria-modal="true" class="fade modal show" tabindex="-1" style="display: block;">...</div>
+  (Session info: chrome=87.0.4280.141)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: 'DESKTOP-H3LAPEO', ip: '192.168.43.128', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_181'
+Driver info: com.kms.katalon.selenium.driver.CChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 87.0.4280.141, chrome: {chromedriverVersion: 87.0.4280.88 (89e2380a3e36c..., userDataDir: C:\Users\Lenovo\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:58976}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 9e5c9e992060705c0423c915d281132a
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at com.kms.katalon.selenium.driver.CChromeDriver.execute(CChromeDriver.java:19)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement.lambda$new$0(EventFiringWebDriver.java:404)
+	at com.sun.proxy.$Proxy11.click(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement.click(EventFiringWebDriver.java:417)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword$_click_closure1.doCall(ClickKeyword.groovy:69)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword$_click_closure1.call(ClickKeyword.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:20)
+	... 24 more
+
+
+2021-01-11 23:42:03 - [TEST_STEP][FAILED] - pages.Asset.clickAssetTab(): Unable to click on object 'Object Repository/Asset/Asset/AssetPageElements/assetTab'
+
+2021-01-11 23:42:04 - [MESSAGE][PASSED] - Object 'Object Repository/Asset/Asset/AssetPageElements/assetTab' is present
+
+2021-01-11 23:42:04 - [MESSAGE][PASSED] - Object 'Object Repository/Asset/Asset/AssetPageElements/assetTab' is visible
+
+2021-01-11 23:42:04 - [MESSAGE][PASSED] - Object 'Object Repository/Asset/Asset/AssetPageElements/assetTab' is clickable
+
+2021-01-11 23:42:06 - [MESSAGE][FAILED] - Unable to click on object 'Object Repository/Asset/Asset/AssetPageElements/assetTab' (Root cause: com.kms.katalon.core.exception.StepFailedException: Unable to click on object 'Object Repository/Asset/Asset/AssetPageElements/assetTab'
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:26)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.click(ClickKeyword.groovy:76)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.execute(ClickKeyword.groovy:43)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:73)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.click(WebUiBuiltInKeywords.groovy:617)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$click$7.call(Unknown Source)
+	at webAction.WebAction.click(WebAction.groovy:25)
+	at webAction.WebAction$click$1.call(Unknown Source)
+	at pages.Asset.clickAssetTab(Asset.groovy:25)
+	at pages.Asset.invokeMethod(Asset.groovy)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:50)
+	at VerifyElementsInAssetEditPage.run(VerifyElementsInAssetEditPage:18)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:339)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:330)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:309)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:301)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:235)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:191)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:141)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:90)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1610426262377.run(TempTestSuite1610426262377.groovy:39)
+Caused by: org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <a>...</a> is not clickable at point (1046, 29). Other element would receive the click: <div role="dialog" aria-modal="true" class="fade modal show" tabindex="-1" style="display: block;">...</div>
+  (Session info: chrome=87.0.4280.141)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: 'DESKTOP-H3LAPEO', ip: '192.168.43.128', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_181'
+Driver info: com.kms.katalon.selenium.driver.CChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 87.0.4280.141, chrome: {chromedriverVersion: 87.0.4280.88 (89e2380a3e36c..., userDataDir: C:\Users\Lenovo\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:58976}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 9e5c9e992060705c0423c915d281132a
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at com.kms.katalon.selenium.driver.CChromeDriver.execute(CChromeDriver.java:19)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement.lambda$new$0(EventFiringWebDriver.java:404)
+	at com.sun.proxy.$Proxy11.click(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement.click(EventFiringWebDriver.java:417)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword$_click_closure1.doCall(ClickKeyword.groovy:69)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword$_click_closure1.call(ClickKeyword.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:20)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.click(ClickKeyword.groovy:76)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.execute(ClickKeyword.groovy:43)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:73)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.click(WebUiBuiltInKeywords.groovy:617)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$click$7.call(Unknown Source)
+	at webAction.WebAction.click(WebAction.groovy:25)
+	at webAction.WebAction$click$1.call(Unknown Source)
+	at pages.Asset.clickAssetTab(Asset.groovy:25)
+	at pages.Asset.invokeMethod(Asset.groovy)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:50)
+	at Script1609999674410.run(Script1609999674410.groovy:18)
+	... 13 more
+)
+[[ATTACHMENT|E:\\Modist Project\\ModistProject\\Reports\\20210111_233742\\Asset\\20210111_233742\\1610426526088.png]]
+
+2021-01-11 23:42:06 - [MESSAGE][FAILED] - Unable to click on object 'Object Repository/Asset/Asset/AssetPageElements/assetTab']]></system-out>
+         <system-err><![CDATA[2021-01-11 23:42:03 - [TEST_CASE][FAILED] - Test Cases/Admin/Asset/VerifyElementsInAssetEditPage: Test Cases/Admin/Asset/VerifyElementsInAssetEditPage FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Unable to click on object 'Object Repository/Asset/Asset/AssetPageElements/assetTab'
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:26)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.click(ClickKeyword.groovy:76)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.execute(ClickKeyword.groovy:43)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:73)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.click(WebUiBuiltInKeywords.groovy:617)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$click$7.call(Unknown Source)
+	at webAction.WebAction.click(WebAction.groovy:25)
+	at webAction.WebAction$click$1.call(Unknown Source)
+	at pages.Asset.clickAssetTab(Asset.groovy:25)
+	at pages.Asset.invokeMethod(Asset.groovy)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:50)
+	at VerifyElementsInAssetEditPage.run(VerifyElementsInAssetEditPage:18)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:339)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:330)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:309)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:301)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:235)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:191)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:141)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:90)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1610426262377.run(TempTestSuite1610426262377.groovy:39)
+Caused by: org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <a>...</a> is not clickable at point (1046, 29). Other element would receive the click: <div role="dialog" aria-modal="true" class="fade modal show" tabindex="-1" style="display: block;">...</div>
+  (Session info: chrome=87.0.4280.141)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: 'DESKTOP-H3LAPEO', ip: '192.168.43.128', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_181'
+Driver info: com.kms.katalon.selenium.driver.CChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 87.0.4280.141, chrome: {chromedriverVersion: 87.0.4280.88 (89e2380a3e36c..., userDataDir: C:\Users\Lenovo\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:58976}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 9e5c9e992060705c0423c915d281132a
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at com.kms.katalon.selenium.driver.CChromeDriver.execute(CChromeDriver.java:19)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement.lambda$new$0(EventFiringWebDriver.java:404)
+	at com.sun.proxy.$Proxy11.click(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement.click(EventFiringWebDriver.java:417)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword$_click_closure1.doCall(ClickKeyword.groovy:69)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword$_click_closure1.call(ClickKeyword.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:20)
+	... 24 more]]></system-err>
+      </testcase>
+      <system-out><![CDATA[2021-01-11 23:37:44 - [TEST_SUITE][FAILED] - Asset: Test Cases/Admin/Asset/VerifyElementsInAssetEditPage FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Unable to click on object 'Object Repository/Asset/Asset/AssetPageElements/assetTab'
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:26)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.click(ClickKeyword.groovy:76)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.execute(ClickKeyword.groovy:43)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:73)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.click(WebUiBuiltInKeywords.groovy:617)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$click$7.call(Unknown Source)
+	at webAction.WebAction.click(WebAction.groovy:25)
+	at webAction.WebAction$click$1.call(Unknown Source)
+	at pages.Asset.clickAssetTab(Asset.groovy:25)
+	at pages.Asset.invokeMethod(Asset.groovy)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:50)
+	at VerifyElementsInAssetEditPage.run(VerifyElementsInAssetEditPage:18)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:339)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:330)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:309)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:301)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:235)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:191)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:141)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:90)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1610426262377.run(TempTestSuite1610426262377.groovy:39)
+Caused by: org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <a>...</a> is not clickable at point (1046, 29). Other element would receive the click: <div role="dialog" aria-modal="true" class="fade modal show" tabindex="-1" style="display: block;">...</div>
+  (Session info: chrome=87.0.4280.141)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: 'DESKTOP-H3LAPEO', ip: '192.168.43.128', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_181'
+Driver info: com.kms.katalon.selenium.driver.CChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 87.0.4280.141, chrome: {chromedriverVersion: 87.0.4280.88 (89e2380a3e36c..., userDataDir: C:\Users\Lenovo\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:58976}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 9e5c9e992060705c0423c915d281132a
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at com.kms.katalon.selenium.driver.CChromeDriver.execute(CChromeDriver.java:19)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement.lambda$new$0(EventFiringWebDriver.java:404)
+	at com.sun.proxy.$Proxy11.click(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement.click(EventFiringWebDriver.java:417)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword$_click_closure1.doCall(ClickKeyword.groovy:69)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword$_click_closure1.call(ClickKeyword.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:20)
+	... 24 more]]></system-out>
+      <system-err><![CDATA[2021-01-11 23:37:44 - [TEST_SUITE][FAILED] - Asset: Test Cases/Admin/Asset/VerifyElementsInAssetEditPage FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Unable to click on object 'Object Repository/Asset/Asset/AssetPageElements/assetTab'
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:26)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.click(ClickKeyword.groovy:76)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.execute(ClickKeyword.groovy:43)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:73)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.click(WebUiBuiltInKeywords.groovy:617)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$click$7.call(Unknown Source)
+	at webAction.WebAction.click(WebAction.groovy:25)
+	at webAction.WebAction$click$1.call(Unknown Source)
+	at pages.Asset.clickAssetTab(Asset.groovy:25)
+	at pages.Asset.invokeMethod(Asset.groovy)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:50)
+	at VerifyElementsInAssetEditPage.run(VerifyElementsInAssetEditPage:18)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:339)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:330)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:309)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:301)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:235)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:191)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:141)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:90)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1610426262377.run(TempTestSuite1610426262377.groovy:39)
+Caused by: org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <a>...</a> is not clickable at point (1046, 29). Other element would receive the click: <div role="dialog" aria-modal="true" class="fade modal show" tabindex="-1" style="display: block;">...</div>
+  (Session info: chrome=87.0.4280.141)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: 'DESKTOP-H3LAPEO', ip: '192.168.43.128', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_181'
+Driver info: com.kms.katalon.selenium.driver.CChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 87.0.4280.141, chrome: {chromedriverVersion: 87.0.4280.88 (89e2380a3e36c..., userDataDir: C:\Users\Lenovo\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:58976}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 9e5c9e992060705c0423c915d281132a
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at com.kms.katalon.selenium.driver.CChromeDriver.execute(CChromeDriver.java:19)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement.lambda$new$0(EventFiringWebDriver.java:404)
+	at com.sun.proxy.$Proxy11.click(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement.click(EventFiringWebDriver.java:417)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword$_click_closure1.doCall(ClickKeyword.groovy:69)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword$_click_closure1.call(ClickKeyword.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:20)
+	... 24 more]]></system-err>
+   </testsuite>
+</testsuites>

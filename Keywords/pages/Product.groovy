@@ -241,10 +241,10 @@ public class Product {
 
 	@Keyword
 	def changePositionOfItemInRelatedAssets(TestObject sourceObject, int noOfPositions, boolean isRightDirection) {
-		
+
 		// Navigate to product edit page
 		navigateToRelatedAssets()
-		
+
 		// Get draggable id and position of item
 		WebElement sourceElement = WebUiBuiltInKeywords.findWebElement(sourceObject);
 		def draggableid = sourceElement.getAttribute("data-rbd-draggable-id")
@@ -289,13 +289,28 @@ public class Product {
 			actions.click(findTestObject('Object Repository/journeyPortal/rightDirectionButton'))
 	}
 
-	@Keyword
+
 	def getPositionOfItem(String draggableId) {
 		List<WebElement> productAssetsList = WebUiCommonHelper.findWebElements(findTestObject('Object Repository/Product/ProductEditPage/ProductAssets/productAssetsItems'), 30)
 		for(int i=1;i<=productAssetsList.size();i++) {
 			def itemId = productAssetsList[i-1].getAttribute("data-rbd-draggable-id")
 			if(itemId.equals(draggableId))
 				return i
+		}
+	}
+
+	def getIdOfProduct(TestObject currentObject) {
+
+		// Get data-Id
+		WebElement sourceElement = WebUiBuiltInKeywords.findWebElement(currentObject);
+		def dataId = sourceElement.getAttribute("data-id")
+		return dataId
+	}
+
+	@Keyword
+	def verifyTheProductImageChange(String dataId1, String dataId2) {
+		if(!(dataId1.equals(dataId2))) {
+			KeywordUtil.markPassed("clicked successfully")
 		}
 	}
 }

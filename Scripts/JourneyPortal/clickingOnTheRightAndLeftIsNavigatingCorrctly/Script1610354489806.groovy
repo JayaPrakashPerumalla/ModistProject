@@ -32,4 +32,10 @@ CustomKeywords.'pages.JourneyPortal.openExistingSection'()
 
 CustomKeywords.'pages.JourneyPortal.openAnyProductInTheJourneyPortal'()
 
-CustomKeywords.'pages.Product.clickingLeft'()
+String dataId1 = CustomKeywords.'pages.Product.getIdOfProduct'(findTestObject('Object Repository/journeyPortal/toGetCurrentProductId'))
+
+CustomKeywords.'pages.Product.clickingRight'()
+
+String dataId2 = CustomKeywords.'pages.Product.getIdOfProduct'(findTestObject('Object Repository/journeyPortal/toGetCurrentProductId'))
+
+CustomKeywords.'pages.verifyTheProductImageChange'(dataId1, dataId2)
