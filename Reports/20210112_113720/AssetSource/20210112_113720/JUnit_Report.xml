@@ -1,0 +1,828 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="AssetSource" time="313.623" tests="7" failures="2" skips="0" errors="0">
+   <testsuite name="AssetSource" tests="7" failures="2" errors="0" time="313.623" skips="0" timestamp="2021-01-12 11:37:23" hostname="akhil - DESKTOP-3UFIQIO" id="Test Suites/AssetSource">
+      <properties>
+         <property name="deviceName" value=""/>
+         <property name="devicePlatform" value=""/>
+         <property name="logFolder" value="C:\\Modist\\ModistProject\\Reports\\20210112_113720\\AssetSource\\20210112_113720"/>
+         <property name="logFiles" value="C:\\Modist\\ModistProject\\Reports\\20210112_113720\\AssetSource\\20210112_113720\\execution0.log"/>
+         <property name="attachments" value="C:\\Modist\\ModistProject\\Reports\\20210112_113720\\AssetSource\\20210112_113720\\1610431836088.png, C:\\Modist\\ModistProject\\Reports\\20210112_113720\\AssetSource\\20210112_113720\\1610431917309.png"/>
+         <property name="hostName" value="akhil - DESKTOP-3UFIQIO"/>
+         <property name="os" value="Windows 10 64bit"/>
+         <property name="katalonVersion" value="7.8.1.208"/>
+         <property name="browser" value="Chrome 87.0.4280.88"/>
+         <property name="hostAddress" value="192.168.43.196"/>
+         <property name="sessionId" value="db0e4e773dc4e1d4705586bbf3e8ddc2"/>
+         <property name="seleniumVersion" value="3.141.59"/>
+         <property name="proxyInformation" value="ProxyInformation { proxyOption=NO_PROXY, proxyServerType=HTTP, username=, password=********, proxyServerAddress=, proxyServerPort=0, executionList=&quot;&quot;, isApplyToDesiredCapabilities=true }"/>
+         <property name="platform" value="Windows 10"/>
+      </properties>
+      <testcase name="Test Cases/Admin/AssetSource/Add An AssetSource" time="21.2" classname="Test Cases/Admin/AssetSource/Add An AssetSource" status="PASSED">
+         <system-out><![CDATA[2021-01-12 11:37:55 - [TEST_CASE][PASSED] - Test Cases/Admin/AssetSource/Add An AssetSource: Test Cases/Admin/AssetSource/Add An AssetSource
+
+2021-01-12 11:37:56 - [TEST_STEP][PASSED] - sourcename = pages.Assetsource.addAssetSource(): pages.Assetsource.addAssetSource is PASSED
+
+2021-01-12 11:37:57 - [MESSAGE][PASSED] - Object 'Object Repository/AssetSoure/Asset Source Tab' is present
+
+2021-01-12 11:37:57 - [MESSAGE][PASSED] - Object 'Object Repository/AssetSoure/Asset Source Tab' is visible
+
+2021-01-12 11:37:58 - [MESSAGE][PASSED] - Object 'Object Repository/AssetSoure/Asset Source Tab' is clickable
+
+2021-01-12 11:37:59 - [MESSAGE][PASSED] - Object: 'Object Repository/AssetSoure/Asset Source Tab' is clicked on
+
+2021-01-12 11:37:59 - [MESSAGE][PASSED] - Object 'Object Repository/AssetSoure/Add Asset Source Button' is present
+
+2021-01-12 11:38:00 - [MESSAGE][PASSED] - Object 'Object Repository/AssetSoure/Add Asset Source Button' is present
+
+2021-01-12 11:38:00 - [MESSAGE][PASSED] - Object 'Object Repository/AssetSoure/Add Asset Source Button' is visible
+
+2021-01-12 11:38:00 - [MESSAGE][PASSED] - Object 'Object Repository/AssetSoure/Add Asset Source Button' is clickable
+
+2021-01-12 11:38:01 - [MESSAGE][PASSED] - Object: 'Object Repository/AssetSoure/Add Asset Source Button' is clicked on
+
+2021-01-12 11:38:01 - [MESSAGE][PASSED] - Wait for page load successfully
+
+2021-01-12 11:38:01 - [MESSAGE][PASSED] - Object 'Object Repository/AssetSoure/Source' is present
+
+2021-01-12 11:38:02 - [MESSAGE][PASSED] - Object 'Object Repository/AssetSoure/Source' is visible
+
+2021-01-12 11:38:02 - [MESSAGE][PASSED] - Object 'Object Repository/AssetSoure/Source' is clickable
+
+2021-01-12 11:38:02 - [MESSAGE][PASSED] - Text of object 'Object Repository/AssetSoure/Source' is cleared
+
+2021-01-12 11:38:03 - [MESSAGE][PASSED] - Keys 'RandomAsset970' sent to object: 'Object Repository/AssetSoure/Source'
+
+2021-01-12 11:38:03 - [MESSAGE][PASSED] - Object 'Object Repository/AssetSoure/Asset Source button on popup' is present
+
+2021-01-12 11:38:04 - [MESSAGE][PASSED] - Object 'Object Repository/AssetSoure/Asset Source button on popup' is visible
+
+2021-01-12 11:38:04 - [MESSAGE][PASSED] - Object 'Object Repository/AssetSoure/Asset Source button on popup' is clickable
+
+2021-01-12 11:38:04 - [MESSAGE][PASSED] - Object: 'Object Repository/AssetSoure/Asset Source button on popup' is clicked on
+
+2021-01-12 11:38:04 - [MESSAGE][PASSED] - pages.Assetsource.addAssetSource is PASSED
+
+2021-01-12 11:38:04 - [TEST_STEP][PASSED] - pages.Assetsource.verifyAssetSourceAdded(sourcename): pages.Assetsource.verifyAssetSourceAdded is PASSED
+
+2021-01-12 11:38:05 - [MESSAGE][PASSED] - Object 'Object Repository/AssetSoure/Search' is present
+
+2021-01-12 11:38:05 - [MESSAGE][PASSED] - Object 'Object Repository/AssetSoure/Search' is visible
+
+2021-01-12 11:38:05 - [MESSAGE][PASSED] - Object 'Object Repository/AssetSoure/Search' is clickable
+
+2021-01-12 11:38:06 - [MESSAGE][PASSED] - Text of object 'Object Repository/AssetSoure/Search' is cleared
+
+2021-01-12 11:38:07 - [MESSAGE][PASSED] - Keys 'RandomAsset970' sent to object: 'Object Repository/AssetSoure/Search'
+
+2021-01-12 11:38:11 - [MESSAGE][PASSED] - Object 'Object Repository/AssetSoure/AssetSourceName' is present
+
+2021-01-12 11:38:11 - [MESSAGE][PASSED] - pages.Assetsource.verifyAssetSourceAdded is PASSED
+
+2021-01-12 11:38:11 - [TEST_STEP][PASSED] - println(sourcename): null]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Admin/AssetSource/Delete An AssetSource" time="145.002" classname="Test Cases/Admin/AssetSource/Delete An AssetSource" status="FAILED">
+         <failure type="FAILED" message="Test Cases/Admin/AssetSource/Delete An AssetSource FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Unable to click on object 'Object Repository/AssetSoure/AssetSourceName'
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:26)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.click(ClickKeyword.groovy:76)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.execute(ClickKeyword.groovy:43)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:73)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.click(WebUiBuiltInKeywords.groovy:617)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$click$7.call(Unknown Source)
+	at webAction.WebAction.click(WebAction.groovy:25)
+	at webAction.WebAction$click$1.call(Unknown Source)
+	at pages.Assetsource.openAnyExistingAssetSource(Assetsource.groovy:86)
+	at pages.Assetsource.deleteAnAssetSource(Assetsource.groovy:92)
+	at pages.Assetsource.invokeMethod(Assetsource.groovy)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:50)
+	at Delete An AssetSource.run(Delete An AssetSource:22)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:393)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:384)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:363)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:355)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:251)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:203)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:152)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:95)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1610431640418.run(TempTestSuite1610431640418.groovy:39)
+Caused by: com.kms.katalon.core.webui.exception.WebElementNotFoundException: Web element with id: 'Object Repository/AssetSoure/AssetSourceName' located by '//div[text()='RandomAsset405']' not found
+	at com.kms.katalon.core.webui.common.WebUiCommonHelper.findWebElement(WebUiCommonHelper.java:1369)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIAbstractKeyword.findWebElement(WebUIAbstractKeyword.groovy:27)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIAbstractKeyword.findWebElement(WebUIAbstractKeyword.groovy:26)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword$_click_closure1.doCall(ClickKeyword.groovy:67)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword$_click_closure1.call(ClickKeyword.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:20)
+	... 25 more
+"/>
+         <system-out><![CDATA[2021-01-12 11:38:16 - [TEST_CASE][FAILED] - Test Cases/Admin/AssetSource/Delete An AssetSource: Test Cases/Admin/AssetSource/Delete An AssetSource FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Unable to click on object 'Object Repository/AssetSoure/AssetSourceName'
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:26)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.click(ClickKeyword.groovy:76)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.execute(ClickKeyword.groovy:43)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:73)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.click(WebUiBuiltInKeywords.groovy:617)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$click$7.call(Unknown Source)
+	at webAction.WebAction.click(WebAction.groovy:25)
+	at webAction.WebAction$click$1.call(Unknown Source)
+	at pages.Assetsource.openAnyExistingAssetSource(Assetsource.groovy:86)
+	at pages.Assetsource.deleteAnAssetSource(Assetsource.groovy:92)
+	at pages.Assetsource.invokeMethod(Assetsource.groovy)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:50)
+	at Delete An AssetSource.run(Delete An AssetSource:22)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:393)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:384)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:363)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:355)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:251)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:203)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:152)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:95)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1610431640418.run(TempTestSuite1610431640418.groovy:39)
+Caused by: com.kms.katalon.core.webui.exception.WebElementNotFoundException: Web element with id: 'Object Repository/AssetSoure/AssetSourceName' located by '//div[text()='RandomAsset405']' not found
+	at com.kms.katalon.core.webui.common.WebUiCommonHelper.findWebElement(WebUiCommonHelper.java:1369)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIAbstractKeyword.findWebElement(WebUIAbstractKeyword.groovy:27)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIAbstractKeyword.findWebElement(WebUIAbstractKeyword.groovy:26)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword$_click_closure1.doCall(ClickKeyword.groovy:67)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword$_click_closure1.call(ClickKeyword.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:20)
+	... 25 more
+
+
+2021-01-12 11:38:17 - [TEST_STEP][PASSED] - sourcename = pages.Assetsource.addAssetSource(): pages.Assetsource.addAssetSource is PASSED
+
+2021-01-12 11:38:17 - [MESSAGE][PASSED] - Object 'Object Repository/AssetSoure/Asset Source Tab' is present
+
+2021-01-12 11:38:17 - [MESSAGE][PASSED] - Object 'Object Repository/AssetSoure/Asset Source Tab' is visible
+
+2021-01-12 11:38:18 - [MESSAGE][PASSED] - Object 'Object Repository/AssetSoure/Asset Source Tab' is clickable
+
+2021-01-12 11:38:18 - [MESSAGE][PASSED] - Object: 'Object Repository/AssetSoure/Asset Source Tab' is clicked on
+
+2021-01-12 11:38:19 - [MESSAGE][PASSED] - Object 'Object Repository/AssetSoure/Add Asset Source Button' is present
+
+2021-01-12 11:38:19 - [MESSAGE][PASSED] - Object 'Object Repository/AssetSoure/Add Asset Source Button' is present
+
+2021-01-12 11:38:19 - [MESSAGE][PASSED] - Object 'Object Repository/AssetSoure/Add Asset Source Button' is visible
+
+2021-01-12 11:38:20 - [MESSAGE][PASSED] - Object 'Object Repository/AssetSoure/Add Asset Source Button' is clickable
+
+2021-01-12 11:38:20 - [MESSAGE][PASSED] - Object: 'Object Repository/AssetSoure/Add Asset Source Button' is clicked on
+
+2021-01-12 11:38:20 - [MESSAGE][PASSED] - Wait for page load successfully
+
+2021-01-12 11:38:21 - [MESSAGE][PASSED] - Object 'Object Repository/AssetSoure/Source' is present
+
+2021-01-12 11:38:21 - [MESSAGE][PASSED] - Object 'Object Repository/AssetSoure/Source' is visible
+
+2021-01-12 11:38:21 - [MESSAGE][PASSED] - Object 'Object Repository/AssetSoure/Source' is clickable
+
+2021-01-12 11:38:22 - [MESSAGE][PASSED] - Text of object 'Object Repository/AssetSoure/Source' is cleared
+
+2021-01-12 11:38:22 - [MESSAGE][PASSED] - Keys 'RandomAsset405' sent to object: 'Object Repository/AssetSoure/Source'
+
+2021-01-12 11:38:23 - [MESSAGE][PASSED] - Object 'Object Repository/AssetSoure/Asset Source button on popup' is present
+
+2021-01-12 11:38:23 - [MESSAGE][PASSED] - Object 'Object Repository/AssetSoure/Asset Source button on popup' is visible
+
+2021-01-12 11:38:23 - [MESSAGE][PASSED] - Object 'Object Repository/AssetSoure/Asset Source button on popup' is clickable
+
+2021-01-12 11:38:24 - [MESSAGE][PASSED] - Object: 'Object Repository/AssetSoure/Asset Source button on popup' is clicked on
+
+2021-01-12 11:38:24 - [MESSAGE][PASSED] - pages.Assetsource.addAssetSource is PASSED
+
+2021-01-12 11:38:24 - [TEST_STEP][PASSED] - println(sourcename): null
+
+2021-01-12 11:38:24 - [TEST_STEP][FAILED] - pages.Assetsource.deleteAnAssetSource(sourcename): Unable to click on object 'Object Repository/AssetSoure/AssetSourceName'
+
+2021-01-12 11:38:24 - [MESSAGE][PASSED] - Object 'Object Repository/AssetSoure/Search' is present
+
+2021-01-12 11:38:25 - [MESSAGE][PASSED] - Object 'Object Repository/AssetSoure/Search' is visible
+
+2021-01-12 11:38:25 - [MESSAGE][PASSED] - Object 'Object Repository/AssetSoure/Search' is clickable
+
+2021-01-12 11:38:26 - [MESSAGE][PASSED] - Text of object 'Object Repository/AssetSoure/Search' is cleared
+
+2021-01-12 11:38:26 - [MESSAGE][PASSED] - Keys 'RandomAsset405' sent to object: 'Object Repository/AssetSoure/Search'
+
+2021-01-12 11:38:31 - [MESSAGE][PASSED] - Scroll to object 'Object Repository/AssetSoure/AssetSourceName' successfully
+
+2021-01-12 11:39:02 - [MESSAGE][INFO] - Unable to find the element located by 'By.xpath: //div[text()='RandomAsset405']'. Please recheck the objects properties to make sure the desired element is located. 
+
+2021-01-12 11:39:02 - [MESSAGE][WARNING] - [SELF-HEALING] Failed to find element with id 'Object Repository/AssetSoure/AssetSourceName'. Try using Self-healing.
+
+2021-01-12 11:39:02 - [MESSAGE][WARNING] - [SELF-HEALING] Cannot find elements when the XPath is null.
+
+2021-01-12 11:39:02 - [MESSAGE][WARNING] - [SELF-HEALING] Cannot find elements when the selector is null
+
+2021-01-12 11:39:02 - [MESSAGE][WARNING] - Object 'Object Repository/AssetSoure/AssetSourceName' is not present after 30 second(s)
+
+2021-01-12 11:39:33 - [MESSAGE][INFO] - Unable to find the element located by 'By.xpath: //div[text()='RandomAsset405']'. Please recheck the objects properties to make sure the desired element is located. 
+
+2021-01-12 11:39:33 - [MESSAGE][WARNING] - [SELF-HEALING] Failed to find element with id 'Object Repository/AssetSoure/AssetSourceName'. Try using Self-healing.
+
+2021-01-12 11:39:33 - [MESSAGE][WARNING] - [SELF-HEALING] Cannot find elements when the XPath is null.
+
+2021-01-12 11:39:33 - [MESSAGE][WARNING] - [SELF-HEALING] Cannot find elements when the selector is null
+
+2021-01-12 11:39:33 - [MESSAGE][WARNING] - Web element with id: 'Object Repository/AssetSoure/AssetSourceName' located by '//div[text()='RandomAsset405']' not found
+
+2021-01-12 11:40:04 - [MESSAGE][INFO] - Unable to find the element located by 'By.xpath: //div[text()='RandomAsset405']'. Please recheck the objects properties to make sure the desired element is located. 
+
+2021-01-12 11:40:04 - [MESSAGE][WARNING] - [SELF-HEALING] Failed to find element with id 'Object Repository/AssetSoure/AssetSourceName'. Try using Self-healing.
+
+2021-01-12 11:40:04 - [MESSAGE][WARNING] - [SELF-HEALING] Cannot find elements when the XPath is null.
+
+2021-01-12 11:40:04 - [MESSAGE][WARNING] - [SELF-HEALING] Cannot find elements when the selector is null
+
+2021-01-12 11:40:04 - [MESSAGE][WARNING] - Web element with id: 'Object Repository/AssetSoure/AssetSourceName' located by '//div[text()='RandomAsset405']' not found
+
+2021-01-12 11:40:36 - [MESSAGE][INFO] - Unable to find the element located by 'By.xpath: //div[text()='RandomAsset405']'. Please recheck the objects properties to make sure the desired element is located. 
+
+2021-01-12 11:40:36 - [MESSAGE][WARNING] - [SELF-HEALING] Failed to find element with id 'Object Repository/AssetSoure/AssetSourceName'. Try using Self-healing.
+
+2021-01-12 11:40:36 - [MESSAGE][WARNING] - [SELF-HEALING] Cannot find elements when the XPath is null.
+
+2021-01-12 11:40:36 - [MESSAGE][WARNING] - [SELF-HEALING] Cannot find elements when the selector is null
+
+2021-01-12 11:40:36 - [MESSAGE][FAILED] - Unable to click on object 'Object Repository/AssetSoure/AssetSourceName' (Root cause: com.kms.katalon.core.exception.StepFailedException: Unable to click on object 'Object Repository/AssetSoure/AssetSourceName'
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:26)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.click(ClickKeyword.groovy:76)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.execute(ClickKeyword.groovy:43)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:73)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.click(WebUiBuiltInKeywords.groovy:617)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$click$7.call(Unknown Source)
+	at webAction.WebAction.click(WebAction.groovy:25)
+	at webAction.WebAction$click$1.call(Unknown Source)
+	at pages.Assetsource.openAnyExistingAssetSource(Assetsource.groovy:86)
+	at pages.Assetsource.deleteAnAssetSource(Assetsource.groovy:92)
+	at pages.Assetsource.invokeMethod(Assetsource.groovy)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:50)
+	at Delete An AssetSource.run(Delete An AssetSource:22)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:393)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:384)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:363)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:355)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:251)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:203)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:152)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:95)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1610431640418.run(TempTestSuite1610431640418.groovy:39)
+Caused by: com.kms.katalon.core.webui.exception.WebElementNotFoundException: Web element with id: 'Object Repository/AssetSoure/AssetSourceName' located by '//div[text()='RandomAsset405']' not found
+	at com.kms.katalon.core.webui.common.WebUiCommonHelper.findWebElement(WebUiCommonHelper.java:1369)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIAbstractKeyword.findWebElement(WebUIAbstractKeyword.groovy:27)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIAbstractKeyword.findWebElement(WebUIAbstractKeyword.groovy:26)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword$_click_closure1.doCall(ClickKeyword.groovy:67)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword$_click_closure1.call(ClickKeyword.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:20)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.click(ClickKeyword.groovy:76)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.execute(ClickKeyword.groovy:43)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:73)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.click(WebUiBuiltInKeywords.groovy:617)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$click$7.call(Unknown Source)
+	at webAction.WebAction.click(WebAction.groovy:25)
+	at webAction.WebAction$click$1.call(Unknown Source)
+	at pages.Assetsource.openAnyExistingAssetSource(Assetsource.groovy:86)
+	at pages.Assetsource.deleteAnAssetSource(Assetsource.groovy:92)
+	at pages.Assetsource.invokeMethod(Assetsource.groovy)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:50)
+	at Script1610009239865.run(Script1610009239865.groovy:22)
+	... 13 more
+)
+[[ATTACHMENT|C:\\Modist\\ModistProject\\Reports\\20210112_113720\\AssetSource\\20210112_113720\\1610431836088.png]]
+
+2021-01-12 11:40:36 - [MESSAGE][FAILED] - Unable to click on object 'Object Repository/AssetSoure/AssetSourceName']]></system-out>
+         <system-err><![CDATA[2021-01-12 11:38:16 - [TEST_CASE][FAILED] - Test Cases/Admin/AssetSource/Delete An AssetSource: Test Cases/Admin/AssetSource/Delete An AssetSource FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Unable to click on object 'Object Repository/AssetSoure/AssetSourceName'
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:26)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.click(ClickKeyword.groovy:76)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.execute(ClickKeyword.groovy:43)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:73)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.click(WebUiBuiltInKeywords.groovy:617)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$click$7.call(Unknown Source)
+	at webAction.WebAction.click(WebAction.groovy:25)
+	at webAction.WebAction$click$1.call(Unknown Source)
+	at pages.Assetsource.openAnyExistingAssetSource(Assetsource.groovy:86)
+	at pages.Assetsource.deleteAnAssetSource(Assetsource.groovy:92)
+	at pages.Assetsource.invokeMethod(Assetsource.groovy)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:50)
+	at Delete An AssetSource.run(Delete An AssetSource:22)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:393)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:384)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:363)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:355)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:251)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:203)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:152)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:95)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1610431640418.run(TempTestSuite1610431640418.groovy:39)
+Caused by: com.kms.katalon.core.webui.exception.WebElementNotFoundException: Web element with id: 'Object Repository/AssetSoure/AssetSourceName' located by '//div[text()='RandomAsset405']' not found
+	at com.kms.katalon.core.webui.common.WebUiCommonHelper.findWebElement(WebUiCommonHelper.java:1369)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIAbstractKeyword.findWebElement(WebUIAbstractKeyword.groovy:27)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIAbstractKeyword.findWebElement(WebUIAbstractKeyword.groovy:26)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword$_click_closure1.doCall(ClickKeyword.groovy:67)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword$_click_closure1.call(ClickKeyword.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:20)
+	... 25 more]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Admin/AssetSource/Edit An AssetSource" time="27.407" classname="Test Cases/Admin/AssetSource/Edit An AssetSource" status="PASSED">
+         <system-out><![CDATA[2021-01-12 11:40:41 - [TEST_CASE][PASSED] - Test Cases/Admin/AssetSource/Edit An AssetSource: Test Cases/Admin/AssetSource/Edit An AssetSource
+
+2021-01-12 11:40:42 - [TEST_STEP][PASSED] - sourcename = pages.Assetsource.addAssetSource(): pages.Assetsource.addAssetSource is PASSED
+
+2021-01-12 11:40:42 - [MESSAGE][PASSED] - Object 'Object Repository/AssetSoure/Asset Source Tab' is present
+
+2021-01-12 11:40:43 - [MESSAGE][PASSED] - Object 'Object Repository/AssetSoure/Asset Source Tab' is visible
+
+2021-01-12 11:40:43 - [MESSAGE][PASSED] - Object 'Object Repository/AssetSoure/Asset Source Tab' is clickable
+
+2021-01-12 11:40:43 - [MESSAGE][PASSED] - Object: 'Object Repository/AssetSoure/Asset Source Tab' is clicked on
+
+2021-01-12 11:40:44 - [MESSAGE][PASSED] - Object 'Object Repository/AssetSoure/Add Asset Source Button' is present
+
+2021-01-12 11:40:44 - [MESSAGE][PASSED] - Object 'Object Repository/AssetSoure/Add Asset Source Button' is present
+
+2021-01-12 11:40:44 - [MESSAGE][PASSED] - Object 'Object Repository/AssetSoure/Add Asset Source Button' is visible
+
+2021-01-12 11:40:45 - [MESSAGE][PASSED] - Object 'Object Repository/AssetSoure/Add Asset Source Button' is clickable
+
+2021-01-12 11:40:45 - [MESSAGE][PASSED] - Object: 'Object Repository/AssetSoure/Add Asset Source Button' is clicked on
+
+2021-01-12 11:40:45 - [MESSAGE][PASSED] - Wait for page load successfully
+
+2021-01-12 11:40:46 - [MESSAGE][PASSED] - Object 'Object Repository/AssetSoure/Source' is present
+
+2021-01-12 11:40:46 - [MESSAGE][PASSED] - Object 'Object Repository/AssetSoure/Source' is visible
+
+2021-01-12 11:40:47 - [MESSAGE][PASSED] - Object 'Object Repository/AssetSoure/Source' is clickable
+
+2021-01-12 11:40:47 - [MESSAGE][PASSED] - Text of object 'Object Repository/AssetSoure/Source' is cleared
+
+2021-01-12 11:40:48 - [MESSAGE][PASSED] - Keys 'RandomAsset809' sent to object: 'Object Repository/AssetSoure/Source'
+
+2021-01-12 11:40:48 - [MESSAGE][PASSED] - Object 'Object Repository/AssetSoure/Asset Source button on popup' is present
+
+2021-01-12 11:40:48 - [MESSAGE][PASSED] - Object 'Object Repository/AssetSoure/Asset Source button on popup' is visible
+
+2021-01-12 11:40:49 - [MESSAGE][PASSED] - Object 'Object Repository/AssetSoure/Asset Source button on popup' is clickable
+
+2021-01-12 11:40:49 - [MESSAGE][PASSED] - Object: 'Object Repository/AssetSoure/Asset Source button on popup' is clicked on
+
+2021-01-12 11:40:49 - [MESSAGE][PASSED] - pages.Assetsource.addAssetSource is PASSED
+
+2021-01-12 11:40:49 - [TEST_STEP][PASSED] - println(sourcename): null
+
+2021-01-12 11:40:49 - [TEST_STEP][PASSED] - pages.Assetsource.editAnAssetSource(sourcename): pages.Assetsource.editAnAssetSource is PASSED
+
+2021-01-12 11:40:49 - [MESSAGE][PASSED] - Object 'Object Repository/AssetSoure/Search' is present
+
+2021-01-12 11:40:50 - [MESSAGE][PASSED] - Object 'Object Repository/AssetSoure/Search' is visible
+
+2021-01-12 11:40:50 - [MESSAGE][PASSED] - Object 'Object Repository/AssetSoure/Search' is clickable
+
+2021-01-12 11:40:51 - [MESSAGE][PASSED] - Text of object 'Object Repository/AssetSoure/Search' is cleared
+
+2021-01-12 11:40:51 - [MESSAGE][PASSED] - Keys 'RandomAsset809' sent to object: 'Object Repository/AssetSoure/Search'
+
+2021-01-12 11:40:56 - [MESSAGE][PASSED] - Scroll to object 'Object Repository/AssetSoure/AssetSourceName' successfully
+
+2021-01-12 11:40:56 - [MESSAGE][PASSED] - Object 'Object Repository/AssetSoure/AssetSourceName' is present
+
+2021-01-12 11:40:57 - [MESSAGE][PASSED] - Object 'Object Repository/AssetSoure/AssetSourceName' is visible
+
+2021-01-12 11:40:57 - [MESSAGE][PASSED] - Object 'Object Repository/AssetSoure/AssetSourceName' is clickable
+
+2021-01-12 11:40:57 - [MESSAGE][PASSED] - Object: 'Object Repository/AssetSoure/AssetSourceName' is clicked on
+
+2021-01-12 11:40:58 - [MESSAGE][PASSED] - Object 'Object Repository/AssetSoure/AssetSourceEdit(save button)' is present
+
+2021-01-12 11:40:59 - [MESSAGE][PASSED] - Text of object 'Object Repository/AssetSoure/AssetSourceEdit(Source)' is cleared
+
+2021-01-12 11:40:59 - [MESSAGE][PASSED] - Object 'Object Repository/AssetSoure/AssetSourceEdit(Source)' is present
+
+2021-01-12 11:40:59 - [MESSAGE][PASSED] - Object 'Object Repository/AssetSoure/AssetSourceEdit(Source)' is visible
+
+2021-01-12 11:41:00 - [MESSAGE][PASSED] - Object 'Object Repository/AssetSoure/AssetSourceEdit(Source)' is clickable
+
+2021-01-12 11:41:00 - [MESSAGE][PASSED] - Text of object 'Object Repository/AssetSoure/AssetSourceEdit(Source)' is cleared
+
+2021-01-12 11:41:00 - [MESSAGE][PASSED] - Keys 'editedsourcesname7' sent to object: 'Object Repository/AssetSoure/AssetSourceEdit(Source)'
+
+2021-01-12 11:41:01 - [MESSAGE][PASSED] - Object 'Object Repository/AssetSoure/AssetSourceEdit(save button)' is present
+
+2021-01-12 11:41:01 - [MESSAGE][PASSED] - Object 'Object Repository/AssetSoure/AssetSourceEdit(save button)' is visible
+
+2021-01-12 11:41:01 - [MESSAGE][PASSED] - Object 'Object Repository/AssetSoure/AssetSourceEdit(save button)' is clickable
+
+2021-01-12 11:41:02 - [MESSAGE][PASSED] - Object: 'Object Repository/AssetSoure/AssetSourceEdit(save button)' is clicked on
+
+2021-01-12 11:41:02 - [MESSAGE][PASSED] - Object 'Object Repository/AssetSoure/Close Button' is present
+
+2021-01-12 11:41:03 - [MESSAGE][PASSED] - Object 'Object Repository/AssetSoure/Close Button' is visible
+
+2021-01-12 11:41:03 - [MESSAGE][PASSED] - Object 'Object Repository/AssetSoure/Close Button' is clickable
+
+2021-01-12 11:41:04 - [MESSAGE][PASSED] - Object: 'Object Repository/AssetSoure/Close Button' is clicked on
+
+2021-01-12 11:41:04 - [MESSAGE][PASSED] - pages.Assetsource.editAnAssetSource is PASSED]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Admin/AssetSource/Verify Asset Source tab by clicking it" time="7.143" classname="Test Cases/Admin/AssetSource/Verify Asset Source tab by clicking it" status="PASSED">
+         <system-out><![CDATA[2021-01-12 11:41:09 - [TEST_CASE][PASSED] - Test Cases/Admin/AssetSource/Verify Asset Source tab by clicking it: Test Cases/Admin/AssetSource/Verify Asset Source tab by clicking it
+
+2021-01-12 11:41:09 - [TEST_STEP][PASSED] - pages.Assetsource.navigateToAssetSourceDetailsTab(): pages.Assetsource.navigateToAssetSourceDetailsTab is PASSED
+
+2021-01-12 11:41:10 - [MESSAGE][PASSED] - Object 'Object Repository/AssetSoure/Asset Source Tab' is present
+
+2021-01-12 11:41:10 - [MESSAGE][PASSED] - Object 'Object Repository/AssetSoure/Asset Source Tab' is visible
+
+2021-01-12 11:41:10 - [MESSAGE][PASSED] - Object 'Object Repository/AssetSoure/Asset Source Tab' is clickable
+
+2021-01-12 11:41:11 - [MESSAGE][PASSED] - Object: 'Object Repository/AssetSoure/Asset Source Tab' is clicked on
+
+2021-01-12 11:41:11 - [MESSAGE][PASSED] - Object 'Object Repository/AssetSoure/Add Asset Source Button' is present
+
+2021-01-12 11:41:11 - [MESSAGE][PASSED] - pages.Assetsource.navigateToAssetSourceDetailsTab is PASSED]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Admin/AssetSource/Verify by clicking on any asset source in the Asset source tab details page" time="46.477" classname="Test Cases/Admin/AssetSource/Verify by clicking on any asset source in the Asset source tab details page" status="FAILED">
+         <failure type="FAILED" message="Test Cases/Admin/AssetSource/Verify by clicking on any asset source in the Asset source tab details page FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Unable to scroll to object 'Object Repository/AssetSoure/AssetSourceName'
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:26)
+	at com.kms.katalon.core.webui.keyword.builtin.ScrollToElementKeyword.scrollToElement(ScrollToElementKeyword.groovy:88)
+	at com.kms.katalon.core.webui.keyword.builtin.ScrollToElementKeyword.execute(ScrollToElementKeyword.groovy:68)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:73)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.scrollToElement(WebUiBuiltInKeywords.groovy:3432)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$scrollToElement$10.call(Unknown Source)
+	at pages.Assetsource.openAnyExistingAssetSource(Assetsource.groovy:85)
+	at pages.Assetsource.invokeMethod(Assetsource.groovy)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:50)
+	at Verify by clicking on any asset source in the Asset source tab details page.run(Verify by clicking on any asset source in the Asset source tab details page:22)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:393)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:384)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:363)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:355)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:251)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:203)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:152)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:95)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1610431640418.run(TempTestSuite1610431640418.groovy:39)
+Caused by: com.kms.katalon.core.webui.exception.WebElementNotFoundException: Web element with id: 'Object Repository/AssetSoure/AssetSourceName' located by '//div[text()='RandomAsset520']' not found
+	at com.kms.katalon.core.webui.common.WebUiCommonHelper.findWebElement(WebUiCommonHelper.java:1369)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIAbstractKeyword.findWebElement(WebUIAbstractKeyword.groovy:27)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIAbstractKeyword.findWebElement(WebUIAbstractKeyword.groovy:26)
+	at com.kms.katalon.core.webui.keyword.builtin.ScrollToElementKeyword$_scrollToElement_closure1.doCall(ScrollToElementKeyword.groovy:79)
+	at com.kms.katalon.core.webui.keyword.builtin.ScrollToElementKeyword$_scrollToElement_closure1.call(ScrollToElementKeyword.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:20)
+	... 22 more
+"/>
+         <system-out><![CDATA[2021-01-12 11:41:16 - [TEST_CASE][FAILED] - Test Cases/Admin/AssetSource/Verify by clicking on any asset source in the Asset source tab details page: Test Cases/Admin/AssetSource/Verify by clicking on any asset source in the Asset source tab details page FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Unable to scroll to object 'Object Repository/AssetSoure/AssetSourceName'
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:26)
+	at com.kms.katalon.core.webui.keyword.builtin.ScrollToElementKeyword.scrollToElement(ScrollToElementKeyword.groovy:88)
+	at com.kms.katalon.core.webui.keyword.builtin.ScrollToElementKeyword.execute(ScrollToElementKeyword.groovy:68)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:73)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.scrollToElement(WebUiBuiltInKeywords.groovy:3432)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$scrollToElement$10.call(Unknown Source)
+	at pages.Assetsource.openAnyExistingAssetSource(Assetsource.groovy:85)
+	at pages.Assetsource.invokeMethod(Assetsource.groovy)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:50)
+	at Verify by clicking on any asset source in the Asset source tab details page.run(Verify by clicking on any asset source in the Asset source tab details page:22)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:393)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:384)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:363)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:355)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:251)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:203)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:152)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:95)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1610431640418.run(TempTestSuite1610431640418.groovy:39)
+Caused by: com.kms.katalon.core.webui.exception.WebElementNotFoundException: Web element with id: 'Object Repository/AssetSoure/AssetSourceName' located by '//div[text()='RandomAsset520']' not found
+	at com.kms.katalon.core.webui.common.WebUiCommonHelper.findWebElement(WebUiCommonHelper.java:1369)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIAbstractKeyword.findWebElement(WebUIAbstractKeyword.groovy:27)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIAbstractKeyword.findWebElement(WebUIAbstractKeyword.groovy:26)
+	at com.kms.katalon.core.webui.keyword.builtin.ScrollToElementKeyword$_scrollToElement_closure1.doCall(ScrollToElementKeyword.groovy:79)
+	at com.kms.katalon.core.webui.keyword.builtin.ScrollToElementKeyword$_scrollToElement_closure1.call(ScrollToElementKeyword.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:20)
+	... 22 more
+
+
+2021-01-12 11:41:16 - [TEST_STEP][PASSED] - sourcename = pages.Assetsource.addAssetSource(): pages.Assetsource.addAssetSource is PASSED
+
+2021-01-12 11:41:17 - [MESSAGE][PASSED] - Object 'Object Repository/AssetSoure/Asset Source Tab' is present
+
+2021-01-12 11:41:17 - [MESSAGE][PASSED] - Object 'Object Repository/AssetSoure/Asset Source Tab' is visible
+
+2021-01-12 11:41:17 - [MESSAGE][PASSED] - Object 'Object Repository/AssetSoure/Asset Source Tab' is clickable
+
+2021-01-12 11:41:18 - [MESSAGE][PASSED] - Object: 'Object Repository/AssetSoure/Asset Source Tab' is clicked on
+
+2021-01-12 11:41:18 - [MESSAGE][PASSED] - Object 'Object Repository/AssetSoure/Add Asset Source Button' is present
+
+2021-01-12 11:41:18 - [MESSAGE][PASSED] - Object 'Object Repository/AssetSoure/Add Asset Source Button' is present
+
+2021-01-12 11:41:19 - [MESSAGE][PASSED] - Object 'Object Repository/AssetSoure/Add Asset Source Button' is visible
+
+2021-01-12 11:41:19 - [MESSAGE][PASSED] - Object 'Object Repository/AssetSoure/Add Asset Source Button' is clickable
+
+2021-01-12 11:41:19 - [MESSAGE][PASSED] - Object: 'Object Repository/AssetSoure/Add Asset Source Button' is clicked on
+
+2021-01-12 11:41:19 - [MESSAGE][PASSED] - Wait for page load successfully
+
+2021-01-12 11:41:20 - [MESSAGE][PASSED] - Object 'Object Repository/AssetSoure/Source' is present
+
+2021-01-12 11:41:21 - [MESSAGE][PASSED] - Object 'Object Repository/AssetSoure/Source' is visible
+
+2021-01-12 11:41:21 - [MESSAGE][PASSED] - Object 'Object Repository/AssetSoure/Source' is clickable
+
+2021-01-12 11:41:21 - [MESSAGE][PASSED] - Text of object 'Object Repository/AssetSoure/Source' is cleared
+
+2021-01-12 11:41:22 - [MESSAGE][PASSED] - Keys 'RandomAsset520' sent to object: 'Object Repository/AssetSoure/Source'
+
+2021-01-12 11:41:22 - [MESSAGE][PASSED] - Object 'Object Repository/AssetSoure/Asset Source button on popup' is present
+
+2021-01-12 11:41:22 - [MESSAGE][PASSED] - Object 'Object Repository/AssetSoure/Asset Source button on popup' is visible
+
+2021-01-12 11:41:23 - [MESSAGE][PASSED] - Object 'Object Repository/AssetSoure/Asset Source button on popup' is clickable
+
+2021-01-12 11:41:23 - [MESSAGE][PASSED] - Object: 'Object Repository/AssetSoure/Asset Source button on popup' is clicked on
+
+2021-01-12 11:41:23 - [MESSAGE][PASSED] - pages.Assetsource.addAssetSource is PASSED
+
+2021-01-12 11:41:23 - [TEST_STEP][PASSED] - println(sourcename): null
+
+2021-01-12 11:41:23 - [TEST_STEP][FAILED] - pages.Assetsource.openAnyExistingAssetSource(sourcename): Unable to scroll to object 'Object Repository/AssetSoure/AssetSourceName'
+
+2021-01-12 11:41:24 - [MESSAGE][PASSED] - Object 'Object Repository/AssetSoure/Search' is present
+
+2021-01-12 11:41:24 - [MESSAGE][PASSED] - Object 'Object Repository/AssetSoure/Search' is visible
+
+2021-01-12 11:41:25 - [MESSAGE][PASSED] - Object 'Object Repository/AssetSoure/Search' is clickable
+
+2021-01-12 11:41:25 - [MESSAGE][PASSED] - Text of object 'Object Repository/AssetSoure/Search' is cleared
+
+2021-01-12 11:41:26 - [MESSAGE][PASSED] - Keys 'RandomAsset520' sent to object: 'Object Repository/AssetSoure/Search'
+
+2021-01-12 11:41:57 - [MESSAGE][INFO] - Unable to find the element located by 'By.xpath: //div[text()='RandomAsset520']'. Please recheck the objects properties to make sure the desired element is located. 
+
+2021-01-12 11:41:57 - [MESSAGE][WARNING] - [SELF-HEALING] Failed to find element with id 'Object Repository/AssetSoure/AssetSourceName'. Try using Self-healing.
+
+2021-01-12 11:41:57 - [MESSAGE][WARNING] - [SELF-HEALING] Cannot find elements when the XPath is null.
+
+2021-01-12 11:41:57 - [MESSAGE][WARNING] - [SELF-HEALING] Cannot find elements when the selector is null
+
+2021-01-12 11:41:57 - [MESSAGE][FAILED] - Unable to scroll to object 'Object Repository/AssetSoure/AssetSourceName' (Root cause: com.kms.katalon.core.exception.StepFailedException: Unable to scroll to object 'Object Repository/AssetSoure/AssetSourceName'
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:26)
+	at com.kms.katalon.core.webui.keyword.builtin.ScrollToElementKeyword.scrollToElement(ScrollToElementKeyword.groovy:88)
+	at com.kms.katalon.core.webui.keyword.builtin.ScrollToElementKeyword.execute(ScrollToElementKeyword.groovy:68)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:73)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.scrollToElement(WebUiBuiltInKeywords.groovy:3432)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$scrollToElement$10.call(Unknown Source)
+	at pages.Assetsource.openAnyExistingAssetSource(Assetsource.groovy:85)
+	at pages.Assetsource.invokeMethod(Assetsource.groovy)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:50)
+	at Verify by clicking on any asset source in the Asset source tab details page.run(Verify by clicking on any asset source in the Asset source tab details page:22)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:393)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:384)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:363)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:355)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:251)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:203)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:152)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:95)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1610431640418.run(TempTestSuite1610431640418.groovy:39)
+Caused by: com.kms.katalon.core.webui.exception.WebElementNotFoundException: Web element with id: 'Object Repository/AssetSoure/AssetSourceName' located by '//div[text()='RandomAsset520']' not found
+	at com.kms.katalon.core.webui.common.WebUiCommonHelper.findWebElement(WebUiCommonHelper.java:1369)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIAbstractKeyword.findWebElement(WebUIAbstractKeyword.groovy:27)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIAbstractKeyword.findWebElement(WebUIAbstractKeyword.groovy:26)
+	at com.kms.katalon.core.webui.keyword.builtin.ScrollToElementKeyword$_scrollToElement_closure1.doCall(ScrollToElementKeyword.groovy:79)
+	at com.kms.katalon.core.webui.keyword.builtin.ScrollToElementKeyword$_scrollToElement_closure1.call(ScrollToElementKeyword.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:20)
+	at com.kms.katalon.core.webui.keyword.builtin.ScrollToElementKeyword.scrollToElement(ScrollToElementKeyword.groovy:88)
+	at com.kms.katalon.core.webui.keyword.builtin.ScrollToElementKeyword.execute(ScrollToElementKeyword.groovy:68)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:73)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.scrollToElement(WebUiBuiltInKeywords.groovy:3432)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$scrollToElement$10.call(Unknown Source)
+	at pages.Assetsource.openAnyExistingAssetSource(Assetsource.groovy:85)
+	at pages.Assetsource.invokeMethod(Assetsource.groovy)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:50)
+	at Script1610009535982.run(Script1610009535982.groovy:22)
+	... 13 more
+)
+[[ATTACHMENT|C:\\Modist\\ModistProject\\Reports\\20210112_113720\\AssetSource\\20210112_113720\\1610431917309.png]]
+
+2021-01-12 11:41:57 - [MESSAGE][FAILED] - Unable to scroll to object 'Object Repository/AssetSoure/AssetSourceName']]></system-out>
+         <system-err><![CDATA[2021-01-12 11:41:16 - [TEST_CASE][FAILED] - Test Cases/Admin/AssetSource/Verify by clicking on any asset source in the Asset source tab details page: Test Cases/Admin/AssetSource/Verify by clicking on any asset source in the Asset source tab details page FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Unable to scroll to object 'Object Repository/AssetSoure/AssetSourceName'
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:26)
+	at com.kms.katalon.core.webui.keyword.builtin.ScrollToElementKeyword.scrollToElement(ScrollToElementKeyword.groovy:88)
+	at com.kms.katalon.core.webui.keyword.builtin.ScrollToElementKeyword.execute(ScrollToElementKeyword.groovy:68)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:73)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.scrollToElement(WebUiBuiltInKeywords.groovy:3432)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$scrollToElement$10.call(Unknown Source)
+	at pages.Assetsource.openAnyExistingAssetSource(Assetsource.groovy:85)
+	at pages.Assetsource.invokeMethod(Assetsource.groovy)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:50)
+	at Verify by clicking on any asset source in the Asset source tab details page.run(Verify by clicking on any asset source in the Asset source tab details page:22)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:393)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:384)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:363)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:355)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:251)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:203)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:152)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:95)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1610431640418.run(TempTestSuite1610431640418.groovy:39)
+Caused by: com.kms.katalon.core.webui.exception.WebElementNotFoundException: Web element with id: 'Object Repository/AssetSoure/AssetSourceName' located by '//div[text()='RandomAsset520']' not found
+	at com.kms.katalon.core.webui.common.WebUiCommonHelper.findWebElement(WebUiCommonHelper.java:1369)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIAbstractKeyword.findWebElement(WebUIAbstractKeyword.groovy:27)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIAbstractKeyword.findWebElement(WebUIAbstractKeyword.groovy:26)
+	at com.kms.katalon.core.webui.keyword.builtin.ScrollToElementKeyword$_scrollToElement_closure1.doCall(ScrollToElementKeyword.groovy:79)
+	at com.kms.katalon.core.webui.keyword.builtin.ScrollToElementKeyword$_scrollToElement_closure1.call(ScrollToElementKeyword.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:20)
+	... 22 more]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Admin/AssetSource/Verify Cancel button functionality in the Add Asset Source popup" time="10.984" classname="Test Cases/Admin/AssetSource/Verify Cancel button functionality in the Add Asset Source popup" status="PASSED">
+         <system-out><![CDATA[2021-01-12 11:42:02 - [TEST_CASE][PASSED] - Test Cases/Admin/AssetSource/Verify Cancel button functionality in the Add Asset Source popup: Test Cases/Admin/AssetSource/Verify Cancel button functionality in the Add Asset Source popup
+
+2021-01-12 11:42:03 - [TEST_STEP][PASSED] - pages.Assetsource.navigateToAssetSourceDetailsTab(): pages.Assetsource.navigateToAssetSourceDetailsTab is PASSED
+
+2021-01-12 11:42:03 - [MESSAGE][PASSED] - Object 'Object Repository/AssetSoure/Asset Source Tab' is present
+
+2021-01-12 11:42:04 - [MESSAGE][PASSED] - Object 'Object Repository/AssetSoure/Asset Source Tab' is visible
+
+2021-01-12 11:42:04 - [MESSAGE][PASSED] - Object 'Object Repository/AssetSoure/Asset Source Tab' is clickable
+
+2021-01-12 11:42:04 - [MESSAGE][PASSED] - Object: 'Object Repository/AssetSoure/Asset Source Tab' is clicked on
+
+2021-01-12 11:42:05 - [MESSAGE][PASSED] - Object 'Object Repository/AssetSoure/Add Asset Source Button' is present
+
+2021-01-12 11:42:05 - [MESSAGE][PASSED] - pages.Assetsource.navigateToAssetSourceDetailsTab is PASSED
+
+2021-01-12 11:42:05 - [TEST_STEP][PASSED] - pages.Assetsource.clickAddAssetSource(): pages.Assetsource.clickAddAssetSource is PASSED
+
+2021-01-12 11:42:05 - [MESSAGE][PASSED] - Object 'Object Repository/AssetSoure/Add Asset Source Button' is present
+
+2021-01-12 11:42:05 - [MESSAGE][PASSED] - Object 'Object Repository/AssetSoure/Add Asset Source Button' is visible
+
+2021-01-12 11:42:06 - [MESSAGE][PASSED] - Object 'Object Repository/AssetSoure/Add Asset Source Button' is clickable
+
+2021-01-12 11:42:06 - [MESSAGE][PASSED] - Object: 'Object Repository/AssetSoure/Add Asset Source Button' is clicked on
+
+2021-01-12 11:42:06 - [MESSAGE][PASSED] - Wait for page load successfully
+
+2021-01-12 11:42:06 - [MESSAGE][PASSED] - pages.Assetsource.clickAddAssetSource is PASSED
+
+2021-01-12 11:42:06 - [TEST_STEP][PASSED] - pages.Assetsource.cancelAssetSourcePopup(): pages.Assetsource.cancelAssetSourcePopup is PASSED
+
+2021-01-12 11:42:07 - [MESSAGE][PASSED] - Object 'Object Repository/AssetSoure/Cancel Button' is present
+
+2021-01-12 11:42:07 - [MESSAGE][PASSED] - Object 'Object Repository/AssetSoure/Cancel Button' is visible
+
+2021-01-12 11:42:08 - [MESSAGE][PASSED] - Object 'Object Repository/AssetSoure/Cancel Button' is clickable
+
+2021-01-12 11:42:08 - [MESSAGE][PASSED] - Object: 'Object Repository/AssetSoure/Cancel Button' is clicked on
+
+2021-01-12 11:42:08 - [MESSAGE][PASSED] - Object 'Object Repository/AssetSoure/Search' is present
+
+2021-01-12 11:42:08 - [MESSAGE][PASSED] - pages.Assetsource.cancelAssetSourcePopup is PASSED]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Admin/AssetSource/Verify Close button functionality in the Asset Source edit page" time="23.562" classname="Test Cases/Admin/AssetSource/Verify Close button functionality in the Asset Source edit page" status="PASSED">
+         <system-out><![CDATA[2021-01-12 11:42:13 - [TEST_CASE][PASSED] - Test Cases/Admin/AssetSource/Verify Close button functionality in the Asset Source edit page: Test Cases/Admin/AssetSource/Verify Close button functionality in the Asset Source edit page
+
+2021-01-12 11:42:14 - [TEST_STEP][PASSED] - sourcename = pages.Assetsource.addAssetSource(): pages.Assetsource.addAssetSource is PASSED
+
+2021-01-12 11:42:14 - [MESSAGE][PASSED] - Object 'Object Repository/AssetSoure/Asset Source Tab' is present
+
+2021-01-12 11:42:15 - [MESSAGE][PASSED] - Object 'Object Repository/AssetSoure/Asset Source Tab' is visible
+
+2021-01-12 11:42:15 - [MESSAGE][PASSED] - Object 'Object Repository/AssetSoure/Asset Source Tab' is clickable
+
+2021-01-12 11:42:15 - [MESSAGE][PASSED] - Object: 'Object Repository/AssetSoure/Asset Source Tab' is clicked on
+
+2021-01-12 11:42:16 - [MESSAGE][PASSED] - Object 'Object Repository/AssetSoure/Add Asset Source Button' is present
+
+2021-01-12 11:42:16 - [MESSAGE][PASSED] - Object 'Object Repository/AssetSoure/Add Asset Source Button' is present
+
+2021-01-12 11:42:16 - [MESSAGE][PASSED] - Object 'Object Repository/AssetSoure/Add Asset Source Button' is visible
+
+2021-01-12 11:42:17 - [MESSAGE][PASSED] - Object 'Object Repository/AssetSoure/Add Asset Source Button' is clickable
+
+2021-01-12 11:42:17 - [MESSAGE][PASSED] - Object: 'Object Repository/AssetSoure/Add Asset Source Button' is clicked on
+
+2021-01-12 11:42:17 - [MESSAGE][PASSED] - Wait for page load successfully
+
+2021-01-12 11:42:18 - [MESSAGE][PASSED] - Object 'Object Repository/AssetSoure/Source' is present
+
+2021-01-12 11:42:18 - [MESSAGE][PASSED] - Object 'Object Repository/AssetSoure/Source' is visible
+
+2021-01-12 11:42:19 - [MESSAGE][PASSED] - Object 'Object Repository/AssetSoure/Source' is clickable
+
+2021-01-12 11:42:19 - [MESSAGE][PASSED] - Text of object 'Object Repository/AssetSoure/Source' is cleared
+
+2021-01-12 11:42:19 - [MESSAGE][PASSED] - Keys 'RandomAsset331' sent to object: 'Object Repository/AssetSoure/Source'
+
+2021-01-12 11:42:20 - [MESSAGE][PASSED] - Object 'Object Repository/AssetSoure/Asset Source button on popup' is present
+
+2021-01-12 11:42:20 - [MESSAGE][PASSED] - Object 'Object Repository/AssetSoure/Asset Source button on popup' is visible
+
+2021-01-12 11:42:20 - [MESSAGE][PASSED] - Object 'Object Repository/AssetSoure/Asset Source button on popup' is clickable
+
+2021-01-12 11:42:21 - [MESSAGE][PASSED] - Object: 'Object Repository/AssetSoure/Asset Source button on popup' is clicked on
+
+2021-01-12 11:42:21 - [MESSAGE][PASSED] - pages.Assetsource.addAssetSource is PASSED
+
+2021-01-12 11:42:21 - [TEST_STEP][PASSED] - println(sourcename): null
+
+2021-01-12 11:42:21 - [TEST_STEP][PASSED] - pages.Assetsource.openAnyExistingAssetSource(sourcename): pages.Assetsource.openAnyExistingAssetSource is PASSED
+
+2021-01-12 11:42:21 - [MESSAGE][PASSED] - Object 'Object Repository/AssetSoure/Search' is present
+
+2021-01-12 11:42:22 - [MESSAGE][PASSED] - Object 'Object Repository/AssetSoure/Search' is visible
+
+2021-01-12 11:42:22 - [MESSAGE][PASSED] - Object 'Object Repository/AssetSoure/Search' is clickable
+
+2021-01-12 11:42:22 - [MESSAGE][PASSED] - Text of object 'Object Repository/AssetSoure/Search' is cleared
+
+2021-01-12 11:42:23 - [MESSAGE][PASSED] - Keys 'RandomAsset331' sent to object: 'Object Repository/AssetSoure/Search'
+
+2021-01-12 11:42:28 - [MESSAGE][PASSED] - Scroll to object 'Object Repository/AssetSoure/AssetSourceName' successfully
+
+2021-01-12 11:42:28 - [MESSAGE][PASSED] - Object 'Object Repository/AssetSoure/AssetSourceName' is present
+
+2021-01-12 11:42:29 - [MESSAGE][PASSED] - Object 'Object Repository/AssetSoure/AssetSourceName' is visible
+
+2021-01-12 11:42:29 - [MESSAGE][PASSED] - Object 'Object Repository/AssetSoure/AssetSourceName' is clickable
+
+2021-01-12 11:42:29 - [MESSAGE][PASSED] - Object: 'Object Repository/AssetSoure/AssetSourceName' is clicked on
+
+2021-01-12 11:42:30 - [MESSAGE][PASSED] - Object 'Object Repository/AssetSoure/AssetSourceEdit(save button)' is present
+
+2021-01-12 11:42:30 - [MESSAGE][PASSED] - pages.Assetsource.openAnyExistingAssetSource is PASSED
+
+2021-01-12 11:42:30 - [TEST_STEP][PASSED] - pages.Assetsource.closeAssetSourceEditpage(): pages.Assetsource.closeAssetSourceEditpage is PASSED
+
+2021-01-12 11:42:30 - [MESSAGE][PASSED] - Object 'Object Repository/AssetSoure/Close Button' is present
+
+2021-01-12 11:42:31 - [MESSAGE][PASSED] - Object 'Object Repository/AssetSoure/Close Button' is visible
+
+2021-01-12 11:42:31 - [MESSAGE][PASSED] - Object 'Object Repository/AssetSoure/Close Button' is clickable
+
+2021-01-12 11:42:32 - [MESSAGE][PASSED] - Object: 'Object Repository/AssetSoure/Close Button' is clicked on
+
+2021-01-12 11:42:32 - [MESSAGE][PASSED] - Object 'Object Repository/AssetSoure/Search' is present
+
+2021-01-12 11:42:32 - [MESSAGE][PASSED] - pages.Assetsource.closeAssetSourceEditpage is PASSED]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <system-out><![CDATA[2021-01-12 11:37:23 - [TEST_SUITE][INCOMPLETE] - AssetSource: null]]></system-out>
+      <system-err><![CDATA[2021-01-12 11:37:23 - [TEST_SUITE][INCOMPLETE] - AssetSource: null]]></system-err>
+   </testsuite>
+</testsuites>

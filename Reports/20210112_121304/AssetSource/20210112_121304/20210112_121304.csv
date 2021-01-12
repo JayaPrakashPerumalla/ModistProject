@@ -1,0 +1,35 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+AssetSource,Chrome 87.0.4280.88,,,2021-01-12 12:13:06,2021-01-12 12:20:03,6m - 57.198s,FAILED
+,,,,,,,
+Test Cases/Admin/AssetSource/Add An AssetSource,Chrome 87.0.4280.88,,,2021-01-12 12:14:20,2021-01-12 12:14:38,18.265s,PASSED
+sourcename = pages.Assetsource.addAssetSource(),Chrome 87.0.4280.88,,,2021-01-12 12:14:20,2021-01-12 12:14:27,6.899s,PASSED
+pages.Assetsource.verifyAssetSourceAdded(sourcename),Chrome 87.0.4280.88,,,2021-01-12 12:14:27,2021-01-12 12:14:33,6.026s,PASSED
+println(sourcename),Chrome 87.0.4280.88,,,2021-01-12 12:14:33,2021-01-12 12:14:33,0.003s,PASSED
+,,,,,,,
+Test Cases/Admin/AssetSource/Delete An AssetSource,Chrome 87.0.4280.88,,,2021-01-12 12:14:38,2021-01-12 12:16:29,1m - 51.252s,FAILED
+sourcename = pages.Assetsource.addAssetSource(),Chrome 87.0.4280.88,,,2021-01-12 12:14:38,2021-01-12 12:14:44,5.219s,PASSED
+println(sourcename),Chrome 87.0.4280.88,,,2021-01-12 12:14:44,2021-01-12 12:14:44,0.002s,PASSED
+pages.Assetsource.deleteAnAssetSource(sourcename),Chrome 87.0.4280.88,,,2021-01-12 12:14:44,2021-01-12 12:16:24,1m - 40.811s,FAILED
+,,,,,,,
+Test Cases/Admin/AssetSource/Edit An AssetSource,Chrome 87.0.4280.88,,,2021-01-12 12:16:29,2021-01-12 12:16:44,14.637s,FAILED
+sourcename = pages.Assetsource.addAssetSource(),Chrome 87.0.4280.88,,,2021-01-12 12:16:30,2021-01-12 12:16:35,5.263s,PASSED
+println(sourcename),Chrome 87.0.4280.88,,,2021-01-12 12:16:35,2021-01-12 12:16:35,0.001s,PASSED
+pages.Assetsource.editAnAssetSource(sourcename),Chrome 87.0.4280.88,,,2021-01-12 12:16:35,2021-01-12 12:16:39,4.169s,FAILED
+,,,,,,,
+Test Cases/Admin/AssetSource/Verify Asset Source tab by clicking it,Chrome 87.0.4280.88,,,2021-01-12 12:16:44,2021-01-12 12:16:51,6.654s,PASSED
+pages.Assetsource.navigateToAssetSourceDetailsTab(),Chrome 87.0.4280.88,,,2021-01-12 12:16:44,2021-01-12 12:16:46,1.484s,PASSED
+,,,,,,,
+Test Cases/Admin/AssetSource/Verify by clicking on any asset source in the Asset source tab details page,Chrome 87.0.4280.88,,,2021-01-12 12:16:51,2021-01-12 12:17:34,43.489s,FAILED
+sourcename = pages.Assetsource.addAssetSource(),Chrome 87.0.4280.88,,,2021-01-12 12:16:51,2021-01-12 12:16:56,4.985s,PASSED
+println(sourcename),Chrome 87.0.4280.88,,,2021-01-12 12:16:56,2021-01-12 12:16:56,0.002s,PASSED
+pages.Assetsource.openAnyExistingAssetSource(sourcename),Chrome 87.0.4280.88,,,2021-01-12 12:16:56,2021-01-12 12:17:29,33.334s,FAILED
+,,,,,,,
+Test Cases/Admin/AssetSource/Verify Cancel button functionality in the Add Asset Source popup,Chrome 87.0.4280.88,,,2021-01-12 12:17:34,2021-01-12 12:17:44,9.383s,PASSED
+pages.Assetsource.navigateToAssetSourceDetailsTab(),Chrome 87.0.4280.88,,,2021-01-12 12:17:34,2021-01-12 12:17:36,1.281s,PASSED
+pages.Assetsource.clickAddAssetSource(),Chrome 87.0.4280.88,,,2021-01-12 12:17:36,2021-01-12 12:17:37,1.008s,PASSED
+pages.Assetsource.cancelAssetSourcePopup(),Chrome 87.0.4280.88,,,2021-01-12 12:17:37,2021-01-12 12:17:39,1.916s,PASSED
+,,,,,,,
+Test Cases/Admin/AssetSource/Verify Close button functionality in the Asset Source edit page,Chrome 87.0.4280.88,,,2021-01-12 12:17:44,2021-01-12 12:20:03,2m - 19.400s,FAILED
+sourcename = pages.Assetsource.addAssetSource(),Chrome 87.0.4280.88,,,2021-01-12 12:17:44,2021-01-12 12:17:49,5.160s,PASSED
+println(sourcename),Chrome 87.0.4280.88,,,2021-01-12 12:17:49,2021-01-12 12:17:49,0.001s,PASSED
+pages.Assetsource.openAnyExistingAssetSource(sourcename),Chrome 87.0.4280.88,,,2021-01-12 12:17:49,2021-01-12 12:19:58,2m - 9.080s,FAILED
