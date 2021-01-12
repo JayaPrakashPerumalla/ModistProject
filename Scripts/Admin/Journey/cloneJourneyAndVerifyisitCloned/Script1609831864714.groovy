@@ -17,7 +17,7 @@ import internal.GlobalVariable as GlobalVariable
 
 CustomKeywords.'pages.Journey.clickOnJourneyTab'()
 
-def journeyName = CustomKeywords.'pages.Journey.addJorney'()
+def journeyName = CustomKeywords.'pages.Journey.addJourney'()
 
 CustomKeywords.'pages.Journey.cloneJourney'(journeyName)
 
