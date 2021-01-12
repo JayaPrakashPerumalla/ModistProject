@@ -3,9 +3,7 @@ import static com.kms.katalon.core.testcase.TestCaseFactory.findTestCase
 import static com.kms.katalon.core.testdata.TestDataFactory.findTestData
 import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
 import static com.kms.katalon.core.testobject.ObjectRepository.findWindowsObject
-
-import java.beans.Customizer
-
+import java.beans.Customizer as Customizer
 import com.kms.katalon.core.checkpoint.Checkpoint as Checkpoint
 import com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords as CucumberKW
 import com.kms.katalon.core.mobile.keyword.MobileBuiltInKeywords as Mobile
@@ -18,7 +16,7 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 
-/*CustomKeywords.'pages.Journey.clickOnJourneyTab'()
+CustomKeywords.'pages.Journey.clickOnJourneyTab'()
 
 String journeyName = CustomKeywords.'pages.Journey.getRandomJourneyName'()
 
@@ -32,8 +30,12 @@ CustomKeywords.'pages.Journey.clickEnterButton'()
 
 CustomKeywords.'pages.JourneyPortal.openExistingSection'()
 
-CustomKeywords.'pages.JourneyPortal.openAnyProductInTheJourneyPortal'()*/
+CustomKeywords.'pages.JourneyPortal.openAnyProductInTheJourneyPortal'()
 
-CustomKeywords.'pages.JourneyPortal.clickingLeft'()
+String dataId1 = CustomKeywords.'pages.Product.getIdOfProduct'(findTestObject('Object Repository/journeyPortal/toGetCurrentProductId'))
 
-CustomKeywords.'pages.JourneyPortal.clickingRight'()
+CustomKeywords.'pages.Product.clickingRight'()
+
+String dataId2 = CustomKeywords.'pages.Product.getIdOfProduct'(findTestObject('Object Repository/journeyPortal/toGetCurrentProductId'))
+
+CustomKeywords.'pages.verifyTheProductImageChange'(dataId1, dataId2)

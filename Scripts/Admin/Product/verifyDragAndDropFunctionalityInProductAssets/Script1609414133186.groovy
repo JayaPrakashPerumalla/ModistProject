@@ -5,7 +5,7 @@ import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
 import static com.kms.katalon.core.testobject.ObjectRepository.findWindowsObject
 import com.kms.katalon.core.checkpoint.Checkpoint as Checkpoint
 import com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords as CucumberKW
-import com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass
+import com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass as CustomKeywordDelegatingMetaClass
 import com.kms.katalon.core.mobile.keyword.MobileBuiltInKeywords as Mobile
 import com.kms.katalon.core.model.FailureHandling as FailureHandling
 import com.kms.katalon.core.testcase.TestCase as TestCase
@@ -18,11 +18,9 @@ import internal.GlobalVariable as GlobalVariable
 
 CustomKeywords.'pages.Product.clickOnProductTab'()
 
-CustomKeywords.'pages.Product.openAnyExistingProduct'('product 123')
+String productName = CustomKeywords.'pages.Product.getRandomProductNmae'()
 
-//CustomKeywords.'pages.Product.dragAndDrop'()
+CustomKeywords.'pages.Product.openAnyExistingProduct'(productName)
 
-CustomKeywords.'pages.Product.changePositionOfItem'(findTestObject('Object Repository/Product/Test/imageSource(index)', ["index":1]), 1, true)
-
-
-
+CustomKeywords.'pages.Product.changePositionOfItemInProductAssets'(findTestObject('Object Repository/Product/Test/imageSource(index)', 
+        [('index') : 1]), 2, true)

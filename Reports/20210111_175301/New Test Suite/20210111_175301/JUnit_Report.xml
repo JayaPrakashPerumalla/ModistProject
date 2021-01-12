@@ -1,0 +1,1520 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="New Test Suite" time="648.052" tests="7" failures="5" skips="0" errors="0">
+   <testsuite name="New Test Suite" tests="7" failures="5" errors="0" time="648.052" skips="0" timestamp="2021-01-11 17:53:03" hostname="akhil - DESKTOP-3UFIQIO" id="Test Suites/New Test Suite">
+      <properties>
+         <property name="deviceName" value=""/>
+         <property name="devicePlatform" value=""/>
+         <property name="logFolder" value="C:\\Modist\\ModistProject\\Reports\\20210111_175301\\New Test Suite\\20210111_175301"/>
+         <property name="logFiles" value="C:\\Modist\\ModistProject\\Reports\\20210111_175301\\New Test Suite\\20210111_175301\\execution0.log"/>
+         <property name="attachments" value="C:\\Modist\\ModistProject\\Reports\\20210111_175301\\New Test Suite\\20210111_175301\\1610367859450.png, C:\\Modist\\ModistProject\\Reports\\20210111_175301\\New Test Suite\\20210111_175301\\1610367859998.png, C:\\Modist\\ModistProject\\Reports\\20210111_175301\\New Test Suite\\20210111_175301\\1610367982032.png, C:\\Modist\\ModistProject\\Reports\\20210111_175301\\New Test Suite\\20210111_175301\\1610368064672.png, C:\\Modist\\ModistProject\\Reports\\20210111_175301\\New Test Suite\\20210111_175301\\1610368065210.png, C:\\Modist\\ModistProject\\Reports\\20210111_175301\\New Test Suite\\20210111_175301\\1610368139299.png"/>
+         <property name="hostName" value="akhil - DESKTOP-3UFIQIO"/>
+         <property name="os" value="Windows 10 64bit"/>
+         <property name="katalonVersion" value="7.8.1.208"/>
+         <property name="browser" value="Chrome 87.0.4280.88"/>
+         <property name="hostAddress" value="192.168.1.100"/>
+         <property name="sessionId" value="2159c06340e879228297a9d05ddef879"/>
+         <property name="seleniumVersion" value="3.141.59"/>
+         <property name="proxyInformation" value="ProxyInformation { proxyOption=NO_PROXY, proxyServerType=HTTP, username=, password=********, proxyServerAddress=, proxyServerPort=0, executionList=&quot;&quot;, isApplyToDesiredCapabilities=true }"/>
+         <property name="platform" value="Windows 10"/>
+      </properties>
+      <testcase name="Test Cases/Admin/Asset/deleteAssetAndVerify" time="80.367" classname="Test Cases/Admin/Asset/deleteAssetAndVerify" status="FAILED">
+         <failure type="FAILED" message="Test Cases/Admin/Asset/deleteAssetAndVerify FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Asset Author142 is not present
+	at com.kms.katalon.core.util.KeywordUtil.markFailedAndStop(KeywordUtil.java:28)
+	at com.kms.katalon.core.util.KeywordUtil$markFailedAndStop.call(Unknown Source)
+	at verification.Verification.verifyElementNotPresent(Verification.groovy:47)
+	at verification.Verification$verifyElementNotPresent.call(Unknown Source)
+	at pages.Asset.VerifyAssetNotPresent(Asset.groovy:187)
+	at pages.Asset.invokeMethod(Asset.groovy)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:50)
+	at deleteAssetAndVerify.run(deleteAssetAndVerify:24)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:393)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:384)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:363)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:355)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:251)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:203)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:152)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:95)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1610367781396.run(TempTestSuite1610367781396.groovy:39)
+"/>
+         <system-out><![CDATA[2021-01-11 17:53:04 - [TEST_CASE][FAILED] - Test Cases/Admin/Asset/deleteAssetAndVerify: Test Cases/Admin/Asset/deleteAssetAndVerify FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Asset Author142 is not present
+	at com.kms.katalon.core.util.KeywordUtil.markFailedAndStop(KeywordUtil.java:28)
+	at com.kms.katalon.core.util.KeywordUtil$markFailedAndStop.call(Unknown Source)
+	at verification.Verification.verifyElementNotPresent(Verification.groovy:47)
+	at verification.Verification$verifyElementNotPresent.call(Unknown Source)
+	at pages.Asset.VerifyAssetNotPresent(Asset.groovy:187)
+	at pages.Asset.invokeMethod(Asset.groovy)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:50)
+	at deleteAssetAndVerify.run(deleteAssetAndVerify:24)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:393)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:384)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:363)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:355)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:251)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:203)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:152)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:95)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1610367781396.run(TempTestSuite1610367781396.groovy:39)
+
+
+2021-01-11 17:53:04 - [TEST_STEP][PASSED] - Start listener action : OpenWebSite: Object: 'Object Repository/Login Credentials/EnterButton' is clicked on
+
+2021-01-11 17:53:04 - [TEST_STEP][PASSED] - openBrowser(""): Browser is opened with url: ''
+
+2021-01-11 17:53:05 - [MESSAGE][INFO] - Starting 'Chrome' driver
+
+2021-01-11 17:53:05 - [MESSAGE][INFO] - Action delay is set to 0 milliseconds
+
+2021-01-11 17:53:09 - [MESSAGE][PASSED] - Browser is opened with url: ''
+
+2021-01-11 17:53:09 - [TEST_STEP][PASSED] - maximizeWindow(): Current window maximized
+
+2021-01-11 17:53:12 - [MESSAGE][PASSED] - Current window maximized
+
+2021-01-11 17:53:12 - [TEST_STEP][PASSED] - navigateToUrl(Url): Navigate to 'https://dev-admin.modist.co/' successfully
+
+2021-01-11 17:53:20 - [MESSAGE][PASSED] - Navigate to 'https://dev-admin.modist.co/' successfully
+
+2021-01-11 17:53:20 - [TEST_STEP][PASSED] - loginPage.login(Email, Password): Object: 'Object Repository/Login Credentials/EnterButton' is clicked on
+
+2021-01-11 17:53:20 - [MESSAGE][PASSED] - Object 'Object Repository/Login Credentials/Email' is present
+
+2021-01-11 17:53:21 - [MESSAGE][PASSED] - Object 'Object Repository/Login Credentials/Email' is visible
+
+2021-01-11 17:53:21 - [MESSAGE][PASSED] - Object 'Object Repository/Login Credentials/Email' is clickable
+
+2021-01-11 17:53:21 - [MESSAGE][PASSED] - Text of object 'Object Repository/Login Credentials/Email' is cleared
+
+2021-01-11 17:53:21 - [MESSAGE][PASSED] - Keys 'naresh.k@qualitlabs.com' sent to object: 'Object Repository/Login Credentials/Email'
+
+2021-01-11 17:53:22 - [MESSAGE][PASSED] - Object 'Object Repository/Login Credentials/Password' is present
+
+2021-01-11 17:53:22 - [MESSAGE][PASSED] - Object 'Object Repository/Login Credentials/Password' is visible
+
+2021-01-11 17:53:22 - [MESSAGE][PASSED] - Object 'Object Repository/Login Credentials/Password' is clickable
+
+2021-01-11 17:53:23 - [MESSAGE][PASSED] - Text of object 'Object Repository/Login Credentials/Password' is cleared
+
+2021-01-11 17:53:23 - [MESSAGE][PASSED] - Keys 'Qualitlabs1?' sent to object: 'Object Repository/Login Credentials/Password'
+
+2021-01-11 17:53:23 - [MESSAGE][PASSED] - Object 'Object Repository/Login Credentials/EnterButton' is present
+
+2021-01-11 17:53:24 - [MESSAGE][PASSED] - Object 'Object Repository/Login Credentials/EnterButton' is visible
+
+2021-01-11 17:53:24 - [MESSAGE][PASSED] - Object 'Object Repository/Login Credentials/EnterButton' is clickable
+
+2021-01-11 17:53:24 - [MESSAGE][PASSED] - Object: 'Object Repository/Login Credentials/EnterButton' is clicked on
+
+2021-01-11 17:53:24 - [TEST_STEP][PASSED] - pages.Asset.clickAssetTab(): pages.Asset.clickAssetTab is PASSED
+
+2021-01-11 17:53:27 - [MESSAGE][PASSED] - Object 'Object Repository/Asset/Asset/AssetPageElements/assetTab' is present
+
+2021-01-11 17:53:27 - [MESSAGE][PASSED] - Object 'Object Repository/Asset/Asset/AssetPageElements/assetTab' is visible
+
+2021-01-11 17:53:28 - [MESSAGE][PASSED] - Object 'Object Repository/Asset/Asset/AssetPageElements/assetTab' is clickable
+
+2021-01-11 17:53:28 - [MESSAGE][PASSED] - Object: 'Object Repository/Asset/Asset/AssetPageElements/assetTab' is clicked on
+
+2021-01-11 17:53:38 - [MESSAGE][PASSED] - Delayed 10 second(s)
+
+2021-01-11 17:53:38 - [MESSAGE][PASSED] - pages.Asset.clickAssetTab is PASSED
+
+2021-01-11 17:53:38 - [TEST_STEP][PASSED] - assetName = pages.Asset.getRandomAssetName(): pages.Asset.getRandomAssetName is PASSED
+
+2021-01-11 17:53:38 - [MESSAGE][PASSED] - Wait for page load successfully
+
+2021-01-11 17:53:38 - [MESSAGE][PASSED] - Object 'Object Repository/Asset/Asset/AssetCount' is present
+
+2021-01-11 17:53:39 - [MESSAGE][PASSED] - Text of object 'Object Repository/Asset/Asset/randomAsset(index)' is: ''
+
+2021-01-11 17:53:39 - [MESSAGE][PASSED] - Text of object 'Object Repository/Asset/Asset/randomAsset(index)' is: 'Author142'
+
+2021-01-11 17:53:39 - [MESSAGE][PASSED] - pages.Asset.getRandomAssetName is PASSED
+
+2021-01-11 17:53:39 - [TEST_STEP][PASSED] - pages.Asset.deleteAsset(assetName): pages.Asset.deleteAsset is PASSED
+
+2021-01-11 17:53:39 - [MESSAGE][PASSED] - Object 'Object Repository/Asset/Asset/AssetPageElements/search' is present
+
+2021-01-11 17:53:40 - [MESSAGE][PASSED] - Object 'Object Repository/Asset/Asset/AssetPageElements/search' is visible
+
+2021-01-11 17:53:40 - [MESSAGE][PASSED] - Object 'Object Repository/Asset/Asset/AssetPageElements/search' is clickable
+
+2021-01-11 17:53:40 - [MESSAGE][PASSED] - Text of object 'Object Repository/Asset/Asset/AssetPageElements/search' is cleared
+
+2021-01-11 17:53:41 - [MESSAGE][PASSED] - Keys 'Author142' sent to object: 'Object Repository/Asset/Asset/AssetPageElements/search'
+
+2021-01-11 17:53:41 - [MESSAGE][PASSED] - Wait for page load successfully
+
+2021-01-11 17:53:41 - [MESSAGE][PASSED] - Object 'Object Repository/Asset/Asset/delAssetCheckbox(assetName)' is present
+
+2021-01-11 17:53:42 - [MESSAGE][PASSED] - Object 'Object Repository/Asset/Asset/delAssetCheckbox(assetName)' is visible
+
+2021-01-11 17:53:42 - [MESSAGE][PASSED] - Object 'Object Repository/Asset/Asset/delAssetCheckbox(assetName)' is clickable
+
+2021-01-11 17:53:44 - [MESSAGE][PASSED] - Object: 'Object Repository/Asset/Asset/delAssetCheckbox(assetName)' is clicked on
+
+2021-01-11 17:53:45 - [MESSAGE][PASSED] - Object 'Object Repository/Asset/Asset/delIcon' is present
+
+2021-01-11 17:53:45 - [MESSAGE][PASSED] - Object 'Object Repository/Asset/Asset/delIcon' is visible
+
+2021-01-11 17:53:45 - [MESSAGE][PASSED] - Object 'Object Repository/Asset/Asset/delIcon' is clickable
+
+2021-01-11 17:53:45 - [MESSAGE][PASSED] - Object: 'Object Repository/Asset/Asset/delIcon' is clicked on
+
+2021-01-11 17:53:45 - [MESSAGE][PASSED] - Alert accepted
+
+2021-01-11 17:53:45 - [MESSAGE][PASSED] - pages.Asset.deleteAsset is PASSED
+
+2021-01-11 17:53:45 - [TEST_STEP][FAILED] - pages.Asset.VerifyAssetNotPresent(assetName): Asset Author142 is not present
+
+2021-01-11 17:53:47 - [MESSAGE][PASSED] - Object 'Object Repository/Asset/Asset/AssetPageElements/search' is present
+
+2021-01-11 17:53:47 - [MESSAGE][PASSED] - Object 'Object Repository/Asset/Asset/AssetPageElements/search' is visible
+
+2021-01-11 17:53:48 - [MESSAGE][PASSED] - Object 'Object Repository/Asset/Asset/AssetPageElements/search' is clickable
+
+2021-01-11 17:53:48 - [MESSAGE][PASSED] - Text of object 'Object Repository/Asset/Asset/AssetPageElements/search' is cleared
+
+2021-01-11 17:53:48 - [MESSAGE][PASSED] - Keys 'Author142' sent to object: 'Object Repository/Asset/Asset/AssetPageElements/search'
+
+2021-01-11 17:53:48 - [MESSAGE][PASSED] - Wait for page load successfully
+
+2021-01-11 17:54:19 - [MESSAGE][WARNING] - Web element with id: 'Object Repository/Asset/Asset/assetname(assetName)' located by 'By.xpath: //div[text()='Author142']' is present after '30' second(s) (Root cause: com.kms.katalon.core.exception.StepFailedException: Web element with id: 'Object Repository/Asset/Asset/assetname(assetName)' located by 'By.xpath: //div[text()='Author142']' is present after '30' second(s)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain$stepFailed$0.call(Unknown Source)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementNotPresentKeyword$_verifyElementNotPresent_closure1.doCall(VerifyElementNotPresentKeyword.groovy:106)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementNotPresentKeyword$_verifyElementNotPresent_closure1.doCall(VerifyElementNotPresentKeyword.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:20)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain$runKeyword.call(Unknown Source)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementNotPresentKeyword.verifyElementNotPresent(VerifyElementNotPresentKeyword.groovy:117)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementNotPresentKeyword.execute(VerifyElementNotPresentKeyword.groovy:68)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:73)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.verifyElementNotPresent(WebUiBuiltInKeywords.groovy:1478)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$verifyElementNotPresent$12.call(Unknown Source)
+	at verification.Verification.verifyElementNotPresent(Verification.groovy:45)
+	at verification.Verification$verifyElementNotPresent.call(Unknown Source)
+	at pages.Asset.VerifyAssetNotPresent(Asset.groovy:187)
+	at pages.Asset.invokeMethod(Asset.groovy)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:50)
+	at deleteAssetAndVerify.run(deleteAssetAndVerify:24)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:393)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:384)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:363)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:355)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:251)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:203)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:152)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:95)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1610367781396.run(TempTestSuite1610367781396.groovy:39)
+)
+[[ATTACHMENT|C:\\Modist\\ModistProject\\Reports\\20210111_175301\\New Test Suite\\20210111_175301\\1610367859450.png]]
+
+2021-01-11 17:54:20 - [MESSAGE][PASSED] - Taking screenshot successfully
+[[ATTACHMENT|C:\\Modist\\ModistProject\\Reports\\20210111_175301\\New Test Suite\\20210111_175301\\1610367859998.png]]
+
+2021-01-11 17:54:20 - [MESSAGE][FAILED] - Asset Author142 is not present]]></system-out>
+         <system-err><![CDATA[2021-01-11 17:53:04 - [TEST_CASE][FAILED] - Test Cases/Admin/Asset/deleteAssetAndVerify: Test Cases/Admin/Asset/deleteAssetAndVerify FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Asset Author142 is not present
+	at com.kms.katalon.core.util.KeywordUtil.markFailedAndStop(KeywordUtil.java:28)
+	at com.kms.katalon.core.util.KeywordUtil$markFailedAndStop.call(Unknown Source)
+	at verification.Verification.verifyElementNotPresent(Verification.groovy:47)
+	at verification.Verification$verifyElementNotPresent.call(Unknown Source)
+	at pages.Asset.VerifyAssetNotPresent(Asset.groovy:187)
+	at pages.Asset.invokeMethod(Asset.groovy)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:50)
+	at deleteAssetAndVerify.run(deleteAssetAndVerify:24)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:393)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:384)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:363)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:355)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:251)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:203)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:152)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:95)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1610367781396.run(TempTestSuite1610367781396.groovy:39)]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Admin/Asset/deleteAssetAndVerify" time="50.119" classname="Test Cases/Admin/Asset/deleteAssetAndVerify" status="PASSED">
+         <system-out><![CDATA[2021-01-11 17:54:25 - [TEST_CASE][PASSED] - Test Cases/Admin/Asset/deleteAssetAndVerify: Test Cases/Admin/Asset/deleteAssetAndVerify
+
+2021-01-11 17:54:25 - [TEST_STEP][PASSED] - Start listener action : OpenWebSite: Object: 'Object Repository/Login Credentials/EnterButton' is clicked on
+
+2021-01-11 17:54:25 - [TEST_STEP][PASSED] - openBrowser(""): Browser is opened with url: ''
+
+2021-01-11 17:54:25 - [MESSAGE][WARNING] - A browser is already opened. Closing browser and opening a new one
+
+2021-01-11 17:54:26 - [MESSAGE][INFO] - Starting 'Chrome' driver
+
+2021-01-11 17:54:26 - [MESSAGE][INFO] - Action delay is set to 0 milliseconds
+
+2021-01-11 17:54:29 - [MESSAGE][PASSED] - Browser is opened with url: ''
+
+2021-01-11 17:54:29 - [TEST_STEP][PASSED] - maximizeWindow(): Current window maximized
+
+2021-01-11 17:54:32 - [MESSAGE][PASSED] - Current window maximized
+
+2021-01-11 17:54:32 - [TEST_STEP][PASSED] - navigateToUrl(Url): Navigate to 'https://dev-admin.modist.co/' successfully
+
+2021-01-11 17:54:42 - [MESSAGE][PASSED] - Navigate to 'https://dev-admin.modist.co/' successfully
+
+2021-01-11 17:54:42 - [TEST_STEP][PASSED] - loginPage.login(Email, Password): Object: 'Object Repository/Login Credentials/EnterButton' is clicked on
+
+2021-01-11 17:54:42 - [MESSAGE][PASSED] - Object 'Object Repository/Login Credentials/Email' is present
+
+2021-01-11 17:54:43 - [MESSAGE][PASSED] - Object 'Object Repository/Login Credentials/Email' is visible
+
+2021-01-11 17:54:43 - [MESSAGE][PASSED] - Object 'Object Repository/Login Credentials/Email' is clickable
+
+2021-01-11 17:54:43 - [MESSAGE][PASSED] - Text of object 'Object Repository/Login Credentials/Email' is cleared
+
+2021-01-11 17:54:43 - [MESSAGE][PASSED] - Keys 'naresh.k@qualitlabs.com' sent to object: 'Object Repository/Login Credentials/Email'
+
+2021-01-11 17:54:44 - [MESSAGE][PASSED] - Object 'Object Repository/Login Credentials/Password' is present
+
+2021-01-11 17:54:44 - [MESSAGE][PASSED] - Object 'Object Repository/Login Credentials/Password' is visible
+
+2021-01-11 17:54:44 - [MESSAGE][PASSED] - Object 'Object Repository/Login Credentials/Password' is clickable
+
+2021-01-11 17:54:45 - [MESSAGE][PASSED] - Text of object 'Object Repository/Login Credentials/Password' is cleared
+
+2021-01-11 17:54:45 - [MESSAGE][PASSED] - Keys 'Qualitlabs1?' sent to object: 'Object Repository/Login Credentials/Password'
+
+2021-01-11 17:54:45 - [MESSAGE][PASSED] - Object 'Object Repository/Login Credentials/EnterButton' is present
+
+2021-01-11 17:54:45 - [MESSAGE][PASSED] - Object 'Object Repository/Login Credentials/EnterButton' is visible
+
+2021-01-11 17:54:46 - [MESSAGE][PASSED] - Object 'Object Repository/Login Credentials/EnterButton' is clickable
+
+2021-01-11 17:54:46 - [MESSAGE][PASSED] - Object: 'Object Repository/Login Credentials/EnterButton' is clicked on
+
+2021-01-11 17:54:46 - [TEST_STEP][PASSED] - pages.Asset.clickAssetTab(): pages.Asset.clickAssetTab is PASSED
+
+2021-01-11 17:54:48 - [MESSAGE][PASSED] - Object 'Object Repository/Asset/Asset/AssetPageElements/assetTab' is present
+
+2021-01-11 17:54:48 - [MESSAGE][PASSED] - Object 'Object Repository/Asset/Asset/AssetPageElements/assetTab' is visible
+
+2021-01-11 17:54:49 - [MESSAGE][PASSED] - Object 'Object Repository/Asset/Asset/AssetPageElements/assetTab' is clickable
+
+2021-01-11 17:54:49 - [MESSAGE][PASSED] - Object: 'Object Repository/Asset/Asset/AssetPageElements/assetTab' is clicked on
+
+2021-01-11 17:54:59 - [MESSAGE][PASSED] - Delayed 10 second(s)
+
+2021-01-11 17:54:59 - [MESSAGE][PASSED] - pages.Asset.clickAssetTab is PASSED
+
+2021-01-11 17:54:59 - [TEST_STEP][PASSED] - assetName = pages.Asset.getRandomAssetName(): pages.Asset.getRandomAssetName is PASSED
+
+2021-01-11 17:54:59 - [MESSAGE][PASSED] - Wait for page load successfully
+
+2021-01-11 17:55:00 - [MESSAGE][PASSED] - Object 'Object Repository/Asset/Asset/AssetCount' is present
+
+2021-01-11 17:55:00 - [MESSAGE][PASSED] - Text of object 'Object Repository/Asset/Asset/randomAsset(index)' is: 'Author687'
+
+2021-01-11 17:55:00 - [MESSAGE][PASSED] - pages.Asset.getRandomAssetName is PASSED
+
+2021-01-11 17:55:00 - [TEST_STEP][PASSED] - pages.Asset.deleteAsset(assetName): pages.Asset.deleteAsset is PASSED
+
+2021-01-11 17:55:00 - [MESSAGE][PASSED] - Object 'Object Repository/Asset/Asset/AssetPageElements/search' is present
+
+2021-01-11 17:55:01 - [MESSAGE][PASSED] - Object 'Object Repository/Asset/Asset/AssetPageElements/search' is visible
+
+2021-01-11 17:55:01 - [MESSAGE][PASSED] - Object 'Object Repository/Asset/Asset/AssetPageElements/search' is clickable
+
+2021-01-11 17:55:01 - [MESSAGE][PASSED] - Text of object 'Object Repository/Asset/Asset/AssetPageElements/search' is cleared
+
+2021-01-11 17:55:02 - [MESSAGE][PASSED] - Keys 'Author687' sent to object: 'Object Repository/Asset/Asset/AssetPageElements/search'
+
+2021-01-11 17:55:02 - [MESSAGE][PASSED] - Wait for page load successfully
+
+2021-01-11 17:55:02 - [MESSAGE][PASSED] - Object 'Object Repository/Asset/Asset/delAssetCheckbox(assetName)' is present
+
+2021-01-11 17:55:03 - [MESSAGE][PASSED] - Object 'Object Repository/Asset/Asset/delAssetCheckbox(assetName)' is visible
+
+2021-01-11 17:55:05 - [MESSAGE][PASSED] - Object 'Object Repository/Asset/Asset/delAssetCheckbox(assetName)' is clickable
+
+2021-01-11 17:55:06 - [MESSAGE][PASSED] - Object: 'Object Repository/Asset/Asset/delAssetCheckbox(assetName)' is clicked on
+
+2021-01-11 17:55:06 - [MESSAGE][PASSED] - Object 'Object Repository/Asset/Asset/delIcon' is present
+
+2021-01-11 17:55:06 - [MESSAGE][PASSED] - Object 'Object Repository/Asset/Asset/delIcon' is visible
+
+2021-01-11 17:55:06 - [MESSAGE][PASSED] - Object 'Object Repository/Asset/Asset/delIcon' is clickable
+
+2021-01-11 17:55:07 - [MESSAGE][PASSED] - Object: 'Object Repository/Asset/Asset/delIcon' is clicked on
+
+2021-01-11 17:55:07 - [MESSAGE][PASSED] - Alert accepted
+
+2021-01-11 17:55:07 - [MESSAGE][PASSED] - pages.Asset.deleteAsset is PASSED
+
+2021-01-11 17:55:07 - [TEST_STEP][PASSED] - pages.Asset.VerifyAssetNotPresent(assetName): pages.Asset.VerifyAssetNotPresent is PASSED
+
+2021-01-11 17:55:09 - [MESSAGE][PASSED] - Object 'Object Repository/Asset/Asset/AssetPageElements/search' is present
+
+2021-01-11 17:55:09 - [MESSAGE][PASSED] - Object 'Object Repository/Asset/Asset/AssetPageElements/search' is visible
+
+2021-01-11 17:55:09 - [MESSAGE][PASSED] - Object 'Object Repository/Asset/Asset/AssetPageElements/search' is clickable
+
+2021-01-11 17:55:09 - [MESSAGE][PASSED] - Text of object 'Object Repository/Asset/Asset/AssetPageElements/search' is cleared
+
+2021-01-11 17:55:10 - [MESSAGE][PASSED] - Keys 'Author687' sent to object: 'Object Repository/Asset/Asset/AssetPageElements/search'
+
+2021-01-11 17:55:10 - [MESSAGE][PASSED] - Wait for page load successfully
+
+2021-01-11 17:55:10 - [MESSAGE][PASSED] - Web element with id: 'Object Repository/Asset/Asset/assetname(assetName)' located by 'By.xpath: //div[text()='Author687']' is not present after '30' second(s)
+
+2021-01-11 17:55:10 - [MESSAGE][PASSED] - pages.Asset.VerifyAssetNotPresent is PASSED]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Admin/Asset/deleteAssetAndVerify" time="71.942" classname="Test Cases/Admin/Asset/deleteAssetAndVerify" status="FAILED">
+         <failure type="FAILED" message="Test Cases/Admin/Asset/deleteAssetAndVerify FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Unable to get text of object 'Object Repository/Asset/Asset/randomAsset(index)'
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:26)
+	at com.kms.katalon.core.webui.keyword.builtin.GetTextKeyword.getText(GetTextKeyword.groovy:88)
+	at com.kms.katalon.core.webui.keyword.builtin.GetTextKeyword.execute(GetTextKeyword.groovy:67)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:73)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.getText(WebUiBuiltInKeywords.groovy:915)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$getText$10.call(Unknown Source)
+	at pages.Asset.getRandomAssetName(Asset.groovy:100)
+	at pages.Asset.invokeMethod(Asset.groovy)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:50)
+	at deleteAssetAndVerify.run(deleteAssetAndVerify:20)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:393)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:384)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:363)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:355)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:251)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:203)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:152)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:95)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1610367781396.run(TempTestSuite1610367781396.groovy:39)
+Caused by: com.kms.katalon.core.webui.exception.WebElementNotFoundException: Web element with id: 'Object Repository/Asset/Asset/randomAsset(index)' located by '//div[@class='sc-jrsJCI ivRwdr rdt_TableRow'][11]//div[5]' not found
+	at com.kms.katalon.core.webui.common.WebUiCommonHelper.findWebElement(WebUiCommonHelper.java:1369)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIAbstractKeyword.findWebElement(WebUIAbstractKeyword.groovy:27)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIAbstractKeyword.findWebElement(WebUIAbstractKeyword.groovy:26)
+	at com.kms.katalon.core.webui.keyword.builtin.GetTextKeyword$_getText_closure1.doCall(GetTextKeyword.groovy:78)
+	at com.kms.katalon.core.webui.keyword.builtin.GetTextKeyword$_getText_closure1.call(GetTextKeyword.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:20)
+	... 22 more
+"/>
+         <system-out><![CDATA[2021-01-11 17:55:15 - [TEST_CASE][FAILED] - Test Cases/Admin/Asset/deleteAssetAndVerify: Test Cases/Admin/Asset/deleteAssetAndVerify FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Unable to get text of object 'Object Repository/Asset/Asset/randomAsset(index)'
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:26)
+	at com.kms.katalon.core.webui.keyword.builtin.GetTextKeyword.getText(GetTextKeyword.groovy:88)
+	at com.kms.katalon.core.webui.keyword.builtin.GetTextKeyword.execute(GetTextKeyword.groovy:67)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:73)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.getText(WebUiBuiltInKeywords.groovy:915)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$getText$10.call(Unknown Source)
+	at pages.Asset.getRandomAssetName(Asset.groovy:100)
+	at pages.Asset.invokeMethod(Asset.groovy)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:50)
+	at deleteAssetAndVerify.run(deleteAssetAndVerify:20)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:393)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:384)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:363)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:355)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:251)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:203)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:152)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:95)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1610367781396.run(TempTestSuite1610367781396.groovy:39)
+Caused by: com.kms.katalon.core.webui.exception.WebElementNotFoundException: Web element with id: 'Object Repository/Asset/Asset/randomAsset(index)' located by '//div[@class='sc-jrsJCI ivRwdr rdt_TableRow'][11]//div[5]' not found
+	at com.kms.katalon.core.webui.common.WebUiCommonHelper.findWebElement(WebUiCommonHelper.java:1369)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIAbstractKeyword.findWebElement(WebUIAbstractKeyword.groovy:27)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIAbstractKeyword.findWebElement(WebUIAbstractKeyword.groovy:26)
+	at com.kms.katalon.core.webui.keyword.builtin.GetTextKeyword$_getText_closure1.doCall(GetTextKeyword.groovy:78)
+	at com.kms.katalon.core.webui.keyword.builtin.GetTextKeyword$_getText_closure1.call(GetTextKeyword.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:20)
+	... 22 more
+
+
+2021-01-11 17:55:15 - [TEST_STEP][PASSED] - Start listener action : OpenWebSite: Object: 'Object Repository/Login Credentials/EnterButton' is clicked on
+
+2021-01-11 17:55:15 - [TEST_STEP][PASSED] - openBrowser(""): Browser is opened with url: ''
+
+2021-01-11 17:55:15 - [MESSAGE][WARNING] - A browser is already opened. Closing browser and opening a new one
+
+2021-01-11 17:55:16 - [MESSAGE][INFO] - Starting 'Chrome' driver
+
+2021-01-11 17:55:16 - [MESSAGE][INFO] - Action delay is set to 0 milliseconds
+
+2021-01-11 17:55:20 - [MESSAGE][PASSED] - Browser is opened with url: ''
+
+2021-01-11 17:55:20 - [TEST_STEP][PASSED] - maximizeWindow(): Current window maximized
+
+2021-01-11 17:55:22 - [MESSAGE][PASSED] - Current window maximized
+
+2021-01-11 17:55:22 - [TEST_STEP][PASSED] - navigateToUrl(Url): Navigate to 'https://dev-admin.modist.co/' successfully
+
+2021-01-11 17:55:32 - [MESSAGE][PASSED] - Navigate to 'https://dev-admin.modist.co/' successfully
+
+2021-01-11 17:55:32 - [TEST_STEP][PASSED] - loginPage.login(Email, Password): Object: 'Object Repository/Login Credentials/EnterButton' is clicked on
+
+2021-01-11 17:55:33 - [MESSAGE][PASSED] - Object 'Object Repository/Login Credentials/Email' is present
+
+2021-01-11 17:55:33 - [MESSAGE][PASSED] - Object 'Object Repository/Login Credentials/Email' is visible
+
+2021-01-11 17:55:33 - [MESSAGE][PASSED] - Object 'Object Repository/Login Credentials/Email' is clickable
+
+2021-01-11 17:55:33 - [MESSAGE][PASSED] - Text of object 'Object Repository/Login Credentials/Email' is cleared
+
+2021-01-11 17:55:34 - [MESSAGE][PASSED] - Keys 'naresh.k@qualitlabs.com' sent to object: 'Object Repository/Login Credentials/Email'
+
+2021-01-11 17:55:34 - [MESSAGE][PASSED] - Object 'Object Repository/Login Credentials/Password' is present
+
+2021-01-11 17:55:34 - [MESSAGE][PASSED] - Object 'Object Repository/Login Credentials/Password' is visible
+
+2021-01-11 17:55:34 - [MESSAGE][PASSED] - Object 'Object Repository/Login Credentials/Password' is clickable
+
+2021-01-11 17:55:35 - [MESSAGE][PASSED] - Text of object 'Object Repository/Login Credentials/Password' is cleared
+
+2021-01-11 17:55:35 - [MESSAGE][PASSED] - Keys 'Qualitlabs1?' sent to object: 'Object Repository/Login Credentials/Password'
+
+2021-01-11 17:55:35 - [MESSAGE][PASSED] - Object 'Object Repository/Login Credentials/EnterButton' is present
+
+2021-01-11 17:55:35 - [MESSAGE][PASSED] - Object 'Object Repository/Login Credentials/EnterButton' is visible
+
+2021-01-11 17:55:36 - [MESSAGE][PASSED] - Object 'Object Repository/Login Credentials/EnterButton' is clickable
+
+2021-01-11 17:55:36 - [MESSAGE][PASSED] - Object: 'Object Repository/Login Credentials/EnterButton' is clicked on
+
+2021-01-11 17:55:36 - [TEST_STEP][PASSED] - pages.Asset.clickAssetTab(): pages.Asset.clickAssetTab is PASSED
+
+2021-01-11 17:55:38 - [MESSAGE][PASSED] - Object 'Object Repository/Asset/Asset/AssetPageElements/assetTab' is present
+
+2021-01-11 17:55:38 - [MESSAGE][PASSED] - Object 'Object Repository/Asset/Asset/AssetPageElements/assetTab' is visible
+
+2021-01-11 17:55:39 - [MESSAGE][PASSED] - Object 'Object Repository/Asset/Asset/AssetPageElements/assetTab' is clickable
+
+2021-01-11 17:55:39 - [MESSAGE][PASSED] - Object: 'Object Repository/Asset/Asset/AssetPageElements/assetTab' is clicked on
+
+2021-01-11 17:55:49 - [MESSAGE][PASSED] - Delayed 10 second(s)
+
+2021-01-11 17:55:49 - [MESSAGE][PASSED] - pages.Asset.clickAssetTab is PASSED
+
+2021-01-11 17:55:49 - [TEST_STEP][FAILED] - assetName = pages.Asset.getRandomAssetName(): Unable to get text of object 'Object Repository/Asset/Asset/randomAsset(index)'
+
+2021-01-11 17:55:49 - [MESSAGE][PASSED] - Wait for page load successfully
+
+2021-01-11 17:55:49 - [MESSAGE][PASSED] - Object 'Object Repository/Asset/Asset/AssetCount' is present
+
+2021-01-11 17:55:50 - [MESSAGE][PASSED] - Text of object 'Object Repository/Asset/Asset/randomAsset(index)' is: ''
+
+2021-01-11 17:55:50 - [MESSAGE][PASSED] - Text of object 'Object Repository/Asset/Asset/randomAsset(index)' is: ''
+
+2021-01-11 17:56:22 - [MESSAGE][INFO] - Unable to find the element located by 'By.xpath: //div[@class='sc-jrsJCI ivRwdr rdt_TableRow'][11]//div[5]'. Please recheck the objects properties to make sure the desired element is located. 
+
+2021-01-11 17:56:22 - [MESSAGE][WARNING] - [SELF-HEALING] Failed to find element with id 'Object Repository/Asset/Asset/randomAsset(index)'. Try using Self-healing.
+
+2021-01-11 17:56:22 - [MESSAGE][WARNING] - [SELF-HEALING] Cannot find elements when the XPath is null.
+
+2021-01-11 17:56:22 - [MESSAGE][WARNING] - [SELF-HEALING] Cannot find elements when the selector is null
+
+2021-01-11 17:56:22 - [MESSAGE][FAILED] - Unable to get text of object 'Object Repository/Asset/Asset/randomAsset(index)' (Root cause: com.kms.katalon.core.exception.StepFailedException: Unable to get text of object 'Object Repository/Asset/Asset/randomAsset(index)'
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:26)
+	at com.kms.katalon.core.webui.keyword.builtin.GetTextKeyword.getText(GetTextKeyword.groovy:88)
+	at com.kms.katalon.core.webui.keyword.builtin.GetTextKeyword.execute(GetTextKeyword.groovy:67)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:73)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.getText(WebUiBuiltInKeywords.groovy:915)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$getText$10.call(Unknown Source)
+	at pages.Asset.getRandomAssetName(Asset.groovy:100)
+	at pages.Asset.invokeMethod(Asset.groovy)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:50)
+	at deleteAssetAndVerify.run(deleteAssetAndVerify:20)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:393)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:384)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:363)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:355)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:251)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:203)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:152)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:95)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1610367781396.run(TempTestSuite1610367781396.groovy:39)
+Caused by: com.kms.katalon.core.webui.exception.WebElementNotFoundException: Web element with id: 'Object Repository/Asset/Asset/randomAsset(index)' located by '//div[@class='sc-jrsJCI ivRwdr rdt_TableRow'][11]//div[5]' not found
+	at com.kms.katalon.core.webui.common.WebUiCommonHelper.findWebElement(WebUiCommonHelper.java:1369)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIAbstractKeyword.findWebElement(WebUIAbstractKeyword.groovy:27)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIAbstractKeyword.findWebElement(WebUIAbstractKeyword.groovy:26)
+	at com.kms.katalon.core.webui.keyword.builtin.GetTextKeyword$_getText_closure1.doCall(GetTextKeyword.groovy:78)
+	at com.kms.katalon.core.webui.keyword.builtin.GetTextKeyword$_getText_closure1.call(GetTextKeyword.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:20)
+	at com.kms.katalon.core.webui.keyword.builtin.GetTextKeyword.getText(GetTextKeyword.groovy:88)
+	at com.kms.katalon.core.webui.keyword.builtin.GetTextKeyword.execute(GetTextKeyword.groovy:67)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:73)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.getText(WebUiBuiltInKeywords.groovy:915)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$getText$10.call(Unknown Source)
+	at pages.Asset.getRandomAssetName(Asset.groovy:100)
+	at pages.Asset.invokeMethod(Asset.groovy)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:50)
+	at Script1609999363736.run(Script1609999363736.groovy:20)
+	... 13 more
+)
+[[ATTACHMENT|C:\\Modist\\ModistProject\\Reports\\20210111_175301\\New Test Suite\\20210111_175301\\1610367982032.png]]
+
+2021-01-11 17:56:22 - [MESSAGE][FAILED] - Unable to get text of object 'Object Repository/Asset/Asset/randomAsset(index)']]></system-out>
+         <system-err><![CDATA[2021-01-11 17:55:15 - [TEST_CASE][FAILED] - Test Cases/Admin/Asset/deleteAssetAndVerify: Test Cases/Admin/Asset/deleteAssetAndVerify FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Unable to get text of object 'Object Repository/Asset/Asset/randomAsset(index)'
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:26)
+	at com.kms.katalon.core.webui.keyword.builtin.GetTextKeyword.getText(GetTextKeyword.groovy:88)
+	at com.kms.katalon.core.webui.keyword.builtin.GetTextKeyword.execute(GetTextKeyword.groovy:67)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:73)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.getText(WebUiBuiltInKeywords.groovy:915)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$getText$10.call(Unknown Source)
+	at pages.Asset.getRandomAssetName(Asset.groovy:100)
+	at pages.Asset.invokeMethod(Asset.groovy)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:50)
+	at deleteAssetAndVerify.run(deleteAssetAndVerify:20)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:393)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:384)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:363)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:355)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:251)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:203)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:152)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:95)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1610367781396.run(TempTestSuite1610367781396.groovy:39)
+Caused by: com.kms.katalon.core.webui.exception.WebElementNotFoundException: Web element with id: 'Object Repository/Asset/Asset/randomAsset(index)' located by '//div[@class='sc-jrsJCI ivRwdr rdt_TableRow'][11]//div[5]' not found
+	at com.kms.katalon.core.webui.common.WebUiCommonHelper.findWebElement(WebUiCommonHelper.java:1369)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIAbstractKeyword.findWebElement(WebUIAbstractKeyword.groovy:27)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIAbstractKeyword.findWebElement(WebUIAbstractKeyword.groovy:26)
+	at com.kms.katalon.core.webui.keyword.builtin.GetTextKeyword$_getText_closure1.doCall(GetTextKeyword.groovy:78)
+	at com.kms.katalon.core.webui.keyword.builtin.GetTextKeyword$_getText_closure1.call(GetTextKeyword.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:20)
+	... 22 more]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Admin/Asset/deleteAssetAndVerify" time="83.169" classname="Test Cases/Admin/Asset/deleteAssetAndVerify" status="FAILED">
+         <failure type="FAILED" message="Test Cases/Admin/Asset/deleteAssetAndVerify FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Asset Author142 is not present
+	at com.kms.katalon.core.util.KeywordUtil.markFailedAndStop(KeywordUtil.java:28)
+	at com.kms.katalon.core.util.KeywordUtil$markFailedAndStop.call(Unknown Source)
+	at verification.Verification.verifyElementNotPresent(Verification.groovy:47)
+	at verification.Verification$verifyElementNotPresent.call(Unknown Source)
+	at pages.Asset.VerifyAssetNotPresent(Asset.groovy:187)
+	at pages.Asset.invokeMethod(Asset.groovy)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:50)
+	at deleteAssetAndVerify.run(deleteAssetAndVerify:24)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:393)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:384)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:363)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:355)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:251)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:203)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:152)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:95)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1610367781396.run(TempTestSuite1610367781396.groovy:39)
+"/>
+         <system-out><![CDATA[2021-01-11 17:56:27 - [TEST_CASE][FAILED] - Test Cases/Admin/Asset/deleteAssetAndVerify: Test Cases/Admin/Asset/deleteAssetAndVerify FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Asset Author142 is not present
+	at com.kms.katalon.core.util.KeywordUtil.markFailedAndStop(KeywordUtil.java:28)
+	at com.kms.katalon.core.util.KeywordUtil$markFailedAndStop.call(Unknown Source)
+	at verification.Verification.verifyElementNotPresent(Verification.groovy:47)
+	at verification.Verification$verifyElementNotPresent.call(Unknown Source)
+	at pages.Asset.VerifyAssetNotPresent(Asset.groovy:187)
+	at pages.Asset.invokeMethod(Asset.groovy)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:50)
+	at deleteAssetAndVerify.run(deleteAssetAndVerify:24)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:393)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:384)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:363)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:355)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:251)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:203)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:152)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:95)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1610367781396.run(TempTestSuite1610367781396.groovy:39)
+
+
+2021-01-11 17:56:27 - [TEST_STEP][PASSED] - Start listener action : OpenWebSite: Object: 'Object Repository/Login Credentials/EnterButton' is clicked on
+
+2021-01-11 17:56:27 - [TEST_STEP][PASSED] - openBrowser(""): Browser is opened with url: ''
+
+2021-01-11 17:56:27 - [MESSAGE][WARNING] - A browser is already opened. Closing browser and opening a new one
+
+2021-01-11 17:56:28 - [MESSAGE][INFO] - Starting 'Chrome' driver
+
+2021-01-11 17:56:28 - [MESSAGE][INFO] - Action delay is set to 0 milliseconds
+
+2021-01-11 17:56:32 - [MESSAGE][PASSED] - Browser is opened with url: ''
+
+2021-01-11 17:56:32 - [TEST_STEP][PASSED] - maximizeWindow(): Current window maximized
+
+2021-01-11 17:56:34 - [MESSAGE][PASSED] - Current window maximized
+
+2021-01-11 17:56:34 - [TEST_STEP][PASSED] - navigateToUrl(Url): Navigate to 'https://dev-admin.modist.co/' successfully
+
+2021-01-11 17:56:46 - [MESSAGE][PASSED] - Navigate to 'https://dev-admin.modist.co/' successfully
+
+2021-01-11 17:56:46 - [TEST_STEP][PASSED] - loginPage.login(Email, Password): Object: 'Object Repository/Login Credentials/EnterButton' is clicked on
+
+2021-01-11 17:56:46 - [MESSAGE][PASSED] - Object 'Object Repository/Login Credentials/Email' is present
+
+2021-01-11 17:56:46 - [MESSAGE][PASSED] - Object 'Object Repository/Login Credentials/Email' is visible
+
+2021-01-11 17:56:47 - [MESSAGE][PASSED] - Object 'Object Repository/Login Credentials/Email' is clickable
+
+2021-01-11 17:56:47 - [MESSAGE][PASSED] - Text of object 'Object Repository/Login Credentials/Email' is cleared
+
+2021-01-11 17:56:47 - [MESSAGE][PASSED] - Keys 'naresh.k@qualitlabs.com' sent to object: 'Object Repository/Login Credentials/Email'
+
+2021-01-11 17:56:47 - [MESSAGE][PASSED] - Object 'Object Repository/Login Credentials/Password' is present
+
+2021-01-11 17:56:48 - [MESSAGE][PASSED] - Object 'Object Repository/Login Credentials/Password' is visible
+
+2021-01-11 17:56:48 - [MESSAGE][PASSED] - Object 'Object Repository/Login Credentials/Password' is clickable
+
+2021-01-11 17:56:48 - [MESSAGE][PASSED] - Text of object 'Object Repository/Login Credentials/Password' is cleared
+
+2021-01-11 17:56:49 - [MESSAGE][PASSED] - Keys 'Qualitlabs1?' sent to object: 'Object Repository/Login Credentials/Password'
+
+2021-01-11 17:56:49 - [MESSAGE][PASSED] - Object 'Object Repository/Login Credentials/EnterButton' is present
+
+2021-01-11 17:56:49 - [MESSAGE][PASSED] - Object 'Object Repository/Login Credentials/EnterButton' is visible
+
+2021-01-11 17:56:49 - [MESSAGE][PASSED] - Object 'Object Repository/Login Credentials/EnterButton' is clickable
+
+2021-01-11 17:56:50 - [MESSAGE][PASSED] - Object: 'Object Repository/Login Credentials/EnterButton' is clicked on
+
+2021-01-11 17:56:50 - [TEST_STEP][PASSED] - pages.Asset.clickAssetTab(): pages.Asset.clickAssetTab is PASSED
+
+2021-01-11 17:56:52 - [MESSAGE][PASSED] - Object 'Object Repository/Asset/Asset/AssetPageElements/assetTab' is present
+
+2021-01-11 17:56:52 - [MESSAGE][PASSED] - Object 'Object Repository/Asset/Asset/AssetPageElements/assetTab' is visible
+
+2021-01-11 17:56:53 - [MESSAGE][PASSED] - Object 'Object Repository/Asset/Asset/AssetPageElements/assetTab' is clickable
+
+2021-01-11 17:56:53 - [MESSAGE][PASSED] - Object: 'Object Repository/Asset/Asset/AssetPageElements/assetTab' is clicked on
+
+2021-01-11 17:57:03 - [MESSAGE][PASSED] - Delayed 10 second(s)
+
+2021-01-11 17:57:03 - [MESSAGE][PASSED] - pages.Asset.clickAssetTab is PASSED
+
+2021-01-11 17:57:03 - [TEST_STEP][PASSED] - assetName = pages.Asset.getRandomAssetName(): pages.Asset.getRandomAssetName is PASSED
+
+2021-01-11 17:57:03 - [MESSAGE][PASSED] - Wait for page load successfully
+
+2021-01-11 17:57:03 - [MESSAGE][PASSED] - Object 'Object Repository/Asset/Asset/AssetCount' is present
+
+2021-01-11 17:57:04 - [MESSAGE][PASSED] - Text of object 'Object Repository/Asset/Asset/randomAsset(index)' is: 'Author142'
+
+2021-01-11 17:57:04 - [MESSAGE][PASSED] - pages.Asset.getRandomAssetName is PASSED
+
+2021-01-11 17:57:04 - [TEST_STEP][PASSED] - pages.Asset.deleteAsset(assetName): pages.Asset.deleteAsset is PASSED
+
+2021-01-11 17:57:04 - [MESSAGE][PASSED] - Object 'Object Repository/Asset/Asset/AssetPageElements/search' is present
+
+2021-01-11 17:57:04 - [MESSAGE][PASSED] - Object 'Object Repository/Asset/Asset/AssetPageElements/search' is visible
+
+2021-01-11 17:57:04 - [MESSAGE][PASSED] - Object 'Object Repository/Asset/Asset/AssetPageElements/search' is clickable
+
+2021-01-11 17:57:05 - [MESSAGE][PASSED] - Text of object 'Object Repository/Asset/Asset/AssetPageElements/search' is cleared
+
+2021-01-11 17:57:05 - [MESSAGE][PASSED] - Keys 'Author142' sent to object: 'Object Repository/Asset/Asset/AssetPageElements/search'
+
+2021-01-11 17:57:05 - [MESSAGE][PASSED] - Wait for page load successfully
+
+2021-01-11 17:57:05 - [MESSAGE][PASSED] - Object 'Object Repository/Asset/Asset/delAssetCheckbox(assetName)' is present
+
+2021-01-11 17:57:06 - [MESSAGE][PASSED] - Object 'Object Repository/Asset/Asset/delAssetCheckbox(assetName)' is visible
+
+2021-01-11 17:57:06 - [MESSAGE][PASSED] - Object 'Object Repository/Asset/Asset/delAssetCheckbox(assetName)' is clickable
+
+2021-01-11 17:57:09 - [MESSAGE][PASSED] - Object: 'Object Repository/Asset/Asset/delAssetCheckbox(assetName)' is clicked on
+
+2021-01-11 17:57:10 - [MESSAGE][PASSED] - Object 'Object Repository/Asset/Asset/delIcon' is present
+
+2021-01-11 17:57:10 - [MESSAGE][PASSED] - Object 'Object Repository/Asset/Asset/delIcon' is visible
+
+2021-01-11 17:57:10 - [MESSAGE][PASSED] - Object 'Object Repository/Asset/Asset/delIcon' is clickable
+
+2021-01-11 17:57:11 - [MESSAGE][PASSED] - Object: 'Object Repository/Asset/Asset/delIcon' is clicked on
+
+2021-01-11 17:57:11 - [MESSAGE][PASSED] - Alert accepted
+
+2021-01-11 17:57:11 - [MESSAGE][PASSED] - pages.Asset.deleteAsset is PASSED
+
+2021-01-11 17:57:11 - [TEST_STEP][FAILED] - pages.Asset.VerifyAssetNotPresent(assetName): Asset Author142 is not present
+
+2021-01-11 17:57:12 - [MESSAGE][PASSED] - Object 'Object Repository/Asset/Asset/AssetPageElements/search' is present
+
+2021-01-11 17:57:13 - [MESSAGE][PASSED] - Object 'Object Repository/Asset/Asset/AssetPageElements/search' is visible
+
+2021-01-11 17:57:13 - [MESSAGE][PASSED] - Object 'Object Repository/Asset/Asset/AssetPageElements/search' is clickable
+
+2021-01-11 17:57:13 - [MESSAGE][PASSED] - Text of object 'Object Repository/Asset/Asset/AssetPageElements/search' is cleared
+
+2021-01-11 17:57:13 - [MESSAGE][PASSED] - Keys 'Author142' sent to object: 'Object Repository/Asset/Asset/AssetPageElements/search'
+
+2021-01-11 17:57:13 - [MESSAGE][PASSED] - Wait for page load successfully
+
+2021-01-11 17:57:44 - [MESSAGE][WARNING] - Web element with id: 'Object Repository/Asset/Asset/assetname(assetName)' located by 'By.xpath: //div[text()='Author142']' is present after '30' second(s) (Root cause: com.kms.katalon.core.exception.StepFailedException: Web element with id: 'Object Repository/Asset/Asset/assetname(assetName)' located by 'By.xpath: //div[text()='Author142']' is present after '30' second(s)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain$stepFailed$0.call(Unknown Source)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementNotPresentKeyword$_verifyElementNotPresent_closure1.doCall(VerifyElementNotPresentKeyword.groovy:106)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementNotPresentKeyword$_verifyElementNotPresent_closure1.doCall(VerifyElementNotPresentKeyword.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:20)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain$runKeyword.call(Unknown Source)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementNotPresentKeyword.verifyElementNotPresent(VerifyElementNotPresentKeyword.groovy:117)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementNotPresentKeyword.execute(VerifyElementNotPresentKeyword.groovy:68)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:73)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.verifyElementNotPresent(WebUiBuiltInKeywords.groovy:1478)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$verifyElementNotPresent$12.call(Unknown Source)
+	at verification.Verification.verifyElementNotPresent(Verification.groovy:45)
+	at verification.Verification$verifyElementNotPresent.call(Unknown Source)
+	at pages.Asset.VerifyAssetNotPresent(Asset.groovy:187)
+	at pages.Asset.invokeMethod(Asset.groovy)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:50)
+	at deleteAssetAndVerify.run(deleteAssetAndVerify:24)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:393)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:384)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:363)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:355)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:251)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:203)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:152)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:95)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1610367781396.run(TempTestSuite1610367781396.groovy:39)
+)
+[[ATTACHMENT|C:\\Modist\\ModistProject\\Reports\\20210111_175301\\New Test Suite\\20210111_175301\\1610368064672.png]]
+
+2021-01-11 17:57:45 - [MESSAGE][PASSED] - Taking screenshot successfully
+[[ATTACHMENT|C:\\Modist\\ModistProject\\Reports\\20210111_175301\\New Test Suite\\20210111_175301\\1610368065210.png]]
+
+2021-01-11 17:57:45 - [MESSAGE][FAILED] - Asset Author142 is not present]]></system-out>
+         <system-err><![CDATA[2021-01-11 17:56:27 - [TEST_CASE][FAILED] - Test Cases/Admin/Asset/deleteAssetAndVerify: Test Cases/Admin/Asset/deleteAssetAndVerify FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Asset Author142 is not present
+	at com.kms.katalon.core.util.KeywordUtil.markFailedAndStop(KeywordUtil.java:28)
+	at com.kms.katalon.core.util.KeywordUtil$markFailedAndStop.call(Unknown Source)
+	at verification.Verification.verifyElementNotPresent(Verification.groovy:47)
+	at verification.Verification$verifyElementNotPresent.call(Unknown Source)
+	at pages.Asset.VerifyAssetNotPresent(Asset.groovy:187)
+	at pages.Asset.invokeMethod(Asset.groovy)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:50)
+	at deleteAssetAndVerify.run(deleteAssetAndVerify:24)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:393)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:384)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:363)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:355)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:251)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:203)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:152)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:95)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1610367781396.run(TempTestSuite1610367781396.groovy:39)]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Admin/Asset/deleteAssetAndVerify" time="74.339" classname="Test Cases/Admin/Asset/deleteAssetAndVerify" status="FAILED">
+         <failure type="FAILED" message="Test Cases/Admin/Asset/deleteAssetAndVerify FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Unable to click on object 'Object Repository/Asset/Asset/delAssetCheckbox(assetName)'
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:26)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.click(ClickKeyword.groovy:76)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.execute(ClickKeyword.groovy:43)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:73)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.click(WebUiBuiltInKeywords.groovy:617)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$click$7.call(Unknown Source)
+	at webAction.WebAction.click(WebAction.groovy:25)
+	at webAction.WebAction$click$1.call(Unknown Source)
+	at pages.Asset.deleteAsset(Asset.groovy:175)
+	at pages.Asset.invokeMethod(Asset.groovy)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:50)
+	at deleteAssetAndVerify.run(deleteAssetAndVerify:22)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:393)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:384)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:363)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:355)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:251)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:203)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:152)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:95)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1610367781396.run(TempTestSuite1610367781396.groovy:39)
+Caused by: com.kms.katalon.core.webui.exception.WebElementNotFoundException: Web element with id: 'Object Repository/Asset/Asset/delAssetCheckbox(assetName)' located by '//div[text()=&quot;Author142&quot;]/../..//div' not found
+	at com.kms.katalon.core.webui.common.WebUiCommonHelper.findWebElement(WebUiCommonHelper.java:1369)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIAbstractKeyword.findWebElement(WebUIAbstractKeyword.groovy:27)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIAbstractKeyword.findWebElement(WebUIAbstractKeyword.groovy:26)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword$_click_closure1.doCall(ClickKeyword.groovy:67)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword$_click_closure1.call(ClickKeyword.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:20)
+	... 24 more
+"/>
+         <system-out><![CDATA[2021-01-11 17:57:50 - [TEST_CASE][FAILED] - Test Cases/Admin/Asset/deleteAssetAndVerify: Test Cases/Admin/Asset/deleteAssetAndVerify FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Unable to click on object 'Object Repository/Asset/Asset/delAssetCheckbox(assetName)'
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:26)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.click(ClickKeyword.groovy:76)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.execute(ClickKeyword.groovy:43)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:73)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.click(WebUiBuiltInKeywords.groovy:617)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$click$7.call(Unknown Source)
+	at webAction.WebAction.click(WebAction.groovy:25)
+	at webAction.WebAction$click$1.call(Unknown Source)
+	at pages.Asset.deleteAsset(Asset.groovy:175)
+	at pages.Asset.invokeMethod(Asset.groovy)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:50)
+	at deleteAssetAndVerify.run(deleteAssetAndVerify:22)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:393)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:384)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:363)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:355)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:251)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:203)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:152)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:95)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1610367781396.run(TempTestSuite1610367781396.groovy:39)
+Caused by: com.kms.katalon.core.webui.exception.WebElementNotFoundException: Web element with id: 'Object Repository/Asset/Asset/delAssetCheckbox(assetName)' located by '//div[text()="Author142"]/../..//div' not found
+	at com.kms.katalon.core.webui.common.WebUiCommonHelper.findWebElement(WebUiCommonHelper.java:1369)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIAbstractKeyword.findWebElement(WebUIAbstractKeyword.groovy:27)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIAbstractKeyword.findWebElement(WebUIAbstractKeyword.groovy:26)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword$_click_closure1.doCall(ClickKeyword.groovy:67)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword$_click_closure1.call(ClickKeyword.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:20)
+	... 24 more
+
+
+2021-01-11 17:57:50 - [TEST_STEP][PASSED] - Start listener action : OpenWebSite: Object: 'Object Repository/Login Credentials/EnterButton' is clicked on
+
+2021-01-11 17:57:50 - [TEST_STEP][PASSED] - openBrowser(""): Browser is opened with url: ''
+
+2021-01-11 17:57:50 - [MESSAGE][WARNING] - A browser is already opened. Closing browser and opening a new one
+
+2021-01-11 17:57:51 - [MESSAGE][INFO] - Starting 'Chrome' driver
+
+2021-01-11 17:57:51 - [MESSAGE][INFO] - Action delay is set to 0 milliseconds
+
+2021-01-11 17:57:55 - [MESSAGE][PASSED] - Browser is opened with url: ''
+
+2021-01-11 17:57:55 - [TEST_STEP][PASSED] - maximizeWindow(): Current window maximized
+
+2021-01-11 17:57:57 - [MESSAGE][PASSED] - Current window maximized
+
+2021-01-11 17:57:57 - [TEST_STEP][PASSED] - navigateToUrl(Url): Navigate to 'https://dev-admin.modist.co/' successfully
+
+2021-01-11 17:58:06 - [MESSAGE][PASSED] - Navigate to 'https://dev-admin.modist.co/' successfully
+
+2021-01-11 17:58:06 - [TEST_STEP][PASSED] - loginPage.login(Email, Password): Object: 'Object Repository/Login Credentials/EnterButton' is clicked on
+
+2021-01-11 17:58:07 - [MESSAGE][PASSED] - Object 'Object Repository/Login Credentials/Email' is present
+
+2021-01-11 17:58:07 - [MESSAGE][PASSED] - Object 'Object Repository/Login Credentials/Email' is visible
+
+2021-01-11 17:58:07 - [MESSAGE][PASSED] - Object 'Object Repository/Login Credentials/Email' is clickable
+
+2021-01-11 17:58:07 - [MESSAGE][PASSED] - Text of object 'Object Repository/Login Credentials/Email' is cleared
+
+2021-01-11 17:58:08 - [MESSAGE][PASSED] - Keys 'naresh.k@qualitlabs.com' sent to object: 'Object Repository/Login Credentials/Email'
+
+2021-01-11 17:58:08 - [MESSAGE][PASSED] - Object 'Object Repository/Login Credentials/Password' is present
+
+2021-01-11 17:58:08 - [MESSAGE][PASSED] - Object 'Object Repository/Login Credentials/Password' is visible
+
+2021-01-11 17:58:08 - [MESSAGE][PASSED] - Object 'Object Repository/Login Credentials/Password' is clickable
+
+2021-01-11 17:58:09 - [MESSAGE][PASSED] - Text of object 'Object Repository/Login Credentials/Password' is cleared
+
+2021-01-11 17:58:09 - [MESSAGE][PASSED] - Keys 'Qualitlabs1?' sent to object: 'Object Repository/Login Credentials/Password'
+
+2021-01-11 17:58:09 - [MESSAGE][PASSED] - Object 'Object Repository/Login Credentials/EnterButton' is present
+
+2021-01-11 17:58:09 - [MESSAGE][PASSED] - Object 'Object Repository/Login Credentials/EnterButton' is visible
+
+2021-01-11 17:58:10 - [MESSAGE][PASSED] - Object 'Object Repository/Login Credentials/EnterButton' is clickable
+
+2021-01-11 17:58:10 - [MESSAGE][PASSED] - Object: 'Object Repository/Login Credentials/EnterButton' is clicked on
+
+2021-01-11 17:58:10 - [TEST_STEP][PASSED] - pages.Asset.clickAssetTab(): pages.Asset.clickAssetTab is PASSED
+
+2021-01-11 17:58:12 - [MESSAGE][PASSED] - Object 'Object Repository/Asset/Asset/AssetPageElements/assetTab' is present
+
+2021-01-11 17:58:13 - [MESSAGE][PASSED] - Object 'Object Repository/Asset/Asset/AssetPageElements/assetTab' is visible
+
+2021-01-11 17:58:13 - [MESSAGE][PASSED] - Object 'Object Repository/Asset/Asset/AssetPageElements/assetTab' is clickable
+
+2021-01-11 17:58:13 - [MESSAGE][PASSED] - Object: 'Object Repository/Asset/Asset/AssetPageElements/assetTab' is clicked on
+
+2021-01-11 17:58:23 - [MESSAGE][PASSED] - Delayed 10 second(s)
+
+2021-01-11 17:58:23 - [MESSAGE][PASSED] - pages.Asset.clickAssetTab is PASSED
+
+2021-01-11 17:58:23 - [TEST_STEP][PASSED] - assetName = pages.Asset.getRandomAssetName(): pages.Asset.getRandomAssetName is PASSED
+
+2021-01-11 17:58:23 - [MESSAGE][PASSED] - Wait for page load successfully
+
+2021-01-11 17:58:24 - [MESSAGE][PASSED] - Object 'Object Repository/Asset/Asset/AssetCount' is present
+
+2021-01-11 17:58:24 - [MESSAGE][PASSED] - Text of object 'Object Repository/Asset/Asset/randomAsset(index)' is: 'Author142'
+
+2021-01-11 17:58:24 - [MESSAGE][PASSED] - pages.Asset.getRandomAssetName is PASSED
+
+2021-01-11 17:58:24 - [TEST_STEP][FAILED] - pages.Asset.deleteAsset(assetName): Unable to click on object 'Object Repository/Asset/Asset/delAssetCheckbox(assetName)'
+
+2021-01-11 17:58:24 - [MESSAGE][PASSED] - Object 'Object Repository/Asset/Asset/AssetPageElements/search' is present
+
+2021-01-11 17:58:25 - [MESSAGE][PASSED] - Object 'Object Repository/Asset/Asset/AssetPageElements/search' is visible
+
+2021-01-11 17:58:25 - [MESSAGE][PASSED] - Object 'Object Repository/Asset/Asset/AssetPageElements/search' is clickable
+
+2021-01-11 17:58:25 - [MESSAGE][PASSED] - Text of object 'Object Repository/Asset/Asset/AssetPageElements/search' is cleared
+
+2021-01-11 17:58:26 - [MESSAGE][PASSED] - Keys 'Author142' sent to object: 'Object Repository/Asset/Asset/AssetPageElements/search'
+
+2021-01-11 17:58:26 - [MESSAGE][PASSED] - Wait for page load successfully
+
+2021-01-11 17:58:26 - [MESSAGE][PASSED] - Object 'Object Repository/Asset/Asset/delAssetCheckbox(assetName)' is present
+
+2021-01-11 17:58:27 - [MESSAGE][PASSED] - Object 'Object Repository/Asset/Asset/delAssetCheckbox(assetName)' is visible
+
+2021-01-11 17:58:27 - [MESSAGE][PASSED] - Object 'Object Repository/Asset/Asset/delAssetCheckbox(assetName)' is clickable
+
+2021-01-11 17:58:59 - [MESSAGE][INFO] - Unable to find the element located by 'By.xpath: //div[text()="Author142"]/../..//div'. Please recheck the objects properties to make sure the desired element is located. 
+
+2021-01-11 17:58:59 - [MESSAGE][WARNING] - [SELF-HEALING] Failed to find element with id 'Object Repository/Asset/Asset/delAssetCheckbox(assetName)'. Try using Self-healing.
+
+2021-01-11 17:58:59 - [MESSAGE][WARNING] - [SELF-HEALING] Cannot find elements when the XPath is null.
+
+2021-01-11 17:58:59 - [MESSAGE][WARNING] - [SELF-HEALING] Cannot find elements when the selector is null
+
+2021-01-11 17:58:59 - [MESSAGE][FAILED] - Unable to click on object 'Object Repository/Asset/Asset/delAssetCheckbox(assetName)' (Root cause: com.kms.katalon.core.exception.StepFailedException: Unable to click on object 'Object Repository/Asset/Asset/delAssetCheckbox(assetName)'
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:26)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.click(ClickKeyword.groovy:76)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.execute(ClickKeyword.groovy:43)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:73)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.click(WebUiBuiltInKeywords.groovy:617)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$click$7.call(Unknown Source)
+	at webAction.WebAction.click(WebAction.groovy:25)
+	at webAction.WebAction$click$1.call(Unknown Source)
+	at pages.Asset.deleteAsset(Asset.groovy:175)
+	at pages.Asset.invokeMethod(Asset.groovy)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:50)
+	at deleteAssetAndVerify.run(deleteAssetAndVerify:22)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:393)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:384)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:363)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:355)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:251)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:203)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:152)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:95)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1610367781396.run(TempTestSuite1610367781396.groovy:39)
+Caused by: com.kms.katalon.core.webui.exception.WebElementNotFoundException: Web element with id: 'Object Repository/Asset/Asset/delAssetCheckbox(assetName)' located by '//div[text()="Author142"]/../..//div' not found
+	at com.kms.katalon.core.webui.common.WebUiCommonHelper.findWebElement(WebUiCommonHelper.java:1369)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIAbstractKeyword.findWebElement(WebUIAbstractKeyword.groovy:27)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIAbstractKeyword.findWebElement(WebUIAbstractKeyword.groovy:26)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword$_click_closure1.doCall(ClickKeyword.groovy:67)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword$_click_closure1.call(ClickKeyword.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:20)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.click(ClickKeyword.groovy:76)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.execute(ClickKeyword.groovy:43)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:73)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.click(WebUiBuiltInKeywords.groovy:617)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$click$7.call(Unknown Source)
+	at webAction.WebAction.click(WebAction.groovy:25)
+	at webAction.WebAction$click$1.call(Unknown Source)
+	at pages.Asset.deleteAsset(Asset.groovy:175)
+	at pages.Asset.invokeMethod(Asset.groovy)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:50)
+	at Script1609999363736.run(Script1609999363736.groovy:22)
+	... 13 more
+)
+[[ATTACHMENT|C:\\Modist\\ModistProject\\Reports\\20210111_175301\\New Test Suite\\20210111_175301\\1610368139299.png]]
+
+2021-01-11 17:58:59 - [MESSAGE][FAILED] - Unable to click on object 'Object Repository/Asset/Asset/delAssetCheckbox(assetName)']]></system-out>
+         <system-err><![CDATA[2021-01-11 17:57:50 - [TEST_CASE][FAILED] - Test Cases/Admin/Asset/deleteAssetAndVerify: Test Cases/Admin/Asset/deleteAssetAndVerify FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Unable to click on object 'Object Repository/Asset/Asset/delAssetCheckbox(assetName)'
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:26)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.click(ClickKeyword.groovy:76)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.execute(ClickKeyword.groovy:43)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:73)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.click(WebUiBuiltInKeywords.groovy:617)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$click$7.call(Unknown Source)
+	at webAction.WebAction.click(WebAction.groovy:25)
+	at webAction.WebAction$click$1.call(Unknown Source)
+	at pages.Asset.deleteAsset(Asset.groovy:175)
+	at pages.Asset.invokeMethod(Asset.groovy)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:50)
+	at deleteAssetAndVerify.run(deleteAssetAndVerify:22)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:393)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:384)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:363)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:355)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:251)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:203)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:152)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:95)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1610367781396.run(TempTestSuite1610367781396.groovy:39)
+Caused by: com.kms.katalon.core.webui.exception.WebElementNotFoundException: Web element with id: 'Object Repository/Asset/Asset/delAssetCheckbox(assetName)' located by '//div[text()="Author142"]/../..//div' not found
+	at com.kms.katalon.core.webui.common.WebUiCommonHelper.findWebElement(WebUiCommonHelper.java:1369)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIAbstractKeyword.findWebElement(WebUIAbstractKeyword.groovy:27)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIAbstractKeyword.findWebElement(WebUIAbstractKeyword.groovy:26)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword$_click_closure1.doCall(ClickKeyword.groovy:67)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword$_click_closure1.call(ClickKeyword.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:20)
+	... 24 more]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Admin/Asset/deleteAssetAndVerify" time="239.438" classname="Test Cases/Admin/Asset/deleteAssetAndVerify" status="FAILED">
+         <failure type="FAILED" message="Test Cases/Admin/Asset/deleteAssetAndVerify FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Unable to click on object 'Object Repository/Asset/Asset/AssetPageElements/assetTab'
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:26)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.click(ClickKeyword.groovy:76)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.execute(ClickKeyword.groovy:43)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:73)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.click(WebUiBuiltInKeywords.groovy:617)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$click$7.call(Unknown Source)
+	at webAction.WebAction.click(WebAction.groovy:25)
+	at webAction.WebAction$click$1.call(Unknown Source)
+	at pages.Asset.clickAssetTab(Asset.groovy:53)
+	at pages.Asset.invokeMethod(Asset.groovy)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:50)
+	at deleteAssetAndVerify.run(deleteAssetAndVerify:18)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:393)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:384)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:363)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:355)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:251)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:203)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:152)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:95)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1610367781396.run(TempTestSuite1610367781396.groovy:39)
+Caused by: com.kms.katalon.core.webui.exception.WebElementNotFoundException: Web element with id: 'Object Repository/Asset/Asset/AssetPageElements/assetTab' located by '//a[text()=&quot;Asset&quot;]' not found
+	at com.kms.katalon.core.webui.common.WebUiCommonHelper.findWebElement(WebUiCommonHelper.java:1369)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIAbstractKeyword.findWebElement(WebUIAbstractKeyword.groovy:27)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIAbstractKeyword.findWebElement(WebUIAbstractKeyword.groovy:26)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword$_click_closure1.doCall(ClickKeyword.groovy:67)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword$_click_closure1.call(ClickKeyword.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:20)
+	... 24 more
+"/>
+         <system-out><![CDATA[2021-01-11 17:59:04 - [TEST_CASE][FAILED] - Test Cases/Admin/Asset/deleteAssetAndVerify: Test Cases/Admin/Asset/deleteAssetAndVerify FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Unable to click on object 'Object Repository/Asset/Asset/AssetPageElements/assetTab'
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:26)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.click(ClickKeyword.groovy:76)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.execute(ClickKeyword.groovy:43)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:73)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.click(WebUiBuiltInKeywords.groovy:617)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$click$7.call(Unknown Source)
+	at webAction.WebAction.click(WebAction.groovy:25)
+	at webAction.WebAction$click$1.call(Unknown Source)
+	at pages.Asset.clickAssetTab(Asset.groovy:53)
+	at pages.Asset.invokeMethod(Asset.groovy)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:50)
+	at deleteAssetAndVerify.run(deleteAssetAndVerify:18)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:393)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:384)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:363)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:355)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:251)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:203)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:152)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:95)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1610367781396.run(TempTestSuite1610367781396.groovy:39)
+Caused by: com.kms.katalon.core.webui.exception.WebElementNotFoundException: Web element with id: 'Object Repository/Asset/Asset/AssetPageElements/assetTab' located by '//a[text()="Asset"]' not found
+	at com.kms.katalon.core.webui.common.WebUiCommonHelper.findWebElement(WebUiCommonHelper.java:1369)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIAbstractKeyword.findWebElement(WebUIAbstractKeyword.groovy:27)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIAbstractKeyword.findWebElement(WebUIAbstractKeyword.groovy:26)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword$_click_closure1.doCall(ClickKeyword.groovy:67)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword$_click_closure1.call(ClickKeyword.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:20)
+	... 24 more
+
+
+2021-01-11 17:59:04 - [TEST_STEP][PASSED] - Start listener action : OpenWebSite: Object: 'Object Repository/Login Credentials/EnterButton' is clicked on
+
+2021-01-11 17:59:04 - [TEST_STEP][PASSED] - openBrowser(""): Browser is opened with url: ''
+
+2021-01-11 17:59:04 - [MESSAGE][WARNING] - A browser is already opened. Closing browser and opening a new one
+
+2021-01-11 17:59:05 - [MESSAGE][INFO] - Starting 'Chrome' driver
+
+2021-01-11 17:59:05 - [MESSAGE][INFO] - Action delay is set to 0 milliseconds
+
+2021-01-11 17:59:09 - [MESSAGE][PASSED] - Browser is opened with url: ''
+
+2021-01-11 17:59:09 - [TEST_STEP][PASSED] - maximizeWindow(): Current window maximized
+
+2021-01-11 17:59:11 - [MESSAGE][PASSED] - Current window maximized
+
+2021-01-11 17:59:11 - [TEST_STEP][PASSED] - navigateToUrl(Url): Navigate to 'https://dev-admin.modist.co/' successfully
+
+2021-01-11 17:59:23 - [MESSAGE][PASSED] - Navigate to 'https://dev-admin.modist.co/' successfully
+
+2021-01-11 17:59:23 - [TEST_STEP][PASSED] - loginPage.login(Email, Password): Object: 'Object Repository/Login Credentials/EnterButton' is clicked on
+
+2021-01-11 17:59:25 - [MESSAGE][PASSED] - Object 'Object Repository/Login Credentials/Email' is present
+
+2021-01-11 17:59:27 - [MESSAGE][PASSED] - Object 'Object Repository/Login Credentials/Email' is visible
+
+2021-01-11 17:59:29 - [MESSAGE][PASSED] - Object 'Object Repository/Login Credentials/Email' is clickable
+
+2021-01-11 17:59:31 - [MESSAGE][PASSED] - Text of object 'Object Repository/Login Credentials/Email' is cleared
+
+2021-01-11 17:59:33 - [MESSAGE][PASSED] - Keys 'naresh.k@qualitlabs.com' sent to object: 'Object Repository/Login Credentials/Email'
+
+2021-01-11 17:59:35 - [MESSAGE][PASSED] - Object 'Object Repository/Login Credentials/Password' is present
+
+2021-01-11 17:59:37 - [MESSAGE][PASSED] - Object 'Object Repository/Login Credentials/Password' is visible
+
+2021-01-11 17:59:39 - [MESSAGE][PASSED] - Object 'Object Repository/Login Credentials/Password' is clickable
+
+2021-01-11 17:59:41 - [MESSAGE][PASSED] - Text of object 'Object Repository/Login Credentials/Password' is cleared
+
+2021-01-11 17:59:43 - [MESSAGE][PASSED] - Keys 'Qualitlabs1?' sent to object: 'Object Repository/Login Credentials/Password'
+
+2021-01-11 17:59:45 - [MESSAGE][PASSED] - Object 'Object Repository/Login Credentials/EnterButton' is present
+
+2021-01-11 17:59:47 - [MESSAGE][PASSED] - Object 'Object Repository/Login Credentials/EnterButton' is visible
+
+2021-01-11 17:59:49 - [MESSAGE][PASSED] - Object 'Object Repository/Login Credentials/EnterButton' is clickable
+
+2021-01-11 17:59:51 - [MESSAGE][PASSED] - Object: 'Object Repository/Login Credentials/EnterButton' is clicked on
+
+2021-01-11 17:59:51 - [TEST_STEP][FAILED] - pages.Asset.clickAssetTab(): Unable to click on object 'Object Repository/Asset/Asset/AssetPageElements/assetTab'
+
+2021-01-11 18:00:23 - [MESSAGE][INFO] - Unable to find the element located by 'By.xpath: //a[text()="Asset"]'. Please recheck the objects properties to make sure the desired element is located. 
+
+2021-01-11 18:00:23 - [MESSAGE][WARNING] - [SELF-HEALING] Failed to find element with id 'Object Repository/Asset/Asset/AssetPageElements/assetTab'. Try using Self-healing.
+
+2021-01-11 18:00:23 - [MESSAGE][WARNING] - [SELF-HEALING] Cannot find elements when the XPath is null.
+
+2021-01-11 18:00:23 - [MESSAGE][WARNING] - [SELF-HEALING] Cannot find elements when the selector is null
+
+2021-01-11 18:00:23 - [MESSAGE][WARNING] - Object 'Object Repository/Asset/Asset/AssetPageElements/assetTab' is not present after 30 second(s)
+
+2021-01-11 18:00:55 - [MESSAGE][INFO] - Unable to find the element located by 'By.xpath: //a[text()="Asset"]'. Please recheck the objects properties to make sure the desired element is located. 
+
+2021-01-11 18:00:55 - [MESSAGE][WARNING] - [SELF-HEALING] Failed to find element with id 'Object Repository/Asset/Asset/AssetPageElements/assetTab'. Try using Self-healing.
+
+2021-01-11 18:00:55 - [MESSAGE][WARNING] - [SELF-HEALING] Cannot find elements when the XPath is null.
+
+2021-01-11 18:00:55 - [MESSAGE][WARNING] - [SELF-HEALING] Cannot find elements when the selector is null
+
+2021-01-11 18:00:55 - [MESSAGE][WARNING] - Web element with id: 'Object Repository/Asset/Asset/AssetPageElements/assetTab' located by '//a[text()="Asset"]' not found
+
+2021-01-11 18:01:27 - [MESSAGE][INFO] - Unable to find the element located by 'By.xpath: //a[text()="Asset"]'. Please recheck the objects properties to make sure the desired element is located. 
+
+2021-01-11 18:01:27 - [MESSAGE][WARNING] - [SELF-HEALING] Failed to find element with id 'Object Repository/Asset/Asset/AssetPageElements/assetTab'. Try using Self-healing.
+
+2021-01-11 18:01:27 - [MESSAGE][WARNING] - [SELF-HEALING] Cannot find elements when the XPath is null.
+
+2021-01-11 18:01:27 - [MESSAGE][WARNING] - [SELF-HEALING] Cannot find elements when the selector is null
+
+2021-01-11 18:01:27 - [MESSAGE][WARNING] - Web element with id: 'Object Repository/Asset/Asset/AssetPageElements/assetTab' located by '//a[text()="Asset"]' not found
+
+2021-01-11 18:01:59 - [MESSAGE][INFO] - Unable to find the element located by 'By.xpath: //a[text()="Asset"]'. Please recheck the objects properties to make sure the desired element is located. 
+
+2021-01-11 18:01:59 - [MESSAGE][WARNING] - [SELF-HEALING] Failed to find element with id 'Object Repository/Asset/Asset/AssetPageElements/assetTab'. Try using Self-healing.
+
+2021-01-11 18:01:59 - [MESSAGE][WARNING] - [SELF-HEALING] Cannot find elements when the XPath is null.
+
+2021-01-11 18:01:59 - [MESSAGE][WARNING] - [SELF-HEALING] Cannot find elements when the selector is null
+
+2021-01-11 18:02:59 - [MESSAGE][WARNING] - Cannot take screenshot
+
+2021-01-11 18:02:59 - [MESSAGE][FAILED] - Unable to click on object 'Object Repository/Asset/Asset/AssetPageElements/assetTab' (Root cause: com.kms.katalon.core.exception.StepFailedException: Unable to click on object 'Object Repository/Asset/Asset/AssetPageElements/assetTab'
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:26)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.click(ClickKeyword.groovy:76)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.execute(ClickKeyword.groovy:43)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:73)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.click(WebUiBuiltInKeywords.groovy:617)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$click$7.call(Unknown Source)
+	at webAction.WebAction.click(WebAction.groovy:25)
+	at webAction.WebAction$click$1.call(Unknown Source)
+	at pages.Asset.clickAssetTab(Asset.groovy:53)
+	at pages.Asset.invokeMethod(Asset.groovy)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:50)
+	at deleteAssetAndVerify.run(deleteAssetAndVerify:18)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:393)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:384)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:363)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:355)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:251)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:203)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:152)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:95)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1610367781396.run(TempTestSuite1610367781396.groovy:39)
+Caused by: com.kms.katalon.core.webui.exception.WebElementNotFoundException: Web element with id: 'Object Repository/Asset/Asset/AssetPageElements/assetTab' located by '//a[text()="Asset"]' not found
+	at com.kms.katalon.core.webui.common.WebUiCommonHelper.findWebElement(WebUiCommonHelper.java:1369)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIAbstractKeyword.findWebElement(WebUIAbstractKeyword.groovy:27)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIAbstractKeyword.findWebElement(WebUIAbstractKeyword.groovy:26)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword$_click_closure1.doCall(ClickKeyword.groovy:67)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword$_click_closure1.call(ClickKeyword.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:20)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.click(ClickKeyword.groovy:76)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.execute(ClickKeyword.groovy:43)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:73)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.click(WebUiBuiltInKeywords.groovy:617)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$click$7.call(Unknown Source)
+	at webAction.WebAction.click(WebAction.groovy:25)
+	at webAction.WebAction$click$1.call(Unknown Source)
+	at pages.Asset.clickAssetTab(Asset.groovy:53)
+	at pages.Asset.invokeMethod(Asset.groovy)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:50)
+	at Script1609999363736.run(Script1609999363736.groovy:18)
+	... 13 more
+)
+
+2021-01-11 18:02:59 - [MESSAGE][FAILED] - Unable to click on object 'Object Repository/Asset/Asset/AssetPageElements/assetTab']]></system-out>
+         <system-err><![CDATA[2021-01-11 17:59:04 - [TEST_CASE][FAILED] - Test Cases/Admin/Asset/deleteAssetAndVerify: Test Cases/Admin/Asset/deleteAssetAndVerify FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Unable to click on object 'Object Repository/Asset/Asset/AssetPageElements/assetTab'
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:26)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.click(ClickKeyword.groovy:76)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.execute(ClickKeyword.groovy:43)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:73)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.click(WebUiBuiltInKeywords.groovy:617)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$click$7.call(Unknown Source)
+	at webAction.WebAction.click(WebAction.groovy:25)
+	at webAction.WebAction$click$1.call(Unknown Source)
+	at pages.Asset.clickAssetTab(Asset.groovy:53)
+	at pages.Asset.invokeMethod(Asset.groovy)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:50)
+	at deleteAssetAndVerify.run(deleteAssetAndVerify:18)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:393)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:384)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:363)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:355)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:251)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:203)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:152)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:95)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1610367781396.run(TempTestSuite1610367781396.groovy:39)
+Caused by: com.kms.katalon.core.webui.exception.WebElementNotFoundException: Web element with id: 'Object Repository/Asset/Asset/AssetPageElements/assetTab' located by '//a[text()="Asset"]' not found
+	at com.kms.katalon.core.webui.common.WebUiCommonHelper.findWebElement(WebUiCommonHelper.java:1369)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIAbstractKeyword.findWebElement(WebUIAbstractKeyword.groovy:27)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIAbstractKeyword.findWebElement(WebUIAbstractKeyword.groovy:26)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword$_click_closure1.doCall(ClickKeyword.groovy:67)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword$_click_closure1.call(ClickKeyword.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:20)
+	... 24 more]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Admin/Asset/deleteAssetAndVerify" time="47.475" classname="Test Cases/Admin/Asset/deleteAssetAndVerify" status="PASSED">
+         <system-out><![CDATA[2021-01-11 18:03:04 - [TEST_CASE][PASSED] - Test Cases/Admin/Asset/deleteAssetAndVerify: Test Cases/Admin/Asset/deleteAssetAndVerify
+
+2021-01-11 18:03:04 - [TEST_STEP][PASSED] - Start listener action : OpenWebSite: Object: 'Object Repository/Login Credentials/EnterButton' is clicked on
+
+2021-01-11 18:03:04 - [TEST_STEP][PASSED] - openBrowser(""): Browser is opened with url: ''
+
+2021-01-11 18:03:04 - [MESSAGE][WARNING] - A browser is already opened. Closing browser and opening a new one
+
+2021-01-11 18:03:05 - [MESSAGE][INFO] - Starting 'Chrome' driver
+
+2021-01-11 18:03:05 - [MESSAGE][INFO] - Action delay is set to 0 milliseconds
+
+2021-01-11 18:03:10 - [MESSAGE][PASSED] - Browser is opened with url: ''
+
+2021-01-11 18:03:10 - [TEST_STEP][PASSED] - maximizeWindow(): Current window maximized
+
+2021-01-11 18:03:12 - [MESSAGE][PASSED] - Current window maximized
+
+2021-01-11 18:03:12 - [TEST_STEP][PASSED] - navigateToUrl(Url): Navigate to 'https://dev-admin.modist.co/' successfully
+
+2021-01-11 18:03:19 - [MESSAGE][PASSED] - Navigate to 'https://dev-admin.modist.co/' successfully
+
+2021-01-11 18:03:19 - [TEST_STEP][PASSED] - loginPage.login(Email, Password): Object: 'Object Repository/Login Credentials/EnterButton' is clicked on
+
+2021-01-11 18:03:19 - [MESSAGE][PASSED] - Object 'Object Repository/Login Credentials/Email' is present
+
+2021-01-11 18:03:19 - [MESSAGE][PASSED] - Object 'Object Repository/Login Credentials/Email' is visible
+
+2021-01-11 18:03:20 - [MESSAGE][PASSED] - Object 'Object Repository/Login Credentials/Email' is clickable
+
+2021-01-11 18:03:20 - [MESSAGE][PASSED] - Text of object 'Object Repository/Login Credentials/Email' is cleared
+
+2021-01-11 18:03:20 - [MESSAGE][PASSED] - Keys 'naresh.k@qualitlabs.com' sent to object: 'Object Repository/Login Credentials/Email'
+
+2021-01-11 18:03:21 - [MESSAGE][PASSED] - Object 'Object Repository/Login Credentials/Password' is present
+
+2021-01-11 18:03:21 - [MESSAGE][PASSED] - Object 'Object Repository/Login Credentials/Password' is visible
+
+2021-01-11 18:03:21 - [MESSAGE][PASSED] - Object 'Object Repository/Login Credentials/Password' is clickable
+
+2021-01-11 18:03:21 - [MESSAGE][PASSED] - Text of object 'Object Repository/Login Credentials/Password' is cleared
+
+2021-01-11 18:03:22 - [MESSAGE][PASSED] - Keys 'Qualitlabs1?' sent to object: 'Object Repository/Login Credentials/Password'
+
+2021-01-11 18:03:22 - [MESSAGE][PASSED] - Object 'Object Repository/Login Credentials/EnterButton' is present
+
+2021-01-11 18:03:22 - [MESSAGE][PASSED] - Object 'Object Repository/Login Credentials/EnterButton' is visible
+
+2021-01-11 18:03:22 - [MESSAGE][PASSED] - Object 'Object Repository/Login Credentials/EnterButton' is clickable
+
+2021-01-11 18:03:23 - [MESSAGE][PASSED] - Object: 'Object Repository/Login Credentials/EnterButton' is clicked on
+
+2021-01-11 18:03:23 - [TEST_STEP][PASSED] - pages.Asset.clickAssetTab(): pages.Asset.clickAssetTab is PASSED
+
+2021-01-11 18:03:26 - [MESSAGE][PASSED] - Object 'Object Repository/Asset/Asset/AssetPageElements/assetTab' is present
+
+2021-01-11 18:03:26 - [MESSAGE][PASSED] - Object 'Object Repository/Asset/Asset/AssetPageElements/assetTab' is visible
+
+2021-01-11 18:03:26 - [MESSAGE][PASSED] - Object 'Object Repository/Asset/Asset/AssetPageElements/assetTab' is clickable
+
+2021-01-11 18:03:27 - [MESSAGE][PASSED] - Object: 'Object Repository/Asset/Asset/AssetPageElements/assetTab' is clicked on
+
+2021-01-11 18:03:37 - [MESSAGE][PASSED] - Delayed 10 second(s)
+
+2021-01-11 18:03:37 - [MESSAGE][PASSED] - pages.Asset.clickAssetTab is PASSED
+
+2021-01-11 18:03:37 - [TEST_STEP][PASSED] - assetName = pages.Asset.getRandomAssetName(): pages.Asset.getRandomAssetName is PASSED
+
+2021-01-11 18:03:37 - [MESSAGE][PASSED] - Wait for page load successfully
+
+2021-01-11 18:03:37 - [MESSAGE][PASSED] - Object 'Object Repository/Asset/Asset/AssetCount' is present
+
+2021-01-11 18:03:37 - [MESSAGE][PASSED] - Text of object 'Object Repository/Asset/Asset/randomAsset(index)' is: 'Author643'
+
+2021-01-11 18:03:37 - [MESSAGE][PASSED] - pages.Asset.getRandomAssetName is PASSED
+
+2021-01-11 18:03:37 - [TEST_STEP][PASSED] - pages.Asset.deleteAsset(assetName): pages.Asset.deleteAsset is PASSED
+
+2021-01-11 18:03:38 - [MESSAGE][PASSED] - Object 'Object Repository/Asset/Asset/AssetPageElements/search' is present
+
+2021-01-11 18:03:38 - [MESSAGE][PASSED] - Object 'Object Repository/Asset/Asset/AssetPageElements/search' is visible
+
+2021-01-11 18:03:38 - [MESSAGE][PASSED] - Object 'Object Repository/Asset/Asset/AssetPageElements/search' is clickable
+
+2021-01-11 18:03:39 - [MESSAGE][PASSED] - Text of object 'Object Repository/Asset/Asset/AssetPageElements/search' is cleared
+
+2021-01-11 18:03:39 - [MESSAGE][PASSED] - Keys 'Author643' sent to object: 'Object Repository/Asset/Asset/AssetPageElements/search'
+
+2021-01-11 18:03:39 - [MESSAGE][PASSED] - Wait for page load successfully
+
+2021-01-11 18:03:39 - [MESSAGE][PASSED] - Object 'Object Repository/Asset/Asset/delAssetCheckbox(assetName)' is present
+
+2021-01-11 18:03:39 - [MESSAGE][PASSED] - Object 'Object Repository/Asset/Asset/delAssetCheckbox(assetName)' is visible
+
+2021-01-11 18:03:40 - [MESSAGE][PASSED] - Object 'Object Repository/Asset/Asset/delAssetCheckbox(assetName)' is clickable
+
+2021-01-11 18:03:40 - [MESSAGE][PASSED] - Object: 'Object Repository/Asset/Asset/delAssetCheckbox(assetName)' is clicked on
+
+2021-01-11 18:03:41 - [MESSAGE][PASSED] - Object 'Object Repository/Asset/Asset/delIcon' is present
+
+2021-01-11 18:03:42 - [MESSAGE][PASSED] - Object 'Object Repository/Asset/Asset/delIcon' is visible
+
+2021-01-11 18:03:43 - [MESSAGE][PASSED] - Object 'Object Repository/Asset/Asset/delIcon' is clickable
+
+2021-01-11 18:03:43 - [MESSAGE][PASSED] - Object: 'Object Repository/Asset/Asset/delIcon' is clicked on
+
+2021-01-11 18:03:43 - [MESSAGE][PASSED] - Alert accepted
+
+2021-01-11 18:03:43 - [MESSAGE][PASSED] - pages.Asset.deleteAsset is PASSED
+
+2021-01-11 18:03:43 - [TEST_STEP][PASSED] - pages.Asset.VerifyAssetNotPresent(assetName): pages.Asset.VerifyAssetNotPresent is PASSED
+
+2021-01-11 18:03:45 - [MESSAGE][PASSED] - Object 'Object Repository/Asset/Asset/AssetPageElements/search' is present
+
+2021-01-11 18:03:45 - [MESSAGE][PASSED] - Object 'Object Repository/Asset/Asset/AssetPageElements/search' is visible
+
+2021-01-11 18:03:45 - [MESSAGE][PASSED] - Object 'Object Repository/Asset/Asset/AssetPageElements/search' is clickable
+
+2021-01-11 18:03:46 - [MESSAGE][PASSED] - Text of object 'Object Repository/Asset/Asset/AssetPageElements/search' is cleared
+
+2021-01-11 18:03:46 - [MESSAGE][PASSED] - Keys 'Author643' sent to object: 'Object Repository/Asset/Asset/AssetPageElements/search'
+
+2021-01-11 18:03:46 - [MESSAGE][PASSED] - Wait for page load successfully
+
+2021-01-11 18:03:46 - [MESSAGE][PASSED] - Web element with id: 'Object Repository/Asset/Asset/assetname(assetName)' located by 'By.xpath: //div[text()='Author643']' is not present after '30' second(s)
+
+2021-01-11 18:03:46 - [MESSAGE][PASSED] - pages.Asset.VerifyAssetNotPresent is PASSED]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <system-out><![CDATA[2021-01-11 17:53:03 - [TEST_SUITE][INCOMPLETE] - New Test Suite: null]]></system-out>
+      <system-err><![CDATA[2021-01-11 17:53:03 - [TEST_SUITE][INCOMPLETE] - New Test Suite: null]]></system-err>
+   </testsuite>
+</testsuites>

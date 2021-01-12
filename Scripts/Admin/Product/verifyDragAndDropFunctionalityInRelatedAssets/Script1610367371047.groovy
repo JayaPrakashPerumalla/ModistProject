@@ -15,9 +15,11 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 
-CustomKeywords.'pages.Section.clickOnSectionTab'()
+CustomKeywords.'pages.Product.clickOnProductTab'()
 
-def sectionName = CustomKeywords.'pages.Section.addSection'() 
+String productName = CustomKeywords.'pages.Product.getRandomProductNmae'()
 
-CustomKeywords.'pages.Section.verifySectionAdded'(sectionName) 
+CustomKeywords.'pages.Product.openAnyExistingProduct'(productName)
 
+CustomKeywords.'pages.Product.changePositionOfItemInRelatedAssets'(findTestObject('Product/ProductEditPage/RelatedAssets/sourceObject(index)', 
+        [('index') : 3]), 1, false)

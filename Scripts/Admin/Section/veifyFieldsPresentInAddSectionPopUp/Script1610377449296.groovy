@@ -17,7 +17,4 @@ import internal.GlobalVariable as GlobalVariable
 
 CustomKeywords.'pages.Section.clickOnSectionTab'()
 
-def sectionName = CustomKeywords.'pages.Section.addSection'() 
-
-CustomKeywords.'pages.Section.verifySectionAdded'(sectionName) 
-
+CustomKeywords.'pages.Section.verifyElementsInAddSectionPopUp'()

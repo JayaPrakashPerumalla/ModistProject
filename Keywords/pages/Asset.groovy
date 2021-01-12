@@ -16,42 +16,9 @@ public class Asset {
 	Random random = new Random()
 	Verification verifications = new Verification()
 
-	@Keyword
-	def elementsInTheAssetTable() {
-		int count = WebUiCommonHelper.findWebElements(findTestObject('Object Repository/Asset/Verify elemetns in Asset/elements in Asset Table'), 30).size()
-		for (int i=0;i<count;i++) {
-			String elementName = WebUI.getText(findTestObject('Object Repository/Asset/Verify elemetns in Asset/Printing element name in the table',["index":i]))
-			println elementName
-		}
-	}
-	@Keyword
-	def clickAsset() {
-		actions.click(findTestObject('Object Repository/Asset/assetTab'))
-	}
+	
+	
 
-	@Keyword
-	def openExistingAsset() {
-
-		int count = WebUiCommonHelper.findWebElements(findTestObject('Object Repository/Asset/getIndexToPickRandomAsset'), 30).size()
-		int index = random.nextInt(count)
-		actions.click(findTestObject('Object Repository/Asset/openExistingAsset(index)',["index":index+1]))
-		def assetName=WebUI.getText(findTestObject('Object Repository/Asset/openExistingAsset(index)',["index":index+1]))
-		return assetName
-	}
-
-	@Keyword
-	def verfiyFieldsInAssetEditPage() {
-
-		verifications.verifyElementPresent(findTestObject('Object Repository/Asset/AssetEdit/verifyContentField'),'The field Content is not present')
-		verifications.verifyElementPresent(findTestObject('Object Repository/Asset/AssetEdit/verifyPhotoField'),'The field Photo is not present')
-		verifications.verifyElementPresent(findTestObject('Object Repository/Asset/AssetEdit/verifyTagsField'),'The field Tags is not present')
-		verifications.verifyElementPresent(findTestObject('Object Repository/Asset/AssetEdit/verifySourceField'),'The field Source is not present')
-		verifications.verifyElementPresent(findTestObject('Object Repository/Asset/AssetEdit/verifyTenantField'),'The field Tenant is not present')
-		verifications.verifyElementPresent(findTestObject('Object Repository/Asset/AssetEdit/verifyPublicField'),'The field Public is not present')
-		verifications.verifyElementPresent(findTestObject('Object Repository/Asset/AssetEdit/verifyAuthorField'),'The field Author is not present')
-		verifications.verifyElementPresent(findTestObject('Object Repository/Asset/AssetEdit/verifyCreatedField'),'The field Created is not present')
-		verifications.verifyElementPresent(findTestObject('Object Repository/Asset/AssetEdit/verifyUpdatedField'),'The field Updated is not present')
-	}
 
 	@Keyword
 	def clickAssetTab() {
@@ -72,9 +39,6 @@ public class Asset {
 
 		WebUI.waitForPageLoad(30)
 
-		//actions.waitForElementPresent(findTestObject('Object Repository/Asset/Asset/assetname(assetName)',["assetName":assetName]))
-		actions.waitForElementPresent(findTestObject('Object Repository/Asset/Asset/assetname(assetName)',["assetName":assetName]))
-
 	}
 
 
@@ -93,25 +57,24 @@ public class Asset {
 		else {
 			def index = random.nextInt(assetCount)
 
-			def assetName =  WebUI.getText(findTestObject('Object Repository/Asset/Asset/randomAsset(index)',["index":index+1]))
+			if(index==0)
+			{
+				index=index+1
+			}
+			def assetName =  WebUI.getText(findTestObject('Object Repository/Asset/Asset/randomAsset(index)',["index":index]))
 
-			/*String asset=""
-			 while(assetName.toString == asset)
-			 {
-			 assetName =  WebUI.getText(findTestObject('Object Repository/Asset/Asset/randomAsset(index)',["index":index+1]))
-			 println assetName
-			 } */ 
+			String asset=""
+			while(assetName.equals(asset))
+			{
+				index=index+1
+				assetName =  WebUI.getText(findTestObject('Object Repository/Asset/Asset/randomAsset(index)',["index":index]))
+			}
 
 			return assetName
 		}
 
 	}
 
-	@Keyword
-	def searchBox(String assetName) {
-
-		actions.sendKeys(findTestObject('Object Repository/Asset/search'), assetName)
-	}
 	@Keyword
 	def selectTenant() {
 
@@ -168,8 +131,6 @@ public class Asset {
 	def VerifyAssetIsPresent(String assetName) {
 
 		searchForAsset(assetName)
-
-		//actions.waitForElementPresent(findTestObject('Object Repository/Asset/Asset/assetname(assetName)',["assetName":assetName]))
 		verifications.verifyElementPresent(findTestObject('Object Repository/Asset/Asset/assetname(assetName)',["assetName":assetName]),assetName+"not present")
 	}
 
@@ -191,7 +152,7 @@ public class Asset {
 
 		searchForAsset(assetName)
 
-		verifications.verifyElementNotPresent(findTestObject('Object Repository/Asset/Asset/assetname(assetName)',["assetName":assetName]), 'Asset '+assetName+" is not present", 30)
+		verifications.verifyElementNotPresent(findTestObject('Object Repository/Asset/Asset/assetname(assetName)',["assetName":assetName]), 'Asset '+assetName+" is  present", 30)
 	}
 
 
