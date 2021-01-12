@@ -1,8 +1,0 @@
-Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
-Journey,Chrome 87.0.4280.141,,,2021-01-12 08:34:13,2021-01-12 08:35:04,51.230s,PASSED
-,,,,,,,
-Test Cases/Admin/Journey/addJournyAndVerifyItisAdded,Chrome 87.0.4280.141,,,2021-01-12 08:34:41,2021-01-12 08:35:04,23.618s,PASSED
-Start listener action : login,Chrome 87.0.4280.141,,,2021-01-12 08:34:41,2021-01-12 08:34:48,7.055s,PASSED
-pages.Journey.clickOnJourneyTab(),Chrome 87.0.4280.141,,,2021-01-12 08:34:48,2021-01-12 08:34:51,3.044s,PASSED
-journeyName = pages.Journey.addJourney(),Chrome 87.0.4280.141,,,2021-01-12 08:34:51,2021-01-12 08:34:56,4.973s,PASSED
-pages.Journey.verifyJourneyAdded(journeyName),Chrome 87.0.4280.141,,,2021-01-12 08:34:56,2021-01-12 08:35:04,8.188s,PASSED
