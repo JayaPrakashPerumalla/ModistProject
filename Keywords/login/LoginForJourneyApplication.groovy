@@ -15,11 +15,11 @@ public class LoginForJourneyApplication {
 	@Keyword
 	def loginToJourneyApplication() {
 
-		robot.keyPress(KeyEvent.VK_CONTROL)
-		robot.keyPress(KeyEvent.VK_T)
-		robot.keyRelease(KeyEvent.VK_CONTROL)
-		robot.keyRelease(KeyEvent.VK_T)
-		WebUI.switchToWindowIndex(WebUI.getWindowIndex()+1)
+//		robot.keyPress(KeyEvent.VK_CONTROL)
+//		robot.keyPress(KeyEvent.VK_T)
+//		robot.keyRelease(KeyEvent.VK_CONTROL)
+//		robot.keyRelease(KeyEvent.VK_T)
+//		WebUI.switchToWindowIndex(WebUI.getWindowIndex()+1)
 		WebUI.navigateToUrl(GlobalVariable.journeyUrl)
 	}
 

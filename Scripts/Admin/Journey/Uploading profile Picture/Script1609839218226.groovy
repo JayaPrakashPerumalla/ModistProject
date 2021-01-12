@@ -18,10 +18,10 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 
+// Clicking on the person icon
 CustomKeywords.'common.uploading.clickProfileIcon'()
 
+// Click profile 
 CustomKeywords.'common.uploading.clickOnProfile'()
-
 CustomKeywords.'common.uploading.uploadProfilePicture'()
-
 CustomKeywords.'pages.Journey.verifyWhetherImageSuccessfullyUploaded'()

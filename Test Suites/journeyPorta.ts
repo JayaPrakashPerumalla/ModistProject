@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestSuiteEntity>
    <description></description>
-   <name>journeyPortal</name>
+   <name>journeyPorta</name>
    <tag></tag>
    <isRerun>false</isRerun>
    <mailRecipient></mailRecipient>
@@ -10,77 +10,101 @@
    <pageLoadTimeoutDefault>true</pageLoadTimeoutDefault>
    <rerunFailedTestCasesOnly>false</rerunFailedTestCasesOnly>
    <rerunImmediately>false</rerunImmediately>
-   <testSuiteGuid>f18725c6-4dfb-4676-8935-26067833d673</testSuiteGuid>
+   <testSuiteGuid>ed812cce-1900-4d60-8184-77cd0f6e0330</testSuiteGuid>
    <testCaseLink>
-      <guid>7c2f008d-aaa9-41a6-acbf-4ccd13fe272e</guid>
+      <guid>bb48afd3-add2-4598-b533-c595e760b442</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/JourneyPortal/addProductTOCartAndVerifyWhetherIsItShownInUi</testCaseId>
    </testCaseLink>
    <testCaseLink>
-      <guid>96522f36-f341-4eec-9f23-b13690a7a8f6</guid>
+      <guid>586fe7ae-6aeb-44e1-832a-185fa46f37b1</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/JourneyPortal/AddProductToCartMulitpleTimesAndVerifyTheProductsCountAfterRefresh</testCaseId>
    </testCaseLink>
    <testCaseLink>
-      <guid>4e0332fc-0492-4d45-8c48-c4a80a9703b8</guid>
+      <guid>bbd7f2c9-73ba-4fc0-840b-a4ff36bcccbc</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
+      <testCaseId>Test Cases/JourneyPortal/clickingOnTheRightAndLeftIsNavigatingCorrctly</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>ace3782e-0b3d-4990-bd1a-70d42c90dab1</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/JourneyPortal/loginToJourneyApplicationThroughAccessCodeAndVerifyTheDisplayPage</testCaseId>
    </testCaseLink>
    <testCaseLink>
-      <guid>618c9aa9-1f7c-4208-b4f7-cb4542e2dafe</guid>
+      <guid>019e4efb-8bca-430c-8675-253cb9713b54</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/JourneyPortal/loginToJourneyApplicationThroughInvalidAccessCodeAndVerifyTheErrorMessage</testCaseId>
    </testCaseLink>
    <testCaseLink>
-      <guid>71ee0cc9-3def-42c0-9bbd-1d678139863e</guid>
+      <guid>5d3a4591-3131-4433-8fbb-59f5d704f78e</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/JourneyPortal/loginToJourneyApplicationWithEmptyAccessCode</testCaseId>
    </testCaseLink>
    <testCaseLink>
-      <guid>b7e263ad-2870-4a8a-804a-b592e1504950</guid>
+      <guid>a1fde7f2-f38b-4821-8ced-e65243862077</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/JourneyPortal/verifyCartIfNoItemsAvailable</testCaseId>
    </testCaseLink>
    <testCaseLink>
-      <guid>a41abc76-6081-494b-ae90-89fedf974256</guid>
+      <guid>7b6cfbf7-b5f7-42ab-9fbd-6ab0ebba9323</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/JourneyPortal/verifyClickingOnBackButtonNavigatesBackToSectionPage</testCaseId>
    </testCaseLink>
    <testCaseLink>
-      <guid>f2331380-ca93-4088-867f-0a514d9bd86b</guid>
+      <guid>fe6c2a56-a770-42a2-b932-4bb92d9d7a6a</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
+      <testCaseId>Test Cases/JourneyPortal/verifyCloseButtonInJourneyPortalProductPopup</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>e3b41fff-4674-4496-bb94-9cbb587947bb</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>false</isRun>
+      <testCaseId>Test Cases/JourneyPortal/verifyElementsInJourneyPotalProductPopup</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>83212898-e44d-41ee-9c79-22c0be1f1fa6</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/JourneyPortal/verifyFixedBackGroundInJourneyPortal</testCaseId>
    </testCaseLink>
    <testCaseLink>
-      <guid>2d5debfc-0b35-4535-957f-ce40585ba301</guid>
+      <guid>1f351e78-93eb-4df2-96c6-6618627928cb</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
+      <testCaseId>Test Cases/JourneyPortal/verifyProductsAndBackButtonIsPresentAfterClickingSection</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>b6ff95f2-d6e9-4a8b-bd74-1d279725af88</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/JourneyPortal/verifyScrollingBackGroundInJourneyPortal</testCaseId>
    </testCaseLink>
    <testCaseLink>
-      <guid>8878963f-b503-454a-9ca2-84f606f55b5f</guid>
+      <guid>d9e92bf9-bb3c-4d0d-919d-0ce746f6639d</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/JourneyPortal/verifySectionInformation</testCaseId>
    </testCaseLink>
    <testCaseLink>
-      <guid>22746c29-3814-41cb-bc78-28f208362a9b</guid>
+      <guid>212c0dae-d9fe-4ffc-8fb7-103ee96a19f0</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/JourneyPortal/verifyTheFullScreenViewInProductPage</testCaseId>
    </testCaseLink>
    <testCaseLink>
-      <guid>5556da4b-d8e2-4497-a288-bb5c96985e12</guid>
+      <guid>96f39050-2a0e-4f76-8c4b-4f1c132a27df</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/JourneyPortal/verifyTheFullScreenViewInSectionPage</testCaseId>
    </testCaseLink>
 </TestSuiteEntity>

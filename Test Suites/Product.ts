@@ -18,21 +18,15 @@
       <testCaseId>Test Cases/Admin/Product/addProductAndVerify</testCaseId>
    </testCaseLink>
    <testCaseLink>
-      <guid>79c50b5d-b9ba-4386-8619-1f998f35e070</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/Admin/Product/checkWhetherTheProductIsAvailable</testCaseId>
-   </testCaseLink>
-   <testCaseLink>
       <guid>7d0405d1-dc4c-4024-8723-ac42cb9bd74a</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/Admin/Product/deleteProductAndVerify</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>2cfe05bc-10d2-485c-ba18-9687e34657eb</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/Admin/Product/deleteProductFromProductEditPageAndVerify</testCaseId>
    </testCaseLink>
    <testCaseLink>
@@ -44,7 +38,7 @@
    <testCaseLink>
       <guid>d21e42fe-3048-4ce1-802e-304a1f8e2ce0</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/Admin/Product/verifyAddProductPopUp</testCaseId>
    </testCaseLink>
    <testCaseLink>
@@ -56,7 +50,19 @@
    <testCaseLink>
       <guid>81348244-d721-440d-81f9-c53ace795a73</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/Admin/Product/verifySaveChangesDeleteAndCloseButtonInProductDetailspage</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>de5e7421-e357-41fe-953a-9e9b9da4dc73</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>false</isRun>
+      <testCaseId>Test Cases/Admin/Product/verifyDragAndDropFunctionalityInProductAssets</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>e095abc2-72bc-4cf2-8f28-6b53895c8463</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Admin/Product/verifyDragAndDropFunctionalityInRelatedAssets</testCaseId>
    </testCaseLink>
 </TestSuiteEntity>

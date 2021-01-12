@@ -8,32 +8,24 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable
 import verification.Verification
 import webAction.WebAction
-
+import org.openqa.selenium.Keys as Keys
 public class Journey {
-
-
 
 	WebAction actions = new WebAction()
 	Verification verifications = new Verification()
-
 	Random random = new Random()
-
 
 	@Keyword
 	def clickOnJourneyTab() {
-
 		actions.click(findTestObject('Object Repository/Journey/Journeytab'))
 	}
 
-
 	def clickAddJourneyButton() {
-
 		actions.click(findTestObject('Object Repository/Journey/Add Journey/AddJourneyButton'))
 	}
 
 	@Keyword
-	def addJorney() {
-
+	def addJourney() {
 		String journeyName = "journeyName"+random.nextInt(1000)
 		clickAddJourneyButton()
 		actions.sendKeys(findTestObject('Object Repository/Journey/Add Journey/journeyName'), journeyName)
@@ -42,32 +34,19 @@ public class Journey {
 	}
 
 	@Keyword
-	def openExistingJourney(String journeyName) {
-
+	def openExistingJourney(def journeyName) {
 		searchJourney(journeyName)
 		actions.click(findTestObject('Object Repository/Journey/clickVerifyingJourney(journeyName)',["journeyName":journeyName]))
 	}
 
 	def searchJourney(def journeyName) {
-
 		actions.sendKeys(findTestObject('Object Repository/Journey/journrySearchInput'), journeyName)
-
-		println 'edr'+ WebUI.verifyElementPresent(findTestObject('Object Repository/Journey/JourneyName(journeyName)',["journeyName":journeyName]), GlobalVariable.defaultWaitTime, FailureHandling.OPTIONAL)
-
-
-
-		if(!(WebUI.verifyElementPresent(findTestObject('Object Repository/Journey/JourneyName(journeyName)',["journeyName":journeyName]), GlobalVariable.defaultWaitTime, FailureHandling.OPTIONAL))) {
-			int count=1
-			while (count<3) {
-				searchJourney(journeyName)
-				count++
-			}
-		}
+		actions.sendKeys(findTestObject('Object Repository/Journey/journrySearchInput'), Keys.chord(Keys.ENTER))
+		actions.waitForElementPresent(findTestObject('Object Repository/Journey/JourneyName(journeyName)',["journeyName":journeyName]))
 	}
 
 	@Keyword
 	def verifyJourneyAdded(def journeyName) {
-
 		searchJourney(journeyName)
 		verifications.verifyElementPresent(findTestObject('Object Repository/Journey/JourneyName(journeyName)',["journeyName":journeyName]), " The expected "+journeyName+ " is not created ")
 	}
@@ -82,72 +61,52 @@ public class Journey {
 
 	@Keyword
 	def verifyJourneyDeleted(def journeyName) {
-
 		searchJourney(journeyName)
-
 		verifications.verifyElementNotPresent(findTestObject('Object Repository/Journey/JourneyName(journeyName)',["journeyName":journeyName]), " The expected "+journeyName+ " is not deleted ")
 	}
 
 	@Keyword
 	def verifyJourneyCloned(String journeyName) {
-
 		String duplicatejourneyName = journeyName+' '+'(duplicate)'
-
 		searchJourney(duplicatejourneyName)
-
 		WebUI.waitForElementPresent(findTestObject('Object Repository/Journey/journey cloning/clonedJourney(journeyName)',["journeyName":duplicatejourneyName]), 30, FailureHandling.OPTIONAL)
-
 		verifications.verifyElementPresent(findTestObject('Object Repository/Journey/journey cloning/clonedJourney(journeyName)',["journeyName":duplicatejourneyName]), " The expected "+duplicatejourneyName+ " is not Cloned ")
 	}
 
-
 	@Keyword
 	def cloneJourney(String journeyName) {
-
 		searchJourney(journeyName)
-
 		actions.wait(findTestObject('Journey/journey cloning/threedots(journeyName)',["journeyName":journeyName]))
-
 		actions.click(findTestObject('Journey/journey cloning/threedots(journeyName)',["journeyName":journeyName]))
-
 		actions.click(findTestObject('Object Repository/Journey/journey cloning/cloneButton'))
 	}
 
 	@Keyword
 	def createAccessCodeInJourney(String journeyName, String accessCode, String useLimit) {
-
 		openExistingJourney(journeyName)
-
-
 		actions.scrollToElement(findTestObject('Object Repository/Journey/Current Access Codes/currentAccessCodeField'))
 		actions.click(findTestObject('Object Repository/Journey/Current Access Codes/plusButton'))
 		actions.sendKeys(findTestObject('Object Repository/Journey/Current Access Codes/accessCode'), accessCode)
-		WebUI.sendKeys(findTestObject('Object Repository/Journey/Current Access Codes/codeUsageCount'), useLimit)
+		actions.sendKeys(findTestObject('Object Repository/Journey/Current Access Codes/codeUsageCount'), useLimit)
 		actions.click(findTestObject('Object Repository/Journey/Current Access Codes/getCodeButton'))
 		actions.click(findTestObject('Object Repository/CommonButtons/Close'))
 		return accessCode
 	}
 
-
-
 	@Keyword
 	def verifyTheCreatedAccessCode(String journeyName, String accesscode) {
-
 		openExistingJourney(journeyName)
-
 		actions.scrollToElement(findTestObject('Object Repository/Journey/Current Access Codes/currentAccessCodeField'))
-		
 		actions.waitForElementPresent(findTestObject('Object Repository/Journey/Current Access Codes/currentAccessCodeField'))
 		verifications.verifyElementPresent(findTestObject('Object Repository/Journey/Current Access Codes/verify(code)',["code":accesscode]), 'The Code' +accesscode +' is not created')
-
 		actions.click(findTestObject('Object Repository/CommonButtons/Close'))
 	}
 
 	@Keyword
 	def getRandomJourneyName() {
-
 		actions.waitForElementPresent(findTestObject('Object Repository/Journey/toGetJourneysCount'))
 		int count = actions.getElementCount(findTestObject('Object Repository/Journey/toGetJourneysCount'))
+
 		int index = random.nextInt(count)
 		def journeyName = WebUI.getText(findTestObject('Object Repository/Journey/toPickrandomJourney(index)',["index":index+1]))
 		return journeyName
@@ -167,12 +126,10 @@ public class Journey {
 
 	@Keyword
 	def getExistingJourneyAccesscode(String journeyName) {
-
 		searchJourney(journeyName)
 		openExistingJourney(journeyName)
 		actions.scrollToElement(findTestObject('Object Repository/Journey/Current Access Codes/currentAccessCodeField'))
 		int count = actions.getElementCount(findTestObject('Object Repository/Journey/Current Access Codes/getAccessCodesCount'))
-
 		int index = random.nextInt(count)
 		String accessCode = WebUI.getText(findTestObject('Object Repository/Journey/Current Access Codes/getAccessCodeText(index)',["index":index+1]))
 		return accessCode
@@ -200,36 +157,26 @@ public class Journey {
 
 	@Keyword
 	def typeOfBackGroundToScrollingBackground() {
-
 		actions.scrollToElement(findTestObject('Object Repository/Journey/typeField/clickOnType'))
-
 		actions.click(findTestObject('Object Repository/Journey/typeField/clickOnType'))
-
 		actions.click(findTestObject('Object Repository/Journey/typeField/ScrollingBackGround'))
-
 		clickSaveButton()
 	}
 
 	@Keyword
 	def typeOfBackGroundToFixed() {
-
 		actions.scrollToElement(findTestObject('Object Repository/Journey/typeField/clickOnType'))
-
 		actions.click(findTestObject('Object Repository/Journey/typeField/clickOnType'))
-
 		actions.click(findTestObject('Object Repository/Journey/typeField/FixedBackGround'))
-
 		clickSaveButton()
 	}
 
 	def clickSaveButton() {
-
 		actions.click(findTestObject('Object Repository/CommonButtons/saveButton'))
 	}
 
 	@Keyword
 	def verifyWhetherImageSuccessfullyUploaded() {
-
 		verifications.verifyElementPresent(findTestObject('Object Repository/OptionsUnderProfileIcon/Profile Options/successMessageAfterUploading'), "image not uploaded")
 	}
 }

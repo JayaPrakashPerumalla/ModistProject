@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestSuiteEntity>
    <description></description>
-   <name>LogOut</name>
+   <name>dashboardVerification</name>
    <tag></tag>
    <isRerun>false</isRerun>
    <mailRecipient></mailRecipient>
@@ -10,11 +10,17 @@
    <pageLoadTimeoutDefault>true</pageLoadTimeoutDefault>
    <rerunFailedTestCasesOnly>false</rerunFailedTestCasesOnly>
    <rerunImmediately>false</rerunImmediately>
-   <testSuiteGuid>4c0d87d6-3229-4f7c-ac8d-826ff9ea636c</testSuiteGuid>
+   <testSuiteGuid>60202e54-dede-44d5-a6ba-afc0ee065cc9</testSuiteGuid>
    <testCaseLink>
-      <guid>bf36fdaf-a561-4dc2-9ab3-e9bcabb36372</guid>
+      <guid>382b61c8-0189-431b-818b-0a0c930b1a44</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Admin/LogOut/logout</testCaseId>
+      <testCaseId>Test Cases/Admin/dashboard/Verify Headers</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>57ffb262-eda2-4d04-87b8-98b002d100da</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Admin/dashboard/verifyUrlAfterLogin</testCaseId>
    </testCaseLink>
 </TestSuiteEntity>

@@ -2,7 +2,7 @@ package pages
 
 import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
 
-import org.openqa.selenium.By
+import org.openqa.selenium.Keys
 import org.openqa.selenium.WebDriver
 import org.openqa.selenium.WebElement
 import org.openqa.selenium.interactions.Actions
@@ -83,7 +83,7 @@ public class Product {
 	@Keyword
 	def searchForAProduct(String productName) {
 		actions.sendKeys(findTestObject('Object Repository/Product/Filter by name'), productName)
-		WebUI.waitForPageLoad(10)
+		actions.sendKeys(findTestObject('Object Repository/Product/Filter by name'), Keys.chord(Keys.ENTER))
 	}
 
 	@Keyword
@@ -276,17 +276,19 @@ public class Product {
 	}
 
 	@Keyword
-	def clickingLeft() {
-
-		if (! (WebUI.verifyElementPresent(findTestObject('Object Repository/journeyPortal/rightDirectionDisabled'), 30, FailureHandling.OPTIONAL)))
-			actions.click(findTestObject('Object Repository/journeyPortal/leftDirectionButton'))
+	def clickPreviousSlide() {
+		def initialDataId = getIdOfProduct(findTestObject('Object Repository/journeyPortal/currentSlide'))
+		actions.click(findTestObject('Object Repository/journeyPortal/leftDirectionButton'))
+		def finalDataId = getIdOfProduct(findTestObject('Object Repository/journeyPortal/currentSlide'))
+		WebUI.verifyNotEqual(initialDataId, finalDataId, FailureHandling.STOP_ON_FAILURE)
 	}
 
 	@Keyword
-	def clickingRight() {
-
-		if(! (WebUI.verifyElementPresent(findTestObject('Object Repository/journeyPortal/rightDirectionDisabled'), 30, FailureHandling.OPTIONAL)))
-			actions.click(findTestObject('Object Repository/journeyPortal/rightDirectionButton'))
+	def clickNextSlide() {
+		def initialDataId = getIdOfProduct(findTestObject('Object Repository/journeyPortal/currentSlide'))
+		actions.click(findTestObject('Object Repository/journeyPortal/rightDirectionButton'))
+		def finalDataId = getIdOfProduct(findTestObject('Object Repository/journeyPortal/currentSlide'))
+		WebUI.verifyNotEqual(initialDataId, finalDataId, FailureHandling.STOP_ON_FAILURE)
 	}
 
 
@@ -299,6 +301,7 @@ public class Product {
 		}
 	}
 
+	@Keyword
 	def getIdOfProduct(TestObject currentObject) {
 
 		// Get data-Id
@@ -307,10 +310,4 @@ public class Product {
 		return dataId
 	}
 
-	@Keyword
-	def verifyTheProductImageChange(String dataId1, String dataId2) {
-		if(!(dataId1.equals(dataId2))) {
-			KeywordUtil.markPassed("clicked successfully")
-		}
-	}
 }

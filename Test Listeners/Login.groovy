@@ -1,7 +1,9 @@
 
+import com.kms.katalon.core.annotation.AfterTestSuite
 import com.kms.katalon.core.annotation.BeforeTestCase
 import com.kms.katalon.core.annotation.Keyword
 import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
+import com.kms.katalon.core.util.KeywordUtil
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
 
@@ -17,13 +19,24 @@ class Login {
 
 	//@BeforeTestCase
 	//@BeforeTestSuite
+	@BeforeTestSuite
 	@Keyword
 	def OpenWebSite() {
 		WebUI.openBrowser('')
 		WebUI.maximizeWindow()
 		WebUI.navigateToUrl(GlobalVariable.Url)
 		loginPage.login(GlobalVariable.Email,GlobalVariable.Password)
+		if(!(WebUI.getUrl().endsWith('dashboard'))) {
+			WebUI.takeScreenshot()
+			KeywordUtil.markFailed('url not navigated to dashboard')
+		}
+	}
 
+	@BeforeTestCase
+	@Keyword
+	def login() {
+		WebUI.navigateToUrl(GlobalVariable.Url)
+		loginPage.login(GlobalVariable.Email,GlobalVariable.Password)
 	}
 	
 	@BeforeTestCase
@@ -42,5 +55,11 @@ class Login {
 		GlobalVariable.accessToken = loginJSON.token
 	}
 
+	@AfterTestSuite
+	//@AfterTestCase
+	@Keyword
+	def closewebSite() {
+		WebUI.closeBrowser()
+	}
 
 }

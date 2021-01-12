@@ -15,14 +15,12 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 
+// Navigate to journey page
 CustomKeywords.'pages.Journey.clickOnJourneyTab'()
 
+// Create access code and verify
 String journeyName = CustomKeywords.'pages.Journey.getRandomJourneyName'()
-
 String accessCode = CustomKeywords.'pages.Journey.getRandomAccessCode'()
-
 String useLimit = CustomKeywords.'pages.Journey.getRandomCount'()
-
 accessCode = CustomKeywords.'pages.Journey.createAccessCodeInJourney'(journeyName, accessCode, useLimit)
-
 CustomKeywords.'pages.Journey.verifyTheCreatedAccessCode'(journeyName, accessCode)

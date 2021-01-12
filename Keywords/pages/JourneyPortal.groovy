@@ -146,7 +146,5 @@ public class JourneyPortal {
 	def verifyBackButtonAfterEnteringInToSection() {
 		verifications.verifyElementPresent(findTestObject('Object Repository/Journey/JourneyPortal/Product/bakcButton'), "back button not available")
 	}
-
-	
 }
 
