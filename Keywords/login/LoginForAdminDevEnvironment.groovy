@@ -13,17 +13,14 @@ import webAction.WebAction
 public class LoginForAdminDevEnvironment {
 
 	WebAction action = new WebAction()
-
-
-
 	@Keyword
 	def login(String Email,String Password) {
-
-		action.sendKeys(findTestObject('Object Repository/Login Credentials/Email'),Email)
-		action.sendKeys(findTestObject('Object Repository/Login Credentials/Password'),Password)
-		action.click(findTestObject('Object Repository/Login Credentials/EnterButton'))
+		if(WebUI.verifyElementPresent(findTestObject('Object Repository/Login Credentials/Email'), 4, FailureHandling.OPTIONAL)) {
+			action.sendKeys(findTestObject('Object Repository/Login Credentials/Email'),Email)
+			action.sendKeys(findTestObject('Object Repository/Login Credentials/Password'),Password)
+			action.click(findTestObject('Object Repository/Login Credentials/EnterButton'))
+		}
 	}
-
 
 	@Keyword
 	def wait(int seconds) {

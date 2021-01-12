@@ -1,0 +1,513 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="AssetSource" time="160.485" tests="7" failures="0" errors="0">
+   <testsuite name="AssetSource" tests="7" failures="0" errors="0" time="160.485" timestamp="2021-01-12 05:43:50" hostname="Lenovo - DESKTOP-H3LAPEO" id="Test Suites/AssetSource">
+      <properties>
+         <property name="deviceName" value=""/>
+         <property name="devicePlatform" value=""/>
+         <property name="logFolder" value="E:\\Modist Project\\ModistProject\\Reports\\20210112_053457\\AssetSource\\20210112_053500"/>
+         <property name="logFiles" value="E:\\Modist Project\\ModistProject\\Reports\\20210112_053457\\AssetSource\\20210112_053500\\execution0.log"/>
+         <property name="attachments" value=""/>
+         <property name="hostName" value="Lenovo - DESKTOP-H3LAPEO"/>
+         <property name="os" value="Windows 10 64bit"/>
+         <property name="katalonVersion" value="7.7.0.205"/>
+         <property name="browser" value="Chrome 87.0.4280.141"/>
+         <property name="hostAddress" value="192.168.43.128"/>
+         <property name="sessionId" value="41e82230686db59b204f785cec55efd5"/>
+         <property name="seleniumVersion" value="3.141.59"/>
+         <property name="proxyInformation" value="ProxyInformation { proxyOption=NO_PROXY, proxyServerType=HTTP, username=, password=********, proxyServerAddress=, proxyServerPort=0, executionList=&quot;&quot;, isApplyToDesiredCapabilities=true }"/>
+         <property name="platform" value="Windows 10"/>
+      </properties>
+      <testcase name="Test Cases/Admin/AssetSource/Add An AssetSource" time="18.001" classname="Test Cases/Admin/AssetSource/Add An AssetSource" status="PASSED">
+         <system-out><![CDATA[2021-01-12 05:44:08 - [TEST_CASE][PASSED] - Test Cases/Admin/AssetSource/Add An AssetSource: Test Cases/Admin/AssetSource/Add An AssetSource
+
+2021-01-12 05:44:09 - [TEST_STEP][PASSED] - sourcename = pages.Assetsource.addAssetSource(): pages.Assetsource.addAssetSource is PASSED
+
+2021-01-12 05:44:14 - [MESSAGE][PASSED] - Object 'Object Repository/AssetSoure/Asset Source Tab' is present
+
+2021-01-12 05:44:14 - [MESSAGE][PASSED] - Object 'Object Repository/AssetSoure/Asset Source Tab' is visible
+
+2021-01-12 05:44:15 - [MESSAGE][PASSED] - Object 'Object Repository/AssetSoure/Asset Source Tab' is clickable
+
+2021-01-12 05:44:16 - [MESSAGE][PASSED] - Object: 'Object Repository/AssetSoure/Asset Source Tab' is clicked on
+
+2021-01-12 05:44:16 - [MESSAGE][PASSED] - Object 'Object Repository/AssetSoure/Add Asset Source Button' is present
+
+2021-01-12 05:44:17 - [MESSAGE][PASSED] - Object 'Object Repository/AssetSoure/Add Asset Source Button' is present
+
+2021-01-12 05:44:17 - [MESSAGE][PASSED] - Object 'Object Repository/AssetSoure/Add Asset Source Button' is visible
+
+2021-01-12 05:44:17 - [MESSAGE][PASSED] - Object 'Object Repository/AssetSoure/Add Asset Source Button' is clickable
+
+2021-01-12 05:44:18 - [MESSAGE][PASSED] - Object: 'Object Repository/AssetSoure/Add Asset Source Button' is clicked on
+
+2021-01-12 05:44:18 - [MESSAGE][PASSED] - Wait for page load successfully
+
+2021-01-12 05:44:18 - [MESSAGE][PASSED] - Object 'Object Repository/AssetSoure/Source' is present
+
+2021-01-12 05:44:18 - [MESSAGE][PASSED] - Object 'Object Repository/AssetSoure/Source' is visible
+
+2021-01-12 05:44:19 - [MESSAGE][PASSED] - Object 'Object Repository/AssetSoure/Source' is clickable
+
+2021-01-12 05:44:19 - [MESSAGE][PASSED] - Text of object 'Object Repository/AssetSoure/Source' is cleared
+
+2021-01-12 05:44:19 - [MESSAGE][PASSED] - Keys 'RandomAsset487' sent to object: 'Object Repository/AssetSoure/Source'
+
+2021-01-12 05:44:20 - [MESSAGE][PASSED] - Object 'Object Repository/AssetSoure/Asset Source button on popup' is present
+
+2021-01-12 05:44:20 - [MESSAGE][PASSED] - Object 'Object Repository/AssetSoure/Asset Source button on popup' is visible
+
+2021-01-12 05:44:20 - [MESSAGE][PASSED] - Object 'Object Repository/AssetSoure/Asset Source button on popup' is clickable
+
+2021-01-12 05:44:20 - [MESSAGE][PASSED] - Object: 'Object Repository/AssetSoure/Asset Source button on popup' is clicked on
+
+2021-01-12 05:44:20 - [MESSAGE][PASSED] - pages.Assetsource.addAssetSource is PASSED
+
+2021-01-12 05:44:20 - [TEST_STEP][PASSED] - pages.Assetsource.verifyAssetSourceAdded(sourcename): pages.Assetsource.verifyAssetSourceAdded is PASSED
+
+2021-01-12 05:44:21 - [MESSAGE][PASSED] - Object 'Object Repository/AssetSoure/Search' is present
+
+2021-01-12 05:44:21 - [MESSAGE][PASSED] - Object 'Object Repository/AssetSoure/Search' is visible
+
+2021-01-12 05:44:22 - [MESSAGE][PASSED] - Object 'Object Repository/AssetSoure/Search' is clickable
+
+2021-01-12 05:44:22 - [MESSAGE][PASSED] - Text of object 'Object Repository/AssetSoure/Search' is cleared
+
+2021-01-12 05:44:23 - [MESSAGE][PASSED] - Keys 'RandomAsset487' sent to object: 'Object Repository/AssetSoure/Search'
+
+2021-01-12 05:44:26 - [MESSAGE][PASSED] - Object 'Object Repository/AssetSoure/AssetSourceName' is present
+
+2021-01-12 05:44:26 - [MESSAGE][PASSED] - pages.Assetsource.verifyAssetSourceAdded is PASSED
+
+2021-01-12 05:44:26 - [TEST_STEP][PASSED] - println(sourcename): null]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Admin/AssetSource/Delete An AssetSource" time="34.915" classname="Test Cases/Admin/AssetSource/Delete An AssetSource" status="PASSED">
+         <system-out><![CDATA[2021-01-12 05:44:26 - [TEST_CASE][PASSED] - Test Cases/Admin/AssetSource/Delete An AssetSource: Test Cases/Admin/AssetSource/Delete An AssetSource
+
+2021-01-12 05:44:27 - [TEST_STEP][PASSED] - sourcename = pages.Assetsource.addAssetSource(): pages.Assetsource.addAssetSource is PASSED
+
+2021-01-12 05:44:27 - [MESSAGE][PASSED] - Object 'Object Repository/AssetSoure/Asset Source Tab' is present
+
+2021-01-12 05:44:28 - [MESSAGE][PASSED] - Object 'Object Repository/AssetSoure/Asset Source Tab' is visible
+
+2021-01-12 05:44:28 - [MESSAGE][PASSED] - Object 'Object Repository/AssetSoure/Asset Source Tab' is clickable
+
+2021-01-12 05:44:29 - [MESSAGE][PASSED] - Object: 'Object Repository/AssetSoure/Asset Source Tab' is clicked on
+
+2021-01-12 05:44:29 - [MESSAGE][PASSED] - Object 'Object Repository/AssetSoure/Add Asset Source Button' is present
+
+2021-01-12 05:44:30 - [MESSAGE][PASSED] - Object 'Object Repository/AssetSoure/Add Asset Source Button' is present
+
+2021-01-12 05:44:30 - [MESSAGE][PASSED] - Object 'Object Repository/AssetSoure/Add Asset Source Button' is visible
+
+2021-01-12 05:44:30 - [MESSAGE][PASSED] - Object 'Object Repository/AssetSoure/Add Asset Source Button' is clickable
+
+2021-01-12 05:44:30 - [MESSAGE][PASSED] - Object: 'Object Repository/AssetSoure/Add Asset Source Button' is clicked on
+
+2021-01-12 05:44:30 - [MESSAGE][PASSED] - Wait for page load successfully
+
+2021-01-12 05:44:31 - [MESSAGE][PASSED] - Object 'Object Repository/AssetSoure/Source' is present
+
+2021-01-12 05:44:31 - [MESSAGE][PASSED] - Object 'Object Repository/AssetSoure/Source' is visible
+
+2021-01-12 05:44:32 - [MESSAGE][PASSED] - Object 'Object Repository/AssetSoure/Source' is clickable
+
+2021-01-12 05:44:32 - [MESSAGE][PASSED] - Text of object 'Object Repository/AssetSoure/Source' is cleared
+
+2021-01-12 05:44:32 - [MESSAGE][PASSED] - Keys 'RandomAsset429' sent to object: 'Object Repository/AssetSoure/Source'
+
+2021-01-12 05:44:33 - [MESSAGE][PASSED] - Object 'Object Repository/AssetSoure/Asset Source button on popup' is present
+
+2021-01-12 05:44:33 - [MESSAGE][PASSED] - Object 'Object Repository/AssetSoure/Asset Source button on popup' is visible
+
+2021-01-12 05:44:33 - [MESSAGE][PASSED] - Object 'Object Repository/AssetSoure/Asset Source button on popup' is clickable
+
+2021-01-12 05:44:34 - [MESSAGE][PASSED] - Object: 'Object Repository/AssetSoure/Asset Source button on popup' is clicked on
+
+2021-01-12 05:44:34 - [MESSAGE][PASSED] - pages.Assetsource.addAssetSource is PASSED
+
+2021-01-12 05:44:34 - [TEST_STEP][PASSED] - println(sourcename): null
+
+2021-01-12 05:44:34 - [TEST_STEP][PASSED] - pages.Assetsource.deleteAnAssetSource(sourcename): pages.Assetsource.deleteAnAssetSource is PASSED
+
+2021-01-12 05:44:34 - [MESSAGE][PASSED] - Object 'Object Repository/AssetSoure/Search' is present
+
+2021-01-12 05:44:35 - [MESSAGE][PASSED] - Object 'Object Repository/AssetSoure/Search' is visible
+
+2021-01-12 05:44:35 - [MESSAGE][PASSED] - Object 'Object Repository/AssetSoure/Search' is clickable
+
+2021-01-12 05:44:35 - [MESSAGE][PASSED] - Text of object 'Object Repository/AssetSoure/Search' is cleared
+
+2021-01-12 05:44:36 - [MESSAGE][PASSED] - Keys 'RandomAsset429' sent to object: 'Object Repository/AssetSoure/Search'
+
+2021-01-12 05:44:39 - [MESSAGE][PASSED] - Scroll to object 'Object Repository/AssetSoure/AssetSourceName' successfully
+
+2021-01-12 05:44:39 - [MESSAGE][PASSED] - Object 'Object Repository/AssetSoure/AssetSourceName' is present
+
+2021-01-12 05:44:40 - [MESSAGE][PASSED] - Object 'Object Repository/AssetSoure/AssetSourceName' is visible
+
+2021-01-12 05:44:40 - [MESSAGE][PASSED] - Object 'Object Repository/AssetSoure/AssetSourceName' is clickable
+
+2021-01-12 05:44:40 - [MESSAGE][PASSED] - Object: 'Object Repository/AssetSoure/AssetSourceName' is clicked on
+
+2021-01-12 05:44:41 - [MESSAGE][PASSED] - Object 'Object Repository/AssetSoure/AssetSourceEdit(save button)' is present
+
+2021-01-12 05:44:43 - [MESSAGE][PASSED] - Object 'Object Repository/AssetSoure/Delete Button' is present
+
+2021-01-12 05:44:45 - [MESSAGE][PASSED] - Object 'Object Repository/AssetSoure/Delete Button' is visible
+
+2021-01-12 05:44:47 - [MESSAGE][PASSED] - Object 'Object Repository/AssetSoure/Delete Button' is clickable
+
+2021-01-12 05:44:49 - [MESSAGE][PASSED] - Object: 'Object Repository/AssetSoure/Delete Button' is clicked on
+
+2021-01-12 05:44:49 - [MESSAGE][PASSED] - pages.Assetsource.deleteAnAssetSource is PASSED
+
+2021-01-12 05:44:49 - [TEST_STEP][PASSED] - pages.Assetsource.verifyAssetSourceDeleted(sourcename): pages.Assetsource.verifyAssetSourceDeleted is PASSED
+
+2021-01-12 05:44:51 - [MESSAGE][PASSED] - Object 'Object Repository/AssetSoure/Search' is present
+
+2021-01-12 05:44:53 - [MESSAGE][PASSED] - Object 'Object Repository/AssetSoure/Search' is visible
+
+2021-01-12 05:44:55 - [MESSAGE][PASSED] - Object 'Object Repository/AssetSoure/Search' is clickable
+
+2021-01-12 05:44:57 - [MESSAGE][PASSED] - Text of object 'Object Repository/AssetSoure/Search' is cleared
+
+2021-01-12 05:44:59 - [MESSAGE][PASSED] - Keys 'RandomAsset429' sent to object: 'Object Repository/AssetSoure/Search'
+
+2021-01-12 05:45:01 - [MESSAGE][PASSED] - Web element with id: 'Object Repository/AssetSoure/AssetSourceName' located by 'By.xpath: //div[text()='RandomAsset429']' is not present after '30' second(s)
+
+2021-01-12 05:45:01 - [MESSAGE][PASSED] - pages.Assetsource.verifyAssetSourceDeleted is PASSED]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Admin/AssetSource/Edit An AssetSource" time="51.708" classname="Test Cases/Admin/AssetSource/Edit An AssetSource" status="PASSED">
+         <system-out><![CDATA[2021-01-12 05:45:01 - [TEST_CASE][PASSED] - Test Cases/Admin/AssetSource/Edit An AssetSource: Test Cases/Admin/AssetSource/Edit An AssetSource
+
+2021-01-12 05:45:02 - [TEST_STEP][PASSED] - sourcename = pages.Assetsource.addAssetSource(): pages.Assetsource.addAssetSource is PASSED
+
+2021-01-12 05:45:03 - [MESSAGE][PASSED] - Object 'Object Repository/AssetSoure/Asset Source Tab' is present
+
+2021-01-12 05:45:05 - [MESSAGE][PASSED] - Object 'Object Repository/AssetSoure/Asset Source Tab' is visible
+
+2021-01-12 05:45:07 - [MESSAGE][PASSED] - Object 'Object Repository/AssetSoure/Asset Source Tab' is clickable
+
+2021-01-12 05:45:09 - [MESSAGE][PASSED] - Object: 'Object Repository/AssetSoure/Asset Source Tab' is clicked on
+
+2021-01-12 05:45:11 - [MESSAGE][PASSED] - Object 'Object Repository/AssetSoure/Add Asset Source Button' is present
+
+2021-01-12 05:45:13 - [MESSAGE][PASSED] - Object 'Object Repository/AssetSoure/Add Asset Source Button' is present
+
+2021-01-12 05:45:15 - [MESSAGE][PASSED] - Object 'Object Repository/AssetSoure/Add Asset Source Button' is visible
+
+2021-01-12 05:45:17 - [MESSAGE][PASSED] - Object 'Object Repository/AssetSoure/Add Asset Source Button' is clickable
+
+2021-01-12 05:45:19 - [MESSAGE][PASSED] - Object: 'Object Repository/AssetSoure/Add Asset Source Button' is clicked on
+
+2021-01-12 05:45:19 - [MESSAGE][PASSED] - Wait for page load successfully
+
+2021-01-12 05:45:21 - [MESSAGE][PASSED] - Object 'Object Repository/AssetSoure/Source' is present
+
+2021-01-12 05:45:23 - [MESSAGE][PASSED] - Object 'Object Repository/AssetSoure/Source' is visible
+
+2021-01-12 05:45:25 - [MESSAGE][PASSED] - Object 'Object Repository/AssetSoure/Source' is clickable
+
+2021-01-12 05:45:27 - [MESSAGE][PASSED] - Text of object 'Object Repository/AssetSoure/Source' is cleared
+
+2021-01-12 05:45:29 - [MESSAGE][PASSED] - Keys 'RandomAsset695' sent to object: 'Object Repository/AssetSoure/Source'
+
+2021-01-12 05:45:31 - [MESSAGE][PASSED] - Object 'Object Repository/AssetSoure/Asset Source button on popup' is present
+
+2021-01-12 05:45:33 - [MESSAGE][PASSED] - Object 'Object Repository/AssetSoure/Asset Source button on popup' is visible
+
+2021-01-12 05:45:35 - [MESSAGE][PASSED] - Object 'Object Repository/AssetSoure/Asset Source button on popup' is clickable
+
+2021-01-12 05:45:37 - [MESSAGE][PASSED] - Object: 'Object Repository/AssetSoure/Asset Source button on popup' is clicked on
+
+2021-01-12 05:45:37 - [MESSAGE][PASSED] - pages.Assetsource.addAssetSource is PASSED
+
+2021-01-12 05:45:37 - [TEST_STEP][PASSED] - println(sourcename): null
+
+2021-01-12 05:45:37 - [TEST_STEP][PASSED] - pages.Assetsource.editAnAssetSource(sourcename): pages.Assetsource.editAnAssetSource is PASSED
+
+2021-01-12 05:45:39 - [MESSAGE][PASSED] - Object 'Object Repository/AssetSoure/Search' is present
+
+2021-01-12 05:45:41 - [MESSAGE][PASSED] - Object 'Object Repository/AssetSoure/Search' is visible
+
+2021-01-12 05:45:42 - [MESSAGE][PASSED] - Object 'Object Repository/AssetSoure/Search' is clickable
+
+2021-01-12 05:45:43 - [MESSAGE][PASSED] - Text of object 'Object Repository/AssetSoure/Search' is cleared
+
+2021-01-12 05:45:43 - [MESSAGE][PASSED] - Keys 'RandomAsset695' sent to object: 'Object Repository/AssetSoure/Search'
+
+2021-01-12 05:45:47 - [MESSAGE][PASSED] - Scroll to object 'Object Repository/AssetSoure/AssetSourceName' successfully
+
+2021-01-12 05:45:47 - [MESSAGE][PASSED] - Object 'Object Repository/AssetSoure/AssetSourceName' is present
+
+2021-01-12 05:45:47 - [MESSAGE][PASSED] - Object 'Object Repository/AssetSoure/AssetSourceName' is visible
+
+2021-01-12 05:45:47 - [MESSAGE][PASSED] - Object 'Object Repository/AssetSoure/AssetSourceName' is clickable
+
+2021-01-12 05:45:48 - [MESSAGE][PASSED] - Object: 'Object Repository/AssetSoure/AssetSourceName' is clicked on
+
+2021-01-12 05:45:49 - [MESSAGE][PASSED] - Object 'Object Repository/AssetSoure/AssetSourceEdit(save button)' is present
+
+2021-01-12 05:45:49 - [MESSAGE][PASSED] - Text of object 'Object Repository/AssetSoure/AssetSourceEdit(Source)' is cleared
+
+2021-01-12 05:45:49 - [MESSAGE][PASSED] - Object 'Object Repository/AssetSoure/AssetSourceEdit(Source)' is present
+
+2021-01-12 05:45:49 - [MESSAGE][PASSED] - Object 'Object Repository/AssetSoure/AssetSourceEdit(Source)' is visible
+
+2021-01-12 05:45:50 - [MESSAGE][PASSED] - Object 'Object Repository/AssetSoure/AssetSourceEdit(Source)' is clickable
+
+2021-01-12 05:45:50 - [MESSAGE][PASSED] - Text of object 'Object Repository/AssetSoure/AssetSourceEdit(Source)' is cleared
+
+2021-01-12 05:45:50 - [MESSAGE][PASSED] - Keys 'editedsourcesname1' sent to object: 'Object Repository/AssetSoure/AssetSourceEdit(Source)'
+
+2021-01-12 05:45:51 - [MESSAGE][PASSED] - Object 'Object Repository/AssetSoure/AssetSourceEdit(save button)' is present
+
+2021-01-12 05:45:51 - [MESSAGE][PASSED] - Object 'Object Repository/AssetSoure/AssetSourceEdit(save button)' is visible
+
+2021-01-12 05:45:51 - [MESSAGE][PASSED] - Object 'Object Repository/AssetSoure/AssetSourceEdit(save button)' is clickable
+
+2021-01-12 05:45:52 - [MESSAGE][PASSED] - Object: 'Object Repository/AssetSoure/AssetSourceEdit(save button)' is clicked on
+
+2021-01-12 05:45:52 - [MESSAGE][PASSED] - Object 'Object Repository/AssetSoure/Close Button' is present
+
+2021-01-12 05:45:52 - [MESSAGE][PASSED] - Object 'Object Repository/AssetSoure/Close Button' is visible
+
+2021-01-12 05:45:53 - [MESSAGE][PASSED] - Object 'Object Repository/AssetSoure/Close Button' is clickable
+
+2021-01-12 05:45:53 - [MESSAGE][PASSED] - Object: 'Object Repository/AssetSoure/Close Button' is clicked on
+
+2021-01-12 05:45:53 - [MESSAGE][PASSED] - pages.Assetsource.editAnAssetSource is PASSED]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Admin/AssetSource/Verify Asset Source tab by clicking it" time="2.001" classname="Test Cases/Admin/AssetSource/Verify Asset Source tab by clicking it" status="PASSED">
+         <system-out><![CDATA[2021-01-12 05:45:53 - [TEST_CASE][PASSED] - Test Cases/Admin/AssetSource/Verify Asset Source tab by clicking it: Test Cases/Admin/AssetSource/Verify Asset Source tab by clicking it
+
+2021-01-12 05:45:53 - [TEST_STEP][PASSED] - pages.Assetsource.navigateToAssetSourceDetailsTab(): pages.Assetsource.navigateToAssetSourceDetailsTab is PASSED
+
+2021-01-12 05:45:54 - [MESSAGE][PASSED] - Object 'Object Repository/AssetSoure/Asset Source Tab' is present
+
+2021-01-12 05:45:54 - [MESSAGE][PASSED] - Object 'Object Repository/AssetSoure/Asset Source Tab' is visible
+
+2021-01-12 05:45:54 - [MESSAGE][PASSED] - Object 'Object Repository/AssetSoure/Asset Source Tab' is clickable
+
+2021-01-12 05:45:55 - [MESSAGE][PASSED] - Object: 'Object Repository/AssetSoure/Asset Source Tab' is clicked on
+
+2021-01-12 05:45:55 - [MESSAGE][PASSED] - Object 'Object Repository/AssetSoure/Add Asset Source Button' is present
+
+2021-01-12 05:45:55 - [MESSAGE][PASSED] - pages.Assetsource.navigateToAssetSourceDetailsTab is PASSED]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Admin/AssetSource/Verify by clicking on any asset source in the Asset source tab details page" time="13.147" classname="Test Cases/Admin/AssetSource/Verify by clicking on any asset source in the Asset source tab details page" status="PASSED">
+         <system-out><![CDATA[2021-01-12 05:45:55 - [TEST_CASE][PASSED] - Test Cases/Admin/AssetSource/Verify by clicking on any asset source in the Asset source tab details page: Test Cases/Admin/AssetSource/Verify by clicking on any asset source in the Asset source tab details page
+
+2021-01-12 05:45:55 - [TEST_STEP][PASSED] - sourcename = pages.Assetsource.addAssetSource(): pages.Assetsource.addAssetSource is PASSED
+
+2021-01-12 05:45:55 - [MESSAGE][PASSED] - Object 'Object Repository/AssetSoure/Asset Source Tab' is present
+
+2021-01-12 05:45:56 - [MESSAGE][PASSED] - Object 'Object Repository/AssetSoure/Asset Source Tab' is visible
+
+2021-01-12 05:45:56 - [MESSAGE][PASSED] - Object 'Object Repository/AssetSoure/Asset Source Tab' is clickable
+
+2021-01-12 05:45:56 - [MESSAGE][PASSED] - Object: 'Object Repository/AssetSoure/Asset Source Tab' is clicked on
+
+2021-01-12 05:45:57 - [MESSAGE][PASSED] - Object 'Object Repository/AssetSoure/Add Asset Source Button' is present
+
+2021-01-12 05:45:57 - [MESSAGE][PASSED] - Object 'Object Repository/AssetSoure/Add Asset Source Button' is present
+
+2021-01-12 05:45:57 - [MESSAGE][PASSED] - Object 'Object Repository/AssetSoure/Add Asset Source Button' is visible
+
+2021-01-12 05:45:57 - [MESSAGE][PASSED] - Object 'Object Repository/AssetSoure/Add Asset Source Button' is clickable
+
+2021-01-12 05:45:58 - [MESSAGE][PASSED] - Object: 'Object Repository/AssetSoure/Add Asset Source Button' is clicked on
+
+2021-01-12 05:45:58 - [MESSAGE][PASSED] - Wait for page load successfully
+
+2021-01-12 05:45:59 - [MESSAGE][PASSED] - Object 'Object Repository/AssetSoure/Source' is present
+
+2021-01-12 05:45:59 - [MESSAGE][PASSED] - Object 'Object Repository/AssetSoure/Source' is visible
+
+2021-01-12 05:45:59 - [MESSAGE][PASSED] - Object 'Object Repository/AssetSoure/Source' is clickable
+
+2021-01-12 05:45:59 - [MESSAGE][PASSED] - Text of object 'Object Repository/AssetSoure/Source' is cleared
+
+2021-01-12 05:46:00 - [MESSAGE][PASSED] - Keys 'RandomAsset812' sent to object: 'Object Repository/AssetSoure/Source'
+
+2021-01-12 05:46:00 - [MESSAGE][PASSED] - Object 'Object Repository/AssetSoure/Asset Source button on popup' is present
+
+2021-01-12 05:46:00 - [MESSAGE][PASSED] - Object 'Object Repository/AssetSoure/Asset Source button on popup' is visible
+
+2021-01-12 05:46:01 - [MESSAGE][PASSED] - Object 'Object Repository/AssetSoure/Asset Source button on popup' is clickable
+
+2021-01-12 05:46:01 - [MESSAGE][PASSED] - Object: 'Object Repository/AssetSoure/Asset Source button on popup' is clicked on
+
+2021-01-12 05:46:01 - [MESSAGE][PASSED] - pages.Assetsource.addAssetSource is PASSED
+
+2021-01-12 05:46:01 - [TEST_STEP][PASSED] - println(sourcename): null
+
+2021-01-12 05:46:01 - [TEST_STEP][PASSED] - pages.Assetsource.openAnyExistingAssetSource(sourcename): pages.Assetsource.openAnyExistingAssetSource is PASSED
+
+2021-01-12 05:46:01 - [MESSAGE][PASSED] - Object 'Object Repository/AssetSoure/Search' is present
+
+2021-01-12 05:46:02 - [MESSAGE][PASSED] - Object 'Object Repository/AssetSoure/Search' is visible
+
+2021-01-12 05:46:02 - [MESSAGE][PASSED] - Object 'Object Repository/AssetSoure/Search' is clickable
+
+2021-01-12 05:46:02 - [MESSAGE][PASSED] - Text of object 'Object Repository/AssetSoure/Search' is cleared
+
+2021-01-12 05:46:03 - [MESSAGE][PASSED] - Keys 'RandomAsset812' sent to object: 'Object Repository/AssetSoure/Search'
+
+2021-01-12 05:46:06 - [MESSAGE][PASSED] - Scroll to object 'Object Repository/AssetSoure/AssetSourceName' successfully
+
+2021-01-12 05:46:06 - [MESSAGE][PASSED] - Object 'Object Repository/AssetSoure/AssetSourceName' is present
+
+2021-01-12 05:46:07 - [MESSAGE][PASSED] - Object 'Object Repository/AssetSoure/AssetSourceName' is visible
+
+2021-01-12 05:46:07 - [MESSAGE][PASSED] - Object 'Object Repository/AssetSoure/AssetSourceName' is clickable
+
+2021-01-12 05:46:07 - [MESSAGE][PASSED] - Object: 'Object Repository/AssetSoure/AssetSourceName' is clicked on
+
+2021-01-12 05:46:08 - [MESSAGE][PASSED] - Object 'Object Repository/AssetSoure/AssetSourceEdit(save button)' is present
+
+2021-01-12 05:46:08 - [MESSAGE][PASSED] - pages.Assetsource.openAnyExistingAssetSource is PASSED]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Admin/AssetSource/Verify Cancel button functionality in the Add Asset Source popup" time="5.48" classname="Test Cases/Admin/AssetSource/Verify Cancel button functionality in the Add Asset Source popup" status="PASSED">
+         <system-out><![CDATA[2021-01-12 05:46:08 - [TEST_CASE][PASSED] - Test Cases/Admin/AssetSource/Verify Cancel button functionality in the Add Asset Source popup: Test Cases/Admin/AssetSource/Verify Cancel button functionality in the Add Asset Source popup
+
+2021-01-12 05:46:08 - [TEST_STEP][PASSED] - pages.Assetsource.navigateToAssetSourceDetailsTab(): pages.Assetsource.navigateToAssetSourceDetailsTab is PASSED
+
+2021-01-12 05:46:09 - [MESSAGE][PASSED] - Object 'Object Repository/AssetSoure/Asset Source Tab' is present
+
+2021-01-12 05:46:09 - [MESSAGE][PASSED] - Object 'Object Repository/AssetSoure/Asset Source Tab' is visible
+
+2021-01-12 05:46:09 - [MESSAGE][PASSED] - Object 'Object Repository/AssetSoure/Asset Source Tab' is clickable
+
+2021-01-12 05:46:10 - [MESSAGE][PASSED] - Object: 'Object Repository/AssetSoure/Asset Source Tab' is clicked on
+
+2021-01-12 05:46:10 - [MESSAGE][PASSED] - Object 'Object Repository/AssetSoure/Add Asset Source Button' is present
+
+2021-01-12 05:46:10 - [MESSAGE][PASSED] - pages.Assetsource.navigateToAssetSourceDetailsTab is PASSED
+
+2021-01-12 05:46:10 - [TEST_STEP][PASSED] - pages.Assetsource.clickAddAssetSource(): pages.Assetsource.clickAddAssetSource is PASSED
+
+2021-01-12 05:46:11 - [MESSAGE][PASSED] - Object 'Object Repository/AssetSoure/Add Asset Source Button' is present
+
+2021-01-12 05:46:11 - [MESSAGE][PASSED] - Object 'Object Repository/AssetSoure/Add Asset Source Button' is visible
+
+2021-01-12 05:46:11 - [MESSAGE][PASSED] - Object 'Object Repository/AssetSoure/Add Asset Source Button' is clickable
+
+2021-01-12 05:46:11 - [MESSAGE][PASSED] - Object: 'Object Repository/AssetSoure/Add Asset Source Button' is clicked on
+
+2021-01-12 05:46:12 - [MESSAGE][PASSED] - Wait for page load successfully
+
+2021-01-12 05:46:12 - [MESSAGE][PASSED] - pages.Assetsource.clickAddAssetSource is PASSED
+
+2021-01-12 05:46:12 - [TEST_STEP][PASSED] - pages.Assetsource.cancelAssetSourcePopup(): pages.Assetsource.cancelAssetSourcePopup is PASSED
+
+2021-01-12 05:46:12 - [MESSAGE][PASSED] - Object 'Object Repository/AssetSoure/Cancel Button' is present
+
+2021-01-12 05:46:13 - [MESSAGE][PASSED] - Object 'Object Repository/AssetSoure/Cancel Button' is visible
+
+2021-01-12 05:46:13 - [MESSAGE][PASSED] - Object 'Object Repository/AssetSoure/Cancel Button' is clickable
+
+2021-01-12 05:46:13 - [MESSAGE][PASSED] - Object: 'Object Repository/AssetSoure/Cancel Button' is clicked on
+
+2021-01-12 05:46:14 - [MESSAGE][PASSED] - Object 'Object Repository/AssetSoure/Search' is present
+
+2021-01-12 05:46:14 - [MESSAGE][PASSED] - pages.Assetsource.cancelAssetSourcePopup is PASSED]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Admin/AssetSource/Verify Close button functionality in the Asset Source edit page" time="15.302" classname="Test Cases/Admin/AssetSource/Verify Close button functionality in the Asset Source edit page" status="PASSED">
+         <system-out><![CDATA[2021-01-12 05:46:14 - [TEST_CASE][PASSED] - Test Cases/Admin/AssetSource/Verify Close button functionality in the Asset Source edit page: Test Cases/Admin/AssetSource/Verify Close button functionality in the Asset Source edit page
+
+2021-01-12 05:46:14 - [TEST_STEP][PASSED] - sourcename = pages.Assetsource.addAssetSource(): pages.Assetsource.addAssetSource is PASSED
+
+2021-01-12 05:46:14 - [MESSAGE][PASSED] - Object 'Object Repository/AssetSoure/Asset Source Tab' is present
+
+2021-01-12 05:46:14 - [MESSAGE][PASSED] - Object 'Object Repository/AssetSoure/Asset Source Tab' is visible
+
+2021-01-12 05:46:15 - [MESSAGE][PASSED] - Object 'Object Repository/AssetSoure/Asset Source Tab' is clickable
+
+2021-01-12 05:46:15 - [MESSAGE][PASSED] - Object: 'Object Repository/AssetSoure/Asset Source Tab' is clicked on
+
+2021-01-12 05:46:15 - [MESSAGE][PASSED] - Object 'Object Repository/AssetSoure/Add Asset Source Button' is present
+
+2021-01-12 05:46:16 - [MESSAGE][PASSED] - Object 'Object Repository/AssetSoure/Add Asset Source Button' is present
+
+2021-01-12 05:46:16 - [MESSAGE][PASSED] - Object 'Object Repository/AssetSoure/Add Asset Source Button' is visible
+
+2021-01-12 05:46:16 - [MESSAGE][PASSED] - Object 'Object Repository/AssetSoure/Add Asset Source Button' is clickable
+
+2021-01-12 05:46:16 - [MESSAGE][PASSED] - Object: 'Object Repository/AssetSoure/Add Asset Source Button' is clicked on
+
+2021-01-12 05:46:16 - [MESSAGE][PASSED] - Wait for page load successfully
+
+2021-01-12 05:46:17 - [MESSAGE][PASSED] - Object 'Object Repository/AssetSoure/Source' is present
+
+2021-01-12 05:46:17 - [MESSAGE][PASSED] - Object 'Object Repository/AssetSoure/Source' is visible
+
+2021-01-12 05:46:18 - [MESSAGE][PASSED] - Object 'Object Repository/AssetSoure/Source' is clickable
+
+2021-01-12 05:46:18 - [MESSAGE][PASSED] - Text of object 'Object Repository/AssetSoure/Source' is cleared
+
+2021-01-12 05:46:18 - [MESSAGE][PASSED] - Keys 'RandomAsset90' sent to object: 'Object Repository/AssetSoure/Source'
+
+2021-01-12 05:46:19 - [MESSAGE][PASSED] - Object 'Object Repository/AssetSoure/Asset Source button on popup' is present
+
+2021-01-12 05:46:19 - [MESSAGE][PASSED] - Object 'Object Repository/AssetSoure/Asset Source button on popup' is visible
+
+2021-01-12 05:46:19 - [MESSAGE][PASSED] - Object 'Object Repository/AssetSoure/Asset Source button on popup' is clickable
+
+2021-01-12 05:46:20 - [MESSAGE][PASSED] - Object: 'Object Repository/AssetSoure/Asset Source button on popup' is clicked on
+
+2021-01-12 05:46:20 - [MESSAGE][PASSED] - pages.Assetsource.addAssetSource is PASSED
+
+2021-01-12 05:46:20 - [TEST_STEP][PASSED] - println(sourcename): null
+
+2021-01-12 05:46:20 - [TEST_STEP][PASSED] - pages.Assetsource.openAnyExistingAssetSource(sourcename): pages.Assetsource.openAnyExistingAssetSource is PASSED
+
+2021-01-12 05:46:20 - [MESSAGE][PASSED] - Object 'Object Repository/AssetSoure/Search' is present
+
+2021-01-12 05:46:21 - [MESSAGE][PASSED] - Object 'Object Repository/AssetSoure/Search' is visible
+
+2021-01-12 05:46:21 - [MESSAGE][PASSED] - Object 'Object Repository/AssetSoure/Search' is clickable
+
+2021-01-12 05:46:21 - [MESSAGE][PASSED] - Text of object 'Object Repository/AssetSoure/Search' is cleared
+
+2021-01-12 05:46:22 - [MESSAGE][PASSED] - Keys 'RandomAsset90' sent to object: 'Object Repository/AssetSoure/Search'
+
+2021-01-12 05:46:25 - [MESSAGE][PASSED] - Scroll to object 'Object Repository/AssetSoure/AssetSourceName' successfully
+
+2021-01-12 05:46:25 - [MESSAGE][PASSED] - Object 'Object Repository/AssetSoure/AssetSourceName' is present
+
+2021-01-12 05:46:25 - [MESSAGE][PASSED] - Object 'Object Repository/AssetSoure/AssetSourceName' is visible
+
+2021-01-12 05:46:26 - [MESSAGE][PASSED] - Object 'Object Repository/AssetSoure/AssetSourceName' is clickable
+
+2021-01-12 05:46:26 - [MESSAGE][PASSED] - Object: 'Object Repository/AssetSoure/AssetSourceName' is clicked on
+
+2021-01-12 05:46:27 - [MESSAGE][PASSED] - Object 'Object Repository/AssetSoure/AssetSourceEdit(save button)' is present
+
+2021-01-12 05:46:27 - [MESSAGE][PASSED] - pages.Assetsource.openAnyExistingAssetSource is PASSED
+
+2021-01-12 05:46:27 - [TEST_STEP][PASSED] - pages.Assetsource.closeAssetSourceEditpage(): pages.Assetsource.closeAssetSourceEditpage is PASSED
+
+2021-01-12 05:46:27 - [MESSAGE][PASSED] - Object 'Object Repository/AssetSoure/Close Button' is present
+
+2021-01-12 05:46:27 - [MESSAGE][PASSED] - Object 'Object Repository/AssetSoure/Close Button' is visible
+
+2021-01-12 05:46:28 - [MESSAGE][PASSED] - Object 'Object Repository/AssetSoure/Close Button' is clickable
+
+2021-01-12 05:46:28 - [MESSAGE][PASSED] - Object: 'Object Repository/AssetSoure/Close Button' is clicked on
+
+2021-01-12 05:46:29 - [MESSAGE][PASSED] - Object 'Object Repository/AssetSoure/Search' is present
+
+2021-01-12 05:46:29 - [MESSAGE][PASSED] - pages.Assetsource.closeAssetSourceEditpage is PASSED]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <system-out><![CDATA[2021-01-12 05:43:50 - [TEST_SUITE][PASSED] - AssetSource: Test Cases/Admin/AssetSource/Verify Close button functionality in the Asset Source edit page]]></system-out>
+      <system-err><![CDATA[]]></system-err>
+   </testsuite>
+</testsuites>

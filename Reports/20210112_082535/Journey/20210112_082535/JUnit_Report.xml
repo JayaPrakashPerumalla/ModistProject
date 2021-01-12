@@ -1,0 +1,397 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Journey" time="125.414" tests="2" failures="0" errors="0">
+   <testsuite name="Journey" tests="2" failures="0" errors="0" time="125.414" timestamp="2021-01-12 08:25:38" hostname="Lenovo - DESKTOP-H3LAPEO" id="Test Suites/Journey">
+      <properties>
+         <property name="deviceName" value=""/>
+         <property name="devicePlatform" value=""/>
+         <property name="logFolder" value="E:\\Modist Project\\ModistProject\\Reports\\20210112_082535\\Journey\\20210112_082535"/>
+         <property name="logFiles" value="E:\\Modist Project\\ModistProject\\Reports\\20210112_082535\\Journey\\20210112_082535\\execution0.log"/>
+         <property name="attachments" value="E:\\Modist Project\\ModistProject\\Reports\\20210112_082535\\Journey\\20210112_082535\\1610458035925.png"/>
+         <property name="hostName" value="Lenovo - DESKTOP-H3LAPEO"/>
+         <property name="os" value="Windows 10 64bit"/>
+         <property name="katalonVersion" value="7.7.0.205"/>
+         <property name="browser" value="Chrome 87.0.4280.141"/>
+         <property name="hostAddress" value="192.168.43.128"/>
+         <property name="sessionId" value="718acbcff4506941d9650510d66d4583"/>
+         <property name="seleniumVersion" value="3.141.59"/>
+         <property name="proxyInformation" value="ProxyInformation { proxyOption=NO_PROXY, proxyServerType=HTTP, username=, password=********, proxyServerAddress=, proxyServerPort=0, executionList=&quot;&quot;, isApplyToDesiredCapabilities=true }"/>
+         <property name="platform" value="Windows 10"/>
+      </properties>
+      <testcase name="Test Cases/Admin/Journey/deleteJourneyAndVerify" time="62.295" classname="Test Cases/Admin/Journey/deleteJourneyAndVerify" status="PASSED">
+         <system-out><![CDATA[2021-01-12 08:26:01 - [TEST_CASE][PASSED] - Test Cases/Admin/Journey/deleteJourneyAndVerify: Test Cases/Admin/Journey/deleteJourneyAndVerify
+
+2021-01-12 08:26:01 - [TEST_STEP][PASSED] - Start listener action : login: Object: 'Object Repository/Login Credentials/EnterButton' is clicked on
+
+2021-01-12 08:26:01 - [TEST_STEP][PASSED] - navigateToUrl(Url): Navigate to 'https://dev-admin.modist.co/' successfully
+
+2021-01-12 08:26:03 - [MESSAGE][PASSED] - Navigate to 'https://dev-admin.modist.co/' successfully
+
+2021-01-12 08:26:03 - [TEST_STEP][PASSED] - loginPage.login(Email, Password): Object: 'Object Repository/Login Credentials/EnterButton' is clicked on
+
+2021-01-12 08:26:03 - [MESSAGE][PASSED] - Object 'Object Repository/Login Credentials/Email' is present
+
+2021-01-12 08:26:03 - [MESSAGE][PASSED] - Object 'Object Repository/Login Credentials/Email' is present
+
+2021-01-12 08:26:04 - [MESSAGE][PASSED] - Object 'Object Repository/Login Credentials/Email' is visible
+
+2021-01-12 08:26:04 - [MESSAGE][PASSED] - Object 'Object Repository/Login Credentials/Email' is clickable
+
+2021-01-12 08:26:04 - [MESSAGE][PASSED] - Text of object 'Object Repository/Login Credentials/Email' is cleared
+
+2021-01-12 08:26:05 - [MESSAGE][PASSED] - Keys 'naresh.k@qualitlabs.com' sent to object: 'Object Repository/Login Credentials/Email'
+
+2021-01-12 08:26:05 - [MESSAGE][PASSED] - Object 'Object Repository/Login Credentials/Password' is present
+
+2021-01-12 08:26:06 - [MESSAGE][PASSED] - Object 'Object Repository/Login Credentials/Password' is visible
+
+2021-01-12 08:26:06 - [MESSAGE][PASSED] - Object 'Object Repository/Login Credentials/Password' is clickable
+
+2021-01-12 08:26:06 - [MESSAGE][PASSED] - Text of object 'Object Repository/Login Credentials/Password' is cleared
+
+2021-01-12 08:26:07 - [MESSAGE][PASSED] - Keys 'Qualitlabs1?' sent to object: 'Object Repository/Login Credentials/Password'
+
+2021-01-12 08:26:07 - [MESSAGE][PASSED] - Object 'Object Repository/Login Credentials/EnterButton' is present
+
+2021-01-12 08:26:07 - [MESSAGE][PASSED] - Object 'Object Repository/Login Credentials/EnterButton' is visible
+
+2021-01-12 08:26:08 - [MESSAGE][PASSED] - Object 'Object Repository/Login Credentials/EnterButton' is clickable
+
+2021-01-12 08:26:08 - [MESSAGE][PASSED] - Object: 'Object Repository/Login Credentials/EnterButton' is clicked on
+
+2021-01-12 08:26:08 - [TEST_STEP][PASSED] - pages.Journey.clickOnJourneyTab(): pages.Journey.clickOnJourneyTab is PASSED
+
+2021-01-12 08:26:09 - [MESSAGE][PASSED] - Object 'Object Repository/Journey/Journeytab' is present
+
+2021-01-12 08:26:10 - [MESSAGE][PASSED] - Object 'Object Repository/Journey/Journeytab' is visible
+
+2021-01-12 08:26:10 - [MESSAGE][PASSED] - Object 'Object Repository/Journey/Journeytab' is clickable
+
+2021-01-12 08:26:11 - [MESSAGE][PASSED] - Object: 'Object Repository/Journey/Journeytab' is clicked on
+
+2021-01-12 08:26:11 - [MESSAGE][PASSED] - pages.Journey.clickOnJourneyTab is PASSED
+
+2021-01-12 08:26:11 - [TEST_STEP][PASSED] - journeyName = pages.Journey.addJourney(): pages.Journey.addJourney is PASSED
+
+2021-01-12 08:26:11 - [MESSAGE][PASSED] - Object 'Object Repository/Journey/Add Journey/AddJourneyButton' is present
+
+2021-01-12 08:26:12 - [MESSAGE][PASSED] - Object 'Object Repository/Journey/Add Journey/AddJourneyButton' is visible
+
+2021-01-12 08:26:12 - [MESSAGE][PASSED] - Object 'Object Repository/Journey/Add Journey/AddJourneyButton' is clickable
+
+2021-01-12 08:26:12 - [MESSAGE][PASSED] - Object: 'Object Repository/Journey/Add Journey/AddJourneyButton' is clicked on
+
+2021-01-12 08:26:13 - [MESSAGE][PASSED] - Object 'Object Repository/Journey/Add Journey/journeyName' is present
+
+2021-01-12 08:26:13 - [MESSAGE][PASSED] - Object 'Object Repository/Journey/Add Journey/journeyName' is visible
+
+2021-01-12 08:26:14 - [MESSAGE][PASSED] - Object 'Object Repository/Journey/Add Journey/journeyName' is clickable
+
+2021-01-12 08:26:14 - [MESSAGE][PASSED] - Text of object 'Object Repository/Journey/Add Journey/journeyName' is cleared
+
+2021-01-12 08:26:14 - [MESSAGE][PASSED] - Keys 'journeyName363' sent to object: 'Object Repository/Journey/Add Journey/journeyName'
+
+2021-01-12 08:26:15 - [MESSAGE][PASSED] - Object 'Object Repository/Journey/Add Journey/addJourneyInAddJourneyPopUp' is present
+
+2021-01-12 08:26:15 - [MESSAGE][PASSED] - Object 'Object Repository/Journey/Add Journey/addJourneyInAddJourneyPopUp' is visible
+
+2021-01-12 08:26:15 - [MESSAGE][PASSED] - Object 'Object Repository/Journey/Add Journey/addJourneyInAddJourneyPopUp' is clickable
+
+2021-01-12 08:26:16 - [MESSAGE][PASSED] - Object: 'Object Repository/Journey/Add Journey/addJourneyInAddJourneyPopUp' is clicked on
+
+2021-01-12 08:26:16 - [MESSAGE][PASSED] - pages.Journey.addJourney is PASSED
+
+2021-01-12 08:26:16 - [TEST_STEP][PASSED] - pages.Journey.deleteJourney(journeyName): pages.Journey.deleteJourney is PASSED
+
+2021-01-12 08:26:16 - [MESSAGE][PASSED] - Object 'Object Repository/Journey/journrySearchInput' is present
+
+2021-01-12 08:26:17 - [MESSAGE][PASSED] - Object 'Object Repository/Journey/journrySearchInput' is visible
+
+2021-01-12 08:26:18 - [MESSAGE][PASSED] - Object 'Object Repository/Journey/journrySearchInput' is clickable
+
+2021-01-12 08:26:18 - [MESSAGE][PASSED] - Text of object 'Object Repository/Journey/journrySearchInput' is cleared
+
+2021-01-12 08:26:19 - [MESSAGE][PASSED] - Keys 'journeyName363' sent to object: 'Object Repository/Journey/journrySearchInput'
+
+2021-01-12 08:26:20 - [MESSAGE][PASSED] - Object 'Object Repository/Journey/journrySearchInput' is present
+
+2021-01-12 08:26:20 - [MESSAGE][PASSED] - Object 'Object Repository/Journey/journrySearchInput' is visible
+
+2021-01-12 08:26:21 - [MESSAGE][PASSED] - Object 'Object Repository/Journey/journrySearchInput' is clickable
+
+2021-01-12 08:26:21 - [MESSAGE][PASSED] - Text of object 'Object Repository/Journey/journrySearchInput' is cleared
+
+2021-01-12 08:26:22 - [MESSAGE][PASSED] - Keys 'ENTER + ' sent to object: 'Object Repository/Journey/journrySearchInput'
+
+2021-01-12 08:26:23 - [MESSAGE][PASSED] - Object 'Object Repository/Journey/JourneyName(journeyName)' is present
+
+2021-01-12 08:26:23 - [MESSAGE][PASSED] - Object 'Object Repository/Journey/journeyNameCheckBox(name)' is present
+
+2021-01-12 08:26:23 - [MESSAGE][PASSED] - Object 'Object Repository/Journey/journeyNameCheckBox(name)' is visible
+
+2021-01-12 08:26:24 - [MESSAGE][PASSED] - Object 'Object Repository/Journey/journeyNameCheckBox(name)' is clickable
+
+2021-01-12 08:26:24 - [MESSAGE][PASSED] - Object: 'Object Repository/Journey/journeyNameCheckBox(name)' is clicked on
+
+2021-01-12 08:26:25 - [MESSAGE][PASSED] - Object 'Object Repository/Journey/journeyNameDeleteButton' is present
+
+2021-01-12 08:26:25 - [MESSAGE][PASSED] - Object 'Object Repository/Journey/journeyNameDeleteButton' is visible
+
+2021-01-12 08:26:25 - [MESSAGE][PASSED] - Object 'Object Repository/Journey/journeyNameDeleteButton' is clickable
+
+2021-01-12 08:26:26 - [MESSAGE][PASSED] - Object: 'Object Repository/Journey/journeyNameDeleteButton' is clicked on
+
+2021-01-12 08:26:26 - [MESSAGE][PASSED] - Alert accepted
+
+2021-01-12 08:26:26 - [MESSAGE][PASSED] - pages.Journey.deleteJourney is PASSED
+
+2021-01-12 08:26:26 - [TEST_STEP][PASSED] - pages.Journey.verifyJourneyDeleted(journeyName): pages.Journey.verifyJourneyDeleted is PASSED
+
+2021-01-12 08:26:27 - [MESSAGE][PASSED] - Object 'Object Repository/Journey/journrySearchInput' is present
+
+2021-01-12 08:26:27 - [MESSAGE][PASSED] - Object 'Object Repository/Journey/journrySearchInput' is visible
+
+2021-01-12 08:26:27 - [MESSAGE][PASSED] - Object 'Object Repository/Journey/journrySearchInput' is clickable
+
+2021-01-12 08:26:28 - [MESSAGE][PASSED] - Text of object 'Object Repository/Journey/journrySearchInput' is cleared
+
+2021-01-12 08:26:28 - [MESSAGE][PASSED] - Keys 'journeyName363' sent to object: 'Object Repository/Journey/journrySearchInput'
+
+2021-01-12 08:26:30 - [MESSAGE][PASSED] - Object 'Object Repository/Journey/journrySearchInput' is present
+
+2021-01-12 08:26:30 - [MESSAGE][PASSED] - Object 'Object Repository/Journey/journrySearchInput' is visible
+
+2021-01-12 08:26:31 - [MESSAGE][PASSED] - Object 'Object Repository/Journey/journrySearchInput' is clickable
+
+2021-01-12 08:26:31 - [MESSAGE][PASSED] - Text of object 'Object Repository/Journey/journrySearchInput' is cleared
+
+2021-01-12 08:26:32 - [MESSAGE][PASSED] - Keys 'ENTER + ' sent to object: 'Object Repository/Journey/journrySearchInput'
+
+2021-01-12 08:27:03 - [MESSAGE][INFO] - Unable to find the element located by 'By.xpath: //div[text()='journeyName363']'. Please recheck the objects properties to make sure the desired element is located. 
+
+2021-01-12 08:27:03 - [MESSAGE][WARNING] - Object 'Object Repository/Journey/JourneyName(journeyName)' is not present after 30 second(s)
+
+2021-01-12 08:27:04 - [MESSAGE][PASSED] - Web element with id: 'Object Repository/Journey/JourneyName(journeyName)' located by 'By.xpath: //div[text()='journeyName363']' is not present after '30' second(s)
+
+2021-01-12 08:27:04 - [MESSAGE][PASSED] - pages.Journey.verifyJourneyDeleted is PASSED]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Admin/Journey/cloneJourneyAndVerifyisitCloned" time="38.889" classname="Test Cases/Admin/Journey/cloneJourneyAndVerifyisitCloned" status="PASSED">
+         <system-out><![CDATA[2021-01-12 08:27:04 - [TEST_CASE][PASSED] - Test Cases/Admin/Journey/cloneJourneyAndVerifyisitCloned: Test Cases/Admin/Journey/cloneJourneyAndVerifyisitCloned
+
+2021-01-12 08:27:04 - [TEST_STEP][PASSED] - Start listener action : login: com.kms.katalon.core.webui.exception.WebElementNotFoundException: Web element with id: 'Object Repository/Login Credentials/Email' located by '//input[@name='email']' not found (Root cause: com.kms.katalon.core.exception.StepFailedException: com.kms.katalon.core.webui.exception.WebElementNotFoundException: Web element with id: 'Object Repository/Login Credentials/Email' located by '//input[@name='email']' not found
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementPresentKeyword$_verifyElementPresent_closure1.doCall(VerifyElementPresentKeyword.groovy:85)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementPresentKeyword$_verifyElementPresent_closure1.call(VerifyElementPresentKeyword.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:20)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementPresentKeyword.verifyElementPresent(VerifyElementPresentKeyword.groovy:92)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementPresentKeyword.execute(VerifyElementPresentKeyword.groovy:68)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:73)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.verifyElementPresent(WebUiBuiltInKeywords.groovy:1445)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$verifyElementPresent$2.call(Unknown Source)
+	at login.LoginForAdminDevEnvironment.login(LoginForAdminDevEnvironment.groovy:21)
+	at login.LoginForAdminDevEnvironment$login.call(Unknown Source)
+	at Login.login(Login.groovy:31)
+	at Login.invokeMethod(Login.groovy)
+	at com.kms.katalon.core.context.internal.TestHooker.invokeMethod(TestHooker.java:111)
+	at com.kms.katalon.core.context.internal.TestHooker.lambda$3(TestHooker.java:95)
+	at com.kms.katalon.core.context.internal.TestHooker.invokeContextMethods(TestHooker.java:94)
+	at com.kms.katalon.core.context.internal.TestListenerCollector.lambda$3(TestListenerCollector.java:88)
+	at com.kms.katalon.core.context.internal.TestListenerCollector.handleListenerEvent(TestListenerCollector.java:85)
+	at com.kms.katalon.core.context.internal.ExecutionEventManager.publicEvent(ExecutionEventManager.java:36)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:221)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:191)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:141)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:90)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1610457935518.run(TempTestSuite1610457935518.groovy:39)
+)
+
+2021-01-12 08:27:04 - [TEST_STEP][PASSED] - navigateToUrl(Url): Navigate to 'https://dev-admin.modist.co/' successfully
+
+2021-01-12 08:27:04 - [MESSAGE][PASSED] - Navigate to 'https://dev-admin.modist.co/' successfully
+
+2021-01-12 08:27:04 - [TEST_STEP][PASSED] - loginPage.login(Email, Password): com.kms.katalon.core.webui.exception.WebElementNotFoundException: Web element with id: 'Object Repository/Login Credentials/Email' located by '//input[@name='email']' not found (Root cause: com.kms.katalon.core.exception.StepFailedException: com.kms.katalon.core.webui.exception.WebElementNotFoundException: Web element with id: 'Object Repository/Login Credentials/Email' located by '//input[@name='email']' not found
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementPresentKeyword$_verifyElementPresent_closure1.doCall(VerifyElementPresentKeyword.groovy:85)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementPresentKeyword$_verifyElementPresent_closure1.call(VerifyElementPresentKeyword.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:20)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementPresentKeyword.verifyElementPresent(VerifyElementPresentKeyword.groovy:92)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementPresentKeyword.execute(VerifyElementPresentKeyword.groovy:68)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:73)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.verifyElementPresent(WebUiBuiltInKeywords.groovy:1445)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$verifyElementPresent$2.call(Unknown Source)
+	at login.LoginForAdminDevEnvironment.login(LoginForAdminDevEnvironment.groovy:21)
+	at login.LoginForAdminDevEnvironment$login.call(Unknown Source)
+	at Login.login(Login.groovy:31)
+	at Login.invokeMethod(Login.groovy)
+	at com.kms.katalon.core.context.internal.TestHooker.invokeMethod(TestHooker.java:111)
+	at com.kms.katalon.core.context.internal.TestHooker.lambda$3(TestHooker.java:95)
+	at com.kms.katalon.core.context.internal.TestHooker.invokeContextMethods(TestHooker.java:94)
+	at com.kms.katalon.core.context.internal.TestListenerCollector.lambda$3(TestListenerCollector.java:88)
+	at com.kms.katalon.core.context.internal.TestListenerCollector.handleListenerEvent(TestListenerCollector.java:85)
+	at com.kms.katalon.core.context.internal.ExecutionEventManager.publicEvent(ExecutionEventManager.java:36)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:221)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:191)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:141)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:90)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1610457935518.run(TempTestSuite1610457935518.groovy:39)
+)
+
+2021-01-12 08:27:15 - [MESSAGE][INFO] - Unable to find the element located by 'By.xpath: //input[@name='email']'. Please recheck the objects properties to make sure the desired element is located. 
+
+2021-01-12 08:27:16 - [MESSAGE][WARNING] - com.kms.katalon.core.webui.exception.WebElementNotFoundException: Web element with id: 'Object Repository/Login Credentials/Email' located by '//input[@name='email']' not found (Root cause: com.kms.katalon.core.exception.StepFailedException: com.kms.katalon.core.webui.exception.WebElementNotFoundException: Web element with id: 'Object Repository/Login Credentials/Email' located by '//input[@name='email']' not found
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementPresentKeyword$_verifyElementPresent_closure1.doCall(VerifyElementPresentKeyword.groovy:85)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementPresentKeyword$_verifyElementPresent_closure1.call(VerifyElementPresentKeyword.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:20)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementPresentKeyword.verifyElementPresent(VerifyElementPresentKeyword.groovy:92)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementPresentKeyword.execute(VerifyElementPresentKeyword.groovy:68)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:73)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.verifyElementPresent(WebUiBuiltInKeywords.groovy:1445)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$verifyElementPresent$2.call(Unknown Source)
+	at login.LoginForAdminDevEnvironment.login(LoginForAdminDevEnvironment.groovy:21)
+	at login.LoginForAdminDevEnvironment$login.call(Unknown Source)
+	at Login.login(Login.groovy:31)
+	at Login.invokeMethod(Login.groovy)
+	at com.kms.katalon.core.context.internal.TestHooker.invokeMethod(TestHooker.java:111)
+	at com.kms.katalon.core.context.internal.TestHooker.lambda$3(TestHooker.java:95)
+	at com.kms.katalon.core.context.internal.TestHooker.invokeContextMethods(TestHooker.java:94)
+	at com.kms.katalon.core.context.internal.TestListenerCollector.lambda$3(TestListenerCollector.java:88)
+	at com.kms.katalon.core.context.internal.TestListenerCollector.handleListenerEvent(TestListenerCollector.java:85)
+	at com.kms.katalon.core.context.internal.ExecutionEventManager.publicEvent(ExecutionEventManager.java:36)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:221)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:191)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:141)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:90)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1610457935518.run(TempTestSuite1610457935518.groovy:39)
+)
+[[ATTACHMENT|E:\\Modist Project\\ModistProject\\Reports\\20210112_082535\\Journey\\20210112_082535\\1610458035925.png]]
+
+2021-01-12 08:27:16 - [TEST_STEP][PASSED] - pages.Journey.clickOnJourneyTab(): pages.Journey.clickOnJourneyTab is PASSED
+
+2021-01-12 08:27:17 - [MESSAGE][PASSED] - Object 'Object Repository/Journey/Journeytab' is present
+
+2021-01-12 08:27:17 - [MESSAGE][PASSED] - Object 'Object Repository/Journey/Journeytab' is visible
+
+2021-01-12 08:27:17 - [MESSAGE][PASSED] - Object 'Object Repository/Journey/Journeytab' is clickable
+
+2021-01-12 08:27:18 - [MESSAGE][PASSED] - Object: 'Object Repository/Journey/Journeytab' is clicked on
+
+2021-01-12 08:27:18 - [MESSAGE][PASSED] - pages.Journey.clickOnJourneyTab is PASSED
+
+2021-01-12 08:27:18 - [TEST_STEP][PASSED] - journeyName = pages.Journey.addJourney(): pages.Journey.addJourney is PASSED
+
+2021-01-12 08:27:18 - [MESSAGE][PASSED] - Object 'Object Repository/Journey/Add Journey/AddJourneyButton' is present
+
+2021-01-12 08:27:18 - [MESSAGE][PASSED] - Object 'Object Repository/Journey/Add Journey/AddJourneyButton' is visible
+
+2021-01-12 08:27:19 - [MESSAGE][PASSED] - Object 'Object Repository/Journey/Add Journey/AddJourneyButton' is clickable
+
+2021-01-12 08:27:19 - [MESSAGE][PASSED] - Object: 'Object Repository/Journey/Add Journey/AddJourneyButton' is clicked on
+
+2021-01-12 08:27:20 - [MESSAGE][PASSED] - Object 'Object Repository/Journey/Add Journey/journeyName' is present
+
+2021-01-12 08:27:20 - [MESSAGE][PASSED] - Object 'Object Repository/Journey/Add Journey/journeyName' is visible
+
+2021-01-12 08:27:20 - [MESSAGE][PASSED] - Object 'Object Repository/Journey/Add Journey/journeyName' is clickable
+
+2021-01-12 08:27:21 - [MESSAGE][PASSED] - Text of object 'Object Repository/Journey/Add Journey/journeyName' is cleared
+
+2021-01-12 08:27:21 - [MESSAGE][PASSED] - Keys 'journeyName344' sent to object: 'Object Repository/Journey/Add Journey/journeyName'
+
+2021-01-12 08:27:22 - [MESSAGE][PASSED] - Object 'Object Repository/Journey/Add Journey/addJourneyInAddJourneyPopUp' is present
+
+2021-01-12 08:27:22 - [MESSAGE][PASSED] - Object 'Object Repository/Journey/Add Journey/addJourneyInAddJourneyPopUp' is visible
+
+2021-01-12 08:27:22 - [MESSAGE][PASSED] - Object 'Object Repository/Journey/Add Journey/addJourneyInAddJourneyPopUp' is clickable
+
+2021-01-12 08:27:23 - [MESSAGE][PASSED] - Object: 'Object Repository/Journey/Add Journey/addJourneyInAddJourneyPopUp' is clicked on
+
+2021-01-12 08:27:23 - [MESSAGE][PASSED] - pages.Journey.addJourney is PASSED
+
+2021-01-12 08:27:23 - [TEST_STEP][PASSED] - pages.Journey.cloneJourney(journeyName): pages.Journey.cloneJourney is PASSED
+
+2021-01-12 08:27:23 - [MESSAGE][PASSED] - Object 'Object Repository/Journey/journrySearchInput' is present
+
+2021-01-12 08:27:24 - [MESSAGE][PASSED] - Object 'Object Repository/Journey/journrySearchInput' is visible
+
+2021-01-12 08:27:24 - [MESSAGE][PASSED] - Object 'Object Repository/Journey/journrySearchInput' is clickable
+
+2021-01-12 08:27:25 - [MESSAGE][PASSED] - Text of object 'Object Repository/Journey/journrySearchInput' is cleared
+
+2021-01-12 08:27:25 - [MESSAGE][PASSED] - Keys 'journeyName344' sent to object: 'Object Repository/Journey/journrySearchInput'
+
+2021-01-12 08:27:26 - [MESSAGE][PASSED] - Object 'Object Repository/Journey/journrySearchInput' is present
+
+2021-01-12 08:27:28 - [MESSAGE][PASSED] - Object 'Object Repository/Journey/journrySearchInput' is visible
+
+2021-01-12 08:27:28 - [MESSAGE][PASSED] - Object 'Object Repository/Journey/journrySearchInput' is clickable
+
+2021-01-12 08:27:29 - [MESSAGE][PASSED] - Text of object 'Object Repository/Journey/journrySearchInput' is cleared
+
+2021-01-12 08:27:29 - [MESSAGE][PASSED] - Keys 'ENTER + ' sent to object: 'Object Repository/Journey/journrySearchInput'
+
+2021-01-12 08:27:30 - [MESSAGE][PASSED] - Object 'Object Repository/Journey/JourneyName(journeyName)' is present
+
+2021-01-12 08:27:30 - [MESSAGE][PASSED] - Object 'Object Repository/Journey/journey cloning/threedots(journeyName)' is present
+
+2021-01-12 08:27:30 - [MESSAGE][PASSED] - Object 'Object Repository/Journey/journey cloning/threedots(journeyName)' is visible
+
+2021-01-12 08:27:31 - [MESSAGE][PASSED] - Object 'Object Repository/Journey/journey cloning/threedots(journeyName)' is present
+
+2021-01-12 08:27:31 - [MESSAGE][PASSED] - Object 'Object Repository/Journey/journey cloning/threedots(journeyName)' is visible
+
+2021-01-12 08:27:31 - [MESSAGE][PASSED] - Object 'Object Repository/Journey/journey cloning/threedots(journeyName)' is clickable
+
+2021-01-12 08:27:32 - [MESSAGE][PASSED] - Object: 'Object Repository/Journey/journey cloning/threedots(journeyName)' is clicked on
+
+2021-01-12 08:27:32 - [MESSAGE][PASSED] - Object 'Object Repository/Journey/journey cloning/cloneButton' is present
+
+2021-01-12 08:27:33 - [MESSAGE][PASSED] - Object 'Object Repository/Journey/journey cloning/cloneButton' is visible
+
+2021-01-12 08:27:33 - [MESSAGE][PASSED] - Object 'Object Repository/Journey/journey cloning/cloneButton' is clickable
+
+2021-01-12 08:27:33 - [MESSAGE][PASSED] - Object: 'Object Repository/Journey/journey cloning/cloneButton' is clicked on
+
+2021-01-12 08:27:33 - [MESSAGE][PASSED] - pages.Journey.cloneJourney is PASSED
+
+2021-01-12 08:27:33 - [TEST_STEP][PASSED] - pages.Journey.verifyJourneyCloned(journeyName): pages.Journey.verifyJourneyCloned is PASSED
+
+2021-01-12 08:27:34 - [MESSAGE][PASSED] - Object 'Object Repository/Journey/journrySearchInput' is present
+
+2021-01-12 08:27:34 - [MESSAGE][PASSED] - Object 'Object Repository/Journey/journrySearchInput' is visible
+
+2021-01-12 08:27:35 - [MESSAGE][PASSED] - Object 'Object Repository/Journey/journrySearchInput' is clickable
+
+2021-01-12 08:27:36 - [MESSAGE][PASSED] - Text of object 'Object Repository/Journey/journrySearchInput' is cleared
+
+2021-01-12 08:27:36 - [MESSAGE][PASSED] - Keys 'journeyName344 (duplicate)' sent to object: 'Object Repository/Journey/journrySearchInput'
+
+2021-01-12 08:27:38 - [MESSAGE][PASSED] - Object 'Object Repository/Journey/journrySearchInput' is present
+
+2021-01-12 08:27:40 - [MESSAGE][PASSED] - Object 'Object Repository/Journey/journrySearchInput' is visible
+
+2021-01-12 08:27:41 - [MESSAGE][PASSED] - Object 'Object Repository/Journey/journrySearchInput' is clickable
+
+2021-01-12 08:27:41 - [MESSAGE][PASSED] - Text of object 'Object Repository/Journey/journrySearchInput' is cleared
+
+2021-01-12 08:27:41 - [MESSAGE][PASSED] - Keys 'ENTER + ' sent to object: 'Object Repository/Journey/journrySearchInput'
+
+2021-01-12 08:27:42 - [MESSAGE][PASSED] - Object 'Object Repository/Journey/JourneyName(journeyName)' is present
+
+2021-01-12 08:27:42 - [MESSAGE][PASSED] - Object 'Object Repository/Journey/journey cloning/clonedJourney(journeyName)' is present
+
+2021-01-12 08:27:42 - [MESSAGE][PASSED] - Object 'Object Repository/Journey/journey cloning/clonedJourney(journeyName)' is present
+
+2021-01-12 08:27:42 - [MESSAGE][PASSED] - pages.Journey.verifyJourneyCloned is PASSED]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <system-out><![CDATA[2021-01-12 08:25:38 - [TEST_SUITE][PASSED] - Journey: Test Cases/Admin/Journey/cloneJourneyAndVerifyisitCloned]]></system-out>
+      <system-err><![CDATA[]]></system-err>
+   </testsuite>
+</testsuites>

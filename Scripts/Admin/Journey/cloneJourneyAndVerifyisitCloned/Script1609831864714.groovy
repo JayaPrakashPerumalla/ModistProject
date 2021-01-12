@@ -15,12 +15,12 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 
+// Navigate to journey page
 CustomKeywords.'pages.Journey.clickOnJourneyTab'()
 
+// Add journey and clone 
 def journeyName = CustomKeywords.'pages.Journey.addJourney'()
-
-println journeyName
-
 CustomKeywords.'pages.Journey.cloneJourney'(journeyName)
 
+// Verifying the cloned journey
 CustomKeywords.'pages.Journey.verifyJourneyCloned'(journeyName)

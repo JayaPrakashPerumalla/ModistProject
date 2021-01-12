@@ -1,28 +1,13 @@
 package pages
 
-import static com.kms.katalon.core.checkpoint.CheckpointFactory.findCheckpoint
-import static com.kms.katalon.core.testcase.TestCaseFactory.findTestCase
-import static com.kms.katalon.core.testdata.TestDataFactory.findTestData
 import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
-import static com.kms.katalon.core.testobject.ObjectRepository.findWindowsObject
+
+import org.openqa.selenium.Keys
 
 import com.kms.katalon.core.annotation.Keyword
-import com.kms.katalon.core.checkpoint.Checkpoint
-import com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords as CucumberKW
-import com.kms.katalon.core.mobile.keyword.MobileBuiltInKeywords as Mobile
-import com.kms.katalon.core.model.FailureHandling
-import com.kms.katalon.core.testcase.TestCase
-import com.kms.katalon.core.testdata.TestData
-import com.kms.katalon.core.testobject.TestObject
-import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
-import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
-import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
-
-import internal.GlobalVariable
-
-import webAction.WebAction
 
 import verification.Verification
+import webAction.WebAction
 
 public class Section {
 	WebAction actions = new WebAction()
@@ -47,8 +32,7 @@ public class Section {
 	def searchForSection(def sectionName) {
 
 		actions.sendKeys(findTestObject('Object Repository/Section/filterByName'), sectionName)
-		WebUI.waitForPageLoad(30)
-		
+		actions.sendKeys(findTestObject('Object Repository/Section/filterByName'), Keys.chord(Keys.ENTER))
 	}
 
 	@Keyword
@@ -83,13 +67,12 @@ public class Section {
 		for(element in elements) {
 			verifications.verifyElementPresent(findTestObject(path+element), "The element "+element+" is not present")
 		}
-	} 
-	
-	@Keyword 
-	def cancelButtonInAddSectionPopup() { 
-		
-			 actions.click(findTestObject('Object Repository/Section/addSection/cancelButton'))
-			 verifications.verifyElementPresent(findTestObject('Object Repository/Section/filterByName'), "Section popup is not getting closed")
-		     	
+	}
+
+	@Keyword
+	def cancelButtonInAddSectionPopup() {
+
+		actions.click(findTestObject('Object Repository/Section/addSection/cancelButton'))
+		verifications.verifyElementPresent(findTestObject('Object Repository/Section/filterByName'), "Section popup is not getting closed")
 	}
 }

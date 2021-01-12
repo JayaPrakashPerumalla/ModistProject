@@ -1,0 +1,30 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+Product,Chrome 87.0.4280.141,,,2021-01-12 09:01:37,2021-01-12 09:03:55,2m - 18.043s,ERROR
+,,,,,,,
+Test Cases/Admin/Product/addProductAndVerify,Chrome 87.0.4280.141,,,2021-01-12 09:02:08,2021-01-12 09:02:33,24.948s,PASSED
+Start listener action : login,Chrome 87.0.4280.141,,,2021-01-12 09:02:08,2021-01-12 09:02:16,8.302s,PASSED
+productname = pages.Product.addProduct(),Chrome 87.0.4280.141,,,2021-01-12 09:02:17,2021-01-12 09:02:26,9.612s,PASSED
+pages.Product.verifyProductAdded(productname),Chrome 87.0.4280.141,,,2021-01-12 09:02:26,2021-01-12 09:02:33,6.542s,PASSED
+println(productname),Chrome 87.0.4280.141,,,2021-01-12 09:02:33,2021-01-12 09:02:33,0.009s,PASSED
+,,,,,,,
+Test Cases/Admin/Product/editProductNameAndVerify,Chrome 87.0.4280.141,,,2021-01-12 09:02:33,2021-01-12 09:03:18,45.390s,PASSED
+Start listener action : login,Chrome 87.0.4280.141,,,2021-01-12 09:02:33,2021-01-12 09:02:39,5.918s,PASSED
+productname = pages.Product.addProduct(),Chrome 87.0.4280.141,,,2021-01-12 09:02:39,2021-01-12 09:02:47,7.925s,PASSED
+pages.Product.openAnyExistingProduct(productname),Chrome 87.0.4280.141,,,2021-01-12 09:02:47,2021-01-12 09:02:56,8.747s,PASSED
+editedName = pages.Product.editProductName(),Chrome 87.0.4280.141,,,2021-01-12 09:02:56,2021-01-12 09:03:06,10.415s,PASSED
+pages.Product.verifyProductAdded(editedName),Chrome 87.0.4280.141,,,2021-01-12 09:03:06,2021-01-12 09:03:13,6.904s,PASSED
+pages.Product.verifyProductNotPresent(productname),Chrome 87.0.4280.141,,,2021-01-12 09:03:13,2021-01-12 09:03:18,5.107s,PASSED
+,,,,,,,
+Test Cases/Admin/Product/verifyCloseButtonFunctionalityInProductEditPage,Chrome 87.0.4280.141,,,2021-01-12 09:03:18,2021-01-12 09:03:38,19.310s,PASSED
+Start listener action : login,Chrome 87.0.4280.141,,,2021-01-12 09:03:18,2021-01-12 09:03:24,6.018s,PASSED
+productname = pages.Product.getRandomProductNmae(),Chrome 87.0.4280.141,,,2021-01-12 09:03:25,2021-01-12 09:03:27,2.520s,PASSED
+pages.Product.openAnyExistingProduct(productname),Chrome 87.0.4280.141,,,2021-01-12 09:03:27,2021-01-12 09:03:34,6.494s,PASSED
+pages.Product.clickCloseButtonInProductEditPage(),Chrome 87.0.4280.141,,,2021-01-12 09:03:34,2021-01-12 09:03:36,2.623s,PASSED
+pages.Product.verifyAddProductButton(),Chrome 87.0.4280.141,,,2021-01-12 09:03:36,2021-01-12 09:03:38,1.317s,PASSED
+,,,,,,,
+Test Cases/Admin/Product/verifyDragAndDropFunctionalityInRelatedAssets,Chrome 87.0.4280.141,,,2021-01-12 09:03:38,2021-01-12 09:03:55,17.230s,ERROR
+Start listener action : login,Chrome 87.0.4280.141,,,2021-01-12 09:03:38,2021-01-12 09:03:44,6.058s,PASSED
+pages.Product.clickOnProductTab(),Chrome 87.0.4280.141,,,2021-01-12 09:03:44,2021-01-12 09:03:45,1.260s,PASSED
+productName = pages.Product.getRandomProductNmae(),Chrome 87.0.4280.141,,,2021-01-12 09:03:45,2021-01-12 09:03:48,2.418s,PASSED
+pages.Product.openAnyExistingProduct(productName),Chrome 87.0.4280.141,,,2021-01-12 09:03:48,2021-01-12 09:03:54,6.657s,PASSED
+"pages.Product.changePositionOfItemInRelatedAssets(findTestObject(""Product/ProductEditPage/RelatedAssets/sourceObject(index)"", [""index"":3]), 1, false)",Chrome 87.0.4280.141,,,2021-01-12 09:03:54,2021-01-12 09:03:55,0.521s,ERROR

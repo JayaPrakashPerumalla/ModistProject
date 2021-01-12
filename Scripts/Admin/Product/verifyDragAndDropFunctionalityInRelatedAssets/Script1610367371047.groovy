@@ -22,4 +22,4 @@ String productName = CustomKeywords.'pages.Product.getRandomProductNmae'()
 CustomKeywords.'pages.Product.openAnyExistingProduct'(productName)
 
 CustomKeywords.'pages.Product.changePositionOfItemInRelatedAssets'(findTestObject('Product/ProductEditPage/RelatedAssets/sourceObject(index)', 
-        [('index') : 3]), 1, false)
+        [('index') : 1]), 2, true)

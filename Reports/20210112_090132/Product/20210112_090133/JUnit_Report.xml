@@ -1,0 +1,894 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Product" time="139.639" tests="4" failures="0" errors="1">
+   <testsuite name="Product" tests="4" failures="0" errors="1" time="139.639" timestamp="2021-01-12 09:01:37" hostname="Lenovo - DESKTOP-H3LAPEO" id="Test Suites/Product">
+      <properties>
+         <property name="deviceName" value=""/>
+         <property name="devicePlatform" value=""/>
+         <property name="logFolder" value="E:\\Modist Project\\ModistProject\\Reports\\20210112_090132\\Product\\20210112_090133"/>
+         <property name="logFiles" value="E:\\Modist Project\\ModistProject\\Reports\\20210112_090132\\Product\\20210112_090133\\execution0.log"/>
+         <property name="attachments" value="E:\\Modist Project\\ModistProject\\Reports\\20210112_090132\\Product\\20210112_090133\\1610460136497.png, E:\\Modist Project\\ModistProject\\Reports\\20210112_090132\\Product\\20210112_090133\\1610460158953.png, E:\\Modist Project\\ModistProject\\Reports\\20210112_090132\\Product\\20210112_090133\\1610460204473.png, E:\\Modist Project\\ModistProject\\Reports\\20210112_090132\\Product\\20210112_090133\\1610460223857.png"/>
+         <property name="hostName" value="Lenovo - DESKTOP-H3LAPEO"/>
+         <property name="os" value="Windows 10 64bit"/>
+         <property name="katalonVersion" value="7.7.0.205"/>
+         <property name="browser" value="Chrome 87.0.4280.141"/>
+         <property name="hostAddress" value="192.168.43.128"/>
+         <property name="sessionId" value="b892cc35998e616023836d72ecb3efc2"/>
+         <property name="seleniumVersion" value="3.141.59"/>
+         <property name="proxyInformation" value="ProxyInformation { proxyOption=NO_PROXY, proxyServerType=HTTP, username=, password=********, proxyServerAddress=, proxyServerPort=0, executionList=&quot;&quot;, isApplyToDesiredCapabilities=true }"/>
+         <property name="platform" value="Windows 10"/>
+      </properties>
+      <testcase name="Test Cases/Admin/Product/addProductAndVerify" time="24.948" classname="Test Cases/Admin/Product/addProductAndVerify" status="PASSED">
+         <system-out><![CDATA[2021-01-12 09:02:08 - [TEST_CASE][PASSED] - Test Cases/Admin/Product/addProductAndVerify: Test Cases/Admin/Product/addProductAndVerify
+
+2021-01-12 09:02:08 - [TEST_STEP][PASSED] - Start listener action : login: com.kms.katalon.core.webui.exception.WebElementNotFoundException: Web element with id: 'Object Repository/Login Credentials/Email' located by '//input[@name='email']' not found (Root cause: com.kms.katalon.core.exception.StepFailedException: com.kms.katalon.core.webui.exception.WebElementNotFoundException: Web element with id: 'Object Repository/Login Credentials/Email' located by '//input[@name='email']' not found
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementPresentKeyword$_verifyElementPresent_closure1.doCall(VerifyElementPresentKeyword.groovy:85)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementPresentKeyword$_verifyElementPresent_closure1.call(VerifyElementPresentKeyword.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:20)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementPresentKeyword.verifyElementPresent(VerifyElementPresentKeyword.groovy:92)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementPresentKeyword.execute(VerifyElementPresentKeyword.groovy:68)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:73)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.verifyElementPresent(WebUiBuiltInKeywords.groovy:1445)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$verifyElementPresent$2.call(Unknown Source)
+	at login.LoginForAdminDevEnvironment.login(LoginForAdminDevEnvironment.groovy:18)
+	at login.LoginForAdminDevEnvironment$login.call(Unknown Source)
+	at Login.login(Login.groovy:33)
+	at Login.invokeMethod(Login.groovy)
+	at com.kms.katalon.core.context.internal.TestHooker.invokeMethod(TestHooker.java:111)
+	at com.kms.katalon.core.context.internal.TestHooker.lambda$3(TestHooker.java:95)
+	at com.kms.katalon.core.context.internal.TestHooker.invokeContextMethods(TestHooker.java:94)
+	at com.kms.katalon.core.context.internal.TestListenerCollector.lambda$3(TestListenerCollector.java:88)
+	at com.kms.katalon.core.context.internal.TestListenerCollector.handleListenerEvent(TestListenerCollector.java:85)
+	at com.kms.katalon.core.context.internal.ExecutionEventManager.publicEvent(ExecutionEventManager.java:36)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:221)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:191)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:141)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:90)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1610460093987.run(TempTestSuite1610460093987.groovy:39)
+)
+
+2021-01-12 09:02:08 - [TEST_STEP][PASSED] - navigateToUrl(Url): Navigate to 'https://dev-admin.modist.co/' successfully
+
+2021-01-12 09:02:11 - [MESSAGE][PASSED] - Navigate to 'https://dev-admin.modist.co/' successfully
+
+2021-01-12 09:02:11 - [TEST_STEP][PASSED] - loginPage.login(Email, Password): com.kms.katalon.core.webui.exception.WebElementNotFoundException: Web element with id: 'Object Repository/Login Credentials/Email' located by '//input[@name='email']' not found (Root cause: com.kms.katalon.core.exception.StepFailedException: com.kms.katalon.core.webui.exception.WebElementNotFoundException: Web element with id: 'Object Repository/Login Credentials/Email' located by '//input[@name='email']' not found
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementPresentKeyword$_verifyElementPresent_closure1.doCall(VerifyElementPresentKeyword.groovy:85)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementPresentKeyword$_verifyElementPresent_closure1.call(VerifyElementPresentKeyword.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:20)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementPresentKeyword.verifyElementPresent(VerifyElementPresentKeyword.groovy:92)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementPresentKeyword.execute(VerifyElementPresentKeyword.groovy:68)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:73)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.verifyElementPresent(WebUiBuiltInKeywords.groovy:1445)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$verifyElementPresent$2.call(Unknown Source)
+	at login.LoginForAdminDevEnvironment.login(LoginForAdminDevEnvironment.groovy:18)
+	at login.LoginForAdminDevEnvironment$login.call(Unknown Source)
+	at Login.login(Login.groovy:33)
+	at Login.invokeMethod(Login.groovy)
+	at com.kms.katalon.core.context.internal.TestHooker.invokeMethod(TestHooker.java:111)
+	at com.kms.katalon.core.context.internal.TestHooker.lambda$3(TestHooker.java:95)
+	at com.kms.katalon.core.context.internal.TestHooker.invokeContextMethods(TestHooker.java:94)
+	at com.kms.katalon.core.context.internal.TestListenerCollector.lambda$3(TestListenerCollector.java:88)
+	at com.kms.katalon.core.context.internal.TestListenerCollector.handleListenerEvent(TestListenerCollector.java:85)
+	at com.kms.katalon.core.context.internal.ExecutionEventManager.publicEvent(ExecutionEventManager.java:36)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:221)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:191)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:141)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:90)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1610460093987.run(TempTestSuite1610460093987.groovy:39)
+)
+
+2021-01-12 09:02:16 - [MESSAGE][INFO] - Unable to find the element located by 'By.xpath: //input[@name='email']'. Please recheck the objects properties to make sure the desired element is located. 
+
+2021-01-12 09:02:16 - [MESSAGE][WARNING] - com.kms.katalon.core.webui.exception.WebElementNotFoundException: Web element with id: 'Object Repository/Login Credentials/Email' located by '//input[@name='email']' not found (Root cause: com.kms.katalon.core.exception.StepFailedException: com.kms.katalon.core.webui.exception.WebElementNotFoundException: Web element with id: 'Object Repository/Login Credentials/Email' located by '//input[@name='email']' not found
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementPresentKeyword$_verifyElementPresent_closure1.doCall(VerifyElementPresentKeyword.groovy:85)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementPresentKeyword$_verifyElementPresent_closure1.call(VerifyElementPresentKeyword.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:20)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementPresentKeyword.verifyElementPresent(VerifyElementPresentKeyword.groovy:92)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementPresentKeyword.execute(VerifyElementPresentKeyword.groovy:68)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:73)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.verifyElementPresent(WebUiBuiltInKeywords.groovy:1445)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$verifyElementPresent$2.call(Unknown Source)
+	at login.LoginForAdminDevEnvironment.login(LoginForAdminDevEnvironment.groovy:18)
+	at login.LoginForAdminDevEnvironment$login.call(Unknown Source)
+	at Login.login(Login.groovy:33)
+	at Login.invokeMethod(Login.groovy)
+	at com.kms.katalon.core.context.internal.TestHooker.invokeMethod(TestHooker.java:111)
+	at com.kms.katalon.core.context.internal.TestHooker.lambda$3(TestHooker.java:95)
+	at com.kms.katalon.core.context.internal.TestHooker.invokeContextMethods(TestHooker.java:94)
+	at com.kms.katalon.core.context.internal.TestListenerCollector.lambda$3(TestListenerCollector.java:88)
+	at com.kms.katalon.core.context.internal.TestListenerCollector.handleListenerEvent(TestListenerCollector.java:85)
+	at com.kms.katalon.core.context.internal.ExecutionEventManager.publicEvent(ExecutionEventManager.java:36)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:221)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:191)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:141)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:90)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1610460093987.run(TempTestSuite1610460093987.groovy:39)
+)
+[[ATTACHMENT|E:\\Modist Project\\ModistProject\\Reports\\20210112_090132\\Product\\20210112_090133\\1610460136497.png]]
+
+2021-01-12 09:02:17 - [TEST_STEP][PASSED] - productname = pages.Product.addProduct(): pages.Product.addProduct is PASSED
+
+2021-01-12 09:02:17 - [MESSAGE][PASSED] - Object 'Object Repository/Product/productTab' is present
+
+2021-01-12 09:02:17 - [MESSAGE][PASSED] - Object 'Object Repository/Product/productTab' is visible
+
+2021-01-12 09:02:18 - [MESSAGE][PASSED] - Object 'Object Repository/Product/productTab' is clickable
+
+2021-01-12 09:02:18 - [MESSAGE][PASSED] - Object: 'Object Repository/Product/productTab' is clicked on
+
+2021-01-12 09:02:19 - [MESSAGE][PASSED] - Object 'Object Repository/Product/addProductButton' is present
+
+2021-01-12 09:02:19 - [MESSAGE][PASSED] - Object 'Object Repository/Product/addProductButton' is visible
+
+2021-01-12 09:02:20 - [MESSAGE][PASSED] - Object 'Object Repository/Product/addProductButton' is clickable
+
+2021-01-12 09:02:21 - [MESSAGE][PASSED] - Object: 'Object Repository/Product/addProductButton' is clicked on
+
+2021-01-12 09:02:21 - [MESSAGE][PASSED] - Object 'Object Repository/Product/productNameInput' is present
+
+2021-01-12 09:02:22 - [MESSAGE][PASSED] - Object 'Object Repository/Product/productNameInput' is visible
+
+2021-01-12 09:02:22 - [MESSAGE][PASSED] - Object 'Object Repository/Product/productNameInput' is clickable
+
+2021-01-12 09:02:23 - [MESSAGE][PASSED] - Text of object 'Object Repository/Product/productNameInput' is cleared
+
+2021-01-12 09:02:23 - [MESSAGE][PASSED] - Keys 'RandomProduct802' sent to object: 'Object Repository/Product/productNameInput'
+
+2021-01-12 09:02:23 - [MESSAGE][PASSED] - Object 'Object Repository/Product/descriptionFieldInput' is present
+
+2021-01-12 09:02:24 - [MESSAGE][PASSED] - Object 'Object Repository/Product/descriptionFieldInput' is visible
+
+2021-01-12 09:02:24 - [MESSAGE][PASSED] - Object 'Object Repository/Product/descriptionFieldInput' is clickable
+
+2021-01-12 09:02:24 - [MESSAGE][PASSED] - Text of object 'Object Repository/Product/descriptionFieldInput' is cleared
+
+2021-01-12 09:02:25 - [MESSAGE][PASSED] - Keys 'Sample text' sent to object: 'Object Repository/Product/descriptionFieldInput'
+
+2021-01-12 09:02:25 - [MESSAGE][PASSED] - Object 'Object Repository/Product/addproductButtonInAddProductPopUp' is present
+
+2021-01-12 09:02:26 - [MESSAGE][PASSED] - Object 'Object Repository/Product/addproductButtonInAddProductPopUp' is visible
+
+2021-01-12 09:02:26 - [MESSAGE][PASSED] - Object 'Object Repository/Product/addproductButtonInAddProductPopUp' is clickable
+
+2021-01-12 09:02:26 - [MESSAGE][PASSED] - Object: 'Object Repository/Product/addproductButtonInAddProductPopUp' is clicked on
+
+2021-01-12 09:02:26 - [MESSAGE][PASSED] - pages.Product.addProduct is PASSED
+
+2021-01-12 09:02:26 - [TEST_STEP][PASSED] - pages.Product.verifyProductAdded(productname): pages.Product.verifyProductAdded is PASSED
+
+2021-01-12 09:02:28 - [MESSAGE][PASSED] - Object 'Object Repository/Product/Filter by name' is present
+
+2021-01-12 09:02:28 - [MESSAGE][PASSED] - Object 'Object Repository/Product/Filter by name' is visible
+
+2021-01-12 09:02:28 - [MESSAGE][PASSED] - Object 'Object Repository/Product/Filter by name' is clickable
+
+2021-01-12 09:02:29 - [MESSAGE][PASSED] - Text of object 'Object Repository/Product/Filter by name' is cleared
+
+2021-01-12 09:02:29 - [MESSAGE][PASSED] - Keys 'RandomProduct802' sent to object: 'Object Repository/Product/Filter by name'
+
+2021-01-12 09:02:31 - [MESSAGE][PASSED] - Object 'Object Repository/Product/Filter by name' is present
+
+2021-01-12 09:02:31 - [MESSAGE][PASSED] - Object 'Object Repository/Product/Filter by name' is visible
+
+2021-01-12 09:02:31 - [MESSAGE][PASSED] - Object 'Object Repository/Product/Filter by name' is clickable
+
+2021-01-12 09:02:32 - [MESSAGE][PASSED] - Text of object 'Object Repository/Product/Filter by name' is cleared
+
+2021-01-12 09:02:32 - [MESSAGE][PASSED] - Keys 'ENTER + ' sent to object: 'Object Repository/Product/Filter by name'
+
+2021-01-12 09:02:33 - [MESSAGE][PASSED] - Object 'Object Repository/Product/productName(Name)' is present
+
+2021-01-12 09:02:33 - [MESSAGE][PASSED] - pages.Product.verifyProductAdded is PASSED
+
+2021-01-12 09:02:33 - [TEST_STEP][PASSED] - println(productname): null]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Admin/Product/editProductNameAndVerify" time="45.39" classname="Test Cases/Admin/Product/editProductNameAndVerify" status="PASSED">
+         <system-out><![CDATA[2021-01-12 09:02:33 - [TEST_CASE][PASSED] - Test Cases/Admin/Product/editProductNameAndVerify: Test Cases/Admin/Product/editProductNameAndVerify
+
+2021-01-12 09:02:33 - [TEST_STEP][PASSED] - Start listener action : login: com.kms.katalon.core.webui.exception.WebElementNotFoundException: Web element with id: 'Object Repository/Login Credentials/Email' located by '//input[@name='email']' not found (Root cause: com.kms.katalon.core.exception.StepFailedException: com.kms.katalon.core.webui.exception.WebElementNotFoundException: Web element with id: 'Object Repository/Login Credentials/Email' located by '//input[@name='email']' not found
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementPresentKeyword$_verifyElementPresent_closure1.doCall(VerifyElementPresentKeyword.groovy:85)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementPresentKeyword$_verifyElementPresent_closure1.call(VerifyElementPresentKeyword.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:20)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementPresentKeyword.verifyElementPresent(VerifyElementPresentKeyword.groovy:92)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementPresentKeyword.execute(VerifyElementPresentKeyword.groovy:68)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:73)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.verifyElementPresent(WebUiBuiltInKeywords.groovy:1445)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$verifyElementPresent$2.call(Unknown Source)
+	at login.LoginForAdminDevEnvironment.login(LoginForAdminDevEnvironment.groovy:18)
+	at login.LoginForAdminDevEnvironment$login.call(Unknown Source)
+	at Login.login(Login.groovy:33)
+	at Login.invokeMethod(Login.groovy)
+	at com.kms.katalon.core.context.internal.TestHooker.invokeMethod(TestHooker.java:111)
+	at com.kms.katalon.core.context.internal.TestHooker.lambda$3(TestHooker.java:95)
+	at com.kms.katalon.core.context.internal.TestHooker.invokeContextMethods(TestHooker.java:94)
+	at com.kms.katalon.core.context.internal.TestListenerCollector.lambda$3(TestListenerCollector.java:88)
+	at com.kms.katalon.core.context.internal.TestListenerCollector.handleListenerEvent(TestListenerCollector.java:85)
+	at com.kms.katalon.core.context.internal.ExecutionEventManager.publicEvent(ExecutionEventManager.java:36)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:221)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:191)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:141)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:90)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1610460093987.run(TempTestSuite1610460093987.groovy:39)
+)
+
+2021-01-12 09:02:33 - [TEST_STEP][PASSED] - navigateToUrl(Url): Navigate to 'https://dev-admin.modist.co/' successfully
+
+2021-01-12 09:02:33 - [MESSAGE][PASSED] - Navigate to 'https://dev-admin.modist.co/' successfully
+
+2021-01-12 09:02:33 - [TEST_STEP][PASSED] - loginPage.login(Email, Password): com.kms.katalon.core.webui.exception.WebElementNotFoundException: Web element with id: 'Object Repository/Login Credentials/Email' located by '//input[@name='email']' not found (Root cause: com.kms.katalon.core.exception.StepFailedException: com.kms.katalon.core.webui.exception.WebElementNotFoundException: Web element with id: 'Object Repository/Login Credentials/Email' located by '//input[@name='email']' not found
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementPresentKeyword$_verifyElementPresent_closure1.doCall(VerifyElementPresentKeyword.groovy:85)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementPresentKeyword$_verifyElementPresent_closure1.call(VerifyElementPresentKeyword.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:20)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementPresentKeyword.verifyElementPresent(VerifyElementPresentKeyword.groovy:92)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementPresentKeyword.execute(VerifyElementPresentKeyword.groovy:68)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:73)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.verifyElementPresent(WebUiBuiltInKeywords.groovy:1445)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$verifyElementPresent$2.call(Unknown Source)
+	at login.LoginForAdminDevEnvironment.login(LoginForAdminDevEnvironment.groovy:18)
+	at login.LoginForAdminDevEnvironment$login.call(Unknown Source)
+	at Login.login(Login.groovy:33)
+	at Login.invokeMethod(Login.groovy)
+	at com.kms.katalon.core.context.internal.TestHooker.invokeMethod(TestHooker.java:111)
+	at com.kms.katalon.core.context.internal.TestHooker.lambda$3(TestHooker.java:95)
+	at com.kms.katalon.core.context.internal.TestHooker.invokeContextMethods(TestHooker.java:94)
+	at com.kms.katalon.core.context.internal.TestListenerCollector.lambda$3(TestListenerCollector.java:88)
+	at com.kms.katalon.core.context.internal.TestListenerCollector.handleListenerEvent(TestListenerCollector.java:85)
+	at com.kms.katalon.core.context.internal.ExecutionEventManager.publicEvent(ExecutionEventManager.java:36)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:221)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:191)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:141)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:90)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1610460093987.run(TempTestSuite1610460093987.groovy:39)
+)
+
+2021-01-12 09:02:38 - [MESSAGE][INFO] - Unable to find the element located by 'By.xpath: //input[@name='email']'. Please recheck the objects properties to make sure the desired element is located. 
+
+2021-01-12 09:02:39 - [MESSAGE][WARNING] - com.kms.katalon.core.webui.exception.WebElementNotFoundException: Web element with id: 'Object Repository/Login Credentials/Email' located by '//input[@name='email']' not found (Root cause: com.kms.katalon.core.exception.StepFailedException: com.kms.katalon.core.webui.exception.WebElementNotFoundException: Web element with id: 'Object Repository/Login Credentials/Email' located by '//input[@name='email']' not found
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementPresentKeyword$_verifyElementPresent_closure1.doCall(VerifyElementPresentKeyword.groovy:85)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementPresentKeyword$_verifyElementPresent_closure1.call(VerifyElementPresentKeyword.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:20)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementPresentKeyword.verifyElementPresent(VerifyElementPresentKeyword.groovy:92)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementPresentKeyword.execute(VerifyElementPresentKeyword.groovy:68)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:73)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.verifyElementPresent(WebUiBuiltInKeywords.groovy:1445)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$verifyElementPresent$2.call(Unknown Source)
+	at login.LoginForAdminDevEnvironment.login(LoginForAdminDevEnvironment.groovy:18)
+	at login.LoginForAdminDevEnvironment$login.call(Unknown Source)
+	at Login.login(Login.groovy:33)
+	at Login.invokeMethod(Login.groovy)
+	at com.kms.katalon.core.context.internal.TestHooker.invokeMethod(TestHooker.java:111)
+	at com.kms.katalon.core.context.internal.TestHooker.lambda$3(TestHooker.java:95)
+	at com.kms.katalon.core.context.internal.TestHooker.invokeContextMethods(TestHooker.java:94)
+	at com.kms.katalon.core.context.internal.TestListenerCollector.lambda$3(TestListenerCollector.java:88)
+	at com.kms.katalon.core.context.internal.TestListenerCollector.handleListenerEvent(TestListenerCollector.java:85)
+	at com.kms.katalon.core.context.internal.ExecutionEventManager.publicEvent(ExecutionEventManager.java:36)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:221)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:191)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:141)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:90)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1610460093987.run(TempTestSuite1610460093987.groovy:39)
+)
+[[ATTACHMENT|E:\\Modist Project\\ModistProject\\Reports\\20210112_090132\\Product\\20210112_090133\\1610460158953.png]]
+
+2021-01-12 09:02:39 - [TEST_STEP][PASSED] - productname = pages.Product.addProduct(): pages.Product.addProduct is PASSED
+
+2021-01-12 09:02:40 - [MESSAGE][PASSED] - Object 'Object Repository/Product/productTab' is present
+
+2021-01-12 09:02:40 - [MESSAGE][PASSED] - Object 'Object Repository/Product/productTab' is visible
+
+2021-01-12 09:02:40 - [MESSAGE][PASSED] - Object 'Object Repository/Product/productTab' is clickable
+
+2021-01-12 09:02:41 - [MESSAGE][PASSED] - Object: 'Object Repository/Product/productTab' is clicked on
+
+2021-01-12 09:02:41 - [MESSAGE][PASSED] - Object 'Object Repository/Product/addProductButton' is present
+
+2021-01-12 09:02:41 - [MESSAGE][PASSED] - Object 'Object Repository/Product/addProductButton' is visible
+
+2021-01-12 09:02:42 - [MESSAGE][PASSED] - Object 'Object Repository/Product/addProductButton' is clickable
+
+2021-01-12 09:02:42 - [MESSAGE][PASSED] - Object: 'Object Repository/Product/addProductButton' is clicked on
+
+2021-01-12 09:02:42 - [MESSAGE][PASSED] - Object 'Object Repository/Product/productNameInput' is present
+
+2021-01-12 09:02:43 - [MESSAGE][PASSED] - Object 'Object Repository/Product/productNameInput' is visible
+
+2021-01-12 09:02:43 - [MESSAGE][PASSED] - Object 'Object Repository/Product/productNameInput' is clickable
+
+2021-01-12 09:02:43 - [MESSAGE][PASSED] - Text of object 'Object Repository/Product/productNameInput' is cleared
+
+2021-01-12 09:02:44 - [MESSAGE][PASSED] - Keys 'RandomProduct941' sent to object: 'Object Repository/Product/productNameInput'
+
+2021-01-12 09:02:44 - [MESSAGE][PASSED] - Object 'Object Repository/Product/descriptionFieldInput' is present
+
+2021-01-12 09:02:44 - [MESSAGE][PASSED] - Object 'Object Repository/Product/descriptionFieldInput' is visible
+
+2021-01-12 09:02:45 - [MESSAGE][PASSED] - Object 'Object Repository/Product/descriptionFieldInput' is clickable
+
+2021-01-12 09:02:45 - [MESSAGE][PASSED] - Text of object 'Object Repository/Product/descriptionFieldInput' is cleared
+
+2021-01-12 09:02:46 - [MESSAGE][PASSED] - Keys 'Sample text' sent to object: 'Object Repository/Product/descriptionFieldInput'
+
+2021-01-12 09:02:46 - [MESSAGE][PASSED] - Object 'Object Repository/Product/addproductButtonInAddProductPopUp' is present
+
+2021-01-12 09:02:46 - [MESSAGE][PASSED] - Object 'Object Repository/Product/addproductButtonInAddProductPopUp' is visible
+
+2021-01-12 09:02:47 - [MESSAGE][PASSED] - Object 'Object Repository/Product/addproductButtonInAddProductPopUp' is clickable
+
+2021-01-12 09:02:47 - [MESSAGE][PASSED] - Object: 'Object Repository/Product/addproductButtonInAddProductPopUp' is clicked on
+
+2021-01-12 09:02:47 - [MESSAGE][PASSED] - pages.Product.addProduct is PASSED
+
+2021-01-12 09:02:47 - [TEST_STEP][PASSED] - pages.Product.openAnyExistingProduct(productname): pages.Product.openAnyExistingProduct is PASSED
+
+2021-01-12 09:02:48 - [MESSAGE][PASSED] - Object 'Object Repository/Product/Filter by name' is present
+
+2021-01-12 09:02:49 - [MESSAGE][PASSED] - Object 'Object Repository/Product/Filter by name' is visible
+
+2021-01-12 09:02:49 - [MESSAGE][PASSED] - Object 'Object Repository/Product/Filter by name' is clickable
+
+2021-01-12 09:02:49 - [MESSAGE][PASSED] - Text of object 'Object Repository/Product/Filter by name' is cleared
+
+2021-01-12 09:02:50 - [MESSAGE][PASSED] - Keys 'RandomProduct941' sent to object: 'Object Repository/Product/Filter by name'
+
+2021-01-12 09:02:52 - [MESSAGE][PASSED] - Object 'Object Repository/Product/Filter by name' is present
+
+2021-01-12 09:02:52 - [MESSAGE][PASSED] - Object 'Object Repository/Product/Filter by name' is visible
+
+2021-01-12 09:02:52 - [MESSAGE][PASSED] - Object 'Object Repository/Product/Filter by name' is clickable
+
+2021-01-12 09:02:53 - [MESSAGE][PASSED] - Text of object 'Object Repository/Product/Filter by name' is cleared
+
+2021-01-12 09:02:54 - [MESSAGE][PASSED] - Keys 'ENTER + ' sent to object: 'Object Repository/Product/Filter by name'
+
+2021-01-12 09:02:54 - [MESSAGE][PASSED] - Scroll to object 'Object Repository/Product/productName(Name)' successfully
+
+2021-01-12 09:02:55 - [MESSAGE][PASSED] - Object 'Object Repository/Product/productName(Name)' is present
+
+2021-01-12 09:02:55 - [MESSAGE][PASSED] - Object 'Object Repository/Product/productName(Name)' is visible
+
+2021-01-12 09:02:55 - [MESSAGE][PASSED] - Object 'Object Repository/Product/productName(Name)' is clickable
+
+2021-01-12 09:02:56 - [MESSAGE][PASSED] - Object: 'Object Repository/Product/productName(Name)' is clicked on
+
+2021-01-12 09:02:56 - [MESSAGE][PASSED] - pages.Product.openAnyExistingProduct is PASSED
+
+2021-01-12 09:02:56 - [TEST_STEP][PASSED] - editedName = pages.Product.editProductName(): pages.Product.editProductName is PASSED
+
+2021-01-12 09:03:01 - [MESSAGE][PASSED] - Delayed 5 second(s)
+
+2021-01-12 09:03:01 - [MESSAGE][PASSED] - Text of object 'Object Repository/Product/ProductEditPage/productNameInput' is cleared
+
+2021-01-12 09:03:02 - [MESSAGE][PASSED] - Object 'Object Repository/Product/ProductEditPage/productNameInput' is present
+
+2021-01-12 09:03:02 - [MESSAGE][PASSED] - Object 'Object Repository/Product/ProductEditPage/productNameInput' is visible
+
+2021-01-12 09:03:02 - [MESSAGE][PASSED] - Object 'Object Repository/Product/ProductEditPage/productNameInput' is clickable
+
+2021-01-12 09:03:03 - [MESSAGE][PASSED] - Text of object 'Object Repository/Product/ProductEditPage/productNameInput' is cleared
+
+2021-01-12 09:03:03 - [MESSAGE][PASSED] - Keys 'RandomProduct911' sent to object: 'Object Repository/Product/ProductEditPage/productNameInput'
+
+2021-01-12 09:03:03 - [MESSAGE][PASSED] - Object 'Object Repository/Product/ProductEditPage/saveChangesButton' is present
+
+2021-01-12 09:03:04 - [MESSAGE][PASSED] - Object 'Object Repository/Product/ProductEditPage/saveChangesButton' is visible
+
+2021-01-12 09:03:04 - [MESSAGE][PASSED] - Object 'Object Repository/Product/ProductEditPage/saveChangesButton' is clickable
+
+2021-01-12 09:03:04 - [MESSAGE][PASSED] - Object: 'Object Repository/Product/ProductEditPage/saveChangesButton' is clicked on
+
+2021-01-12 09:03:05 - [MESSAGE][PASSED] - Object 'Object Repository/Product/ProductEditPage/closeButton' is present
+
+2021-01-12 09:03:06 - [MESSAGE][PASSED] - Object 'Object Repository/Product/ProductEditPage/closeButton' is visible
+
+2021-01-12 09:03:06 - [MESSAGE][PASSED] - Object 'Object Repository/Product/ProductEditPage/closeButton' is clickable
+
+2021-01-12 09:03:06 - [MESSAGE][PASSED] - Object: 'Object Repository/Product/ProductEditPage/closeButton' is clicked on
+
+2021-01-12 09:03:06 - [MESSAGE][PASSED] - pages.Product.editProductName is PASSED
+
+2021-01-12 09:03:06 - [TEST_STEP][PASSED] - pages.Product.verifyProductAdded(editedName): pages.Product.verifyProductAdded is PASSED
+
+2021-01-12 09:03:07 - [MESSAGE][PASSED] - Object 'Object Repository/Product/Filter by name' is present
+
+2021-01-12 09:03:08 - [MESSAGE][PASSED] - Object 'Object Repository/Product/Filter by name' is visible
+
+2021-01-12 09:03:08 - [MESSAGE][PASSED] - Object 'Object Repository/Product/Filter by name' is clickable
+
+2021-01-12 09:03:08 - [MESSAGE][PASSED] - Text of object 'Object Repository/Product/Filter by name' is cleared
+
+2021-01-12 09:03:09 - [MESSAGE][PASSED] - Keys 'RandomProduct911' sent to object: 'Object Repository/Product/Filter by name'
+
+2021-01-12 09:03:11 - [MESSAGE][PASSED] - Object 'Object Repository/Product/Filter by name' is present
+
+2021-01-12 09:03:11 - [MESSAGE][PASSED] - Object 'Object Repository/Product/Filter by name' is visible
+
+2021-01-12 09:03:11 - [MESSAGE][PASSED] - Object 'Object Repository/Product/Filter by name' is clickable
+
+2021-01-12 09:03:12 - [MESSAGE][PASSED] - Text of object 'Object Repository/Product/Filter by name' is cleared
+
+2021-01-12 09:03:13 - [MESSAGE][PASSED] - Keys 'ENTER + ' sent to object: 'Object Repository/Product/Filter by name'
+
+2021-01-12 09:03:13 - [MESSAGE][PASSED] - Object 'Object Repository/Product/productName(Name)' is present
+
+2021-01-12 09:03:13 - [MESSAGE][PASSED] - pages.Product.verifyProductAdded is PASSED
+
+2021-01-12 09:03:13 - [TEST_STEP][PASSED] - pages.Product.verifyProductNotPresent(productname): pages.Product.verifyProductNotPresent is PASSED
+
+2021-01-12 09:03:14 - [MESSAGE][PASSED] - Object 'Object Repository/Product/Filter by name' is present
+
+2021-01-12 09:03:14 - [MESSAGE][PASSED] - Object 'Object Repository/Product/Filter by name' is visible
+
+2021-01-12 09:03:14 - [MESSAGE][PASSED] - Object 'Object Repository/Product/Filter by name' is clickable
+
+2021-01-12 09:03:15 - [MESSAGE][PASSED] - Text of object 'Object Repository/Product/Filter by name' is cleared
+
+2021-01-12 09:03:15 - [MESSAGE][PASSED] - Keys 'RandomProduct941' sent to object: 'Object Repository/Product/Filter by name'
+
+2021-01-12 09:03:15 - [MESSAGE][PASSED] - Object 'Object Repository/Product/Filter by name' is present
+
+2021-01-12 09:03:17 - [MESSAGE][PASSED] - Object 'Object Repository/Product/Filter by name' is visible
+
+2021-01-12 09:03:17 - [MESSAGE][PASSED] - Object 'Object Repository/Product/Filter by name' is clickable
+
+2021-01-12 09:03:18 - [MESSAGE][PASSED] - Text of object 'Object Repository/Product/Filter by name' is cleared
+
+2021-01-12 09:03:18 - [MESSAGE][PASSED] - Keys 'ENTER + ' sent to object: 'Object Repository/Product/Filter by name'
+
+2021-01-12 09:03:18 - [MESSAGE][PASSED] - Web element with id: 'Object Repository/Product/productName(Name)' located by 'By.xpath: //div[text()='RandomProduct941']/../..
+' is not present after '30' second(s)
+
+2021-01-12 09:03:18 - [MESSAGE][PASSED] - pages.Product.verifyProductNotPresent is PASSED]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Admin/Product/verifyCloseButtonFunctionalityInProductEditPage" time="19.31" classname="Test Cases/Admin/Product/verifyCloseButtonFunctionalityInProductEditPage" status="PASSED">
+         <system-out><![CDATA[2021-01-12 09:03:18 - [TEST_CASE][PASSED] - Test Cases/Admin/Product/verifyCloseButtonFunctionalityInProductEditPage: Test Cases/Admin/Product/verifyCloseButtonFunctionalityInProductEditPage
+
+2021-01-12 09:03:18 - [TEST_STEP][PASSED] - Start listener action : login: com.kms.katalon.core.webui.exception.WebElementNotFoundException: Web element with id: 'Object Repository/Login Credentials/Email' located by '//input[@name='email']' not found (Root cause: com.kms.katalon.core.exception.StepFailedException: com.kms.katalon.core.webui.exception.WebElementNotFoundException: Web element with id: 'Object Repository/Login Credentials/Email' located by '//input[@name='email']' not found
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementPresentKeyword$_verifyElementPresent_closure1.doCall(VerifyElementPresentKeyword.groovy:85)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementPresentKeyword$_verifyElementPresent_closure1.call(VerifyElementPresentKeyword.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:20)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementPresentKeyword.verifyElementPresent(VerifyElementPresentKeyword.groovy:92)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementPresentKeyword.execute(VerifyElementPresentKeyword.groovy:68)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:73)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.verifyElementPresent(WebUiBuiltInKeywords.groovy:1445)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$verifyElementPresent$2.call(Unknown Source)
+	at login.LoginForAdminDevEnvironment.login(LoginForAdminDevEnvironment.groovy:18)
+	at login.LoginForAdminDevEnvironment$login.call(Unknown Source)
+	at Login.login(Login.groovy:33)
+	at Login.invokeMethod(Login.groovy)
+	at com.kms.katalon.core.context.internal.TestHooker.invokeMethod(TestHooker.java:111)
+	at com.kms.katalon.core.context.internal.TestHooker.lambda$3(TestHooker.java:95)
+	at com.kms.katalon.core.context.internal.TestHooker.invokeContextMethods(TestHooker.java:94)
+	at com.kms.katalon.core.context.internal.TestListenerCollector.lambda$3(TestListenerCollector.java:88)
+	at com.kms.katalon.core.context.internal.TestListenerCollector.handleListenerEvent(TestListenerCollector.java:85)
+	at com.kms.katalon.core.context.internal.ExecutionEventManager.publicEvent(ExecutionEventManager.java:36)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:221)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:191)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:141)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:90)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1610460093987.run(TempTestSuite1610460093987.groovy:39)
+)
+
+2021-01-12 09:03:18 - [TEST_STEP][PASSED] - navigateToUrl(Url): Navigate to 'https://dev-admin.modist.co/' successfully
+
+2021-01-12 09:03:19 - [MESSAGE][PASSED] - Navigate to 'https://dev-admin.modist.co/' successfully
+
+2021-01-12 09:03:19 - [TEST_STEP][PASSED] - loginPage.login(Email, Password): com.kms.katalon.core.webui.exception.WebElementNotFoundException: Web element with id: 'Object Repository/Login Credentials/Email' located by '//input[@name='email']' not found (Root cause: com.kms.katalon.core.exception.StepFailedException: com.kms.katalon.core.webui.exception.WebElementNotFoundException: Web element with id: 'Object Repository/Login Credentials/Email' located by '//input[@name='email']' not found
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementPresentKeyword$_verifyElementPresent_closure1.doCall(VerifyElementPresentKeyword.groovy:85)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementPresentKeyword$_verifyElementPresent_closure1.call(VerifyElementPresentKeyword.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:20)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementPresentKeyword.verifyElementPresent(VerifyElementPresentKeyword.groovy:92)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementPresentKeyword.execute(VerifyElementPresentKeyword.groovy:68)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:73)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.verifyElementPresent(WebUiBuiltInKeywords.groovy:1445)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$verifyElementPresent$2.call(Unknown Source)
+	at login.LoginForAdminDevEnvironment.login(LoginForAdminDevEnvironment.groovy:18)
+	at login.LoginForAdminDevEnvironment$login.call(Unknown Source)
+	at Login.login(Login.groovy:33)
+	at Login.invokeMethod(Login.groovy)
+	at com.kms.katalon.core.context.internal.TestHooker.invokeMethod(TestHooker.java:111)
+	at com.kms.katalon.core.context.internal.TestHooker.lambda$3(TestHooker.java:95)
+	at com.kms.katalon.core.context.internal.TestHooker.invokeContextMethods(TestHooker.java:94)
+	at com.kms.katalon.core.context.internal.TestListenerCollector.lambda$3(TestListenerCollector.java:88)
+	at com.kms.katalon.core.context.internal.TestListenerCollector.handleListenerEvent(TestListenerCollector.java:85)
+	at com.kms.katalon.core.context.internal.ExecutionEventManager.publicEvent(ExecutionEventManager.java:36)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:221)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:191)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:141)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:90)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1610460093987.run(TempTestSuite1610460093987.groovy:39)
+)
+
+2021-01-12 09:03:24 - [MESSAGE][INFO] - Unable to find the element located by 'By.xpath: //input[@name='email']'. Please recheck the objects properties to make sure the desired element is located. 
+
+2021-01-12 09:03:24 - [MESSAGE][WARNING] - com.kms.katalon.core.webui.exception.WebElementNotFoundException: Web element with id: 'Object Repository/Login Credentials/Email' located by '//input[@name='email']' not found (Root cause: com.kms.katalon.core.exception.StepFailedException: com.kms.katalon.core.webui.exception.WebElementNotFoundException: Web element with id: 'Object Repository/Login Credentials/Email' located by '//input[@name='email']' not found
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementPresentKeyword$_verifyElementPresent_closure1.doCall(VerifyElementPresentKeyword.groovy:85)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementPresentKeyword$_verifyElementPresent_closure1.call(VerifyElementPresentKeyword.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:20)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementPresentKeyword.verifyElementPresent(VerifyElementPresentKeyword.groovy:92)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementPresentKeyword.execute(VerifyElementPresentKeyword.groovy:68)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:73)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.verifyElementPresent(WebUiBuiltInKeywords.groovy:1445)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$verifyElementPresent$2.call(Unknown Source)
+	at login.LoginForAdminDevEnvironment.login(LoginForAdminDevEnvironment.groovy:18)
+	at login.LoginForAdminDevEnvironment$login.call(Unknown Source)
+	at Login.login(Login.groovy:33)
+	at Login.invokeMethod(Login.groovy)
+	at com.kms.katalon.core.context.internal.TestHooker.invokeMethod(TestHooker.java:111)
+	at com.kms.katalon.core.context.internal.TestHooker.lambda$3(TestHooker.java:95)
+	at com.kms.katalon.core.context.internal.TestHooker.invokeContextMethods(TestHooker.java:94)
+	at com.kms.katalon.core.context.internal.TestListenerCollector.lambda$3(TestListenerCollector.java:88)
+	at com.kms.katalon.core.context.internal.TestListenerCollector.handleListenerEvent(TestListenerCollector.java:85)
+	at com.kms.katalon.core.context.internal.ExecutionEventManager.publicEvent(ExecutionEventManager.java:36)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:221)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:191)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:141)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:90)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1610460093987.run(TempTestSuite1610460093987.groovy:39)
+)
+[[ATTACHMENT|E:\\Modist Project\\ModistProject\\Reports\\20210112_090132\\Product\\20210112_090133\\1610460204473.png]]
+
+2021-01-12 09:03:25 - [TEST_STEP][PASSED] - productname = pages.Product.getRandomProductNmae(): pages.Product.getRandomProductNmae is PASSED
+
+2021-01-12 09:03:25 - [MESSAGE][PASSED] - Object 'Object Repository/Product/productTab' is present
+
+2021-01-12 09:03:25 - [MESSAGE][PASSED] - Object 'Object Repository/Product/productTab' is visible
+
+2021-01-12 09:03:26 - [MESSAGE][PASSED] - Object 'Object Repository/Product/productTab' is clickable
+
+2021-01-12 09:03:26 - [MESSAGE][PASSED] - Object: 'Object Repository/Product/productTab' is clicked on
+
+2021-01-12 09:03:26 - [MESSAGE][PASSED] - Object 'Object Repository/Product/productsCount' is present
+
+2021-01-12 09:03:27 - [MESSAGE][PASSED] - Text of object 'Object Repository/Product/randomProduct(index)' is: 'product 123'
+
+2021-01-12 09:03:27 - [MESSAGE][PASSED] - pages.Product.getRandomProductNmae is PASSED
+
+2021-01-12 09:03:27 - [TEST_STEP][PASSED] - pages.Product.openAnyExistingProduct(productname): pages.Product.openAnyExistingProduct is PASSED
+
+2021-01-12 09:03:27 - [MESSAGE][PASSED] - Object 'Object Repository/Product/Filter by name' is present
+
+2021-01-12 09:03:28 - [MESSAGE][PASSED] - Object 'Object Repository/Product/Filter by name' is visible
+
+2021-01-12 09:03:28 - [MESSAGE][PASSED] - Object 'Object Repository/Product/Filter by name' is clickable
+
+2021-01-12 09:03:28 - [MESSAGE][PASSED] - Text of object 'Object Repository/Product/Filter by name' is cleared
+
+2021-01-12 09:03:29 - [MESSAGE][PASSED] - Keys 'product 123' sent to object: 'Object Repository/Product/Filter by name'
+
+2021-01-12 09:03:29 - [MESSAGE][PASSED] - Object 'Object Repository/Product/Filter by name' is present
+
+2021-01-12 09:03:30 - [MESSAGE][PASSED] - Object 'Object Repository/Product/Filter by name' is visible
+
+2021-01-12 09:03:31 - [MESSAGE][PASSED] - Object 'Object Repository/Product/Filter by name' is clickable
+
+2021-01-12 09:03:31 - [MESSAGE][PASSED] - Text of object 'Object Repository/Product/Filter by name' is cleared
+
+2021-01-12 09:03:32 - [MESSAGE][PASSED] - Keys 'ENTER + ' sent to object: 'Object Repository/Product/Filter by name'
+
+2021-01-12 09:03:32 - [MESSAGE][PASSED] - Scroll to object 'Object Repository/Product/productName(Name)' successfully
+
+2021-01-12 09:03:33 - [MESSAGE][PASSED] - Object 'Object Repository/Product/productName(Name)' is present
+
+2021-01-12 09:03:33 - [MESSAGE][PASSED] - Object 'Object Repository/Product/productName(Name)' is visible
+
+2021-01-12 09:03:33 - [MESSAGE][PASSED] - Object 'Object Repository/Product/productName(Name)' is clickable
+
+2021-01-12 09:03:34 - [MESSAGE][PASSED] - Object: 'Object Repository/Product/productName(Name)' is clicked on
+
+2021-01-12 09:03:34 - [MESSAGE][PASSED] - pages.Product.openAnyExistingProduct is PASSED
+
+2021-01-12 09:03:34 - [TEST_STEP][PASSED] - pages.Product.clickCloseButtonInProductEditPage(): pages.Product.clickCloseButtonInProductEditPage is PASSED
+
+2021-01-12 09:03:34 - [MESSAGE][PASSED] - Object 'Object Repository/Product/ProductEditPage/closeButton' is present
+
+2021-01-12 09:03:36 - [MESSAGE][PASSED] - Object 'Object Repository/Product/ProductEditPage/closeButton' is visible
+
+2021-01-12 09:03:36 - [MESSAGE][PASSED] - Object 'Object Repository/Product/ProductEditPage/closeButton' is clickable
+
+2021-01-12 09:03:36 - [MESSAGE][PASSED] - Object: 'Object Repository/Product/ProductEditPage/closeButton' is clicked on
+
+2021-01-12 09:03:36 - [MESSAGE][PASSED] - pages.Product.clickCloseButtonInProductEditPage is PASSED
+
+2021-01-12 09:03:36 - [TEST_STEP][PASSED] - pages.Product.verifyAddProductButton(): pages.Product.verifyAddProductButton is PASSED
+
+2021-01-12 09:03:38 - [MESSAGE][PASSED] - Object 'Object Repository/Product/addProductButton' is present
+
+2021-01-12 09:03:38 - [MESSAGE][PASSED] - pages.Product.verifyAddProductButton is PASSED]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Admin/Product/verifyDragAndDropFunctionalityInRelatedAssets" time="17.23" classname="Test Cases/Admin/Product/verifyDragAndDropFunctionalityInRelatedAssets" status="ERROR">
+         <error type="ERROR" message="Test Cases/Admin/Product/verifyDragAndDropFunctionalityInRelatedAssets FAILED.
+Reason:
+groovy.lang.MissingPropertyException: No such property: WebUiBuiltInKeywords for class: pages.Product
+	at pages.Product.changePositionOfItemInRelatedAssets(Product.groovy:249)
+	at pages.Product.invokeMethod(Product.groovy)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:50)
+	at verifyDragAndDropFunctionalityInRelatedAssets.run(verifyDragAndDropFunctionalityInRelatedAssets:24)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:339)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:330)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:309)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:301)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:235)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:191)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:141)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:90)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1610460093987.run(TempTestSuite1610460093987.groovy:39)
+"/>
+         <system-out><![CDATA[2021-01-12 09:03:38 - [TEST_CASE][ERROR] - Test Cases/Admin/Product/verifyDragAndDropFunctionalityInRelatedAssets: Test Cases/Admin/Product/verifyDragAndDropFunctionalityInRelatedAssets FAILED.
+Reason:
+groovy.lang.MissingPropertyException: No such property: WebUiBuiltInKeywords for class: pages.Product
+	at pages.Product.changePositionOfItemInRelatedAssets(Product.groovy:249)
+	at pages.Product.invokeMethod(Product.groovy)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:50)
+	at verifyDragAndDropFunctionalityInRelatedAssets.run(verifyDragAndDropFunctionalityInRelatedAssets:24)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:339)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:330)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:309)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:301)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:235)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:191)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:141)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:90)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1610460093987.run(TempTestSuite1610460093987.groovy:39)
+
+
+2021-01-12 09:03:38 - [TEST_STEP][PASSED] - Start listener action : login: com.kms.katalon.core.webui.exception.WebElementNotFoundException: Web element with id: 'Object Repository/Login Credentials/Email' located by '//input[@name='email']' not found (Root cause: com.kms.katalon.core.exception.StepFailedException: com.kms.katalon.core.webui.exception.WebElementNotFoundException: Web element with id: 'Object Repository/Login Credentials/Email' located by '//input[@name='email']' not found
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementPresentKeyword$_verifyElementPresent_closure1.doCall(VerifyElementPresentKeyword.groovy:85)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementPresentKeyword$_verifyElementPresent_closure1.call(VerifyElementPresentKeyword.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:20)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementPresentKeyword.verifyElementPresent(VerifyElementPresentKeyword.groovy:92)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementPresentKeyword.execute(VerifyElementPresentKeyword.groovy:68)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:73)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.verifyElementPresent(WebUiBuiltInKeywords.groovy:1445)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$verifyElementPresent$2.call(Unknown Source)
+	at login.LoginForAdminDevEnvironment.login(LoginForAdminDevEnvironment.groovy:18)
+	at login.LoginForAdminDevEnvironment$login.call(Unknown Source)
+	at Login.login(Login.groovy:33)
+	at Login.invokeMethod(Login.groovy)
+	at com.kms.katalon.core.context.internal.TestHooker.invokeMethod(TestHooker.java:111)
+	at com.kms.katalon.core.context.internal.TestHooker.lambda$3(TestHooker.java:95)
+	at com.kms.katalon.core.context.internal.TestHooker.invokeContextMethods(TestHooker.java:94)
+	at com.kms.katalon.core.context.internal.TestListenerCollector.lambda$3(TestListenerCollector.java:88)
+	at com.kms.katalon.core.context.internal.TestListenerCollector.handleListenerEvent(TestListenerCollector.java:85)
+	at com.kms.katalon.core.context.internal.ExecutionEventManager.publicEvent(ExecutionEventManager.java:36)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:221)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:191)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:141)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:90)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1610460093987.run(TempTestSuite1610460093987.groovy:39)
+)
+
+2021-01-12 09:03:38 - [TEST_STEP][PASSED] - navigateToUrl(Url): Navigate to 'https://dev-admin.modist.co/' successfully
+
+2021-01-12 09:03:38 - [MESSAGE][PASSED] - Navigate to 'https://dev-admin.modist.co/' successfully
+
+2021-01-12 09:03:38 - [TEST_STEP][PASSED] - loginPage.login(Email, Password): com.kms.katalon.core.webui.exception.WebElementNotFoundException: Web element with id: 'Object Repository/Login Credentials/Email' located by '//input[@name='email']' not found (Root cause: com.kms.katalon.core.exception.StepFailedException: com.kms.katalon.core.webui.exception.WebElementNotFoundException: Web element with id: 'Object Repository/Login Credentials/Email' located by '//input[@name='email']' not found
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementPresentKeyword$_verifyElementPresent_closure1.doCall(VerifyElementPresentKeyword.groovy:85)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementPresentKeyword$_verifyElementPresent_closure1.call(VerifyElementPresentKeyword.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:20)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementPresentKeyword.verifyElementPresent(VerifyElementPresentKeyword.groovy:92)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementPresentKeyword.execute(VerifyElementPresentKeyword.groovy:68)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:73)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.verifyElementPresent(WebUiBuiltInKeywords.groovy:1445)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$verifyElementPresent$2.call(Unknown Source)
+	at login.LoginForAdminDevEnvironment.login(LoginForAdminDevEnvironment.groovy:18)
+	at login.LoginForAdminDevEnvironment$login.call(Unknown Source)
+	at Login.login(Login.groovy:33)
+	at Login.invokeMethod(Login.groovy)
+	at com.kms.katalon.core.context.internal.TestHooker.invokeMethod(TestHooker.java:111)
+	at com.kms.katalon.core.context.internal.TestHooker.lambda$3(TestHooker.java:95)
+	at com.kms.katalon.core.context.internal.TestHooker.invokeContextMethods(TestHooker.java:94)
+	at com.kms.katalon.core.context.internal.TestListenerCollector.lambda$3(TestListenerCollector.java:88)
+	at com.kms.katalon.core.context.internal.TestListenerCollector.handleListenerEvent(TestListenerCollector.java:85)
+	at com.kms.katalon.core.context.internal.ExecutionEventManager.publicEvent(ExecutionEventManager.java:36)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:221)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:191)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:141)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:90)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1610460093987.run(TempTestSuite1610460093987.groovy:39)
+)
+
+2021-01-12 09:03:43 - [MESSAGE][INFO] - Unable to find the element located by 'By.xpath: //input[@name='email']'. Please recheck the objects properties to make sure the desired element is located. 
+
+2021-01-12 09:03:44 - [MESSAGE][WARNING] - com.kms.katalon.core.webui.exception.WebElementNotFoundException: Web element with id: 'Object Repository/Login Credentials/Email' located by '//input[@name='email']' not found (Root cause: com.kms.katalon.core.exception.StepFailedException: com.kms.katalon.core.webui.exception.WebElementNotFoundException: Web element with id: 'Object Repository/Login Credentials/Email' located by '//input[@name='email']' not found
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementPresentKeyword$_verifyElementPresent_closure1.doCall(VerifyElementPresentKeyword.groovy:85)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementPresentKeyword$_verifyElementPresent_closure1.call(VerifyElementPresentKeyword.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:20)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementPresentKeyword.verifyElementPresent(VerifyElementPresentKeyword.groovy:92)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementPresentKeyword.execute(VerifyElementPresentKeyword.groovy:68)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:73)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.verifyElementPresent(WebUiBuiltInKeywords.groovy:1445)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$verifyElementPresent$2.call(Unknown Source)
+	at login.LoginForAdminDevEnvironment.login(LoginForAdminDevEnvironment.groovy:18)
+	at login.LoginForAdminDevEnvironment$login.call(Unknown Source)
+	at Login.login(Login.groovy:33)
+	at Login.invokeMethod(Login.groovy)
+	at com.kms.katalon.core.context.internal.TestHooker.invokeMethod(TestHooker.java:111)
+	at com.kms.katalon.core.context.internal.TestHooker.lambda$3(TestHooker.java:95)
+	at com.kms.katalon.core.context.internal.TestHooker.invokeContextMethods(TestHooker.java:94)
+	at com.kms.katalon.core.context.internal.TestListenerCollector.lambda$3(TestListenerCollector.java:88)
+	at com.kms.katalon.core.context.internal.TestListenerCollector.handleListenerEvent(TestListenerCollector.java:85)
+	at com.kms.katalon.core.context.internal.ExecutionEventManager.publicEvent(ExecutionEventManager.java:36)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:221)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:191)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:141)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:90)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1610460093987.run(TempTestSuite1610460093987.groovy:39)
+)
+[[ATTACHMENT|E:\\Modist Project\\ModistProject\\Reports\\20210112_090132\\Product\\20210112_090133\\1610460223857.png]]
+
+2021-01-12 09:03:44 - [TEST_STEP][PASSED] - pages.Product.clickOnProductTab(): pages.Product.clickOnProductTab is PASSED
+
+2021-01-12 09:03:44 - [MESSAGE][PASSED] - Object 'Object Repository/Product/productTab' is present
+
+2021-01-12 09:03:45 - [MESSAGE][PASSED] - Object 'Object Repository/Product/productTab' is visible
+
+2021-01-12 09:03:45 - [MESSAGE][PASSED] - Object 'Object Repository/Product/productTab' is clickable
+
+2021-01-12 09:03:45 - [MESSAGE][PASSED] - Object: 'Object Repository/Product/productTab' is clicked on
+
+2021-01-12 09:03:45 - [MESSAGE][PASSED] - pages.Product.clickOnProductTab is PASSED
+
+2021-01-12 09:03:45 - [TEST_STEP][PASSED] - productName = pages.Product.getRandomProductNmae(): pages.Product.getRandomProductNmae is PASSED
+
+2021-01-12 09:03:46 - [MESSAGE][PASSED] - Object 'Object Repository/Product/productTab' is present
+
+2021-01-12 09:03:46 - [MESSAGE][PASSED] - Object 'Object Repository/Product/productTab' is visible
+
+2021-01-12 09:03:46 - [MESSAGE][PASSED] - Object 'Object Repository/Product/productTab' is clickable
+
+2021-01-12 09:03:47 - [MESSAGE][PASSED] - Object: 'Object Repository/Product/productTab' is clicked on
+
+2021-01-12 09:03:47 - [MESSAGE][PASSED] - Object 'Object Repository/Product/productsCount' is present
+
+2021-01-12 09:03:48 - [MESSAGE][PASSED] - Text of object 'Object Repository/Product/randomProduct(index)' is: 'remote toy craft1'
+
+2021-01-12 09:03:48 - [MESSAGE][PASSED] - pages.Product.getRandomProductNmae is PASSED
+
+2021-01-12 09:03:48 - [TEST_STEP][PASSED] - pages.Product.openAnyExistingProduct(productName): pages.Product.openAnyExistingProduct is PASSED
+
+2021-01-12 09:03:48 - [MESSAGE][PASSED] - Object 'Object Repository/Product/Filter by name' is present
+
+2021-01-12 09:03:48 - [MESSAGE][PASSED] - Object 'Object Repository/Product/Filter by name' is visible
+
+2021-01-12 09:03:49 - [MESSAGE][PASSED] - Object 'Object Repository/Product/Filter by name' is clickable
+
+2021-01-12 09:03:49 - [MESSAGE][PASSED] - Text of object 'Object Repository/Product/Filter by name' is cleared
+
+2021-01-12 09:03:50 - [MESSAGE][PASSED] - Keys 'remote toy craft1' sent to object: 'Object Repository/Product/Filter by name'
+
+2021-01-12 09:03:51 - [MESSAGE][PASSED] - Object 'Object Repository/Product/Filter by name' is present
+
+2021-01-12 09:03:51 - [MESSAGE][PASSED] - Object 'Object Repository/Product/Filter by name' is visible
+
+2021-01-12 09:03:52 - [MESSAGE][PASSED] - Object 'Object Repository/Product/Filter by name' is clickable
+
+2021-01-12 09:03:52 - [MESSAGE][PASSED] - Text of object 'Object Repository/Product/Filter by name' is cleared
+
+2021-01-12 09:03:52 - [MESSAGE][PASSED] - Keys 'ENTER + ' sent to object: 'Object Repository/Product/Filter by name'
+
+2021-01-12 09:03:53 - [MESSAGE][PASSED] - Scroll to object 'Object Repository/Product/productName(Name)' successfully
+
+2021-01-12 09:03:53 - [MESSAGE][PASSED] - Object 'Object Repository/Product/productName(Name)' is present
+
+2021-01-12 09:03:54 - [MESSAGE][PASSED] - Object 'Object Repository/Product/productName(Name)' is visible
+
+2021-01-12 09:03:54 - [MESSAGE][PASSED] - Object 'Object Repository/Product/productName(Name)' is clickable
+
+2021-01-12 09:03:54 - [MESSAGE][PASSED] - Object: 'Object Repository/Product/productName(Name)' is clicked on
+
+2021-01-12 09:03:54 - [MESSAGE][PASSED] - pages.Product.openAnyExistingProduct is PASSED
+
+2021-01-12 09:03:54 - [TEST_STEP][ERROR] - pages.Product.changePositionOfItemInRelatedAssets(findTestObject("Product/ProductEditPage/RelatedAssets/sourceObject(index)", ["index":3]), 1, false): No such property: WebUiBuiltInKeywords for class: pages.Product
+
+2021-01-12 09:03:55 - [MESSAGE][PASSED] - Scroll to object 'Object Repository/Product/ProductEditPage/RelatedAssets/relatedAssetsField' successfully
+
+2021-01-12 09:03:55 - [MESSAGE][ERROR] - No such property: WebUiBuiltInKeywords for class: pages.Product]]></system-out>
+         <system-err><![CDATA[2021-01-12 09:03:38 - [TEST_CASE][ERROR] - Test Cases/Admin/Product/verifyDragAndDropFunctionalityInRelatedAssets: Test Cases/Admin/Product/verifyDragAndDropFunctionalityInRelatedAssets FAILED.
+Reason:
+groovy.lang.MissingPropertyException: No such property: WebUiBuiltInKeywords for class: pages.Product
+	at pages.Product.changePositionOfItemInRelatedAssets(Product.groovy:249)
+	at pages.Product.invokeMethod(Product.groovy)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:50)
+	at verifyDragAndDropFunctionalityInRelatedAssets.run(verifyDragAndDropFunctionalityInRelatedAssets:24)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:339)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:330)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:309)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:301)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:235)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:191)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:141)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:90)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1610460093987.run(TempTestSuite1610460093987.groovy:39)]]></system-err>
+      </testcase>
+      <system-out><![CDATA[2021-01-12 09:01:37 - [TEST_SUITE][ERROR] - Product: Test Cases/Admin/Product/verifyDragAndDropFunctionalityInRelatedAssets FAILED.
+Reason:
+groovy.lang.MissingPropertyException: No such property: WebUiBuiltInKeywords for class: pages.Product
+	at pages.Product.changePositionOfItemInRelatedAssets(Product.groovy:249)
+	at pages.Product.invokeMethod(Product.groovy)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:50)
+	at verifyDragAndDropFunctionalityInRelatedAssets.run(verifyDragAndDropFunctionalityInRelatedAssets:24)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:339)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:330)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:309)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:301)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:235)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:191)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:141)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:90)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1610460093987.run(TempTestSuite1610460093987.groovy:39)]]></system-out>
+      <system-err><![CDATA[2021-01-12 09:01:37 - [TEST_SUITE][ERROR] - Product: Test Cases/Admin/Product/verifyDragAndDropFunctionalityInRelatedAssets FAILED.
+Reason:
+groovy.lang.MissingPropertyException: No such property: WebUiBuiltInKeywords for class: pages.Product
+	at pages.Product.changePositionOfItemInRelatedAssets(Product.groovy:249)
+	at pages.Product.invokeMethod(Product.groovy)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:50)
+	at verifyDragAndDropFunctionalityInRelatedAssets.run(verifyDragAndDropFunctionalityInRelatedAssets:24)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:339)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:330)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:309)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:301)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:235)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:191)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:141)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:90)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1610460093987.run(TempTestSuite1610460093987.groovy:39)]]></system-err>
+   </testsuite>
+</testsuites>

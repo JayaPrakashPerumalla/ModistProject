@@ -17,7 +17,7 @@ import com.kms.katalon.core.testobject.TestObject
 import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
-
+import org.openqa.selenium.Keys as Keys
 import internal.GlobalVariable
 import verification.Verification
 import webAction.WebAction
@@ -58,6 +58,7 @@ public class Assetsource {
 	@Keyword
 	def searchForAnAssetSource(String sourcename) {
 		actions.sendKeys(findTestObject('Object Repository/AssetSoure/Search'), sourcename)
+		WebUI.sendKeys(findTestObject('Object Repository/AssetSoure/Search'), Keys.chord(Keys.ENTER))
 	}
 
 	@Keyword
@@ -71,7 +72,7 @@ public class Assetsource {
 	def verifyAssetSourcePopUp() {
 
 		String path = 'Object Repository/AssetSource/'
-		
+
 		def elements = ["Source", "Tenant", "Cancel Button", "Asset Source button on popup",]
 		for(element in elements) {
 			verifications.verifyElementPresent(findTestObject(path+element), "The element "+element+" is not present")
@@ -122,9 +123,7 @@ public class Assetsource {
 	def cancelAssetSourcePopup(){
 		actions.click(findTestObject('Object Repository/AssetSoure/Cancel Button'))
 		verifications.verifyElementPresent(findTestObject('Object Repository/AssetSoure/Search'), "AssetSource popup is not getting closed")
-	} 
-	
-	
+	}
 }
 
 

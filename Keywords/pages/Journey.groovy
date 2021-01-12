@@ -8,15 +8,12 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable
 import verification.Verification
 import webAction.WebAction
-
+import org.openqa.selenium.Keys as Keys
 public class Journey {
-
-
 
 	WebAction actions = new WebAction()
 	Verification verifications = new Verification()
 	Random random = new Random()
-
 
 	@Keyword
 	def clickOnJourneyTab() {
@@ -44,7 +41,7 @@ public class Journey {
 
 	def searchJourney(def journeyName) {
 		actions.sendKeys(findTestObject('Object Repository/Journey/journrySearchInput'), journeyName)
-		Thread.sleep(2000)
+		actions.sendKeys(findTestObject('Object Repository/Journey/journrySearchInput'), Keys.chord(Keys.ENTER))
 		actions.waitForElementPresent(findTestObject('Object Repository/Journey/JourneyName(journeyName)',["journeyName":journeyName]))
 	}
 
@@ -109,7 +106,7 @@ public class Journey {
 	def getRandomJourneyName() {
 		actions.waitForElementPresent(findTestObject('Object Repository/Journey/toGetJourneysCount'))
 		int count = actions.getElementCount(findTestObject('Object Repository/Journey/toGetJourneysCount'))
-		
+
 		int index = random.nextInt(count)
 		def journeyName = WebUI.getText(findTestObject('Object Repository/Journey/toPickrandomJourney(index)',["index":index+1]))
 		return journeyName

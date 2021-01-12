@@ -1,0 +1,7 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+Brand,Chrome 87.0.4280.141,,,2021-01-12 05:46:34,2021-01-12 05:47:07,33.020s,PASSED
+,,,,,,,
+Test Cases/Admin/Brand/createBrandAndVerifyIsItSuccessfullyCreated,Chrome 87.0.4280.141,,,2021-01-12 05:46:55,2021-01-12 05:47:07,11.524s,PASSED
+pages.Brand.clickBrand(),Chrome 87.0.4280.141,,,2021-01-12 05:46:56,2021-01-12 05:46:57,1.699s,PASSED
+brandName = pages.Brand.addBrand(),Chrome 87.0.4280.141,,,2021-01-12 05:46:57,2021-01-12 05:47:03,5.424s,PASSED
+pages.Brand.verifyTheBrandCreated(brandName),Chrome 87.0.4280.141,,,2021-01-12 05:47:03,2021-01-12 05:47:07,4.178s,PASSED

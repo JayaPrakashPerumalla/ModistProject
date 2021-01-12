@@ -1,0 +1,1240 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Product" time="172.186" tests="8" failures="4" errors="0">
+   <testsuite name="Product" tests="8" failures="4" errors="0" time="172.186" timestamp="2021-01-12 04:20:57" hostname="Lenovo - DESKTOP-H3LAPEO" id="Test Suites/Product">
+      <properties>
+         <property name="deviceName" value=""/>
+         <property name="devicePlatform" value=""/>
+         <property name="logFolder" value="E:\\Modist Project\\ModistProject\\Reports\\20210112_042052\\Product\\20210112_042053"/>
+         <property name="logFiles" value="E:\\Modist Project\\ModistProject\\Reports\\20210112_042052\\Product\\20210112_042053\\execution0.log"/>
+         <property name="attachments" value="E:\\Modist Project\\ModistProject\\Reports\\20210112_042052\\Product\\20210112_042053\\1610443342390.png, E:\Modist Project\ModistProject\Reports\20210112_042052\Product\20210112_042053\1610443342985.png, E:\\Modist Project\\ModistProject\\Reports\\20210112_042052\\Product\\20210112_042053\\1610443388202.png, E:\Modist Project\ModistProject\Reports\20210112_042052\Product\20210112_042053\1610443388730.png, E:\\Modist Project\\ModistProject\\Reports\\20210112_042052\\Product\\20210112_042053\\1610443424723.png, E:\\Modist Project\\ModistProject\\Reports\\20210112_042052\\Product\\20210112_042053\\1610443427477.png"/>
+         <property name="hostName" value="Lenovo - DESKTOP-H3LAPEO"/>
+         <property name="os" value="Windows 10 64bit"/>
+         <property name="katalonVersion" value="7.7.0.205"/>
+         <property name="browser" value="Chrome 87.0.4280.141"/>
+         <property name="hostAddress" value="192.168.43.128"/>
+         <property name="sessionId" value="d05feb0846daf9142845c349d347606d"/>
+         <property name="seleniumVersion" value="3.141.59"/>
+         <property name="proxyInformation" value="ProxyInformation { proxyOption=NO_PROXY, proxyServerType=HTTP, username=, password=********, proxyServerAddress=, proxyServerPort=0, executionList=&quot;&quot;, isApplyToDesiredCapabilities=true }"/>
+         <property name="platform" value="Windows 10"/>
+      </properties>
+      <testcase name="Test Cases/Admin/Product/addProductAndVerify" time="14.056" classname="Test Cases/Admin/Product/addProductAndVerify" status="PASSED">
+         <system-out><![CDATA[2021-01-12 04:21:16 - [TEST_CASE][PASSED] - Test Cases/Admin/Product/addProductAndVerify: Test Cases/Admin/Product/addProductAndVerify
+
+2021-01-12 04:21:17 - [TEST_STEP][PASSED] - productname = pages.Product.addProduct(): pages.Product.addProduct is PASSED
+
+2021-01-12 04:21:18 - [MESSAGE][PASSED] - Object 'Object Repository/Product/productTab' is present
+
+2021-01-12 04:21:19 - [MESSAGE][PASSED] - Object 'Object Repository/Product/productTab' is visible
+
+2021-01-12 04:21:19 - [MESSAGE][PASSED] - Object 'Object Repository/Product/productTab' is clickable
+
+2021-01-12 04:21:20 - [MESSAGE][PASSED] - Object: 'Object Repository/Product/productTab' is clicked on
+
+2021-01-12 04:21:20 - [MESSAGE][PASSED] - Object 'Object Repository/Product/addProductButton' is present
+
+2021-01-12 04:21:20 - [MESSAGE][PASSED] - Object 'Object Repository/Product/addProductButton' is visible
+
+2021-01-12 04:21:21 - [MESSAGE][PASSED] - Object 'Object Repository/Product/addProductButton' is clickable
+
+2021-01-12 04:21:21 - [MESSAGE][PASSED] - Object: 'Object Repository/Product/addProductButton' is clicked on
+
+2021-01-12 04:21:21 - [MESSAGE][PASSED] - Object 'Object Repository/Product/productNameInput' is present
+
+2021-01-12 04:21:22 - [MESSAGE][PASSED] - Object 'Object Repository/Product/productNameInput' is visible
+
+2021-01-12 04:21:22 - [MESSAGE][PASSED] - Object 'Object Repository/Product/productNameInput' is clickable
+
+2021-01-12 04:21:22 - [MESSAGE][PASSED] - Text of object 'Object Repository/Product/productNameInput' is cleared
+
+2021-01-12 04:21:23 - [MESSAGE][PASSED] - Keys 'RandomProduct230' sent to object: 'Object Repository/Product/productNameInput'
+
+2021-01-12 04:21:23 - [MESSAGE][PASSED] - Object 'Object Repository/Product/descriptionFieldInput' is present
+
+2021-01-12 04:21:23 - [MESSAGE][PASSED] - Object 'Object Repository/Product/descriptionFieldInput' is visible
+
+2021-01-12 04:21:24 - [MESSAGE][PASSED] - Object 'Object Repository/Product/descriptionFieldInput' is clickable
+
+2021-01-12 04:21:24 - [MESSAGE][PASSED] - Text of object 'Object Repository/Product/descriptionFieldInput' is cleared
+
+2021-01-12 04:21:24 - [MESSAGE][PASSED] - Keys 'Sample text' sent to object: 'Object Repository/Product/descriptionFieldInput'
+
+2021-01-12 04:21:24 - [MESSAGE][PASSED] - Object 'Object Repository/Product/addproductButtonInAddProductPopUp' is present
+
+2021-01-12 04:21:25 - [MESSAGE][PASSED] - Object 'Object Repository/Product/addproductButtonInAddProductPopUp' is visible
+
+2021-01-12 04:21:25 - [MESSAGE][PASSED] - Object 'Object Repository/Product/addproductButtonInAddProductPopUp' is clickable
+
+2021-01-12 04:21:25 - [MESSAGE][PASSED] - Object: 'Object Repository/Product/addproductButtonInAddProductPopUp' is clicked on
+
+2021-01-12 04:21:25 - [MESSAGE][PASSED] - pages.Product.addProduct is PASSED
+
+2021-01-12 04:21:25 - [TEST_STEP][PASSED] - pages.Product.verifyProductAdded(productname): pages.Product.verifyProductAdded is PASSED
+
+2021-01-12 04:21:26 - [MESSAGE][PASSED] - Object 'Object Repository/Product/Filter by name' is present
+
+2021-01-12 04:21:26 - [MESSAGE][PASSED] - Object 'Object Repository/Product/Filter by name' is visible
+
+2021-01-12 04:21:26 - [MESSAGE][PASSED] - Object 'Object Repository/Product/Filter by name' is clickable
+
+2021-01-12 04:21:27 - [MESSAGE][PASSED] - Text of object 'Object Repository/Product/Filter by name' is cleared
+
+2021-01-12 04:21:27 - [MESSAGE][PASSED] - Keys 'RandomProduct230' sent to object: 'Object Repository/Product/Filter by name'
+
+2021-01-12 04:21:27 - [MESSAGE][PASSED] - Wait for page load successfully
+
+2021-01-12 04:21:30 - [MESSAGE][PASSED] - Object 'Object Repository/Product/productName(Name)' is present
+
+2021-01-12 04:21:30 - [MESSAGE][PASSED] - pages.Product.verifyProductAdded is PASSED
+
+2021-01-12 04:21:30 - [TEST_STEP][PASSED] - println(productname): null]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Admin/Product/checkWhetherTheProductIsAvailable" time="7.678" classname="Test Cases/Admin/Product/checkWhetherTheProductIsAvailable" status="PASSED">
+         <system-out><![CDATA[2021-01-12 04:21:30 - [TEST_CASE][PASSED] - Test Cases/Admin/Product/checkWhetherTheProductIsAvailable: Test Cases/Admin/Product/checkWhetherTheProductIsAvailable
+
+2021-01-12 04:21:31 - [TEST_STEP][PASSED] - pages.Product.clickOnProductTab(): pages.Product.clickOnProductTab is PASSED
+
+2021-01-12 04:21:31 - [MESSAGE][PASSED] - Object 'Object Repository/Product/productTab' is present
+
+2021-01-12 04:21:32 - [MESSAGE][PASSED] - Object 'Object Repository/Product/productTab' is visible
+
+2021-01-12 04:21:32 - [MESSAGE][PASSED] - Object 'Object Repository/Product/productTab' is clickable
+
+2021-01-12 04:21:33 - [MESSAGE][PASSED] - Object: 'Object Repository/Product/productTab' is clicked on
+
+2021-01-12 04:21:33 - [MESSAGE][PASSED] - pages.Product.clickOnProductTab is PASSED
+
+2021-01-12 04:21:33 - [TEST_STEP][PASSED] - pages.Product.openAnyExistingProduct("cars1"): pages.Product.openAnyExistingProduct is PASSED
+
+2021-01-12 04:21:33 - [MESSAGE][PASSED] - Object 'Object Repository/Product/Filter by name' is present
+
+2021-01-12 04:21:33 - [MESSAGE][PASSED] - Object 'Object Repository/Product/Filter by name' is visible
+
+2021-01-12 04:21:34 - [MESSAGE][PASSED] - Object 'Object Repository/Product/Filter by name' is clickable
+
+2021-01-12 04:21:34 - [MESSAGE][PASSED] - Text of object 'Object Repository/Product/Filter by name' is cleared
+
+2021-01-12 04:21:34 - [MESSAGE][PASSED] - Keys 'cars1' sent to object: 'Object Repository/Product/Filter by name'
+
+2021-01-12 04:21:34 - [MESSAGE][PASSED] - Wait for page load successfully
+
+2021-01-12 04:21:37 - [MESSAGE][PASSED] - Scroll to object 'Object Repository/Product/productName(Name)' successfully
+
+2021-01-12 04:21:37 - [MESSAGE][PASSED] - Object 'Object Repository/Product/productName(Name)' is present
+
+2021-01-12 04:21:37 - [MESSAGE][PASSED] - Object 'Object Repository/Product/productName(Name)' is visible
+
+2021-01-12 04:21:38 - [MESSAGE][PASSED] - Object 'Object Repository/Product/productName(Name)' is clickable
+
+2021-01-12 04:21:38 - [MESSAGE][PASSED] - Object: 'Object Repository/Product/productName(Name)' is clicked on
+
+2021-01-12 04:21:38 - [MESSAGE][PASSED] - pages.Product.openAnyExistingProduct is PASSED]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Admin/Product/deleteProductAndVerify" time="44.768" classname="Test Cases/Admin/Product/deleteProductAndVerify" status="FAILED">
+         <failure type="FAILED" message="Test Cases/Admin/Product/deleteProductAndVerify FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: The product product 123 is still shown in list
+	at com.kms.katalon.core.util.KeywordUtil.markFailedAndStop(KeywordUtil.java:28)
+	at com.kms.katalon.core.util.KeywordUtil$markFailedAndStop.call(Unknown Source)
+	at verification.Verification.verifyElementNotPresent(Verification.groovy:47)
+	at verification.Verification.verifyElementNotPresent(Verification.groovy)
+	at verification.Verification$verifyElementNotPresent$0.call(Unknown Source)
+	at pages.Product.verifyProductNotPresent(Product.groovy:100)
+	at pages.Product.invokeMethod(Product.groovy)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:50)
+	at deleteProductAndVerify.run(deleteProductAndVerify:23)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:339)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:330)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:309)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:301)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:235)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:191)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:141)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:90)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1610443253859.run(TempTestSuite1610443253859.groovy:39)
+"/>
+         <system-out><![CDATA[2021-01-12 04:21:38 - [TEST_CASE][FAILED] - Test Cases/Admin/Product/deleteProductAndVerify: Test Cases/Admin/Product/deleteProductAndVerify FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: The product product 123 is still shown in list
+	at com.kms.katalon.core.util.KeywordUtil.markFailedAndStop(KeywordUtil.java:28)
+	at com.kms.katalon.core.util.KeywordUtil$markFailedAndStop.call(Unknown Source)
+	at verification.Verification.verifyElementNotPresent(Verification.groovy:47)
+	at verification.Verification.verifyElementNotPresent(Verification.groovy)
+	at verification.Verification$verifyElementNotPresent$0.call(Unknown Source)
+	at pages.Product.verifyProductNotPresent(Product.groovy:100)
+	at pages.Product.invokeMethod(Product.groovy)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:50)
+	at deleteProductAndVerify.run(deleteProductAndVerify:23)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:339)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:330)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:309)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:301)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:235)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:191)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:141)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:90)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1610443253859.run(TempTestSuite1610443253859.groovy:39)
+
+
+2021-01-12 04:21:38 - [TEST_STEP][PASSED] - productname = pages.Product.getRandomProductNmae(): pages.Product.getRandomProductNmae is PASSED
+
+2021-01-12 04:21:39 - [MESSAGE][PASSED] - Object 'Object Repository/Product/productTab' is present
+
+2021-01-12 04:21:39 - [MESSAGE][PASSED] - Object 'Object Repository/Product/productTab' is visible
+
+2021-01-12 04:21:40 - [MESSAGE][PASSED] - Object 'Object Repository/Product/productTab' is clickable
+
+2021-01-12 04:21:40 - [MESSAGE][PASSED] - Object: 'Object Repository/Product/productTab' is clicked on
+
+2021-01-12 04:21:41 - [MESSAGE][PASSED] - Object 'Object Repository/Product/productsCount' is present
+
+2021-01-12 04:21:42 - [MESSAGE][PASSED] - Text of object 'Object Repository/Product/randomProduct(index)' is: 'product 123'
+
+2021-01-12 04:21:42 - [MESSAGE][PASSED] - pages.Product.getRandomProductNmae is PASSED
+
+2021-01-12 04:21:42 - [TEST_STEP][PASSED] - pages.Product.deleteProduct(productname): pages.Product.deleteProduct is PASSED
+
+2021-01-12 04:21:42 - [MESSAGE][PASSED] - Object 'Object Repository/Product/Filter by name' is present
+
+2021-01-12 04:21:43 - [MESSAGE][PASSED] - Object 'Object Repository/Product/Filter by name' is visible
+
+2021-01-12 04:21:43 - [MESSAGE][PASSED] - Object 'Object Repository/Product/Filter by name' is clickable
+
+2021-01-12 04:21:43 - [MESSAGE][PASSED] - Text of object 'Object Repository/Product/Filter by name' is cleared
+
+2021-01-12 04:21:44 - [MESSAGE][PASSED] - Keys 'product 123' sent to object: 'Object Repository/Product/Filter by name'
+
+2021-01-12 04:21:44 - [MESSAGE][PASSED] - Wait for page load successfully
+
+2021-01-12 04:21:44 - [MESSAGE][PASSED] - Object 'Object Repository/Product/productCheckBox(productName)' is present
+
+2021-01-12 04:21:45 - [MESSAGE][PASSED] - Object 'Object Repository/Product/productCheckBox(productName)' is visible
+
+2021-01-12 04:21:47 - [MESSAGE][PASSED] - Object 'Object Repository/Product/productCheckBox(productName)' is clickable
+
+2021-01-12 04:21:47 - [MESSAGE][PASSED] - Object: 'Object Repository/Product/productCheckBox(productName)' is clicked on
+
+2021-01-12 04:21:48 - [MESSAGE][PASSED] - Object 'Object Repository/Product/productDeleteButton' is present
+
+2021-01-12 04:21:48 - [MESSAGE][PASSED] - Object 'Object Repository/Product/productDeleteButton' is visible
+
+2021-01-12 04:21:48 - [MESSAGE][PASSED] - Object 'Object Repository/Product/productDeleteButton' is clickable
+
+2021-01-12 04:21:49 - [MESSAGE][PASSED] - Object: 'Object Repository/Product/productDeleteButton' is clicked on
+
+2021-01-12 04:21:49 - [MESSAGE][PASSED] - Alert accepted
+
+2021-01-12 04:21:49 - [MESSAGE][PASSED] - pages.Product.deleteProduct is PASSED
+
+2021-01-12 04:21:49 - [TEST_STEP][FAILED] - pages.Product.verifyProductNotPresent(productname): The product product 123 is still shown in list
+
+2021-01-12 04:21:50 - [MESSAGE][PASSED] - Object 'Object Repository/Product/Filter by name' is present
+
+2021-01-12 04:21:50 - [MESSAGE][PASSED] - Object 'Object Repository/Product/Filter by name' is visible
+
+2021-01-12 04:21:51 - [MESSAGE][PASSED] - Object 'Object Repository/Product/Filter by name' is clickable
+
+2021-01-12 04:21:51 - [MESSAGE][PASSED] - Text of object 'Object Repository/Product/Filter by name' is cleared
+
+2021-01-12 04:21:51 - [MESSAGE][PASSED] - Keys 'product 123' sent to object: 'Object Repository/Product/Filter by name'
+
+2021-01-12 04:21:51 - [MESSAGE][PASSED] - Wait for page load successfully
+
+2021-01-12 04:22:22 - [MESSAGE][WARNING] - Web element with id: 'Object Repository/Product/productName(Name)' located by 'By.xpath: //div[text()='product 123']/../..
+' is present after '30' second(s) (Root cause: com.kms.katalon.core.exception.StepFailedException: Web element with id: 'Object Repository/Product/productName(Name)' located by 'By.xpath: //div[text()='product 123']/../..
+' is present after '30' second(s)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain$stepFailed$0.call(Unknown Source)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementNotPresentKeyword$_verifyElementNotPresent_closure1.doCall(VerifyElementNotPresentKeyword.groovy:106)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementNotPresentKeyword$_verifyElementNotPresent_closure1.doCall(VerifyElementNotPresentKeyword.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:20)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain$runKeyword.call(Unknown Source)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementNotPresentKeyword.verifyElementNotPresent(VerifyElementNotPresentKeyword.groovy:117)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementNotPresentKeyword.execute(VerifyElementNotPresentKeyword.groovy:68)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:73)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.verifyElementNotPresent(WebUiBuiltInKeywords.groovy:1478)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$verifyElementNotPresent$13.call(Unknown Source)
+	at verification.Verification.verifyElementNotPresent(Verification.groovy:45)
+	at verification.Verification.verifyElementNotPresent(Verification.groovy)
+	at verification.Verification$verifyElementNotPresent$0.call(Unknown Source)
+	at pages.Product.verifyProductNotPresent(Product.groovy:100)
+	at pages.Product.invokeMethod(Product.groovy)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:50)
+	at deleteProductAndVerify.run(deleteProductAndVerify:23)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:339)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:330)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:309)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:301)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:235)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:191)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:141)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:90)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1610443253859.run(TempTestSuite1610443253859.groovy:39)
+)
+[[ATTACHMENT|E:\\Modist Project\\ModistProject\\Reports\\20210112_042052\\Product\\20210112_042053\\1610443342390.png]]
+
+2021-01-12 04:22:23 - [MESSAGE][PASSED] - Taking screenshot successfully
+[[ATTACHMENT|E:\Modist Project\ModistProject\Reports\20210112_042052\Product\20210112_042053\1610443342985.png]]
+
+2021-01-12 04:22:23 - [MESSAGE][FAILED] - The product product 123 is still shown in list]]></system-out>
+         <system-err><![CDATA[2021-01-12 04:21:38 - [TEST_CASE][FAILED] - Test Cases/Admin/Product/deleteProductAndVerify: Test Cases/Admin/Product/deleteProductAndVerify FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: The product product 123 is still shown in list
+	at com.kms.katalon.core.util.KeywordUtil.markFailedAndStop(KeywordUtil.java:28)
+	at com.kms.katalon.core.util.KeywordUtil$markFailedAndStop.call(Unknown Source)
+	at verification.Verification.verifyElementNotPresent(Verification.groovy:47)
+	at verification.Verification.verifyElementNotPresent(Verification.groovy)
+	at verification.Verification$verifyElementNotPresent$0.call(Unknown Source)
+	at pages.Product.verifyProductNotPresent(Product.groovy:100)
+	at pages.Product.invokeMethod(Product.groovy)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:50)
+	at deleteProductAndVerify.run(deleteProductAndVerify:23)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:339)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:330)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:309)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:301)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:235)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:191)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:141)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:90)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1610443253859.run(TempTestSuite1610443253859.groovy:39)]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Admin/Product/deleteProductFromProductEditPageAndVerify" time="45.688" classname="Test Cases/Admin/Product/deleteProductFromProductEditPageAndVerify" status="FAILED">
+         <failure type="FAILED" message="Test Cases/Admin/Product/deleteProductFromProductEditPageAndVerify FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: The product product 123 is still shown in list
+	at com.kms.katalon.core.util.KeywordUtil.markFailedAndStop(KeywordUtil.java:28)
+	at com.kms.katalon.core.util.KeywordUtil$markFailedAndStop.call(Unknown Source)
+	at verification.Verification.verifyElementNotPresent(Verification.groovy:47)
+	at verification.Verification.verifyElementNotPresent(Verification.groovy)
+	at verification.Verification$verifyElementNotPresent$0.call(Unknown Source)
+	at pages.Product.verifyProductNotPresent(Product.groovy:100)
+	at pages.Product.invokeMethod(Product.groovy)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:50)
+	at deleteProductFromProductEditPageAndVerify.run(deleteProductFromProductEditPageAndVerify:27)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:339)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:330)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:309)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:301)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:235)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:191)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:141)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:90)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1610443253859.run(TempTestSuite1610443253859.groovy:39)
+"/>
+         <system-out><![CDATA[2021-01-12 04:22:23 - [TEST_CASE][FAILED] - Test Cases/Admin/Product/deleteProductFromProductEditPageAndVerify: Test Cases/Admin/Product/deleteProductFromProductEditPageAndVerify FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: The product product 123 is still shown in list
+	at com.kms.katalon.core.util.KeywordUtil.markFailedAndStop(KeywordUtil.java:28)
+	at com.kms.katalon.core.util.KeywordUtil$markFailedAndStop.call(Unknown Source)
+	at verification.Verification.verifyElementNotPresent(Verification.groovy:47)
+	at verification.Verification.verifyElementNotPresent(Verification.groovy)
+	at verification.Verification$verifyElementNotPresent$0.call(Unknown Source)
+	at pages.Product.verifyProductNotPresent(Product.groovy:100)
+	at pages.Product.invokeMethod(Product.groovy)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:50)
+	at deleteProductFromProductEditPageAndVerify.run(deleteProductFromProductEditPageAndVerify:27)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:339)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:330)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:309)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:301)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:235)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:191)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:141)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:90)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1610443253859.run(TempTestSuite1610443253859.groovy:39)
+
+
+2021-01-12 04:22:23 - [TEST_STEP][PASSED] - productname = pages.Product.getRandomProductNmae(): pages.Product.getRandomProductNmae is PASSED
+
+2021-01-12 04:22:23 - [MESSAGE][PASSED] - Object 'Object Repository/Product/productTab' is present
+
+2021-01-12 04:22:24 - [MESSAGE][PASSED] - Object 'Object Repository/Product/productTab' is visible
+
+2021-01-12 04:22:24 - [MESSAGE][PASSED] - Object 'Object Repository/Product/productTab' is clickable
+
+2021-01-12 04:22:24 - [MESSAGE][PASSED] - Object: 'Object Repository/Product/productTab' is clicked on
+
+2021-01-12 04:22:24 - [MESSAGE][PASSED] - Object 'Object Repository/Product/productsCount' is present
+
+2021-01-12 04:22:25 - [MESSAGE][PASSED] - Text of object 'Object Repository/Product/randomProduct(index)' is: 'product 123'
+
+2021-01-12 04:22:25 - [MESSAGE][PASSED] - pages.Product.getRandomProductNmae is PASSED
+
+2021-01-12 04:22:25 - [TEST_STEP][PASSED] - pages.Product.openAnyExistingProduct(productname): pages.Product.openAnyExistingProduct is PASSED
+
+2021-01-12 04:22:25 - [MESSAGE][PASSED] - Object 'Object Repository/Product/Filter by name' is present
+
+2021-01-12 04:22:26 - [MESSAGE][PASSED] - Object 'Object Repository/Product/Filter by name' is visible
+
+2021-01-12 04:22:26 - [MESSAGE][PASSED] - Object 'Object Repository/Product/Filter by name' is clickable
+
+2021-01-12 04:22:26 - [MESSAGE][PASSED] - Text of object 'Object Repository/Product/Filter by name' is cleared
+
+2021-01-12 04:22:27 - [MESSAGE][PASSED] - Keys 'product 123' sent to object: 'Object Repository/Product/Filter by name'
+
+2021-01-12 04:22:27 - [MESSAGE][PASSED] - Wait for page load successfully
+
+2021-01-12 04:22:27 - [MESSAGE][PASSED] - Scroll to object 'Object Repository/Product/productName(Name)' successfully
+
+2021-01-12 04:22:30 - [MESSAGE][PASSED] - Object 'Object Repository/Product/productName(Name)' is present
+
+2021-01-12 04:22:30 - [MESSAGE][PASSED] - Object 'Object Repository/Product/productName(Name)' is visible
+
+2021-01-12 04:22:30 - [MESSAGE][PASSED] - Object 'Object Repository/Product/productName(Name)' is clickable
+
+2021-01-12 04:22:30 - [MESSAGE][PASSED] - Object: 'Object Repository/Product/productName(Name)' is clicked on
+
+2021-01-12 04:22:30 - [MESSAGE][PASSED] - pages.Product.openAnyExistingProduct is PASSED
+
+2021-01-12 04:22:30 - [TEST_STEP][PASSED] - pages.Product.clickDeleteButtonInProductEditPage(): pages.Product.clickDeleteButtonInProductEditPage is PASSED
+
+2021-01-12 04:22:32 - [MESSAGE][PASSED] - Object 'Object Repository/Product/ProductEditPage/deleteButton' is present
+
+2021-01-12 04:22:33 - [MESSAGE][PASSED] - Object 'Object Repository/Product/ProductEditPage/deleteButton' is visible
+
+2021-01-12 04:22:33 - [MESSAGE][PASSED] - Object 'Object Repository/Product/ProductEditPage/deleteButton' is clickable
+
+2021-01-12 04:22:33 - [MESSAGE][PASSED] - Object: 'Object Repository/Product/ProductEditPage/deleteButton' is clicked on
+
+2021-01-12 04:22:33 - [MESSAGE][PASSED] - pages.Product.clickDeleteButtonInProductEditPage is PASSED
+
+2021-01-12 04:22:33 - [TEST_STEP][PASSED] - pages.Product.clickCloseButtonInProductEditPage(): pages.Product.clickCloseButtonInProductEditPage is PASSED
+
+2021-01-12 04:22:34 - [MESSAGE][PASSED] - Object 'Object Repository/Product/ProductEditPage/closeButton' is present
+
+2021-01-12 04:22:34 - [MESSAGE][PASSED] - Object 'Object Repository/Product/ProductEditPage/closeButton' is visible
+
+2021-01-12 04:22:35 - [MESSAGE][PASSED] - Object 'Object Repository/Product/ProductEditPage/closeButton' is clickable
+
+2021-01-12 04:22:35 - [MESSAGE][PASSED] - Object: 'Object Repository/Product/ProductEditPage/closeButton' is clicked on
+
+2021-01-12 04:22:35 - [MESSAGE][PASSED] - pages.Product.clickCloseButtonInProductEditPage is PASSED
+
+2021-01-12 04:22:35 - [TEST_STEP][FAILED] - pages.Product.verifyProductNotPresent(productname): The product product 123 is still shown in list
+
+2021-01-12 04:22:36 - [MESSAGE][PASSED] - Object 'Object Repository/Product/Filter by name' is present
+
+2021-01-12 04:22:36 - [MESSAGE][PASSED] - Object 'Object Repository/Product/Filter by name' is visible
+
+2021-01-12 04:22:37 - [MESSAGE][PASSED] - Object 'Object Repository/Product/Filter by name' is clickable
+
+2021-01-12 04:22:37 - [MESSAGE][PASSED] - Text of object 'Object Repository/Product/Filter by name' is cleared
+
+2021-01-12 04:22:37 - [MESSAGE][PASSED] - Keys 'product 123' sent to object: 'Object Repository/Product/Filter by name'
+
+2021-01-12 04:22:37 - [MESSAGE][PASSED] - Wait for page load successfully
+
+2021-01-12 04:23:08 - [MESSAGE][WARNING] - Web element with id: 'Object Repository/Product/productName(Name)' located by 'By.xpath: //div[text()='product 123']/../..
+' is present after '30' second(s) (Root cause: com.kms.katalon.core.exception.StepFailedException: Web element with id: 'Object Repository/Product/productName(Name)' located by 'By.xpath: //div[text()='product 123']/../..
+' is present after '30' second(s)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain$stepFailed$0.call(Unknown Source)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementNotPresentKeyword$_verifyElementNotPresent_closure1.doCall(VerifyElementNotPresentKeyword.groovy:106)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementNotPresentKeyword$_verifyElementNotPresent_closure1.doCall(VerifyElementNotPresentKeyword.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:20)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain$runKeyword.call(Unknown Source)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementNotPresentKeyword.verifyElementNotPresent(VerifyElementNotPresentKeyword.groovy:117)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementNotPresentKeyword.execute(VerifyElementNotPresentKeyword.groovy:68)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:73)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.verifyElementNotPresent(WebUiBuiltInKeywords.groovy:1478)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$verifyElementNotPresent$13.call(Unknown Source)
+	at verification.Verification.verifyElementNotPresent(Verification.groovy:45)
+	at verification.Verification.verifyElementNotPresent(Verification.groovy)
+	at verification.Verification$verifyElementNotPresent$0.call(Unknown Source)
+	at pages.Product.verifyProductNotPresent(Product.groovy:100)
+	at pages.Product.invokeMethod(Product.groovy)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:50)
+	at deleteProductFromProductEditPageAndVerify.run(deleteProductFromProductEditPageAndVerify:27)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:339)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:330)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:309)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:301)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:235)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:191)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:141)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:90)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1610443253859.run(TempTestSuite1610443253859.groovy:39)
+)
+[[ATTACHMENT|E:\\Modist Project\\ModistProject\\Reports\\20210112_042052\\Product\\20210112_042053\\1610443388202.png]]
+
+2021-01-12 04:23:09 - [MESSAGE][PASSED] - Taking screenshot successfully
+[[ATTACHMENT|E:\Modist Project\ModistProject\Reports\20210112_042052\Product\20210112_042053\1610443388730.png]]
+
+2021-01-12 04:23:09 - [MESSAGE][FAILED] - The product product 123 is still shown in list]]></system-out>
+         <system-err><![CDATA[2021-01-12 04:22:23 - [TEST_CASE][FAILED] - Test Cases/Admin/Product/deleteProductFromProductEditPageAndVerify: Test Cases/Admin/Product/deleteProductFromProductEditPageAndVerify FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: The product product 123 is still shown in list
+	at com.kms.katalon.core.util.KeywordUtil.markFailedAndStop(KeywordUtil.java:28)
+	at com.kms.katalon.core.util.KeywordUtil$markFailedAndStop.call(Unknown Source)
+	at verification.Verification.verifyElementNotPresent(Verification.groovy:47)
+	at verification.Verification.verifyElementNotPresent(Verification.groovy)
+	at verification.Verification$verifyElementNotPresent$0.call(Unknown Source)
+	at pages.Product.verifyProductNotPresent(Product.groovy:100)
+	at pages.Product.invokeMethod(Product.groovy)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:50)
+	at deleteProductFromProductEditPageAndVerify.run(deleteProductFromProductEditPageAndVerify:27)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:339)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:330)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:309)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:301)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:235)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:191)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:141)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:90)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1610443253859.run(TempTestSuite1610443253859.groovy:39)]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Admin/Product/editProductNameAndVerify" time="28.972" classname="Test Cases/Admin/Product/editProductNameAndVerify" status="PASSED">
+         <system-out><![CDATA[2021-01-12 04:23:09 - [TEST_CASE][PASSED] - Test Cases/Admin/Product/editProductNameAndVerify: Test Cases/Admin/Product/editProductNameAndVerify
+
+2021-01-12 04:23:09 - [TEST_STEP][PASSED] - productname = pages.Product.addProduct(): pages.Product.addProduct is PASSED
+
+2021-01-12 04:23:09 - [MESSAGE][PASSED] - Object 'Object Repository/Product/productTab' is present
+
+2021-01-12 04:23:09 - [MESSAGE][PASSED] - Object 'Object Repository/Product/productTab' is visible
+
+2021-01-12 04:23:10 - [MESSAGE][PASSED] - Object 'Object Repository/Product/productTab' is clickable
+
+2021-01-12 04:23:10 - [MESSAGE][PASSED] - Object: 'Object Repository/Product/productTab' is clicked on
+
+2021-01-12 04:23:10 - [MESSAGE][PASSED] - Object 'Object Repository/Product/addProductButton' is present
+
+2021-01-12 04:23:10 - [MESSAGE][PASSED] - Object 'Object Repository/Product/addProductButton' is visible
+
+2021-01-12 04:23:11 - [MESSAGE][PASSED] - Object 'Object Repository/Product/addProductButton' is clickable
+
+2021-01-12 04:23:11 - [MESSAGE][PASSED] - Object: 'Object Repository/Product/addProductButton' is clicked on
+
+2021-01-12 04:23:12 - [MESSAGE][PASSED] - Object 'Object Repository/Product/productNameInput' is present
+
+2021-01-12 04:23:12 - [MESSAGE][PASSED] - Object 'Object Repository/Product/productNameInput' is visible
+
+2021-01-12 04:23:12 - [MESSAGE][PASSED] - Object 'Object Repository/Product/productNameInput' is clickable
+
+2021-01-12 04:23:12 - [MESSAGE][PASSED] - Text of object 'Object Repository/Product/productNameInput' is cleared
+
+2021-01-12 04:23:13 - [MESSAGE][PASSED] - Keys 'RandomProduct141' sent to object: 'Object Repository/Product/productNameInput'
+
+2021-01-12 04:23:13 - [MESSAGE][PASSED] - Object 'Object Repository/Product/descriptionFieldInput' is present
+
+2021-01-12 04:23:13 - [MESSAGE][PASSED] - Object 'Object Repository/Product/descriptionFieldInput' is visible
+
+2021-01-12 04:23:13 - [MESSAGE][PASSED] - Object 'Object Repository/Product/descriptionFieldInput' is clickable
+
+2021-01-12 04:23:14 - [MESSAGE][PASSED] - Text of object 'Object Repository/Product/descriptionFieldInput' is cleared
+
+2021-01-12 04:23:14 - [MESSAGE][PASSED] - Keys 'Sample text' sent to object: 'Object Repository/Product/descriptionFieldInput'
+
+2021-01-12 04:23:14 - [MESSAGE][PASSED] - Object 'Object Repository/Product/addproductButtonInAddProductPopUp' is present
+
+2021-01-12 04:23:15 - [MESSAGE][PASSED] - Object 'Object Repository/Product/addproductButtonInAddProductPopUp' is visible
+
+2021-01-12 04:23:15 - [MESSAGE][PASSED] - Object 'Object Repository/Product/addproductButtonInAddProductPopUp' is clickable
+
+2021-01-12 04:23:15 - [MESSAGE][PASSED] - Object: 'Object Repository/Product/addproductButtonInAddProductPopUp' is clicked on
+
+2021-01-12 04:23:15 - [MESSAGE][PASSED] - pages.Product.addProduct is PASSED
+
+2021-01-12 04:23:15 - [TEST_STEP][PASSED] - pages.Product.openAnyExistingProduct(productname): pages.Product.openAnyExistingProduct is PASSED
+
+2021-01-12 04:23:16 - [MESSAGE][PASSED] - Object 'Object Repository/Product/Filter by name' is present
+
+2021-01-12 04:23:17 - [MESSAGE][PASSED] - Object 'Object Repository/Product/Filter by name' is visible
+
+2021-01-12 04:23:17 - [MESSAGE][PASSED] - Object 'Object Repository/Product/Filter by name' is clickable
+
+2021-01-12 04:23:17 - [MESSAGE][PASSED] - Text of object 'Object Repository/Product/Filter by name' is cleared
+
+2021-01-12 04:23:18 - [MESSAGE][PASSED] - Keys 'RandomProduct141' sent to object: 'Object Repository/Product/Filter by name'
+
+2021-01-12 04:23:18 - [MESSAGE][PASSED] - Wait for page load successfully
+
+2021-01-12 04:23:19 - [MESSAGE][PASSED] - Scroll to object 'Object Repository/Product/productName(Name)' successfully
+
+2021-01-12 04:23:20 - [MESSAGE][PASSED] - Object 'Object Repository/Product/productName(Name)' is present
+
+2021-01-12 04:23:20 - [MESSAGE][PASSED] - Object 'Object Repository/Product/productName(Name)' is visible
+
+2021-01-12 04:23:20 - [MESSAGE][PASSED] - Object 'Object Repository/Product/productName(Name)' is clickable
+
+2021-01-12 04:23:20 - [MESSAGE][PASSED] - Object: 'Object Repository/Product/productName(Name)' is clicked on
+
+2021-01-12 04:23:20 - [MESSAGE][PASSED] - pages.Product.openAnyExistingProduct is PASSED
+
+2021-01-12 04:23:20 - [TEST_STEP][PASSED] - editedName = pages.Product.editProductName(): pages.Product.editProductName is PASSED
+
+2021-01-12 04:23:25 - [MESSAGE][PASSED] - Delayed 5 second(s)
+
+2021-01-12 04:23:26 - [MESSAGE][PASSED] - Text of object 'Object Repository/Product/ProductEditPage/productNameInput' is cleared
+
+2021-01-12 04:23:26 - [MESSAGE][PASSED] - Object 'Object Repository/Product/ProductEditPage/productNameInput' is present
+
+2021-01-12 04:23:26 - [MESSAGE][PASSED] - Object 'Object Repository/Product/ProductEditPage/productNameInput' is visible
+
+2021-01-12 04:23:27 - [MESSAGE][PASSED] - Object 'Object Repository/Product/ProductEditPage/productNameInput' is clickable
+
+2021-01-12 04:23:27 - [MESSAGE][PASSED] - Text of object 'Object Repository/Product/ProductEditPage/productNameInput' is cleared
+
+2021-01-12 04:23:27 - [MESSAGE][PASSED] - Keys 'RandomProduct76' sent to object: 'Object Repository/Product/ProductEditPage/productNameInput'
+
+2021-01-12 04:23:27 - [MESSAGE][PASSED] - Object 'Object Repository/Product/ProductEditPage/saveChangesButton' is present
+
+2021-01-12 04:23:28 - [MESSAGE][PASSED] - Object 'Object Repository/Product/ProductEditPage/saveChangesButton' is visible
+
+2021-01-12 04:23:28 - [MESSAGE][PASSED] - Object 'Object Repository/Product/ProductEditPage/saveChangesButton' is clickable
+
+2021-01-12 04:23:28 - [MESSAGE][PASSED] - Object: 'Object Repository/Product/ProductEditPage/saveChangesButton' is clicked on
+
+2021-01-12 04:23:29 - [MESSAGE][PASSED] - Object 'Object Repository/Product/ProductEditPage/closeButton' is present
+
+2021-01-12 04:23:30 - [MESSAGE][PASSED] - Object 'Object Repository/Product/ProductEditPage/closeButton' is visible
+
+2021-01-12 04:23:30 - [MESSAGE][PASSED] - Object 'Object Repository/Product/ProductEditPage/closeButton' is clickable
+
+2021-01-12 04:23:30 - [MESSAGE][PASSED] - Object: 'Object Repository/Product/ProductEditPage/closeButton' is clicked on
+
+2021-01-12 04:23:30 - [MESSAGE][PASSED] - pages.Product.editProductName is PASSED
+
+2021-01-12 04:23:30 - [TEST_STEP][PASSED] - pages.Product.verifyProductAdded(editedName): pages.Product.verifyProductAdded is PASSED
+
+2021-01-12 04:23:31 - [MESSAGE][PASSED] - Object 'Object Repository/Product/Filter by name' is present
+
+2021-01-12 04:23:32 - [MESSAGE][PASSED] - Object 'Object Repository/Product/Filter by name' is visible
+
+2021-01-12 04:23:32 - [MESSAGE][PASSED] - Object 'Object Repository/Product/Filter by name' is clickable
+
+2021-01-12 04:23:32 - [MESSAGE][PASSED] - Text of object 'Object Repository/Product/Filter by name' is cleared
+
+2021-01-12 04:23:33 - [MESSAGE][PASSED] - Keys 'RandomProduct76' sent to object: 'Object Repository/Product/Filter by name'
+
+2021-01-12 04:23:33 - [MESSAGE][PASSED] - Wait for page load successfully
+
+2021-01-12 04:23:34 - [MESSAGE][PASSED] - Object 'Object Repository/Product/productName(Name)' is present
+
+2021-01-12 04:23:34 - [MESSAGE][PASSED] - pages.Product.verifyProductAdded is PASSED
+
+2021-01-12 04:23:34 - [TEST_STEP][PASSED] - pages.Product.verifyProductNotPresent(productname): pages.Product.verifyProductNotPresent is PASSED
+
+2021-01-12 04:23:34 - [MESSAGE][PASSED] - Object 'Object Repository/Product/Filter by name' is present
+
+2021-01-12 04:23:35 - [MESSAGE][PASSED] - Object 'Object Repository/Product/Filter by name' is visible
+
+2021-01-12 04:23:35 - [MESSAGE][PASSED] - Object 'Object Repository/Product/Filter by name' is clickable
+
+2021-01-12 04:23:35 - [MESSAGE][PASSED] - Text of object 'Object Repository/Product/Filter by name' is cleared
+
+2021-01-12 04:23:36 - [MESSAGE][PASSED] - Keys 'RandomProduct141' sent to object: 'Object Repository/Product/Filter by name'
+
+2021-01-12 04:23:36 - [MESSAGE][PASSED] - Wait for page load successfully
+
+2021-01-12 04:23:37 - [MESSAGE][PASSED] - Web element with id: 'Object Repository/Product/productName(Name)' located by 'By.xpath: //div[text()='RandomProduct141']/../..
+' is not present after '30' second(s)
+
+2021-01-12 04:23:37 - [MESSAGE][PASSED] - pages.Product.verifyProductNotPresent is PASSED]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Admin/Product/verifyAddProductPopUp" time="4.189" classname="Test Cases/Admin/Product/verifyAddProductPopUp" status="PASSED">
+         <system-out><![CDATA[2021-01-12 04:23:37 - [TEST_CASE][PASSED] - Test Cases/Admin/Product/verifyAddProductPopUp: Test Cases/Admin/Product/verifyAddProductPopUp
+
+2021-01-12 04:23:38 - [TEST_STEP][PASSED] - pages.Product.clickOnProductTab(): pages.Product.clickOnProductTab is PASSED
+
+2021-01-12 04:23:38 - [MESSAGE][PASSED] - Object 'Object Repository/Product/productTab' is present
+
+2021-01-12 04:23:38 - [MESSAGE][PASSED] - Object 'Object Repository/Product/productTab' is visible
+
+2021-01-12 04:23:39 - [MESSAGE][PASSED] - Object 'Object Repository/Product/productTab' is clickable
+
+2021-01-12 04:23:39 - [MESSAGE][PASSED] - Object: 'Object Repository/Product/productTab' is clicked on
+
+2021-01-12 04:23:39 - [MESSAGE][PASSED] - pages.Product.clickOnProductTab is PASSED
+
+2021-01-12 04:23:39 - [TEST_STEP][PASSED] - pages.Product.clickOnAddProductButton(): pages.Product.clickOnAddProductButton is PASSED
+
+2021-01-12 04:23:39 - [MESSAGE][PASSED] - Object 'Object Repository/Product/addProductButton' is present
+
+2021-01-12 04:23:39 - [MESSAGE][PASSED] - Object 'Object Repository/Product/addProductButton' is visible
+
+2021-01-12 04:23:40 - [MESSAGE][PASSED] - Object 'Object Repository/Product/addProductButton' is clickable
+
+2021-01-12 04:23:40 - [MESSAGE][PASSED] - Object: 'Object Repository/Product/addProductButton' is clicked on
+
+2021-01-12 04:23:40 - [MESSAGE][PASSED] - pages.Product.clickOnAddProductButton is PASSED
+
+2021-01-12 04:23:40 - [TEST_STEP][PASSED] - pages.Product.verifyProductPopUp(): pages.Product.verifyProductPopUp is PASSED
+
+2021-01-12 04:23:41 - [MESSAGE][PASSED] - Object 'Object Repository/Product/productNameInput' is present
+
+2021-01-12 04:23:41 - [MESSAGE][PASSED] - Object 'Object Repository/Product/descriptionFieldInput' is present
+
+2021-01-12 04:23:41 - [MESSAGE][PASSED] - Object 'Object Repository/Product/cancelButtonInAddProductPopUp' is present
+
+2021-01-12 04:23:41 - [MESSAGE][PASSED] - Object 'Object Repository/Product/addproductButtonInAddProductPopUp' is present
+
+2021-01-12 04:23:42 - [MESSAGE][PASSED] - Object 'Object Repository/Product/publishedDropDown' is present
+
+2021-01-12 04:23:42 - [MESSAGE][PASSED] - pages.Product.verifyProductPopUp is PASSED]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Admin/Product/verifyCloseButtonFunctionalityInProductEditPage" time="2.827" classname="Test Cases/Admin/Product/verifyCloseButtonFunctionalityInProductEditPage" status="FAILED">
+         <failure type="FAILED" message="Test Cases/Admin/Product/verifyCloseButtonFunctionalityInProductEditPage FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Unable to click on object 'Object Repository/Product/productTab'
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:26)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.click(ClickKeyword.groovy:76)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.execute(ClickKeyword.groovy:43)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:73)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.click(WebUiBuiltInKeywords.groovy:617)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$click$7.call(Unknown Source)
+	at webAction.WebAction.click(WebAction.groovy:25)
+	at webAction.WebAction$click$1.call(Unknown Source)
+	at pages.Product.clickOnProductTab(Product.groovy:36)
+	at pages.Product.getRandomProductNmae(Product.groovy:65)
+	at pages.Product.invokeMethod(Product.groovy)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:50)
+	at verifyCloseButtonFunctionalityInProductEditPage.run(verifyCloseButtonFunctionalityInProductEditPage:19)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:339)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:330)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:309)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:301)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:235)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:191)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:141)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:90)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1610443253859.run(TempTestSuite1610443253859.groovy:39)
+Caused by: org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;a>...&lt;/a> is not clickable at point (1111, 29). Other element would receive the click: &lt;div role=&quot;dialog&quot; aria-modal=&quot;true&quot; class=&quot;fade modal show&quot; tabindex=&quot;-1&quot; style=&quot;display: block;&quot;>...&lt;/div>
+  (Session info: chrome=87.0.4280.141)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: 'DESKTOP-H3LAPEO', ip: '192.168.43.128', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_181'
+Driver info: com.kms.katalon.selenium.driver.CChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 87.0.4280.141, chrome: {chromedriverVersion: 87.0.4280.88 (89e2380a3e36c..., userDataDir: C:\Users\Lenovo\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:64255}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: d05feb0846daf9142845c349d347606d
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at com.kms.katalon.selenium.driver.CChromeDriver.execute(CChromeDriver.java:19)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement.lambda$new$0(EventFiringWebDriver.java:404)
+	at com.sun.proxy.$Proxy11.click(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement.click(EventFiringWebDriver.java:417)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword$_click_closure1.doCall(ClickKeyword.groovy:69)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword$_click_closure1.call(ClickKeyword.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:20)
+	... 25 more
+"/>
+         <system-out><![CDATA[2021-01-12 04:23:42 - [TEST_CASE][FAILED] - Test Cases/Admin/Product/verifyCloseButtonFunctionalityInProductEditPage: Test Cases/Admin/Product/verifyCloseButtonFunctionalityInProductEditPage FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Unable to click on object 'Object Repository/Product/productTab'
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:26)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.click(ClickKeyword.groovy:76)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.execute(ClickKeyword.groovy:43)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:73)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.click(WebUiBuiltInKeywords.groovy:617)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$click$7.call(Unknown Source)
+	at webAction.WebAction.click(WebAction.groovy:25)
+	at webAction.WebAction$click$1.call(Unknown Source)
+	at pages.Product.clickOnProductTab(Product.groovy:36)
+	at pages.Product.getRandomProductNmae(Product.groovy:65)
+	at pages.Product.invokeMethod(Product.groovy)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:50)
+	at verifyCloseButtonFunctionalityInProductEditPage.run(verifyCloseButtonFunctionalityInProductEditPage:19)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:339)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:330)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:309)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:301)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:235)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:191)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:141)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:90)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1610443253859.run(TempTestSuite1610443253859.groovy:39)
+Caused by: org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <a>...</a> is not clickable at point (1111, 29). Other element would receive the click: <div role="dialog" aria-modal="true" class="fade modal show" tabindex="-1" style="display: block;">...</div>
+  (Session info: chrome=87.0.4280.141)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: 'DESKTOP-H3LAPEO', ip: '192.168.43.128', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_181'
+Driver info: com.kms.katalon.selenium.driver.CChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 87.0.4280.141, chrome: {chromedriverVersion: 87.0.4280.88 (89e2380a3e36c..., userDataDir: C:\Users\Lenovo\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:64255}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: d05feb0846daf9142845c349d347606d
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at com.kms.katalon.selenium.driver.CChromeDriver.execute(CChromeDriver.java:19)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement.lambda$new$0(EventFiringWebDriver.java:404)
+	at com.sun.proxy.$Proxy11.click(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement.click(EventFiringWebDriver.java:417)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword$_click_closure1.doCall(ClickKeyword.groovy:69)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword$_click_closure1.call(ClickKeyword.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:20)
+	... 25 more
+
+
+2021-01-12 04:23:42 - [TEST_STEP][FAILED] - productname = pages.Product.getRandomProductNmae(): Unable to click on object 'Object Repository/Product/productTab'
+
+2021-01-12 04:23:42 - [MESSAGE][PASSED] - Object 'Object Repository/Product/productTab' is present
+
+2021-01-12 04:23:43 - [MESSAGE][PASSED] - Object 'Object Repository/Product/productTab' is visible
+
+2021-01-12 04:23:43 - [MESSAGE][PASSED] - Object 'Object Repository/Product/productTab' is clickable
+
+2021-01-12 04:23:44 - [MESSAGE][FAILED] - Unable to click on object 'Object Repository/Product/productTab' (Root cause: com.kms.katalon.core.exception.StepFailedException: Unable to click on object 'Object Repository/Product/productTab'
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:26)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.click(ClickKeyword.groovy:76)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.execute(ClickKeyword.groovy:43)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:73)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.click(WebUiBuiltInKeywords.groovy:617)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$click$7.call(Unknown Source)
+	at webAction.WebAction.click(WebAction.groovy:25)
+	at webAction.WebAction$click$1.call(Unknown Source)
+	at pages.Product.clickOnProductTab(Product.groovy:36)
+	at pages.Product.getRandomProductNmae(Product.groovy:65)
+	at pages.Product.invokeMethod(Product.groovy)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:50)
+	at verifyCloseButtonFunctionalityInProductEditPage.run(verifyCloseButtonFunctionalityInProductEditPage:19)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:339)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:330)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:309)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:301)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:235)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:191)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:141)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:90)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1610443253859.run(TempTestSuite1610443253859.groovy:39)
+Caused by: org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <a>...</a> is not clickable at point (1111, 29). Other element would receive the click: <div role="dialog" aria-modal="true" class="fade modal show" tabindex="-1" style="display: block;">...</div>
+  (Session info: chrome=87.0.4280.141)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: 'DESKTOP-H3LAPEO', ip: '192.168.43.128', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_181'
+Driver info: com.kms.katalon.selenium.driver.CChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 87.0.4280.141, chrome: {chromedriverVersion: 87.0.4280.88 (89e2380a3e36c..., userDataDir: C:\Users\Lenovo\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:64255}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: d05feb0846daf9142845c349d347606d
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at com.kms.katalon.selenium.driver.CChromeDriver.execute(CChromeDriver.java:19)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement.lambda$new$0(EventFiringWebDriver.java:404)
+	at com.sun.proxy.$Proxy11.click(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement.click(EventFiringWebDriver.java:417)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword$_click_closure1.doCall(ClickKeyword.groovy:69)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword$_click_closure1.call(ClickKeyword.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:20)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.click(ClickKeyword.groovy:76)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.execute(ClickKeyword.groovy:43)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:73)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.click(WebUiBuiltInKeywords.groovy:617)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$click$7.call(Unknown Source)
+	at webAction.WebAction.click(WebAction.groovy:25)
+	at webAction.WebAction$click$1.call(Unknown Source)
+	at pages.Product.clickOnProductTab(Product.groovy:36)
+	at pages.Product.getRandomProductNmae(Product.groovy:65)
+	at pages.Product.invokeMethod(Product.groovy)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:50)
+	at Script1609859132689.run(Script1609859132689.groovy:19)
+	... 13 more
+)
+[[ATTACHMENT|E:\\Modist Project\\ModistProject\\Reports\\20210112_042052\\Product\\20210112_042053\\1610443424723.png]]
+
+2021-01-12 04:23:44 - [MESSAGE][FAILED] - Unable to click on object 'Object Repository/Product/productTab']]></system-out>
+         <system-err><![CDATA[2021-01-12 04:23:42 - [TEST_CASE][FAILED] - Test Cases/Admin/Product/verifyCloseButtonFunctionalityInProductEditPage: Test Cases/Admin/Product/verifyCloseButtonFunctionalityInProductEditPage FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Unable to click on object 'Object Repository/Product/productTab'
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:26)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.click(ClickKeyword.groovy:76)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.execute(ClickKeyword.groovy:43)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:73)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.click(WebUiBuiltInKeywords.groovy:617)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$click$7.call(Unknown Source)
+	at webAction.WebAction.click(WebAction.groovy:25)
+	at webAction.WebAction$click$1.call(Unknown Source)
+	at pages.Product.clickOnProductTab(Product.groovy:36)
+	at pages.Product.getRandomProductNmae(Product.groovy:65)
+	at pages.Product.invokeMethod(Product.groovy)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:50)
+	at verifyCloseButtonFunctionalityInProductEditPage.run(verifyCloseButtonFunctionalityInProductEditPage:19)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:339)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:330)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:309)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:301)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:235)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:191)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:141)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:90)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1610443253859.run(TempTestSuite1610443253859.groovy:39)
+Caused by: org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <a>...</a> is not clickable at point (1111, 29). Other element would receive the click: <div role="dialog" aria-modal="true" class="fade modal show" tabindex="-1" style="display: block;">...</div>
+  (Session info: chrome=87.0.4280.141)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: 'DESKTOP-H3LAPEO', ip: '192.168.43.128', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_181'
+Driver info: com.kms.katalon.selenium.driver.CChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 87.0.4280.141, chrome: {chromedriverVersion: 87.0.4280.88 (89e2380a3e36c..., userDataDir: C:\Users\Lenovo\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:64255}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: d05feb0846daf9142845c349d347606d
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at com.kms.katalon.selenium.driver.CChromeDriver.execute(CChromeDriver.java:19)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement.lambda$new$0(EventFiringWebDriver.java:404)
+	at com.sun.proxy.$Proxy11.click(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement.click(EventFiringWebDriver.java:417)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword$_click_closure1.doCall(ClickKeyword.groovy:69)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword$_click_closure1.call(ClickKeyword.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:20)
+	... 25 more]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Admin/Product/verifySaveChangesDeleteAndCloseButtonInProductDetailspage" time="2.754" classname="Test Cases/Admin/Product/verifySaveChangesDeleteAndCloseButtonInProductDetailspage" status="FAILED">
+         <failure type="FAILED" message="Test Cases/Admin/Product/verifySaveChangesDeleteAndCloseButtonInProductDetailspage FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Unable to click on object 'Object Repository/Product/productTab'
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:26)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.click(ClickKeyword.groovy:76)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.execute(ClickKeyword.groovy:43)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:73)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.click(WebUiBuiltInKeywords.groovy:617)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$click$7.call(Unknown Source)
+	at webAction.WebAction.click(WebAction.groovy:25)
+	at webAction.WebAction$click$1.call(Unknown Source)
+	at pages.Product.clickOnProductTab(Product.groovy:36)
+	at pages.Product.addProduct(Product.groovy:48)
+	at pages.Product.invokeMethod(Product.groovy)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:50)
+	at verifySaveChangesDeleteAndCloseButtonInProductDetailspage.run(verifySaveChangesDeleteAndCloseButtonInProductDetailspage:21)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:339)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:330)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:309)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:301)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:235)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:191)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:141)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:90)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1610443253859.run(TempTestSuite1610443253859.groovy:39)
+Caused by: org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;a>...&lt;/a> is not clickable at point (1111, 29). Other element would receive the click: &lt;div role=&quot;dialog&quot; aria-modal=&quot;true&quot; class=&quot;fade modal show&quot; tabindex=&quot;-1&quot; style=&quot;display: block;&quot;>...&lt;/div>
+  (Session info: chrome=87.0.4280.141)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: 'DESKTOP-H3LAPEO', ip: '192.168.43.128', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_181'
+Driver info: com.kms.katalon.selenium.driver.CChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 87.0.4280.141, chrome: {chromedriverVersion: 87.0.4280.88 (89e2380a3e36c..., userDataDir: C:\Users\Lenovo\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:64255}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: d05feb0846daf9142845c349d347606d
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at com.kms.katalon.selenium.driver.CChromeDriver.execute(CChromeDriver.java:19)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement.lambda$new$0(EventFiringWebDriver.java:404)
+	at com.sun.proxy.$Proxy11.click(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement.click(EventFiringWebDriver.java:417)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword$_click_closure1.doCall(ClickKeyword.groovy:69)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword$_click_closure1.call(ClickKeyword.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:20)
+	... 25 more
+"/>
+         <system-out><![CDATA[2021-01-12 04:23:45 - [TEST_CASE][FAILED] - Test Cases/Admin/Product/verifySaveChangesDeleteAndCloseButtonInProductDetailspage: Test Cases/Admin/Product/verifySaveChangesDeleteAndCloseButtonInProductDetailspage FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Unable to click on object 'Object Repository/Product/productTab'
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:26)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.click(ClickKeyword.groovy:76)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.execute(ClickKeyword.groovy:43)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:73)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.click(WebUiBuiltInKeywords.groovy:617)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$click$7.call(Unknown Source)
+	at webAction.WebAction.click(WebAction.groovy:25)
+	at webAction.WebAction$click$1.call(Unknown Source)
+	at pages.Product.clickOnProductTab(Product.groovy:36)
+	at pages.Product.addProduct(Product.groovy:48)
+	at pages.Product.invokeMethod(Product.groovy)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:50)
+	at verifySaveChangesDeleteAndCloseButtonInProductDetailspage.run(verifySaveChangesDeleteAndCloseButtonInProductDetailspage:21)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:339)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:330)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:309)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:301)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:235)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:191)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:141)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:90)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1610443253859.run(TempTestSuite1610443253859.groovy:39)
+Caused by: org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <a>...</a> is not clickable at point (1111, 29). Other element would receive the click: <div role="dialog" aria-modal="true" class="fade modal show" tabindex="-1" style="display: block;">...</div>
+  (Session info: chrome=87.0.4280.141)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: 'DESKTOP-H3LAPEO', ip: '192.168.43.128', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_181'
+Driver info: com.kms.katalon.selenium.driver.CChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 87.0.4280.141, chrome: {chromedriverVersion: 87.0.4280.88 (89e2380a3e36c..., userDataDir: C:\Users\Lenovo\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:64255}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: d05feb0846daf9142845c349d347606d
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at com.kms.katalon.selenium.driver.CChromeDriver.execute(CChromeDriver.java:19)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement.lambda$new$0(EventFiringWebDriver.java:404)
+	at com.sun.proxy.$Proxy11.click(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement.click(EventFiringWebDriver.java:417)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword$_click_closure1.doCall(ClickKeyword.groovy:69)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword$_click_closure1.call(ClickKeyword.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:20)
+	... 25 more
+
+
+2021-01-12 04:23:45 - [TEST_STEP][FAILED] - productname = pages.Product.addProduct(): Unable to click on object 'Object Repository/Product/productTab'
+
+2021-01-12 04:23:45 - [MESSAGE][PASSED] - Object 'Object Repository/Product/productTab' is present
+
+2021-01-12 04:23:45 - [MESSAGE][PASSED] - Object 'Object Repository/Product/productTab' is visible
+
+2021-01-12 04:23:46 - [MESSAGE][PASSED] - Object 'Object Repository/Product/productTab' is clickable
+
+2021-01-12 04:23:47 - [MESSAGE][FAILED] - Unable to click on object 'Object Repository/Product/productTab' (Root cause: com.kms.katalon.core.exception.StepFailedException: Unable to click on object 'Object Repository/Product/productTab'
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:26)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.click(ClickKeyword.groovy:76)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.execute(ClickKeyword.groovy:43)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:73)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.click(WebUiBuiltInKeywords.groovy:617)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$click$7.call(Unknown Source)
+	at webAction.WebAction.click(WebAction.groovy:25)
+	at webAction.WebAction$click$1.call(Unknown Source)
+	at pages.Product.clickOnProductTab(Product.groovy:36)
+	at pages.Product.addProduct(Product.groovy:48)
+	at pages.Product.invokeMethod(Product.groovy)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:50)
+	at verifySaveChangesDeleteAndCloseButtonInProductDetailspage.run(verifySaveChangesDeleteAndCloseButtonInProductDetailspage:21)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:339)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:330)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:309)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:301)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:235)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:191)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:141)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:90)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1610443253859.run(TempTestSuite1610443253859.groovy:39)
+Caused by: org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <a>...</a> is not clickable at point (1111, 29). Other element would receive the click: <div role="dialog" aria-modal="true" class="fade modal show" tabindex="-1" style="display: block;">...</div>
+  (Session info: chrome=87.0.4280.141)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: 'DESKTOP-H3LAPEO', ip: '192.168.43.128', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_181'
+Driver info: com.kms.katalon.selenium.driver.CChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 87.0.4280.141, chrome: {chromedriverVersion: 87.0.4280.88 (89e2380a3e36c..., userDataDir: C:\Users\Lenovo\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:64255}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: d05feb0846daf9142845c349d347606d
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at com.kms.katalon.selenium.driver.CChromeDriver.execute(CChromeDriver.java:19)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement.lambda$new$0(EventFiringWebDriver.java:404)
+	at com.sun.proxy.$Proxy11.click(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement.click(EventFiringWebDriver.java:417)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword$_click_closure1.doCall(ClickKeyword.groovy:69)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword$_click_closure1.call(ClickKeyword.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:20)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.click(ClickKeyword.groovy:76)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.execute(ClickKeyword.groovy:43)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:73)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.click(WebUiBuiltInKeywords.groovy:617)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$click$7.call(Unknown Source)
+	at webAction.WebAction.click(WebAction.groovy:25)
+	at webAction.WebAction$click$1.call(Unknown Source)
+	at pages.Product.clickOnProductTab(Product.groovy:36)
+	at pages.Product.addProduct(Product.groovy:48)
+	at pages.Product.invokeMethod(Product.groovy)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:50)
+	at Script1609752409374.run(Script1609752409374.groovy:21)
+	... 13 more
+)
+[[ATTACHMENT|E:\\Modist Project\\ModistProject\\Reports\\20210112_042052\\Product\\20210112_042053\\1610443427477.png]]
+
+2021-01-12 04:23:47 - [MESSAGE][FAILED] - Unable to click on object 'Object Repository/Product/productTab']]></system-out>
+         <system-err><![CDATA[2021-01-12 04:23:45 - [TEST_CASE][FAILED] - Test Cases/Admin/Product/verifySaveChangesDeleteAndCloseButtonInProductDetailspage: Test Cases/Admin/Product/verifySaveChangesDeleteAndCloseButtonInProductDetailspage FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Unable to click on object 'Object Repository/Product/productTab'
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:26)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.click(ClickKeyword.groovy:76)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.execute(ClickKeyword.groovy:43)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:73)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.click(WebUiBuiltInKeywords.groovy:617)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$click$7.call(Unknown Source)
+	at webAction.WebAction.click(WebAction.groovy:25)
+	at webAction.WebAction$click$1.call(Unknown Source)
+	at pages.Product.clickOnProductTab(Product.groovy:36)
+	at pages.Product.addProduct(Product.groovy:48)
+	at pages.Product.invokeMethod(Product.groovy)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:50)
+	at verifySaveChangesDeleteAndCloseButtonInProductDetailspage.run(verifySaveChangesDeleteAndCloseButtonInProductDetailspage:21)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:339)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:330)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:309)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:301)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:235)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:191)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:141)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:90)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1610443253859.run(TempTestSuite1610443253859.groovy:39)
+Caused by: org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <a>...</a> is not clickable at point (1111, 29). Other element would receive the click: <div role="dialog" aria-modal="true" class="fade modal show" tabindex="-1" style="display: block;">...</div>
+  (Session info: chrome=87.0.4280.141)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: 'DESKTOP-H3LAPEO', ip: '192.168.43.128', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_181'
+Driver info: com.kms.katalon.selenium.driver.CChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 87.0.4280.141, chrome: {chromedriverVersion: 87.0.4280.88 (89e2380a3e36c..., userDataDir: C:\Users\Lenovo\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:64255}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: d05feb0846daf9142845c349d347606d
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at com.kms.katalon.selenium.driver.CChromeDriver.execute(CChromeDriver.java:19)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement.lambda$new$0(EventFiringWebDriver.java:404)
+	at com.sun.proxy.$Proxy11.click(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement.click(EventFiringWebDriver.java:417)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword$_click_closure1.doCall(ClickKeyword.groovy:69)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword$_click_closure1.call(ClickKeyword.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:20)
+	... 25 more]]></system-err>
+      </testcase>
+      <system-out><![CDATA[2021-01-12 04:20:57 - [TEST_SUITE][FAILED] - Product: Test Cases/Admin/Product/deleteProductAndVerify FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: The product product 123 is still shown in list
+	at com.kms.katalon.core.util.KeywordUtil.markFailedAndStop(KeywordUtil.java:28)
+	at com.kms.katalon.core.util.KeywordUtil$markFailedAndStop.call(Unknown Source)
+	at verification.Verification.verifyElementNotPresent(Verification.groovy:47)
+	at verification.Verification.verifyElementNotPresent(Verification.groovy)
+	at verification.Verification$verifyElementNotPresent$0.call(Unknown Source)
+	at pages.Product.verifyProductNotPresent(Product.groovy:100)
+	at pages.Product.invokeMethod(Product.groovy)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:50)
+	at deleteProductAndVerify.run(deleteProductAndVerify:23)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:339)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:330)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:309)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:301)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:235)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:191)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:141)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:90)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1610443253859.run(TempTestSuite1610443253859.groovy:39)]]></system-out>
+      <system-err><![CDATA[2021-01-12 04:20:57 - [TEST_SUITE][FAILED] - Product: Test Cases/Admin/Product/deleteProductAndVerify FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: The product product 123 is still shown in list
+	at com.kms.katalon.core.util.KeywordUtil.markFailedAndStop(KeywordUtil.java:28)
+	at com.kms.katalon.core.util.KeywordUtil$markFailedAndStop.call(Unknown Source)
+	at verification.Verification.verifyElementNotPresent(Verification.groovy:47)
+	at verification.Verification.verifyElementNotPresent(Verification.groovy)
+	at verification.Verification$verifyElementNotPresent$0.call(Unknown Source)
+	at pages.Product.verifyProductNotPresent(Product.groovy:100)
+	at pages.Product.invokeMethod(Product.groovy)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:50)
+	at deleteProductAndVerify.run(deleteProductAndVerify:23)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:339)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:330)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:309)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:301)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:235)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:191)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:141)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:90)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1610443253859.run(TempTestSuite1610443253859.groovy:39)]]></system-err>
+   </testsuite>
+</testsuites>

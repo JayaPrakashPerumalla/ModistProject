@@ -26,13 +26,13 @@
    <testCaseLink>
       <guid>0e0812fd-4fa4-4e80-b89d-86e8a1e0e3df</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/Admin/Asset/deleteAssetAndVerify</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>33963985-4cca-4c29-9df5-379941ab495a</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/Admin/Asset/editSourceInAssetEditPageAndVerify</testCaseId>
    </testCaseLink>
    <testCaseLink>

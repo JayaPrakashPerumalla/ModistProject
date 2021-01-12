@@ -1,0 +1,21 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+Brand,Chrome 87.0.4280.141,,,2021-01-12 08:51:22,2021-01-12 08:52:41,1m - 18.133s,PASSED
+,,,,,,,
+Test Cases/Admin/Brand/createBrandAndVerifyIsItSuccessfullyCreated,Chrome 87.0.4280.141,,,2021-01-12 08:51:44,2021-01-12 08:52:05,21.128s,PASSED
+Start listener action : login,Chrome 87.0.4280.141,,,2021-01-12 08:51:44,2021-01-12 08:51:51,7.219s,PASSED
+pages.Brand.clickBrand(),Chrome 87.0.4280.141,,,2021-01-12 08:51:51,2021-01-12 08:51:52,0.642s,PASSED
+brandName = pages.Brand.addBrand(),Chrome 87.0.4280.141,,,2021-01-12 08:51:52,2021-01-12 08:51:58,5.752s,PASSED
+pages.Brand.verifyTheBrandCreated(brandName),Chrome 87.0.4280.141,,,2021-01-12 08:51:58,2021-01-12 08:52:05,7.073s,PASSED
+,,,,,,,
+Test Cases/Admin/Brand/Delete a Brand and verify,Chrome 87.0.4280.141,,,2021-01-12 08:52:05,2021-01-12 08:52:32,27.085s,PASSED
+Start listener action : login,Chrome 87.0.4280.141,,,2021-01-12 08:52:05,2021-01-12 08:52:12,6.802s,PASSED
+brandName = pages.Brand.addBrand(),Chrome 87.0.4280.141,,,2021-01-12 08:52:12,2021-01-12 08:52:17,4.834s,PASSED
+println(brandName),Chrome 87.0.4280.141,,,2021-01-12 08:52:17,2021-01-12 08:52:17,0.004s,PASSED
+pages.Brand.deleteBrand(brandName),Chrome 87.0.4280.141,,,2021-01-12 08:52:17,2021-01-12 08:52:26,9.205s,PASSED
+pages.Brand.verifyABrandDeleted(brandName),Chrome 87.0.4280.141,,,2021-01-12 08:52:26,2021-01-12 08:52:32,5.960s,PASSED
+,,,,,,,
+Test Cases/Admin/Brand/Verify elements on Add Brand popup,Chrome 87.0.4280.141,,,2021-01-12 08:52:32,2021-01-12 08:52:41,8.534s,PASSED
+Start listener action : login,Chrome 87.0.4280.141,,,2021-01-12 08:52:32,2021-01-12 08:52:38,6.072s,PASSED
+pages.Brand.clickBrand(),Chrome 87.0.4280.141,,,2021-01-12 08:52:38,2021-01-12 08:52:39,0.507s,PASSED
+pages.Brand.clickAddBrand(),Chrome 87.0.4280.141,,,2021-01-12 08:52:39,2021-01-12 08:52:39,0.487s,PASSED
+pages.Brand.verifyBrandPopUp(),Chrome 87.0.4280.141,,,2021-01-12 08:52:39,2021-01-12 08:52:41,1.210s,PASSED

@@ -15,11 +15,10 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 
+// Navigate to journey page
 CustomKeywords.'pages.Journey.clickOnJourneyTab'()
 
-def journeyName = CustomKeywords.'pages.Journey.addJourney'() 
-println journeyName
-
+// Deleting the journey and verifying
+def journeyName = CustomKeywords.'pages.Journey.addJourney'()
 CustomKeywords.'pages.Journey.deleteJourney'(journeyName)
-
 CustomKeywords.'pages.Journey.verifyJourneyDeleted'(journeyName)

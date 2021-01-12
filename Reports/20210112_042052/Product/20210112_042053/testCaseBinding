@@ -1,0 +1,8 @@
+{"testCaseName":"Test Cases/Admin/Product/addProductAndVerify","testCaseId":"Test Cases/Admin/Product/addProductAndVerify"}
+{"testCaseName":"Test Cases/Admin/Product/checkWhetherTheProductIsAvailable","testCaseId":"Test Cases/Admin/Product/checkWhetherTheProductIsAvailable"}
+{"testCaseName":"Test Cases/Admin/Product/deleteProductAndVerify","testCaseId":"Test Cases/Admin/Product/deleteProductAndVerify"}
+{"testCaseName":"Test Cases/Admin/Product/deleteProductFromProductEditPageAndVerify","testCaseId":"Test Cases/Admin/Product/deleteProductFromProductEditPageAndVerify"}
+{"testCaseName":"Test Cases/Admin/Product/editProductNameAndVerify","testCaseId":"Test Cases/Admin/Product/editProductNameAndVerify"}
+{"testCaseName":"Test Cases/Admin/Product/verifyAddProductPopUp","testCaseId":"Test Cases/Admin/Product/verifyAddProductPopUp"}
+{"testCaseName":"Test Cases/Admin/Product/verifyCloseButtonFunctionalityInProductEditPage","testCaseId":"Test Cases/Admin/Product/verifyCloseButtonFunctionalityInProductEditPage"}
+{"testCaseName":"Test Cases/Admin/Product/verifySaveChangesDeleteAndCloseButtonInProductDetailspage","testCaseId":"Test Cases/Admin/Product/verifySaveChangesDeleteAndCloseButtonInProductDetailspage"}

@@ -1,0 +1,19 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+Journey,Chrome 87.0.4280.141,,,2021-01-12 07:13:54,2021-01-12 07:15:20,1m - 25.511s,PASSED
+,,,,,,,
+Test Cases/Admin/Journey/addJournyAndVerifyItisAdded,Chrome 87.0.4280.141,,,2021-01-12 07:14:13,2021-01-12 07:14:28,15.349s,PASSED
+pages.Journey.clickOnJourneyTab(),Chrome 87.0.4280.141,,,2021-01-12 07:14:13,2021-01-12 07:14:16,2.818s,PASSED
+journeyName = pages.Journey.addJourney(),Chrome 87.0.4280.141,,,2021-01-12 07:14:16,2021-01-12 07:14:20,4.101s,PASSED
+pages.Journey.verifyJourneyAdded(journeyName),Chrome 87.0.4280.141,,,2021-01-12 07:14:20,2021-01-12 07:14:28,8.159s,PASSED
+,,,,,,,
+Test Cases/Admin/Journey/createMultipleAccessCodesWithSameName,Chrome 87.0.4280.141,,,2021-01-12 07:14:28,2021-01-12 07:15:20,51.285s,PASSED
+pages.Journey.clickOnJourneyTab(),Chrome 87.0.4280.141,,,2021-01-12 07:14:29,2021-01-12 07:14:30,1.113s,PASSED
+journeyName = pages.Journey.getRandomJourneyName(),Chrome 87.0.4280.141,,,2021-01-12 07:14:30,2021-01-12 07:14:31,1.290s,PASSED
+accessCode = pages.Journey.getRandomAccessCode(),Chrome 87.0.4280.141,,,2021-01-12 07:14:31,2021-01-12 07:14:31,0.001s,PASSED
+useLimit = pages.Journey.getRandomCount(),Chrome 87.0.4280.141,,,2021-01-12 07:14:31,2021-01-12 07:14:31,0.002s,PASSED
+"accessCode = pages.Journey.createAccessCodeInJourney(journeyName, accessCode, useLimit)",Chrome 87.0.4280.141,,,2021-01-12 07:14:31,2021-01-12 07:14:45,14.085s,PASSED
+"pages.Journey.verifyTheCreatedAccessCode(journeyName, accessCode)",Chrome 87.0.4280.141,,,2021-01-12 07:14:45,2021-01-12 07:14:54,9.083s,PASSED
+journeyName1 = pages.Journey.getRandomJourneyName(),Chrome 87.0.4280.141,,,2021-01-12 07:14:54,2021-01-12 07:14:56,1.660s,PASSED
+println(journeyName1),Chrome 87.0.4280.141,,,2021-01-12 07:14:56,2021-01-12 07:14:56,0.004s,PASSED
+"accessCode = pages.Journey.createAccessCodeInJourney(journeyName1, accessCode, useLimit)",Chrome 87.0.4280.141,,,2021-01-12 07:14:56,2021-01-12 07:15:11,14.635s,PASSED
+"pages.Journey.verifyTheCreatedAccessCode(journeyName1, accessCode)",Chrome 87.0.4280.141,,,2021-01-12 07:15:11,2021-01-12 07:15:20,9.166s,PASSED

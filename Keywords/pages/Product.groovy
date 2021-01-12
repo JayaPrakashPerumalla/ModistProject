@@ -2,7 +2,7 @@ package pages
 
 import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
 
-import org.openqa.selenium.By
+import org.openqa.selenium.Keys
 import org.openqa.selenium.WebDriver
 import org.openqa.selenium.WebElement
 import org.openqa.selenium.interactions.Actions
@@ -83,7 +83,7 @@ public class Product {
 	@Keyword
 	def searchForAProduct(String productName) {
 		actions.sendKeys(findTestObject('Object Repository/Product/Filter by name'), productName)
-		WebUI.waitForPageLoad(10)
+		actions.sendKeys(findTestObject('Object Repository/Product/Filter by name'), Keys.chord(Keys.ENTER))
 	}
 
 	@Keyword

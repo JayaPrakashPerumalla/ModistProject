@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="AssetSource" time="65.617" tests="2" failures="1" errors="0">
+   <testsuite name="AssetSource" tests="2" failures="1" errors="0" time="65.617" timestamp="2021-01-12 07:10:56" hostname="Lenovo - DESKTOP-H3LAPEO" id="Test Suites/AssetSource">
+      <properties>
+         <property name="deviceName" value=""/>
+         <property name="devicePlatform" value=""/>
+         <property name="logFolder" value="E:\\Modist Project\\ModistProject\\Reports\\20210112_070617\\AssetSource\\20210112_070620"/>
+         <property name="logFiles" value="E:\\Modist Project\\ModistProject\\Reports\\20210112_070617\\AssetSource\\20210112_070620\\execution0.log"/>
+         <property name="attachments" value="E:\\Modist Project\\ModistProject\\Reports\\20210112_070617\\AssetSource\\20210112_070620\\1610453515507.png, E:\Modist Project\ModistProject\Reports\20210112_070617\AssetSource\20210112_070620\1610453516072.png"/>
+         <property name="hostName" value="Lenovo - DESKTOP-H3LAPEO"/>
+         <property name="os" value="Windows 10 64bit"/>
+         <property name="katalonVersion" value="7.7.0.205"/>
+         <property name="browser" value="Chrome 87.0.4280.141"/>
+         <property name="hostAddress" value="192.168.43.128"/>
+         <property name="sessionId" value="a334291f99cf64e7884a8fca630e336a"/>
+         <property name="seleniumVersion" value="3.141.59"/>
+         <property name="proxyInformation" value="ProxyInformation { proxyOption=NO_PROXY, proxyServerType=HTTP, username=, password=********, proxyServerAddress=, proxyServerPort=0, executionList=&quot;&quot;, isApplyToDesiredCapabilities=true }"/>
+         <property name="platform" value="Windows 10"/>
+      </properties>
+      <testcase name="Test Cases/Admin/AssetSource/Add An AssetSource" time="41.785" classname="Test Cases/Admin/AssetSource/Add An AssetSource" status="FAILED">
+         <failure type="FAILED" message="Test Cases/Admin/AssetSource/Add An AssetSource FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: The AssetSource RandomAsset413 is not added in the list
+	at com.kms.katalon.core.util.KeywordUtil.markFailedAndStop(KeywordUtil.java:28)
+	at com.kms.katalon.core.util.KeywordUtil$markFailedAndStop.call(Unknown Source)
+	at verification.Verification.verifyElementPresent(Verification.groovy:31)
+	at verification.Verification.verifyElementPresent(Verification.groovy)
+	at verification.Verification$verifyElementPresent.call(Unknown Source)
+	at pages.Assetsource.verifyAssetSourceAdded(Assetsource.groovy:67)
+	at pages.Assetsource.invokeMethod(Assetsource.groovy)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:50)
+	at Add An AssetSource.run(Add An AssetSource:20)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:339)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:330)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:309)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:301)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:235)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:191)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:141)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:90)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1610453180068.run(TempTestSuite1610453180068.groovy:39)
+"/>
+         <system-out><![CDATA[2021-01-12 07:11:14 - [TEST_CASE][FAILED] - Test Cases/Admin/AssetSource/Add An AssetSource: Test Cases/Admin/AssetSource/Add An AssetSource FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: The AssetSource RandomAsset413 is not added in the list
+	at com.kms.katalon.core.util.KeywordUtil.markFailedAndStop(KeywordUtil.java:28)
+	at com.kms.katalon.core.util.KeywordUtil$markFailedAndStop.call(Unknown Source)
+	at verification.Verification.verifyElementPresent(Verification.groovy:31)
+	at verification.Verification.verifyElementPresent(Verification.groovy)
+	at verification.Verification$verifyElementPresent.call(Unknown Source)
+	at pages.Assetsource.verifyAssetSourceAdded(Assetsource.groovy:67)
+	at pages.Assetsource.invokeMethod(Assetsource.groovy)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:50)
+	at Add An AssetSource.run(Add An AssetSource:20)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:339)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:330)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:309)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:301)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:235)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:191)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:141)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:90)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1610453180068.run(TempTestSuite1610453180068.groovy:39)
+
+
+2021-01-12 07:11:14 - [TEST_STEP][PASSED] - sourcename = pages.Assetsource.addAssetSource(): pages.Assetsource.addAssetSource is PASSED
+
+2021-01-12 07:11:16 - [MESSAGE][PASSED] - Object 'Object Repository/AssetSoure/Asset Source Tab' is present
+
+2021-01-12 07:11:16 - [MESSAGE][PASSED] - Object 'Object Repository/AssetSoure/Asset Source Tab' is visible
+
+2021-01-12 07:11:16 - [MESSAGE][PASSED] - Object 'Object Repository/AssetSoure/Asset Source Tab' is clickable
+
+2021-01-12 07:11:17 - [MESSAGE][PASSED] - Object: 'Object Repository/AssetSoure/Asset Source Tab' is clicked on
+
+2021-01-12 07:11:17 - [MESSAGE][PASSED] - Object 'Object Repository/AssetSoure/Add Asset Source Button' is present
+
+2021-01-12 07:11:17 - [MESSAGE][PASSED] - Object 'Object Repository/AssetSoure/Add Asset Source Button' is present
+
+2021-01-12 07:11:18 - [MESSAGE][PASSED] - Object 'Object Repository/AssetSoure/Add Asset Source Button' is visible
+
+2021-01-12 07:11:18 - [MESSAGE][PASSED] - Object 'Object Repository/AssetSoure/Add Asset Source Button' is clickable
+
+2021-01-12 07:11:18 - [MESSAGE][PASSED] - Object: 'Object Repository/AssetSoure/Add Asset Source Button' is clicked on
+
+2021-01-12 07:11:18 - [MESSAGE][PASSED] - Wait for page load successfully
+
+2021-01-12 07:11:19 - [MESSAGE][PASSED] - Object 'Object Repository/AssetSoure/Source' is present
+
+2021-01-12 07:11:19 - [MESSAGE][PASSED] - Object 'Object Repository/AssetSoure/Source' is visible
+
+2021-01-12 07:11:19 - [MESSAGE][PASSED] - Object 'Object Repository/AssetSoure/Source' is clickable
+
+2021-01-12 07:11:20 - [MESSAGE][PASSED] - Text of object 'Object Repository/AssetSoure/Source' is cleared
+
+2021-01-12 07:11:20 - [MESSAGE][PASSED] - Keys 'RandomAsset413' sent to object: 'Object Repository/AssetSoure/Source'
+
+2021-01-12 07:11:21 - [MESSAGE][PASSED] - Object 'Object Repository/AssetSoure/Asset Source button on popup' is present
+
+2021-01-12 07:11:21 - [MESSAGE][PASSED] - Object 'Object Repository/AssetSoure/Asset Source button on popup' is visible
+
+2021-01-12 07:11:21 - [MESSAGE][PASSED] - Object 'Object Repository/AssetSoure/Asset Source button on popup' is clickable
+
+2021-01-12 07:11:22 - [MESSAGE][PASSED] - Object: 'Object Repository/AssetSoure/Asset Source button on popup' is clicked on
+
+2021-01-12 07:11:22 - [MESSAGE][PASSED] - pages.Assetsource.addAssetSource is PASSED
+
+2021-01-12 07:11:22 - [TEST_STEP][FAILED] - pages.Assetsource.verifyAssetSourceAdded(sourcename): The AssetSource RandomAsset413 is not added in the list
+
+2021-01-12 07:11:22 - [MESSAGE][PASSED] - Object 'Object Repository/AssetSoure/Search' is present
+
+2021-01-12 07:11:23 - [MESSAGE][PASSED] - Object 'Object Repository/AssetSoure/Search' is visible
+
+2021-01-12 07:11:23 - [MESSAGE][PASSED] - Object 'Object Repository/AssetSoure/Search' is clickable
+
+2021-01-12 07:11:23 - [MESSAGE][PASSED] - Text of object 'Object Repository/AssetSoure/Search' is cleared
+
+2021-01-12 07:11:24 - [MESSAGE][PASSED] - Keys 'RandomAsset413' sent to object: 'Object Repository/AssetSoure/Search'
+
+2021-01-12 07:11:55 - [MESSAGE][INFO] - Unable to find the element located by 'By.xpath: //div[text()='RandomAsset413']'. Please recheck the objects properties to make sure the desired element is located. 
+
+2021-01-12 07:11:55 - [MESSAGE][WARNING] - com.kms.katalon.core.webui.exception.WebElementNotFoundException: Web element with id: 'Object Repository/AssetSoure/AssetSourceName' located by '//div[text()='RandomAsset413']' not found (Root cause: com.kms.katalon.core.exception.StepFailedException: com.kms.katalon.core.webui.exception.WebElementNotFoundException: Web element with id: 'Object Repository/AssetSoure/AssetSourceName' located by '//div[text()='RandomAsset413']' not found
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementPresentKeyword$_verifyElementPresent_closure1.doCall(VerifyElementPresentKeyword.groovy:85)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementPresentKeyword$_verifyElementPresent_closure1.call(VerifyElementPresentKeyword.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:20)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementPresentKeyword.verifyElementPresent(VerifyElementPresentKeyword.groovy:92)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementPresentKeyword.execute(VerifyElementPresentKeyword.groovy:68)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:73)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.verifyElementPresent(WebUiBuiltInKeywords.groovy:1445)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$verifyElementPresent$8.call(Unknown Source)
+	at verification.Verification.verifyElementPresent(Verification.groovy:29)
+	at verification.Verification.verifyElementPresent(Verification.groovy)
+	at verification.Verification$verifyElementPresent.call(Unknown Source)
+	at pages.Assetsource.verifyAssetSourceAdded(Assetsource.groovy:67)
+	at pages.Assetsource.invokeMethod(Assetsource.groovy)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:50)
+	at Add An AssetSource.run(Add An AssetSource:20)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:339)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:330)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:309)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:301)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:235)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:191)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:141)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:90)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1610453180068.run(TempTestSuite1610453180068.groovy:39)
+)
+[[ATTACHMENT|E:\\Modist Project\\ModistProject\\Reports\\20210112_070617\\AssetSource\\20210112_070620\\1610453515507.png]]
+
+2021-01-12 07:11:56 - [MESSAGE][PASSED] - Taking screenshot successfully
+[[ATTACHMENT|E:\Modist Project\ModistProject\Reports\20210112_070617\AssetSource\20210112_070620\1610453516072.png]]
+
+2021-01-12 07:11:56 - [MESSAGE][FAILED] - The AssetSource RandomAsset413 is not added in the list]]></system-out>
+         <system-err><![CDATA[2021-01-12 07:11:14 - [TEST_CASE][FAILED] - Test Cases/Admin/AssetSource/Add An AssetSource: Test Cases/Admin/AssetSource/Add An AssetSource FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: The AssetSource RandomAsset413 is not added in the list
+	at com.kms.katalon.core.util.KeywordUtil.markFailedAndStop(KeywordUtil.java:28)
+	at com.kms.katalon.core.util.KeywordUtil$markFailedAndStop.call(Unknown Source)
+	at verification.Verification.verifyElementPresent(Verification.groovy:31)
+	at verification.Verification.verifyElementPresent(Verification.groovy)
+	at verification.Verification$verifyElementPresent.call(Unknown Source)
+	at pages.Assetsource.verifyAssetSourceAdded(Assetsource.groovy:67)
+	at pages.Assetsource.invokeMethod(Assetsource.groovy)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:50)
+	at Add An AssetSource.run(Add An AssetSource:20)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:339)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:330)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:309)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:301)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:235)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:191)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:141)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:90)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1610453180068.run(TempTestSuite1610453180068.groovy:39)]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Admin/AssetSource/Verify Cancel button functionality in the Add Asset Source popup" time="5.022" classname="Test Cases/Admin/AssetSource/Verify Cancel button functionality in the Add Asset Source popup" status="PASSED">
+         <system-out><![CDATA[2021-01-12 07:11:56 - [TEST_CASE][PASSED] - Test Cases/Admin/AssetSource/Verify Cancel button functionality in the Add Asset Source popup: Test Cases/Admin/AssetSource/Verify Cancel button functionality in the Add Asset Source popup
+
+2021-01-12 07:11:56 - [TEST_STEP][PASSED] - pages.Assetsource.navigateToAssetSourceDetailsTab(): pages.Assetsource.navigateToAssetSourceDetailsTab is PASSED
+
+2021-01-12 07:11:56 - [MESSAGE][PASSED] - Object 'Object Repository/AssetSoure/Asset Source Tab' is present
+
+2021-01-12 07:11:57 - [MESSAGE][PASSED] - Object 'Object Repository/AssetSoure/Asset Source Tab' is visible
+
+2021-01-12 07:11:57 - [MESSAGE][PASSED] - Object 'Object Repository/AssetSoure/Asset Source Tab' is clickable
+
+2021-01-12 07:11:57 - [MESSAGE][PASSED] - Object: 'Object Repository/AssetSoure/Asset Source Tab' is clicked on
+
+2021-01-12 07:11:58 - [MESSAGE][PASSED] - Object 'Object Repository/AssetSoure/Add Asset Source Button' is present
+
+2021-01-12 07:11:58 - [MESSAGE][PASSED] - pages.Assetsource.navigateToAssetSourceDetailsTab is PASSED
+
+2021-01-12 07:11:58 - [TEST_STEP][PASSED] - pages.Assetsource.clickAddAssetSource(): pages.Assetsource.clickAddAssetSource is PASSED
+
+2021-01-12 07:11:58 - [MESSAGE][PASSED] - Object 'Object Repository/AssetSoure/Add Asset Source Button' is present
+
+2021-01-12 07:11:58 - [MESSAGE][PASSED] - Object 'Object Repository/AssetSoure/Add Asset Source Button' is visible
+
+2021-01-12 07:11:58 - [MESSAGE][PASSED] - Object 'Object Repository/AssetSoure/Add Asset Source Button' is clickable
+
+2021-01-12 07:11:59 - [MESSAGE][PASSED] - Object: 'Object Repository/AssetSoure/Add Asset Source Button' is clicked on
+
+2021-01-12 07:11:59 - [MESSAGE][PASSED] - Wait for page load successfully
+
+2021-01-12 07:11:59 - [MESSAGE][PASSED] - pages.Assetsource.clickAddAssetSource is PASSED
+
+2021-01-12 07:11:59 - [TEST_STEP][PASSED] - pages.Assetsource.cancelAssetSourcePopup(): pages.Assetsource.cancelAssetSourcePopup is PASSED
+
+2021-01-12 07:12:00 - [MESSAGE][PASSED] - Object 'Object Repository/AssetSoure/Cancel Button' is present
+
+2021-01-12 07:12:00 - [MESSAGE][PASSED] - Object 'Object Repository/AssetSoure/Cancel Button' is visible
+
+2021-01-12 07:12:00 - [MESSAGE][PASSED] - Object 'Object Repository/AssetSoure/Cancel Button' is clickable
+
+2021-01-12 07:12:00 - [MESSAGE][PASSED] - Object: 'Object Repository/AssetSoure/Cancel Button' is clicked on
+
+2021-01-12 07:12:01 - [MESSAGE][PASSED] - Object 'Object Repository/AssetSoure/Search' is present
+
+2021-01-12 07:12:01 - [MESSAGE][PASSED] - pages.Assetsource.cancelAssetSourcePopup is PASSED]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <system-out><![CDATA[2021-01-12 07:10:56 - [TEST_SUITE][FAILED] - AssetSource: Test Cases/Admin/AssetSource/Add An AssetSource FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: The AssetSource RandomAsset413 is not added in the list
+	at com.kms.katalon.core.util.KeywordUtil.markFailedAndStop(KeywordUtil.java:28)
+	at com.kms.katalon.core.util.KeywordUtil$markFailedAndStop.call(Unknown Source)
+	at verification.Verification.verifyElementPresent(Verification.groovy:31)
+	at verification.Verification.verifyElementPresent(Verification.groovy)
+	at verification.Verification$verifyElementPresent.call(Unknown Source)
+	at pages.Assetsource.verifyAssetSourceAdded(Assetsource.groovy:67)
+	at pages.Assetsource.invokeMethod(Assetsource.groovy)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:50)
+	at Add An AssetSource.run(Add An AssetSource:20)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:339)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:330)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:309)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:301)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:235)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:191)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:141)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:90)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1610453180068.run(TempTestSuite1610453180068.groovy:39)]]></system-out>
+      <system-err><![CDATA[2021-01-12 07:10:56 - [TEST_SUITE][FAILED] - AssetSource: Test Cases/Admin/AssetSource/Add An AssetSource FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: The AssetSource RandomAsset413 is not added in the list
+	at com.kms.katalon.core.util.KeywordUtil.markFailedAndStop(KeywordUtil.java:28)
+	at com.kms.katalon.core.util.KeywordUtil$markFailedAndStop.call(Unknown Source)
+	at verification.Verification.verifyElementPresent(Verification.groovy:31)
+	at verification.Verification.verifyElementPresent(Verification.groovy)
+	at verification.Verification$verifyElementPresent.call(Unknown Source)
+	at pages.Assetsource.verifyAssetSourceAdded(Assetsource.groovy:67)
+	at pages.Assetsource.invokeMethod(Assetsource.groovy)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:50)
+	at Add An AssetSource.run(Add An AssetSource:20)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:339)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:330)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:309)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:301)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:235)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:191)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:141)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:90)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1610453180068.run(TempTestSuite1610453180068.groovy:39)]]></system-err>
+   </testsuite>
+</testsuites>

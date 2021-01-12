@@ -1,6 +1,8 @@
 package pages
 import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
 
+import org.openqa.selenium.Keys
+
 import com.kms.katalon.core.annotation.Keyword
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 
@@ -17,12 +19,12 @@ public class Brand {
 	def clickBrand() {
 		WebUI.click(findTestObject('Object Repository/Brand/clickOnBrandTab'))
 	}
-	
+
 	@Keyword
 	def clickAddBrand() {
 		WebUI.click(findTestObject('Object Repository/Brand/AddBrandbutton'))
 	}
-	
+
 	@Keyword
 	def addBrand() {
 
@@ -39,6 +41,7 @@ public class Brand {
 
 	def search(String brandName) {
 		actions.sendKeys(findTestObject('Object Repository/Brand/search'),brandName)
+		actions.sendKeys(findTestObject('Object Repository/Brand/search'), Keys.chord(Keys.ENTER))
 	}
 
 	@Keyword
@@ -50,11 +53,7 @@ public class Brand {
 	def verifyBrandPopUp() {
 
 		String path = 'Object Repository/Brand/AddBrandPopup/'
-		def elements = [
-			"name",
-			"Slogan",
-			"Bio"
-		]
+		def elements = ["name", "Slogan", "Bio"]
 		for(element in elements) {
 			verify.verifyElementPresent(findTestObject(path+element), "The element "+element+" is not present")
 		}
@@ -65,6 +64,7 @@ public class Brand {
 		clickBrand()
 		clickAddBrand()
 		actions.click(findTestObject('Object Repository/Brand/AddBrandPopup/AddBrandButtonInAddBrandPopup'))
+		actions.click(findTestObject('Object Repository/Brand/AddBrandPopup/cancelButtonAddBrandPopup'))
 	}
 
 	@Keyword

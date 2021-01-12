@@ -1,0 +1,44 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+Asset,Chrome 87.0.4280.141,,,2021-01-12 07:06:42,2021-01-12 07:10:51,4m - 8.808s,FAILED
+,,,,,,,
+Test Cases/Admin/Asset/addAssetAndVerify,Chrome 87.0.4280.141,,,2021-01-12 07:07:04,2021-01-12 07:07:30,25.186s,PASSED
+pages.Asset.clickAssetTab(),Chrome 87.0.4280.141,,,2021-01-12 07:07:05,2021-01-12 07:07:08,3.006s,PASSED
+assetName = pages.Asset.addAsset(),Chrome 87.0.4280.141,,,2021-01-12 07:07:08,2021-01-12 07:07:21,13.509s,PASSED
+pages.Asset.VerifyAssetIsPresent(assetName),Chrome 87.0.4280.141,,,2021-01-12 07:07:21,2021-01-12 07:07:30,8.407s,PASSED
+,,,,,,,
+Test Cases/Admin/Asset/openAnyAssetAndVerifyUrl,Chrome 87.0.4280.141,,,2021-01-12 07:07:30,2021-01-12 07:07:39,9.048s,PASSED
+pages.Asset.clickAssetTab(),Chrome 87.0.4280.141,,,2021-01-12 07:07:30,2021-01-12 07:07:31,1.238s,PASSED
+assetName = pages.Asset.getRandomAssetName(),Chrome 87.0.4280.141,,,2021-01-12 07:07:31,2021-01-12 07:07:32,1.050s,PASSED
+pages.Asset.verifyUrlOfassetEditPage(assetName),Chrome 87.0.4280.141,,,2021-01-12 07:07:32,2021-01-12 07:07:39,6.378s,PASSED
+,,,,,,,
+Test Cases/Admin/Asset/functionalityOfCancelButtonInAddAssetPopup,Chrome 87.0.4280.141,,,2021-01-12 07:07:39,2021-01-12 07:08:50,1m - 11.055s,FAILED
+pages.Asset.clickAssetTab(),Chrome 87.0.4280.141,,,2021-01-12 07:07:39,2021-01-12 07:07:41,1.616s,PASSED
+assetName = pages.Asset.cancelButtonInAddAssetPopup(),Chrome 87.0.4280.141,,,2021-01-12 07:07:41,2021-01-12 07:07:45,4.418s,PASSED
+pages.Asset.VerifyAssetNotPresent(assetName),Chrome 87.0.4280.141,,,2021-01-12 07:07:45,2021-01-12 07:08:50,1m - 4.660s,FAILED
+,,,,,,,
+Test Cases/Admin/Asset/functionalityOfCloseButtonandVerify,Chrome 87.0.4280.141,,,2021-01-12 07:08:50,2021-01-12 07:09:10,20.219s,PASSED
+pages.Asset.clickAssetTab(),Chrome 87.0.4280.141,,,2021-01-12 07:08:50,2021-01-12 07:08:51,1.169s,PASSED
+pages.Asset.closeButtonInAssetEditPage(),Chrome 87.0.4280.141,,,2021-01-12 07:08:51,2021-01-12 07:09:00,8.762s,PASSED
+"verification.Verification.getUrlAndVerify(""dashboard"", ""cancel button is not working"")",Chrome 87.0.4280.141,,,2021-01-12 07:09:00,2021-01-12 07:09:10,10.047s,PASSED
+,,,,,,,
+Test Cases/Admin/Asset/functionalityOfSearcBoxWithInvalidDetails,Chrome 87.0.4280.141,,,2021-01-12 07:09:10,2021-01-12 07:10:31,1m - 20.843s,FAILED
+pages.Asset.clickAssetTab(),Chrome 87.0.4280.141,,,2021-01-12 07:09:10,2021-01-12 07:09:11,1.184s,PASSED
+assetName = pages.Asset.getRandomAssetName(),Chrome 87.0.4280.141,,,2021-01-12 07:09:11,2021-01-12 07:09:25,13.544s,PASSED
+"assetName = assetName + ""1""",Chrome 87.0.4280.141,,,2021-01-12 07:09:25,2021-01-12 07:09:25,0.001s,PASSED
+pages.Asset.VerifyAssetNotPresent(assetName),Chrome 87.0.4280.141,,,2021-01-12 07:09:25,2021-01-12 07:10:31,1m - 5.889s,FAILED
+,,,,,,,
+Test Cases/Admin/Asset/functionalityOfSearchBoxwithValidDetails,Chrome 87.0.4280.141,,,2021-01-12 07:10:31,2021-01-12 07:10:39,7.887s,PASSED
+pages.Asset.clickAssetTab(),Chrome 87.0.4280.141,,,2021-01-12 07:10:31,2021-01-12 07:10:32,1.188s,PASSED
+assetName = pages.Asset.getRandomAssetName(),Chrome 87.0.4280.141,,,2021-01-12 07:10:32,2021-01-12 07:10:33,0.909s,PASSED
+pages.Asset.VerifyAssetIsPresent(assetName),Chrome 87.0.4280.141,,,2021-01-12 07:10:33,2021-01-12 07:10:39,5.585s,PASSED
+,,,,,,,
+Test Cases/Admin/Asset/VerifyAssetPage,Chrome 87.0.4280.141,,,2021-01-12 07:10:39,2021-01-12 07:10:42,3.401s,PASSED
+pages.Asset.clickAssetTab(),Chrome 87.0.4280.141,,,2021-01-12 07:10:39,2021-01-12 07:10:40,1.153s,PASSED
+pages.Asset.verifyAssetPage(),Chrome 87.0.4280.141,,,2021-01-12 07:10:40,2021-01-12 07:10:42,1.963s,PASSED
+,,,,,,,
+Test Cases/Admin/Asset/verifyElementsInAddAssetPopUp,Chrome 87.0.4280.141,,,2021-01-12 07:10:42,2021-01-12 07:10:48,6.160s,PASSED
+pages.Asset.clickAssetTab(),Chrome 87.0.4280.141,,,2021-01-12 07:10:42,2021-01-12 07:10:43,1.106s,PASSED
+pages.Asset.verifyAddAssetPopUp(),Chrome 87.0.4280.141,,,2021-01-12 07:10:43,2021-01-12 07:10:48,4.800s,PASSED
+,,,,,,,
+Test Cases/Admin/Asset/VerifyElementsInAssetEditPage,Chrome 87.0.4280.141,,,2021-01-12 07:10:48,2021-01-12 07:10:51,2.564s,FAILED
+pages.Asset.clickAssetTab(),Chrome 87.0.4280.141,,,2021-01-12 07:10:48,2021-01-12 07:10:51,2.395s,FAILED

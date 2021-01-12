@@ -1,0 +1,9 @@
+{"testCaseName":"Test Cases/Admin/Asset/addAssetAndVerify","testCaseId":"Test Cases/Admin/Asset/addAssetAndVerify"}
+{"testCaseName":"Test Cases/Admin/Asset/openAnyAssetAndVerifyUrl","testCaseId":"Test Cases/Admin/Asset/openAnyAssetAndVerifyUrl"}
+{"testCaseName":"Test Cases/Admin/Asset/functionalityOfCancelButtonInAddAssetPopup","testCaseId":"Test Cases/Admin/Asset/functionalityOfCancelButtonInAddAssetPopup"}
+{"testCaseName":"Test Cases/Admin/Asset/functionalityOfCloseButtonandVerify","testCaseId":"Test Cases/Admin/Asset/functionalityOfCloseButtonandVerify"}
+{"testCaseName":"Test Cases/Admin/Asset/functionalityOfSearcBoxWithInvalidDetails","testCaseId":"Test Cases/Admin/Asset/functionalityOfSearcBoxWithInvalidDetails"}
+{"testCaseName":"Test Cases/Admin/Asset/functionalityOfSearchBoxwithValidDetails","testCaseId":"Test Cases/Admin/Asset/functionalityOfSearchBoxwithValidDetails"}
+{"testCaseName":"Test Cases/Admin/Asset/VerifyAssetPage","testCaseId":"Test Cases/Admin/Asset/VerifyAssetPage"}
+{"testCaseName":"Test Cases/Admin/Asset/verifyElementsInAddAssetPopUp","testCaseId":"Test Cases/Admin/Asset/verifyElementsInAddAssetPopUp"}
+{"testCaseName":"Test Cases/Admin/Asset/VerifyElementsInAssetEditPage","testCaseId":"Test Cases/Admin/Asset/VerifyElementsInAssetEditPage"}

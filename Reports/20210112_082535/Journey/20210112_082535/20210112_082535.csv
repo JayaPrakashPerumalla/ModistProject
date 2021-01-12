@@ -1,0 +1,16 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+Journey,Chrome 87.0.4280.141,,,2021-01-12 08:25:38,2021-01-12 08:27:42,2m - 4.097s,PASSED
+,,,,,,,
+Test Cases/Admin/Journey/deleteJourneyAndVerify,Chrome 87.0.4280.141,,,2021-01-12 08:26:01,2021-01-12 08:27:04,1m - 2.295s,PASSED
+Start listener action : login,Chrome 87.0.4280.141,,,2021-01-12 08:26:01,2021-01-12 08:26:08,6.788s,PASSED
+pages.Journey.clickOnJourneyTab(),Chrome 87.0.4280.141,,,2021-01-12 08:26:08,2021-01-12 08:26:11,2.519s,PASSED
+journeyName = pages.Journey.addJourney(),Chrome 87.0.4280.141,,,2021-01-12 08:26:11,2021-01-12 08:26:16,4.844s,PASSED
+pages.Journey.deleteJourney(journeyName),Chrome 87.0.4280.141,,,2021-01-12 08:26:16,2021-01-12 08:26:26,9.811s,PASSED
+pages.Journey.verifyJourneyDeleted(journeyName),Chrome 87.0.4280.141,,,2021-01-12 08:26:26,2021-01-12 08:27:04,37.955s,PASSED
+,,,,,,,
+Test Cases/Admin/Journey/cloneJourneyAndVerifyisitCloned,Chrome 87.0.4280.141,,,2021-01-12 08:27:04,2021-01-12 08:27:42,38.889s,PASSED
+Start listener action : login,Chrome 87.0.4280.141,,,2021-01-12 08:27:04,2021-01-12 08:27:16,12.244s,PASSED
+pages.Journey.clickOnJourneyTab(),Chrome 87.0.4280.141,,,2021-01-12 08:27:16,2021-01-12 08:27:18,1.551s,PASSED
+journeyName = pages.Journey.addJourney(),Chrome 87.0.4280.141,,,2021-01-12 08:27:18,2021-01-12 08:27:23,4.997s,PASSED
+pages.Journey.cloneJourney(journeyName),Chrome 87.0.4280.141,,,2021-01-12 08:27:23,2021-01-12 08:27:33,10.585s,PASSED
+pages.Journey.verifyJourneyCloned(journeyName),Chrome 87.0.4280.141,,,2021-01-12 08:27:33,2021-01-12 08:27:42,9.185s,PASSED
