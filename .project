@@ -15,6 +15,13 @@
 		<nature>org.eclipse.jdt.groovy.core.groovyNature</nature>
 		<nature>org.eclipse.jdt.core.javanature</nature>
 	</natures>
+	<linkedResources>
+		<link>
+			<name>kat-5844189534086188203.groovy</name>
+			<type>1</type>
+			<location>C:/Users/User/AppData/Local/Temp/Katalon/Web Services/kat-5844189534086188203.groovy</location>
+		</link>
+	</linkedResources>
 	<filteredResources>
 		<filter>
 			<id>1609401918721</id>
@@ -773,6 +780,7 @@
 			</matcher>
 		</filter>
 		<filter>
+			<id>1610434289767</id>
 			<id>1610382963041</id>
 			<name></name>
 			<type>10</type>
@@ -782,6 +790,7 @@
 			</matcher>
 		</filter>
 		<filter>
+			<id>1610434289810</id>
 			<id>1610382963072</id>
 			<name></name>
 			<type>6</type>
@@ -791,6 +800,7 @@
 			</matcher>
 		</filter>
 		<filter>
+			<id>1610436272471</id>
 			<id>1610424878945</id>
 			<name></name>
 			<type>10</type>
@@ -800,6 +810,7 @@
 			</matcher>
 		</filter>
 		<filter>
+			<id>1610436272490</id>
 			<id>1610424878971</id>
 			<name></name>
 			<type>6</type>

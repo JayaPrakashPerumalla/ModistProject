@@ -39,4 +39,14 @@
       <initValue>'https://qualitlabs.dev.modist.co/'</initValue>
       <name>journeyUrl</name>
    </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'invalid'</initValue>
+      <name>accessToken</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'https://dev-api.modist.co/api/v1'</initValue>
+      <name>apiBaseUrl</name>
+   </GlobalVariableEntity>
 </GlobalVariableEntities>
