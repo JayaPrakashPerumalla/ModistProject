@@ -23,7 +23,7 @@ class Login {
 		WebUI.navigateToUrl(GlobalVariable.Url)
 		loginPage.login(GlobalVariable.Email,GlobalVariable.Password)
 
-	}
+	} 
 
 
 }
