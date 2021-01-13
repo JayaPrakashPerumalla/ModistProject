@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>selectBackground(index)</name>
+   <tag></tag>
+   <elementGuidId>783bab1e-de2d-429d-b5cf-61455ce1b154</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>(//label[text()='Type']/..//select//option)[${index}]</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>(//label[text()='Type']/..//select//option)[${index}]</value>
+   </webElementProperties>
+</WebElementEntity>

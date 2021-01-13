@@ -29,7 +29,7 @@ public class JourneyPortal {
 
 	@Keyword
 	def verifyFixedBackGroundCheck() {
-
+		WebUI.waitForElementPresent(findTestObject('Object Repository/Journey/JourneyPortal/fixedAndScrollingDetect'), 4)
 		verifications.verifyElementPresent(findTestObject('Object Repository/Journey/JourneyPortal/fixedAndScrollingDetect'),"you are in ScrollingBackGround")
 	}
 

@@ -1,7 +1,6 @@
 
 import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
 
-import com.kms.katalon.core.annotation.AfterTestSuite
 import com.kms.katalon.core.annotation.BeforeTestCase
 import com.kms.katalon.core.annotation.BeforeTestSuite
 import com.kms.katalon.core.annotation.Keyword
@@ -18,9 +17,6 @@ class Login {
 	public static JsonSlurper jsonSlurper = new JsonSlurper()
 	LoginForAdminDevEnvironment loginPage = new LoginForAdminDevEnvironment()
 
-
-	//@BeforeTestCase
-	//@BeforeTestSuite
 	@BeforeTestSuite
 	@Keyword
 	def OpenWebSite() {
@@ -28,27 +24,25 @@ class Login {
 		WebUI.maximizeWindow()
 		WebUI.navigateToUrl(GlobalVariable.Url)
 		loginPage.login(GlobalVariable.Email,GlobalVariable.Password)
-		if(!(WebUI.getUrl().endsWith('dashboard'))) {
-			WebUI.takeScreenshot()
-			KeywordUtil.markFailed('url not navigated to dashboard')
-		}
 	}
 
 	@BeforeTestCase
 	@Keyword
 	def login() {
-		WebUI.navigateToUrl(GlobalVariable.Url)
-		loginPage.login(GlobalVariable.Email,GlobalVariable.Password)
+		Thread.sleep(3000)
+		String url = WebUI.getUrl()
+		if (!(url.contains('dashboard'))) {
+			WebUI.navigateToUrl(GlobalVariable.Url)
+			loginPage.login(GlobalVariable.Email,GlobalVariable.Password)
+		}
 	}
-	
-	@BeforeTestCase
-	def getAuthToken() {
 
-		if(GlobalVariable.accessToken.toString() != "invalid" )
-		{
+	//@BeforeTestCase
+	def getAuthToken() {
+		if(GlobalVariable.accessToken.toString() != "invalid" ) {
 			return;
 		}
-		
+
 		def responseLogin = WS.sendRequest(findTestObject('Object Repository/API/login'))
 		def loginJSON = jsonSlurper.parseText(responseLogin.getResponseText())
 
@@ -57,7 +51,7 @@ class Login {
 		GlobalVariable.accessToken = loginJSON.token
 	}
 
-	@AfterTestSuite
+	//@AfterTestSuite
 	//@AfterTestCase
 	@Keyword
 	def closewebSite() {

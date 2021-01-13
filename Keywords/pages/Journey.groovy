@@ -30,6 +30,7 @@ public class Journey {
 		clickAddJourneyButton()
 		actions.sendKeys(findTestObject('Object Repository/Journey/Add Journey/journeyName'), journeyName)
 		actions.click(findTestObject('Object Repository/Journey/Add Journey/addJourneyInAddJourneyPopUp'))
+		actions.click(findTestObject('Object Repository/Journey/Add Journey/clickBackGroundType'))
 		return journeyName
 	}
 
@@ -85,6 +86,7 @@ public class Journey {
 	def createAccessCodeInJourney(String journeyName, String accessCode, String useLimit) {
 		openExistingJourney(journeyName)
 		actions.scrollToElement(findTestObject('Object Repository/Journey/Current Access Codes/currentAccessCodeField'))
+		actions.waitForElementPresent(findTestObject('Object Repository/Journey/Current Access Codes/currentAccessCodeField'))
 		actions.click(findTestObject('Object Repository/Journey/Current Access Codes/plusButton'))
 		actions.sendKeys(findTestObject('Object Repository/Journey/Current Access Codes/accessCode'), accessCode)
 		actions.sendKeys(findTestObject('Object Repository/Journey/Current Access Codes/codeUsageCount'), useLimit)

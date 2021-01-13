@@ -21,9 +21,4 @@ public class LoginForAdminDevEnvironment {
 			action.click(findTestObject('Object Repository/Login Credentials/EnterButton'))
 		}
 	}
-
-	@Keyword
-	def wait(int seconds) {
-		WebUI.delay(seconds)
-	}
 }
