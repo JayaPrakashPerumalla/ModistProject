@@ -21,8 +21,7 @@ String journeyName = CustomKeywords.'pages.Journey.getRandomJourneyName'()
 
 String accessCode = CustomKeywords.'pages.Journey.getExistingJourneyAccesscode'(journeyName)
 
-accessCode=accessCode+CustomKeywords.'pages.Journey.getRandomCount'()
-
+accessCode=accessCode+'1*3#%'
 CustomKeywords.'login.LoginForJourneyApplication.loginToJourneyApplication'()
 
 CustomKeywords.'pages.Journey.enterAccessCodeInJourney'(accessCode)

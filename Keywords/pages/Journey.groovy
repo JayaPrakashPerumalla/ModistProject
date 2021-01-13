@@ -128,7 +128,6 @@ public class Journey {
 
 	@Keyword
 	def getExistingJourneyAccesscode(String journeyName) {
-		searchJourney(journeyName)
 		openExistingJourney(journeyName)
 		actions.scrollToElement(findTestObject('Object Repository/Journey/Current Access Codes/currentAccessCodeField'))
 		int count = actions.getElementCount(findTestObject('Object Repository/Journey/Current Access Codes/getAccessCodesCount'))

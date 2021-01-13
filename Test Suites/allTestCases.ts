@@ -306,6 +306,12 @@
       <testCaseId>Test Cases/Admin/verifyFieldsPresentInAssetEditPage</testCaseId>
    </testCaseLink>
    <testCaseLink>
+      <guid>b96238b6-5ace-4506-a771-d5ad215658c5</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/JourneyPortal/verifyCartIfNoItemsAvailable</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
       <guid>cddf5d16-d453-4aea-a09a-9c2fc9a24339</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
@@ -340,12 +346,6 @@
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/JourneyPortal/loginToJourneyApplicationWithEmptyAccessCode</testCaseId>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>b96238b6-5ace-4506-a771-d5ad215658c5</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/JourneyPortal/verifyCartIfNoItemsAvailable</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>4cacf069-ff41-425c-bce5-d08620283e66</guid>

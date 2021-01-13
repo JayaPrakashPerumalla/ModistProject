@@ -35,8 +35,6 @@ public class JourneyPortal {
 
 	@Keyword
 	def verifyScrollingBackGroundCheck() {
-
-
 		verifications.verifyElementNotPresent(findTestObject('Object Repository/Journey/JourneyPortal/fixedAndScrollingDetect'),"you are in Fixed BackGround")
 	}
 
