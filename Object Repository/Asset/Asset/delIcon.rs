@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//div[@class=&quot;context-action&quot;]</value>
+         <value>//div[@class='sc-ksluoS jnYGUA']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,6 +17,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//div[@class=&quot;context-action&quot;]</value>
+      <value>//div[@class='sc-ksluoS jnYGUA']</value>
    </webElementProperties>
 </WebElementEntity>

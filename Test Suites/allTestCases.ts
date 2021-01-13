@@ -18,12 +18,6 @@
       <testCaseId>Test Cases/Admin/Asset/addAssetAndVerify</testCaseId>
    </testCaseLink>
    <testCaseLink>
-      <guid>905a2b34-2c45-4b2d-8914-aab143ace58c</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/Admin/extra/addAssetWithImageSizeIsGreaterThan200MB</testCaseId>
-   </testCaseLink>
-   <testCaseLink>
       <guid>a7717982-df9f-4e96-ae80-72148a326bf0</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>

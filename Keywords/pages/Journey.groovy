@@ -5,10 +5,9 @@ import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
 import com.kms.katalon.core.annotation.Keyword
 import com.kms.katalon.core.model.FailureHandling
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
-import internal.GlobalVariable
+
 import verification.Verification
 import webAction.WebAction
-import org.openqa.selenium.Keys as Keys
 public class Journey {
 
 	WebAction actions = new WebAction()
@@ -40,7 +39,7 @@ public class Journey {
 		actions.click(findTestObject('Object Repository/Journey/clickVerifyingJourney(journeyName)',["journeyName":journeyName]))
 	}
 
-	def searchJourney(def journeyName) {
+	def searchJourney(String journeyName) {
 		actions.sendKeys(findTestObject('Object Repository/Journey/journrySearchInput'), "")
 		for (int i = 0; i < journeyName.length(); i++) {
 			WebUI.sendKeys(findTestObject('Object Repository/Journey/journrySearchInput'), journeyName.charAt(i).toString())

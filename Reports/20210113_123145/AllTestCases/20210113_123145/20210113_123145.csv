@@ -1,0 +1,503 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+AllTestCases,Firefox 84.0,,,2021-01-13 12:31:47,2021-01-13 13:06:42,34m - 55.011s,ERROR
+,,,,,,,
+Test Cases/Admin/Asset/addAssetAndVerify,Firefox 84.0,,,2021-01-13 12:32:09,2021-01-13 12:32:37,28.013s,PASSED
+Start listener action : login,Firefox 84.0,,,2021-01-13 12:32:09,2021-01-13 12:32:12,3.058s,PASSED
+pages.Asset.clickAssetTab(),Firefox 84.0,,,2021-01-13 12:32:13,2021-01-13 12:32:15,2.756s,PASSED
+assetName = pages.Asset.addAsset(),Firefox 84.0,,,2021-01-13 12:32:15,2021-01-13 12:32:28,12.274s,PASSED
+pages.Asset.VerifyAssetIsPresent(assetName),Firefox 84.0,,,2021-01-13 12:32:28,2021-01-13 12:32:37,9.774s,PASSED
+,,,,,,,
+Test Cases/Admin/Asset/deleteAssetAndVerify,Firefox 84.0,,,2021-01-13 12:32:37,2021-01-13 12:33:42,1m - 4.738s,FAILED
+Start listener action : login,Firefox 84.0,,,2021-01-13 12:32:37,2021-01-13 12:32:40,3.025s,PASSED
+pages.Asset.clickAssetTab(),Firefox 84.0,,,2021-01-13 12:32:41,2021-01-13 12:32:42,1.234s,PASSED
+assetName = pages.Asset.getRandomAssetName(),Firefox 84.0,,,2021-01-13 12:32:42,2021-01-13 12:32:43,0.896s,PASSED
+pages.Asset.deleteAsset(assetName),Firefox 84.0,,,2021-01-13 12:32:43,2021-01-13 12:33:42,59.463s,FAILED
+,,,,,,,
+Test Cases/Admin/Asset/editSourceInAssetEditPageAndVerify,Firefox 84.0,,,2021-01-13 12:33:42,2021-01-13 12:35:15,1m - 32.444s,FAILED
+Start listener action : login,Firefox 84.0,,,2021-01-13 12:33:42,2021-01-13 12:33:45,3.009s,PASSED
+pages.Asset.clickAssetTab(),Firefox 84.0,,,2021-01-13 12:33:45,2021-01-13 12:33:54,8.953s,PASSED
+assetDetails = pages.Asset.editSourceInAssetEditPage(),Firefox 84.0,,,2021-01-13 12:33:54,2021-01-13 12:34:31,37.034s,PASSED
+assetName = assetName,Firefox 84.0,,,2021-01-13 12:34:31,2021-01-13 12:34:31,0.006s,PASSED
+sourceName = sourceName,Firefox 84.0,,,2021-01-13 12:34:31,2021-01-13 12:34:31,0.000s,PASSED
+"pages.Asset.verifySourceInEditAssetPage(assetName, sourceName)",Firefox 84.0,,,2021-01-13 12:34:31,2021-01-13 12:35:15,43.275s,FAILED
+,,,,,,,
+Test Cases/Admin/Asset/functionalityOfCancelButtonInAddAssetPopup,Firefox 84.0,,,2021-01-13 12:35:15,2021-01-13 12:35:39,24.609s,PASSED
+Start listener action : login,Firefox 84.0,,,2021-01-13 12:35:15,2021-01-13 12:35:23,8.805s,PASSED
+pages.Asset.clickAssetTab(),Firefox 84.0,,,2021-01-13 12:35:24,2021-01-13 12:35:25,1.288s,PASSED
+assetName = pages.Asset.cancelButtonInAddAssetPopup(),Firefox 84.0,,,2021-01-13 12:35:25,2021-01-13 12:35:29,4.377s,PASSED
+pages.Asset.VerifyAssetNotPresent(assetName),Firefox 84.0,,,2021-01-13 12:35:29,2021-01-13 12:35:39,10.008s,PASSED
+,,,,,,,
+Test Cases/Admin/Asset/functionalityOfCloseButtonandVerify,Firefox 84.0,,,2021-01-13 12:35:39,2021-01-13 12:36:08,29.060s,PASSED
+Start listener action : login,Firefox 84.0,,,2021-01-13 12:35:39,2021-01-13 12:35:42,3.003s,PASSED
+pages.Asset.clickAssetTab(),Firefox 84.0,,,2021-01-13 12:35:42,2021-01-13 12:35:44,1.334s,PASSED
+pages.Asset.closeButtonInAssetEditPage(),Firefox 84.0,,,2021-01-13 12:35:44,2021-01-13 12:35:58,14.549s,PASSED
+"verification.Verification.getUrlAndVerify(""dashboard"", ""cancel button is not working"")",Firefox 84.0,,,2021-01-13 12:35:58,2021-01-13 12:36:08,10.020s,PASSED
+,,,,,,,
+Test Cases/Admin/Asset/functionalityOfSearcBoxWithInvalidDetails,Firefox 84.0,,,2021-01-13 12:36:08,2021-01-13 12:36:18,10.118s,PASSED
+Start listener action : login,Firefox 84.0,,,2021-01-13 12:36:08,2021-01-13 12:36:11,3.001s,PASSED
+pages.Asset.clickAssetTab(),Firefox 84.0,,,2021-01-13 12:36:11,2021-01-13 12:36:13,1.253s,PASSED
+assetName = pages.Asset.getRandomAssetName(),Firefox 84.0,,,2021-01-13 12:36:13,2021-01-13 12:36:13,0.815s,PASSED
+"assetName = assetName + ""1""",Firefox 84.0,,,2021-01-13 12:36:13,2021-01-13 12:36:13,0.000s,PASSED
+pages.Asset.VerifyAssetNotPresent(assetName),Firefox 84.0,,,2021-01-13 12:36:13,2021-01-13 12:36:18,4.905s,PASSED
+,,,,,,,
+Test Cases/Admin/Asset/functionalityOfSearchBoxwithValidDetails,Firefox 84.0,,,2021-01-13 12:36:18,2021-01-13 12:36:33,14.684s,PASSED
+Start listener action : login,Firefox 84.0,,,2021-01-13 12:36:18,2021-01-13 12:36:21,3.002s,PASSED
+pages.Asset.clickAssetTab(),Firefox 84.0,,,2021-01-13 12:36:22,2021-01-13 12:36:23,1.291s,PASSED
+assetName = pages.Asset.getRandomAssetName(),Firefox 84.0,,,2021-01-13 12:36:23,2021-01-13 12:36:24,0.828s,PASSED
+pages.Asset.VerifyAssetIsPresent(assetName),Firefox 84.0,,,2021-01-13 12:36:24,2021-01-13 12:36:33,9.377s,PASSED
+,,,,,,,
+Test Cases/Admin/Asset/openAnyAssetAndVerifyUrl,Firefox 84.0,,,2021-01-13 12:36:33,2021-01-13 12:36:48,15.265s,PASSED
+Start listener action : login,Firefox 84.0,,,2021-01-13 12:36:33,2021-01-13 12:36:36,3.003s,PASSED
+pages.Asset.clickAssetTab(),Firefox 84.0,,,2021-01-13 12:36:36,2021-01-13 12:36:37,1.254s,PASSED
+assetName = pages.Asset.getRandomAssetName(),Firefox 84.0,,,2021-01-13 12:36:37,2021-01-13 12:36:38,0.839s,PASSED
+pages.Asset.verifyUrlOfassetEditPage(assetName),Firefox 84.0,,,2021-01-13 12:36:38,2021-01-13 12:36:48,10.036s,PASSED
+,,,,,,,
+Test Cases/Admin/Asset/VerifyAssetPage,Firefox 84.0,,,2021-01-13 12:36:48,2021-01-13 12:37:00,12.015s,PASSED
+Start listener action : login,Firefox 84.0,,,2021-01-13 12:36:48,2021-01-13 12:36:57,8.791s,PASSED
+pages.Asset.clickAssetTab(),Firefox 84.0,,,2021-01-13 12:36:57,2021-01-13 12:36:59,1.248s,PASSED
+pages.Asset.verifyAssetPage(),Firefox 84.0,,,2021-01-13 12:36:59,2021-01-13 12:37:00,1.844s,PASSED
+,,,,,,,
+Test Cases/Admin/Asset/verifyElementsInAddAssetPopUp,Firefox 84.0,,,2021-01-13 12:37:00,2021-01-13 12:37:11,10.709s,PASSED
+Start listener action : login,Firefox 84.0,,,2021-01-13 12:37:00,2021-01-13 12:37:03,3.019s,PASSED
+pages.Asset.clickAssetTab(),Firefox 84.0,,,2021-01-13 12:37:04,2021-01-13 12:37:05,1.280s,PASSED
+pages.Asset.verifyAddAssetPopUp(),Firefox 84.0,,,2021-01-13 12:37:05,2021-01-13 12:37:11,6.203s,PASSED
+,,,,,,,
+Test Cases/Admin/Asset/VerifyElementsInAssetEditPage,Firefox 84.0,,,2021-01-13 12:37:11,2021-01-13 12:37:21,10.064s,PASSED
+Start listener action : login,Firefox 84.0,,,2021-01-13 12:37:11,2021-01-13 12:37:14,3.018s,PASSED
+pages.Asset.clickAssetTab(),Firefox 84.0,,,2021-01-13 12:37:14,2021-01-13 12:37:16,1.286s,PASSED
+pages.Asset.verifyAssetEditPage(),Firefox 84.0,,,2021-01-13 12:37:16,2021-01-13 12:37:21,5.627s,PASSED
+,,,,,,,
+Test Cases/Admin/AssetSource/Add An AssetSource,Firefox 84.0,,,2021-01-13 12:37:21,2021-01-13 12:37:47,25.409s,PASSED
+Start listener action : login,Firefox 84.0,,,2021-01-13 12:37:21,2021-01-13 12:37:30,8.765s,PASSED
+sourcename = pages.Assetsource.addAssetSource(),Firefox 84.0,,,2021-01-13 12:37:30,2021-01-13 12:37:37,6.536s,PASSED
+pages.Assetsource.verifyAssetSourceAdded(sourcename),Firefox 84.0,,,2021-01-13 12:37:37,2021-01-13 12:37:47,9.938s,PASSED
+println(sourcename),Firefox 84.0,,,2021-01-13 12:37:47,2021-01-13 12:37:47,0.000s,PASSED
+,,,,,,,
+Test Cases/Admin/AssetSource/Delete An AssetSource,Firefox 84.0,,,2021-01-13 12:37:47,2021-01-13 12:38:22,35.484s,PASSED
+Start listener action : login,Firefox 84.0,,,2021-01-13 12:37:47,2021-01-13 12:37:50,3.002s,PASSED
+sourcename = pages.Assetsource.addAssetSource(),Firefox 84.0,,,2021-01-13 12:37:50,2021-01-13 12:37:56,6.080s,PASSED
+println(sourcename),Firefox 84.0,,,2021-01-13 12:37:56,2021-01-13 12:37:56,0.000s,PASSED
+pages.Assetsource.deleteAnAssetSource(sourcename),Firefox 84.0,,,2021-01-13 12:37:56,2021-01-13 12:38:11,15.077s,PASSED
+pages.Assetsource.verifyAssetSourceDeleted(sourcename),Firefox 84.0,,,2021-01-13 12:38:11,2021-01-13 12:38:22,11.157s,PASSED
+,,,,,,,
+Test Cases/Admin/AssetSource/Edit An AssetSource,Firefox 84.0,,,2021-01-13 12:38:22,2021-01-13 12:38:50,27.999s,PASSED
+Start listener action : login,Firefox 84.0,,,2021-01-13 12:38:22,2021-01-13 12:38:25,3.002s,PASSED
+sourcename = pages.Assetsource.addAssetSource(),Firefox 84.0,,,2021-01-13 12:38:25,2021-01-13 12:38:31,6.132s,PASSED
+println(sourcename),Firefox 84.0,,,2021-01-13 12:38:31,2021-01-13 12:38:31,0.002s,PASSED
+pages.Assetsource.editAnAssetSource(sourcename),Firefox 84.0,,,2021-01-13 12:38:31,2021-01-13 12:38:50,18.705s,PASSED
+,,,,,,,
+Test Cases/Admin/AssetSource/Verify Asset Source tab by clicking it,Firefox 84.0,,,2021-01-13 12:38:50,2021-01-13 12:38:55,4.671s,PASSED
+Start listener action : login,Firefox 84.0,,,2021-01-13 12:38:50,2021-01-13 12:38:53,3.021s,PASSED
+pages.Assetsource.navigateToAssetSourceDetailsTab(),Firefox 84.0,,,2021-01-13 12:38:53,2021-01-13 12:38:55,1.527s,PASSED
+,,,,,,,
+Test Cases/Admin/AssetSource/Verify by clicking on any asset source in the Asset source tab details page,Firefox 84.0,,,2021-01-13 12:38:55,2021-01-13 12:39:17,22.211s,PASSED
+Start listener action : login,Firefox 84.0,,,2021-01-13 12:38:55,2021-01-13 12:38:58,3.003s,PASSED
+sourcename = pages.Assetsource.addAssetSource(),Firefox 84.0,,,2021-01-13 12:38:58,2021-01-13 12:39:04,5.921s,PASSED
+println(sourcename),Firefox 84.0,,,2021-01-13 12:39:04,2021-01-13 12:39:04,0.000s,PASSED
+pages.Assetsource.openAnyExistingAssetSource(sourcename),Firefox 84.0,,,2021-01-13 12:39:04,2021-01-13 12:39:17,13.134s,PASSED
+,,,,,,,
+Test Cases/Admin/AssetSource/Verify Cancel button functionality in the Add Asset Source popup,Firefox 84.0,,,2021-01-13 12:39:17,2021-01-13 12:39:31,13.624s,PASSED
+Start listener action : login,Firefox 84.0,,,2021-01-13 12:39:17,2021-01-13 12:39:26,8.610s,PASSED
+pages.Assetsource.navigateToAssetSourceDetailsTab(),Firefox 84.0,,,2021-01-13 12:39:26,2021-01-13 12:39:27,1.592s,PASSED
+pages.Assetsource.clickAddAssetSource(),Firefox 84.0,,,2021-01-13 12:39:27,2021-01-13 12:39:29,1.304s,PASSED
+pages.Assetsource.cancelAssetSourcePopup(),Firefox 84.0,,,2021-01-13 12:39:29,2021-01-13 12:39:31,1.964s,PASSED
+,,,,,,,
+Test Cases/Admin/AssetSource/Verify Close button functionality in the Asset Source edit page,Firefox 84.0,,,2021-01-13 12:39:31,2021-01-13 12:39:54,23.795s,PASSED
+Start listener action : login,Firefox 84.0,,,2021-01-13 12:39:31,2021-01-13 12:39:34,3.001s,PASSED
+sourcename = pages.Assetsource.addAssetSource(),Firefox 84.0,,,2021-01-13 12:39:34,2021-01-13 12:39:40,6.019s,PASSED
+println(sourcename),Firefox 84.0,,,2021-01-13 12:39:40,2021-01-13 12:39:40,0.000s,PASSED
+pages.Assetsource.openAnyExistingAssetSource(sourcename),Firefox 84.0,,,2021-01-13 12:39:40,2021-01-13 12:39:52,12.654s,PASSED
+pages.Assetsource.closeAssetSourceEditpage(),Firefox 84.0,,,2021-01-13 12:39:52,2021-01-13 12:39:54,1.983s,PASSED
+,,,,,,,
+Test Cases/Admin/AssetSource/Verify elements on Add Asset Source popup,Firefox 84.0,,,2021-01-13 12:39:54,2021-01-13 12:40:03,8.640s,PASSED
+Start listener action : login,Firefox 84.0,,,2021-01-13 12:39:54,2021-01-13 12:39:57,3.002s,PASSED
+pages.Assetsource.navigateToAssetSourceDetailsTab(),Firefox 84.0,,,2021-01-13 12:39:57,2021-01-13 12:39:59,1.473s,PASSED
+pages.Assetsource.clickAddAssetSource(),Firefox 84.0,,,2021-01-13 12:39:59,2021-01-13 12:40:00,1.296s,PASSED
+pages.Assetsource.verifyAssetSourcePopUp(),Firefox 84.0,,,2021-01-13 12:40:00,2021-01-13 12:40:03,2.716s,PASSED
+,,,,,,,
+Test Cases/Admin/Brand/Add a Brand without filling mandatory details,Firefox 84.0,,,2021-01-13 12:40:03,2021-01-13 12:40:41,38.387s,PASSED
+Start listener action : login,Firefox 84.0,,,2021-01-13 12:40:03,2021-01-13 12:40:06,3.004s,PASSED
+pages.Brand.addBrandWithoutfillingmandatoryDetails(),Firefox 84.0,,,2021-01-13 12:40:06,2021-01-13 12:40:41,35.243s,PASSED
+,,,,,,,
+Test Cases/Admin/Brand/createBrandAndVerifyIsItSuccessfullyCreated,Firefox 84.0,,,2021-01-13 12:40:41,2021-01-13 12:40:57,15.358s,PASSED
+Start listener action : login,Firefox 84.0,,,2021-01-13 12:40:41,2021-01-13 12:40:44,3.018s,PASSED
+pages.Brand.clickBrand(),Firefox 84.0,,,2021-01-13 12:40:45,2021-01-13 12:40:45,0.539s,PASSED
+brandName = pages.Brand.addBrand(),Firefox 84.0,,,2021-01-13 12:40:45,2021-01-13 12:40:49,4.078s,PASSED
+pages.Brand.verifyTheBrandCreated(brandName),Firefox 84.0,,,2021-01-13 12:40:49,2021-01-13 12:40:57,7.592s,PASSED
+,,,,,,,
+Test Cases/Admin/Brand/Delete a Brand and verify,Firefox 84.0,,,2021-01-13 12:40:57,2021-01-13 12:41:26,29.067s,PASSED
+Start listener action : login,Firefox 84.0,,,2021-01-13 12:40:57,2021-01-13 12:41:00,3.001s,PASSED
+brandName = pages.Brand.addBrand(),Firefox 84.0,,,2021-01-13 12:41:00,2021-01-13 12:41:04,4.032s,PASSED
+println(brandName),Firefox 84.0,,,2021-01-13 12:41:04,2021-01-13 12:41:04,0.001s,PASSED
+pages.Brand.deleteBrand(brandName),Firefox 84.0,,,2021-01-13 12:41:04,2021-01-13 12:41:18,13.646s,PASSED
+pages.Brand.verifyABrandDeleted(brandName),Firefox 84.0,,,2021-01-13 12:41:18,2021-01-13 12:41:26,8.258s,PASSED
+,,,,,,,
+Test Cases/Admin/Brand/Edit a Brand and Verify,Firefox 84.0,,,2021-01-13 12:41:26,2021-01-13 12:42:00,34.332s,PASSED
+Start listener action : login,Firefox 84.0,,,2021-01-13 12:41:26,2021-01-13 12:41:29,3.003s,PASSED
+brandName = pages.Brand.addBrand(),Firefox 84.0,,,2021-01-13 12:41:29,2021-01-13 12:41:33,4.032s,PASSED
+println(brandName),Firefox 84.0,,,2021-01-13 12:41:33,2021-01-13 12:41:33,0.000s,PASSED
+brandeditedname = pages.Brand.editBrandName(brandName),Firefox 84.0,,,2021-01-13 12:41:33,2021-01-13 12:41:48,15.393s,PASSED
+println(brandeditedname),Firefox 84.0,,,2021-01-13 12:41:48,2021-01-13 12:41:48,0.001s,PASSED
+pages.Brand.verifyeditedBrandName(brandeditedname),Firefox 84.0,,,2021-01-13 12:41:48,2021-01-13 12:42:00,11.759s,PASSED
+,,,,,,,
+Test Cases/Admin/Brand/Verify elements on Add Brand popup,Firefox 84.0,,,2021-01-13 12:42:00,2021-01-13 12:42:06,6.262s,PASSED
+Start listener action : login,Firefox 84.0,,,2021-01-13 12:42:00,2021-01-13 12:42:03,3.004s,PASSED
+pages.Brand.clickBrand(),Firefox 84.0,,,2021-01-13 12:42:03,2021-01-13 12:42:04,0.515s,PASSED
+pages.Brand.clickAddBrand(),Firefox 84.0,,,2021-01-13 12:42:04,2021-01-13 12:42:04,0.522s,PASSED
+pages.Brand.verifyBrandPopUp(),Firefox 84.0,,,2021-01-13 12:42:04,2021-01-13 12:42:06,2.068s,PASSED
+,,,,,,,
+Test Cases/Admin/dashboard/Verify Headers,Firefox 84.0,,,2021-01-13 12:42:06,2021-01-13 12:42:12,5.967s,PASSED
+Start listener action : login,Firefox 84.0,,,2021-01-13 12:42:06,2021-01-13 12:42:09,3.008s,PASSED
+common.uploading.getHeaders(),Firefox 84.0,,,2021-01-13 12:42:10,2021-01-13 12:42:12,2.821s,PASSED
+,,,,,,,
+Test Cases/Admin/dashboard/verifyUrlAfterLogin,Firefox 84.0,,,2021-01-13 12:42:12,2021-01-13 12:42:25,13.136s,PASSED
+Start listener action : login,Firefox 84.0,,,2021-01-13 12:42:12,2021-01-13 12:42:15,3.002s,PASSED
+"verification.Verification.getUrlAndVerify(""dashboard"", ""you are not in a dashboard page"")",Firefox 84.0,,,2021-01-13 12:42:15,2021-01-13 12:42:25,10.011s,PASSED
+,,,,,,,
+Test Cases/Admin/Journey/addJournyAndVerifyItisAdded,Firefox 84.0,,,2021-01-13 12:42:26,2021-01-13 12:42:46,20.761s,PASSED
+Start listener action : login,Firefox 84.0,,,2021-01-13 12:42:26,2021-01-13 12:42:29,3.002s,PASSED
+pages.Journey.clickOnJourneyTab(),Firefox 84.0,,,2021-01-13 12:42:29,2021-01-13 12:42:30,1.272s,PASSED
+journeyName = pages.Journey.addJourney(),Firefox 84.0,,,2021-01-13 12:42:30,2021-01-13 12:42:35,4.770s,PASSED
+pages.Journey.verifyJourneyAdded(journeyName),Firefox 84.0,,,2021-01-13 12:42:35,2021-01-13 12:42:46,11.597s,PASSED
+,,,,,,,
+Test Cases/Admin/Journey/cloneJourneyAndVerifyisitCloned,Firefox 84.0,,,2021-01-13 12:42:46,2021-01-13 12:43:28,42.037s,PASSED
+Start listener action : login,Firefox 84.0,,,2021-01-13 12:42:46,2021-01-13 12:42:49,3.018s,PASSED
+pages.Journey.clickOnJourneyTab(),Firefox 84.0,,,2021-01-13 12:42:49,2021-01-13 12:42:51,1.271s,PASSED
+journeyName = pages.Journey.addJourney(),Firefox 84.0,,,2021-01-13 12:42:51,2021-01-13 12:42:55,4.258s,PASSED
+pages.Journey.cloneJourney(journeyName),Firefox 84.0,,,2021-01-13 12:42:55,2021-01-13 12:43:10,15.193s,PASSED
+pages.Journey.verifyJourneyCloned(journeyName),Firefox 84.0,,,2021-01-13 12:43:10,2021-01-13 12:43:28,18.144s,PASSED
+,,,,,,,
+Test Cases/Admin/Journey/createAccessCodeForJourneyAndVerifyIsTheCodeSuccessfullyCreated,Firefox 84.0,,,2021-01-13 12:43:28,2021-01-13 12:44:22,53.397s,PASSED
+Start listener action : login,Firefox 84.0,,,2021-01-13 12:43:28,2021-01-13 12:43:31,3.003s,PASSED
+pages.Journey.clickOnJourneyTab(),Firefox 84.0,,,2021-01-13 12:43:31,2021-01-13 12:43:33,1.269s,PASSED
+journeyName = pages.Journey.getRandomJourneyName(),Firefox 84.0,,,2021-01-13 12:43:33,2021-01-13 12:43:34,1.077s,PASSED
+accessCode = pages.Journey.getRandomAccessCode(),Firefox 84.0,,,2021-01-13 12:43:34,2021-01-13 12:43:34,0.001s,PASSED
+useLimit = pages.Journey.getRandomCount(),Firefox 84.0,,,2021-01-13 12:43:34,2021-01-13 12:43:34,0.001s,PASSED
+"accessCode = pages.Journey.createAccessCodeInJourney(journeyName, accessCode, useLimit)",Firefox 84.0,,,2021-01-13 12:43:34,2021-01-13 12:44:00,26.389s,PASSED
+"pages.Journey.verifyTheCreatedAccessCode(journeyName, accessCode)",Firefox 84.0,,,2021-01-13 12:44:00,2021-01-13 12:44:22,21.529s,PASSED
+,,,,,,,
+Test Cases/Admin/Journey/createMultipleAccessCodesWithSameName,Firefox 84.0,,,2021-01-13 12:44:22,2021-01-13 12:45:25,1m - 2.841s,PASSED
+Start listener action : login,Firefox 84.0,,,2021-01-13 12:44:22,2021-01-13 12:44:25,3.002s,PASSED
+pages.Journey.clickOnJourneyTab(),Firefox 84.0,,,2021-01-13 12:44:25,2021-01-13 12:44:26,1.247s,PASSED
+journeyName = pages.Journey.getRandomJourneyName(),Firefox 84.0,,,2021-01-13 12:44:26,2021-01-13 12:44:27,1.061s,PASSED
+accessCode = pages.Journey.getRandomAccessCode(),Firefox 84.0,,,2021-01-13 12:44:27,2021-01-13 12:44:27,0.000s,PASSED
+useLimit = pages.Journey.getRandomCount(),Firefox 84.0,,,2021-01-13 12:44:27,2021-01-13 12:44:27,0.000s,PASSED
+"accessCode = pages.Journey.createAccessCodeInJourney(journeyName, accessCode, useLimit)",Firefox 84.0,,,2021-01-13 12:44:27,2021-01-13 12:44:42,14.647s,PASSED
+"pages.Journey.verifyTheCreatedAccessCode(journeyName, accessCode)",Firefox 84.0,,,2021-01-13 12:44:42,2021-01-13 12:44:51,8.963s,PASSED
+journeyName1 = pages.Journey.getRandomJourneyName(),Firefox 84.0,,,2021-01-13 12:44:51,2021-01-13 12:44:52,1.651s,PASSED
+println(journeyName1),Firefox 84.0,,,2021-01-13 12:44:52,2021-01-13 12:44:52,0.000s,PASSED
+"accessCode = pages.Journey.createAccessCodeInJourney(journeyName1, accessCode, useLimit)",Firefox 84.0,,,2021-01-13 12:44:52,2021-01-13 12:45:12,19.136s,PASSED
+"pages.Journey.verifyTheCreatedAccessCode(journeyName1, accessCode)",Firefox 84.0,,,2021-01-13 12:45:12,2021-01-13 12:45:25,12.993s,PASSED
+,,,,,,,
+Test Cases/Admin/Journey/deleteJourneyAndVerify,Firefox 84.0,,,2021-01-13 12:45:25,2021-01-13 12:45:59,34.101s,PASSED
+Start listener action : login,Firefox 84.0,,,2021-01-13 12:45:25,2021-01-13 12:45:28,3.007s,PASSED
+pages.Journey.clickOnJourneyTab(),Firefox 84.0,,,2021-01-13 12:45:28,2021-01-13 12:45:29,1.337s,PASSED
+journeyName = pages.Journey.addJourney(),Firefox 84.0,,,2021-01-13 12:45:29,2021-01-13 12:45:33,4.372s,PASSED
+pages.Journey.deleteJourney(journeyName),Firefox 84.0,,,2021-01-13 12:45:33,2021-01-13 12:45:47,13.190s,PASSED
+pages.Journey.verifyJourneyDeleted(journeyName),Firefox 84.0,,,2021-01-13 12:45:47,2021-01-13 12:45:59,12.093s,PASSED
+,,,,,,,
+Test Cases/Admin/LogOut/logout,Firefox 84.0,,,2021-01-13 12:45:59,2021-01-13 12:46:03,4.161s,PASSED
+Start listener action : login,Firefox 84.0,,,2021-01-13 12:45:59,2021-01-13 12:46:02,3.002s,PASSED
+logout.LogoutForAdminDevEnvironment.clickingOnProfileIcon(),Firefox 84.0,,,2021-01-13 12:46:02,2021-01-13 12:46:02,0.506s,PASSED
+logout.LogoutForAdminDevEnvironment.logout(),Firefox 84.0,,,2021-01-13 12:46:02,2021-01-13 12:46:03,0.520s,PASSED
+,,,,,,,
+Test Cases/Admin/Product/addProductAndVerify,Firefox 84.0,,,2021-01-13 12:46:03,2021-01-13 12:46:34,30.910s,PASSED
+Start listener action : login,Firefox 84.0,,,2021-01-13 12:46:03,2021-01-13 12:46:11,8.658s,PASSED
+productname = pages.Product.addProduct(),Firefox 84.0,,,2021-01-13 12:46:12,2021-01-13 12:46:21,9.906s,PASSED
+pages.Product.verifyProductAdded(productname),Firefox 84.0,,,2021-01-13 12:46:21,2021-01-13 12:46:34,12.221s,PASSED
+println(productname),Firefox 84.0,,,2021-01-13 12:46:34,2021-01-13 12:46:34,0.001s,PASSED
+,,,,,,,
+Test Cases/Admin/Product/deleteProductAndVerify,Firefox 84.0,,,2021-01-13 12:46:34,2021-01-13 12:47:14,39.840s,PASSED
+Start listener action : login,Firefox 84.0,,,2021-01-13 12:46:34,2021-01-13 12:46:37,3.001s,PASSED
+productname = pages.Product.addProduct(),Firefox 84.0,,,2021-01-13 12:46:37,2021-01-13 12:46:44,7.061s,PASSED
+pages.Product.deleteProduct(productname),Firefox 84.0,,,2021-01-13 12:46:44,2021-01-13 12:47:01,17.556s,PASSED
+pages.Product.verifyProductNotPresent(productname),Firefox 84.0,,,2021-01-13 12:47:01,2021-01-13 12:47:14,12.091s,PASSED
+,,,,,,,
+Test Cases/Admin/Product/deleteProductFromProductEditPageAndVerify,Firefox 84.0,,,2021-01-13 12:47:14,2021-01-13 12:48:07,53.095s,PASSED
+Start listener action : login,Firefox 84.0,,,2021-01-13 12:47:14,2021-01-13 12:47:17,3.002s,PASSED
+productname = pages.Product.addProduct(),Firefox 84.0,,,2021-01-13 12:47:17,2021-01-13 12:47:24,6.947s,PASSED
+pages.Product.openAnyExistingProduct(productname),Firefox 84.0,,,2021-01-13 12:47:24,2021-01-13 12:47:37,13.592s,PASSED
+pages.Product.clickDeleteButtonInProductEditPage(),Firefox 84.0,,,2021-01-13 12:47:37,2021-01-13 12:47:56,18.394s,PASSED
+pages.Product.verifyProductNotPresent(productname),Firefox 84.0,,,2021-01-13 12:47:56,2021-01-13 12:48:07,11.042s,PASSED
+,,,,,,,
+Test Cases/Admin/Product/editProductNameAndVerify,Firefox 84.0,,,2021-01-13 12:48:07,2021-01-13 12:49:06,59.769s,PASSED
+Start listener action : login,Firefox 84.0,,,2021-01-13 12:48:07,2021-01-13 12:48:10,3.002s,PASSED
+productname = pages.Product.addProduct(),Firefox 84.0,,,2021-01-13 12:48:10,2021-01-13 12:48:17,7.187s,PASSED
+pages.Product.openAnyExistingProduct(productname),Firefox 84.0,,,2021-01-13 12:48:17,2021-01-13 12:48:31,14.277s,PASSED
+editedName = pages.Product.editProductName(),Firefox 84.0,,,2021-01-13 12:48:31,2021-01-13 12:48:41,9.903s,PASSED
+pages.Product.verifyProductAdded(editedName),Firefox 84.0,,,2021-01-13 12:48:41,2021-01-13 12:48:53,11.791s,PASSED
+pages.Product.verifyProductNotPresent(productname),Firefox 84.0,,,2021-01-13 12:48:53,2021-01-13 12:49:06,13.487s,PASSED
+,,,,,,,
+Test Cases/Admin/Product/openExistingProductNavigatesToProductEditPage,Firefox 84.0,,,2021-01-13 12:49:06,2021-01-13 12:49:28,21.771s,PASSED
+Start listener action : login,Firefox 84.0,,,2021-01-13 12:49:06,2021-01-13 12:49:09,3.017s,PASSED
+productName = pages.Product.getRandomProductNmae(),Firefox 84.0,,,2021-01-13 12:49:10,2021-01-13 12:49:12,2.294s,PASSED
+pages.Product.openAnyExistingProduct(productName),Firefox 84.0,,,2021-01-13 12:49:12,2021-01-13 12:49:26,14.166s,PASSED
+pages.Product.verifyProductEditPage(),Firefox 84.0,,,2021-01-13 12:49:26,2021-01-13 12:49:28,2.023s,PASSED
+,,,,,,,
+Test Cases/Admin/Product/verifyAddProductPopUp,Firefox 84.0,,,2021-01-13 12:49:28,2021-01-13 12:49:37,8.998s,PASSED
+Start listener action : login,Firefox 84.0,,,2021-01-13 12:49:28,2021-01-13 12:49:31,3.033s,PASSED
+pages.Product.clickOnProductTab(),Firefox 84.0,,,2021-01-13 12:49:32,2021-01-13 12:49:33,1.417s,PASSED
+pages.Product.clickOnAddProductButton(),Firefox 84.0,,,2021-01-13 12:49:33,2021-01-13 12:49:34,1.418s,PASSED
+pages.Product.verifyProductPopUp(),Firefox 84.0,,,2021-01-13 12:49:34,2021-01-13 12:49:37,2.844s,PASSED
+,,,,,,,
+Test Cases/Admin/Product/verifyCloseButtonFunctionalityInProductEditPage,Firefox 84.0,,,2021-01-13 12:49:37,2021-01-13 12:49:56,18.503s,PASSED
+Start listener action : login,Firefox 84.0,,,2021-01-13 12:49:37,2021-01-13 12:49:40,3.036s,PASSED
+productname = pages.Product.getRandomProductNmae(),Firefox 84.0,,,2021-01-13 12:49:41,2021-01-13 12:49:43,2.334s,PASSED
+pages.Product.openAnyExistingProduct(productname),Firefox 84.0,,,2021-01-13 12:49:43,2021-01-13 12:49:52,9.255s,PASSED
+pages.Product.clickCloseButtonInProductEditPage(),Firefox 84.0,,,2021-01-13 12:49:52,2021-01-13 12:49:55,3.252s,PASSED
+pages.Product.verifyAddProductButton(),Firefox 84.0,,,2021-01-13 12:49:55,2021-01-13 12:49:56,0.342s,PASSED
+,,,,,,,
+Test Cases/Admin/Product/verifyDragAndDropFunctionalityInProductAssets,Firefox 84.0,,,2021-01-13 12:49:56,2021-01-13 12:50:27,31.004s,PASSED
+Start listener action : login,Firefox 84.0,,,2021-01-13 12:49:56,2021-01-13 12:49:59,3.019s,PASSED
+pages.Product.clickOnProductTab(),Firefox 84.0,,,2021-01-13 12:49:59,2021-01-13 12:50:00,1.418s,PASSED
+productName = pages.Product.getRandomProductNmae(),Firefox 84.0,,,2021-01-13 12:50:00,2021-01-13 12:50:03,2.292s,PASSED
+pages.Product.openAnyExistingProduct(productName),Firefox 84.0,,,2021-01-13 12:50:03,2021-01-13 12:50:19,16.016s,PASSED
+"pages.Product.changePositionOfItemInProductAssets(findTestObject(""Object Repository/Product/Test/imageSource(index)"", [""index"":1]), 2, true)",Firefox 84.0,,,2021-01-13 12:50:19,2021-01-13 12:50:27,7.976s,PASSED
+,,,,,,,
+Test Cases/Admin/Product/verifyDragAndDropFunctionalityInRelatedAssets,Firefox 84.0,,,2021-01-13 12:50:27,2021-01-13 12:50:56,29.193s,PASSED
+Start listener action : login,Firefox 84.0,,,2021-01-13 12:50:27,2021-01-13 12:50:36,8.949s,PASSED
+pages.Product.clickOnProductTab(),Firefox 84.0,,,2021-01-13 12:50:36,2021-01-13 12:50:37,1.407s,PASSED
+productName = pages.Product.getRandomProductNmae(),Firefox 84.0,,,2021-01-13 12:50:37,2021-01-13 12:50:40,2.265s,PASSED
+pages.Product.openAnyExistingProduct(productName),Firefox 84.0,,,2021-01-13 12:50:40,2021-01-13 12:50:49,8.953s,PASSED
+"pages.Product.changePositionOfItemInRelatedAssets(findTestObject(""Product/ProductEditPage/RelatedAssets/sourceObject(index)"", [""index"":1]), 2, true)",Firefox 84.0,,,2021-01-13 12:50:49,2021-01-13 12:50:56,7.372s,PASSED
+,,,,,,,
+Test Cases/Admin/Product/verifyPageAfterClosingProduct,Firefox 84.0,,,2021-01-13 12:50:56,2021-01-13 12:51:22,26.300s,PASSED
+Start listener action : login,Firefox 84.0,,,2021-01-13 12:50:56,2021-01-13 12:51:05,8.866s,PASSED
+pages.Product.clickOnProductTab(),Firefox 84.0,,,2021-01-13 12:51:05,2021-01-13 12:51:06,1.394s,PASSED
+productName = pages.Product.getRandomProductNmae(),Firefox 84.0,,,2021-01-13 12:51:06,2021-01-13 12:51:09,2.269s,PASSED
+pages.Product.openAnyExistingProduct(productName),Firefox 84.0,,,2021-01-13 12:51:09,2021-01-13 12:51:20,11.336s,PASSED
+pages.Product.clickCloseButtonInProductEditPage(),Firefox 84.0,,,2021-01-13 12:51:20,2021-01-13 12:51:22,2.146s,PASSED
+pages.Product.verifyUrlAfterClosingProduct(),Firefox 84.0,,,2021-01-13 12:51:22,2021-01-13 12:51:22,0.032s,PASSED
+,,,,,,,
+Test Cases/Admin/Product/verifySaveChangesDeleteAndCloseButtonInProductDetailspage,Firefox 84.0,,,2021-01-13 12:51:22,2021-01-13 12:51:50,28.115s,PASSED
+Start listener action : login,Firefox 84.0,,,2021-01-13 12:51:22,2021-01-13 12:51:25,3.017s,PASSED
+productname = pages.Product.addProduct(),Firefox 84.0,,,2021-01-13 12:51:26,2021-01-13 12:51:33,7.595s,PASSED
+pages.Product.openAnyExistingProduct(productname),Firefox 84.0,,,2021-01-13 12:51:33,2021-01-13 12:51:48,14.750s,PASSED
+pages.Product.verifyFooterSectionButtons(),Firefox 84.0,,,2021-01-13 12:51:48,2021-01-13 12:51:50,2.476s,PASSED
+,,,,,,,
+Test Cases/Admin/Product/verifySearchFunctionalityInFilter,Firefox 84.0,,,2021-01-13 12:51:50,2021-01-13 12:52:25,35.149s,PASSED
+Start listener action : login,Firefox 84.0,,,2021-01-13 12:51:50,2021-01-13 12:51:53,3.024s,PASSED
+pages.Product.clickOnProductTab(),Firefox 84.0,,,2021-01-13 12:51:54,2021-01-13 12:51:55,1.414s,PASSED
+productName = pages.Product.getRandomProductNmae(),Firefox 84.0,,,2021-01-13 12:51:55,2021-01-13 12:51:57,2.273s,PASSED
+pages.Product.searchForAProduct(productName),Firefox 84.0,,,2021-01-13 12:51:57,2021-01-13 12:52:10,12.534s,PASSED
+pages.Product.verifyProductPresent(productName),Firefox 84.0,,,2021-01-13 12:52:10,2021-01-13 12:52:25,15.612s,PASSED
+,,,,,,,
+Test Cases/Admin/Product/verifySearchFunctionalityWithInvalidProduct,Firefox 84.0,,,2021-01-13 12:52:25,2021-01-13 12:52:47,21.700s,PASSED
+Start listener action : login,Firefox 84.0,,,2021-01-13 12:52:25,2021-01-13 12:52:29,3.027s,PASSED
+pages.Product.clickOnProductTab(),Firefox 84.0,,,2021-01-13 12:52:29,2021-01-13 12:52:30,1.352s,PASSED
+productName = pages.Product.getRandomProductNmae(),Firefox 84.0,,,2021-01-13 12:52:30,2021-01-13 12:52:32,2.363s,PASSED
+"productName = productName + ""*""",Firefox 84.0,,,2021-01-13 12:52:32,2021-01-13 12:52:32,0.001s,PASSED
+pages.Product.verifyProductNotPresent(productName),Firefox 84.0,,,2021-01-13 12:52:32,2021-01-13 12:52:47,14.787s,PASSED
+,,,,,,,
+Test Cases/Admin/Section/addSectionAndVerify,Firefox 84.0,,,2021-01-13 12:52:47,2021-01-13 12:53:47,59.508s,FAILED
+Start listener action : login,Firefox 84.0,,,2021-01-13 12:52:47,2021-01-13 12:52:50,3.018s,PASSED
+pages.Section.clickOnSectionTab(),Firefox 84.0,,,2021-01-13 12:52:50,2021-01-13 12:52:52,1.430s,PASSED
+sectionName = pages.Section.addSection(),Firefox 84.0,,,2021-01-13 12:52:52,2021-01-13 12:53:03,11.570s,PASSED
+pages.Section.verifySectionAdded(sectionName),Firefox 84.0,,,2021-01-13 12:53:03,2021-01-13 12:53:47,43.217s,FAILED
+,,,,,,,
+Test Cases/Admin/Section/veifyFieldsPresentInAddSectionPopUp,Firefox 84.0,,,2021-01-13 12:53:47,2021-01-13 12:54:03,16.613s,PASSED
+Start listener action : login,Firefox 84.0,,,2021-01-13 12:53:47,2021-01-13 12:53:50,3.023s,PASSED
+pages.Section.clickOnSectionTab(),Firefox 84.0,,,2021-01-13 12:53:50,2021-01-13 12:53:51,1.404s,PASSED
+pages.Section.verifyElementsInAddSectionPopUp(),Firefox 84.0,,,2021-01-13 12:53:51,2021-01-13 12:54:03,12.006s,PASSED
+,,,,,,,
+Test Cases/Admin/Section/verifyFunctionalityOfCancelButtonInAddSectionPopup,Firefox 84.0,,,2021-01-13 12:54:03,2021-01-13 12:54:23,19.935s,PASSED
+Start listener action : login,Firefox 84.0,,,2021-01-13 12:54:03,2021-01-13 12:54:06,3.025s,PASSED
+pages.Section.clickOnSectionTab(),Firefox 84.0,,,2021-01-13 12:54:06,2021-01-13 12:54:15,8.972s,PASSED
+pages.Section.clickOnAddSectionButton(),Firefox 84.0,,,2021-01-13 12:54:15,2021-01-13 12:54:21,5.879s,PASSED
+pages.Section.cancelButtonInAddSectionPopup(),Firefox 84.0,,,2021-01-13 12:54:21,2021-01-13 12:54:23,1.907s,PASSED
+,,,,,,,
+Test Cases/Admin/verifyFieldsPresentInAssetEditPage,Firefox 84.0,,,2021-01-13 12:54:23,2021-01-13 12:54:27,3.335s,ERROR
+Start listener action : login,Firefox 84.0,,,2021-01-13 12:54:23,2021-01-13 12:54:26,3.010s,PASSED
+pages.Asset.clickAsset(),Firefox 84.0,,,2021-01-13 12:54:26,2021-01-13 12:54:27,0.047s,ERROR
+,,,,,,,
+Test Cases/JourneyPortal/addProductTOCartAndVerifyWhetherIsItShownInUi,Firefox 84.0,,,2021-01-13 12:54:27,2021-01-13 12:55:14,47.083s,PASSED
+Start listener action : login,Firefox 84.0,,,2021-01-13 12:54:27,2021-01-13 12:54:30,3.025s,PASSED
+pages.Journey.clickOnJourneyTab(),Firefox 84.0,,,2021-01-13 12:54:30,2021-01-13 12:54:31,1.497s,PASSED
+journeyName = pages.Journey.getRandomJourneyName(),Firefox 84.0,,,2021-01-13 12:54:31,2021-01-13 12:54:33,1.541s,PASSED
+accessCode = pages.Journey.getExistingJourneyAccesscode(journeyName),Firefox 84.0,,,2021-01-13 12:54:33,2021-01-13 12:54:52,19.554s,PASSED
+login.LoginForJourneyApplication.loginToJourneyApplication(),Firefox 84.0,,,2021-01-13 12:54:52,2021-01-13 12:54:58,5.189s,PASSED
+pages.Journey.enterAccessCodeInJourney(accessCode),Firefox 84.0,,,2021-01-13 12:54:58,2021-01-13 12:55:00,1.950s,PASSED
+pages.Journey.clickEnterButton(),Firefox 84.0,,,2021-01-13 12:55:00,2021-01-13 12:55:01,1.521s,PASSED
+pages.JourneyPortal.openExistingSection(),Firefox 84.0,,,2021-01-13 12:55:01,2021-01-13 12:55:06,4.605s,PASSED
+pages.JourneyPortal.openAnyProductInTheJourneyPortal(),Firefox 84.0,,,2021-01-13 12:55:06,2021-01-13 12:55:09,3.238s,PASSED
+orderCount = pages.JourneyPortal.clickAddToCartButton(),Firefox 84.0,,,2021-01-13 12:55:09,2021-01-13 12:55:13,4.349s,PASSED
+productCount = pages.JourneyPortal.getProductsCount(),Firefox 84.0,,,2021-01-13 12:55:13,2021-01-13 12:55:14,0.343s,PASSED
+"pages.JourneyPortal.verifyWhetherOrderedAndAvailableProductsCountAreSame(orderCount, productCount)",Firefox 84.0,,,2021-01-13 12:55:14,2021-01-13 12:55:14,0.000s,PASSED
+,,,,,,,
+Test Cases/JourneyPortal/AddProductToCartMulitpleTimesAndVerifyTheProductsCountAfterRefresh,Firefox 84.0,,,2021-01-13 12:55:14,2021-01-13 12:56:03,49.069s,FAILED
+Start listener action : login,Firefox 84.0,,,2021-01-13 12:55:14,2021-01-13 12:55:23,8.886s,PASSED
+pages.Journey.clickOnJourneyTab(),Firefox 84.0,,,2021-01-13 12:55:23,2021-01-13 12:55:24,1.389s,PASSED
+journeyName = pages.Journey.getRandomJourneyName(),Firefox 84.0,,,2021-01-13 12:55:24,2021-01-13 12:55:25,1.232s,PASSED
+accessCode = pages.Journey.getExistingJourneyAccesscode(journeyName),Firefox 84.0,,,2021-01-13 12:55:25,2021-01-13 12:55:39,13.199s,PASSED
+login.LoginForJourneyApplication.loginToJourneyApplication(),Firefox 84.0,,,2021-01-13 12:55:39,2021-01-13 12:55:39,0.258s,PASSED
+pages.Journey.enterAccessCodeInJourney(accessCode),Firefox 84.0,,,2021-01-13 12:55:39,2021-01-13 12:55:41,1.895s,PASSED
+pages.Journey.clickEnterButton(),Firefox 84.0,,,2021-01-13 12:55:41,2021-01-13 12:55:42,1.642s,PASSED
+pages.JourneyPortal.openExistingSection(),Firefox 84.0,,,2021-01-13 12:55:42,2021-01-13 12:55:46,4.030s,PASSED
+pages.JourneyPortal.openAnyProductInTheJourneyPortal(),Firefox 84.0,,,2021-01-13 12:55:46,2021-01-13 12:55:50,3.303s,PASSED
+orderCount = pages.JourneyPortal.clickAddToCartButton(),Firefox 84.0,,,2021-01-13 12:55:50,2021-01-13 12:56:02,12.532s,PASSED
+login.LoginForJourneyApplication.reloadThePage(),Firefox 84.0,,,2021-01-13 12:56:02,2021-01-13 12:56:02,0.037s,PASSED
+productCount = pages.JourneyPortal.getProductsCount(),Firefox 84.0,,,2021-01-13 12:56:02,2021-01-13 12:56:03,0.374s,PASSED
+"pages.JourneyPortal.verifyWhetherOrderedAndAvailableProductsCountAreSame(orderCount, productCount)",Firefox 84.0,,,2021-01-13 12:56:03,2021-01-13 12:56:03,0.004s,FAILED
+,,,,,,,
+Test Cases/JourneyPortal/clickingOnTheRightAndLeftIsNavigatingCorrctly,Firefox 84.0,,,2021-01-13 12:56:03,2021-01-13 12:56:50,47.042s,PASSED
+Start listener action : login,Firefox 84.0,,,2021-01-13 12:56:03,2021-01-13 12:56:12,8.801s,PASSED
+pages.Journey.clickOnJourneyTab(),Firefox 84.0,,,2021-01-13 12:56:12,2021-01-13 12:56:13,1.407s,PASSED
+journeyName = pages.Journey.getRandomJourneyName(),Firefox 84.0,,,2021-01-13 12:56:13,2021-01-13 12:56:14,1.192s,PASSED
+accessCode = pages.Journey.getExistingJourneyAccesscode(journeyName),Firefox 84.0,,,2021-01-13 12:56:14,2021-01-13 12:56:33,19.044s,PASSED
+login.LoginForJourneyApplication.loginToJourneyApplication(),Firefox 84.0,,,2021-01-13 12:56:33,2021-01-13 12:56:34,0.355s,PASSED
+pages.Journey.enterAccessCodeInJourney(accessCode),Firefox 84.0,,,2021-01-13 12:56:34,2021-01-13 12:56:36,1.860s,PASSED
+pages.Journey.clickEnterButton(),Firefox 84.0,,,2021-01-13 12:56:36,2021-01-13 12:56:37,1.515s,PASSED
+pages.JourneyPortal.openExistingSection(),Firefox 84.0,,,2021-01-13 12:56:37,2021-01-13 12:56:42,4.778s,PASSED
+pages.JourneyPortal.openAnyProductInTheJourneyPortal(),Firefox 84.0,,,2021-01-13 12:56:42,2021-01-13 12:56:45,3.233s,PASSED
+pages.Product.clickNextSlide(),Firefox 84.0,,,2021-01-13 12:56:45,2021-01-13 12:56:48,2.603s,PASSED
+pages.Product.clickPreviousSlide(),Firefox 84.0,,,2021-01-13 12:56:48,2021-01-13 12:56:50,1.985s,PASSED
+,,,,,,,
+Test Cases/JourneyPortal/loginToJourneyApplicationThroughAccessCodeAndVerifyTheDisplayPage,Firefox 84.0,,,2021-01-13 12:56:50,2021-01-13 12:57:17,27.510s,PASSED
+Start listener action : login,Firefox 84.0,,,2021-01-13 12:56:50,2021-01-13 12:56:59,8.823s,PASSED
+pages.Journey.clickOnJourneyTab(),Firefox 84.0,,,2021-01-13 12:56:59,2021-01-13 12:57:00,1.446s,PASSED
+journeyName = pages.Journey.getRandomJourneyName(),Firefox 84.0,,,2021-01-13 12:57:00,2021-01-13 12:57:02,1.233s,PASSED
+accessCode = pages.Journey.getExistingJourneyAccesscode(journeyName),Firefox 84.0,,,2021-01-13 12:57:02,2021-01-13 12:57:13,11.102s,PASSED
+login.LoginForJourneyApplication.loginToJourneyApplication(),Firefox 84.0,,,2021-01-13 12:57:13,2021-01-13 12:57:13,0.173s,PASSED
+pages.Journey.enterAccessCodeInJourney(accessCode),Firefox 84.0,,,2021-01-13 12:57:13,2021-01-13 12:57:15,2.009s,PASSED
+pages.Journey.clickEnterButton(),Firefox 84.0,,,2021-01-13 12:57:15,2021-01-13 12:57:16,1.500s,PASSED
+pages.Journey.sectionPageVerification(),Firefox 84.0,,,2021-01-13 12:57:16,2021-01-13 12:57:17,0.963s,PASSED
+,,,,,,,
+Test Cases/JourneyPortal/loginToJourneyApplicationThroughInvalidAccessCodeAndVerifyTheErrorMessage,Firefox 84.0,,,2021-01-13 12:57:17,2021-01-13 12:58:16,58.382s,FAILED
+Start listener action : login,Firefox 84.0,,,2021-01-13 12:57:17,2021-01-13 12:57:26,8.721s,PASSED
+pages.Journey.clickOnJourneyTab(),Firefox 84.0,,,2021-01-13 12:57:26,2021-01-13 12:57:28,1.438s,PASSED
+journeyName = pages.Journey.getRandomJourneyName(),Firefox 84.0,,,2021-01-13 12:57:28,2021-01-13 12:57:29,1.143s,PASSED
+accessCode = pages.Journey.getExistingJourneyAccesscode(journeyName),Firefox 84.0,,,2021-01-13 12:57:29,2021-01-13 12:57:40,10.978s,PASSED
+accessCode = accessCode + pages.Journey.getRandomCount(),Firefox 84.0,,,2021-01-13 12:57:40,2021-01-13 12:57:40,0.001s,PASSED
+login.LoginForJourneyApplication.loginToJourneyApplication(),Firefox 84.0,,,2021-01-13 12:57:40,2021-01-13 12:57:40,0.181s,PASSED
+pages.Journey.enterAccessCodeInJourney(accessCode),Firefox 84.0,,,2021-01-13 12:57:40,2021-01-13 12:57:42,1.943s,PASSED
+pages.Journey.clickEnterButton(),Firefox 84.0,,,2021-01-13 12:57:42,2021-01-13 12:57:44,1.589s,PASSED
+pages.Journey.errorLoginCheck(),Firefox 84.0,,,2021-01-13 12:57:44,2021-01-13 12:58:16,32.161s,FAILED
+,,,,,,,
+Test Cases/JourneyPortal/loginToJourneyApplicationWithEmptyAccessCode,Firefox 84.0,,,2021-01-13 12:58:16,2021-01-13 12:58:43,27.594s,PASSED
+Start listener action : login,Firefox 84.0,,,2021-01-13 12:58:16,2021-01-13 12:58:24,8.711s,PASSED
+pages.Journey.clickOnJourneyTab(),Firefox 84.0,,,2021-01-13 12:58:25,2021-01-13 12:58:26,1.364s,PASSED
+journeyName = pages.Journey.getRandomJourneyName(),Firefox 84.0,,,2021-01-13 12:58:26,2021-01-13 12:58:27,1.099s,PASSED
+accessCode = pages.Journey.getExistingJourneyAccesscode(journeyName),Firefox 84.0,,,2021-01-13 12:58:27,2021-01-13 12:58:40,13.509s,PASSED
+login.LoginForJourneyApplication.loginToJourneyApplication(),Firefox 84.0,,,2021-01-13 12:58:40,2021-01-13 12:58:41,0.182s,PASSED
+pages.Journey.clickEnterButton(),Firefox 84.0,,,2021-01-13 12:58:41,2021-01-13 12:58:42,1.763s,PASSED
+pages.Journey.errorLoginCheck(),Firefox 84.0,,,2021-01-13 12:58:42,2021-01-13 12:58:43,0.839s,PASSED
+,,,,,,,
+Test Cases/JourneyPortal/verifyCartIfNoItemsAvailable,Firefox 84.0,,,2021-01-13 12:58:43,2021-01-13 12:59:48,1m - 4.271s,FAILED
+Start listener action : login,Firefox 84.0,,,2021-01-13 12:58:43,2021-01-13 12:58:52,8.884s,PASSED
+pages.Journey.clickOnJourneyTab(),Firefox 84.0,,,2021-01-13 12:58:52,2021-01-13 12:58:54,1.347s,PASSED
+journeyName = pages.Journey.getRandomJourneyName(),Firefox 84.0,,,2021-01-13 12:58:54,2021-01-13 12:58:55,1.139s,PASSED
+accessCode = pages.Journey.getExistingJourneyAccesscode(journeyName),Firefox 84.0,,,2021-01-13 12:58:55,2021-01-13 12:59:10,14.819s,PASSED
+login.LoginForJourneyApplication.loginToJourneyApplication(),Firefox 84.0,,,2021-01-13 12:59:10,2021-01-13 12:59:10,0.208s,PASSED
+pages.Journey.enterAccessCodeInJourney(accessCode),Firefox 84.0,,,2021-01-13 12:59:10,2021-01-13 12:59:12,2.309s,PASSED
+pages.Journey.clickEnterButton(),Firefox 84.0,,,2021-01-13 12:59:12,2021-01-13 12:59:14,1.600s,PASSED
+pages.JourneyPortal.clickOnCart(),Firefox 84.0,,,2021-01-13 12:59:14,2021-01-13 12:59:16,2.050s,PASSED
+pages.JourneyPortal.verifyElementOnCartIfNoItems(),Firefox 84.0,,,2021-01-13 12:59:16,2021-01-13 12:59:48,31.768s,FAILED
+,,,,,,,
+Test Cases/JourneyPortal/verifyClickingOnBackButtonNavigatesBackToSectionPage,Firefox 84.0,,,2021-01-13 12:59:48,2021-01-13 13:00:25,37.299s,PASSED
+Start listener action : login,Firefox 84.0,,,2021-01-13 12:59:48,2021-01-13 12:59:56,8.797s,PASSED
+pages.Journey.clickOnJourneyTab(),Firefox 84.0,,,2021-01-13 12:59:56,2021-01-13 12:59:58,1.326s,PASSED
+journeyName = pages.Journey.getRandomJourneyName(),Firefox 84.0,,,2021-01-13 12:59:58,2021-01-13 12:59:59,1.095s,PASSED
+accessCode = pages.Journey.getExistingJourneyAccesscode(journeyName),Firefox 84.0,,,2021-01-13 12:59:59,2021-01-13 13:00:13,14.390s,PASSED
+login.LoginForJourneyApplication.loginToJourneyApplication(),Firefox 84.0,,,2021-01-13 13:00:13,2021-01-13 13:00:13,0.192s,PASSED
+pages.Journey.enterAccessCodeInJourney(accessCode),Firefox 84.0,,,2021-01-13 13:00:13,2021-01-13 13:00:16,2.039s,PASSED
+pages.Journey.clickEnterButton(),Firefox 84.0,,,2021-01-13 13:00:16,2021-01-13 13:00:17,1.486s,PASSED
+pages.JourneyPortal.openExistingSection(),Firefox 84.0,,,2021-01-13 13:00:17,2021-01-13 13:00:22,4.848s,PASSED
+pages.JourneyPortal.clickBackButton(),Firefox 84.0,,,2021-01-13 13:00:22,2021-01-13 13:00:24,2.151s,PASSED
+pages.Journey.sectionPageVerification(),Firefox 84.0,,,2021-01-13 13:00:24,2021-01-13 13:00:25,0.857s,PASSED
+,,,,,,,
+Test Cases/JourneyPortal/verifyCloseButtonInJourneyPortalProductPopup,Firefox 84.0,,,2021-01-13 13:00:25,2021-01-13 13:01:02,37.133s,PASSED
+Start listener action : login,Firefox 84.0,,,2021-01-13 13:00:25,2021-01-13 13:00:34,8.732s,PASSED
+pages.Journey.clickOnJourneyTab(),Firefox 84.0,,,2021-01-13 13:00:34,2021-01-13 13:00:35,1.463s,PASSED
+journeyName = pages.Journey.getRandomJourneyName(),Firefox 84.0,,,2021-01-13 13:00:35,2021-01-13 13:00:37,1.228s,PASSED
+accessCode = pages.Journey.getExistingJourneyAccesscode(journeyName),Firefox 84.0,,,2021-01-13 13:00:37,2021-01-13 13:00:48,11.684s,PASSED
+login.LoginForJourneyApplication.loginToJourneyApplication(),Firefox 84.0,,,2021-01-13 13:00:48,2021-01-13 13:00:49,0.333s,PASSED
+pages.Journey.enterAccessCodeInJourney(accessCode),Firefox 84.0,,,2021-01-13 13:00:49,2021-01-13 13:00:50,1.873s,PASSED
+pages.Journey.clickEnterButton(),Firefox 84.0,,,2021-01-13 13:00:50,2021-01-13 13:00:52,1.526s,PASSED
+pages.JourneyPortal.openExistingSection(),Firefox 84.0,,,2021-01-13 13:00:52,2021-01-13 13:00:56,4.099s,PASSED
+pages.JourneyPortal.openAnyProductInTheJourneyPortal(),Firefox 84.0,,,2021-01-13 13:00:56,2021-01-13 13:00:59,3.194s,PASSED
+pages.JourneyPortal.verifyCloseButton(),Firefox 84.0,,,2021-01-13 13:00:59,2021-01-13 13:01:00,0.421s,PASSED
+pages.JourneyPortal.clickCloseButtonOnJourneyPortalProductPopup(),Firefox 84.0,,,2021-01-13 13:01:00,2021-01-13 13:01:02,1.881s,PASSED
+pages.JourneyPortal.productPageCheck(),Firefox 84.0,,,2021-01-13 13:01:02,2021-01-13 13:01:02,0.407s,PASSED
+,,,,,,,
+Test Cases/JourneyPortal/verifyElementsInJourneyPotalProductPopup,Firefox 84.0,,,2021-01-13 13:01:02,2021-01-13 13:01:42,39.779s,PASSED
+Start listener action : login,Firefox 84.0,,,2021-01-13 13:01:02,2021-01-13 13:01:11,9.232s,PASSED
+pages.Journey.clickOnJourneyTab(),Firefox 84.0,,,2021-01-13 13:01:12,2021-01-13 13:01:13,1.445s,PASSED
+journeyName = pages.Journey.getRandomJourneyName(),Firefox 84.0,,,2021-01-13 13:01:13,2021-01-13 13:01:14,1.258s,PASSED
+accessCode = pages.Journey.getExistingJourneyAccesscode(journeyName),Firefox 84.0,,,2021-01-13 13:01:14,2021-01-13 13:01:28,13.395s,PASSED
+login.LoginForJourneyApplication.loginToJourneyApplication(),Firefox 84.0,,,2021-01-13 13:01:28,2021-01-13 13:01:28,0.320s,PASSED
+pages.Journey.enterAccessCodeInJourney(accessCode),Firefox 84.0,,,2021-01-13 13:01:28,2021-01-13 13:01:30,1.863s,PASSED
+pages.Journey.clickEnterButton(),Firefox 84.0,,,2021-01-13 13:01:30,2021-01-13 13:01:31,1.505s,PASSED
+pages.JourneyPortal.openExistingSection(),Firefox 84.0,,,2021-01-13 13:01:31,2021-01-13 13:01:36,4.740s,PASSED
+pages.JourneyPortal.openAnyProductInTheJourneyPortal(),Firefox 84.0,,,2021-01-13 13:01:36,2021-01-13 13:01:40,3.624s,PASSED
+pages.JourneyPortal.verifyElementsInProductPopupInJourneyPortal(),Firefox 84.0,,,2021-01-13 13:01:40,2021-01-13 13:01:42,2.061s,PASSED
+,,,,,,,
+Test Cases/JourneyPortal/verifyFixedBackGroundInJourneyPortal,Firefox 84.0,,,2021-01-13 13:01:42,2021-01-13 13:02:59,1m - 17.214s,FAILED
+Start listener action : login,Firefox 84.0,,,2021-01-13 13:01:42,2021-01-13 13:01:51,9.127s,PASSED
+pages.Journey.clickOnJourneyTab(),Firefox 84.0,,,2021-01-13 13:01:51,2021-01-13 13:01:53,1.434s,PASSED
+journeyName = pages.Journey.getRandomJourneyName(),Firefox 84.0,,,2021-01-13 13:01:53,2021-01-13 13:01:54,1.223s,PASSED
+accessCode = pages.Journey.getExistingJourneyAccesscode(journeyName),Firefox 84.0,,,2021-01-13 13:01:54,2021-01-13 13:02:08,13.858s,PASSED
+pages.Journey.typeOfBackGroundToFixed(),Firefox 84.0,,,2021-01-13 13:02:08,2021-01-13 13:02:12,4.591s,PASSED
+login.LoginForJourneyApplication.loginToJourneyApplication(),Firefox 84.0,,,2021-01-13 13:02:12,2021-01-13 13:02:13,0.366s,PASSED
+pages.Journey.enterAccessCodeInJourney(accessCode),Firefox 84.0,,,2021-01-13 13:02:13,2021-01-13 13:02:15,2.106s,PASSED
+pages.Journey.clickEnterButton(),Firefox 84.0,,,2021-01-13 13:02:15,2021-01-13 13:02:16,1.450s,PASSED
+pages.JourneyPortal.openExistingSection(),Firefox 84.0,,,2021-01-13 13:02:16,2021-01-13 13:02:21,4.874s,PASSED
+pages.JourneyPortal.verifyFixedBackGroundCheck(),Firefox 84.0,,,2021-01-13 13:02:21,2021-01-13 13:02:59,37.944s,FAILED
+,,,,,,,
+Test Cases/JourneyPortal/verifyProductsAndBackButtonIsPresentAfterClickingSection,Firefox 84.0,,,2021-01-13 13:02:59,2021-01-13 13:03:40,40.759s,PASSED
+Start listener action : login,Firefox 84.0,,,2021-01-13 13:02:59,2021-01-13 13:03:08,8.874s,PASSED
+pages.Journey.clickOnJourneyTab(),Firefox 84.0,,,2021-01-13 13:03:08,2021-01-13 13:03:09,1.371s,PASSED
+journeyName = pages.Journey.getRandomJourneyName(),Firefox 84.0,,,2021-01-13 13:03:09,2021-01-13 13:03:10,1.084s,PASSED
+accessCode = pages.Journey.getExistingJourneyAccesscode(journeyName),Firefox 84.0,,,2021-01-13 13:03:10,2021-01-13 13:03:30,19.819s,PASSED
+login.LoginForJourneyApplication.loginToJourneyApplication(),Firefox 84.0,,,2021-01-13 13:03:30,2021-01-13 13:03:30,0.174s,PASSED
+pages.Journey.enterAccessCodeInJourney(accessCode),Firefox 84.0,,,2021-01-13 13:03:30,2021-01-13 13:03:33,2.111s,PASSED
+pages.Journey.clickEnterButton(),Firefox 84.0,,,2021-01-13 13:03:33,2021-01-13 13:03:34,1.478s,PASSED
+pages.JourneyPortal.openExistingSection(),Firefox 84.0,,,2021-01-13 13:03:34,2021-01-13 13:03:38,4.402s,PASSED
+pages.JourneyPortal.verifyBackButtonAfterEnteringInToSection(),Firefox 84.0,,,2021-01-13 13:03:38,2021-01-13 13:03:39,0.639s,PASSED
+pages.JourneyPortal.productPageCheck(),Firefox 84.0,,,2021-01-13 13:03:39,2021-01-13 13:03:40,0.693s,PASSED
+,,,,,,,
+Test Cases/JourneyPortal/verifyScrollingBackGroundInJourneyPortal,Firefox 84.0,,,2021-01-13 13:03:40,2021-01-13 13:04:27,47.230s,PASSED
+Start listener action : login,Firefox 84.0,,,2021-01-13 13:03:40,2021-01-13 13:03:49,8.897s,PASSED
+pages.Journey.clickOnJourneyTab(),Firefox 84.0,,,2021-01-13 13:03:49,2021-01-13 13:03:50,1.347s,PASSED
+journeyName = pages.Journey.getRandomJourneyName(),Firefox 84.0,,,2021-01-13 13:03:50,2021-01-13 13:03:51,1.125s,PASSED
+accessCode = pages.Journey.getExistingJourneyAccesscode(journeyName),Firefox 84.0,,,2021-01-13 13:03:51,2021-01-13 13:04:13,21.323s,PASSED
+pages.Journey.typeOfBackGroundToScrollingBackground(),Firefox 84.0,,,2021-01-13 13:04:13,2021-01-13 13:04:17,4.620s,PASSED
+login.LoginForJourneyApplication.loginToJourneyApplication(),Firefox 84.0,,,2021-01-13 13:04:17,2021-01-13 13:04:18,0.270s,PASSED
+pages.Journey.enterAccessCodeInJourney(accessCode),Firefox 84.0,,,2021-01-13 13:04:18,2021-01-13 13:04:20,2.086s,PASSED
+pages.Journey.clickEnterButton(),Firefox 84.0,,,2021-01-13 13:04:20,2021-01-13 13:04:21,1.497s,PASSED
+pages.JourneyPortal.openExistingSection(),Firefox 84.0,,,2021-01-13 13:04:21,2021-01-13 13:04:26,5.324s,PASSED
+pages.JourneyPortal.verifyScrollingBackGroundCheck(),Firefox 84.0,,,2021-01-13 13:04:26,2021-01-13 13:04:27,0.582s,PASSED
+,,,,,,,
+Test Cases/JourneyPortal/verifySectionInformation,Firefox 84.0,,,2021-01-13 13:04:27,2021-01-13 13:05:06,38.496s,PASSED
+Start listener action : login,Firefox 84.0,,,2021-01-13 13:04:27,2021-01-13 13:04:36,8.748s,PASSED
+pages.Journey.clickOnJourneyTab(),Firefox 84.0,,,2021-01-13 13:04:36,2021-01-13 13:04:37,1.387s,PASSED
+journeyName = pages.Journey.getRandomJourneyName(),Firefox 84.0,,,2021-01-13 13:04:37,2021-01-13 13:04:39,1.127s,PASSED
+accessCode = pages.Journey.getExistingJourneyAccesscode(journeyName),Firefox 84.0,,,2021-01-13 13:04:39,2021-01-13 13:04:58,19.639s,PASSED
+login.LoginForJourneyApplication.loginToJourneyApplication(),Firefox 84.0,,,2021-01-13 13:04:58,2021-01-13 13:04:58,0.189s,PASSED
+pages.Journey.enterAccessCodeInJourney(accessCode),Firefox 84.0,,,2021-01-13 13:04:58,2021-01-13 13:05:00,1.925s,PASSED
+pages.Journey.clickEnterButton(),Firefox 84.0,,,2021-01-13 13:05:00,2021-01-13 13:05:02,1.474s,PASSED
+pages.JourneyPortal.verifyingSectionProperties(),Firefox 84.0,,,2021-01-13 13:05:02,2021-01-13 13:05:05,3.741s,PASSED
+,,,,,,,
+Test Cases/JourneyPortal/verifyTheFullScreenViewInProductPage,Firefox 84.0,,,2021-01-13 13:05:06,2021-01-13 13:06:12,1m - 6.129s,FAILED
+Start listener action : login,Firefox 84.0,,,2021-01-13 13:05:06,2021-01-13 13:05:14,8.807s,PASSED
+pages.Journey.clickOnJourneyTab(),Firefox 84.0,,,2021-01-13 13:05:14,2021-01-13 13:05:16,1.357s,PASSED
+journeyName = pages.Journey.getRandomJourneyName(),Firefox 84.0,,,2021-01-13 13:05:16,2021-01-13 13:05:17,1.078s,PASSED
+accessCode = pages.Journey.getExistingJourneyAccesscode(journeyName),Firefox 84.0,,,2021-01-13 13:05:17,2021-01-13 13:05:28,10.916s,PASSED
+login.LoginForJourneyApplication.loginToJourneyApplication(),Firefox 84.0,,,2021-01-13 13:05:28,2021-01-13 13:05:28,0.179s,PASSED
+pages.Journey.enterAccessCodeInJourney(accessCode),Firefox 84.0,,,2021-01-13 13:05:28,2021-01-13 13:05:30,2.076s,PASSED
+pages.Journey.clickEnterButton(),Firefox 84.0,,,2021-01-13 13:05:30,2021-01-13 13:05:32,1.481s,PASSED
+pages.JourneyPortal.openExistingSection(),Firefox 84.0,,,2021-01-13 13:05:32,2021-01-13 13:05:36,4.817s,PASSED
+pages.JourneyPortal.productPageCheck(),Firefox 84.0,,,2021-01-13 13:05:36,2021-01-13 13:05:37,0.610s,PASSED
+pages.JourneyPortal.clickFullScreenIcon(),Firefox 84.0,,,2021-01-13 13:05:37,2021-01-13 13:05:39,1.662s,PASSED
+pages.JourneyPortal.verifyTheFullScreenView(),Firefox 84.0,,,2021-01-13 13:05:39,2021-01-13 13:06:12,32.997s,FAILED
+,,,,,,,
+Test Cases/JourneyPortal/verifyTheFullScreenViewInSectionPage,Firefox 84.0,,,2021-01-13 13:06:12,2021-01-13 13:06:42,30.856s,PASSED
+Start listener action : login,Firefox 84.0,,,2021-01-13 13:06:12,2021-01-13 13:06:21,8.948s,PASSED
+pages.Journey.clickOnJourneyTab(),Firefox 84.0,,,2021-01-13 13:06:21,2021-01-13 13:06:22,1.350s,PASSED
+journeyName = pages.Journey.getRandomJourneyName(),Firefox 84.0,,,2021-01-13 13:06:22,2021-01-13 13:06:23,1.108s,PASSED
+accessCode = pages.Journey.getExistingJourneyAccesscode(journeyName),Firefox 84.0,,,2021-01-13 13:06:23,2021-01-13 13:06:36,12.592s,PASSED
+login.LoginForJourneyApplication.loginToJourneyApplication(),Firefox 84.0,,,2021-01-13 13:06:36,2021-01-13 13:06:36,0.176s,PASSED
+pages.Journey.enterAccessCodeInJourney(accessCode),Firefox 84.0,,,2021-01-13 13:06:36,2021-01-13 13:06:38,1.952s,PASSED
+pages.Journey.clickEnterButton(),Firefox 84.0,,,2021-01-13 13:06:38,2021-01-13 13:06:40,1.596s,PASSED
+pages.Journey.sectionPageVerification(),Firefox 84.0,,,2021-01-13 13:06:40,2021-01-13 13:06:40,0.827s,PASSED
+pages.JourneyPortal.clickFullScreenIcon(),Firefox 84.0,,,2021-01-13 13:06:40,2021-01-13 13:06:42,1.525s,PASSED
+pages.JourneyPortal.verifyTheFullScreenView(),Firefox 84.0,,,2021-01-13 13:06:42,2021-01-13 13:06:42,0.497s,PASSED

@@ -33,14 +33,14 @@ public class Assetsource {
 	@Keyword
 	def navigateToAssetSourceDetailsTab() {
 
-		actions.click(findTestObject('Object Repository/AssetSoure/Asset Source Tab'))
-		verifications.verifyElementPresent(findTestObject('Object Repository/AssetSoure/Add Asset Source Button'), "")
+		actions.click(findTestObject('AssetSource/Asset Source Tab'))
+		verifications.verifyElementPresent(findTestObject('AssetSource/Add Asset Source Button'), "")
 	}
 
 	@Keyword
 	def clickAddAssetSource() {
 
-		actions.click(findTestObject('Object Repository/AssetSoure/Add Asset Source Button'))
+		actions.click(findTestObject('AssetSource/Add Asset Source Button'))
 		WebUI.waitForPageLoad(30)
 	}
 
@@ -50,16 +50,16 @@ public class Assetsource {
 		navigateToAssetSourceDetailsTab()
 		def sourcename = "RandomAsset"+random.nextInt(1000)
 		clickAddAssetSource()
-		actions.sendKeys(findTestObject('Object Repository/AssetSoure/Source'), sourcename)
-		actions.click(findTestObject('Object Repository/AssetSoure/Asset Source button on popup'))
+		actions.sendKeys(findTestObject('AssetSource/Source'), sourcename)
+		actions.click(findTestObject('AssetSource/Asset Source button on popup'))
 		return 	sourcename
 	}
 
 	@Keyword
 	def searchForAnAssetSource(String sourceName) {
-		actions.sendKeys(findTestObject('Object Repository/AssetSoure/Search'), "")
+		actions.sendKeys(findTestObject('AssetSource/Search'), "")
 		for (int i = 0; i < sourceName.length(); i++) {
-			WebUI.sendKeys(findTestObject('Object Repository/AssetSoure/Search'), sourceName.charAt(i).toString())
+			WebUI.sendKeys(findTestObject('AssetSource/Search'), sourceName.charAt(i).toString())
 		}
 	}
 
@@ -67,7 +67,7 @@ public class Assetsource {
 	def verifyAssetSourceAdded(String sourcename) {
 
 		searchForAnAssetSource(sourcename)
-		verifications.verifyElementPresent(findTestObject('Object Repository/AssetSoure/AssetSourceName',["sourcename":sourcename]), "The AssetSource "+sourcename+" is not added in the list" )
+		verifications.verifyElementPresent(findTestObject('AssetSource/AssetSourceName',["sourcename":sourcename]), "The AssetSource "+sourcename+" is not added in the list" )
 	}
 
 	@Keyword
@@ -75,33 +75,33 @@ public class Assetsource {
 
 		String path = 'Object Repository/AssetSource/'
 
-		def elements = ["Source", "Tenant", "Cancel Button", "Asset Source button on popup",]
+		def elements = ["sourceLabel", "Tenant", "Cancel Button", "Asset Source button on popup",]
 		for(element in elements) {
 			verifications.verifyElementPresent(findTestObject(path+element), "The element "+element+" is not present")
 		}
-		actions.click(findTestObject('Object Repository/AssetSoure/Cancel Button'))
+		actions.click(findTestObject('AssetSource/Cancel Button'))
 	}
 
 	@Keyword
 	def openAnyExistingAssetSource(String sourcename) {
 
 		searchForAnAssetSource(sourcename)
-		WebUI.scrollToElement(findTestObject('Object Repository/AssetSoure/AssetSourceName',["sourcename":sourcename]),60)
-		actions.click(findTestObject('Object Repository/AssetSoure/AssetSourceName',["sourcename":sourcename]))
-		verifications.verifyElementPresent(findTestObject('Object Repository/AssetSoure/AssetSourceEdit(save button)'),"page is not navigated to asset source edit page")
+		WebUI.scrollToElement(findTestObject('AssetSource/AssetSourceName',["sourcename":sourcename]),60)
+		actions.click(findTestObject('AssetSource/AssetSourceName',["sourcename":sourcename]))
+		verifications.verifyElementPresent(findTestObject('AssetSource/AssetSourceEdit(save button)'),"page is not navigated to asset source edit page")
 	}
 	@Keyword
 	def deleteAnAssetSource(String sourcename){
 
 		openAnyExistingAssetSource(sourcename)
-		actions.click(findTestObject('Object Repository/AssetSoure/Delete Button'))
+		actions.click(findTestObject('AssetSource/Delete Button'))
 	}
 
 	@Keyword
 	def verifyAssetSourceDeleted(String sourcename) {
 
 		searchForAnAssetSource(sourcename)
-		verifications.verifyElementNotPresent(findTestObject('Object Repository/AssetSoure/AssetSourceName',["sourcename":sourcename]), "The AssetSource "+sourcename+" is not deleted from the list")
+		verifications.verifyElementNotPresent(findTestObject('AssetSource/AssetSourceName',["sourcename":sourcename]), "The AssetSource "+sourcename+" is not deleted from the list")
 	}
 
 	@Keyword
@@ -109,23 +109,23 @@ public class Assetsource {
 
 		openAnyExistingAssetSource(sourcename)
 		def sourceeditedname = 'editedsourcesname'+random.nextInt(10)
-		WebUI.clearText(findTestObject('Object Repository/AssetSoure/AssetSourceEdit(Source)'))
-		actions.sendKeys(findTestObject('Object Repository/AssetSoure/AssetSourceEdit(Source)'),sourceeditedname)
-		actions.click(findTestObject('Object Repository/AssetSoure/AssetSourceEdit(save button)'))
-		actions.click(findTestObject('Object Repository/AssetSoure/Close Button'))
+		WebUI.clearText(findTestObject('AssetSource/AssetSourceEdit(Source)'))
+		actions.sendKeys(findTestObject('AssetSource/AssetSourceEdit(Source)'),sourceeditedname)
+		actions.click(findTestObject('AssetSource/AssetSourceEdit(save button)'))
+		actions.click(findTestObject('AssetSource/Close Button'))
 		return sourceeditedname
 	}
 
 	@Keyword
 	def closeAssetSourceEditpage(){
-		actions.click(findTestObject('Object Repository/AssetSoure/Close Button'))
-		verifications.verifyElementPresent(findTestObject('Object Repository/AssetSoure/Search'), "AssetSource edit page is not getting closed")
+		actions.click(findTestObject('AssetSource/Close Button'))
+		verifications.verifyElementPresent(findTestObject('AssetSource/Search'), "AssetSource edit page is not getting closed")
 	}
 
 	@Keyword
 	def cancelAssetSourcePopup(){
-		actions.click(findTestObject('Object Repository/AssetSoure/Cancel Button'))
-		verifications.verifyElementPresent(findTestObject('Object Repository/AssetSoure/Search'), "AssetSource popup is not getting closed")
+		actions.click(findTestObject('AssetSource/Cancel Button'))
+		verifications.verifyElementPresent(findTestObject('AssetSource/Search'), "AssetSource popup is not getting closed")
 	}
 }
 

@@ -27,7 +27,7 @@ class Login {
 		loginPage.login(GlobalVariable.Email,GlobalVariable.Password)
 	}
 
-	//@BeforeTestCase
+	@BeforeTestCase
 	@Keyword
 	def login() {
 		Thread.sleep(3000)

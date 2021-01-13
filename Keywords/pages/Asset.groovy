@@ -211,7 +211,6 @@ public class Asset {
 		for(element in elements) {
 			verifications.verifyElementPresent(findTestObject(path+element), "The element "+element+" is not present")
 		}
-	
 	}
 	@Keyword
 	def verifyAssetPage() {
