@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>AddJourneyButton</name>
+   <name>successMessage</name>
    <tag></tag>
-   <elementGuidId>f830ff6f-088c-4c72-94f4-bc8b04016757</elementGuidId>
+   <elementGuidId>d97fc6f8-a83a-4be0-9148-f8b466f13be2</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
@@ -11,7 +11,11 @@
       </entry>
       <entry>
          <key>BASIC</key>
-         <value>//span[text()=&quot;Journey&quot;]</value>
+         <value>div.alert-success</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value></value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -19,8 +23,8 @@
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>xpath</name>
+      <name>css</name>
       <type>Main</type>
-      <value>//span[text()=&quot;Journey&quot;]</value>
+      <value>div.alert-success</value>
    </webElementProperties>
 </WebElementEntity>

@@ -29,8 +29,8 @@ public class Journey {
 		String journeyName = "journeyName"+random.nextInt(1000)
 		clickAddJourneyButton()
 		actions.sendKeys(findTestObject('Object Repository/Journey/Add Journey/journeyName'), journeyName)
+		//actions.click(findTestObject('Object Repository/Journey/Add Journey/clickBackGroundType'))
 		actions.click(findTestObject('Object Repository/Journey/Add Journey/addJourneyInAddJourneyPopUp'))
-		actions.click(findTestObject('Object Repository/Journey/Add Journey/clickBackGroundType'))
 		return journeyName
 	}
 
@@ -41,9 +41,10 @@ public class Journey {
 	}
 
 	def searchJourney(def journeyName) {
-		actions.sendKeys(findTestObject('Object Repository/Journey/journrySearchInput'), journeyName)
-		actions.sendKeys(findTestObject('Object Repository/Journey/journrySearchInput'), Keys.chord(Keys.ENTER))
-		actions.waitForElementPresent(findTestObject('Object Repository/Journey/JourneyName(journeyName)',["journeyName":journeyName]))
+		actions.sendKeys(findTestObject('Object Repository/Journey/journrySearchInput'), "")
+		for (int i = 0; i < journeyName.length(); i++) {
+			WebUI.sendKeys(findTestObject('Object Repository/Journey/journrySearchInput'), journeyName.charAt(i).toString())
+		}
 	}
 
 	@Keyword
@@ -180,5 +181,6 @@ public class Journey {
 	@Keyword
 	def verifyWhetherImageSuccessfullyUploaded() {
 		verifications.verifyElementPresent(findTestObject('Object Repository/OptionsUnderProfileIcon/Profile Options/successMessageAfterUploading'), "image not uploaded")
+		actions.click(findTestObject('Object Repository/Journey/Journeytab'))
 	}
 }

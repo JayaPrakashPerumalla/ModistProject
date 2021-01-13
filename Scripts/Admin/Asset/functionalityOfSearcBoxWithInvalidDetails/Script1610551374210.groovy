@@ -16,10 +16,6 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 
 CustomKeywords.'pages.Asset.clickAssetTab'()
-
 String assetName = CustomKeywords.'pages.Asset.getRandomAssetName'()
-
-assetName = assetName+'1' 
-
+assetName = assetName+'1'
 CustomKeywords.'pages.Asset.VerifyAssetNotPresent'(assetName)
-

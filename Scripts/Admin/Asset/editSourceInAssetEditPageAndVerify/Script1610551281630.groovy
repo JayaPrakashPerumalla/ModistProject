@@ -15,9 +15,10 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 
+// Navigate to asset page
 CustomKeywords.'pages.Asset.clickAssetTab'()
 
-String assetName = CustomKeywords.'pages.Asset.addAssetwithFileSize'()
-
-CustomKeywords.'pages.Asset.verifyWarningMessageOfAddAsset'()
-
+Map assetDetails = CustomKeywords.'pages.Asset.editSourceInAssetEditPage'()
+def assetName = assetDetails.assetName
+def sourceName = assetDetails.sourceName
+CustomKeywords.'pages.Asset.verifySourceInEditAssetPage'(assetName, sourceName)

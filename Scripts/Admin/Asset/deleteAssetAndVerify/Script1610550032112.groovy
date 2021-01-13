@@ -15,8 +15,12 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 
+// Navigate to asset page
 CustomKeywords.'pages.Asset.clickAssetTab'()
 
-String assetName=CustomKeywords.'pages.Asset.cancelButtonInAddAssetPopup'()
+// Delete an asset and verify
+def assetName = CustomKeywords.'pages.Asset.getRandomAssetName'()
+
+CustomKeywords.'pages.Asset.deleteAsset'(assetName)
 
 CustomKeywords.'pages.Asset.VerifyAssetNotPresent'(assetName)

@@ -82,8 +82,10 @@ public class Product {
 
 	@Keyword
 	def searchForAProduct(String productName) {
-		actions.sendKeys(findTestObject('Object Repository/Product/Filter by name'), productName)
-		actions.sendKeys(findTestObject('Object Repository/Product/Filter by name'), Keys.chord(Keys.ENTER))
+		actions.sendKeys(findTestObject('Object Repository/Product/Filter by name'), "")
+		for (int i = 0; i < productName.length(); i++) {
+			WebUI.sendKeys(findTestObject('Object Repository/Product/Filter by name'), productName.charAt(i).toString())
+		}
 	}
 
 	@Keyword
@@ -108,6 +110,7 @@ public class Product {
 		for(element in elements) {
 			verifications.verifyElementPresent(findTestObject(path+element), "The element "+element+" is not present")
 		}
+		actions.click(findTestObject('Object Repository/Product/cancelButtonInAddProductPopUp'))
 	}
 
 	@Keyword
@@ -146,6 +149,7 @@ public class Product {
 		actions.click(findTestObject('Object Repository/Product/productCheckBox(productName)',["productName":productName]))
 		actions.click(findTestObject('Object Repository/Product/productDeleteButton'))
 		WebUI.acceptAlert()
+		WebUI.waitForElementPresent(findTestObject('Object Repository/Product/successMessage'), 10)
 	}
 
 	@Keyword
@@ -155,6 +159,7 @@ public class Product {
 		for(element in elements) {
 			verifications.verifyElementPresent(findTestObject(path+element), "In footer "+element+" is not present" )
 		}
+		clickCloseButtonInProductEditPage()
 	}
 
 
@@ -173,6 +178,8 @@ public class Product {
 	def clickDeleteButtonInProductEditPage(){
 
 		actions.click(findTestObject('Object Repository/Product/ProductEditPage/deleteButton'))
+		WebUI.waitForElementPresent(findTestObject('Object Repository/Product/successMessage'), 10)
+		WebUI.refresh()
 	}
 
 	@Keyword
@@ -190,6 +197,7 @@ public class Product {
 	@Keyword
 	def verifyProductEditPage() {
 		verifications.verifyElementPresent(findTestObject('Object Repository/Product/ProductEditPage/productEditPageVerification'), "you are not in product edit page")
+		clickCloseButtonInProductEditPage()
 	}
 
 	@Keyword
@@ -212,7 +220,7 @@ public class Product {
 		// Get draggable id and position of item
 		WebElement sourceElement = WebUiBuiltInKeywords.findWebElement(sourceObject);
 		def draggableid = sourceElement.getAttribute("data-rbd-draggable-id")
-		def prePosition = getPositionOfItem(draggableid)
+		def prePosition = getPositionOfProductItem(draggableid)
 
 		// Change position of item
 		builder.clickAndHold(sourceElement).moveByOffset(5, -5).build().perform();
@@ -228,7 +236,7 @@ public class Product {
 
 		// Get position of item after changing position
 		Thread.sleep(1000)
-		def postPosition = getPositionOfItem(draggableid)
+		def postPosition = getPositionOfProductItem(draggableid)
 
 		// Assert position of item
 		if(isRightDirection){
@@ -248,7 +256,7 @@ public class Product {
 		// Get draggable id and position of item
 		WebElement sourceElement = WebUiBuiltInKeywords.findWebElement(sourceObject);
 		def draggableid = sourceElement.getAttribute("data-rbd-draggable-id")
-		def prePosition = getPositionOfItem(draggableid)
+		def prePosition = getPositionOfRelatedItem(draggableid)
 
 		// Change position of item
 		builder.clickAndHold(sourceElement).moveByOffset(5, -5).build().perform();
@@ -264,7 +272,7 @@ public class Product {
 
 		// Get position of item after changing position
 		Thread.sleep(1000)
-		def postPosition = getPositionOfItem(draggableid)
+		def postPosition = getPositionOfRelatedItem(draggableid)
 
 		// Assert position of item
 		if(isRightDirection){
@@ -291,9 +299,19 @@ public class Product {
 		WebUI.verifyNotEqual(initialDataId, finalDataId, FailureHandling.STOP_ON_FAILURE)
 	}
 
-
-	def getPositionOfItem(String draggableId) {
+	@Keyword
+	def getPositionOfProductItem(String draggableId) {
 		List<WebElement> productAssetsList = WebUiCommonHelper.findWebElements(findTestObject('Object Repository/Product/ProductEditPage/ProductAssets/productAssetsItems'), 30)
+		for(int i=1;i<=productAssetsList.size();i++) {
+			def itemId = productAssetsList[i-1].getAttribute("data-rbd-draggable-id")
+			if(itemId.equals(draggableId))
+				return i
+		}
+	}
+
+	@Keyword
+	def getPositionOfRelatedItem(String draggableId) {
+		List<WebElement> productAssetsList = WebUiCommonHelper.findWebElements(findTestObject('Object Repository/Product/ProductEditPage/RelatedAssets/RelatedAssetsItems'), 30)
 		for(int i=1;i<=productAssetsList.size();i++) {
 			def itemId = productAssetsList[i-1].getAttribute("data-rbd-draggable-id")
 			if(itemId.equals(draggableId))

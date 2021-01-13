@@ -56,9 +56,11 @@ public class Assetsource {
 	}
 
 	@Keyword
-	def searchForAnAssetSource(String sourcename) {
-		actions.sendKeys(findTestObject('Object Repository/AssetSoure/Search'), sourcename)
-		WebUI.sendKeys(findTestObject('Object Repository/AssetSoure/Search'), Keys.chord(Keys.ENTER))
+	def searchForAnAssetSource(String sourceName) {
+		actions.sendKeys(findTestObject('Object Repository/AssetSoure/Search'), "")
+		for (int i = 0; i < sourceName.length(); i++) {
+			WebUI.sendKeys(findTestObject('Object Repository/AssetSoure/Search'), sourceName.charAt(i).toString())
+		}
 	}
 
 	@Keyword
@@ -77,6 +79,7 @@ public class Assetsource {
 		for(element in elements) {
 			verifications.verifyElementPresent(findTestObject(path+element), "The element "+element+" is not present")
 		}
+		actions.click(findTestObject('Object Repository/AssetSoure/Cancel Button'))
 	}
 
 	@Keyword

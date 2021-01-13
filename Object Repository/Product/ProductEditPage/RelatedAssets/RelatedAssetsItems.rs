@@ -1,17 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>AddJourneyButton</name>
+   <name>RelatedAssetsItems</name>
    <tag></tag>
-   <elementGuidId>f830ff6f-088c-4c72-94f4-bc8b04016757</elementGuidId>
+   <elementGuidId>cc94c6d5-da65-4fcf-bd7e-2047ed457025</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value></value>
-      </entry>
-      <entry>
          <key>BASIC</key>
-         <value>//span[text()=&quot;Journey&quot;]</value>
+         <value>//label[text()='Related Assets']/parent::div//div[@class=&quot;draggable-item&quot;] </value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -21,6 +17,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//span[text()=&quot;Journey&quot;]</value>
+      <value>//label[text()='Related Assets']/parent::div//div[@class=&quot;draggable-item&quot;] </value>
    </webElementProperties>
 </WebElementEntity>

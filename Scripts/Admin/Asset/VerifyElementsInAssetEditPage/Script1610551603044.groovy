@@ -15,9 +15,5 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 
-// Navigate to asset page
 CustomKeywords.'pages.Asset.clickAssetTab'()
-
-// Add an asset and verify
-String assetName = CustomKeywords.'pages.Asset.addAsset'()
-CustomKeywords.'pages.Asset.VerifyAssetIsPresent'(assetName)
+CustomKeywords.'pages.Asset.verifyAssetEditPage'()

@@ -14,13 +14,13 @@
    <testCaseLink>
       <guid>9bf63c55-6475-436d-b0b1-5592de337a05</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/Admin/Asset/addAssetAndVerify</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>2d989b6e-d930-4110-b4f8-1218e12a39e6</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/Admin/Asset/openAnyAssetAndVerifyUrl</testCaseId>
    </testCaseLink>
    <testCaseLink>
@@ -38,31 +38,31 @@
    <testCaseLink>
       <guid>72acaf3a-b0ab-440d-8ec0-cc18abfe86b6</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/Admin/Asset/functionalityOfCancelButtonInAddAssetPopup</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>898335d9-46fa-4d94-86c5-66b6267be7bf</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/Admin/Asset/functionalityOfCloseButtonandVerify</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>4c28d3ff-8c24-4e7d-8b0d-37dc0c921494</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/Admin/Asset/functionalityOfSearcBoxWithInvalidDetails</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>e72f56a8-d516-459c-9a60-43df2840ee87</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/Admin/Asset/functionalityOfSearchBoxwithValidDetails</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>b22300dd-f2c9-4852-95ef-ef99f7182423</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/Admin/Asset/VerifyAssetPage</testCaseId>
    </testCaseLink>
    <testCaseLink>

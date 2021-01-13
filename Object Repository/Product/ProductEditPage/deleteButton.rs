@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//div[@class=&quot;data-veiw-footer&quot;]//button[text()='Delete']/..</value>
+         <value>//button[text()='Delete']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,6 +17,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//div[@class=&quot;data-veiw-footer&quot;]//button[text()='Delete']/..</value>
+      <value>//button[text()='Delete']</value>
    </webElementProperties>
 </WebElementEntity>

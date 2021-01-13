@@ -1,17 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>AddJourneyButton</name>
+   <name>uploadStatusIcon</name>
    <tag></tag>
-   <elementGuidId>f830ff6f-088c-4c72-94f4-bc8b04016757</elementGuidId>
+   <elementGuidId>cd62fca0-42f3-4dc9-9663-c80b57547ee1</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value></value>
-      </entry>
-      <entry>
          <key>BASIC</key>
-         <value>//span[text()=&quot;Journey&quot;]</value>
+         <value>//div[@class='upload-progress-wrapper']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -21,6 +17,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//span[text()=&quot;Journey&quot;]</value>
+      <value>//div[@class='upload-progress-wrapper']</value>
    </webElementProperties>
 </WebElementEntity>

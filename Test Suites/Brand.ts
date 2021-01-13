@@ -14,7 +14,7 @@
    <testCaseLink>
       <guid>3a6f55db-acec-4172-8230-09556e7a6530</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>false</isRun>
+      <isRun>true</isRun>
       <testCaseId>Test Cases/Admin/Brand/Add a Brand without filling mandatory details</testCaseId>
    </testCaseLink>
    <testCaseLink>
@@ -32,7 +32,7 @@
    <testCaseLink>
       <guid>926c1d87-e964-4e17-a880-332f3c284562</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>false</isRun>
+      <isRun>true</isRun>
       <testCaseId>Test Cases/Admin/Brand/Edit a Brand and Verify</testCaseId>
    </testCaseLink>
    <testCaseLink>

@@ -2,10 +2,10 @@ package pages
 
 import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
 
-import org.openqa.selenium.Keys
-
 import com.kms.katalon.core.annotation.Keyword
-
+import com.kms.katalon.core.model.FailureHandling
+import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
+import internal.GlobalVariable
 import verification.Verification
 import webAction.WebAction
 
@@ -31,8 +31,10 @@ public class Section {
 	@Keyword
 	def searchForSection(def sectionName) {
 
-		actions.sendKeys(findTestObject('Object Repository/Section/filterByName'), sectionName)
-		actions.sendKeys(findTestObject('Object Repository/Section/filterByName'), Keys.chord(Keys.ENTER))
+		actions.sendKeys(findTestObject('Object Repository/Section/filterByName'), "")
+		for (int i = 0; i < sectionName.length(); i++) {
+			WebUI.sendKeys(findTestObject('Object Repository/Journey/journrySearchInput'), sectionName.charAt(i).toString())
+		}
 	}
 
 	@Keyword
@@ -67,6 +69,8 @@ public class Section {
 		for(element in elements) {
 			verifications.verifyElementPresent(findTestObject(path+element), "The element "+element+" is not present")
 		}
+		actions.click(findTestObject('Object Repository/Section/addSection/cancelButton'))
+		
 	}
 
 	@Keyword

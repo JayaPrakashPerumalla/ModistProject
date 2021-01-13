@@ -40,8 +40,10 @@ public class Brand {
 	}
 
 	def search(String brandName) {
-		actions.sendKeys(findTestObject('Object Repository/Brand/search'),brandName)
-		actions.sendKeys(findTestObject('Object Repository/Brand/search'), Keys.chord(Keys.ENTER))
+		actions.sendKeys(findTestObject('Object Repository/Brand/search'), "")
+		for (int i = 0; i < brandName.length(); i++) {
+			WebUI.sendKeys(findTestObject('Object Repository/Brand/search'), brandName.charAt(i).toString())
+		}
 	}
 
 	@Keyword
@@ -57,6 +59,7 @@ public class Brand {
 		for(element in elements) {
 			verify.verifyElementPresent(findTestObject(path+element), "The element "+element+" is not present")
 		}
+		actions.click(findTestObject('Object Repository/Brand/AddBrandPopup/cancelButtonAddBrandPopup'))
 	}
 
 	@Keyword
@@ -104,5 +107,6 @@ public class Brand {
 	def verifyeditedBrandName(String brandeditedname){
 		search(brandeditedname)
 		verify.verifyElementPresent(findTestObject('Object Repository/Brand/createdBrand(brandName)',["brandName":brandeditedname]),"Brand name is not edited")
+		
 	}
 }

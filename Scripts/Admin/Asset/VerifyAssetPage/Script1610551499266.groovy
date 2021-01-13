@@ -16,5 +16,4 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 
 CustomKeywords.'pages.Asset.clickAssetTab'()
-
-CustomKeywords.'pages.Asset.verifyAddAssetPopUp'()
+CustomKeywords.'pages.Asset.verifyAssetPage'()

@@ -17,7 +17,6 @@ import internal.GlobalVariable as GlobalVariable
 
 CustomKeywords.'pages.Asset.clickAssetTab'()
 
-def assetName = CustomKeywords.'pages.Asset.getRandomAssetName'()  
+String assetName=CustomKeywords.'pages.Asset.cancelButtonInAddAssetPopup'()
 
-
-CustomKeywords.'pages.Asset.verifyUrlOfassetEditPage'(assetName) 
+CustomKeywords.'pages.Asset.VerifyAssetNotPresent'(assetName)
