@@ -1,0 +1,497 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+AllTestCases,Chrome 87.0.4280.141,,,2021-01-14 08:44:06,2021-01-14 09:13:13,29m - 7.112s,ERROR
+,,,,,,,
+Test Cases/Admin/Asset/addAssetAndVerify,Chrome 87.0.4280.141,,,2021-01-14 08:44:32,2021-01-14 08:45:02,30.157s,PASSED
+Start listener action : login,Chrome 87.0.4280.141,,,2021-01-14 08:44:32,2021-01-14 08:44:35,3.142s,PASSED
+pages.Asset.clickAssetTab(),Chrome 87.0.4280.141,,,2021-01-14 08:44:35,2021-01-14 08:44:36,1.290s,PASSED
+assetName = pages.Asset.addAsset(),Chrome 87.0.4280.141,,,2021-01-14 08:44:36,2021-01-14 08:44:52,15.346s,PASSED
+pages.Asset.VerifyAssetIsPresent(assetName),Chrome 87.0.4280.141,,,2021-01-14 08:44:52,2021-01-14 08:45:02,10.047s,PASSED
+,,,,,,,
+Test Cases/Admin/Asset/deleteAssetAndVerify,Chrome 87.0.4280.141,,,2021-01-14 08:45:02,2021-01-14 08:45:30,28.506s,PASSED
+Start listener action : login,Chrome 87.0.4280.141,,,2021-01-14 08:45:02,2021-01-14 08:45:05,3.033s,PASSED
+pages.Asset.clickAssetTab(),Chrome 87.0.4280.141,,,2021-01-14 08:45:05,2021-01-14 08:45:06,1.344s,PASSED
+assetName = pages.Asset.getRandomAssetName(),Chrome 87.0.4280.141,,,2021-01-14 08:45:06,2021-01-14 08:45:07,1.017s,PASSED
+pages.Asset.deleteAsset(assetName),Chrome 87.0.4280.141,,,2021-01-14 08:45:07,2021-01-14 08:45:19,11.675s,PASSED
+pages.Asset.VerifyAssetNotPresent(assetName),Chrome 87.0.4280.141,,,2021-01-14 08:45:19,2021-01-14 08:45:30,11.194s,PASSED
+,,,,,,,
+Test Cases/Admin/Asset/editSourceInAssetEditPageAndVerify,Chrome 87.0.4280.141,,,2021-01-14 08:45:30,2021-01-14 08:46:08,37.977s,PASSED
+Start listener action : login,Chrome 87.0.4280.141,,,2021-01-14 08:45:30,2021-01-14 08:45:33,3.027s,PASSED
+pages.Asset.clickAssetTab(),Chrome 87.0.4280.141,,,2021-01-14 08:45:34,2021-01-14 08:45:35,1.225s,PASSED
+assetDetails = pages.Asset.editSourceInAssetEditPage(),Chrome 87.0.4280.141,,,2021-01-14 08:45:35,2021-01-14 08:45:54,19.321s,PASSED
+assetName = assetName,Chrome 87.0.4280.141,,,2021-01-14 08:45:54,2021-01-14 08:45:54,0.005s,PASSED
+sourceName = sourceName,Chrome 87.0.4280.141,,,2021-01-14 08:45:54,2021-01-14 08:45:54,0.000s,PASSED
+"pages.Asset.verifySourceInEditAssetPage(assetName, sourceName)",Chrome 87.0.4280.141,,,2021-01-14 08:45:54,2021-01-14 08:46:08,14.112s,PASSED
+,,,,,,,
+Test Cases/Admin/Asset/functionalityOfCancelButtonInAddAssetPopup,Chrome 87.0.4280.141,,,2021-01-14 08:46:08,2021-01-14 08:46:26,18.232s,PASSED
+Start listener action : login,Chrome 87.0.4280.141,,,2021-01-14 08:46:08,2021-01-14 08:46:11,3.039s,PASSED
+pages.Asset.clickAssetTab(),Chrome 87.0.4280.141,,,2021-01-14 08:46:12,2021-01-14 08:46:13,1.286s,PASSED
+assetName = pages.Asset.cancelButtonInAddAssetPopup(),Chrome 87.0.4280.141,,,2021-01-14 08:46:13,2021-01-14 08:46:18,4.889s,PASSED
+pages.Asset.VerifyAssetNotPresent(assetName),Chrome 87.0.4280.141,,,2021-01-14 08:46:18,2021-01-14 08:46:26,8.741s,PASSED
+,,,,,,,
+Test Cases/Admin/Asset/functionalityOfCloseButtonandVerify,Chrome 87.0.4280.141,,,2021-01-14 08:46:26,2021-01-14 08:46:55,28.481s,PASSED
+Start listener action : login,Chrome 87.0.4280.141,,,2021-01-14 08:46:26,2021-01-14 08:46:30,3.028s,PASSED
+pages.Asset.clickAssetTab(),Chrome 87.0.4280.141,,,2021-01-14 08:46:30,2021-01-14 08:46:31,1.284s,PASSED
+pages.Asset.closeButtonInAssetEditPage(),Chrome 87.0.4280.141,,,2021-01-14 08:46:31,2021-01-14 08:46:45,13.834s,PASSED
+"verification.Verification.getUrlAndVerify(""dashboard"", ""cancel button is not working"")",Chrome 87.0.4280.141,,,2021-01-14 08:46:45,2021-01-14 08:46:55,10.060s,PASSED
+,,,,,,,
+Test Cases/Admin/Asset/functionalityOfSearcBoxWithInvalidDetails,Chrome 87.0.4280.141,,,2021-01-14 08:46:55,2021-01-14 08:47:11,15.856s,PASSED
+Start listener action : login,Chrome 87.0.4280.141,,,2021-01-14 08:46:55,2021-01-14 08:46:58,3.032s,PASSED
+pages.Asset.clickAssetTab(),Chrome 87.0.4280.141,,,2021-01-14 08:46:58,2021-01-14 08:47:00,1.404s,PASSED
+assetName = pages.Asset.getRandomAssetName(),Chrome 87.0.4280.141,,,2021-01-14 08:47:00,2021-01-14 08:47:01,1.136s,PASSED
+"assetName = assetName + ""1""",Chrome 87.0.4280.141,,,2021-01-14 08:47:01,2021-01-14 08:47:01,0.001s,PASSED
+pages.Asset.VerifyAssetNotPresent(assetName),Chrome 87.0.4280.141,,,2021-01-14 08:47:01,2021-01-14 08:47:11,10.083s,PASSED
+,,,,,,,
+Test Cases/Admin/Asset/functionalityOfSearchBoxwithValidDetails,Chrome 87.0.4280.141,,,2021-01-14 08:47:11,2021-01-14 08:47:25,13.972s,PASSED
+Start listener action : login,Chrome 87.0.4280.141,,,2021-01-14 08:47:11,2021-01-14 08:47:14,3.023s,PASSED
+pages.Asset.clickAssetTab(),Chrome 87.0.4280.141,,,2021-01-14 08:47:14,2021-01-14 08:47:15,1.238s,PASSED
+assetName = pages.Asset.getRandomAssetName(),Chrome 87.0.4280.141,,,2021-01-14 08:47:15,2021-01-14 08:47:16,0.974s,PASSED
+pages.Asset.VerifyAssetIsPresent(assetName),Chrome 87.0.4280.141,,,2021-01-14 08:47:16,2021-01-14 08:47:25,8.470s,PASSED
+,,,,,,,
+Test Cases/Admin/Asset/openAnyAssetAndVerifyUrl,Chrome 87.0.4280.141,,,2021-01-14 08:47:25,2021-01-14 08:47:40,15.323s,PASSED
+Start listener action : login,Chrome 87.0.4280.141,,,2021-01-14 08:47:25,2021-01-14 08:47:28,3.029s,PASSED
+pages.Asset.clickAssetTab(),Chrome 87.0.4280.141,,,2021-01-14 08:47:28,2021-01-14 08:47:29,1.232s,PASSED
+assetName = pages.Asset.getRandomAssetName(),Chrome 87.0.4280.141,,,2021-01-14 08:47:29,2021-01-14 08:47:30,0.987s,PASSED
+pages.Asset.verifyUrlOfassetEditPage(assetName),Chrome 87.0.4280.141,,,2021-01-14 08:47:30,2021-01-14 08:47:40,9.773s,PASSED
+,,,,,,,
+Test Cases/Admin/Asset/VerifyAssetPage,Chrome 87.0.4280.141,,,2021-01-14 08:47:40,2021-01-14 08:47:54,13.610s,PASSED
+Start listener action : login,Chrome 87.0.4280.141,,,2021-01-14 08:47:40,2021-01-14 08:47:49,9.153s,PASSED
+pages.Asset.clickAssetTab(),Chrome 87.0.4280.141,,,2021-01-14 08:47:50,2021-01-14 08:47:51,1.557s,PASSED
+pages.Asset.verifyAssetPage(),Chrome 87.0.4280.141,,,2021-01-14 08:47:51,2021-01-14 08:47:54,2.690s,PASSED
+,,,,,,,
+Test Cases/Admin/Asset/verifyElementsInAddAssetPopUp,Chrome 87.0.4280.141,,,2021-01-14 08:47:54,2021-01-14 08:48:06,12.351s,PASSED
+Start listener action : login,Chrome 87.0.4280.141,,,2021-01-14 08:47:54,2021-01-14 08:47:57,3.090s,PASSED
+pages.Asset.clickAssetTab(),Chrome 87.0.4280.141,,,2021-01-14 08:47:57,2021-01-14 08:47:59,1.681s,PASSED
+pages.Asset.verifyAddAssetPopUp(),Chrome 87.0.4280.141,,,2021-01-14 08:47:59,2021-01-14 08:48:06,7.384s,PASSED
+,,,,,,,
+Test Cases/Admin/Asset/VerifyElementsInAssetEditPage,Chrome 87.0.4280.141,,,2021-01-14 08:48:06,2021-01-14 08:48:17,10.822s,PASSED
+Start listener action : login,Chrome 87.0.4280.141,,,2021-01-14 08:48:06,2021-01-14 08:48:09,3.032s,PASSED
+pages.Asset.clickAssetTab(),Chrome 87.0.4280.141,,,2021-01-14 08:48:09,2021-01-14 08:48:11,1.258s,PASSED
+pages.Asset.verifyAssetEditPage(),Chrome 87.0.4280.141,,,2021-01-14 08:48:11,2021-01-14 08:48:17,6.342s,PASSED
+,,,,,,,
+Test Cases/Admin/AssetSource/Add An AssetSource,Chrome 87.0.4280.141,,,2021-01-14 08:48:17,2021-01-14 08:48:45,27.907s,PASSED
+Start listener action : login,Chrome 87.0.4280.141,,,2021-01-14 08:48:17,2021-01-14 08:48:26,9.009s,PASSED
+sourcename = pages.Assetsource.addAssetSource(),Chrome 87.0.4280.141,,,2021-01-14 08:48:26,2021-01-14 08:48:34,7.840s,PASSED
+pages.Assetsource.verifyAssetSourceAdded(sourcename),Chrome 87.0.4280.141,,,2021-01-14 08:48:34,2021-01-14 08:48:45,10.894s,PASSED
+println(sourcename),Chrome 87.0.4280.141,,,2021-01-14 08:48:45,2021-01-14 08:48:45,0.005s,PASSED
+,,,,,,,
+Test Cases/Admin/AssetSource/Delete An AssetSource,Chrome 87.0.4280.141,,,2021-01-14 08:48:45,2021-01-14 08:49:17,32.589s,PASSED
+Start listener action : login,Chrome 87.0.4280.141,,,2021-01-14 08:48:45,2021-01-14 08:48:48,3.025s,PASSED
+sourcename = pages.Assetsource.addAssetSource(),Chrome 87.0.4280.141,,,2021-01-14 08:48:48,2021-01-14 08:48:54,6.334s,PASSED
+println(sourcename),Chrome 87.0.4280.141,,,2021-01-14 08:48:54,2021-01-14 08:48:54,0.001s,PASSED
+pages.Assetsource.deleteAnAssetSource(sourcename),Chrome 87.0.4280.141,,,2021-01-14 08:48:54,2021-01-14 08:49:08,13.580s,PASSED
+pages.Assetsource.verifyAssetSourceDeleted(sourcename),Chrome 87.0.4280.141,,,2021-01-14 08:49:08,2021-01-14 08:49:17,9.483s,PASSED
+,,,,,,,
+Test Cases/Admin/AssetSource/Edit An AssetSource,Chrome 87.0.4280.141,,,2021-01-14 08:49:17,2021-01-14 08:49:46,28.227s,PASSED
+Start listener action : login,Chrome 87.0.4280.141,,,2021-01-14 08:49:17,2021-01-14 08:49:20,3.027s,PASSED
+sourcename = pages.Assetsource.addAssetSource(),Chrome 87.0.4280.141,,,2021-01-14 08:49:21,2021-01-14 08:49:27,6.069s,PASSED
+println(sourcename),Chrome 87.0.4280.141,,,2021-01-14 08:49:27,2021-01-14 08:49:27,0.000s,PASSED
+pages.Assetsource.editAnAssetSource(sourcename),Chrome 87.0.4280.141,,,2021-01-14 08:49:27,2021-01-14 08:49:46,18.907s,PASSED
+,,,,,,,
+Test Cases/Admin/AssetSource/Verify Asset Source tab by clicking it,Chrome 87.0.4280.141,,,2021-01-14 08:49:46,2021-01-14 08:49:51,4.839s,PASSED
+Start listener action : login,Chrome 87.0.4280.141,,,2021-01-14 08:49:46,2021-01-14 08:49:49,3.048s,PASSED
+pages.Assetsource.navigateToAssetSourceDetailsTab(),Chrome 87.0.4280.141,,,2021-01-14 08:49:49,2021-01-14 08:49:51,1.561s,PASSED
+,,,,,,,
+Test Cases/Admin/AssetSource/Verify by clicking on any asset source in the Asset source tab details page,Chrome 87.0.4280.141,,,2021-01-14 08:49:51,2021-01-14 08:50:12,21.775s,PASSED
+Start listener action : login,Chrome 87.0.4280.141,,,2021-01-14 08:49:51,2021-01-14 08:49:54,3.035s,PASSED
+sourcename = pages.Assetsource.addAssetSource(),Chrome 87.0.4280.141,,,2021-01-14 08:49:54,2021-01-14 08:50:00,6.399s,PASSED
+println(sourcename),Chrome 87.0.4280.141,,,2021-01-14 08:50:00,2021-01-14 08:50:00,0.001s,PASSED
+pages.Assetsource.openAnyExistingAssetSource(sourcename),Chrome 87.0.4280.141,,,2021-01-14 08:50:00,2021-01-14 08:50:12,12.086s,PASSED
+,,,,,,,
+Test Cases/Admin/AssetSource/Verify Cancel button functionality in the Add Asset Source popup,Chrome 87.0.4280.141,,,2021-01-14 08:50:12,2021-01-14 08:50:27,14.539s,PASSED
+Start listener action : login,Chrome 87.0.4280.141,,,2021-01-14 08:50:12,2021-01-14 08:50:21,8.959s,PASSED
+pages.Assetsource.navigateToAssetSourceDetailsTab(),Chrome 87.0.4280.141,,,2021-01-14 08:50:21,2021-01-14 08:50:23,1.625s,PASSED
+pages.Assetsource.clickAddAssetSource(),Chrome 87.0.4280.141,,,2021-01-14 08:50:23,2021-01-14 08:50:25,1.482s,PASSED
+pages.Assetsource.cancelAssetSourcePopup(),Chrome 87.0.4280.141,,,2021-01-14 08:50:25,2021-01-14 08:50:27,2.305s,PASSED
+,,,,,,,
+Test Cases/Admin/AssetSource/Verify Close button functionality in the Asset Source edit page,Chrome 87.0.4280.141,,,2021-01-14 08:50:27,2021-01-14 08:50:50,23.446s,PASSED
+Start listener action : login,Chrome 87.0.4280.141,,,2021-01-14 08:50:27,2021-01-14 08:50:30,3.027s,PASSED
+sourcename = pages.Assetsource.addAssetSource(),Chrome 87.0.4280.141,,,2021-01-14 08:50:30,2021-01-14 08:50:36,6.173s,PASSED
+println(sourcename),Chrome 87.0.4280.141,,,2021-01-14 08:50:36,2021-01-14 08:50:36,0.001s,PASSED
+pages.Assetsource.openAnyExistingAssetSource(sourcename),Chrome 87.0.4280.141,,,2021-01-14 08:50:36,2021-01-14 08:50:48,11.636s,PASSED
+pages.Assetsource.closeAssetSourceEditpage(),Chrome 87.0.4280.141,,,2021-01-14 08:50:48,2021-01-14 08:50:50,2.433s,PASSED
+,,,,,,,
+Test Cases/Admin/AssetSource/Verify elements on Add Asset Source popup,Chrome 87.0.4280.141,,,2021-01-14 08:50:50,2021-01-14 08:50:59,8.929s,PASSED
+Start listener action : login,Chrome 87.0.4280.141,,,2021-01-14 08:50:50,2021-01-14 08:50:53,3.010s,PASSED
+pages.Assetsource.navigateToAssetSourceDetailsTab(),Chrome 87.0.4280.141,,,2021-01-14 08:50:53,2021-01-14 08:50:55,1.436s,PASSED
+pages.Assetsource.clickAddAssetSource(),Chrome 87.0.4280.141,,,2021-01-14 08:50:55,2021-01-14 08:50:56,1.289s,PASSED
+pages.Assetsource.verifyAssetSourcePopUp(),Chrome 87.0.4280.141,,,2021-01-14 08:50:56,2021-01-14 08:50:59,3.071s,PASSED
+,,,,,,,
+Test Cases/Admin/Brand/Add a Brand without filling mandatory details,Chrome 87.0.4280.141,,,2021-01-14 08:50:59,2021-01-14 08:51:37,38.238s,PASSED
+Start listener action : login,Chrome 87.0.4280.141,,,2021-01-14 08:50:59,2021-01-14 08:51:02,3.029s,PASSED
+pages.Brand.addBrandWithoutfillingmandatoryDetails(),Chrome 87.0.4280.141,,,2021-01-14 08:51:02,2021-01-14 08:51:37,35.036s,PASSED
+,,,,,,,
+Test Cases/Admin/Brand/createBrandAndVerifyIsItSuccessfullyCreated,Chrome 87.0.4280.141,,,2021-01-14 08:51:37,2021-01-14 08:51:55,17.470s,PASSED
+Start listener action : login,Chrome 87.0.4280.141,,,2021-01-14 08:51:37,2021-01-14 08:51:41,3.036s,PASSED
+pages.Brand.clickBrand(),Chrome 87.0.4280.141,,,2021-01-14 08:51:41,2021-01-14 08:51:41,0.421s,PASSED
+brandName = pages.Brand.addBrand(),Chrome 87.0.4280.141,,,2021-01-14 08:51:41,2021-01-14 08:51:46,5.065s,PASSED
+pages.Brand.verifyTheBrandCreated(brandName),Chrome 87.0.4280.141,,,2021-01-14 08:51:46,2021-01-14 08:51:55,8.642s,PASSED
+,,,,,,,
+Test Cases/Admin/Brand/Delete a Brand and verify,Chrome 87.0.4280.141,,,2021-01-14 08:51:55,2021-01-14 08:52:23,27.635s,PASSED
+Start listener action : login,Chrome 87.0.4280.141,,,2021-01-14 08:51:55,2021-01-14 08:51:58,3.030s,PASSED
+brandName = pages.Brand.addBrand(),Chrome 87.0.4280.141,,,2021-01-14 08:51:58,2021-01-14 08:52:03,4.594s,PASSED
+println(brandName),Chrome 87.0.4280.141,,,2021-01-14 08:52:03,2021-01-14 08:52:03,0.001s,PASSED
+pages.Brand.deleteBrand(brandName),Chrome 87.0.4280.141,,,2021-01-14 08:52:03,2021-01-14 08:52:15,12.305s,PASSED
+pages.Brand.verifyABrandDeleted(brandName),Chrome 87.0.4280.141,,,2021-01-14 08:52:15,2021-01-14 08:52:23,7.426s,PASSED
+,,,,,,,
+Test Cases/Admin/Brand/Edit a Brand and Verify,Chrome 87.0.4280.141,,,2021-01-14 08:52:23,2021-01-14 08:52:55,32.700s,PASSED
+Start listener action : login,Chrome 87.0.4280.141,,,2021-01-14 08:52:23,2021-01-14 08:52:26,3.033s,PASSED
+brandName = pages.Brand.addBrand(),Chrome 87.0.4280.141,,,2021-01-14 08:52:26,2021-01-14 08:52:31,4.894s,PASSED
+println(brandName),Chrome 87.0.4280.141,,,2021-01-14 08:52:31,2021-01-14 08:52:31,0.001s,PASSED
+brandeditedname = pages.Brand.editBrandName(brandName),Chrome 87.0.4280.141,,,2021-01-14 08:52:31,2021-01-14 08:52:46,14.989s,PASSED
+println(brandeditedname),Chrome 87.0.4280.141,,,2021-01-14 08:52:46,2021-01-14 08:52:46,0.000s,PASSED
+pages.Brand.verifyeditedBrandName(brandeditedname),Chrome 87.0.4280.141,,,2021-01-14 08:52:46,2021-01-14 08:52:55,9.482s,PASSED
+,,,,,,,
+Test Cases/Admin/Brand/Verify elements on Add Brand popup,Chrome 87.0.4280.141,,,2021-01-14 08:52:55,2021-01-14 08:53:02,6.416s,PASSED
+Start listener action : login,Chrome 87.0.4280.141,,,2021-01-14 08:52:55,2021-01-14 08:52:58,3.035s,PASSED
+pages.Brand.clickBrand(),Chrome 87.0.4280.141,,,2021-01-14 08:52:58,2021-01-14 08:52:59,0.368s,PASSED
+pages.Brand.clickAddBrand(),Chrome 87.0.4280.141,,,2021-01-14 08:52:59,2021-01-14 08:52:59,0.399s,PASSED
+pages.Brand.verifyBrandPopUp(),Chrome 87.0.4280.141,,,2021-01-14 08:52:59,2021-01-14 08:53:02,2.479s,PASSED
+,,,,,,,
+Test Cases/Admin/dashboard/Verify Headers,Chrome 87.0.4280.141,,,2021-01-14 08:53:02,2021-01-14 08:53:08,6.353s,PASSED
+Start listener action : login,Chrome 87.0.4280.141,,,2021-01-14 08:53:02,2021-01-14 08:53:05,3.025s,PASSED
+common.uploading.getHeaders(),Chrome 87.0.4280.141,,,2021-01-14 08:53:05,2021-01-14 08:53:08,3.192s,PASSED
+,,,,,,,
+Test Cases/Admin/dashboard/verifyUrlAfterLogin,Chrome 87.0.4280.141,,,2021-01-14 08:53:08,2021-01-14 08:53:21,13.302s,PASSED
+Start listener action : login,Chrome 87.0.4280.141,,,2021-01-14 08:53:08,2021-01-14 08:53:11,3.028s,PASSED
+"verification.Verification.getUrlAndVerify(""dashboard"", ""you are not in a dashboard page"")",Chrome 87.0.4280.141,,,2021-01-14 08:53:11,2021-01-14 08:53:21,10.032s,PASSED
+,,,,,,,
+Test Cases/Admin/Journey/addJournyAndVerifyItisAdded,Chrome 87.0.4280.141,,,2021-01-14 08:53:21,2021-01-14 08:53:41,20.037s,PASSED
+Start listener action : login,Chrome 87.0.4280.141,,,2021-01-14 08:53:21,2021-01-14 08:53:24,3.040s,PASSED
+pages.Journey.clickOnJourneyTab(),Chrome 87.0.4280.141,,,2021-01-14 08:53:25,2021-01-14 08:53:26,1.366s,PASSED
+journeyName = pages.Journey.addJourney(),Chrome 87.0.4280.141,,,2021-01-14 08:53:26,2021-01-14 08:53:32,5.600s,PASSED
+pages.Journey.verifyJourneyAdded(journeyName),Chrome 87.0.4280.141,,,2021-01-14 08:53:32,2021-01-14 08:53:41,9.856s,PASSED
+,,,,,,,
+Test Cases/Admin/Journey/cloneJourneyAndVerifyisitCloned,Chrome 87.0.4280.141,,,2021-01-14 08:53:41,2021-01-14 08:54:22,40.313s,PASSED
+Start listener action : login,Chrome 87.0.4280.141,,,2021-01-14 08:53:41,2021-01-14 08:53:44,3.025s,PASSED
+pages.Journey.clickOnJourneyTab(),Chrome 87.0.4280.141,,,2021-01-14 08:53:45,2021-01-14 08:53:46,1.233s,PASSED
+journeyName = pages.Journey.addJourney(),Chrome 87.0.4280.141,,,2021-01-14 08:53:46,2021-01-14 08:53:51,4.849s,PASSED
+pages.Journey.cloneJourney(journeyName),Chrome 87.0.4280.141,,,2021-01-14 08:53:51,2021-01-14 08:54:06,14.777s,PASSED
+pages.Journey.verifyJourneyCloned(journeyName),Chrome 87.0.4280.141,,,2021-01-14 08:54:06,2021-01-14 08:54:22,16.176s,PASSED
+,,,,,,,
+Test Cases/Admin/Journey/createAccessCodeForJourneyAndVerifyIsTheCodeSuccessfullyCreated,Chrome 87.0.4280.141,,,2021-01-14 08:54:22,2021-01-14 08:55:13,51.275s,PASSED
+Start listener action : login,Chrome 87.0.4280.141,,,2021-01-14 08:54:22,2021-01-14 08:54:25,3.034s,PASSED
+pages.Journey.clickOnJourneyTab(),Chrome 87.0.4280.141,,,2021-01-14 08:54:25,2021-01-14 08:54:26,1.333s,PASSED
+journeyName = pages.Journey.getRandomJourneyName(),Chrome 87.0.4280.141,,,2021-01-14 08:54:26,2021-01-14 08:54:28,1.286s,PASSED
+accessCode = pages.Journey.getRandomAccessCode(),Chrome 87.0.4280.141,,,2021-01-14 08:54:28,2021-01-14 08:54:28,0.001s,PASSED
+useLimit = pages.Journey.getRandomCount(),Chrome 87.0.4280.141,,,2021-01-14 08:54:28,2021-01-14 08:54:28,0.001s,PASSED
+"accessCode = pages.Journey.createAccessCodeInJourney(journeyName, accessCode, useLimit)",Chrome 87.0.4280.141,,,2021-01-14 08:54:28,2021-01-14 08:54:53,25.407s,PASSED
+"pages.Journey.verifyTheCreatedAccessCode(journeyName, accessCode)",Chrome 87.0.4280.141,,,2021-01-14 08:54:53,2021-01-14 08:55:13,19.965s,PASSED
+,,,,,,,
+Test Cases/Admin/Journey/createMultipleAccessCodesWithSameName,Chrome 87.0.4280.141,,,2021-01-14 08:55:13,2021-01-14 08:56:18,1m - 4.986s,PASSED
+Start listener action : login,Chrome 87.0.4280.141,,,2021-01-14 08:55:13,2021-01-14 08:55:16,3.043s,PASSED
+pages.Journey.clickOnJourneyTab(),Chrome 87.0.4280.141,,,2021-01-14 08:55:16,2021-01-14 08:55:18,1.267s,PASSED
+journeyName = pages.Journey.getRandomJourneyName(),Chrome 87.0.4280.141,,,2021-01-14 08:55:18,2021-01-14 08:55:19,1.327s,PASSED
+accessCode = pages.Journey.getRandomAccessCode(),Chrome 87.0.4280.141,,,2021-01-14 08:55:19,2021-01-14 08:55:19,0.002s,PASSED
+useLimit = pages.Journey.getRandomCount(),Chrome 87.0.4280.141,,,2021-01-14 08:55:19,2021-01-14 08:55:19,0.000s,PASSED
+"accessCode = pages.Journey.createAccessCodeInJourney(journeyName, accessCode, useLimit)",Chrome 87.0.4280.141,,,2021-01-14 08:55:19,2021-01-14 08:55:37,18.206s,PASSED
+"pages.Journey.verifyTheCreatedAccessCode(journeyName, accessCode)",Chrome 87.0.4280.141,,,2021-01-14 08:55:37,2021-01-14 08:55:49,11.908s,PASSED
+journeyName1 = pages.Journey.getRandomJourneyName(),Chrome 87.0.4280.141,,,2021-01-14 08:55:49,2021-01-14 08:55:54,4.639s,PASSED
+println(journeyName1),Chrome 87.0.4280.141,,,2021-01-14 08:55:54,2021-01-14 08:55:54,0.000s,PASSED
+"accessCode = pages.Journey.createAccessCodeInJourney(journeyName1, accessCode, useLimit)",Chrome 87.0.4280.141,,,2021-01-14 08:55:54,2021-01-14 08:56:09,15.480s,PASSED
+"pages.Journey.verifyTheCreatedAccessCode(journeyName1, accessCode)",Chrome 87.0.4280.141,,,2021-01-14 08:56:09,2021-01-14 08:56:18,8.867s,PASSED
+,,,,,,,
+Test Cases/Admin/Journey/deleteJourneyAndVerify,Chrome 87.0.4280.141,,,2021-01-14 08:56:18,2021-01-14 08:56:52,34.158s,PASSED
+Start listener action : login,Chrome 87.0.4280.141,,,2021-01-14 08:56:18,2021-01-14 08:56:21,3.035s,PASSED
+pages.Journey.clickOnJourneyTab(),Chrome 87.0.4280.141,,,2021-01-14 08:56:21,2021-01-14 08:56:23,1.253s,PASSED
+journeyName = pages.Journey.addJourney(),Chrome 87.0.4280.141,,,2021-01-14 08:56:23,2021-01-14 08:56:27,4.678s,PASSED
+pages.Journey.deleteJourney(journeyName),Chrome 87.0.4280.141,,,2021-01-14 08:56:27,2021-01-14 08:56:41,13.312s,PASSED
+pages.Journey.verifyJourneyDeleted(journeyName),Chrome 87.0.4280.141,,,2021-01-14 08:56:41,2021-01-14 08:56:52,11.601s,PASSED
+,,,,,,,
+Test Cases/Admin/LogOut/logout,Chrome 87.0.4280.141,,,2021-01-14 08:56:52,2021-01-14 08:56:56,3.978s,PASSED
+Start listener action : login,Chrome 87.0.4280.141,,,2021-01-14 08:56:52,2021-01-14 08:56:55,3.021s,PASSED
+logout.LogoutForAdminDevEnvironment.clickingOnProfileIcon(),Chrome 87.0.4280.141,,,2021-01-14 08:56:55,2021-01-14 08:56:56,0.398s,PASSED
+logout.LogoutForAdminDevEnvironment.logout(),Chrome 87.0.4280.141,,,2021-01-14 08:56:56,2021-01-14 08:56:56,0.414s,PASSED
+,,,,,,,
+Test Cases/Admin/Product/addProductAndVerify,Chrome 87.0.4280.141,,,2021-01-14 08:56:56,2021-01-14 08:57:34,37.852s,PASSED
+Start listener action : login,Chrome 87.0.4280.141,,,2021-01-14 08:56:56,2021-01-14 08:57:12,15.437s,PASSED
+productname = pages.Product.addProduct(),Chrome 87.0.4280.141,,,2021-01-14 08:57:12,2021-01-14 08:57:22,10.488s,PASSED
+pages.Product.verifyProductAdded(productname),Chrome 87.0.4280.141,,,2021-01-14 08:57:22,2021-01-14 08:57:34,11.682s,PASSED
+println(productname),Chrome 87.0.4280.141,,,2021-01-14 08:57:34,2021-01-14 08:57:34,0.001s,PASSED
+,,,,,,,
+Test Cases/Admin/Product/deleteProductAndVerify,Chrome 87.0.4280.141,,,2021-01-14 08:57:34,2021-01-14 08:58:12,37.731s,PASSED
+Start listener action : login,Chrome 87.0.4280.141,,,2021-01-14 08:57:34,2021-01-14 08:57:37,3.028s,PASSED
+productname = pages.Product.addProduct(),Chrome 87.0.4280.141,,,2021-01-14 08:57:37,2021-01-14 08:57:45,7.285s,PASSED
+pages.Product.deleteProduct(productname),Chrome 87.0.4280.141,,,2021-01-14 08:57:45,2021-01-14 08:58:01,16.154s,PASSED
+pages.Product.verifyProductNotPresent(productname),Chrome 87.0.4280.141,,,2021-01-14 08:58:01,2021-01-14 08:58:12,10.995s,PASSED
+,,,,,,,
+Test Cases/Admin/Product/deleteProductFromProductEditPageAndVerify,Chrome 87.0.4280.141,,,2021-01-14 08:58:12,2021-01-14 08:58:53,40.844s,PASSED
+Start listener action : login,Chrome 87.0.4280.141,,,2021-01-14 08:58:12,2021-01-14 08:58:15,3.020s,PASSED
+productname = pages.Product.addProduct(),Chrome 87.0.4280.141,,,2021-01-14 08:58:15,2021-01-14 08:58:23,7.687s,PASSED
+pages.Product.openAnyExistingProduct(productname),Chrome 87.0.4280.141,,,2021-01-14 08:58:23,2021-01-14 08:58:36,13.265s,PASSED
+pages.Product.clickDeleteButtonInProductEditPage(),Chrome 87.0.4280.141,,,2021-01-14 08:58:36,2021-01-14 08:58:41,5.493s,PASSED
+pages.Product.verifyProductNotPresent(productname),Chrome 87.0.4280.141,,,2021-01-14 08:58:41,2021-01-14 08:58:53,11.134s,PASSED
+,,,,,,,
+Test Cases/Admin/Product/editProductNameAndVerify,Chrome 87.0.4280.141,,,2021-01-14 08:58:53,2021-01-14 08:59:47,54.563s,PASSED
+Start listener action : login,Chrome 87.0.4280.141,,,2021-01-14 08:58:53,2021-01-14 08:58:56,3.036s,PASSED
+productname = pages.Product.addProduct(),Chrome 87.0.4280.141,,,2021-01-14 08:58:56,2021-01-14 08:59:03,7.337s,PASSED
+pages.Product.openAnyExistingProduct(productname),Chrome 87.0.4280.141,,,2021-01-14 08:59:03,2021-01-14 08:59:16,12.842s,PASSED
+editedName = pages.Product.editProductName(),Chrome 87.0.4280.141,,,2021-01-14 08:59:16,2021-01-14 08:59:26,10.171s,PASSED
+pages.Product.verifyProductAdded(editedName),Chrome 87.0.4280.141,,,2021-01-14 08:59:26,2021-01-14 08:59:37,10.824s,PASSED
+pages.Product.verifyProductNotPresent(productname),Chrome 87.0.4280.141,,,2021-01-14 08:59:37,2021-01-14 08:59:47,10.204s,PASSED
+,,,,,,,
+Test Cases/Admin/Product/openExistingProductNavigatesToProductEditPage,Chrome 87.0.4280.141,,,2021-01-14 08:59:47,2021-01-14 09:00:06,19.083s,PASSED
+Start listener action : login,Chrome 87.0.4280.141,,,2021-01-14 08:59:47,2021-01-14 08:59:50,3.015s,PASSED
+productName = pages.Product.getRandomProductNmae(),Chrome 87.0.4280.141,,,2021-01-14 08:59:50,2021-01-14 08:59:53,2.342s,PASSED
+pages.Product.openAnyExistingProduct(productName),Chrome 87.0.4280.141,,,2021-01-14 08:59:53,2021-01-14 09:00:04,11.312s,PASSED
+pages.Product.verifyProductEditPage(),Chrome 87.0.4280.141,,,2021-01-14 09:00:04,2021-01-14 09:00:06,2.177s,PASSED
+,,,,,,,
+Test Cases/Admin/Product/verifyAddProductPopUp,Chrome 87.0.4280.141,,,2021-01-14 09:00:06,2021-01-14 09:00:15,8.587s,PASSED
+Start listener action : login,Chrome 87.0.4280.141,,,2021-01-14 09:00:06,2021-01-14 09:00:09,3.033s,PASSED
+pages.Product.clickOnProductTab(),Chrome 87.0.4280.141,,,2021-01-14 09:00:09,2021-01-14 09:00:11,1.175s,PASSED
+pages.Product.clickOnAddProductButton(),Chrome 87.0.4280.141,,,2021-01-14 09:00:11,2021-01-14 09:00:12,1.312s,PASSED
+pages.Product.verifyProductPopUp(),Chrome 87.0.4280.141,,,2021-01-14 09:00:12,2021-01-14 09:00:15,2.944s,PASSED
+,,,,,,,
+Test Cases/Admin/Product/verifyCloseButtonFunctionalityInProductEditPage,Chrome 87.0.4280.141,,,2021-01-14 09:00:15,2021-01-14 09:00:33,17.696s,PASSED
+Start listener action : login,Chrome 87.0.4280.141,,,2021-01-14 09:00:15,2021-01-14 09:00:18,3.035s,PASSED
+productname = pages.Product.getRandomProductNmae(),Chrome 87.0.4280.141,,,2021-01-14 09:00:18,2021-01-14 09:00:20,2.032s,PASSED
+pages.Product.openAnyExistingProduct(productname),Chrome 87.0.4280.141,,,2021-01-14 09:00:20,2021-01-14 09:00:30,10.440s,PASSED
+pages.Product.clickCloseButtonInProductEditPage(),Chrome 87.0.4280.141,,,2021-01-14 09:00:30,2021-01-14 09:00:32,1.631s,PASSED
+pages.Product.verifyAddProductButton(),Chrome 87.0.4280.141,,,2021-01-14 09:00:32,2021-01-14 09:00:33,0.423s,PASSED
+,,,,,,,
+Test Cases/Admin/Product/verifyDragAndDropFunctionalityInProductAssets,Chrome 87.0.4280.141,,,2021-01-14 09:00:33,2021-01-14 09:00:52,19.727s,PASSED
+Start listener action : login,Chrome 87.0.4280.141,,,2021-01-14 09:00:33,2021-01-14 09:00:36,3.019s,PASSED
+pages.Product.clickOnProductTab(),Chrome 87.0.4280.141,,,2021-01-14 09:00:36,2021-01-14 09:00:37,1.215s,PASSED
+productName = pages.Product.getRandomProductNmae(),Chrome 87.0.4280.141,,,2021-01-14 09:00:37,2021-01-14 09:00:39,2.120s,PASSED
+pages.Product.openAnyExistingProduct(productName),Chrome 87.0.4280.141,,,2021-01-14 09:00:39,2021-01-14 09:00:46,6.644s,PASSED
+"pages.Product.changePositionOfItemInProductAssets(findTestObject(""Object Repository/Product/Test/imageSource(index)"", [""index"":1]), 2, true)",Chrome 87.0.4280.141,,,2021-01-14 09:00:46,2021-01-14 09:00:52,6.560s,PASSED
+,,,,,,,
+Test Cases/Admin/Product/verifyDragAndDropFunctionalityInRelatedAssets,Chrome 87.0.4280.141,,,2021-01-14 09:00:52,2021-01-14 09:01:23,30.480s,PASSED
+Start listener action : login,Chrome 87.0.4280.141,,,2021-01-14 09:00:52,2021-01-14 09:01:01,8.820s,PASSED
+pages.Product.clickOnProductTab(),Chrome 87.0.4280.141,,,2021-01-14 09:01:01,2021-01-14 09:01:03,1.349s,PASSED
+productName = pages.Product.getRandomProductNmae(),Chrome 87.0.4280.141,,,2021-01-14 09:01:03,2021-01-14 09:01:05,2.183s,PASSED
+pages.Product.openAnyExistingProduct(productName),Chrome 87.0.4280.141,,,2021-01-14 09:01:05,2021-01-14 09:01:16,10.686s,PASSED
+"pages.Product.changePositionOfItemInRelatedAssets(findTestObject(""Product/ProductEditPage/RelatedAssets/sourceObject(index)"", [""index"":1]), 2, true)",Chrome 87.0.4280.141,,,2021-01-14 09:01:16,2021-01-14 09:01:23,7.163s,PASSED
+,,,,,,,
+Test Cases/Admin/Product/verifyPageAfterClosingProduct,Chrome 87.0.4280.141,,,2021-01-14 09:01:23,2021-01-14 09:01:46,22.926s,PASSED
+Start listener action : login,Chrome 87.0.4280.141,,,2021-01-14 09:01:23,2021-01-14 09:01:32,8.769s,PASSED
+pages.Product.clickOnProductTab(),Chrome 87.0.4280.141,,,2021-01-14 09:01:32,2021-01-14 09:01:33,1.388s,PASSED
+productName = pages.Product.getRandomProductNmae(),Chrome 87.0.4280.141,,,2021-01-14 09:01:33,2021-01-14 09:01:35,2.282s,PASSED
+pages.Product.openAnyExistingProduct(productName),Chrome 87.0.4280.141,,,2021-01-14 09:01:35,2021-01-14 09:01:43,7.341s,PASSED
+pages.Product.clickCloseButtonInProductEditPage(),Chrome 87.0.4280.141,,,2021-01-14 09:01:43,2021-01-14 09:01:46,2.956s,PASSED
+pages.Product.verifyUrlAfterClosingProduct(),Chrome 87.0.4280.141,,,2021-01-14 09:01:46,2021-01-14 09:01:46,0.026s,PASSED
+,,,,,,,
+Test Cases/Admin/Product/verifySaveChangesDeleteAndCloseButtonInProductDetailspage,Chrome 87.0.4280.141,,,2021-01-14 09:01:46,2021-01-14 09:02:11,25.685s,PASSED
+Start listener action : login,Chrome 87.0.4280.141,,,2021-01-14 09:01:46,2021-01-14 09:01:49,3.018s,PASSED
+productname = pages.Product.addProduct(),Chrome 87.0.4280.141,,,2021-01-14 09:01:49,2021-01-14 09:01:56,7.269s,PASSED
+pages.Product.openAnyExistingProduct(productname),Chrome 87.0.4280.141,,,2021-01-14 09:01:56,2021-01-14 09:02:09,12.445s,PASSED
+pages.Product.verifyFooterSectionButtons(),Chrome 87.0.4280.141,,,2021-01-14 09:02:09,2021-01-14 09:02:11,2.823s,PASSED
+,,,,,,,
+Test Cases/Admin/Product/verifySearchFunctionalityInFilter,Chrome 87.0.4280.141,,,2021-01-14 09:02:11,2021-01-14 09:02:28,16.213s,PASSED
+Start listener action : login,Chrome 87.0.4280.141,,,2021-01-14 09:02:11,2021-01-14 09:02:14,3.034s,PASSED
+pages.Product.clickOnProductTab(),Chrome 87.0.4280.141,,,2021-01-14 09:02:15,2021-01-14 09:02:16,1.275s,PASSED
+productName = pages.Product.getRandomProductNmae(),Chrome 87.0.4280.141,,,2021-01-14 09:02:16,2021-01-14 09:02:18,2.282s,PASSED
+pages.Product.searchForAProduct(productName),Chrome 87.0.4280.141,,,2021-01-14 09:02:18,2021-01-14 09:02:22,4.123s,PASSED
+pages.Product.verifyProductPresent(productName),Chrome 87.0.4280.141,,,2021-01-14 09:02:22,2021-01-14 09:02:28,5.242s,PASSED
+,,,,,,,
+Test Cases/Admin/Product/verifySearchFunctionalityWithInvalidProduct,Chrome 87.0.4280.141,,,2021-01-14 09:02:28,2021-01-14 09:02:39,11.355s,PASSED
+Start listener action : login,Chrome 87.0.4280.141,,,2021-01-14 09:02:28,2021-01-14 09:02:31,3.031s,PASSED
+pages.Product.clickOnProductTab(),Chrome 87.0.4280.141,,,2021-01-14 09:02:31,2021-01-14 09:02:32,1.177s,PASSED
+productName = pages.Product.getRandomProductNmae(),Chrome 87.0.4280.141,,,2021-01-14 09:02:32,2021-01-14 09:02:34,2.151s,PASSED
+"productName = productName + ""*""",Chrome 87.0.4280.141,,,2021-01-14 09:02:34,2021-01-14 09:02:34,0.001s,PASSED
+pages.Product.verifyProductNotPresent(productName),Chrome 87.0.4280.141,,,2021-01-14 09:02:34,2021-01-14 09:02:39,4.860s,PASSED
+,,,,,,,
+Test Cases/Admin/Section/addSectionAndVerify,Chrome 87.0.4280.141,,,2021-01-14 09:02:39,2021-01-14 09:03:36,56.930s,FAILED
+Start listener action : login,Chrome 87.0.4280.141,,,2021-01-14 09:02:39,2021-01-14 09:02:42,3.030s,PASSED
+pages.Section.clickOnSectionTab(),Chrome 87.0.4280.141,,,2021-01-14 09:02:42,2021-01-14 09:02:44,1.297s,PASSED
+sectionName = pages.Section.addSection(),Chrome 87.0.4280.141,,,2021-01-14 09:02:44,2021-01-14 09:02:55,11.143s,PASSED
+pages.Section.verifySectionAdded(sectionName),Chrome 87.0.4280.141,,,2021-01-14 09:02:55,2021-01-14 09:03:36,41.166s,FAILED
+,,,,,,,
+Test Cases/Admin/Section/veifyFieldsPresentInAddSectionPopUp,Chrome 87.0.4280.141,,,2021-01-14 09:03:36,2021-01-14 09:03:46,10.477s,PASSED
+Start listener action : login,Chrome 87.0.4280.141,,,2021-01-14 09:03:36,2021-01-14 09:03:39,3.045s,PASSED
+pages.Section.clickOnSectionTab(),Chrome 87.0.4280.141,,,2021-01-14 09:03:39,2021-01-14 09:03:40,1.324s,PASSED
+pages.Section.verifyElementsInAddSectionPopUp(),Chrome 87.0.4280.141,,,2021-01-14 09:03:40,2021-01-14 09:03:46,5.964s,PASSED
+,,,,,,,
+Test Cases/Admin/Section/verifyFunctionalityOfCancelButtonInAddSectionPopup,Chrome 87.0.4280.141,,,2021-01-14 09:03:46,2021-01-14 09:03:54,8.085s,PASSED
+Start listener action : login,Chrome 87.0.4280.141,,,2021-01-14 09:03:46,2021-01-14 09:03:49,3.015s,PASSED
+pages.Section.clickOnSectionTab(),Chrome 87.0.4280.141,,,2021-01-14 09:03:50,2021-01-14 09:03:51,1.192s,PASSED
+pages.Section.clickOnAddSectionButton(),Chrome 87.0.4280.141,,,2021-01-14 09:03:51,2021-01-14 09:03:52,1.285s,PASSED
+pages.Section.cancelButtonInAddSectionPopup(),Chrome 87.0.4280.141,,,2021-01-14 09:03:52,2021-01-14 09:03:54,2.335s,PASSED
+,,,,,,,
+Test Cases/JourneyPortal/verifyCartIfNoItemsAvailable,Chrome 87.0.4280.141,,,2021-01-14 09:03:54,2021-01-14 09:04:22,27.836s,PASSED
+Start listener action : login,Chrome 87.0.4280.141,,,2021-01-14 09:03:54,2021-01-14 09:03:57,3.017s,PASSED
+pages.Journey.clickOnJourneyTab(),Chrome 87.0.4280.141,,,2021-01-14 09:03:58,2021-01-14 09:03:59,1.318s,PASSED
+journeyName = pages.Journey.getRandomJourneyName(),Chrome 87.0.4280.141,,,2021-01-14 09:03:59,2021-01-14 09:04:01,1.631s,PASSED
+accessCode = pages.Journey.getExistingJourneyAccesscode(journeyName),Chrome 87.0.4280.141,,,2021-01-14 09:04:01,2021-01-14 09:04:12,11.774s,PASSED
+login.LoginForJourneyApplication.loginToJourneyApplication(),Chrome 87.0.4280.141,,,2021-01-14 09:04:12,2021-01-14 09:04:16,3.487s,PASSED
+pages.Journey.enterAccessCodeInJourney(accessCode),Chrome 87.0.4280.141,,,2021-01-14 09:04:16,2021-01-14 09:04:18,2.227s,PASSED
+pages.Journey.clickEnterButton(),Chrome 87.0.4280.141,,,2021-01-14 09:04:18,2021-01-14 09:04:19,1.304s,PASSED
+pages.JourneyPortal.clickOnCart(),Chrome 87.0.4280.141,,,2021-01-14 09:04:19,2021-01-14 09:04:22,2.376s,PASSED
+pages.JourneyPortal.verifyElementOnCartIfNoItems(),Chrome 87.0.4280.141,,,2021-01-14 09:04:22,2021-01-14 09:04:22,0.413s,PASSED
+,,,,,,,
+Test Cases/JourneyPortal/addProductTOCartAndVerifyWhetherIsItShownInUi,Chrome 87.0.4280.141,,,2021-01-14 09:04:22,2021-01-14 09:05:11,48.993s,PASSED
+Start listener action : login,Chrome 87.0.4280.141,,,2021-01-14 09:04:22,2021-01-14 09:04:31,8.847s,PASSED
+pages.Journey.clickOnJourneyTab(),Chrome 87.0.4280.141,,,2021-01-14 09:04:31,2021-01-14 09:04:33,1.287s,PASSED
+journeyName = pages.Journey.getRandomJourneyName(),Chrome 87.0.4280.141,,,2021-01-14 09:04:33,2021-01-14 09:04:34,1.271s,PASSED
+accessCode = pages.Journey.getExistingJourneyAccesscode(journeyName),Chrome 87.0.4280.141,,,2021-01-14 09:04:34,2021-01-14 09:04:45,10.895s,PASSED
+login.LoginForJourneyApplication.loginToJourneyApplication(),Chrome 87.0.4280.141,,,2021-01-14 09:04:45,2021-01-14 09:04:45,0.307s,PASSED
+pages.Journey.enterAccessCodeInJourney(accessCode),Chrome 87.0.4280.141,,,2021-01-14 09:04:45,2021-01-14 09:04:47,2.191s,PASSED
+pages.Journey.clickEnterButton(),Chrome 87.0.4280.141,,,2021-01-14 09:04:47,2021-01-14 09:04:49,1.284s,PASSED
+pages.JourneyPortal.openExistingSection(),Chrome 87.0.4280.141,,,2021-01-14 09:04:49,2021-01-14 09:04:54,4.922s,PASSED
+pages.JourneyPortal.openAnyProductInTheJourneyPortal(),Chrome 87.0.4280.141,,,2021-01-14 09:04:54,2021-01-14 09:04:57,3.251s,PASSED
+orderCount = pages.JourneyPortal.clickAddToCartButton(),Chrome 87.0.4280.141,,,2021-01-14 09:04:57,2021-01-14 09:05:11,13.881s,PASSED
+productCount = pages.JourneyPortal.getProductsCount(),Chrome 87.0.4280.141,,,2021-01-14 09:05:11,2021-01-14 09:05:11,0.559s,PASSED
+"pages.JourneyPortal.verifyWhetherOrderedAndAvailableProductsCountAreSame(orderCount, productCount)",Chrome 87.0.4280.141,,,2021-01-14 09:05:11,2021-01-14 09:05:11,0.000s,PASSED
+,,,,,,,
+Test Cases/JourneyPortal/AddProductToCartMulitpleTimesAndVerifyTheProductsCountAfterRefresh,Chrome 87.0.4280.141,,,2021-01-14 09:05:11,2021-01-14 09:05:58,46.783s,FAILED
+Start listener action : login,Chrome 87.0.4280.141,,,2021-01-14 09:05:11,2021-01-14 09:05:20,8.988s,PASSED
+pages.Journey.clickOnJourneyTab(),Chrome 87.0.4280.141,,,2021-01-14 09:05:21,2021-01-14 09:05:22,1.294s,PASSED
+journeyName = pages.Journey.getRandomJourneyName(),Chrome 87.0.4280.141,,,2021-01-14 09:05:22,2021-01-14 09:05:23,1.276s,PASSED
+accessCode = pages.Journey.getExistingJourneyAccesscode(journeyName),Chrome 87.0.4280.141,,,2021-01-14 09:05:23,2021-01-14 09:05:31,7.738s,PASSED
+login.LoginForJourneyApplication.loginToJourneyApplication(),Chrome 87.0.4280.141,,,2021-01-14 09:05:31,2021-01-14 09:05:31,0.231s,PASSED
+pages.Journey.enterAccessCodeInJourney(accessCode),Chrome 87.0.4280.141,,,2021-01-14 09:05:31,2021-01-14 09:05:33,2.170s,PASSED
+pages.Journey.clickEnterButton(),Chrome 87.0.4280.141,,,2021-01-14 09:05:33,2021-01-14 09:05:35,1.302s,PASSED
+pages.JourneyPortal.openExistingSection(),Chrome 87.0.4280.141,,,2021-01-14 09:05:35,2021-01-14 09:05:40,5.535s,PASSED
+pages.JourneyPortal.openAnyProductInTheJourneyPortal(),Chrome 87.0.4280.141,,,2021-01-14 09:05:40,2021-01-14 09:05:43,3.137s,PASSED
+orderCount = pages.JourneyPortal.clickAddToCartButton(),Chrome 87.0.4280.141,,,2021-01-14 09:05:43,2021-01-14 09:05:56,12.839s,PASSED
+login.LoginForJourneyApplication.reloadThePage(),Chrome 87.0.4280.141,,,2021-01-14 09:05:56,2021-01-14 09:05:56,0.019s,PASSED
+productCount = pages.JourneyPortal.getProductsCount(),Chrome 87.0.4280.141,,,2021-01-14 09:05:56,2021-01-14 09:05:58,1.981s,PASSED
+"pages.JourneyPortal.verifyWhetherOrderedAndAvailableProductsCountAreSame(orderCount, productCount)",Chrome 87.0.4280.141,,,2021-01-14 09:05:58,2021-01-14 09:05:58,0.005s,FAILED
+,,,,,,,
+Test Cases/JourneyPortal/clickingOnTheRightAndLeftIsNavigatingCorrctly,Chrome 87.0.4280.141,,,2021-01-14 09:05:58,2021-01-14 09:06:28,30.337s,ERROR
+Start listener action : login,Chrome 87.0.4280.141,,,2021-01-14 09:05:58,2021-01-14 09:06:07,9.051s,PASSED
+pages.Journey.clickOnJourneyTab(),Chrome 87.0.4280.141,,,2021-01-14 09:06:07,2021-01-14 09:06:09,1.305s,PASSED
+journeyName = pages.Journey.getRandomJourneyName(),Chrome 87.0.4280.141,,,2021-01-14 09:06:09,2021-01-14 09:06:10,1.243s,PASSED
+accessCode = pages.Journey.getExistingJourneyAccesscode(journeyName),Chrome 87.0.4280.141,,,2021-01-14 09:06:10,2021-01-14 09:06:18,7.968s,PASSED
+login.LoginForJourneyApplication.loginToJourneyApplication(),Chrome 87.0.4280.141,,,2021-01-14 09:06:18,2021-01-14 09:06:18,0.185s,PASSED
+pages.Journey.enterAccessCodeInJourney(accessCode),Chrome 87.0.4280.141,,,2021-01-14 09:06:18,2021-01-14 09:06:21,2.436s,PASSED
+pages.Journey.clickEnterButton(),Chrome 87.0.4280.141,,,2021-01-14 09:06:21,2021-01-14 09:06:22,1.334s,PASSED
+pages.JourneyPortal.openExistingSection(),Chrome 87.0.4280.141,,,2021-01-14 09:06:22,2021-01-14 09:06:28,6.531s,ERROR
+,,,,,,,
+Test Cases/JourneyPortal/loginToJourneyApplicationThroughAccessCodeAndVerifyTheDisplayPage,Chrome 87.0.4280.141,,,2021-01-14 09:06:28,2021-01-14 09:06:54,25.728s,PASSED
+Start listener action : login,Chrome 87.0.4280.141,,,2021-01-14 09:06:28,2021-01-14 09:06:37,8.983s,PASSED
+pages.Journey.clickOnJourneyTab(),Chrome 87.0.4280.141,,,2021-01-14 09:06:38,2021-01-14 09:06:39,1.319s,PASSED
+journeyName = pages.Journey.getRandomJourneyName(),Chrome 87.0.4280.141,,,2021-01-14 09:06:39,2021-01-14 09:06:40,1.288s,PASSED
+accessCode = pages.Journey.getExistingJourneyAccesscode(journeyName),Chrome 87.0.4280.141,,,2021-01-14 09:06:40,2021-01-14 09:06:49,8.801s,PASSED
+login.LoginForJourneyApplication.loginToJourneyApplication(),Chrome 87.0.4280.141,,,2021-01-14 09:06:49,2021-01-14 09:06:49,0.173s,PASSED
+pages.Journey.enterAccessCodeInJourney(accessCode),Chrome 87.0.4280.141,,,2021-01-14 09:06:49,2021-01-14 09:06:51,2.144s,PASSED
+pages.Journey.clickEnterButton(),Chrome 87.0.4280.141,,,2021-01-14 09:06:51,2021-01-14 09:06:53,1.337s,PASSED
+pages.Journey.sectionPageVerification(),Chrome 87.0.4280.141,,,2021-01-14 09:06:53,2021-01-14 09:06:54,1.424s,PASSED
+,,,,,,,
+Test Cases/JourneyPortal/loginToJourneyApplicationThroughInvalidAccessCodeAndVerifyTheErrorMessage,Chrome 87.0.4280.141,,,2021-01-14 09:06:54,2021-01-14 09:07:18,23.802s,PASSED
+Start listener action : login,Chrome 87.0.4280.141,,,2021-01-14 09:06:54,2021-01-14 09:07:03,8.877s,PASSED
+pages.Journey.clickOnJourneyTab(),Chrome 87.0.4280.141,,,2021-01-14 09:07:03,2021-01-14 09:07:05,1.293s,PASSED
+journeyName = pages.Journey.getRandomJourneyName(),Chrome 87.0.4280.141,,,2021-01-14 09:07:05,2021-01-14 09:07:06,1.258s,PASSED
+accessCode = pages.Journey.getExistingJourneyAccesscode(journeyName),Chrome 87.0.4280.141,,,2021-01-14 09:07:06,2021-01-14 09:07:13,7.376s,PASSED
+"accessCode = accessCode + ""1*3#%""",Chrome 87.0.4280.141,,,2021-01-14 09:07:13,2021-01-14 09:07:13,0.001s,PASSED
+login.LoginForJourneyApplication.loginToJourneyApplication(),Chrome 87.0.4280.141,,,2021-01-14 09:07:13,2021-01-14 09:07:13,0.177s,PASSED
+pages.Journey.enterAccessCodeInJourney(accessCode),Chrome 87.0.4280.141,,,2021-01-14 09:07:13,2021-01-14 09:07:16,2.272s,PASSED
+pages.Journey.clickEnterButton(),Chrome 87.0.4280.141,,,2021-01-14 09:07:16,2021-01-14 09:07:17,1.276s,PASSED
+pages.Journey.errorLoginCheck(),Chrome 87.0.4280.141,,,2021-01-14 09:07:17,2021-01-14 09:07:18,0.995s,PASSED
+,,,,,,,
+Test Cases/JourneyPortal/loginToJourneyApplicationWithEmptyAccessCode,Chrome 87.0.4280.141,,,2021-01-14 09:07:18,2021-01-14 09:07:40,22.392s,PASSED
+Start listener action : login,Chrome 87.0.4280.141,,,2021-01-14 09:07:18,2021-01-14 09:07:27,8.867s,PASSED
+pages.Journey.clickOnJourneyTab(),Chrome 87.0.4280.141,,,2021-01-14 09:07:27,2021-01-14 09:07:28,1.314s,PASSED
+journeyName = pages.Journey.getRandomJourneyName(),Chrome 87.0.4280.141,,,2021-01-14 09:07:28,2021-01-14 09:07:30,1.268s,PASSED
+accessCode = pages.Journey.getExistingJourneyAccesscode(journeyName),Chrome 87.0.4280.141,,,2021-01-14 09:07:30,2021-01-14 09:07:37,7.631s,PASSED
+login.LoginForJourneyApplication.loginToJourneyApplication(),Chrome 87.0.4280.141,,,2021-01-14 09:07:37,2021-01-14 09:07:37,0.161s,PASSED
+pages.Journey.clickEnterButton(),Chrome 87.0.4280.141,,,2021-01-14 09:07:37,2021-01-14 09:07:39,1.639s,PASSED
+pages.Journey.errorLoginCheck(),Chrome 87.0.4280.141,,,2021-01-14 09:07:39,2021-01-14 09:07:40,1.245s,PASSED
+,,,,,,,
+Test Cases/JourneyPortal/verifyClickingOnBackButtonNavigatesBackToSectionPage,Chrome 87.0.4280.141,,,2021-01-14 09:07:40,2021-01-14 09:08:12,31.854s,PASSED
+Start listener action : login,Chrome 87.0.4280.141,,,2021-01-14 09:07:40,2021-01-14 09:07:49,8.700s,PASSED
+pages.Journey.clickOnJourneyTab(),Chrome 87.0.4280.141,,,2021-01-14 09:07:49,2021-01-14 09:07:51,1.279s,PASSED
+journeyName = pages.Journey.getRandomJourneyName(),Chrome 87.0.4280.141,,,2021-01-14 09:07:51,2021-01-14 09:07:52,1.277s,PASSED
+accessCode = pages.Journey.getExistingJourneyAccesscode(journeyName),Chrome 87.0.4280.141,,,2021-01-14 09:07:52,2021-01-14 09:08:00,8.354s,PASSED
+login.LoginForJourneyApplication.loginToJourneyApplication(),Chrome 87.0.4280.141,,,2021-01-14 09:08:00,2021-01-14 09:08:00,0.178s,PASSED
+pages.Journey.enterAccessCodeInJourney(accessCode),Chrome 87.0.4280.141,,,2021-01-14 09:08:00,2021-01-14 09:08:03,2.285s,PASSED
+pages.Journey.clickEnterButton(),Chrome 87.0.4280.141,,,2021-01-14 09:08:03,2021-01-14 09:08:04,1.316s,PASSED
+pages.JourneyPortal.openExistingSection(),Chrome 87.0.4280.141,,,2021-01-14 09:08:04,2021-01-14 09:08:09,5.384s,PASSED
+pages.JourneyPortal.clickBackButton(),Chrome 87.0.4280.141,,,2021-01-14 09:08:09,2021-01-14 09:08:12,2.277s,PASSED
+pages.Journey.sectionPageVerification(),Chrome 87.0.4280.141,,,2021-01-14 09:08:12,2021-01-14 09:08:12,0.549s,PASSED
+,,,,,,,
+Test Cases/JourneyPortal/verifyCloseButtonInJourneyPortalProductPopup,Chrome 87.0.4280.141,,,2021-01-14 09:08:12,2021-01-14 09:08:45,32.426s,PASSED
+Start listener action : login,Chrome 87.0.4280.141,,,2021-01-14 09:08:12,2021-01-14 09:08:21,8.979s,PASSED
+pages.Journey.clickOnJourneyTab(),Chrome 87.0.4280.141,,,2021-01-14 09:08:21,2021-01-14 09:08:23,1.305s,PASSED
+journeyName = pages.Journey.getRandomJourneyName(),Chrome 87.0.4280.141,,,2021-01-14 09:08:23,2021-01-14 09:08:24,1.267s,PASSED
+accessCode = pages.Journey.getExistingJourneyAccesscode(journeyName),Chrome 87.0.4280.141,,,2021-01-14 09:08:24,2021-01-14 09:08:32,7.861s,PASSED
+login.LoginForJourneyApplication.loginToJourneyApplication(),Chrome 87.0.4280.141,,,2021-01-14 09:08:32,2021-01-14 09:08:32,0.167s,PASSED
+pages.Journey.enterAccessCodeInJourney(accessCode),Chrome 87.0.4280.141,,,2021-01-14 09:08:32,2021-01-14 09:08:34,1.990s,PASSED
+pages.Journey.clickEnterButton(),Chrome 87.0.4280.141,,,2021-01-14 09:08:34,2021-01-14 09:08:35,1.137s,PASSED
+pages.JourneyPortal.openExistingSection(),Chrome 87.0.4280.141,,,2021-01-14 09:08:35,2021-01-14 09:08:39,4.159s,PASSED
+pages.JourneyPortal.openAnyProductInTheJourneyPortal(),Chrome 87.0.4280.141,,,2021-01-14 09:08:39,2021-01-14 09:08:42,2.917s,PASSED
+pages.JourneyPortal.verifyCloseButton(),Chrome 87.0.4280.141,,,2021-01-14 09:08:42,2021-01-14 09:08:43,0.486s,PASSED
+pages.JourneyPortal.clickCloseButtonOnJourneyPortalProductPopup(),Chrome 87.0.4280.141,,,2021-01-14 09:08:43,2021-01-14 09:08:44,1.369s,PASSED
+pages.JourneyPortal.productPageCheck(),Chrome 87.0.4280.141,,,2021-01-14 09:08:44,2021-01-14 09:08:45,0.521s,PASSED
+,,,,,,,
+Test Cases/JourneyPortal/verifyElementsInJourneyPotalProductPopup,Chrome 87.0.4280.141,,,2021-01-14 09:08:45,2021-01-14 09:09:18,33.841s,PASSED
+Start listener action : login,Chrome 87.0.4280.141,,,2021-01-14 09:08:45,2021-01-14 09:08:54,8.969s,PASSED
+pages.Journey.clickOnJourneyTab(),Chrome 87.0.4280.141,,,2021-01-14 09:08:54,2021-01-14 09:08:55,1.175s,PASSED
+journeyName = pages.Journey.getRandomJourneyName(),Chrome 87.0.4280.141,,,2021-01-14 09:08:55,2021-01-14 09:08:56,1.129s,PASSED
+accessCode = pages.Journey.getExistingJourneyAccesscode(journeyName),Chrome 87.0.4280.141,,,2021-01-14 09:08:56,2021-01-14 09:09:06,10.296s,PASSED
+login.LoginForJourneyApplication.loginToJourneyApplication(),Chrome 87.0.4280.141,,,2021-01-14 09:09:06,2021-01-14 09:09:06,0.166s,PASSED
+pages.Journey.enterAccessCodeInJourney(accessCode),Chrome 87.0.4280.141,,,2021-01-14 09:09:06,2021-01-14 09:09:09,2.168s,PASSED
+pages.Journey.clickEnterButton(),Chrome 87.0.4280.141,,,2021-01-14 09:09:09,2021-01-14 09:09:10,1.152s,PASSED
+pages.JourneyPortal.openExistingSection(),Chrome 87.0.4280.141,,,2021-01-14 09:09:10,2021-01-14 09:09:14,3.885s,PASSED
+pages.JourneyPortal.openAnyProductInTheJourneyPortal(),Chrome 87.0.4280.141,,,2021-01-14 09:09:14,2021-01-14 09:09:16,2.725s,PASSED
+pages.JourneyPortal.verifyElementsInProductPopupInJourneyPortal(),Chrome 87.0.4280.141,,,2021-01-14 09:09:16,2021-01-14 09:09:18,2.042s,PASSED
+,,,,,,,
+Test Cases/JourneyPortal/verifyFixedBackGroundInJourneyPortal,Chrome 87.0.4280.141,,,2021-01-14 09:09:18,2021-01-14 09:09:51,32.238s,PASSED
+Start listener action : login,Chrome 87.0.4280.141,,,2021-01-14 09:09:18,2021-01-14 09:09:27,8.862s,PASSED
+pages.Journey.clickOnJourneyTab(),Chrome 87.0.4280.141,,,2021-01-14 09:09:27,2021-01-14 09:09:29,1.138s,PASSED
+journeyName = pages.Journey.getRandomJourneyName(),Chrome 87.0.4280.141,,,2021-01-14 09:09:29,2021-01-14 09:09:30,1.110s,PASSED
+accessCode = pages.Journey.getExistingJourneyAccesscode(journeyName),Chrome 87.0.4280.141,,,2021-01-14 09:09:30,2021-01-14 09:09:38,8.709s,PASSED
+pages.Journey.typeOfBackGroundToFixed(),Chrome 87.0.4280.141,,,2021-01-14 09:09:38,2021-01-14 09:09:42,3.781s,PASSED
+login.LoginForJourneyApplication.loginToJourneyApplication(),Chrome 87.0.4280.141,,,2021-01-14 09:09:42,2021-01-14 09:09:42,0.177s,PASSED
+pages.Journey.enterAccessCodeInJourney(accessCode),Chrome 87.0.4280.141,,,2021-01-14 09:09:42,2021-01-14 09:09:44,1.972s,PASSED
+pages.Journey.clickEnterButton(),Chrome 87.0.4280.141,,,2021-01-14 09:09:44,2021-01-14 09:09:45,1.145s,PASSED
+pages.JourneyPortal.openExistingSection(),Chrome 87.0.4280.141,,,2021-01-14 09:09:45,2021-01-14 09:09:49,3.687s,PASSED
+pages.JourneyPortal.verifyFixedBackGroundCheck(),Chrome 87.0.4280.141,,,2021-01-14 09:09:49,2021-01-14 09:09:51,1.531s,PASSED
+,,,,,,,
+Test Cases/JourneyPortal/verifyProductsAndBackButtonIsPresentAfterClickingSection,Chrome 87.0.4280.141,,,2021-01-14 09:09:51,2021-01-14 09:10:16,25.569s,PASSED
+Start listener action : login,Chrome 87.0.4280.141,,,2021-01-14 09:09:51,2021-01-14 09:09:59,8.759s,PASSED
+pages.Journey.clickOnJourneyTab(),Chrome 87.0.4280.141,,,2021-01-14 09:10:00,2021-01-14 09:10:01,1.158s,PASSED
+journeyName = pages.Journey.getRandomJourneyName(),Chrome 87.0.4280.141,,,2021-01-14 09:10:01,2021-01-14 09:10:02,1.147s,PASSED
+accessCode = pages.Journey.getExistingJourneyAccesscode(journeyName),Chrome 87.0.4280.141,,,2021-01-14 09:10:02,2021-01-14 09:10:08,5.894s,PASSED
+login.LoginForJourneyApplication.loginToJourneyApplication(),Chrome 87.0.4280.141,,,2021-01-14 09:10:08,2021-01-14 09:10:08,0.189s,PASSED
+pages.Journey.enterAccessCodeInJourney(accessCode),Chrome 87.0.4280.141,,,2021-01-14 09:10:08,2021-01-14 09:10:10,1.930s,PASSED
+pages.Journey.clickEnterButton(),Chrome 87.0.4280.141,,,2021-01-14 09:10:10,2021-01-14 09:10:11,1.129s,PASSED
+pages.JourneyPortal.openExistingSection(),Chrome 87.0.4280.141,,,2021-01-14 09:10:11,2021-01-14 09:10:15,3.925s,PASSED
+pages.JourneyPortal.verifyBackButtonAfterEnteringInToSection(),Chrome 87.0.4280.141,,,2021-01-14 09:10:15,2021-01-14 09:10:16,0.690s,PASSED
+pages.JourneyPortal.productPageCheck(),Chrome 87.0.4280.141,,,2021-01-14 09:10:16,2021-01-14 09:10:16,0.602s,PASSED
+,,,,,,,
+Test Cases/JourneyPortal/verifyScrollingBackGroundInJourneyPortal,Chrome 87.0.4280.141,,,2021-01-14 09:10:16,2021-01-14 09:11:22,1m - 5.786s,FAILED
+Start listener action : login,Chrome 87.0.4280.141,,,2021-01-14 09:10:16,2021-01-14 09:10:25,8.993s,PASSED
+pages.Journey.clickOnJourneyTab(),Chrome 87.0.4280.141,,,2021-01-14 09:10:25,2021-01-14 09:10:27,1.147s,PASSED
+journeyName = pages.Journey.getRandomJourneyName(),Chrome 87.0.4280.141,,,2021-01-14 09:10:27,2021-01-14 09:10:28,1.077s,PASSED
+accessCode = pages.Journey.getExistingJourneyAccesscode(journeyName),Chrome 87.0.4280.141,,,2021-01-14 09:10:28,2021-01-14 09:10:38,9.973s,PASSED
+pages.Journey.typeOfBackGroundToScrollingBackground(),Chrome 87.0.4280.141,,,2021-01-14 09:10:38,2021-01-14 09:10:42,4.326s,PASSED
+login.LoginForJourneyApplication.loginToJourneyApplication(),Chrome 87.0.4280.141,,,2021-01-14 09:10:42,2021-01-14 09:10:42,0.181s,PASSED
+pages.Journey.enterAccessCodeInJourney(accessCode),Chrome 87.0.4280.141,,,2021-01-14 09:10:42,2021-01-14 09:10:44,1.786s,PASSED
+pages.Journey.clickEnterButton(),Chrome 87.0.4280.141,,,2021-01-14 09:10:44,2021-01-14 09:10:45,1.108s,PASSED
+pages.JourneyPortal.openExistingSection(),Chrome 87.0.4280.141,,,2021-01-14 09:10:45,2021-01-14 09:10:49,3.644s,PASSED
+pages.JourneyPortal.verifyScrollingBackGroundCheck(),Chrome 87.0.4280.141,,,2021-01-14 09:10:49,2021-01-14 09:11:22,33.419s,FAILED
+,,,,,,,
+Test Cases/JourneyPortal/verifySectionInformation,Chrome 87.0.4280.141,,,2021-01-14 09:11:22,2021-01-14 09:11:48,25.537s,PASSED
+Start listener action : login,Chrome 87.0.4280.141,,,2021-01-14 09:11:22,2021-01-14 09:11:31,9.048s,PASSED
+pages.Journey.clickOnJourneyTab(),Chrome 87.0.4280.141,,,2021-01-14 09:11:31,2021-01-14 09:11:33,1.262s,PASSED
+journeyName = pages.Journey.getRandomJourneyName(),Chrome 87.0.4280.141,,,2021-01-14 09:11:33,2021-01-14 09:11:34,1.147s,PASSED
+accessCode = pages.Journey.getExistingJourneyAccesscode(journeyName),Chrome 87.0.4280.141,,,2021-01-14 09:11:34,2021-01-14 09:11:41,7.598s,PASSED
+login.LoginForJourneyApplication.loginToJourneyApplication(),Chrome 87.0.4280.141,,,2021-01-14 09:11:41,2021-01-14 09:11:41,0.167s,PASSED
+pages.Journey.enterAccessCodeInJourney(accessCode),Chrome 87.0.4280.141,,,2021-01-14 09:11:41,2021-01-14 09:11:43,1.961s,PASSED
+pages.Journey.clickEnterButton(),Chrome 87.0.4280.141,,,2021-01-14 09:11:43,2021-01-14 09:11:45,1.200s,PASSED
+pages.JourneyPortal.verifyingSectionProperties(),Chrome 87.0.4280.141,,,2021-01-14 09:11:45,2021-01-14 09:11:48,3.001s,PASSED
+,,,,,,,
+Test Cases/JourneyPortal/verifyTheFullScreenViewInProductPage,Chrome 87.0.4280.141,,,2021-01-14 09:11:48,2021-01-14 09:12:49,1m - 1.483s,FAILED
+Start listener action : login,Chrome 87.0.4280.141,,,2021-01-14 09:11:48,2021-01-14 09:11:56,8.633s,PASSED
+pages.Journey.clickOnJourneyTab(),Chrome 87.0.4280.141,,,2021-01-14 09:11:56,2021-01-14 09:11:58,1.291s,PASSED
+journeyName = pages.Journey.getRandomJourneyName(),Chrome 87.0.4280.141,,,2021-01-14 09:11:58,2021-01-14 09:11:59,1.128s,PASSED
+accessCode = pages.Journey.getExistingJourneyAccesscode(journeyName),Chrome 87.0.4280.141,,,2021-01-14 09:11:59,2021-01-14 09:12:07,7.786s,PASSED
+login.LoginForJourneyApplication.loginToJourneyApplication(),Chrome 87.0.4280.141,,,2021-01-14 09:12:07,2021-01-14 09:12:07,0.171s,PASSED
+pages.Journey.enterAccessCodeInJourney(accessCode),Chrome 87.0.4280.141,,,2021-01-14 09:12:07,2021-01-14 09:12:09,1.883s,PASSED
+pages.Journey.clickEnterButton(),Chrome 87.0.4280.141,,,2021-01-14 09:12:09,2021-01-14 09:12:10,1.171s,PASSED
+pages.JourneyPortal.openExistingSection(),Chrome 87.0.4280.141,,,2021-01-14 09:12:10,2021-01-14 09:12:14,3.997s,PASSED
+pages.JourneyPortal.productPageCheck(),Chrome 87.0.4280.141,,,2021-01-14 09:12:14,2021-01-14 09:12:15,0.810s,PASSED
+pages.JourneyPortal.clickFullScreenIcon(),Chrome 87.0.4280.141,,,2021-01-14 09:12:15,2021-01-14 09:12:16,1.462s,PASSED
+pages.JourneyPortal.verifyTheFullScreenView(),Chrome 87.0.4280.141,,,2021-01-14 09:12:16,2021-01-14 09:12:49,32.940s,FAILED
+,,,,,,,
+Test Cases/JourneyPortal/verifyTheFullScreenViewInSectionPage,Chrome 87.0.4280.141,,,2021-01-14 09:12:49,2021-01-14 09:13:13,24.067s,PASSED
+Start listener action : login,Chrome 87.0.4280.141,,,2021-01-14 09:12:49,2021-01-14 09:12:58,8.841s,PASSED
+pages.Journey.clickOnJourneyTab(),Chrome 87.0.4280.141,,,2021-01-14 09:12:58,2021-01-14 09:12:59,1.192s,PASSED
+journeyName = pages.Journey.getRandomJourneyName(),Chrome 87.0.4280.141,,,2021-01-14 09:12:59,2021-01-14 09:13:00,1.085s,PASSED
+accessCode = pages.Journey.getExistingJourneyAccesscode(journeyName),Chrome 87.0.4280.141,,,2021-01-14 09:13:00,2021-01-14 09:13:07,6.673s,PASSED
+login.LoginForJourneyApplication.loginToJourneyApplication(),Chrome 87.0.4280.141,,,2021-01-14 09:13:07,2021-01-14 09:13:07,0.162s,PASSED
+pages.Journey.enterAccessCodeInJourney(accessCode),Chrome 87.0.4280.141,,,2021-01-14 09:13:07,2021-01-14 09:13:09,1.930s,PASSED
+pages.Journey.clickEnterButton(),Chrome 87.0.4280.141,,,2021-01-14 09:13:09,2021-01-14 09:13:10,1.108s,PASSED
+pages.Journey.sectionPageVerification(),Chrome 87.0.4280.141,,,2021-01-14 09:13:10,2021-01-14 09:13:11,1.099s,PASSED
+pages.JourneyPortal.clickFullScreenIcon(),Chrome 87.0.4280.141,,,2021-01-14 09:13:11,2021-01-14 09:13:13,1.519s,PASSED
+pages.JourneyPortal.verifyTheFullScreenView(),Chrome 87.0.4280.141,,,2021-01-14 09:13:13,2021-01-14 09:13:13,0.301s,PASSED

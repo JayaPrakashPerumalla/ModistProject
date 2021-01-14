@@ -116,13 +116,13 @@ public class Journey {
 
 	@Keyword
 	def getRandomAccessCode() {
-		String accessCode = 'access'+random.nextInt(20)
+		String accessCode = 'randomcode'+random.nextInt(20)
 		return accessCode
 	}
 
 	@Keyword
 	def getRandomCount() {
-		int count = random.nextInt(10)
+		int count = random.nextInt(1000)
 		return count
 	}
 

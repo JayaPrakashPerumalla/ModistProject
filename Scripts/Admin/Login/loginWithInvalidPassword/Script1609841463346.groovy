@@ -18,3 +18,5 @@ import internal.GlobalVariable as GlobalVariable
 // login() should be disabled in loginTestListener
 
 CustomKeywords.'login.LoginForAdminDevEnvironment.login'(GlobalVariable.Email,GlobalVariable.wrongPassword)
+
+CustomKeywords.'login.LoginForAdminDevEnvironment.verifyErrorMessageForInvalidLogin'()

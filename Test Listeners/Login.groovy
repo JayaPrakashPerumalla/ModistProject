@@ -16,7 +16,7 @@ class Login {
 
 	public static JsonSlurper jsonSlurper = new JsonSlurper()
 	LoginForAdminDevEnvironment loginPage = new LoginForAdminDevEnvironment()
- 
+
 	@BeforeTestSuite
 	//@BeforeTestCase
 	@Keyword

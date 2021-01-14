@@ -300,12 +300,6 @@
       <testCaseId>Test Cases/Admin/Section/verifyFunctionalityOfCancelButtonInAddSectionPopup</testCaseId>
    </testCaseLink>
    <testCaseLink>
-      <guid>ae921d9a-5b74-4497-aec0-d61ee949eafe</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/Admin/verifyFieldsPresentInAssetEditPage</testCaseId>
-   </testCaseLink>
-   <testCaseLink>
       <guid>b96238b6-5ace-4506-a771-d5ad215658c5</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
