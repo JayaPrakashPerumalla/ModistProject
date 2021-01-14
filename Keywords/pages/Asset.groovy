@@ -75,7 +75,7 @@ public class Asset {
 		String assetName = "Author"+random.nextInt(1000)
 		actions.sendKeys(findTestObject('Object Repository/Asset/Asset/addAsset/Author'), assetName)
 		String userDir = System.getProperty('user.dir')
-		WebUI.uploadFile(findTestObject('Object Repository/Asset/Asset/addAsset/chooseFile'),userDir + '\\bike4.jpg')
+		WebUI.uploadFile(findTestObject('Object Repository/Asset/Asset/addAsset/chooseFile'),userDir + '\\car 2.jpg')
 		selectTenant()
 		actions.click(findTestObject('Asset/Asset/addAsset/addAssetButtonInAddAssetPopup'))
 		WebUI.waitForElementNotPresent(findTestObject('Object Repository/Asset/Asset/uploadStatusIcon'), 10)

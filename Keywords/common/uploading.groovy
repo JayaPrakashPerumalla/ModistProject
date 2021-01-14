@@ -27,7 +27,7 @@ public class uploading {
 
 		String userDir = System.getProperty('user.dir')
 
-		WebUI.uploadFile(findTestObject('Object Repository/OptionsUnderProfileIcon/Profile Options/choosefile'),userDir + '\\prakashtest.jpg')
+		WebUI.uploadFile(findTestObject('Object Repository/OptionsUnderProfileIcon/Profile Options/choosefile'),userDir + '\\boy image.jpg')
 	}
 
 	@Keyword

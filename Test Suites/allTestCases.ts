@@ -395,4 +395,10 @@
       <isRun>true</isRun>
       <testCaseId>Test Cases/JourneyPortal/verifyTheFullScreenViewInSectionPage</testCaseId>
    </testCaseLink>
+   <testCaseLink>
+      <guid>45bbcca8-d19c-4c40-b584-41b4b9173f25</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Admin/extra/Uploading profile Picture</testCaseId>
+   </testCaseLink>
 </TestSuiteEntity>

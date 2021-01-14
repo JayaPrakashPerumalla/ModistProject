@@ -17,8 +17,8 @@ class Login {
 	public static JsonSlurper jsonSlurper = new JsonSlurper()
 	LoginForAdminDevEnvironment loginPage = new LoginForAdminDevEnvironment()
 
-	@BeforeTestSuite
-	//@BeforeTestCase
+	//@BeforeTestSuite
+	@BeforeTestCase
 	@Keyword
 	def OpenWebSite() {
 		WebUI.openBrowser('')

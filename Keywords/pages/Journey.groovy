@@ -148,6 +148,7 @@ public class Journey {
 
 	@Keyword
 	def sectionPageVerification() {
+		actions.waitForElementPresent(findTestObject('Object Repository/Journey/JourneyPortal/Section/sectionPage'))
 		verifications.verifyElementPresent(findTestObject('Object Repository/Journey/JourneyPortal/Section/sectionPage'),"The display is not a SectionPage")
 	}
 
