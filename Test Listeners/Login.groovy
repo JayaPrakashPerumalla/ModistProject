@@ -1,4 +1,3 @@
-
 import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
 
 import com.kms.katalon.core.annotation.BeforeTestCase
@@ -17,8 +16,8 @@ class Login {
 	public static JsonSlurper jsonSlurper = new JsonSlurper()
 	LoginForAdminDevEnvironment loginPage = new LoginForAdminDevEnvironment()
 
-	//@BeforeTestSuite
-	@BeforeTestCase
+	@BeforeTestSuite
+	//@BeforeTestCase
 	@Keyword
 	def OpenWebSite() {
 		WebUI.openBrowser('')

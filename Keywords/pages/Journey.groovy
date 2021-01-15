@@ -83,7 +83,11 @@ public class Journey {
 	}
 
 	@Keyword
-	def createAccessCodeInJourney(String journeyName, String accessCode, String useLimit) {
+	def createAccessCodeInJourney() {
+		
+		String journeyName = getRandomJourneyName()
+		String accessCode = getRandomAccessCode()
+		String useLimit = getRandomCount()
 		openExistingJourney(journeyName)
 		actions.scrollToElement(findTestObject('Object Repository/Journey/Current Access Codes/currentAccessCodeField'))
 		actions.waitForElementPresent(findTestObject('Object Repository/Journey/Current Access Codes/currentAccessCodeField'))
@@ -92,7 +96,7 @@ public class Journey {
 		actions.sendKeys(findTestObject('Object Repository/Journey/Current Access Codes/codeUsageCount'), useLimit)
 		actions.click(findTestObject('Object Repository/Journey/Current Access Codes/getCodeButton'))
 		actions.click(findTestObject('Object Repository/CommonButtons/Close'))
-		return accessCode
+		return ['accessCode': accessCode, 'journeyName': journeyName]
 	}
 
 	@Keyword

@@ -19,8 +19,5 @@ import internal.GlobalVariable as GlobalVariable
 CustomKeywords.'pages.Journey.clickOnJourneyTab'()
 
 // Create access code and verify
-String journeyName = CustomKeywords.'pages.Journey.getRandomJourneyName'()
-String accessCode = CustomKeywords.'pages.Journey.getRandomAccessCode'()
-String useLimit = CustomKeywords.'pages.Journey.getRandomCount'()
-accessCode = CustomKeywords.'pages.Journey.createAccessCodeInJourney'(journeyName, accessCode, useLimit)
-CustomKeywords.'pages.Journey.verifyTheCreatedAccessCode'(journeyName, accessCode)
+Map journey = CustomKeywords.'pages.Journey.createAccessCodeInJourney'()
+CustomKeywords.'pages.Journey.verifyTheCreatedAccessCode'(journey.journeyName, journey.accessCode)

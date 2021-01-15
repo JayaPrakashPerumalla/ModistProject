@@ -19,12 +19,9 @@ import internal.GlobalVariable as GlobalVariable
 CustomKeywords.'pages.Journey.clickOnJourneyTab'()
 
 //create multiple access codes with same name in multiple journeys
-String journeyName = CustomKeywords.'pages.Journey.getRandomJourneyName'() 
-String accessCode = CustomKeywords.'pages.Journey.getRandomAccessCode'()
-String useLimit = CustomKeywords.'pages.Journey.getRandomCount'()
-accessCode = CustomKeywords.'pages.Journey.createAccessCodeInJourney'(journeyName, accessCode, useLimit)
-CustomKeywords.'pages.Journey.verifyTheCreatedAccessCode'(journeyName, accessCode)
+Map journey = CustomKeywords.'pages.Journey.createAccessCodeInJourney'()
+CustomKeywords.'pages.Journey.verifyTheCreatedAccessCode'(journey.journeyName, journey.accessCode)
 String journeyName1 = CustomKeywords.'pages.Journey.getRandomJourneyName'() 
 println journeyName1
-accessCode = CustomKeywords.'pages.Journey.createAccessCodeInJourney'(journeyName1, accessCode, useLimit)
-CustomKeywords.'pages.Journey.verifyTheCreatedAccessCode'(journeyName1, accessCode)
+Map journey1 = CustomKeywords.'pages.Journey.createAccessCodeInJourney'()
+CustomKeywords.'pages.Journey.verifyTheCreatedAccessCode'(journey1.journeyName, journey1.accessCode)
