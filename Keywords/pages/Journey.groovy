@@ -115,10 +115,14 @@ public class Journey {
 	def getRandomJourneyName() {
 		actions.waitForElementPresent(findTestObject('Object Repository/Journey/toGetJourneysCount'))
 		int count = actions.getElementCount(findTestObject('Object Repository/Journey/toGetJourneysCount'))
-
-		int index = random.nextInt(count)
-		def journeyName = WebUI.getText(findTestObject('Object Repository/Journey/toPickrandomJourney(index)',["index":index+1]))
-		return journeyName
+		if(count == 0) {
+			return addJourney()
+		}
+		else {
+			int index = random.nextInt(count)
+			def journeyName = WebUI.getText(findTestObject('Object Repository/Journey/toPickrandomJourney(index)',["index":index+1]))
+			return journeyName
+		}
 	}
 
 	@Keyword
@@ -138,6 +142,9 @@ public class Journey {
 		openExistingJourney(journeyName)
 		actions.scrollToElement(findTestObject('Object Repository/Journey/Current Access Codes/currentAccessCodeField'))
 		int count = actions.getElementCount(findTestObject('Object Repository/Journey/Current Access Codes/getAccessCodesCount'))
+		if(count == 0) {
+			return createAccessCodeInJourney()
+		}
 		int index = random.nextInt(count)
 		String accessCode = WebUI.getText(findTestObject('Object Repository/Journey/Current Access Codes/getAccessCodeText(index)',["index":index+1]))
 		return accessCode

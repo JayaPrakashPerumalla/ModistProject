@@ -48,7 +48,7 @@ public class Assetsource {
 	def addAssetSource() {
 
 		navigateToAssetSourceDetailsTab()
-		def sourcename = "RandomAsset"+random.nextInt(1000)
+		def sourcename = "RandomAssetSource"+random.nextInt(1000)
 		clickAddAssetSource()
 		actions.sendKeys(findTestObject('AssetSource/Source'), sourcename)
 		actions.click(findTestObject('AssetSource/Asset Source button on popup'))
