@@ -29,12 +29,12 @@ public class Section {
 	}
 
 	@Keyword
-	def searchForSection(def sectionName) {
-
-		actions.sendKeys(findTestObject('Object Repository/Section/filterByName'), "")
+	def searchForSection(String sectionName) {
+		WebUI.waitForElementPresent(findTestObject('Object Repository/Section/anySection(sectionName)'), 4)
+		/*actions.sendKeys(findTestObject('Object Repository/Section/filterByName'), "")
 		for (int i = 0; i < sectionName.length(); i++) {
 			WebUI.sendKeys(findTestObject('Object Repository/Journey/journrySearchInput'), sectionName.charAt(i).toString())
-		}
+		}*/
 	}
 
 	@Keyword
@@ -70,7 +70,6 @@ public class Section {
 			verifications.verifyElementPresent(findTestObject(path+element), "The element "+element+" is not present")
 		}
 		actions.click(findTestObject('Object Repository/Section/addSection/cancelButton'))
-		
 	}
 
 	@Keyword

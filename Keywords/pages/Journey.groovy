@@ -28,7 +28,10 @@ public class Journey {
 		String journeyName = "journeyName"+random.nextInt(1000)
 		clickAddJourneyButton()
 		actions.sendKeys(findTestObject('Object Repository/Journey/Add Journey/journeyName'), journeyName)
-		//actions.click(findTestObject('Object Repository/Journey/Add Journey/clickBackGroundType'))
+		actions.click(findTestObject('Object Repository/Journey/Add Journey/clickBackGroundType'))
+		actions.click(findTestObject('Object Repository/Journey/Add Journey/selectBackground(index)',['index':1]))
+		actions.click(findTestObject('Object Repository/Journey/Add Journey/clickOnTenant'))
+		actions.click(findTestObject('Object Repository/Journey/Add Journey/selectTenantQualit'))
 		actions.click(findTestObject('Object Repository/Journey/Add Journey/addJourneyInAddJourneyPopUp'))
 		return journeyName
 	}
@@ -84,7 +87,7 @@ public class Journey {
 
 	@Keyword
 	def createAccessCodeInJourney() {
-		
+
 		String journeyName = getRandomJourneyName()
 		String accessCode = getRandomAccessCode()
 		String useLimit = getRandomCount()
