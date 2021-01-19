@@ -10,7 +10,7 @@
    <followRedirects>false</followRedirects>
    <httpBody></httpBody>
    <httpBodyContent>{
-  &quot;text&quot;: &quot;{name:\&quot;${productName}\&quot;, Description: \&quot;${description}\&quot;, published: \&quot;${published}\&quot;, ProductTypeId: 1,BrandId:1}&quot;,
+  &quot;text&quot;: &quot;{name:\&quot;yrdt\&quot;, Description: \&quot;dummy\&quot;, published: \&quot;true\&quot;, ProductTypeId: 1,BrandId:1}&quot;,
   &quot;contentType&quot;: &quot;application/json&quot;,
   &quot;charset&quot;: &quot;UTF-8&quot;
 }</httpBodyContent>

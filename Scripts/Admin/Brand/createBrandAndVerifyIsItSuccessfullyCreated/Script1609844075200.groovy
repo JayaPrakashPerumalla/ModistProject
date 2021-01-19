@@ -16,8 +16,6 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 
 CustomKeywords.'pages.Brand.clickBrand'()
-
 def brandName = CustomKeywords.'pages.Brand.addBrand'()
-
 CustomKeywords.'pages.Brand.verifyTheBrandCreated'(brandName)
 

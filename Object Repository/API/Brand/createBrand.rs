@@ -10,7 +10,7 @@
    <followRedirects>false</followRedirects>
    <httpBody></httpBody>
    <httpBodyContent>{
-  &quot;text&quot;: &quot;{\&quot;name\&quot;:\&quot;${brandName}\&quot;,\&quot;slogan\&quot;:\&quot;${slogan}\&quot;,\&quot;bio\&quot;:\&quot;${bio}\&quot;,\&quot;tenantId\&quot;:${tenentId}}&quot;,
+  &quot;text&quot;: &quot;{\&quot;name\&quot;:\&quot;${brandName}\&quot;,\&quot;slogan\&quot;:\&quot;${slogan}\&quot;,\&quot;bio\&quot;:\&quot;${bio}\&quot;,\&quot;tenantId\&quot;:\&quot;${tenentId}\&quot;}&quot;,
   &quot;contentType&quot;: &quot;application/json&quot;,
   &quot;charset&quot;: &quot;UTF-8&quot;
 }</httpBodyContent>

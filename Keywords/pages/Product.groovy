@@ -12,9 +12,8 @@ import com.kms.katalon.core.testobject.TestObject
 import com.kms.katalon.core.util.KeywordUtil
 import com.kms.katalon.core.webui.common.WebUiCommonHelper
 import com.kms.katalon.core.webui.driver.DriverFactory
-import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords
-
+import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import verification.Verification
 import webAction.WebAction
 
@@ -61,7 +60,7 @@ public class Product {
 	@Keyword
 	def getRandomProductNmae() {
 
-		clickOnProductTab()
+		//clickOnProductTab()
 		def productCount = actions.getElementCount(findTestObject('Object Repository/Product/productsCount'))
 		if(productCount == 0) {
 			//create or add product

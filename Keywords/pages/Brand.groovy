@@ -1,9 +1,8 @@
 package pages
 import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
 
-import org.openqa.selenium.Keys
-
 import com.kms.katalon.core.annotation.Keyword
+import com.kms.katalon.core.webui.common.WebUiCommonHelper
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 
 import verification.Verification
@@ -27,15 +26,10 @@ public class Brand {
 
 	@Keyword
 	def addBrand() {
-
 		String brandName = "Brand"+random.nextInt(1000)
-
 		actions.click(findTestObject('Object Repository/Brand/AddBrandbutton'))
-
 		actions.sendKeys(findTestObject('Object Repository/Brand/AddBrandPopup/name'),brandName)
-
 		actions.click(findTestObject('Object Repository/Brand/AddBrandPopup/AddBrandButtonInAddBrandPopup'))
-
 		return brandName
 	}
 
@@ -53,7 +47,6 @@ public class Brand {
 	}
 	@Keyword
 	def verifyBrandPopUp() {
-
 		String path = 'Object Repository/Brand/AddBrandPopup/'
 		def elements = ["name", "Slogan", "Bio"]
 		for(element in elements) {
@@ -71,7 +64,7 @@ public class Brand {
 	}
 
 	@Keyword
-	def openAnyExistingBrand(String brandName) {
+	def openExistingBrand(String brandName) {
 		search(brandName)
 		WebUI.scrollToElement(findTestObject('Object Repository/Brand/createdBrand(brandName)',["brandName":brandName]),60)
 		WebUI.waitForElementVisible(findTestObject('Object Repository/Brand/createdBrand(brandName)',["brandName":brandName]), 30)
@@ -80,8 +73,7 @@ public class Brand {
 
 	@Keyword
 	def deleteBrand(String brandName){
-
-		openAnyExistingBrand(brandName)
+		openExistingBrand(brandName)
 		actions.click(findTestObject('Object Repository/Brand/Delete Button'))
 	}
 
@@ -93,8 +85,7 @@ public class Brand {
 
 	@Keyword
 	def editBrandName(String brandName){
-
-		openAnyExistingBrand(brandName)
+		openExistingBrand(brandName)
 		def brandeditedname = 'editedbrandname'+random.nextInt(10)
 		WebUI.clearText(findTestObject('Object Repository/Brand/AddBrandPopup/name'))
 		actions.sendKeys(findTestObject('Object Repository/Brand/AddBrandPopup/name'),brandeditedname)
@@ -107,6 +98,19 @@ public class Brand {
 	def verifyeditedBrandName(String brandeditedname){
 		search(brandeditedname)
 		verify.verifyElementPresent(findTestObject('Object Repository/Brand/createdBrand(brandName)',["brandName":brandeditedname]),"Brand name is not edited")
-		
+	}
+
+	@Keyword
+	def getRandomBrandName() {
+		actions.waitForElementPresent(findTestObject('Object Repository/Brand/brandCount'))
+		int count = actions.getElementCount(findTestObject('Object Repository/Brand/brandCount'))
+		if(count == 0) {
+			return addBrand()
+		}
+		else {
+			int index = random.nextInt(count)
+			String brandName = WebUI.getText(findTestObject('Object Repository/Brand/randomBrand(index)',["index":index]))
+			return brandName
+		}
 	}
 }

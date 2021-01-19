@@ -1,9 +1,9 @@
 import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
 
+import com.kms.katalon.core.annotation.AfterTestSuite
 import com.kms.katalon.core.annotation.BeforeTestCase
 import com.kms.katalon.core.annotation.BeforeTestSuite
 import com.kms.katalon.core.annotation.Keyword
-import com.kms.katalon.core.util.KeywordUtil
 import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 
@@ -51,7 +51,7 @@ class Login {
 		GlobalVariable.accessToken = loginJSON.token
 	}
 
-	//@AfterTestSuite
+	@AfterTestSuite
 	//@AfterTestCase
 	@Keyword
 	def closewebSite() {

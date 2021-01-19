@@ -15,12 +15,7 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 
-def brandName = CustomKeywords.'pages.Brand.addBrand'()
-
-println brandName
-
+CustomKeywords.'pages.Brand.clickBrand'()
+def brandName = CustomKeywords.'pages.Brand.getRandomBrandName'()
 def brandeditedname = CustomKeywords.'pages.Brand.editBrandName'(brandName)
-
-println brandeditedname
-
 CustomKeywords.'pages.Brand.verifyeditedBrandName'(brandeditedname)

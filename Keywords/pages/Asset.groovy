@@ -161,7 +161,7 @@ public class Asset {
 	def verifySourceInEditAssetPage(def assetName, def sourceName) {
 		searchForAsset(assetName)
 		actions.click(findTestObject('Object Repository/Asset/Asset/anyAsset(assetName)',["assetName":assetName]))
-		actions.scrollToElement(findTestObject('Object Repository/Asset/Asset/assetEditpage/sourceName(sourceName)',["sourceName":sourceName]))
+		WebUI.scrollToElement(findTestObject('Object Repository/Asset/Asset/assetEditpage/sourceName(sourceName)',["sourceName":sourceName]), 4)
 		verifications.verifyElementPresent(findTestObject('Object Repository/Asset/Asset/assetEditpage/sourceName(sourceName)',["sourceName":sourceName]),'source '+sourceName+'is not updated',5)
 		actions.click(findTestObject('Object Repository/Asset/Asset/assetEditpage/close'))
 	}

@@ -32,8 +32,7 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 
+
 CustomKeywords.'pages.Brand.clickBrand'()
-
 CustomKeywords.'pages.Brand.clickAddBrand'()
-
 CustomKeywords.'pages.Brand.verifyBrandPopUp'() 

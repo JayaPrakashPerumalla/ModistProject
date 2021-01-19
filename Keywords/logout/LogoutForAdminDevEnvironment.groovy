@@ -19,13 +19,13 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 
 import internal.GlobalVariable
+import login.LoginForAdminDevEnvironment
 
 public class LogoutForAdminDevEnvironment {
 
-
+	LoginForAdminDevEnvironment login = new LoginForAdminDevEnvironment()
 	@Keyword
 	def clickingOnProfileIcon() {
-
 		WebUI.click(findTestObject('Object Repository/OptionsUnderProfileIcon/ProfileIcon'))
 	}
 
@@ -37,7 +37,7 @@ public class LogoutForAdminDevEnvironment {
 	def logout() {
 		WebUI.click(findTestObject('Object Repository/OptionsUnderProfileIcon/LogoutOption'))
 	}
-	
+
 	@Keyword
 	def closeBrowser() {
 		WebUI.closeBrowser()
