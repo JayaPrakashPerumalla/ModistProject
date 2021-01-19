@@ -1,0 +1,18 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+Journey,Chrome 87.0.4280.141,,,2021-01-19 11:04:15,2021-01-19 11:07:05,2m - 50.447s,FAILED
+,,,,,,,
+Test Cases/Admin/Journey/createAccessCodeForJourneyAndVerifyIsTheCodeSuccessfullyCreated,Chrome 87.0.4280.141,,,2021-01-19 11:04:51,2021-01-19 11:06:01,1m - 10.102s,FAILED
+Start listener action : login,Chrome 87.0.4280.141,,,2021-01-19 11:04:51,2021-01-19 11:04:54,3.087s,PASSED
+pages.Journey.clickOnJourneyTab(),Chrome 87.0.4280.141,,,2021-01-19 11:04:54,2021-01-19 11:04:56,2.133s,PASSED
+journey = pages.Journey.createAccessCodeInJourney(),Chrome 87.0.4280.141,,,2021-01-19 11:04:56,2021-01-19 11:05:18,22.170s,PASSED
+"pages.Journey.verifyTheCreatedAccessCode(journeyName, accessCode)",Chrome 87.0.4280.141,,,2021-01-19 11:05:18,2021-01-19 11:06:01,42.424s,FAILED
+,,,,,,,
+Test Cases/Admin/Journey/createMultipleAccessCodesWithSameName,Chrome 87.0.4280.141,,,2021-01-19 11:06:01,2021-01-19 11:07:05,1m - 4.787s,PASSED
+Start listener action : login,Chrome 87.0.4280.141,,,2021-01-19 11:06:01,2021-01-19 11:06:10,9.244s,PASSED
+pages.Journey.clickOnJourneyTab(),Chrome 87.0.4280.141,,,2021-01-19 11:06:10,2021-01-19 11:06:12,1.345s,PASSED
+journey = pages.Journey.createAccessCodeInJourney(),Chrome 87.0.4280.141,,,2021-01-19 11:06:12,2021-01-19 11:06:28,16.428s,PASSED
+"pages.Journey.verifyTheCreatedAccessCode(journeyName, accessCode)",Chrome 87.0.4280.141,,,2021-01-19 11:06:28,2021-01-19 11:06:36,8.155s,PASSED
+journeyName1 = pages.Journey.getRandomJourneyName(),Chrome 87.0.4280.141,,,2021-01-19 11:06:36,2021-01-19 11:06:38,1.947s,PASSED
+println(journeyName1),Chrome 87.0.4280.141,,,2021-01-19 11:06:38,2021-01-19 11:06:38,0.000s,PASSED
+journey1 = pages.Journey.createAccessCodeInJourney(),Chrome 87.0.4280.141,,,2021-01-19 11:06:38,2021-01-19 11:06:55,17.459s,PASSED
+"pages.Journey.verifyTheCreatedAccessCode(journeyName, accessCode)",Chrome 87.0.4280.141,,,2021-01-19 11:06:55,2021-01-19 11:07:05,9.986s,PASSED

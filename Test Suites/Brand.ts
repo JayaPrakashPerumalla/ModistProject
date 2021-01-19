@@ -20,7 +20,7 @@
    <testCaseLink>
       <guid>7b3f3d3f-6e3d-446b-89f8-fc55b0f48485</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>false</isRun>
+      <isRun>true</isRun>
       <testCaseId>Test Cases/Admin/Brand/createBrandAndVerifyIsItSuccessfullyCreated</testCaseId>
    </testCaseLink>
    <testCaseLink>

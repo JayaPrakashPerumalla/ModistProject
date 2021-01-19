@@ -1,0 +1,8 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+Journey,Chrome 87.0.4280.141,,,2021-01-19 11:14:48,2021-01-19 11:16:26,1m - 37.492s,FAILED
+,,,,,,,
+Test Cases/Admin/Journey/createAccessCodeForJourneyAndVerifyIsTheCodeSuccessfullyCreated,Chrome 87.0.4280.141,,,2021-01-19 11:15:21,2021-01-19 11:16:26,1m - 4.220s,FAILED
+Start listener action : login,Chrome 87.0.4280.141,,,2021-01-19 11:15:21,2021-01-19 11:15:24,3.069s,PASSED
+pages.Journey.clickOnJourneyTab(),Chrome 87.0.4280.141,,,2021-01-19 11:15:25,2021-01-19 11:15:27,2.400s,PASSED
+journey = pages.Journey.createAccessCodeInJourney(),Chrome 87.0.4280.141,,,2021-01-19 11:15:27,2021-01-19 11:15:45,18.269s,PASSED
+"pages.Journey.verifyTheCreatedAccessCode(journeyName, accessCode)",Chrome 87.0.4280.141,,,2021-01-19 11:15:45,2021-01-19 11:16:26,40.176s,FAILED

@@ -1,0 +1,680 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Brand" time="253.687" tests="4" failures="3" skips="0" errors="0">
+   <testsuite name="Brand" tests="4" failures="3" errors="0" time="253.687" skips="0" timestamp="2021-01-19 10:30:40" hostname="DELL - DESKTOP-99JJ4SE" id="Test Suites/Brand">
+      <properties>
+         <property name="deviceName" value=""/>
+         <property name="devicePlatform" value=""/>
+         <property name="logFolder" value="C:\\Users\\DELL\\modist\\ModistProject\\Reports\\20210119_103035\\Brand\\20210119_103036"/>
+         <property name="logFiles" value="C:\\Users\\DELL\\modist\\ModistProject\\Reports\\20210119_103035\\Brand\\20210119_103036\\execution0.log"/>
+         <property name="attachments" value="C:\\Users\\DELL\\modist\\ModistProject\\Reports\\20210119_103035\\Brand\\20210119_103036\\1611032581981.png, C:\\Users\\DELL\\modist\\ModistProject\\Reports\\20210119_103035\\Brand\\20210119_103036\\1611032582844.png, C:\\Users\\DELL\\modist\\ModistProject\\Reports\\20210119_103035\\Brand\\20210119_103036\\1611032626998.png, C:\\Users\\DELL\\modist\\ModistProject\\Reports\\20210119_103035\\Brand\\20210119_103036\\1611032691950.png"/>
+         <property name="hostName" value="DELL - DESKTOP-99JJ4SE"/>
+         <property name="os" value="Windows 10 64bit"/>
+         <property name="katalonVersion" value="7.8.2.208"/>
+         <property name="browser" value="Chrome 87.0.4280.141"/>
+         <property name="hostAddress" value="192.168.1.104"/>
+         <property name="sessionId" value="c96e1f7be3440ece2277aac7edf60c9d"/>
+         <property name="seleniumVersion" value="3.141.59"/>
+         <property name="proxyInformation" value="ProxyInformation { proxyOption=NO_PROXY, proxyServerType=HTTP, username=, password=********, proxyServerAddress=, proxyServerPort=0, executionList=&quot;&quot;, isApplyToDesiredCapabilities=true }"/>
+         <property name="platform" value="Windows 10"/>
+      </properties>
+      <testcase name="Test Cases/Admin/Brand/createBrandAndVerifyIsItSuccessfullyCreated" time="88.653" classname="Test Cases/Admin/Brand/createBrandAndVerifyIsItSuccessfullyCreated" status="FAILED">
+         <failure type="FAILED" message="Test Cases/Admin/Brand/createBrandAndVerifyIsItSuccessfullyCreated FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: the brand Brand945not created
+	at com.kms.katalon.core.util.KeywordUtil.markFailedAndStop(KeywordUtil.java:28)
+	at com.kms.katalon.core.util.KeywordUtil$markFailedAndStop.call(Unknown Source)
+	at verification.Verification.verifyElementPresent(Verification.groovy:31)
+	at verification.Verification.verifyElementPresent(Verification.groovy)
+	at verification.Verification$verifyElementPresent.call(Unknown Source)
+	at pages.Brand.verifyTheBrandCreated(Brand.groovy:46)
+	at pages.Brand.invokeMethod(Brand.groovy)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:50)
+	at createBrandAndVerifyIsItSuccessfullyCreated.run(createBrandAndVerifyIsItSuccessfullyCreated:20)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:394)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:385)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:364)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:356)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:251)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:203)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:152)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:95)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1611032436972.run(TempTestSuite1611032436972.groovy:39)
+"/>
+         <system-out><![CDATA[2021-01-19 10:31:34 - [TEST_CASE][FAILED] - Test Cases/Admin/Brand/createBrandAndVerifyIsItSuccessfullyCreated: Test Cases/Admin/Brand/createBrandAndVerifyIsItSuccessfullyCreated FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: the brand Brand945not created
+	at com.kms.katalon.core.util.KeywordUtil.markFailedAndStop(KeywordUtil.java:28)
+	at com.kms.katalon.core.util.KeywordUtil$markFailedAndStop.call(Unknown Source)
+	at verification.Verification.verifyElementPresent(Verification.groovy:31)
+	at verification.Verification.verifyElementPresent(Verification.groovy)
+	at verification.Verification$verifyElementPresent.call(Unknown Source)
+	at pages.Brand.verifyTheBrandCreated(Brand.groovy:46)
+	at pages.Brand.invokeMethod(Brand.groovy)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:50)
+	at createBrandAndVerifyIsItSuccessfullyCreated.run(createBrandAndVerifyIsItSuccessfullyCreated:20)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:394)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:385)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:364)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:356)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:251)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:203)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:152)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:95)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1611032436972.run(TempTestSuite1611032436972.groovy:39)
+
+
+2021-01-19 10:31:34 - [TEST_STEP][PASSED] - Start listener action : login: null
+
+2021-01-19 10:31:34 - [TEST_STEP][PASSED] - Thread.sleep(3000): null
+
+2021-01-19 10:31:37 - [TEST_STEP][PASSED] - url = getUrl(): Current window's url is: 'https://qualitlabs.dev-admin.modist.co/dashboard'
+
+2021-01-19 10:31:37 - [MESSAGE][PASSED] - Current window's url is: 'https://qualitlabs.dev-admin.modist.co/dashboard'
+
+2021-01-19 10:31:37 - [TEST_STEP][PASSED] - if (!(url.contains("dashboard"))): null
+
+2021-01-19 10:31:37 - [TEST_STEP][PASSED] - pages.Brand.clickBrand(): pages.Brand.clickBrand is PASSED
+
+2021-01-19 10:31:39 - [MESSAGE][PASSED] - Object: 'Object Repository/Brand/clickOnBrandTab' is clicked on
+
+2021-01-19 10:31:39 - [MESSAGE][PASSED] - pages.Brand.clickBrand is PASSED
+
+2021-01-19 10:31:39 - [TEST_STEP][PASSED] - brandName = pages.Brand.addBrand(): pages.Brand.addBrand is PASSED
+
+2021-01-19 10:31:39 - [MESSAGE][PASSED] - Object 'Object Repository/Brand/AddBrandbutton' is present
+
+2021-01-19 10:31:42 - [MESSAGE][PASSED] - Object 'Object Repository/Brand/AddBrandbutton' is visible
+
+2021-01-19 10:31:44 - [MESSAGE][PASSED] - Object 'Object Repository/Brand/AddBrandbutton' is clickable
+
+2021-01-19 10:31:46 - [MESSAGE][PASSED] - Object: 'Object Repository/Brand/AddBrandbutton' is clicked on
+
+2021-01-19 10:31:48 - [MESSAGE][PASSED] - Object 'Object Repository/Brand/AddBrandPopup/name' is present
+
+2021-01-19 10:31:50 - [MESSAGE][PASSED] - Object 'Object Repository/Brand/AddBrandPopup/name' is visible
+
+2021-01-19 10:31:52 - [MESSAGE][PASSED] - Object 'Object Repository/Brand/AddBrandPopup/name' is clickable
+
+2021-01-19 10:31:54 - [MESSAGE][PASSED] - Text of object 'Object Repository/Brand/AddBrandPopup/name' is cleared
+
+2021-01-19 10:31:56 - [MESSAGE][PASSED] - Keys 'Brand945' sent to object: 'Object Repository/Brand/AddBrandPopup/name'
+
+2021-01-19 10:31:57 - [MESSAGE][PASSED] - Object 'Object Repository/Brand/AddBrandPopup/AddBrandButtonInAddBrandPopup' is present
+
+2021-01-19 10:31:59 - [MESSAGE][PASSED] - Object 'Object Repository/Brand/AddBrandPopup/AddBrandButtonInAddBrandPopup' is visible
+
+2021-01-19 10:32:02 - [MESSAGE][PASSED] - Object 'Object Repository/Brand/AddBrandPopup/AddBrandButtonInAddBrandPopup' is clickable
+
+2021-01-19 10:32:04 - [MESSAGE][PASSED] - Object: 'Object Repository/Brand/AddBrandPopup/AddBrandButtonInAddBrandPopup' is clicked on
+
+2021-01-19 10:32:04 - [MESSAGE][PASSED] - pages.Brand.addBrand is PASSED
+
+2021-01-19 10:32:04 - [TEST_STEP][FAILED] - pages.Brand.verifyTheBrandCreated(brandName): the brand Brand945not created
+
+2021-01-19 10:32:06 - [MESSAGE][PASSED] - Object 'Object Repository/Brand/search' is present
+
+2021-01-19 10:32:08 - [MESSAGE][PASSED] - Object 'Object Repository/Brand/search' is visible
+
+2021-01-19 10:32:09 - [MESSAGE][PASSED] - Object 'Object Repository/Brand/search' is clickable
+
+2021-01-19 10:32:12 - [MESSAGE][PASSED] - Text of object 'Object Repository/Brand/search' is cleared
+
+2021-01-19 10:32:14 - [MESSAGE][PASSED] - Keys '' sent to object: 'Object Repository/Brand/search'
+
+2021-01-19 10:32:16 - [MESSAGE][PASSED] - Keys 'B' sent to object: 'Object Repository/Brand/search'
+
+2021-01-19 10:32:18 - [MESSAGE][PASSED] - Keys 'r' sent to object: 'Object Repository/Brand/search'
+
+2021-01-19 10:32:20 - [MESSAGE][PASSED] - Keys 'a' sent to object: 'Object Repository/Brand/search'
+
+2021-01-19 10:32:22 - [MESSAGE][PASSED] - Keys 'n' sent to object: 'Object Repository/Brand/search'
+
+2021-01-19 10:32:24 - [MESSAGE][PASSED] - Keys 'd' sent to object: 'Object Repository/Brand/search'
+
+2021-01-19 10:32:26 - [MESSAGE][PASSED] - Keys '9' sent to object: 'Object Repository/Brand/search'
+
+2021-01-19 10:32:28 - [MESSAGE][PASSED] - Keys '4' sent to object: 'Object Repository/Brand/search'
+
+2021-01-19 10:32:30 - [MESSAGE][PASSED] - Keys '5' sent to object: 'Object Repository/Brand/search'
+
+2021-01-19 10:33:01 - [MESSAGE][INFO] - Unable to find the element located by 'By.xpath: //div[@class='sc-jrsJCI ivRwdr rdt_TableRow']//div[text()='Brand945']'. Please recheck the objects properties to make sure the desired element is located. 
+
+2021-01-19 10:33:02 - [MESSAGE][WARNING] - com.kms.katalon.core.webui.exception.WebElementNotFoundException: Web element with id: 'Object Repository/Brand/createdBrand(brandName)' located by '//div[@class='sc-jrsJCI ivRwdr rdt_TableRow']//div[text()='Brand945']' not found (Root cause: com.kms.katalon.core.exception.StepFailedException: com.kms.katalon.core.webui.exception.WebElementNotFoundException: Web element with id: 'Object Repository/Brand/createdBrand(brandName)' located by '//div[@class='sc-jrsJCI ivRwdr rdt_TableRow']//div[text()='Brand945']' not found
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementPresentKeyword$_verifyElementPresent_closure1.doCall(VerifyElementPresentKeyword.groovy:85)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementPresentKeyword$_verifyElementPresent_closure1.call(VerifyElementPresentKeyword.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:20)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementPresentKeyword.verifyElementPresent(VerifyElementPresentKeyword.groovy:92)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementPresentKeyword.execute(VerifyElementPresentKeyword.groovy:68)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:73)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.verifyElementPresent(WebUiBuiltInKeywords.groovy:1445)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$verifyElementPresent$2.call(Unknown Source)
+	at verification.Verification.verifyElementPresent(Verification.groovy:29)
+	at verification.Verification.verifyElementPresent(Verification.groovy)
+	at verification.Verification$verifyElementPresent.call(Unknown Source)
+	at pages.Brand.verifyTheBrandCreated(Brand.groovy:46)
+	at pages.Brand.invokeMethod(Brand.groovy)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:50)
+	at createBrandAndVerifyIsItSuccessfullyCreated.run(createBrandAndVerifyIsItSuccessfullyCreated:20)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:394)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:385)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:364)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:356)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:251)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:203)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:152)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:95)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1611032436972.run(TempTestSuite1611032436972.groovy:39)
+)
+[[ATTACHMENT|C:\\Users\\DELL\\modist\\ModistProject\\Reports\\20210119_103035\\Brand\\20210119_103036\\1611032581981.png]]
+
+2021-01-19 10:33:03 - [MESSAGE][PASSED] - Taking screenshot successfully
+[[ATTACHMENT|C:\\Users\\DELL\\modist\\ModistProject\\Reports\\20210119_103035\\Brand\\20210119_103036\\1611032582844.png]]
+
+2021-01-19 10:33:03 - [MESSAGE][FAILED] - the brand Brand945not created]]></system-out>
+         <system-err><![CDATA[2021-01-19 10:31:34 - [TEST_CASE][FAILED] - Test Cases/Admin/Brand/createBrandAndVerifyIsItSuccessfullyCreated: Test Cases/Admin/Brand/createBrandAndVerifyIsItSuccessfullyCreated FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: the brand Brand945not created
+	at com.kms.katalon.core.util.KeywordUtil.markFailedAndStop(KeywordUtil.java:28)
+	at com.kms.katalon.core.util.KeywordUtil$markFailedAndStop.call(Unknown Source)
+	at verification.Verification.verifyElementPresent(Verification.groovy:31)
+	at verification.Verification.verifyElementPresent(Verification.groovy)
+	at verification.Verification$verifyElementPresent.call(Unknown Source)
+	at pages.Brand.verifyTheBrandCreated(Brand.groovy:46)
+	at pages.Brand.invokeMethod(Brand.groovy)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:50)
+	at createBrandAndVerifyIsItSuccessfullyCreated.run(createBrandAndVerifyIsItSuccessfullyCreated:20)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:394)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:385)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:364)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:356)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:251)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:203)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:152)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:95)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1611032436972.run(TempTestSuite1611032436972.groovy:39)]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Admin/Brand/Delete a Brand and verify" time="44.021" classname="Test Cases/Admin/Brand/Delete a Brand and verify" status="FAILED">
+         <failure type="FAILED" message="Test Cases/Admin/Brand/Delete a Brand and verify FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Unable to get text of object 'Object Repository/Brand/randomBrand(index)'
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:26)
+	at com.kms.katalon.core.webui.keyword.builtin.GetTextKeyword.getText(GetTextKeyword.groovy:88)
+	at com.kms.katalon.core.webui.keyword.builtin.GetTextKeyword.execute(GetTextKeyword.groovy:67)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:73)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.getText(WebUiBuiltInKeywords.groovy:915)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$getText$11.call(Unknown Source)
+	at pages.Brand.getRandomBrandName(Brand.groovy:112)
+	at pages.Brand.invokeMethod(Brand.groovy)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:50)
+	at Delete a Brand and verify.run(Delete a Brand and verify:19)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:394)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:385)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:364)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:356)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:251)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:203)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:152)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:95)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1611032436972.run(TempTestSuite1611032436972.groovy:39)
+Caused by: com.kms.katalon.core.webui.exception.WebElementNotFoundException: Web element with id: 'Object Repository/Brand/randomBrand(index)' located by '(//div[@class=&quot;sc-jrsJCI ivRwdr rdt_TableRow&quot;]//div[2])[0]' not found
+	at com.kms.katalon.core.webui.common.WebUiCommonHelper.findWebElement(WebUiCommonHelper.java:1369)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIAbstractKeyword.findWebElement(WebUIAbstractKeyword.groovy:27)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIAbstractKeyword.findWebElement(WebUIAbstractKeyword.groovy:26)
+	at com.kms.katalon.core.webui.keyword.builtin.GetTextKeyword$_getText_closure1.doCall(GetTextKeyword.groovy:78)
+	at com.kms.katalon.core.webui.keyword.builtin.GetTextKeyword$_getText_closure1.call(GetTextKeyword.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:20)
+	... 22 more
+"/>
+         <system-out><![CDATA[2021-01-19 10:33:03 - [TEST_CASE][FAILED] - Test Cases/Admin/Brand/Delete a Brand and verify: Test Cases/Admin/Brand/Delete a Brand and verify FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Unable to get text of object 'Object Repository/Brand/randomBrand(index)'
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:26)
+	at com.kms.katalon.core.webui.keyword.builtin.GetTextKeyword.getText(GetTextKeyword.groovy:88)
+	at com.kms.katalon.core.webui.keyword.builtin.GetTextKeyword.execute(GetTextKeyword.groovy:67)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:73)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.getText(WebUiBuiltInKeywords.groovy:915)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$getText$11.call(Unknown Source)
+	at pages.Brand.getRandomBrandName(Brand.groovy:112)
+	at pages.Brand.invokeMethod(Brand.groovy)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:50)
+	at Delete a Brand and verify.run(Delete a Brand and verify:19)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:394)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:385)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:364)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:356)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:251)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:203)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:152)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:95)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1611032436972.run(TempTestSuite1611032436972.groovy:39)
+Caused by: com.kms.katalon.core.webui.exception.WebElementNotFoundException: Web element with id: 'Object Repository/Brand/randomBrand(index)' located by '(//div[@class="sc-jrsJCI ivRwdr rdt_TableRow"]//div[2])[0]' not found
+	at com.kms.katalon.core.webui.common.WebUiCommonHelper.findWebElement(WebUiCommonHelper.java:1369)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIAbstractKeyword.findWebElement(WebUIAbstractKeyword.groovy:27)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIAbstractKeyword.findWebElement(WebUIAbstractKeyword.groovy:26)
+	at com.kms.katalon.core.webui.keyword.builtin.GetTextKeyword$_getText_closure1.doCall(GetTextKeyword.groovy:78)
+	at com.kms.katalon.core.webui.keyword.builtin.GetTextKeyword$_getText_closure1.call(GetTextKeyword.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:20)
+	... 22 more
+
+
+2021-01-19 10:33:03 - [TEST_STEP][PASSED] - Start listener action : login: null
+
+2021-01-19 10:33:03 - [TEST_STEP][PASSED] - Thread.sleep(3000): null
+
+2021-01-19 10:33:06 - [TEST_STEP][PASSED] - url = getUrl(): Current window's url is: 'https://qualitlabs.dev-admin.modist.co/dashboard'
+
+2021-01-19 10:33:06 - [MESSAGE][PASSED] - Current window's url is: 'https://qualitlabs.dev-admin.modist.co/dashboard'
+
+2021-01-19 10:33:06 - [TEST_STEP][PASSED] - if (!(url.contains("dashboard"))): null
+
+2021-01-19 10:33:06 - [TEST_STEP][PASSED] - pages.Brand.clickBrand(): pages.Brand.clickBrand is PASSED
+
+2021-01-19 10:33:09 - [MESSAGE][PASSED] - Object: 'Object Repository/Brand/clickOnBrandTab' is clicked on
+
+2021-01-19 10:33:09 - [MESSAGE][PASSED] - pages.Brand.clickBrand is PASSED
+
+2021-01-19 10:33:09 - [TEST_STEP][FAILED] - brandName = pages.Brand.getRandomBrandName(): Unable to get text of object 'Object Repository/Brand/randomBrand(index)'
+
+2021-01-19 10:33:11 - [MESSAGE][PASSED] - Object 'Object Repository/Brand/brandCount' is present
+
+2021-01-19 10:33:13 - [MESSAGE][PASSED] - Object 'Object Repository/Brand/brandCount' is present
+
+2021-01-19 10:33:46 - [MESSAGE][INFO] - Unable to find the element located by 'By.xpath: (//div[@class="sc-jrsJCI ivRwdr rdt_TableRow"]//div[2])[0]'. Please recheck the objects properties to make sure the desired element is located. 
+
+2021-01-19 10:33:46 - [MESSAGE][WARNING] - [SELF-HEALING] Failed to find element with id 'Object Repository/Brand/randomBrand(index)'. Try using Self-healing.
+
+2021-01-19 10:33:46 - [MESSAGE][WARNING] - [SELF-HEALING] Cannot find elements when the XPath is null.
+
+2021-01-19 10:33:46 - [MESSAGE][WARNING] - [SELF-HEALING] Cannot find elements when the selector is null
+
+2021-01-19 10:33:47 - [MESSAGE][FAILED] - Unable to get text of object 'Object Repository/Brand/randomBrand(index)' (Root cause: com.kms.katalon.core.exception.StepFailedException: Unable to get text of object 'Object Repository/Brand/randomBrand(index)'
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:26)
+	at com.kms.katalon.core.webui.keyword.builtin.GetTextKeyword.getText(GetTextKeyword.groovy:88)
+	at com.kms.katalon.core.webui.keyword.builtin.GetTextKeyword.execute(GetTextKeyword.groovy:67)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:73)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.getText(WebUiBuiltInKeywords.groovy:915)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$getText$11.call(Unknown Source)
+	at pages.Brand.getRandomBrandName(Brand.groovy:112)
+	at pages.Brand.invokeMethod(Brand.groovy)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:50)
+	at Delete a Brand and verify.run(Delete a Brand and verify:19)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:394)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:385)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:364)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:356)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:251)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:203)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:152)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:95)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1611032436972.run(TempTestSuite1611032436972.groovy:39)
+Caused by: com.kms.katalon.core.webui.exception.WebElementNotFoundException: Web element with id: 'Object Repository/Brand/randomBrand(index)' located by '(//div[@class="sc-jrsJCI ivRwdr rdt_TableRow"]//div[2])[0]' not found
+	at com.kms.katalon.core.webui.common.WebUiCommonHelper.findWebElement(WebUiCommonHelper.java:1369)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIAbstractKeyword.findWebElement(WebUIAbstractKeyword.groovy:27)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIAbstractKeyword.findWebElement(WebUIAbstractKeyword.groovy:26)
+	at com.kms.katalon.core.webui.keyword.builtin.GetTextKeyword$_getText_closure1.doCall(GetTextKeyword.groovy:78)
+	at com.kms.katalon.core.webui.keyword.builtin.GetTextKeyword$_getText_closure1.call(GetTextKeyword.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:20)
+	at com.kms.katalon.core.webui.keyword.builtin.GetTextKeyword.getText(GetTextKeyword.groovy:88)
+	at com.kms.katalon.core.webui.keyword.builtin.GetTextKeyword.execute(GetTextKeyword.groovy:67)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:73)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.getText(WebUiBuiltInKeywords.groovy:915)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$getText$11.call(Unknown Source)
+	at pages.Brand.getRandomBrandName(Brand.groovy:112)
+	at pages.Brand.invokeMethod(Brand.groovy)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:50)
+	at Script1610096581525.run(Script1610096581525.groovy:19)
+	... 13 more
+)
+[[ATTACHMENT|C:\\Users\\DELL\\modist\\ModistProject\\Reports\\20210119_103035\\Brand\\20210119_103036\\1611032626998.png]]
+
+2021-01-19 10:33:47 - [MESSAGE][FAILED] - Unable to get text of object 'Object Repository/Brand/randomBrand(index)']]></system-out>
+         <system-err><![CDATA[2021-01-19 10:33:03 - [TEST_CASE][FAILED] - Test Cases/Admin/Brand/Delete a Brand and verify: Test Cases/Admin/Brand/Delete a Brand and verify FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Unable to get text of object 'Object Repository/Brand/randomBrand(index)'
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:26)
+	at com.kms.katalon.core.webui.keyword.builtin.GetTextKeyword.getText(GetTextKeyword.groovy:88)
+	at com.kms.katalon.core.webui.keyword.builtin.GetTextKeyword.execute(GetTextKeyword.groovy:67)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:73)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.getText(WebUiBuiltInKeywords.groovy:915)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$getText$11.call(Unknown Source)
+	at pages.Brand.getRandomBrandName(Brand.groovy:112)
+	at pages.Brand.invokeMethod(Brand.groovy)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:50)
+	at Delete a Brand and verify.run(Delete a Brand and verify:19)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:394)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:385)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:364)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:356)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:251)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:203)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:152)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:95)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1611032436972.run(TempTestSuite1611032436972.groovy:39)
+Caused by: com.kms.katalon.core.webui.exception.WebElementNotFoundException: Web element with id: 'Object Repository/Brand/randomBrand(index)' located by '(//div[@class="sc-jrsJCI ivRwdr rdt_TableRow"]//div[2])[0]' not found
+	at com.kms.katalon.core.webui.common.WebUiCommonHelper.findWebElement(WebUiCommonHelper.java:1369)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIAbstractKeyword.findWebElement(WebUIAbstractKeyword.groovy:27)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIAbstractKeyword.findWebElement(WebUIAbstractKeyword.groovy:26)
+	at com.kms.katalon.core.webui.keyword.builtin.GetTextKeyword$_getText_closure1.doCall(GetTextKeyword.groovy:78)
+	at com.kms.katalon.core.webui.keyword.builtin.GetTextKeyword$_getText_closure1.call(GetTextKeyword.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:20)
+	... 22 more]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Admin/Brand/Verify elements on Add Brand popup" time="21.722" classname="Test Cases/Admin/Brand/Verify elements on Add Brand popup" status="PASSED">
+         <system-out><![CDATA[2021-01-19 10:33:47 - [TEST_CASE][PASSED] - Test Cases/Admin/Brand/Verify elements on Add Brand popup: Test Cases/Admin/Brand/Verify elements on Add Brand popup
+
+2021-01-19 10:33:47 - [TEST_STEP][PASSED] - Start listener action : login: null
+
+2021-01-19 10:33:47 - [TEST_STEP][PASSED] - Thread.sleep(3000): null
+
+2021-01-19 10:33:50 - [TEST_STEP][PASSED] - url = getUrl(): Current window's url is: 'https://qualitlabs.dev-admin.modist.co/dashboard'
+
+2021-01-19 10:33:50 - [MESSAGE][PASSED] - Current window's url is: 'https://qualitlabs.dev-admin.modist.co/dashboard'
+
+2021-01-19 10:33:50 - [TEST_STEP][PASSED] - if (!(url.contains("dashboard"))): null
+
+2021-01-19 10:33:50 - [TEST_STEP][PASSED] - pages.Brand.clickBrand(): pages.Brand.clickBrand is PASSED
+
+2021-01-19 10:33:53 - [MESSAGE][PASSED] - Object: 'Object Repository/Brand/clickOnBrandTab' is clicked on
+
+2021-01-19 10:33:53 - [MESSAGE][PASSED] - pages.Brand.clickBrand is PASSED
+
+2021-01-19 10:33:53 - [TEST_STEP][PASSED] - pages.Brand.clickAddBrand(): pages.Brand.clickAddBrand is PASSED
+
+2021-01-19 10:33:55 - [MESSAGE][PASSED] - Object: 'Object Repository/Brand/AddBrandbutton' is clicked on
+
+2021-01-19 10:33:55 - [MESSAGE][PASSED] - pages.Brand.clickAddBrand is PASSED
+
+2021-01-19 10:33:55 - [TEST_STEP][PASSED] - pages.Brand.verifyBrandPopUp(): pages.Brand.verifyBrandPopUp is PASSED
+
+2021-01-19 10:33:56 - [MESSAGE][PASSED] - Object 'Object Repository/Brand/AddBrandPopup/name' is present
+
+2021-01-19 10:33:58 - [MESSAGE][PASSED] - Object 'Object Repository/Brand/AddBrandPopup/Slogan' is present
+
+2021-01-19 10:34:01 - [MESSAGE][PASSED] - Object 'Object Repository/Brand/AddBrandPopup/Bio' is present
+
+2021-01-19 10:34:02 - [MESSAGE][PASSED] - Object 'Object Repository/Brand/AddBrandPopup/cancelButtonAddBrandPopup' is present
+
+2021-01-19 10:34:05 - [MESSAGE][PASSED] - Object 'Object Repository/Brand/AddBrandPopup/cancelButtonAddBrandPopup' is visible
+
+2021-01-19 10:34:07 - [MESSAGE][PASSED] - Object 'Object Repository/Brand/AddBrandPopup/cancelButtonAddBrandPopup' is clickable
+
+2021-01-19 10:34:09 - [MESSAGE][PASSED] - Object: 'Object Repository/Brand/AddBrandPopup/cancelButtonAddBrandPopup' is clicked on
+
+2021-01-19 10:34:09 - [MESSAGE][PASSED] - pages.Brand.verifyBrandPopUp is PASSED]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Admin/Brand/Edit a Brand and Verify" time="43.288" classname="Test Cases/Admin/Brand/Edit a Brand and Verify" status="FAILED">
+         <failure type="FAILED" message="Test Cases/Admin/Brand/Edit a Brand and Verify FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Unable to get text of object 'Object Repository/Brand/randomBrand(index)'
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:26)
+	at com.kms.katalon.core.webui.keyword.builtin.GetTextKeyword.getText(GetTextKeyword.groovy:88)
+	at com.kms.katalon.core.webui.keyword.builtin.GetTextKeyword.execute(GetTextKeyword.groovy:67)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:73)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.getText(WebUiBuiltInKeywords.groovy:915)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$getText$11.call(Unknown Source)
+	at pages.Brand.getRandomBrandName(Brand.groovy:112)
+	at pages.Brand.invokeMethod(Brand.groovy)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:50)
+	at Edit a Brand and Verify.run(Edit a Brand and Verify:19)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:394)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:385)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:364)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:356)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:251)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:203)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:152)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:95)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1611032436972.run(TempTestSuite1611032436972.groovy:39)
+Caused by: com.kms.katalon.core.webui.exception.WebElementNotFoundException: Web element with id: 'Object Repository/Brand/randomBrand(index)' located by '(//div[@class=&quot;sc-jrsJCI ivRwdr rdt_TableRow&quot;]//div[2])[0]' not found
+	at com.kms.katalon.core.webui.common.WebUiCommonHelper.findWebElement(WebUiCommonHelper.java:1369)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIAbstractKeyword.findWebElement(WebUIAbstractKeyword.groovy:27)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIAbstractKeyword.findWebElement(WebUIAbstractKeyword.groovy:26)
+	at com.kms.katalon.core.webui.keyword.builtin.GetTextKeyword$_getText_closure1.doCall(GetTextKeyword.groovy:78)
+	at com.kms.katalon.core.webui.keyword.builtin.GetTextKeyword$_getText_closure1.call(GetTextKeyword.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:20)
+	... 22 more
+"/>
+         <system-out><![CDATA[2021-01-19 10:34:09 - [TEST_CASE][FAILED] - Test Cases/Admin/Brand/Edit a Brand and Verify: Test Cases/Admin/Brand/Edit a Brand and Verify FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Unable to get text of object 'Object Repository/Brand/randomBrand(index)'
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:26)
+	at com.kms.katalon.core.webui.keyword.builtin.GetTextKeyword.getText(GetTextKeyword.groovy:88)
+	at com.kms.katalon.core.webui.keyword.builtin.GetTextKeyword.execute(GetTextKeyword.groovy:67)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:73)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.getText(WebUiBuiltInKeywords.groovy:915)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$getText$11.call(Unknown Source)
+	at pages.Brand.getRandomBrandName(Brand.groovy:112)
+	at pages.Brand.invokeMethod(Brand.groovy)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:50)
+	at Edit a Brand and Verify.run(Edit a Brand and Verify:19)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:394)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:385)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:364)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:356)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:251)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:203)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:152)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:95)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1611032436972.run(TempTestSuite1611032436972.groovy:39)
+Caused by: com.kms.katalon.core.webui.exception.WebElementNotFoundException: Web element with id: 'Object Repository/Brand/randomBrand(index)' located by '(//div[@class="sc-jrsJCI ivRwdr rdt_TableRow"]//div[2])[0]' not found
+	at com.kms.katalon.core.webui.common.WebUiCommonHelper.findWebElement(WebUiCommonHelper.java:1369)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIAbstractKeyword.findWebElement(WebUIAbstractKeyword.groovy:27)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIAbstractKeyword.findWebElement(WebUIAbstractKeyword.groovy:26)
+	at com.kms.katalon.core.webui.keyword.builtin.GetTextKeyword$_getText_closure1.doCall(GetTextKeyword.groovy:78)
+	at com.kms.katalon.core.webui.keyword.builtin.GetTextKeyword$_getText_closure1.call(GetTextKeyword.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:20)
+	... 22 more
+
+
+2021-01-19 10:34:09 - [TEST_STEP][PASSED] - Start listener action : login: null
+
+2021-01-19 10:34:09 - [TEST_STEP][PASSED] - Thread.sleep(3000): null
+
+2021-01-19 10:34:12 - [TEST_STEP][PASSED] - url = getUrl(): Current window's url is: 'https://qualitlabs.dev-admin.modist.co/dashboard'
+
+2021-01-19 10:34:12 - [MESSAGE][PASSED] - Current window's url is: 'https://qualitlabs.dev-admin.modist.co/dashboard'
+
+2021-01-19 10:34:12 - [TEST_STEP][PASSED] - if (!(url.contains("dashboard"))): null
+
+2021-01-19 10:34:12 - [TEST_STEP][PASSED] - pages.Brand.clickBrand(): pages.Brand.clickBrand is PASSED
+
+2021-01-19 10:34:14 - [MESSAGE][PASSED] - Object: 'Object Repository/Brand/clickOnBrandTab' is clicked on
+
+2021-01-19 10:34:14 - [MESSAGE][PASSED] - pages.Brand.clickBrand is PASSED
+
+2021-01-19 10:34:14 - [TEST_STEP][FAILED] - brandName = pages.Brand.getRandomBrandName(): Unable to get text of object 'Object Repository/Brand/randomBrand(index)'
+
+2021-01-19 10:34:15 - [MESSAGE][PASSED] - Object 'Object Repository/Brand/brandCount' is present
+
+2021-01-19 10:34:17 - [MESSAGE][PASSED] - Object 'Object Repository/Brand/brandCount' is present
+
+2021-01-19 10:34:51 - [MESSAGE][INFO] - Unable to find the element located by 'By.xpath: (//div[@class="sc-jrsJCI ivRwdr rdt_TableRow"]//div[2])[0]'. Please recheck the objects properties to make sure the desired element is located. 
+
+2021-01-19 10:34:51 - [MESSAGE][WARNING] - [SELF-HEALING] Failed to find element with id 'Object Repository/Brand/randomBrand(index)'. Try using Self-healing.
+
+2021-01-19 10:34:51 - [MESSAGE][WARNING] - [SELF-HEALING] Cannot find elements when the XPath is null.
+
+2021-01-19 10:34:51 - [MESSAGE][WARNING] - [SELF-HEALING] Cannot find elements when the selector is null
+
+2021-01-19 10:34:52 - [MESSAGE][FAILED] - Unable to get text of object 'Object Repository/Brand/randomBrand(index)' (Root cause: com.kms.katalon.core.exception.StepFailedException: Unable to get text of object 'Object Repository/Brand/randomBrand(index)'
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:26)
+	at com.kms.katalon.core.webui.keyword.builtin.GetTextKeyword.getText(GetTextKeyword.groovy:88)
+	at com.kms.katalon.core.webui.keyword.builtin.GetTextKeyword.execute(GetTextKeyword.groovy:67)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:73)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.getText(WebUiBuiltInKeywords.groovy:915)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$getText$11.call(Unknown Source)
+	at pages.Brand.getRandomBrandName(Brand.groovy:112)
+	at pages.Brand.invokeMethod(Brand.groovy)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:50)
+	at Edit a Brand and Verify.run(Edit a Brand and Verify:19)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:394)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:385)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:364)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:356)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:251)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:203)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:152)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:95)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1611032436972.run(TempTestSuite1611032436972.groovy:39)
+Caused by: com.kms.katalon.core.webui.exception.WebElementNotFoundException: Web element with id: 'Object Repository/Brand/randomBrand(index)' located by '(//div[@class="sc-jrsJCI ivRwdr rdt_TableRow"]//div[2])[0]' not found
+	at com.kms.katalon.core.webui.common.WebUiCommonHelper.findWebElement(WebUiCommonHelper.java:1369)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIAbstractKeyword.findWebElement(WebUIAbstractKeyword.groovy:27)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIAbstractKeyword.findWebElement(WebUIAbstractKeyword.groovy:26)
+	at com.kms.katalon.core.webui.keyword.builtin.GetTextKeyword$_getText_closure1.doCall(GetTextKeyword.groovy:78)
+	at com.kms.katalon.core.webui.keyword.builtin.GetTextKeyword$_getText_closure1.call(GetTextKeyword.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:20)
+	at com.kms.katalon.core.webui.keyword.builtin.GetTextKeyword.getText(GetTextKeyword.groovy:88)
+	at com.kms.katalon.core.webui.keyword.builtin.GetTextKeyword.execute(GetTextKeyword.groovy:67)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:73)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.getText(WebUiBuiltInKeywords.groovy:915)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$getText$11.call(Unknown Source)
+	at pages.Brand.getRandomBrandName(Brand.groovy:112)
+	at pages.Brand.invokeMethod(Brand.groovy)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:50)
+	at Script1610096590921.run(Script1610096590921.groovy:19)
+	... 13 more
+)
+[[ATTACHMENT|C:\\Users\\DELL\\modist\\ModistProject\\Reports\\20210119_103035\\Brand\\20210119_103036\\1611032691950.png]]
+
+2021-01-19 10:34:52 - [MESSAGE][FAILED] - Unable to get text of object 'Object Repository/Brand/randomBrand(index)']]></system-out>
+         <system-err><![CDATA[2021-01-19 10:34:09 - [TEST_CASE][FAILED] - Test Cases/Admin/Brand/Edit a Brand and Verify: Test Cases/Admin/Brand/Edit a Brand and Verify FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Unable to get text of object 'Object Repository/Brand/randomBrand(index)'
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:26)
+	at com.kms.katalon.core.webui.keyword.builtin.GetTextKeyword.getText(GetTextKeyword.groovy:88)
+	at com.kms.katalon.core.webui.keyword.builtin.GetTextKeyword.execute(GetTextKeyword.groovy:67)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:73)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.getText(WebUiBuiltInKeywords.groovy:915)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$getText$11.call(Unknown Source)
+	at pages.Brand.getRandomBrandName(Brand.groovy:112)
+	at pages.Brand.invokeMethod(Brand.groovy)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:50)
+	at Edit a Brand and Verify.run(Edit a Brand and Verify:19)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:394)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:385)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:364)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:356)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:251)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:203)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:152)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:95)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1611032436972.run(TempTestSuite1611032436972.groovy:39)
+Caused by: com.kms.katalon.core.webui.exception.WebElementNotFoundException: Web element with id: 'Object Repository/Brand/randomBrand(index)' located by '(//div[@class="sc-jrsJCI ivRwdr rdt_TableRow"]//div[2])[0]' not found
+	at com.kms.katalon.core.webui.common.WebUiCommonHelper.findWebElement(WebUiCommonHelper.java:1369)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIAbstractKeyword.findWebElement(WebUIAbstractKeyword.groovy:27)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIAbstractKeyword.findWebElement(WebUIAbstractKeyword.groovy:26)
+	at com.kms.katalon.core.webui.keyword.builtin.GetTextKeyword$_getText_closure1.doCall(GetTextKeyword.groovy:78)
+	at com.kms.katalon.core.webui.keyword.builtin.GetTextKeyword$_getText_closure1.call(GetTextKeyword.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:20)
+	... 22 more]]></system-err>
+      </testcase>
+      <system-out><![CDATA[2021-01-19 10:30:40 - [TEST_SUITE][FAILED] - Brand: Test Cases/Admin/Brand/createBrandAndVerifyIsItSuccessfullyCreated FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: the brand Brand945not created
+	at com.kms.katalon.core.util.KeywordUtil.markFailedAndStop(KeywordUtil.java:28)
+	at com.kms.katalon.core.util.KeywordUtil$markFailedAndStop.call(Unknown Source)
+	at verification.Verification.verifyElementPresent(Verification.groovy:31)
+	at verification.Verification.verifyElementPresent(Verification.groovy)
+	at verification.Verification$verifyElementPresent.call(Unknown Source)
+	at pages.Brand.verifyTheBrandCreated(Brand.groovy:46)
+	at pages.Brand.invokeMethod(Brand.groovy)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:50)
+	at createBrandAndVerifyIsItSuccessfullyCreated.run(createBrandAndVerifyIsItSuccessfullyCreated:20)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:394)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:385)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:364)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:356)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:251)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:203)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:152)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:95)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1611032436972.run(TempTestSuite1611032436972.groovy:39)]]></system-out>
+      <system-err><![CDATA[2021-01-19 10:30:40 - [TEST_SUITE][FAILED] - Brand: Test Cases/Admin/Brand/createBrandAndVerifyIsItSuccessfullyCreated FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: the brand Brand945not created
+	at com.kms.katalon.core.util.KeywordUtil.markFailedAndStop(KeywordUtil.java:28)
+	at com.kms.katalon.core.util.KeywordUtil$markFailedAndStop.call(Unknown Source)
+	at verification.Verification.verifyElementPresent(Verification.groovy:31)
+	at verification.Verification.verifyElementPresent(Verification.groovy)
+	at verification.Verification$verifyElementPresent.call(Unknown Source)
+	at pages.Brand.verifyTheBrandCreated(Brand.groovy:46)
+	at pages.Brand.invokeMethod(Brand.groovy)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:50)
+	at createBrandAndVerifyIsItSuccessfullyCreated.run(createBrandAndVerifyIsItSuccessfullyCreated:20)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:394)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:385)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:364)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:356)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:251)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:203)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:152)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:95)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1611032436972.run(TempTestSuite1611032436972.groovy:39)]]></system-err>
+   </testsuite>
+</testsuites>
