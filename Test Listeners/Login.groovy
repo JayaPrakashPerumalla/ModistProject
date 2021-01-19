@@ -16,7 +16,7 @@ class Login {
 	public static JsonSlurper jsonSlurper = new JsonSlurper()
 	LoginForAdminDevEnvironment loginPage = new LoginForAdminDevEnvironment()
 
-	@BeforeTestSuite
+	//@BeforeTestSuite
 	//@BeforeTestCase
 	@Keyword
 	def OpenWebSite() {
@@ -26,7 +26,7 @@ class Login {
 		loginPage.login(GlobalVariable.Email,GlobalVariable.Password)
 	}
 
-	@BeforeTestCase
+	//@BeforeTestCase
 	@Keyword
 	def login() {
 		Thread.sleep(3000)

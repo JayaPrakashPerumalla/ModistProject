@@ -12,33 +12,33 @@
    <rerunImmediately>false</rerunImmediately>
    <testSuiteGuid>e3b421fb-466e-4983-9a8e-d11dccb4c1cb</testSuiteGuid>
    <testCaseLink>
-      <guid>405a35b2-5e8f-482a-a734-b659cafb98fe</guid>
+      <guid>56c7cf20-2e04-4586-956f-ff61e731fa62</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>false</isRun>
+      <isRun>true</isRun>
       <testCaseId>Test Cases/Admin/Brand/Add a Brand without filling mandatory details</testCaseId>
    </testCaseLink>
    <testCaseLink>
-      <guid>7b3f3d3f-6e3d-446b-89f8-fc55b0f48485</guid>
+      <guid>d40d81e9-b984-4fc1-8701-59e84f98cef6</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>false</isRun>
+      <isRun>true</isRun>
       <testCaseId>Test Cases/Admin/Brand/createBrandAndVerifyIsItSuccessfullyCreated</testCaseId>
    </testCaseLink>
    <testCaseLink>
-      <guid>f7c6d6d0-18f6-4811-87e7-b3efa7cdd696</guid>
+      <guid>20cbc0ff-a7df-4030-9942-f6fd38b1b0b3</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Admin/Brand/Delete a Brand and verify</testCaseId>
    </testCaseLink>
    <testCaseLink>
-      <guid>42969a62-70ff-42b9-b5b6-69e6b70df252</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/Admin/Brand/Verify elements on Add Brand popup</testCaseId>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>47240a67-08de-4e18-9fad-c2e77e536421</guid>
+      <guid>1415333b-cd37-47b0-8a85-df8a1e06c1db</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Admin/Brand/Edit a Brand and Verify</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>46f9ff8c-1944-4d16-9bea-0569e1661a61</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Admin/Brand/Verify elements on Add Brand popup</testCaseId>
    </testCaseLink>
 </TestSuiteEntity>

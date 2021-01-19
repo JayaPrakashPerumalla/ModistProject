@@ -193,7 +193,8 @@ public class Journey {
 
 	@Keyword
 	def verifyWhetherImageSuccessfullyUploaded() {
-		//actions.waitForElementPresent(findTestObject('Object Repository/OptionsUnderProfileIcon/Profile Options/getImageAttributeForProfile'))
+		actions.waitForElementPresent(findTestObject('Object Repository/OptionsUnderProfileIcon/Profile Options/getImageAttributeForProfile'))
+		verifications.verifyElementPresent(findTestObject('Object Repository/OptionsUnderProfileIcon/Profile Options/getImageAttributeForProfile'), "image not yet updated")
 		verifications.verifyElementPresent(findTestObject('Object Repository/OptionsUnderProfileIcon/Profile Options/successMessageAfterUploading'), "image not uploaded")
 	}
 }
