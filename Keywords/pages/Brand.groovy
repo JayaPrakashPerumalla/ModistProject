@@ -109,7 +109,7 @@ public class Brand {
 		}
 		else {
 			int index = random.nextInt(count)
-			String brandName = WebUI.getText(findTestObject('Object Repository/Brand/randomBrand(index)',["index":index]))
+			String brandName = WebUI.getText(findTestObject('Object Repository/Brand/randomBrand2(index)',["index":index+1]))
 			return brandName
 		}
 	}

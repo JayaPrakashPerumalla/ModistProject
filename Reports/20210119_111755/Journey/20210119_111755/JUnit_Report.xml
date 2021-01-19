@@ -1,0 +1,324 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Journey" time="97.01" tests="1" failures="1" skips="0" errors="0">
+   <testsuite name="Journey" tests="1" failures="1" errors="0" time="97.01" skips="0" timestamp="2021-01-19 11:17:58" hostname="DELL - DESKTOP-99JJ4SE" id="Test Suites/Journey">
+      <properties>
+         <property name="deviceName" value=""/>
+         <property name="devicePlatform" value=""/>
+         <property name="logFolder" value="C:\\Users\\DELL\\modist\\ModistProject\\Reports\\20210119_111755\\Journey\\20210119_111755"/>
+         <property name="logFiles" value="C:\\Users\\DELL\\modist\\ModistProject\\Reports\\20210119_111755\\Journey\\20210119_111755\\execution0.log"/>
+         <property name="attachments" value="C:\\Users\\DELL\\modist\\ModistProject\\Reports\\20210119_111755\\Journey\\20210119_111755\\1611035373013.png, C:\\Users\\DELL\\modist\\ModistProject\\Reports\\20210119_111755\\Journey\\20210119_111755\\1611035373870.png"/>
+         <property name="hostName" value="DELL - DESKTOP-99JJ4SE"/>
+         <property name="os" value="Windows 10 64bit"/>
+         <property name="katalonVersion" value="7.8.2.208"/>
+         <property name="browser" value="Chrome 87.0.4280.141"/>
+         <property name="hostAddress" value="192.168.1.104"/>
+         <property name="sessionId" value="63d77dd3dab140b0b144fffb12d631a1"/>
+         <property name="seleniumVersion" value="3.141.59"/>
+         <property name="proxyInformation" value="ProxyInformation { proxyOption=NO_PROXY, proxyServerType=HTTP, username=, password=********, proxyServerAddress=, proxyServerPort=0, executionList=&quot;&quot;, isApplyToDesiredCapabilities=true }"/>
+         <property name="platform" value="Windows 10"/>
+      </properties>
+      <testcase name="Test Cases/Admin/Journey/createAccessCodeForJourneyAndVerifyIsTheCodeSuccessfullyCreated" time="63.294" classname="Test Cases/Admin/Journey/createAccessCodeForJourneyAndVerifyIsTheCodeSuccessfullyCreated" status="FAILED">
+         <failure type="FAILED" message="Test Cases/Admin/Journey/createAccessCodeForJourneyAndVerifyIsTheCodeSuccessfullyCreated FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: The Coderandomcode13 is not created
+	at com.kms.katalon.core.util.KeywordUtil.markFailedAndStop(KeywordUtil.java:28)
+	at com.kms.katalon.core.util.KeywordUtil$markFailedAndStop.call(Unknown Source)
+	at verification.Verification.verifyElementPresent(Verification.groovy:31)
+	at verification.Verification.verifyElementPresent(Verification.groovy)
+	at verification.Verification$verifyElementPresent.call(Unknown Source)
+	at pages.Journey.verifyTheCreatedAccessCode(Journey.groovy:110)
+	at pages.Journey.invokeMethod(Journey.groovy)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:50)
+	at createAccessCodeForJourneyAndVerifyIsTheCodeSuccessfullyCreated.run(createAccessCodeForJourneyAndVerifyIsTheCodeSuccessfullyCreated:23)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:394)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:385)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:364)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:356)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:251)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:203)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:152)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:95)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1611035275488.run(TempTestSuite1611035275488.groovy:39)
+"/>
+         <system-out><![CDATA[2021-01-19 11:18:30 - [TEST_CASE][FAILED] - Test Cases/Admin/Journey/createAccessCodeForJourneyAndVerifyIsTheCodeSuccessfullyCreated: Test Cases/Admin/Journey/createAccessCodeForJourneyAndVerifyIsTheCodeSuccessfullyCreated FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: The Coderandomcode13 is not created
+	at com.kms.katalon.core.util.KeywordUtil.markFailedAndStop(KeywordUtil.java:28)
+	at com.kms.katalon.core.util.KeywordUtil$markFailedAndStop.call(Unknown Source)
+	at verification.Verification.verifyElementPresent(Verification.groovy:31)
+	at verification.Verification.verifyElementPresent(Verification.groovy)
+	at verification.Verification$verifyElementPresent.call(Unknown Source)
+	at pages.Journey.verifyTheCreatedAccessCode(Journey.groovy:110)
+	at pages.Journey.invokeMethod(Journey.groovy)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:50)
+	at createAccessCodeForJourneyAndVerifyIsTheCodeSuccessfullyCreated.run(createAccessCodeForJourneyAndVerifyIsTheCodeSuccessfullyCreated:23)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:394)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:385)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:364)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:356)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:251)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:203)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:152)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:95)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1611035275488.run(TempTestSuite1611035275488.groovy:39)
+
+
+2021-01-19 11:18:30 - [TEST_STEP][PASSED] - Start listener action : login: null
+
+2021-01-19 11:18:30 - [TEST_STEP][PASSED] - Thread.sleep(3000): null
+
+2021-01-19 11:18:33 - [TEST_STEP][PASSED] - url = getUrl(): Current window's url is: 'https://qualitlabs.dev-admin.modist.co/dashboard'
+
+2021-01-19 11:18:34 - [MESSAGE][PASSED] - Current window's url is: 'https://qualitlabs.dev-admin.modist.co/dashboard'
+
+2021-01-19 11:18:34 - [TEST_STEP][PASSED] - if (!(url.contains("dashboard"))): null
+
+2021-01-19 11:18:34 - [TEST_STEP][PASSED] - pages.Journey.clickOnJourneyTab(): pages.Journey.clickOnJourneyTab is PASSED
+
+2021-01-19 11:18:34 - [MESSAGE][PASSED] - Object 'Object Repository/Journey/Journeytab' is present
+
+2021-01-19 11:18:34 - [MESSAGE][PASSED] - Object 'Object Repository/Journey/Journeytab' is visible
+
+2021-01-19 11:18:35 - [MESSAGE][PASSED] - Object 'Object Repository/Journey/Journeytab' is clickable
+
+2021-01-19 11:18:35 - [MESSAGE][PASSED] - Object: 'Object Repository/Journey/Journeytab' is clicked on
+
+2021-01-19 11:18:35 - [MESSAGE][PASSED] - pages.Journey.clickOnJourneyTab is PASSED
+
+2021-01-19 11:18:35 - [TEST_STEP][PASSED] - journey = pages.Journey.createAccessCodeInJourney(): pages.Journey.createAccessCodeInJourney is PASSED
+
+2021-01-19 11:18:38 - [MESSAGE][PASSED] - Object 'Object Repository/Journey/toGetJourneysCount' is present
+
+2021-01-19 11:18:39 - [MESSAGE][PASSED] - Object 'Object Repository/Journey/toGetJourneysCount' is present
+
+2021-01-19 11:18:39 - [MESSAGE][PASSED] - Text of object 'Object Repository/Journey/toPickrandomJourney(index)' is: 'KJO'
+
+2021-01-19 11:18:40 - [MESSAGE][PASSED] - Object 'Object Repository/Journey/journrySearchInput' is present
+
+2021-01-19 11:18:40 - [MESSAGE][PASSED] - Object 'Object Repository/Journey/journrySearchInput' is visible
+
+2021-01-19 11:18:40 - [MESSAGE][PASSED] - Object 'Object Repository/Journey/journrySearchInput' is clickable
+
+2021-01-19 11:18:41 - [MESSAGE][PASSED] - Text of object 'Object Repository/Journey/journrySearchInput' is cleared
+
+2021-01-19 11:18:41 - [MESSAGE][PASSED] - Keys '' sent to object: 'Object Repository/Journey/journrySearchInput'
+
+2021-01-19 11:18:42 - [MESSAGE][PASSED] - Keys 'K' sent to object: 'Object Repository/Journey/journrySearchInput'
+
+2021-01-19 11:18:42 - [MESSAGE][PASSED] - Keys 'J' sent to object: 'Object Repository/Journey/journrySearchInput'
+
+2021-01-19 11:18:43 - [MESSAGE][PASSED] - Keys 'O' sent to object: 'Object Repository/Journey/journrySearchInput'
+
+2021-01-19 11:18:43 - [MESSAGE][PASSED] - Object 'Object Repository/Journey/clickVerifyingJourney(journeyName)' is present
+
+2021-01-19 11:18:43 - [MESSAGE][PASSED] - Object 'Object Repository/Journey/clickVerifyingJourney(journeyName)' is visible
+
+2021-01-19 11:18:44 - [MESSAGE][PASSED] - Object 'Object Repository/Journey/clickVerifyingJourney(journeyName)' is clickable
+
+2021-01-19 11:18:44 - [MESSAGE][PASSED] - Object: 'Object Repository/Journey/clickVerifyingJourney(journeyName)' is clicked on
+
+2021-01-19 11:18:45 - [MESSAGE][PASSED] - Scroll to object 'Object Repository/Journey/Current Access Codes/currentAccessCodeField' successfully
+
+2021-01-19 11:18:46 - [MESSAGE][PASSED] - Object 'Object Repository/Journey/Current Access Codes/currentAccessCodeField' is present
+
+2021-01-19 11:18:46 - [MESSAGE][PASSED] - Object 'Object Repository/Journey/Current Access Codes/plusButton' is present
+
+2021-01-19 11:18:47 - [MESSAGE][PASSED] - Object 'Object Repository/Journey/Current Access Codes/plusButton' is visible
+
+2021-01-19 11:18:47 - [MESSAGE][PASSED] - Object 'Object Repository/Journey/Current Access Codes/plusButton' is clickable
+
+2021-01-19 11:18:48 - [MESSAGE][PASSED] - Object: 'Object Repository/Journey/Current Access Codes/plusButton' is clicked on
+
+2021-01-19 11:18:49 - [MESSAGE][PASSED] - Object 'Object Repository/Journey/Current Access Codes/accessCode' is present
+
+2021-01-19 11:18:49 - [MESSAGE][PASSED] - Object 'Object Repository/Journey/Current Access Codes/accessCode' is visible
+
+2021-01-19 11:18:49 - [MESSAGE][PASSED] - Object 'Object Repository/Journey/Current Access Codes/accessCode' is clickable
+
+2021-01-19 11:18:49 - [MESSAGE][PASSED] - Text of object 'Object Repository/Journey/Current Access Codes/accessCode' is cleared
+
+2021-01-19 11:18:50 - [MESSAGE][PASSED] - Keys 'randomcode13' sent to object: 'Object Repository/Journey/Current Access Codes/accessCode'
+
+2021-01-19 11:18:50 - [MESSAGE][PASSED] - Object 'Object Repository/Journey/Current Access Codes/codeUsageCount' is present
+
+2021-01-19 11:18:51 - [MESSAGE][PASSED] - Object 'Object Repository/Journey/Current Access Codes/codeUsageCount' is visible
+
+2021-01-19 11:18:51 - [MESSAGE][PASSED] - Object 'Object Repository/Journey/Current Access Codes/codeUsageCount' is clickable
+
+2021-01-19 11:18:51 - [MESSAGE][PASSED] - Text of object 'Object Repository/Journey/Current Access Codes/codeUsageCount' is cleared
+
+2021-01-19 11:18:52 - [MESSAGE][PASSED] - Keys '383' sent to object: 'Object Repository/Journey/Current Access Codes/codeUsageCount'
+
+2021-01-19 11:18:52 - [MESSAGE][PASSED] - Object 'Object Repository/Journey/Current Access Codes/getCodeButton' is present
+
+2021-01-19 11:18:52 - [MESSAGE][PASSED] - Object 'Object Repository/Journey/Current Access Codes/getCodeButton' is visible
+
+2021-01-19 11:18:53 - [MESSAGE][PASSED] - Object 'Object Repository/Journey/Current Access Codes/getCodeButton' is clickable
+
+2021-01-19 11:18:53 - [MESSAGE][PASSED] - Object: 'Object Repository/Journey/Current Access Codes/getCodeButton' is clicked on
+
+2021-01-19 11:18:54 - [MESSAGE][PASSED] - Object 'Object Repository/CommonButtons/Close' is present
+
+2021-01-19 11:18:54 - [MESSAGE][PASSED] - Object 'Object Repository/CommonButtons/Close' is visible
+
+2021-01-19 11:18:54 - [MESSAGE][PASSED] - Object 'Object Repository/CommonButtons/Close' is clickable
+
+2021-01-19 11:18:55 - [MESSAGE][PASSED] - Object: 'Object Repository/CommonButtons/Close' is clicked on
+
+2021-01-19 11:18:55 - [MESSAGE][PASSED] - pages.Journey.createAccessCodeInJourney is PASSED
+
+2021-01-19 11:18:55 - [TEST_STEP][FAILED] - pages.Journey.verifyTheCreatedAccessCode(journeyName, accessCode): The Coderandomcode13 is not created
+
+2021-01-19 11:18:56 - [MESSAGE][PASSED] - Object 'Object Repository/Journey/journrySearchInput' is present
+
+2021-01-19 11:18:56 - [MESSAGE][PASSED] - Object 'Object Repository/Journey/journrySearchInput' is visible
+
+2021-01-19 11:18:56 - [MESSAGE][PASSED] - Object 'Object Repository/Journey/journrySearchInput' is clickable
+
+2021-01-19 11:18:56 - [MESSAGE][PASSED] - Text of object 'Object Repository/Journey/journrySearchInput' is cleared
+
+2021-01-19 11:18:57 - [MESSAGE][PASSED] - Keys '' sent to object: 'Object Repository/Journey/journrySearchInput'
+
+2021-01-19 11:18:57 - [MESSAGE][PASSED] - Keys 'K' sent to object: 'Object Repository/Journey/journrySearchInput'
+
+2021-01-19 11:18:58 - [MESSAGE][PASSED] - Keys 'J' sent to object: 'Object Repository/Journey/journrySearchInput'
+
+2021-01-19 11:18:58 - [MESSAGE][PASSED] - Keys 'O' sent to object: 'Object Repository/Journey/journrySearchInput'
+
+2021-01-19 11:18:59 - [MESSAGE][PASSED] - Object 'Object Repository/Journey/clickVerifyingJourney(journeyName)' is present
+
+2021-01-19 11:18:59 - [MESSAGE][PASSED] - Object 'Object Repository/Journey/clickVerifyingJourney(journeyName)' is visible
+
+2021-01-19 11:18:59 - [MESSAGE][PASSED] - Object 'Object Repository/Journey/clickVerifyingJourney(journeyName)' is clickable
+
+2021-01-19 11:19:00 - [MESSAGE][PASSED] - Object: 'Object Repository/Journey/clickVerifyingJourney(journeyName)' is clicked on
+
+2021-01-19 11:19:01 - [MESSAGE][PASSED] - Scroll to object 'Object Repository/Journey/Current Access Codes/currentAccessCodeField' successfully
+
+2021-01-19 11:19:01 - [MESSAGE][PASSED] - Object 'Object Repository/Journey/Current Access Codes/currentAccessCodeField' is present
+
+2021-01-19 11:19:33 - [MESSAGE][INFO] - Unable to find the element located by 'By.xpath: //a[text()='randomcode13']'. Please recheck the objects properties to make sure the desired element is located. 
+
+2021-01-19 11:19:33 - [MESSAGE][WARNING] - com.kms.katalon.core.webui.exception.WebElementNotFoundException: Web element with id: 'Object Repository/Journey/Current Access Codes/verify(code)' located by '//a[text()='randomcode13']' not found (Root cause: com.kms.katalon.core.exception.StepFailedException: com.kms.katalon.core.webui.exception.WebElementNotFoundException: Web element with id: 'Object Repository/Journey/Current Access Codes/verify(code)' located by '//a[text()='randomcode13']' not found
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementPresentKeyword$_verifyElementPresent_closure1.doCall(VerifyElementPresentKeyword.groovy:85)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementPresentKeyword$_verifyElementPresent_closure1.call(VerifyElementPresentKeyword.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:20)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementPresentKeyword.verifyElementPresent(VerifyElementPresentKeyword.groovy:92)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementPresentKeyword.execute(VerifyElementPresentKeyword.groovy:68)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:73)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.verifyElementPresent(WebUiBuiltInKeywords.groovy:1445)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$verifyElementPresent$2.call(Unknown Source)
+	at verification.Verification.verifyElementPresent(Verification.groovy:29)
+	at verification.Verification.verifyElementPresent(Verification.groovy)
+	at verification.Verification$verifyElementPresent.call(Unknown Source)
+	at pages.Journey.verifyTheCreatedAccessCode(Journey.groovy:110)
+	at pages.Journey.invokeMethod(Journey.groovy)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:50)
+	at createAccessCodeForJourneyAndVerifyIsTheCodeSuccessfullyCreated.run(createAccessCodeForJourneyAndVerifyIsTheCodeSuccessfullyCreated:23)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:394)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:385)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:364)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:356)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:251)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:203)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:152)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:95)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1611035275488.run(TempTestSuite1611035275488.groovy:39)
+)
+[[ATTACHMENT|C:\\Users\\DELL\\modist\\ModistProject\\Reports\\20210119_111755\\Journey\\20210119_111755\\1611035373013.png]]
+
+2021-01-19 11:19:34 - [MESSAGE][PASSED] - Taking screenshot successfully
+[[ATTACHMENT|C:\\Users\\DELL\\modist\\ModistProject\\Reports\\20210119_111755\\Journey\\20210119_111755\\1611035373870.png]]
+
+2021-01-19 11:19:34 - [MESSAGE][FAILED] - The Coderandomcode13 is not created]]></system-out>
+         <system-err><![CDATA[2021-01-19 11:18:30 - [TEST_CASE][FAILED] - Test Cases/Admin/Journey/createAccessCodeForJourneyAndVerifyIsTheCodeSuccessfullyCreated: Test Cases/Admin/Journey/createAccessCodeForJourneyAndVerifyIsTheCodeSuccessfullyCreated FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: The Coderandomcode13 is not created
+	at com.kms.katalon.core.util.KeywordUtil.markFailedAndStop(KeywordUtil.java:28)
+	at com.kms.katalon.core.util.KeywordUtil$markFailedAndStop.call(Unknown Source)
+	at verification.Verification.verifyElementPresent(Verification.groovy:31)
+	at verification.Verification.verifyElementPresent(Verification.groovy)
+	at verification.Verification$verifyElementPresent.call(Unknown Source)
+	at pages.Journey.verifyTheCreatedAccessCode(Journey.groovy:110)
+	at pages.Journey.invokeMethod(Journey.groovy)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:50)
+	at createAccessCodeForJourneyAndVerifyIsTheCodeSuccessfullyCreated.run(createAccessCodeForJourneyAndVerifyIsTheCodeSuccessfullyCreated:23)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:394)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:385)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:364)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:356)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:251)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:203)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:152)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:95)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1611035275488.run(TempTestSuite1611035275488.groovy:39)]]></system-err>
+      </testcase>
+      <system-out><![CDATA[2021-01-19 11:17:58 - [TEST_SUITE][FAILED] - Journey: Test Cases/Admin/Journey/createAccessCodeForJourneyAndVerifyIsTheCodeSuccessfullyCreated FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: The Coderandomcode13 is not created
+	at com.kms.katalon.core.util.KeywordUtil.markFailedAndStop(KeywordUtil.java:28)
+	at com.kms.katalon.core.util.KeywordUtil$markFailedAndStop.call(Unknown Source)
+	at verification.Verification.verifyElementPresent(Verification.groovy:31)
+	at verification.Verification.verifyElementPresent(Verification.groovy)
+	at verification.Verification$verifyElementPresent.call(Unknown Source)
+	at pages.Journey.verifyTheCreatedAccessCode(Journey.groovy:110)
+	at pages.Journey.invokeMethod(Journey.groovy)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:50)
+	at createAccessCodeForJourneyAndVerifyIsTheCodeSuccessfullyCreated.run(createAccessCodeForJourneyAndVerifyIsTheCodeSuccessfullyCreated:23)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:394)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:385)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:364)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:356)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:251)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:203)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:152)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:95)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1611035275488.run(TempTestSuite1611035275488.groovy:39)]]></system-out>
+      <system-err><![CDATA[2021-01-19 11:17:58 - [TEST_SUITE][FAILED] - Journey: Test Cases/Admin/Journey/createAccessCodeForJourneyAndVerifyIsTheCodeSuccessfullyCreated FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: The Coderandomcode13 is not created
+	at com.kms.katalon.core.util.KeywordUtil.markFailedAndStop(KeywordUtil.java:28)
+	at com.kms.katalon.core.util.KeywordUtil$markFailedAndStop.call(Unknown Source)
+	at verification.Verification.verifyElementPresent(Verification.groovy:31)
+	at verification.Verification.verifyElementPresent(Verification.groovy)
+	at verification.Verification$verifyElementPresent.call(Unknown Source)
+	at pages.Journey.verifyTheCreatedAccessCode(Journey.groovy:110)
+	at pages.Journey.invokeMethod(Journey.groovy)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:50)
+	at createAccessCodeForJourneyAndVerifyIsTheCodeSuccessfullyCreated.run(createAccessCodeForJourneyAndVerifyIsTheCodeSuccessfullyCreated:23)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:394)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:385)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:364)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:356)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:251)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:203)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:152)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:95)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1611035275488.run(TempTestSuite1611035275488.groovy:39)]]></system-err>
+   </testsuite>
+</testsuites>

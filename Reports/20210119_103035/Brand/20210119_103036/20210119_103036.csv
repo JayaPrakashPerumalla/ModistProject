@@ -1,0 +1,24 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+Brand,Chrome 87.0.4280.141,,,2021-01-19 10:30:40,2021-01-19 10:34:52,4m - 12.450s,FAILED
+,,,,,,,
+Test Cases/Admin/Brand/createBrandAndVerifyIsItSuccessfullyCreated,Chrome 87.0.4280.141,,,2021-01-19 10:31:34,2021-01-19 10:33:03,1m - 28.653s,FAILED
+Start listener action : login,Chrome 87.0.4280.141,,,2021-01-19 10:31:34,2021-01-19 10:31:37,3.089s,PASSED
+pages.Brand.clickBrand(),Chrome 87.0.4280.141,,,2021-01-19 10:31:37,2021-01-19 10:31:39,1.089s,PASSED
+brandName = pages.Brand.addBrand(),Chrome 87.0.4280.141,,,2021-01-19 10:31:39,2021-01-19 10:32:04,25.128s,PASSED
+pages.Brand.verifyTheBrandCreated(brandName),Chrome 87.0.4280.141,,,2021-01-19 10:32:04,2021-01-19 10:33:03,59.050s,FAILED
+,,,,,,,
+Test Cases/Admin/Brand/Delete a Brand and verify,Chrome 87.0.4280.141,,,2021-01-19 10:33:03,2021-01-19 10:33:47,44.021s,FAILED
+Start listener action : login,Chrome 87.0.4280.141,,,2021-01-19 10:33:03,2021-01-19 10:33:06,3.036s,PASSED
+pages.Brand.clickBrand(),Chrome 87.0.4280.141,,,2021-01-19 10:33:06,2021-01-19 10:33:09,2.405s,PASSED
+brandName = pages.Brand.getRandomBrandName(),Chrome 87.0.4280.141,,,2021-01-19 10:33:09,2021-01-19 10:33:47,38.266s,FAILED
+,,,,,,,
+Test Cases/Admin/Brand/Verify elements on Add Brand popup,Chrome 87.0.4280.141,,,2021-01-19 10:33:47,2021-01-19 10:34:09,21.722s,PASSED
+Start listener action : login,Chrome 87.0.4280.141,,,2021-01-19 10:33:47,2021-01-19 10:33:50,3.051s,PASSED
+pages.Brand.clickBrand(),Chrome 87.0.4280.141,,,2021-01-19 10:33:50,2021-01-19 10:33:53,2.293s,PASSED
+pages.Brand.clickAddBrand(),Chrome 87.0.4280.141,,,2021-01-19 10:33:53,2021-01-19 10:33:55,2.105s,PASSED
+pages.Brand.verifyBrandPopUp(),Chrome 87.0.4280.141,,,2021-01-19 10:33:55,2021-01-19 10:34:09,14.006s,PASSED
+,,,,,,,
+Test Cases/Admin/Brand/Edit a Brand and Verify,Chrome 87.0.4280.141,,,2021-01-19 10:34:09,2021-01-19 10:34:52,43.288s,FAILED
+Start listener action : login,Chrome 87.0.4280.141,,,2021-01-19 10:34:09,2021-01-19 10:34:12,3.017s,PASSED
+pages.Brand.clickBrand(),Chrome 87.0.4280.141,,,2021-01-19 10:34:12,2021-01-19 10:34:14,1.583s,PASSED
+brandName = pages.Brand.getRandomBrandName(),Chrome 87.0.4280.141,,,2021-01-19 10:34:14,2021-01-19 10:34:52,38.441s,FAILED

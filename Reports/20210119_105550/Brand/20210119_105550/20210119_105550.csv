@@ -1,0 +1,9 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+Brand,Chrome 87.0.4280.141,,,2021-01-19 10:55:53,2021-01-19 10:56:41,48.161s,PASSED
+,,,,,,,
+Test Cases/Admin/Brand/Delete a Brand and verify,Chrome 87.0.4280.141,,,2021-01-19 10:56:22,2021-01-19 10:56:41,19.055s,PASSED
+Start listener action : login,Chrome 87.0.4280.141,,,2021-01-19 10:56:22,2021-01-19 10:56:25,3.086s,PASSED
+pages.Brand.clickBrand(),Chrome 87.0.4280.141,,,2021-01-19 10:56:26,2021-01-19 10:56:26,0.558s,PASSED
+brandName = pages.Brand.getRandomBrandName(),Chrome 87.0.4280.141,,,2021-01-19 10:56:26,2021-01-19 10:56:29,2.924s,PASSED
+pages.Brand.deleteBrand(brandName),Chrome 87.0.4280.141,,,2021-01-19 10:56:29,2021-01-19 10:56:37,7.557s,PASSED
+pages.Brand.verifyABrandDeleted(brandName),Chrome 87.0.4280.141,,,2021-01-19 10:56:37,2021-01-19 10:56:41,4.666s,PASSED

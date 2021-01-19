@@ -14,13 +14,13 @@
    <testCaseLink>
       <guid>4778eefc-9253-4b61-9220-5c886ac064cf</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/Admin/Journey/addJournyAndVerifyItisAdded</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>391b8e13-9c32-4ff5-96f9-a3503706a003</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/Admin/Journey/cloneJourneyAndVerifyisitCloned</testCaseId>
    </testCaseLink>
    <testCaseLink>
@@ -38,7 +38,7 @@
    <testCaseLink>
       <guid>d947d0b4-c946-4add-ab9e-6e044d332859</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/Admin/Journey/deleteJourneyAndVerify</testCaseId>
    </testCaseLink>
 </TestSuiteEntity>

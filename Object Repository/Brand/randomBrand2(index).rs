@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>randomBrand(index)</name>
+   <name>randomBrand2(index)</name>
    <tag></tag>
-   <elementGuidId>036f7940-deab-4f70-8055-441928e118a1</elementGuidId>
+   <elementGuidId>e71c9590-b264-484c-98ed-82aa9a02fd33</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//div[@class=&quot;sc-jrsJCI ivRwdr rdt_TableRow&quot;]//div[2])[${index}]</value>
+         <value>//div[contains(@class, 'rdt_TableBody')]//div[@role=&quot;row&quot;][${index}]//div[@role=&quot;cell&quot;][1]/div</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,6 +17,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//div[@class=&quot;sc-jrsJCI ivRwdr rdt_TableRow&quot;]//div[2])[${index}]</value>
+      <value>//div[contains(@class, 'rdt_TableBody')]//div[@role=&quot;row&quot;][${index}]//div[@role=&quot;cell&quot;][1]/div</value>
    </webElementProperties>
 </WebElementEntity>

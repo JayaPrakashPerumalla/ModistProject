@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Brand" time="49.46" tests="1" failures="0" skips="0" errors="0">
+   <testsuite name="Brand" tests="1" failures="0" errors="0" time="49.46" skips="0" timestamp="2021-01-19 10:55:53" hostname="DELL - DESKTOP-99JJ4SE" id="Test Suites/Brand">
+      <properties>
+         <property name="deviceName" value=""/>
+         <property name="devicePlatform" value=""/>
+         <property name="logFolder" value="C:\\Users\\DELL\\modist\\ModistProject\\Reports\\20210119_105550\\Brand\\20210119_105550"/>
+         <property name="logFiles" value="C:\\Users\\DELL\\modist\\ModistProject\\Reports\\20210119_105550\\Brand\\20210119_105550\\execution0.log"/>
+         <property name="attachments" value=""/>
+         <property name="hostName" value="DELL - DESKTOP-99JJ4SE"/>
+         <property name="os" value="Windows 10 64bit"/>
+         <property name="katalonVersion" value="7.8.2.208"/>
+         <property name="browser" value="Chrome 87.0.4280.141"/>
+         <property name="hostAddress" value="192.168.1.104"/>
+         <property name="sessionId" value="c7712774d253c53aad83954bf8546a13"/>
+         <property name="seleniumVersion" value="3.141.59"/>
+         <property name="proxyInformation" value="ProxyInformation { proxyOption=NO_PROXY, proxyServerType=HTTP, username=, password=********, proxyServerAddress=, proxyServerPort=0, executionList=&quot;&quot;, isApplyToDesiredCapabilities=true }"/>
+         <property name="platform" value="Windows 10"/>
+      </properties>
+      <testcase name="Test Cases/Admin/Brand/Delete a Brand and verify" time="19.055" classname="Test Cases/Admin/Brand/Delete a Brand and verify" status="PASSED">
+         <system-out><![CDATA[2021-01-19 10:56:22 - [TEST_CASE][PASSED] - Test Cases/Admin/Brand/Delete a Brand and verify: Test Cases/Admin/Brand/Delete a Brand and verify
+
+2021-01-19 10:56:22 - [TEST_STEP][PASSED] - Start listener action : login: null
+
+2021-01-19 10:56:22 - [TEST_STEP][PASSED] - Thread.sleep(3000): null
+
+2021-01-19 10:56:25 - [TEST_STEP][PASSED] - url = getUrl(): Current window's url is: 'https://qualitlabs.dev-admin.modist.co/dashboard'
+
+2021-01-19 10:56:25 - [MESSAGE][PASSED] - Current window's url is: 'https://qualitlabs.dev-admin.modist.co/dashboard'
+
+2021-01-19 10:56:25 - [TEST_STEP][PASSED] - if (!(url.contains("dashboard"))): null
+
+2021-01-19 10:56:26 - [TEST_STEP][PASSED] - pages.Brand.clickBrand(): pages.Brand.clickBrand is PASSED
+
+2021-01-19 10:56:26 - [MESSAGE][PASSED] - Object: 'Object Repository/Brand/clickOnBrandTab' is clicked on
+
+2021-01-19 10:56:26 - [MESSAGE][PASSED] - pages.Brand.clickBrand is PASSED
+
+2021-01-19 10:56:26 - [TEST_STEP][PASSED] - brandName = pages.Brand.getRandomBrandName(): pages.Brand.getRandomBrandName is PASSED
+
+2021-01-19 10:56:28 - [MESSAGE][PASSED] - Object 'Object Repository/Brand/brandCount' is present
+
+2021-01-19 10:56:28 - [MESSAGE][PASSED] - Object 'Object Repository/Brand/brandCount' is present
+
+2021-01-19 10:56:29 - [MESSAGE][PASSED] - Text of object 'Object Repository/Brand/randomBrand2(index)' is: 'hhh'
+
+2021-01-19 10:56:29 - [MESSAGE][PASSED] - pages.Brand.getRandomBrandName is PASSED
+
+2021-01-19 10:56:29 - [TEST_STEP][PASSED] - pages.Brand.deleteBrand(brandName): pages.Brand.deleteBrand is PASSED
+
+2021-01-19 10:56:29 - [MESSAGE][PASSED] - Object 'Object Repository/Brand/search' is present
+
+2021-01-19 10:56:30 - [MESSAGE][PASSED] - Object 'Object Repository/Brand/search' is visible
+
+2021-01-19 10:56:30 - [MESSAGE][PASSED] - Object 'Object Repository/Brand/search' is clickable
+
+2021-01-19 10:56:30 - [MESSAGE][PASSED] - Text of object 'Object Repository/Brand/search' is cleared
+
+2021-01-19 10:56:31 - [MESSAGE][PASSED] - Keys '' sent to object: 'Object Repository/Brand/search'
+
+2021-01-19 10:56:31 - [MESSAGE][PASSED] - Keys 'h' sent to object: 'Object Repository/Brand/search'
+
+2021-01-19 10:56:32 - [MESSAGE][PASSED] - Keys 'h' sent to object: 'Object Repository/Brand/search'
+
+2021-01-19 10:56:33 - [MESSAGE][PASSED] - Keys 'h' sent to object: 'Object Repository/Brand/search'
+
+2021-01-19 10:56:33 - [MESSAGE][PASSED] - Scroll to object 'Object Repository/Brand/createdBrand(brandName)' successfully
+
+2021-01-19 10:56:34 - [MESSAGE][PASSED] - Object 'Object Repository/Brand/createdBrand(brandName)' is visible
+
+2021-01-19 10:56:34 - [MESSAGE][PASSED] - Object 'Object Repository/Brand/createdBrand(brandName)' is present
+
+2021-01-19 10:56:34 - [MESSAGE][PASSED] - Object 'Object Repository/Brand/createdBrand(brandName)' is visible
+
+2021-01-19 10:56:34 - [MESSAGE][PASSED] - Object 'Object Repository/Brand/createdBrand(brandName)' is clickable
+
+2021-01-19 10:56:35 - [MESSAGE][PASSED] - Object: 'Object Repository/Brand/createdBrand(brandName)' is clicked on
+
+2021-01-19 10:56:36 - [MESSAGE][PASSED] - Object 'Object Repository/Brand/Delete Button' is present
+
+2021-01-19 10:56:36 - [MESSAGE][PASSED] - Object 'Object Repository/Brand/Delete Button' is visible
+
+2021-01-19 10:56:36 - [MESSAGE][PASSED] - Object 'Object Repository/Brand/Delete Button' is clickable
+
+2021-01-19 10:56:37 - [MESSAGE][PASSED] - Object: 'Object Repository/Brand/Delete Button' is clicked on
+
+2021-01-19 10:56:37 - [MESSAGE][PASSED] - pages.Brand.deleteBrand is PASSED
+
+2021-01-19 10:56:37 - [TEST_STEP][PASSED] - pages.Brand.verifyABrandDeleted(brandName): pages.Brand.verifyABrandDeleted is PASSED
+
+2021-01-19 10:56:38 - [MESSAGE][PASSED] - Object 'Object Repository/Brand/search' is present
+
+2021-01-19 10:56:38 - [MESSAGE][PASSED] - Object 'Object Repository/Brand/search' is visible
+
+2021-01-19 10:56:39 - [MESSAGE][PASSED] - Object 'Object Repository/Brand/search' is clickable
+
+2021-01-19 10:56:39 - [MESSAGE][PASSED] - Text of object 'Object Repository/Brand/search' is cleared
+
+2021-01-19 10:56:40 - [MESSAGE][PASSED] - Keys '' sent to object: 'Object Repository/Brand/search'
+
+2021-01-19 10:56:40 - [MESSAGE][PASSED] - Keys 'h' sent to object: 'Object Repository/Brand/search'
+
+2021-01-19 10:56:40 - [MESSAGE][PASSED] - Keys 'h' sent to object: 'Object Repository/Brand/search'
+
+2021-01-19 10:56:41 - [MESSAGE][PASSED] - Keys 'h' sent to object: 'Object Repository/Brand/search'
+
+2021-01-19 10:56:41 - [MESSAGE][PASSED] - Web element with id: 'Object Repository/Brand/createdBrand(brandName)' located by 'By.xpath: //div[@class='sc-jrsJCI ivRwdr rdt_TableRow']//div[text()='hhh']' is not present after '30' second(s)
+
+2021-01-19 10:56:41 - [MESSAGE][PASSED] - pages.Brand.verifyABrandDeleted is PASSED]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <system-out><![CDATA[2021-01-19 10:55:53 - [TEST_SUITE][PASSED] - Brand: Test Cases/Admin/Brand/Delete a Brand and verify]]></system-out>
+      <system-err><![CDATA[]]></system-err>
+   </testsuite>
+</testsuites>
